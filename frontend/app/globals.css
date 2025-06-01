@@ -76,6 +76,17 @@
   --sidebar-accent-foreground: oklch(0.216 0.006 56.043);
   --sidebar-border: oklch(0.923 0.003 48.717);
   --sidebar-ring: oklch(0.709 0.01 56.259);
+
+  /* Transition durations */
+  --transition-duration-fast: 150ms;
+  --transition-duration-normal: 300ms;
+  --transition-duration-slow: 500ms;
+
+  /* Transition timing functions */
+  --transition-timing-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-timing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --transition-timing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --transition-timing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dark {
@@ -118,5 +129,26 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Global transition classes */
+  .transition-all {
+    transition-duration: var(--transition-duration-normal);
+    transition-timing-function: var(--transition-timing-ease);
+  }
+
+  .transition-colors {
+    transition-duration: var(--transition-duration-normal);
+    transition-timing-function: var(--transition-timing-ease);
+  }
+
+  .transition-transform {
+    transition-duration: var(--transition-duration-normal);
+    transition-timing-function: var(--transition-timing-ease);
+  }
+
+  .transition-opacity {
+    transition-duration: var(--transition-duration-normal);
+    transition-timing-function: var(--transition-timing-ease);
   }
 }
