@@ -1,0 +1,200 @@
+{
+  "enterprises": {
+    "total": 100,
+    "active": 100,
+    "bySubscription": {
+      "basic": 29,
+      "standard": 27,
+      "premium": 23,
+      "enterprise": 21
+    }
+  },
+  "devices": {
+    "total": 103760,
+    "active": 34614,
+    "byOS": {
+      "iOS": 20975,
+      "Android": 20479,
+      "Windows": 21044,
+      "macOS": 20712,
+      "Linux": 20550
+    },
+    "byCarrier": {
+      "AT&T": 20812,
+      "Verizon": 20624,
+      "T-Mobile": 20615,
+      "Sprint": 20719,
+      "US Cellular": 20990
+    },
+    "nonCompliant": 20697
+  },
+  "towers": {
+    "total": 5000,
+    "active": 1664,
+    "byCarrier": {
+      "AT&T": 1999,
+      "Verizon": 2014,
+      "T-Mobile": 2030,
+      "Sprint": 1966,
+      "US Cellular": 1946
+    },
+    "byStatus": {
+      "active": 1664,
+      "maintenance": 1697,
+      "inactive": 1639
+    }
+  },
+  "policies": {
+    "total": 3082,
+    "active": 1025,
+    "byPriority": {
+      "low": 723,
+      "medium": 790,
+      "high": 797,
+      "critical": 772
+    },
+    "enforcementStats": {
+      "allowed": 3724,
+      "denied": 854,
+      "notified": 4029,
+      "quarantined": 91
+    }
+  },
+  "security": {
+    "totalAlerts": 795,
+    "criticalAlerts": 46,
+    "complianceScore": 95,
+    "recentIncidents": [
+      {
+        "id": "inc_000000",
+        "type": "security",
+        "severity": "medium",
+        "description": "Polarised resilient database",
+        "timestamp": "2025-06-02T01:20:40.886Z",
+        "affectedEntities": [
+          {
+            "type": "device",
+            "id": "QCKF1VFM"
+          }
+        ]
+      },
+      {
+        "id": "inc_000001",
+        "type": "performance",
+        "severity": "high",
+        "description": "Upgradable optimizing initiative",
+        "timestamp": "2025-06-01T18:29:00.501Z",
+        "affectedEntities": [
+          {
+            "type": "device",
+            "id": "UF7VWDII"
+          }
+        ]
+      },
+      {
+        "id": "inc_000002",
+        "type": "compliance",
+        "severity": "high",
+        "description": "Balanced fresh-thinking definition",
+        "timestamp": "2025-06-02T10:41:43.892Z",
+        "affectedEntities": [
+          {
+            "type": "enterprise",
+            "id": "2929IWJJ"
+          }
+        ]
+      },
+      {
+        "id": "inc_000003",
+        "type": "compliance",
+        "severity": "low",
+        "description": "Stand-alone human-resource artificial intelligence",
+        "timestamp": "2025-06-01T21:53:04.948Z",
+        "affectedEntities": [
+          {
+            "type": "enterprise",
+            "id": "JCX47EEC"
+          }
+        ]
+      },
+      {
+        "id": "inc_000004",
+        "type": "security",
+        "severity": "high",
+        "description": "Realigned immersive help-desk",
+        "timestamp": "2025-06-02T11:02:50.376Z",
+        "affectedEntities": [
+          {
+            "type": "tower",
+            "id": "QTXWOF1A"
+          }
+        ]
+      },
+      {
+        "id": "inc_000005",
+        "type": "security",
+        "severity": "medium",
+        "description": "Sustainable disintermediate support",
+        "timestamp": "2025-06-02T09:25:42.687Z",
+        "affectedEntities": [
+          {
+            "type": "tower",
+            "id": "KSPSUQEW"
+          }
+        ]
+      },
+      {
+        "id": "inc_000006",
+        "type": "security",
+        "severity": "high",
+        "description": "Focused analyzing framework",
+        "timestamp": "2025-06-02T10:30:28.824Z",
+        "affectedEntities": [
+          {
+            "type": "tower",
+            "id": "CF0M9CB3"
+          }
+        ]
+      },
+      {
+        "id": "inc_000007",
+        "type": "security",
+        "severity": "low",
+        "description": "Team-oriented asynchronous local area network",
+        "timestamp": "2025-06-02T13:48:56.406Z",
+        "affectedEntities": [
+          {
+            "type": "enterprise",
+            "id": "BRBFQGNK"
+          }
+        ]
+      },
+      {
+        "id": "inc_000008",
+        "type": "compliance",
+        "severity": "high",
+        "description": "Reverse-engineered executive focus group",
+        "timestamp": "2025-06-01T19:18:32.406Z",
+        "affectedEntities": [
+          {
+            "type": "enterprise",
+            "id": "S9JXGFDC"
+          }
+        ]
+      },
+      {
+        "id": "inc_000009",
+        "type": "performance",
+        "severity": "critical",
+        "description": "Integrated 24 hour application",
+        "timestamp": "2025-06-02T07:16:13.017Z",
+        "affectedEntities": [
+          {
+            "type": "enterprise",
+            "id": "COWJWSRX"
+          }
+        ]
+      }
+    ]
+  }
+}
