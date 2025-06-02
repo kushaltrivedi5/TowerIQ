@@ -3,195 +3,195 @@
     "total": 100,
     "active": 100,
     "bySubscription": {
-      "basic": 29,
-      "standard": 27,
-      "premium": 23,
-      "enterprise": 21
+      "basic": 20,
+      "standard": 23,
+      "premium": 27,
+      "enterprise": 30
     }
   },
   "devices": {
-    "total": 103760,
-    "active": 34614,
+    "total": 112961,
+    "active": 37880,
     "byOS": {
-      "iOS": 20975,
-      "Android": 20479,
-      "Windows": 21044,
-      "macOS": 20712,
-      "Linux": 20550
+      "iOS": 22672,
+      "Android": 22605,
+      "Windows": 22714,
+      "macOS": 22472,
+      "Linux": 22498
     },
     "byCarrier": {
-      "AT&T": 20812,
-      "Verizon": 20624,
-      "T-Mobile": 20615,
-      "Sprint": 20719,
-      "US Cellular": 20990
+      "AT&T": 22592,
+      "Verizon": 22550,
+      "T-Mobile": 22736,
+      "Sprint": 22393,
+      "US Cellular": 22690
     },
-    "nonCompliant": 20697
+    "nonCompliant": 22529
   },
   "towers": {
     "total": 5000,
-    "active": 1664,
+    "active": 1606,
     "byCarrier": {
-      "AT&T": 1999,
-      "Verizon": 2014,
-      "T-Mobile": 2030,
-      "Sprint": 1966,
-      "US Cellular": 1946
+      "AT&T": 2032,
+      "Verizon": 1968,
+      "T-Mobile": 2001,
+      "Sprint": 1994,
+      "US Cellular": 1963
     },
     "byStatus": {
-      "active": 1664,
-      "maintenance": 1697,
-      "inactive": 1639
+      "active": 1606,
+      "maintenance": 1687,
+      "inactive": 1707
     }
   },
   "policies": {
-    "total": 3082,
-    "active": 1025,
+    "total": 2989,
+    "active": 1038,
     "byPriority": {
-      "low": 723,
-      "medium": 790,
-      "high": 797,
-      "critical": 772
+      "low": 780,
+      "medium": 714,
+      "high": 771,
+      "critical": 724
     },
     "enforcementStats": {
-      "allowed": 3724,
-      "denied": 854,
-      "notified": 4029,
-      "quarantined": 91
+      "allowed": 8388,
+      "denied": 764,
+      "notified": 1943,
+      "quarantined": 13
     }
   },
   "security": {
-    "totalAlerts": 795,
-    "criticalAlerts": 46,
-    "complianceScore": 95,
+    "totalAlerts": 935,
+    "criticalAlerts": 96,
+    "complianceScore": 91,
     "recentIncidents": [
       {
         "id": "inc_000000",
         "type": "security",
-        "severity": "medium",
-        "description": "Polarised resilient database",
-        "timestamp": "2025-06-02T01:20:40.886Z",
+        "severity": "critical",
+        "description": "Monitored attitude-oriented system engine",
+        "timestamp": "2025-06-01T23:11:36.965Z",
         "affectedEntities": [
           {
-            "type": "device",
-            "id": "QCKF1VFM"
+            "type": "user",
+            "id": "ZBUQJQU7"
           }
         ]
       },
       {
         "id": "inc_000001",
-        "type": "performance",
-        "severity": "high",
-        "description": "Upgradable optimizing initiative",
-        "timestamp": "2025-06-01T18:29:00.501Z",
+        "type": "compliance",
+        "severity": "low",
+        "description": "Compatible data-driven benchmark",
+        "timestamp": "2025-06-02T12:53:14.979Z",
         "affectedEntities": [
           {
             "type": "device",
-            "id": "UF7VWDII"
+            "id": "JSBLBQXR"
           }
         ]
       },
       {
         "id": "inc_000002",
-        "type": "compliance",
-        "severity": "high",
-        "description": "Balanced fresh-thinking definition",
-        "timestamp": "2025-06-02T10:41:43.892Z",
+        "type": "security",
+        "severity": "medium",
+        "description": "Versatile mission-critical portal",
+        "timestamp": "2025-06-02T07:29:28.795Z",
         "affectedEntities": [
           {
             "type": "enterprise",
-            "id": "2929IWJJ"
+            "id": "YHSPTNPM"
           }
         ]
       },
       {
         "id": "inc_000003",
-        "type": "compliance",
-        "severity": "low",
-        "description": "Stand-alone human-resource artificial intelligence",
-        "timestamp": "2025-06-01T21:53:04.948Z",
+        "type": "security",
+        "severity": "medium",
+        "description": "Networked optimal standardization",
+        "timestamp": "2025-06-01T19:50:41.605Z",
         "affectedEntities": [
           {
-            "type": "enterprise",
-            "id": "JCX47EEC"
+            "type": "device",
+            "id": "KO2XEEXB"
           }
         ]
       },
       {
         "id": "inc_000004",
         "type": "security",
-        "severity": "high",
-        "description": "Realigned immersive help-desk",
-        "timestamp": "2025-06-02T11:02:50.376Z",
+        "severity": "medium",
+        "description": "Streamlined cohesive hub",
+        "timestamp": "2025-06-02T12:33:34.364Z",
         "affectedEntities": [
           {
-            "type": "tower",
-            "id": "QTXWOF1A"
+            "type": "enterprise",
+            "id": "H7SGJFCJ"
           }
         ]
       },
       {
         "id": "inc_000005",
-        "type": "security",
-        "severity": "medium",
-        "description": "Sustainable disintermediate support",
-        "timestamp": "2025-06-02T09:25:42.687Z",
+        "type": "compliance",
+        "severity": "critical",
+        "description": "Decentralized neutral hierarchy",
+        "timestamp": "2025-06-02T17:19:23.117Z",
         "affectedEntities": [
           {
-            "type": "tower",
-            "id": "KSPSUQEW"
+            "type": "user",
+            "id": "2VH951PT"
           }
         ]
       },
       {
         "id": "inc_000006",
-        "type": "security",
-        "severity": "high",
-        "description": "Focused analyzing framework",
-        "timestamp": "2025-06-02T10:30:28.824Z",
+        "type": "compliance",
+        "severity": "critical",
+        "description": "Visionary real-time service-desk",
+        "timestamp": "2025-06-01T20:35:00.294Z",
         "affectedEntities": [
           {
-            "type": "tower",
-            "id": "CF0M9CB3"
+            "type": "user",
+            "id": "R4CQ9FTQ"
           }
         ]
       },
       {
         "id": "inc_000007",
-        "type": "security",
-        "severity": "low",
-        "description": "Team-oriented asynchronous local area network",
-        "timestamp": "2025-06-02T13:48:56.406Z",
+        "type": "compliance",
+        "severity": "medium",
+        "description": "Networked holistic knowledge base",
+        "timestamp": "2025-06-02T02:44:10.998Z",
         "affectedEntities": [
           {
-            "type": "enterprise",
-            "id": "BRBFQGNK"
+            "type": "tower",
+            "id": "QQ5DIUVJ"
           }
         ]
       },
       {
         "id": "inc_000008",
         "type": "compliance",
-        "severity": "high",
-        "description": "Reverse-engineered executive focus group",
-        "timestamp": "2025-06-01T19:18:32.406Z",
+        "severity": "low",
+        "description": "Profit-focused national initiative",
+        "timestamp": "2025-06-02T08:58:22.396Z",
         "affectedEntities": [
           {
-            "type": "enterprise",
-            "id": "S9JXGFDC"
+            "type": "user",
+            "id": "OYXIPM57"
           }
         ]
       },
       {
         "id": "inc_000009",
-        "type": "performance",
-        "severity": "critical",
-        "description": "Integrated 24 hour application",
-        "timestamp": "2025-06-02T07:16:13.017Z",
+        "type": "compliance",
+        "severity": "high",
+        "description": "Devolved local firmware",
+        "timestamp": "2025-06-01T21:00:35.634Z",
         "affectedEntities": [
           {
-            "type": "enterprise",
-            "id": "COWJWSRX"
+            "type": "tower",
+            "id": "IAFPXHIZ"
           }
         ]
       }

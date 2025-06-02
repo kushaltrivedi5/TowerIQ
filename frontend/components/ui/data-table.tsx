@@ -1,225 +1,266 @@
-import * as React from "react";
-import {
-  ColumnDef,
-  ColumnFiltersState,
-  SortingState,
-  VisibilityState,
-  flexRender,
-  getCoreRowModel,
-  getFacetedRowModel,
-  getFacetedUniqueValues,
-  getFilteredRowModel,
-  getPaginationRowModel,
-  getSortedRowModel,
-  useReactTable,
-} from "@tanstack/react-table";
+"use client";
 
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { useState, useMemo } from "react";
+import { Input } from "./input";
+import { Button } from "./button";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "./select";
+import { ChevronDown, ChevronUp, ChevronsUpDown, Search } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "./card";
+import { Badge } from "./badge";
+import {
+  searchData,
+  filterData,
+  sortData,
+  paginateData,
+} from "@/lib/data/loadSeedData";
 
-interface DataTableProps<TData, TValue> {
-  columns: ColumnDef<TData, TValue>[];
-  data: TData[];
-  searchKey?: string;
-  searchPlaceholder?: string;
-  filterOptions?: {
-    key: string;
-    label: string;
-    options: { label: string; value: string }[];
-  }[];
-}
+export type Column<T> = {
+  key: keyof T;
+  label: string;
+  sortable?: boolean;
+  filterable?: boolean;
+  searchable?: boolean;
+  options?: { label: string; value: any }[];
+  render?: (value: any, row: T) => React.ReactNode;
+};
 
-export function DataTable<TData, TValue>({
+type DataTableProps<T> = {
+  columns: Column<T>[];
+  data: T[];
+  searchKey?: keyof T;
+  pageSize?: number;
+  title?: string;
+  description?: string;
+};
+
+export function DataTable<T extends Record<string, any>>({
   columns,
   data,
   searchKey,
-  searchPlaceholder = "Search...",
-  filterOptions = [],
-}: DataTableProps<TData, TValue>) {
-  const [rowSelection, setRowSelection] = React.useState({});
-  const [columnVisibility, setColumnVisibility] =
-    React.useState<VisibilityState>({});
-  const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
-    []
-  );
-  const [sorting, setSorting] = React.useState<SortingState>([]);
-  const [globalFilter, setGlobalFilter] = React.useState("");
+  pageSize = 10,
+  title,
+  description,
+}: DataTableProps<T>) {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filters, setFilters] = useState<Partial<Record<keyof T, any>>>({});
+  const [sortConfig, setSortConfig] = useState<{
+    key: keyof T;
+    direction: "asc" | "desc";
+  } | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
 
-  const table = useReactTable({
-    data,
-    columns,
-    state: {
-      sorting,
-      columnVisibility,
-      rowSelection,
-      columnFilters,
-      globalFilter,
-    },
-    enableRowSelection: true,
-    onRowSelectionChange: setRowSelection,
-    onSortingChange: setSorting,
-    onColumnFiltersChange: setColumnFilters,
-    onColumnVisibilityChange: setColumnVisibility,
-    onGlobalFilterChange: setGlobalFilter,
-    getCoreRowModel: getCoreRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-    getFacetedRowModel: getFacetedRowModel(),
-    getFacetedUniqueValues: getFacetedUniqueValues(),
-  });
+  // Get searchable columns
+  const searchableColumns = useMemo(
+    () => columns.filter((col) => col.searchable).map((col) => col.key),
+    [columns]
+  );
+
+  // Apply search, filters, and sorting
+  const processedData = useMemo(() => {
+    let result = [...data];
+
+    // Apply search
+    if (searchTerm && searchableColumns.length > 0) {
+      result = searchData(result, searchTerm, searchableColumns);
+    }
+
+    // Apply filters
+    if (Object.keys(filters).length > 0) {
+      result = filterData(result, filters);
+    }
+
+    // Apply sorting
+    if (sortConfig) {
+      result = sortData(result, sortConfig.key, sortConfig.direction);
+    }
+
+    return result;
+  }, [data, searchTerm, filters, sortConfig, searchableColumns]);
+
+  // Apply pagination
+  const {
+    data: paginatedData,
+    total,
+    totalPages,
+  } = useMemo(
+    () => paginateData(processedData, currentPage, pageSize),
+    [processedData, currentPage, pageSize]
+  );
+
+  // Handle sort click
+  const handleSort = (key: keyof T) => {
+    setSortConfig((current) => {
+      if (!current || current.key !== key) {
+        return { key, direction: "asc" };
+      }
+      if (current.direction === "asc") {
+        return { key, direction: "desc" };
+      }
+      return null;
+    });
+  };
+
+  // Handle filter change
+  const handleFilterChange = (key: keyof T, value: any) => {
+    setFilters((current) => ({
+      ...current,
+      [key]: value || undefined,
+    }));
+    setCurrentPage(1);
+  };
+
+  // Render sort icon
+  const renderSortIcon = (key: keyof T) => {
+    if (!sortConfig || sortConfig.key !== key) {
+      return <ChevronsUpDown className="h-4 w-4" />;
+    }
+    return sortConfig.direction === "asc" ? (
+      <ChevronUp className="h-4 w-4" />
+    ) : (
+      <ChevronDown className="h-4 w-4" />
+    );
+  };
 
   return (
-    <div className="space-y-4">
-      <div className="flex items-center justify-between">
-        <div className="flex flex-1 items-center space-x-2">
-          {searchKey && (
-            <Input
-              placeholder={searchPlaceholder}
-              value={globalFilter ?? ""}
-              onChange={(event) => setGlobalFilter(event.target.value)}
-              className="h-8 w-[150px] lg:w-[250px]"
-            />
+    <Card className="w-full">
+      {(title || description) && (
+        <CardHeader>
+          {title && <CardTitle>{title}</CardTitle>}
+          {description && (
+            <p className="text-sm text-muted-foreground">{description}</p>
           )}
-          {filterOptions.map((filter) => (
-            <Select
-              key={filter.key}
-              onValueChange={(value) =>
-                table.getColumn(filter.key)?.setFilterValue(value)
-              }
-            >
-              <SelectTrigger className="h-8 w-[130px]">
-                <SelectValue placeholder={filter.label} />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="">All</SelectItem>
-                {filter.options.map((option) => (
-                  <SelectItem key={option.value} value={option.value}>
-                    {option.label}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          ))}
-        </div>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="outline" className="ml-auto">
-              Columns
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            {table
-              .getAllColumns()
-              .filter((column) => column.getCanHide())
-              .map((column) => {
-                return (
-                  <DropdownMenuCheckboxItem
-                    key={column.id}
-                    className="capitalize"
-                    checked={column.getIsVisible()}
-                    onCheckedChange={(value) =>
-                      column.toggleVisibility(!!value)
-                    }
-                  >
-                    {column.id}
-                  </DropdownMenuCheckboxItem>
-                );
-              })}
-          </DropdownMenuContent>
-        </DropdownMenu>
-      </div>
-      <div className="rounded-md border">
-        <Table>
-          <TableHeader>
-            {table.getHeaderGroups().map((headerGroup) => (
-              <TableRow key={headerGroup.id}>
-                {headerGroup.headers.map((header) => {
-                  return (
-                    <TableHead key={header.id}>
-                      {header.isPlaceholder
-                        ? null
-                        : flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
-                          )}
-                    </TableHead>
-                  );
-                })}
-              </TableRow>
-            ))}
-          </TableHeader>
-          <TableBody>
-            {table.getRowModel().rows?.length ? (
-              table.getRowModel().rows.map((row) => (
-                <TableRow
-                  key={row.id}
-                  data-state={row.getIsSelected() && "selected"}
-                >
-                  {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id}>
-                      {flexRender(
-                        cell.column.columnDef.cell,
-                        cell.getContext()
-                      )}
-                    </TableCell>
-                  ))}
-                </TableRow>
-              ))
-            ) : (
-              <TableRow>
-                <TableCell
-                  colSpan={columns.length}
-                  className="h-24 text-center"
-                >
-                  No results.
-                </TableCell>
-              </TableRow>
+        </CardHeader>
+      )}
+      <CardContent>
+        <div className="space-y-4">
+          {/* Search and Filters */}
+          <div className="flex flex-col sm:flex-row gap-4">
+            {searchableColumns.length > 0 && (
+              <div className="relative flex-1">
+                <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
+                <Input
+                  placeholder="Search..."
+                  value={searchTerm}
+                  onChange={(e) => {
+                    setSearchTerm(e.target.value);
+                    setCurrentPage(1);
+                  }}
+                  className="pl-8"
+                />
+              </div>
             )}
-          </TableBody>
-        </Table>
-      </div>
-      <div className="flex items-center justify-end space-x-2">
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.previousPage()}
-          disabled={!table.getCanPreviousPage()}
-        >
-          Previous
-        </Button>
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.nextPage()}
-          disabled={!table.getCanNextPage()}
-        >
-          Next
-        </Button>
-      </div>
-    </div>
+            {columns
+              .filter((col) => col.filterable && col.options)
+              .map((col) => (
+                <Select
+                  key={String(col.key)}
+                  value={filters[col.key] as string}
+                  onValueChange={(value) => handleFilterChange(col.key, value)}
+                >
+                  <SelectTrigger className="w-[180px]">
+                    <SelectValue placeholder={`Filter by ${col.label}`} />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="">All</SelectItem>
+                    {col.options?.map((option) => (
+                      <SelectItem key={option.value} value={option.value}>
+                        {option.label}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              ))}
+          </div>
+
+          {/* Table */}
+          <div className="rounded-md border">
+            <div className="relative w-full overflow-auto">
+              <table className="w-full caption-bottom text-sm">
+                <thead className="[&_tr]:border-b">
+                  <tr className="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                    {columns.map((column) => (
+                      <th
+                        key={String(column.key)}
+                        className="h-12 px-4 text-left align-middle font-medium text-muted-foreground"
+                      >
+                        <div className="flex items-center gap-2">
+                          {column.label}
+                          {column.sortable && (
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className="h-8 w-8 p-0"
+                              onClick={() => handleSort(column.key)}
+                            >
+                              {renderSortIcon(column.key)}
+                            </Button>
+                          )}
+                        </div>
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="[&_tr:last-child]:border-0">
+                  {paginatedData.map((row, rowIndex) => (
+                    <tr
+                      key={rowIndex}
+                      className="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                    >
+                      {columns.map((column) => (
+                        <td
+                          key={String(column.key)}
+                          className="p-4 align-middle"
+                        >
+                          {column.render
+                            ? column.render(row[column.key], row)
+                            : row[column.key]?.toString() ?? "-"}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Pagination */}
+          <div className="flex items-center justify-between">
+            <div className="text-sm text-muted-foreground">
+              Showing {(currentPage - 1) * pageSize + 1} to{" "}
+              {Math.min(currentPage * pageSize, total)} of {total} entries
+            </div>
+            <div className="flex items-center gap-2">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+              >
+                Previous
+              </Button>
+              <Badge variant="outline" className="px-4">
+                Page {currentPage} of {totalPages}
+              </Badge>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() =>
+                  setCurrentPage((p) => Math.min(totalPages, p + 1))
+                }
+                disabled={currentPage === totalPages}
+              >
+                Next
+              </Button>
+            </div>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
   );
 }

@@ -1,54 +1,165 @@
+"use client";
+
+import { useState } from "react";
 import PageTransition from "@/components/PageTransition";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { DataTable, Column } from "@/components/ui/data-table";
 import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import { policies, apps, users } from "@/lib/seed";
-import { Shield, Lock, Unlock, AlertTriangle } from "lucide-react";
+  loadSeedData,
+  Policy,
+  DashboardMetrics,
+} from "@/lib/data/loadSeedData";
+import { Shield, Lock, AlertTriangle, CheckCircle } from "lucide-react";
 import { GradientText } from "@/components/ui/gradient-text";
 
-// Calculate policy metrics
-const calculatePolicyMetrics = () => {
-  const totalRoles = policies.length;
-  const totalApps = apps.length;
-  const totalActions = apps.reduce((acc, app) => acc + app.actions.length, 0);
-  const totalUsers = users.length;
+// Load policies data and metrics
+const policies = loadSeedData<"policies">("policies");
+const metrics = loadSeedData<"dashboardMetrics">("dashboardMetrics");
 
-  // Calculate compliance score (mock)
-  const complianceScore = Math.floor(Math.random() * 100);
-
-  return {
-    totalRoles,
-    totalApps,
-    totalActions,
-    totalUsers,
-    complianceScore,
-  };
-};
-
-// Get role distribution
-const getRoleDistribution = () => {
-  const roleCounts = users.reduce((acc, user) => {
-    acc[user.role] = (acc[user.role] || 0) + 1;
-    return acc;
-  }, {} as Record<string, number>);
-
-  return Object.entries(roleCounts).map(([role, count]) => ({
-    role,
-    count,
-    percentage: (count / users.length) * 100,
-  }));
-};
+// Define columns for the data table
+const columns: Column<Policy>[] = [
+  {
+    key: "id",
+    label: "Policy ID",
+    sortable: true,
+    searchable: true,
+  },
+  {
+    key: "name",
+    label: "Policy Name",
+    sortable: true,
+    searchable: true,
+  },
+  {
+    key: "priority",
+    label: "Priority",
+    sortable: true,
+    filterable: true,
+    options: [
+      { label: "Critical", value: "critical" },
+      { label: "High", value: "high" },
+      { label: "Medium", value: "medium" },
+      { label: "Low", value: "low" },
+    ],
+    render: (value: Policy["priority"]) => (
+      <Badge
+        variant={
+          value === "critical"
+            ? "destructive"
+            : value === "high"
+            ? "secondary"
+            : "default"
+        }
+      >
+        {value.charAt(0).toUpperCase() + value.slice(1)}
+      </Badge>
+    ),
+  },
+  {
+    key: "status",
+    label: "Status",
+    sortable: true,
+    filterable: true,
+    options: [
+      { label: "Active", value: "active" },
+      { label: "Inactive", value: "inactive" },
+      { label: "Draft", value: "draft" },
+    ],
+    render: (value: Policy["status"]) => (
+      <Badge
+        variant={
+          value === "active"
+            ? "default"
+            : value === "inactive"
+            ? "secondary"
+            : "outline"
+        }
+      >
+        {value.charAt(0).toUpperCase() + value.slice(1)}
+      </Badge>
+    ),
+  },
+  {
+    key: "conditions",
+    label: "Conditions",
+    sortable: false,
+    render: (value: Policy["conditions"]) => (
+      <div className="flex flex-col gap-1">
+        {value.carriers && (
+          <div className="flex flex-wrap gap-1">
+            {value.carriers.map((carrier, i) => (
+              <Badge key={i} variant="outline" className="w-fit">
+                {carrier}
+              </Badge>
+            ))}
+          </div>
+        )}
+        {value.os && (
+          <div className="flex flex-wrap gap-1">
+            {value.os.map((os, i) => (
+              <Badge key={i} variant="outline" className="w-fit">
+                {os}
+              </Badge>
+            ))}
+          </div>
+        )}
+        {value.deviceTypes && (
+          <div className="flex flex-wrap gap-1">
+            {value.deviceTypes.map((type, i) => (
+              <Badge key={i} variant="outline" className="w-fit">
+                {type}
+              </Badge>
+            ))}
+          </div>
+        )}
+        {value.timeRestrictions && (
+          <Badge variant="outline" className="w-fit">
+            {value.timeRestrictions.start}-{value.timeRestrictions.end}
+          </Badge>
+        )}
+      </div>
+    ),
+  },
+  {
+    key: "actions",
+    label: "Actions",
+    sortable: false,
+    render: (value: Policy["actions"]) => (
+      <div className="flex flex-col gap-1">
+        {value.map((action, i) => (
+          <Badge
+            key={i}
+            variant={
+              action.type === "allow"
+                ? "default"
+                : action.type === "deny"
+                ? "destructive"
+                : action.type === "notify"
+                ? "secondary"
+                : "outline"
+            }
+            className="w-fit"
+          >
+            {action.type.charAt(0).toUpperCase() + action.type.slice(1)}
+          </Badge>
+        ))}
+      </div>
+    ),
+  },
+  {
+    key: "lastEnforced",
+    label: "Last Enforced",
+    sortable: true,
+    render: (value: string) => (
+      <span className="text-sm">{new Date(value).toLocaleString()}</span>
+    ),
+  },
+];
 
 export default function PoliciesPage() {
-  const metrics = calculatePolicyMetrics();
-  const roleDistribution = getRoleDistribution();
+  // Get policy metrics from dashboard metrics
+  const { total, active, byPriority, enforcementStats } = metrics.policies;
 
   return (
     <PageTransition>
@@ -58,12 +169,16 @@ export default function PoliciesPage() {
             <GradientText variant="multi">Policy Management</GradientText>
           </h1>
           <Badge variant="outline" className="text-sm px-4 py-1">
-            {metrics.totalRoles} Roles, {metrics.totalApps} Apps
+            {total.toLocaleString()} Policies
           </Badge>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          <Card variant="blue" intensity="medium">
+          <Card
+            variant="blue"
+            intensity="medium"
+            className="glass dark:glass-dark"
+          >
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle>
                 <GradientText variant="blue">Active Policies</GradientText>
@@ -72,152 +187,85 @@ export default function PoliciesPage() {
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-gradient">
-                {metrics.totalRoles}
+                {active.toLocaleString()}
               </div>
               <div className="text-xs text-muted-foreground mt-2">
-                Across {metrics.totalApps} applications
+                Currently enforced
               </div>
             </CardContent>
           </Card>
 
-          <Card variant="purple" intensity="medium">
+          <Card
+            variant="green"
+            intensity="medium"
+            className="glass dark:glass-dark"
+          >
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle>
-                <GradientText variant="purple">Enforced Policies</GradientText>
+                <GradientText variant="green">Allowed Actions</GradientText>
               </CardTitle>
-              <Lock className="h-6 w-6 text-primary" />
+              <CheckCircle className="h-6 w-6 text-green-500" />
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-gradient">
-                {metrics.totalActions}
+              <div className="text-3xl font-bold text-green-500">
+                {enforcementStats.allowed.toLocaleString()}
               </div>
               <div className="text-xs text-muted-foreground mt-2">
-                Protected by policies
+                Policy-compliant actions
               </div>
             </CardContent>
           </Card>
 
-          <Card variant="orange" intensity="medium">
+          <Card
+            variant="orange"
+            intensity="medium"
+            className="glass dark:glass-dark"
+          >
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle>
-                <GradientText variant="orange">Policy Violations</GradientText>
+                <GradientText variant="orange">Denied Actions</GradientText>
               </CardTitle>
               <AlertTriangle className="h-6 w-6 text-orange-500" />
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-orange-500">
-                {metrics.complianceScore}%
+                {enforcementStats.denied.toLocaleString()}
               </div>
               <div className="text-xs text-muted-foreground mt-2">
-                Overall policy adherence
+                Policy violations
               </div>
             </CardContent>
           </Card>
 
-          <Card variant="green" intensity="medium">
+          <Card
+            variant="purple"
+            intensity="medium"
+            className="glass dark:glass-dark"
+          >
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle>
-                <GradientText variant="green">Policy Compliance</GradientText>
+                <GradientText variant="purple">Quarantined</GradientText>
               </CardTitle>
-              <Unlock className="h-6 w-6 text-primary" />
+              <Lock className="h-6 w-6 text-purple-500" />
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-gradient">
-                {metrics.totalUsers.toLocaleString()}
+              <div className="text-3xl font-bold text-purple-500">
+                {enforcementStats.quarantined.toLocaleString()}
               </div>
               <div className="text-xs text-muted-foreground mt-2">
-                Protected by role-based policies
+                Devices under quarantine
               </div>
             </CardContent>
           </Card>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-gradient-primary">
-                Role Distribution
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                {roleDistribution.map(({ role, count, percentage }) => (
-                  <div key={role} className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm font-medium">{role}</span>
-                      <span className="text-sm text-muted-foreground">
-                        {count.toLocaleString()} users
-                      </span>
-                    </div>
-                    <div className="h-2 bg-secondary rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-amber-300"
-                        style={{ width: `${percentage}%` }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-gradient-primary">
-                Policy Details
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead>Role</TableHead>
-                    <TableHead>App</TableHead>
-                    <TableHead>Allowed Actions</TableHead>
-                    <TableHead>Denied Actions</TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {policies.map((policy) =>
-                    Object.entries(policy.appPermissions).map(
-                      ([appId, permissions]) => {
-                        const app = apps.find((a) => a.appId === appId);
-                        if (!app) return null;
-
-                        return (
-                          <TableRow key={`${policy.roleId}-${appId}`}>
-                            <TableCell className="font-medium">
-                              {policy.roleId}
-                            </TableCell>
-                            <TableCell>{app.appName}</TableCell>
-                            <TableCell>
-                              <div className="flex flex-wrap gap-1">
-                                {permissions.allowed.map((action) => (
-                                  <Badge key={action} variant="secondary">
-                                    {action === "*" ? "All Actions" : action}
-                                  </Badge>
-                                ))}
-                              </div>
-                            </TableCell>
-                            <TableCell>
-                              <div className="flex flex-wrap gap-1">
-                                {permissions.denied.map((action) => (
-                                  <Badge key={action} variant="destructive">
-                                    {action}
-                                  </Badge>
-                                ))}
-                              </div>
-                            </TableCell>
-                          </TableRow>
-                        );
-                      }
-                    )
-                  )}
-                </TableBody>
-              </Table>
-            </CardContent>
-          </Card>
-        </div>
+        <DataTable
+          columns={columns}
+          data={policies}
+          pageSize={20}
+          title="Policy Directory"
+          description="Manage and monitor all policies in your network"
+        />
       </div>
     </PageTransition>
   );

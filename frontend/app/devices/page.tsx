@@ -1,31 +1,85 @@
+"use client";
+
+import { useState } from "react";
 import PageTransition from "@/components/PageTransition";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { SmartTable } from "@/components/ui/SmartTable";
-import { loadSeedData } from "@/lib/data/loadSeedData";
-import { Smartphone, Shield, AlertTriangle, CheckCircle2 } from "lucide-react";
+import { DataTable, Column } from "@/components/ui/data-table";
+import {
+  loadSeedData,
+  Device,
+  DashboardMetrics,
+} from "../../lib/data/loadSeedData";
+import { Smartphone, Shield, AlertTriangle, Lock } from "lucide-react";
 import { GradientText } from "@/components/ui/gradient-text";
 
-// Load devices data from seed-data/devices.json
-const devices = loadSeedData<{
-  deviceSerial: string;
-  status: string;
-  lastSeen: string;
-  deniedActions: number;
-  complianceScore: number;
-  enterprise: string;
-  carrier: string;
-  os: string;
-  model: string;
-}>("devices.json");
+// Load devices data and metrics
+const devices = loadSeedData<"devices">("devices");
+const metrics = loadSeedData<"dashboardMetrics">("dashboardMetrics");
 
-// Define columns for SmartTable (with search, filter, sort)
-const columns = [
+// Define columns for the data table
+const columns: Column<Device>[] = [
   {
-    key: "deviceSerial",
-    label: "Device Serial",
+    key: "id",
+    label: "Device ID",
     sortable: true,
-    searchKey: "deviceSerial",
+    searchable: true,
+  },
+  {
+    key: "name",
+    label: "Device Name",
+    sortable: true,
+    searchable: true,
+  },
+  {
+    key: "type",
+    label: "Type",
+    sortable: true,
+    filterable: true,
+    options: [
+      { label: "Smartphone", value: "smartphone" },
+      { label: "Tablet", value: "tablet" },
+      { label: "IoT", value: "iot" },
+      { label: "Other", value: "other" },
+    ],
+    render: (value: Device["type"]) => (
+      <Badge variant="outline" className="w-fit">
+        {value.charAt(0).toUpperCase() + value.slice(1)}
+      </Badge>
+    ),
+  },
+  {
+    key: "os",
+    label: "Operating System",
+    sortable: true,
+    filterable: true,
+    options: [
+      { label: "iOS", value: "ios" },
+      { label: "Android", value: "android" },
+      { label: "Windows", value: "windows" },
+      { label: "Linux", value: "linux" },
+    ],
+    render: (value: Device["os"]) => (
+      <Badge variant="outline" className="w-fit">
+        {value.charAt(0).toUpperCase() + value.slice(1)}
+      </Badge>
+    ),
+  },
+  {
+    key: "carrier",
+    label: "Carrier",
+    sortable: true,
+    filterable: true,
+    options: [
+      { label: "AT&T", value: "ATT" },
+      { label: "T-Mobile", value: "TMO" },
+      { label: "Verizon", value: "VZW" },
+    ],
+    render: (value: Device["carrier"]) => (
+      <Badge variant="outline" className="w-fit">
+        {value}
+      </Badge>
+    ),
   },
   {
     key: "status",
@@ -35,96 +89,63 @@ const columns = [
     options: [
       { label: "Active", value: "active" },
       { label: "Inactive", value: "inactive" },
-      { label: "Non-Compliant", value: "non-compliant" },
-      { label: "Blocked", value: "blocked" },
+      { label: "Quarantined", value: "quarantined" },
     ],
+    render: (value: Device["status"]) => (
+      <Badge
+        variant={
+          value === "active"
+            ? "default"
+            : value === "inactive"
+            ? "secondary"
+            : "destructive"
+        }
+      >
+        {value.charAt(0).toUpperCase() + value.slice(1)}
+      </Badge>
+    ),
   },
   {
     key: "lastSeen",
     label: "Last Seen",
     sortable: true,
-    render: (val: string) =>
-      new Date(val).toLocaleString([], {
-        month: "short",
-        day: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-      }),
-  },
-  { key: "deniedActions", label: "Denied Actions", sortable: true },
-  {
-    key: "complianceScore",
-    label: "Compliance",
-    sortable: true,
-    render: (val: number, row: any) => (
-      <div className="flex items-center gap-2">
-        {" "}
-        <div className="w-16 h-2 bg-secondary rounded-full overflow-hidden">
-          {" "}
-          <div
-            className={
-              val >= 80
-                ? "h-full bg-green-500"
-                : val >= 60
-                ? "h-full bg-yellow-500"
-                : "h-full bg-destructive"
-            }
-            style={{ width: `${val}%` }}
-          />{" "}
-        </div>{" "}
-        <span className="text-sm">{val}%</span>{" "}
-      </div>
+    render: (value: string) => (
+      <span className="text-sm">{new Date(value).toLocaleString()}</span>
     ),
   },
   {
-    key: "enterprise",
-    label: "Enterprise",
+    key: "securityStatus",
+    label: "Security",
     sortable: true,
     filterable: true,
-    options: Array.from(new Set(devices.map((d) => d.enterprise))).map((e) => ({
-      label: e,
-      value: e,
-    })),
-  },
-  {
-    key: "carrier",
-    label: "Carrier",
-    sortable: true,
-    filterable: true,
-    options: Array.from(new Set(devices.map((d) => d.carrier))).map((c) => ({
-      label: c,
-      value: c,
-    })),
-  },
-  {
-    key: "os",
-    label: "OS",
-    sortable: true,
-    filterable: true,
-    options: Array.from(new Set(devices.map((d) => d.os))).map((o) => ({
-      label: o,
-      value: o,
-    })),
-  },
-  {
-    key: "model",
-    label: "Model",
-    sortable: true,
-    filterable: true,
-    options: Array.from(new Set(devices.map((d) => d.model))).map((m) => ({
-      label: m,
-      value: m,
-    })),
+    options: [
+      { label: "Compliant", value: "compliant" },
+      { label: "Non-compliant", value: "non-compliant" },
+      { label: "At Risk", value: "at-risk" },
+    ],
+    render: (value: Device["securityStatus"]) => (
+      <Badge
+        variant={
+          value.isCompliant
+            ? "default"
+            : value.vulnerabilities > 0
+            ? "destructive"
+            : "secondary"
+        }
+      >
+        {value.isCompliant
+          ? "Compliant"
+          : value.vulnerabilities > 0
+          ? "Non-compliant"
+          : "At Risk"}
+      </Badge>
+    ),
   },
 ];
 
 export default function DevicesPage() {
-  // (Optional) Compute dashboard metrics (e.g. total devices, devices at risk, blocked devices) from devices data
-  const totalDevices = devices.length;
-  const devicesAtRisk = devices.filter(
-    (d) => d.status === "non-compliant"
-  ).length;
-  const blockedDevices = devices.filter((d) => d.status === "blocked").length;
+  // Get device metrics from dashboard metrics
+  const { total, active, byOS, byCarrier, nonCompliant } = metrics.devices;
 
   return (
     <PageTransition>
@@ -134,11 +155,11 @@ export default function DevicesPage() {
             <GradientText variant="multi">Device Management</GradientText>
           </h1>
           <Badge variant="outline" className="text-sm px-4 py-1">
-            {totalDevices.toLocaleString()} Devices Active
+            {total.toLocaleString()} Devices
           </Badge>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <Card
             variant="blue"
             intensity="medium"
@@ -152,10 +173,31 @@ export default function DevicesPage() {
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-gradient">
-                {totalDevices.toLocaleString()}
+                {total.toLocaleString()}
               </div>
               <div className="text-xs text-muted-foreground mt-2">
-                Across enterprises
+                Network devices
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card
+            variant="green"
+            intensity="medium"
+            className="glass dark:glass-dark"
+          >
+            <CardHeader className="flex flex-row items-center justify-between pb-2">
+              <CardTitle>
+                <GradientText variant="green">Active Devices</GradientText>
+              </CardTitle>
+              <Shield className="h-6 w-6 text-green-500" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-3xl font-bold text-green-500">
+                {active.toLocaleString()}
+              </div>
+              <div className="text-xs text-muted-foreground mt-2">
+                Currently online
               </div>
             </CardContent>
           </Card>
@@ -167,16 +209,16 @@ export default function DevicesPage() {
           >
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle>
-                <GradientText variant="orange">Devices at Risk</GradientText>
+                <GradientText variant="orange">Non-compliant</GradientText>
               </CardTitle>
               <AlertTriangle className="h-6 w-6 text-orange-500" />
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-orange-500">
-                {devicesAtRisk.toLocaleString()}
+                {nonCompliant.toLocaleString()}
               </div>
               <div className="text-xs text-muted-foreground mt-2">
-                Requires attention
+                Policy violations
               </div>
             </CardContent>
           </Card>
@@ -188,40 +230,30 @@ export default function DevicesPage() {
           >
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle>
-                <GradientText variant="purple">Blocked Devices</GradientText>
+                <GradientText variant="purple">Quarantined</GradientText>
               </CardTitle>
-              <Shield className="h-6 w-6 text-destructive" />
+              <Lock className="h-6 w-6 text-purple-500" />
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-destructive">
-                {blockedDevices.toLocaleString()}
+              <div className="text-3xl font-bold text-purple-500">
+                {devices
+                  .filter((d: Device) => d.status === "quarantined")
+                  .length.toLocaleString()}
               </div>
               <div className="text-xs text-muted-foreground mt-2">
-                Security policy violation
+                Isolated devices
               </div>
             </CardContent>
           </Card>
         </div>
 
-        <Card
-          variant="blue"
-          intensity="medium"
-          className="glass dark:glass-dark"
-        >
-          <CardHeader>
-            <CardTitle>
-              <GradientText variant="blue">Device List</GradientText>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <SmartTable
-              columns={columns}
-              data={devices}
-              searchKey="deviceSerial"
-              pageSize={20}
-            />
-          </CardContent>
-        </Card>
+        <DataTable
+          columns={columns}
+          data={devices}
+          pageSize={20}
+          title="Device Directory"
+          description="Manage and monitor all devices in your network"
+        />
       </div>
     </PageTransition>
   );
