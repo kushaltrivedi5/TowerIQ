@@ -94,7 +94,7 @@ const handler = NextAuth({
         console.log('Loaded users count:', users.length);
         
         // Find user by email
-        const user = users.find(u => u.email === credentials.email);
+        const user = users.find(u => u.email.toLowerCase() === credentials.email.toLowerCase());
         console.log('Found user:', user ? 'Yes' : 'No');
         
         if (user) {
