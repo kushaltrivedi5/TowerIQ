@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DataTable, Column } from "@/components/ui/data-table";
 import { FullPageLoadingSpinner } from "@/components/ui/loading-spinner";
-import { Smartphone, Shield, AlertTriangle } from "lucide-react";
+import { Smartphone } from "lucide-react";
 import { useEnterpriseData } from "@/lib/hooks/useEnterpriseData";
 import type {
   Device,
@@ -132,17 +132,7 @@ export default function EnterpriseDevicesPage({
   const [error, setError] = useState<string | null>(null);
   const { id } = use(params);
 
-  const {
-    data: devices,
-    loading: devicesLoading,
-    error: devicesError,
-    page,
-    totalPages,
-    totalItems,
-    nextPage,
-    previousPage,
-    goToPage,
-  } = useEnterpriseData<Device>({
+  const { data: devices } = useEnterpriseData<Device>({
     type: "devices",
     pageSize: 10,
   });

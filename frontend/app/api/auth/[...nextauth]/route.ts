@@ -13,13 +13,6 @@ const hashPassword = async (password: string) => {
   return await bcrypt.hash(password, saltRounds);
 };
 
-const comparePasswords = async (plainPassword: string, hash: string) => {
-  return await bcrypt.compare(plainPassword, hash);
-};
-
-// Pre-hash password123 for all enterprise users
-const samplePasswordHash = await hashPassword("password123");
-
 // Define the enterprise user type
 interface EnterpriseUser {
   id: string;
@@ -77,9 +70,6 @@ async function loadEnterpriseUsers(): Promise<EnterpriseUser[]> {
     return [];
   }
 }
-
-// Pre-hashed password for all enterprise users (password123)
-const HASHED_PASSWORD = '$2a$10$K7L1OJ45/4Y2nIvhRVpCe.FSmhDdWoXehVzJptJ/op0lSsvqNu9Uu';
 
 const handler = NextAuth({
   providers: [

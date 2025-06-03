@@ -1,557 +1,269 @@
 {
   "devices": {
-    "total": 163,
-    "active": 36,
-    "nonCompliant": 39,
-    "discovered": 42,
+    "total": 938,
+    "active": 234,
+    "nonCompliant": 188,
+    "discovered": 245,
     "byType": {
-      "smartphone": 43,
-      "tablet": 31,
-      "laptop": 32,
-      "IoT": 40,
-      "gateway": 17
+      "smartphone": 174,
+      "tablet": 187,
+      "laptop": 199,
+      "IoT": 175,
+      "gateway": 203
     },
     "byOS": {
-      "iOS": 25,
-      "Android": 44,
-      "Windows": 49,
-      "Other": 45
+      "iOS": 236,
+      "Android": 232,
+      "Windows": 238,
+      "Other": 232
     },
     "byCarrier": {
-      "AT&T": 31,
-      "Verizon": 35,
-      "T-Mobile": 27,
-      "Sprint": 31,
-      "US Cellular": 39
+      "AT&T": 171,
+      "Verizon": 184,
+      "T-Mobile": 199,
+      "Sprint": 189,
+      "US Cellular": 195
     }
   },
   "policies": {
-    "total": 25,
-    "active": 10,
+    "total": 46,
+    "active": 19,
     "byPriority": {
-      "low": 5,
-      "medium": 9,
-      "high": 7,
-      "critical": 4
+      "low": 11,
+      "medium": 12,
+      "high": 9,
+      "critical": 14
     },
     "enforcementStats": {
-      "total": 14337,
-      "violations": 1582,
-      "autoRemediated": 763
+      "total": 24018,
+      "violations": 2605,
+      "autoRemediated": 1278
     }
   },
   "towers": {
-    "total": 17,
-    "active": 7,
+    "total": 5,
+    "active": 1,
     "byCarrier": {
-      "AT&T": 8,
-      "Verizon": 8,
-      "T-Mobile": 5,
-      "Sprint": 3,
-      "US Cellular": 8
+      "AT&T": 0,
+      "Verizon": 2,
+      "T-Mobile": 3,
+      "Sprint": 1,
+      "US Cellular": 2
     },
     "byStatus": {
-      "active": 7,
-      "maintenance": 8,
-      "inactive": 2
+      "active": 1,
+      "maintenance": 1,
+      "inactive": 3
     }
   },
   "security": {
-    "complianceScore": 66,
-    "criticalAlerts": 2,
+    "complianceScore": 97,
+    "criticalAlerts": 5,
     "recentIncidents": [
       {
-        "id": "9ad3af7d-0277-4a1a-9c5b-d1b43090460c",
-        "type": "tower_maintenance",
-        "severity": "medium",
-        "description": "Itaque calcar veniam sustineo conculco cruentus aut debilito.",
-        "timestamp": "2025-05-29T05:24:51.558Z",
+        "id": "8af25dda-4dd3-4ae8-b93d-6aa5449355b3",
+        "type": "device_discovery",
+        "severity": "critical",
+        "description": "Canonicus sustineo cuius tui depulso conforto abundans conservo supellex.",
+        "timestamp": "2025-05-30T08:36:52.836Z",
         "affectedEntities": [
           {
-            "type": "device",
-            "id": "d0d34e94-2ec1-423c-a3e1-6b61d8ec5fbd"
+            "type": "tower",
+            "id": "caa7f81f-036b-40a5-85ca-871ae385b6fc"
+          },
+          {
+            "type": "tower",
+            "id": "db9defe0-633e-4130-b61b-62f055f94197"
           }
         ],
-        "status": "resolved"
+        "status": "investigating"
+      },
+      {
+        "id": "581a4fe2-6f59-4901-93a2-7a6665ed07a7",
+        "type": "security_breach",
+        "severity": "high",
+        "description": "Ventosus demoror theatrum impedit arx.",
+        "timestamp": "2025-05-31T19:48:48.203Z",
+        "affectedEntities": [
+          {
+            "type": "tower",
+            "id": "ebb0ca36-6d2e-449b-9d98-50a573cce74b"
+          },
+          {
+            "type": "policy",
+            "id": "048bfe47-8e5d-4ce1-a5e0-98550fecde57"
+          }
+        ],
+        "status": "resolved",
+        "resolution": {
+          "action": "Vulpes crepusculum alienus supra vulgaris agnosco tibi stella.",
+          "resolvedBy": "ffe73ae0-ae7a-4f04-a136-a49b1d0f3785",
+          "resolvedAt": "2025-06-03T07:28:27.861Z"
+        }
       }
     ]
   },
   "apps": {
-    "total": 93,
+    "total": 30,
     "byCategory": {
-      "productivity": 20,
-      "security": 17,
-      "communication": 17,
-      "enterprise": 22,
-      "custom": 17
+      "productivity": 3,
+      "security": 11,
+      "communication": 4,
+      "enterprise": 6,
+      "custom": 6
     },
     "usageStats": {
-      "totalActions": 2558,
-      "violations": 1712,
+      "totalActions": 15620,
+      "violations": 10465,
       "byApp": {
         "app_00000001": {
-          "total": 46,
-          "violations": 34,
+          "total": 582,
+          "violations": 398,
           "lastUsed": ""
         },
         "app_00000002": {
-          "total": 33,
-          "violations": 21,
+          "total": 474,
+          "violations": 331,
           "lastUsed": ""
         },
         "app_00000003": {
-          "total": 23,
-          "violations": 14,
+          "total": 488,
+          "violations": 338,
           "lastUsed": ""
         },
         "app_00000004": {
-          "total": 47,
-          "violations": 28,
+          "total": 435,
+          "violations": 293,
           "lastUsed": ""
         },
         "app_00000005": {
-          "total": 39,
-          "violations": 25,
+          "total": 533,
+          "violations": 366,
           "lastUsed": ""
         },
         "app_00000006": {
-          "total": 37,
-          "violations": 25,
+          "total": 527,
+          "violations": 328,
           "lastUsed": ""
         },
         "app_00000007": {
-          "total": 10,
-          "violations": 7,
+          "total": 580,
+          "violations": 391,
           "lastUsed": ""
         },
         "app_00000008": {
-          "total": 3,
-          "violations": 3,
+          "total": 420,
+          "violations": 288,
           "lastUsed": ""
         },
         "app_00000009": {
-          "total": 40,
-          "violations": 25,
+          "total": 680,
+          "violations": 461,
           "lastUsed": ""
         },
         "app_00000010": {
-          "total": 31,
-          "violations": 21,
+          "total": 452,
+          "violations": 302,
           "lastUsed": ""
         },
         "app_00000011": {
-          "total": 27,
-          "violations": 12,
+          "total": 450,
+          "violations": 299,
           "lastUsed": ""
         },
         "app_00000012": {
-          "total": 12,
-          "violations": 6,
+          "total": 554,
+          "violations": 360,
           "lastUsed": ""
         },
         "app_00000013": {
-          "total": 22,
-          "violations": 17,
+          "total": 463,
+          "violations": 324,
           "lastUsed": ""
         },
         "app_00000014": {
-          "total": 21,
-          "violations": 17,
+          "total": 435,
+          "violations": 284,
           "lastUsed": ""
         },
         "app_00000015": {
-          "total": 40,
-          "violations": 26,
+          "total": 534,
+          "violations": 361,
           "lastUsed": ""
         },
         "app_00000016": {
-          "total": 6,
-          "violations": 1,
+          "total": 546,
+          "violations": 356,
           "lastUsed": ""
         },
         "app_00000017": {
-          "total": 31,
-          "violations": 21,
+          "total": 589,
+          "violations": 419,
           "lastUsed": ""
         },
         "app_00000018": {
-          "total": 30,
-          "violations": 21,
+          "total": 658,
+          "violations": 440,
           "lastUsed": ""
         },
         "app_00000019": {
-          "total": 24,
-          "violations": 15,
+          "total": 594,
+          "violations": 397,
           "lastUsed": ""
         },
         "app_00000020": {
-          "total": 37,
-          "violations": 19,
+          "total": 562,
+          "violations": 388,
           "lastUsed": ""
         },
         "app_00000021": {
-          "total": 30,
-          "violations": 24,
+          "total": 484,
+          "violations": 324,
           "lastUsed": ""
         },
         "app_00000022": {
-          "total": 20,
-          "violations": 17,
+          "total": 477,
+          "violations": 300,
           "lastUsed": ""
         },
         "app_00000023": {
-          "total": 20,
-          "violations": 10,
+          "total": 522,
+          "violations": 344,
           "lastUsed": ""
         },
         "app_00000024": {
-          "total": 28,
-          "violations": 23,
+          "total": 482,
+          "violations": 322,
           "lastUsed": ""
         },
         "app_00000025": {
-          "total": 39,
-          "violations": 22,
+          "total": 468,
+          "violations": 298,
           "lastUsed": ""
         },
         "app_00000026": {
-          "total": 17,
-          "violations": 13,
+          "total": 547,
+          "violations": 369,
           "lastUsed": ""
         },
         "app_00000027": {
-          "total": 33,
-          "violations": 20,
+          "total": 525,
+          "violations": 353,
           "lastUsed": ""
         },
         "app_00000028": {
-          "total": 37,
-          "violations": 22,
+          "total": 540,
+          "violations": 341,
           "lastUsed": ""
         },
         "app_00000029": {
-          "total": 37,
-          "violations": 25,
+          "total": 356,
+          "violations": 249,
           "lastUsed": ""
         },
         "app_00000030": {
-          "total": 31,
-          "violations": 25,
-          "lastUsed": ""
-        },
-        "app_00000031": {
-          "total": 21,
-          "violations": 13,
-          "lastUsed": ""
-        },
-        "app_00000032": {
-          "total": 32,
-          "violations": 18,
-          "lastUsed": ""
-        },
-        "app_00000033": {
-          "total": 29,
-          "violations": 17,
-          "lastUsed": ""
-        },
-        "app_00000034": {
-          "total": 60,
-          "violations": 41,
-          "lastUsed": ""
-        },
-        "app_00000035": {
-          "total": 35,
-          "violations": 25,
-          "lastUsed": ""
-        },
-        "app_00000036": {
-          "total": 34,
-          "violations": 22,
-          "lastUsed": ""
-        },
-        "app_00000037": {
-          "total": 21,
-          "violations": 14,
-          "lastUsed": ""
-        },
-        "app_00000038": {
-          "total": 26,
-          "violations": 18,
-          "lastUsed": ""
-        },
-        "app_00000039": {
-          "total": 20,
-          "violations": 10,
-          "lastUsed": ""
-        },
-        "app_00000040": {
-          "total": 57,
-          "violations": 40,
-          "lastUsed": ""
-        },
-        "app_00000041": {
-          "total": 17,
-          "violations": 13,
-          "lastUsed": ""
-        },
-        "app_00000042": {
-          "total": 43,
-          "violations": 28,
-          "lastUsed": ""
-        },
-        "app_00000043": {
-          "total": 46,
-          "violations": 35,
-          "lastUsed": ""
-        },
-        "app_00000044": {
-          "total": 38,
-          "violations": 25,
-          "lastUsed": ""
-        },
-        "app_00000045": {
-          "total": 25,
-          "violations": 16,
-          "lastUsed": ""
-        },
-        "app_00000046": {
-          "total": 15,
-          "violations": 9,
-          "lastUsed": ""
-        },
-        "app_00000047": {
-          "total": 15,
-          "violations": 7,
-          "lastUsed": ""
-        },
-        "app_00000048": {
-          "total": 16,
-          "violations": 12,
-          "lastUsed": ""
-        },
-        "app_00000049": {
-          "total": 29,
-          "violations": 22,
-          "lastUsed": ""
-        },
-        "app_00000050": {
-          "total": 16,
-          "violations": 11,
-          "lastUsed": ""
-        },
-        "app_00000051": {
-          "total": 4,
-          "violations": 1,
-          "lastUsed": ""
-        },
-        "app_00000052": {
-          "total": 17,
-          "violations": 13,
-          "lastUsed": ""
-        },
-        "app_00000053": {
-          "total": 20,
-          "violations": 9,
-          "lastUsed": ""
-        },
-        "app_00000054": {
-          "total": 45,
-          "violations": 32,
-          "lastUsed": ""
-        },
-        "app_00000055": {
-          "total": 41,
-          "violations": 27,
-          "lastUsed": ""
-        },
-        "app_00000056": {
-          "total": 39,
-          "violations": 27,
-          "lastUsed": ""
-        },
-        "app_00000057": {
-          "total": 9,
-          "violations": 7,
-          "lastUsed": ""
-        },
-        "app_00000058": {
-          "total": 56,
-          "violations": 41,
-          "lastUsed": ""
-        },
-        "app_00000059": {
-          "total": 38,
-          "violations": 22,
-          "lastUsed": ""
-        },
-        "app_00000060": {
-          "total": 43,
-          "violations": 34,
-          "lastUsed": ""
-        },
-        "app_00000061": {
-          "total": 12,
-          "violations": 6,
-          "lastUsed": ""
-        },
-        "app_00000062": {
-          "total": 19,
-          "violations": 14,
-          "lastUsed": ""
-        },
-        "app_00000063": {
-          "total": 32,
-          "violations": 21,
-          "lastUsed": ""
-        },
-        "app_00000064": {
-          "total": 30,
-          "violations": 22,
-          "lastUsed": ""
-        },
-        "app_00000065": {
-          "total": 22,
-          "violations": 12,
-          "lastUsed": ""
-        },
-        "app_00000066": {
-          "total": 20,
-          "violations": 13,
-          "lastUsed": ""
-        },
-        "app_00000067": {
-          "total": 52,
-          "violations": 32,
-          "lastUsed": ""
-        },
-        "app_00000068": {
-          "total": 19,
-          "violations": 16,
-          "lastUsed": ""
-        },
-        "app_00000069": {
-          "total": 33,
-          "violations": 19,
-          "lastUsed": ""
-        },
-        "app_00000070": {
-          "total": 23,
-          "violations": 12,
-          "lastUsed": ""
-        },
-        "app_00000071": {
-          "total": 40,
-          "violations": 27,
-          "lastUsed": ""
-        },
-        "app_00000072": {
-          "total": 38,
-          "violations": 24,
-          "lastUsed": ""
-        },
-        "app_00000073": {
-          "total": 10,
-          "violations": 7,
-          "lastUsed": ""
-        },
-        "app_00000074": {
-          "total": 25,
-          "violations": 15,
-          "lastUsed": ""
-        },
-        "app_00000075": {
-          "total": 34,
-          "violations": 23,
-          "lastUsed": ""
-        },
-        "app_00000076": {
-          "total": 7,
-          "violations": 5,
-          "lastUsed": ""
-        },
-        "app_00000077": {
-          "total": 20,
-          "violations": 14,
-          "lastUsed": ""
-        },
-        "app_00000078": {
-          "total": 0,
-          "violations": 0,
-          "lastUsed": "2025-06-03T11:05:41.274Z"
-        },
-        "app_00000079": {
-          "total": 45,
-          "violations": 32,
-          "lastUsed": ""
-        },
-        "app_00000080": {
-          "total": 24,
-          "violations": 11,
-          "lastUsed": ""
-        },
-        "app_00000081": {
-          "total": 39,
-          "violations": 25,
-          "lastUsed": ""
-        },
-        "app_00000082": {
-          "total": 11,
-          "violations": 9,
-          "lastUsed": ""
-        },
-        "app_00000083": {
-          "total": 14,
-          "violations": 11,
-          "lastUsed": ""
-        },
-        "app_00000084": {
-          "total": 24,
-          "violations": 16,
-          "lastUsed": ""
-        },
-        "app_00000085": {
-          "total": 7,
-          "violations": 6,
-          "lastUsed": ""
-        },
-        "app_00000086": {
-          "total": 20,
-          "violations": 17,
-          "lastUsed": ""
-        },
-        "app_00000087": {
-          "total": 35,
-          "violations": 23,
-          "lastUsed": ""
-        },
-        "app_00000088": {
-          "total": 23,
-          "violations": 18,
-          "lastUsed": ""
-        },
-        "app_00000089": {
-          "total": 17,
-          "violations": 11,
-          "lastUsed": ""
-        },
-        "app_00000090": {
-          "total": 20,
-          "violations": 18,
-          "lastUsed": ""
-        },
-        "app_00000091": {
-          "total": 18,
-          "violations": 14,
-          "lastUsed": ""
-        },
-        "app_00000092": {
-          "total": 36,
-          "violations": 27,
-          "lastUsed": ""
-        },
-        "app_00000093": {
-          "total": 31,
-          "violations": 24,
+          "total": 663,
+          "violations": 441,
           "lastUsed": ""
         }
       }
