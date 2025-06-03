@@ -1,4 +1,5 @@
-import { Device, Tower, Enterprise, Policy, DashboardMetrics } from './generate-seed-data';
+import { Device, Tower, Enterprise, Policy, DashboardMetrics } from './domain-types';
+
 
 type SeedDataType = {
   devices: Device[];
@@ -26,8 +27,7 @@ const emptyDashboardMetrics: DashboardMetrics = {
       iOS: 0,
       Android: 0,
       Windows: 0,
-      macOS: 0,
-      Linux: 0
+      Other: 0,
     },
     byCarrier: {
       'AT&T': 0,

@@ -408,4 +408,54 @@ export interface SeedConfig {
   subscriptionTiers: SubscriptionTier[];
   appCategories: AppCategory[];
   realEstateProviders: RealEstateProvider[];
+}
+
+export interface DashboardMetrics {
+  enterprises: {
+    total: number;
+    active: number;
+    bySubscription: {
+      basic: number;
+      standard: number;
+      premium: number;
+      enterprise: number;
+    };
+  };
+  devices: {
+    total: number;
+    active: number;
+    byOS: Record<OperatingSystem, number>;
+    byCarrier: Record<Carrier, number>;
+    nonCompliant: number;
+  };
+  towers: {
+    total: number;
+    active: number;
+    byCarrier: Record<Carrier, number>;
+    byStatus: Record<TowerStatus, number>;
+  };
+  policies: {
+    total: number;
+    active: number;
+    byPriority: Record<PolicyPriority, number>;
+    enforcementStats: {
+      allowed: number;
+      denied: number;
+      notified: number;
+      quarantined: number;
+    };
+  };
+  security: {
+    totalAlerts: number;
+    criticalAlerts: number;
+    complianceScore: number;
+    recentIncidents: Array<{
+      id: string;
+      type: string;
+      severity: 'low' | 'medium' | 'high' | 'critical';
+      description: string;
+      timestamp: string;
+      status: 'open' | 'investigating' | 'resolved';
+    }>;
+  };
 } 

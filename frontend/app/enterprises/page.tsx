@@ -13,6 +13,7 @@ import {
 import { Building2, Users, Shield, Star } from "lucide-react";
 import { GradientText } from "@/components/ui/gradient-text";
 import { FullPageLoadingSpinner } from "@/components/ui/loading-spinner";
+import { IntegrationType } from "@/lib/data/domain-types";
 
 // Define columns for the data table
 const columns: Column<Enterprise>[] = [
@@ -75,18 +76,30 @@ const columns: Column<Enterprise>[] = [
     sortable: true,
     render: (value: Enterprise["integrations"]) => (
       <div className="flex flex-wrap gap-1">
-        {value.map((integration, i) => (
-          <Badge
-            key={i}
-            variant={integration.status === "active" ? "default" : "secondary"}
-            className="w-fit"
-          >
-            {integration.type
-              .split("_")
-              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-              .join(" ")}
-          </Badge>
-        ))}
+        {value.map(
+          (
+            integration: {
+              type: IntegrationType;
+              status: "active" | "inactive" | "pending";
+            },
+            i: number
+          ) => (
+            <Badge
+              key={i}
+              variant={
+                integration.status === "active" ? "default" : "secondary"
+              }
+              className="w-fit"
+            >
+              {integration.type
+                .split("_")
+                .map(
+                  (word: string) => word.charAt(0).toUpperCase() + word.slice(1)
+                )
+                .join(" ")}
+            </Badge>
+          )
+        )}
       </div>
     ),
   },
