@@ -42,7 +42,7 @@ TowerIQ is a modern, enterprise-grade telecom infrastructure management platform
 - **Styling & UI**
 
   - [Tailwind CSS 4](https://tailwindcss.com/)
-  - [shadcn/ui](https://ui.shadcn.com/) (New York style)
+  - [shadcn/ui](https://ui.shadcn.com/)
   - [Lucide Icons 0.511.0](https://lucide.dev/)
   - [Framer Motion 12.15.0](https://www.framer.com/motion/)
 
@@ -61,7 +61,7 @@ TowerIQ is a modern, enterprise-grade telecom infrastructure management platform
 ### Prerequisites
 
 - Node.js 18.17 or later
-- npm, yarn, or pnpm
+- npm (Node Package Manager)
 
 ### Installation
 
@@ -76,10 +76,6 @@ TowerIQ is a modern, enterprise-grade telecom infrastructure management platform
 
    ```bash
    npm install
-   # or
-   yarn install
-   # or
-   pnpm install
    ```
 
 3. Set up environment variables:
@@ -88,7 +84,7 @@ TowerIQ is a modern, enterprise-grade telecom infrastructure management platform
    ```env
    # NextAuth Configuration
    NEXTAUTH_URL=http://localhost:3000
-   NEXTAUTH_SECRET=your-secret-key # Generate using: openssl rand -base64 32
+   NEXTAUTH_SECRET=your-secret-key
    BCRYPT_SALT_ROUNDS=10
    ```
 
@@ -96,10 +92,6 @@ TowerIQ is a modern, enterprise-grade telecom infrastructure management platform
 
    ```bash
    npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
    ```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
