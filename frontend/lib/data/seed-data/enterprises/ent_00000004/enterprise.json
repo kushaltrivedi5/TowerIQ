@@ -1,0 +1,6807 @@
+{
+  "id": "ent_00000004",
+  "name": "Windler - Larson Ltd",
+  "tier": "standard",
+  "createdAt": "2024-06-07T11:12:55.212Z",
+  "updatedAt": "2025-05-08T14:01:56.136Z",
+  "contactEmail": "Antonietta_Kuphal@hotmail.com",
+  "contactPhone": "601.511.9647 x31689",
+  "address": {
+    "street": "3910 Salvador Passage",
+    "city": "Turcottebury",
+    "state": "Alabama",
+    "country": "Hong Kong",
+    "zipCode": "12227-9448"
+  },
+  "subscription": {
+    "startDate": "2024-06-14T08:59:44.386Z",
+    "endDate": "2025-12-29T21:30:25.565Z",
+    "status": "active",
+    "features": {
+      "autoRemediation": false,
+      "realTimeMonitoring": false,
+      "customPolicies": false,
+      "deviceDiscovery": true,
+      "apiAccess": false
+    }
+  },
+  "metrics": {
+    "devices": {
+      "total": 0,
+      "active": 0,
+      "nonCompliant": 0
+    },
+    "policies": {
+      "total": 0,
+      "active": 0
+    },
+    "towers": {
+      "total": 0,
+      "active": 0
+    },
+    "security": {
+      "complianceScore": 87,
+      "criticalAlerts": 2,
+      "recentIncidents": []
+    }
+  },
+  "users": [
+    {
+      "id": "usr_4_000000",
+      "email": "Gerard.Bergnaum@yahoo.com",
+      "role": "admin",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000001"
+      ]
+    },
+    {
+      "id": "usr_4_000001",
+      "email": "Jarred_Kuphal55@yahoo.com",
+      "role": "admin",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000002",
+        "dev_00000002",
+        "dev_00000002"
+      ]
+    },
+    {
+      "id": "usr_4_000002",
+      "email": "Naomi62@hotmail.com",
+      "role": "admin",
+      "department": "Baby",
+      "devices": [
+        "dev_00000005",
+        "dev_00000005"
+      ]
+    },
+    {
+      "id": "usr_4_000003",
+      "email": "Buddy14@gmail.com",
+      "role": "admin",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000007"
+      ]
+    },
+    {
+      "id": "usr_4_000004",
+      "email": "Ambrose_Barrows@hotmail.com",
+      "role": "admin",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000008",
+        "dev_00000008"
+      ]
+    },
+    {
+      "id": "usr_4_000005",
+      "email": "Francesca_Cartwright@yahoo.com",
+      "role": "admin",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000010",
+        "dev_00000010",
+        "dev_00000010"
+      ]
+    },
+    {
+      "id": "usr_4_000006",
+      "email": "Lambert.Kiehn33@yahoo.com",
+      "role": "admin",
+      "department": "Kids",
+      "devices": [
+        "dev_00000013",
+        "dev_00000013"
+      ]
+    },
+    {
+      "id": "usr_4_000007",
+      "email": "Jeromy_Mayer24@hotmail.com",
+      "role": "admin",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000015",
+        "dev_00000015",
+        "dev_00000015"
+      ]
+    },
+    {
+      "id": "usr_4_000008",
+      "email": "Caleb25@gmail.com",
+      "role": "admin",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000018",
+        "dev_00000018",
+        "dev_00000018"
+      ]
+    },
+    {
+      "id": "usr_4_000009",
+      "email": "Rick.Gutmann56@gmail.com",
+      "role": "admin",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000021",
+        "dev_00000021"
+      ]
+    },
+    {
+      "id": "usr_4_000010",
+      "email": "Dallin74@gmail.com",
+      "role": "admin",
+      "department": "Computers",
+      "devices": [
+        "dev_00000023"
+      ]
+    },
+    {
+      "id": "usr_4_000011",
+      "email": "Emerald_Luettgen@yahoo.com",
+      "role": "admin",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000024"
+      ]
+    },
+    {
+      "id": "usr_4_000012",
+      "email": "Kasandra.Schneider41@gmail.com",
+      "role": "admin",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000025"
+      ]
+    },
+    {
+      "id": "usr_4_000013",
+      "email": "Presley.Gleason58@gmail.com",
+      "role": "admin",
+      "department": "Tools",
+      "devices": [
+        "dev_00000026",
+        "dev_00000026",
+        "dev_00000026"
+      ]
+    },
+    {
+      "id": "usr_4_000014",
+      "email": "Rosalyn_Kuvalis@yahoo.com",
+      "role": "admin",
+      "department": "Home",
+      "devices": [
+        "dev_00000029",
+        "dev_00000029",
+        "dev_00000029"
+      ]
+    },
+    {
+      "id": "usr_4_000015",
+      "email": "Everett65@gmail.com",
+      "role": "admin",
+      "department": "Movies",
+      "devices": [
+        "dev_00000032",
+        "dev_00000032",
+        "dev_00000032"
+      ]
+    },
+    {
+      "id": "usr_4_000016",
+      "email": "Hulda29@hotmail.com",
+      "role": "admin",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000035",
+        "dev_00000035",
+        "dev_00000035"
+      ]
+    },
+    {
+      "id": "usr_4_000017",
+      "email": "Casandra_DAmore54@yahoo.com",
+      "role": "admin",
+      "department": "Home",
+      "devices": [
+        "dev_00000038",
+        "dev_00000038",
+        "dev_00000038"
+      ]
+    },
+    {
+      "id": "usr_4_000018",
+      "email": "Tyra_Smith@hotmail.com",
+      "role": "admin",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000041",
+        "dev_00000041"
+      ]
+    },
+    {
+      "id": "usr_4_000019",
+      "email": "Darrell.Reynolds54@gmail.com",
+      "role": "admin",
+      "department": "Computers",
+      "devices": [
+        "dev_00000043"
+      ]
+    },
+    {
+      "id": "usr_4_000020",
+      "email": "Else68@hotmail.com",
+      "role": "admin",
+      "department": "Tools",
+      "devices": [
+        "dev_00000044"
+      ]
+    },
+    {
+      "id": "usr_4_000021",
+      "email": "Orville.Labadie-Stokes@hotmail.com",
+      "role": "admin",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000045"
+      ]
+    },
+    {
+      "id": "usr_4_000022",
+      "email": "Maia_Spinka@yahoo.com",
+      "role": "admin",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000046",
+        "dev_00000046",
+        "dev_00000046"
+      ]
+    },
+    {
+      "id": "usr_4_000023",
+      "email": "Shania16@hotmail.com",
+      "role": "admin",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000049"
+      ]
+    },
+    {
+      "id": "usr_4_000024",
+      "email": "Jacinto_Walsh@hotmail.com",
+      "role": "admin",
+      "department": "Sports",
+      "devices": [
+        "dev_00000050"
+      ]
+    },
+    {
+      "id": "usr_4_000025",
+      "email": "Jerrod_Bradtke-Mills@hotmail.com",
+      "role": "admin",
+      "department": "Home",
+      "devices": [
+        "dev_00000051"
+      ]
+    },
+    {
+      "id": "usr_4_000026",
+      "email": "Sonya38@gmail.com",
+      "role": "admin",
+      "department": "Tools",
+      "devices": [
+        "dev_00000052",
+        "dev_00000052",
+        "dev_00000052"
+      ]
+    },
+    {
+      "id": "usr_4_000027",
+      "email": "Norwood.Jast15@yahoo.com",
+      "role": "admin",
+      "department": "Baby",
+      "devices": [
+        "dev_00000055",
+        "dev_00000055"
+      ]
+    },
+    {
+      "id": "usr_4_000028",
+      "email": "Hilda59@yahoo.com",
+      "role": "admin",
+      "department": "Home",
+      "devices": [
+        "dev_00000057",
+        "dev_00000057"
+      ]
+    },
+    {
+      "id": "usr_4_000029",
+      "email": "Eusebio.Hackett@hotmail.com",
+      "role": "admin",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000059",
+        "dev_00000059"
+      ]
+    },
+    {
+      "id": "usr_4_000030",
+      "email": "Avery_Kerluke@hotmail.com",
+      "role": "admin",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000061",
+        "dev_00000061",
+        "dev_00000061"
+      ]
+    },
+    {
+      "id": "usr_4_000031",
+      "email": "Dannie_Gusikowski31@gmail.com",
+      "role": "admin",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000064",
+        "dev_00000064",
+        "dev_00000064"
+      ]
+    },
+    {
+      "id": "usr_4_000032",
+      "email": "Samara.Gottlieb@yahoo.com",
+      "role": "admin",
+      "department": "Tools",
+      "devices": [
+        "dev_00000067",
+        "dev_00000067",
+        "dev_00000067"
+      ]
+    },
+    {
+      "id": "usr_4_000033",
+      "email": "Trenton.Little@gmail.com",
+      "role": "admin",
+      "department": "Baby",
+      "devices": [
+        "dev_00000070",
+        "dev_00000070"
+      ]
+    },
+    {
+      "id": "usr_4_000034",
+      "email": "Sage1@gmail.com",
+      "role": "admin",
+      "department": "Sports",
+      "devices": [
+        "dev_00000072",
+        "dev_00000072"
+      ]
+    },
+    {
+      "id": "usr_4_000035",
+      "email": "Lisa89@yahoo.com",
+      "role": "admin",
+      "department": "Games",
+      "devices": [
+        "dev_00000074",
+        "dev_00000074"
+      ]
+    },
+    {
+      "id": "usr_4_000036",
+      "email": "Rachelle_Dietrich@hotmail.com",
+      "role": "admin",
+      "department": "Kids",
+      "devices": [
+        "dev_00000076",
+        "dev_00000076",
+        "dev_00000076"
+      ]
+    },
+    {
+      "id": "usr_4_000037",
+      "email": "Salvatore.Ortiz15@yahoo.com",
+      "role": "admin",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000079",
+        "dev_00000079"
+      ]
+    },
+    {
+      "id": "usr_4_000038",
+      "email": "Erica61@gmail.com",
+      "role": "admin",
+      "department": "Home",
+      "devices": [
+        "dev_00000081",
+        "dev_00000081",
+        "dev_00000081"
+      ]
+    },
+    {
+      "id": "usr_4_000039",
+      "email": "Jaida79@yahoo.com",
+      "role": "admin",
+      "department": "Computers",
+      "devices": [
+        "dev_00000084"
+      ]
+    },
+    {
+      "id": "usr_4_000040",
+      "email": "Zackery_Stark9@hotmail.com",
+      "role": "admin",
+      "department": "Toys",
+      "devices": [
+        "dev_00000085"
+      ]
+    },
+    {
+      "id": "usr_4_000041",
+      "email": "Jannie_Klocko@yahoo.com",
+      "role": "admin",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000086"
+      ]
+    },
+    {
+      "id": "usr_4_000042",
+      "email": "Isobel31@yahoo.com",
+      "role": "admin",
+      "department": "Movies",
+      "devices": [
+        "dev_00000087"
+      ]
+    },
+    {
+      "id": "usr_4_000043",
+      "email": "Ellen_Bradtke83@hotmail.com",
+      "role": "admin",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000088",
+        "dev_00000088",
+        "dev_00000088"
+      ]
+    },
+    {
+      "id": "usr_4_000044",
+      "email": "Lolita.Cole@yahoo.com",
+      "role": "admin",
+      "department": "Games",
+      "devices": [
+        "dev_00000091",
+        "dev_00000091"
+      ]
+    },
+    {
+      "id": "usr_4_000045",
+      "email": "Sierra29@yahoo.com",
+      "role": "admin",
+      "department": "Games",
+      "devices": [
+        "dev_00000093",
+        "dev_00000093",
+        "dev_00000093"
+      ]
+    },
+    {
+      "id": "usr_4_000046",
+      "email": "Carmella_Quigley42@yahoo.com",
+      "role": "admin",
+      "department": "Tools",
+      "devices": [
+        "dev_00000096"
+      ]
+    },
+    {
+      "id": "usr_4_000047",
+      "email": "Bryon.Skiles49@gmail.com",
+      "role": "admin",
+      "department": "Sports",
+      "devices": [
+        "dev_00000097"
+      ]
+    },
+    {
+      "id": "usr_4_000048",
+      "email": "Enrique71@hotmail.com",
+      "role": "admin",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000098"
+      ]
+    },
+    {
+      "id": "usr_4_000049",
+      "email": "Elenor_Rutherford71@yahoo.com",
+      "role": "admin",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000099",
+        "dev_00000099"
+      ]
+    },
+    {
+      "id": "usr_4_000050",
+      "email": "Scot.Kohler@hotmail.com",
+      "role": "admin",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000101",
+        "dev_00000101"
+      ]
+    },
+    {
+      "id": "usr_4_000051",
+      "email": "Nia.Runolfsdottir66@hotmail.com",
+      "role": "admin",
+      "department": "Toys",
+      "devices": [
+        "dev_00000103"
+      ]
+    },
+    {
+      "id": "usr_4_000052",
+      "email": "Everardo_Schmitt@yahoo.com",
+      "role": "admin",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000104"
+      ]
+    },
+    {
+      "id": "usr_4_000053",
+      "email": "Florence.Balistreri75@yahoo.com",
+      "role": "admin",
+      "department": "Garden",
+      "devices": [
+        "dev_00000105",
+        "dev_00000105"
+      ]
+    },
+    {
+      "id": "usr_4_000054",
+      "email": "Sydney92@yahoo.com",
+      "role": "admin",
+      "department": "Health",
+      "devices": [
+        "dev_00000107"
+      ]
+    },
+    {
+      "id": "usr_4_000055",
+      "email": "Sylvia76@gmail.com",
+      "role": "admin",
+      "department": "Books",
+      "devices": [
+        "dev_00000108",
+        "dev_00000108"
+      ]
+    },
+    {
+      "id": "usr_4_000056",
+      "email": "Agustina.Cummerata@hotmail.com",
+      "role": "admin",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000110",
+        "dev_00000110",
+        "dev_00000110"
+      ]
+    },
+    {
+      "id": "usr_4_000057",
+      "email": "Pauline_Bode@yahoo.com",
+      "role": "admin",
+      "department": "Garden",
+      "devices": [
+        "dev_00000113"
+      ]
+    },
+    {
+      "id": "usr_4_000058",
+      "email": "Hailey.Schinner64@yahoo.com",
+      "role": "admin",
+      "department": "Kids",
+      "devices": [
+        "dev_00000114",
+        "dev_00000114"
+      ]
+    },
+    {
+      "id": "usr_4_000059",
+      "email": "Waino63@yahoo.com",
+      "role": "admin",
+      "department": "Movies",
+      "devices": [
+        "dev_00000116",
+        "dev_00000116",
+        "dev_00000116"
+      ]
+    },
+    {
+      "id": "usr_4_000060",
+      "email": "Concepcion_Mosciski@yahoo.com",
+      "role": "admin",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000119",
+        "dev_00000119",
+        "dev_00000119"
+      ]
+    },
+    {
+      "id": "usr_4_000061",
+      "email": "Tanya.Grant0@gmail.com",
+      "role": "admin",
+      "department": "Games",
+      "devices": [
+        "dev_00000122",
+        "dev_00000122",
+        "dev_00000122"
+      ]
+    },
+    {
+      "id": "usr_4_000062",
+      "email": "Arvel_Franecki29@hotmail.com",
+      "role": "admin",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000125"
+      ]
+    },
+    {
+      "id": "usr_4_000063",
+      "email": "Trinity_Dibbert@hotmail.com",
+      "role": "admin",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000126",
+        "dev_00000126",
+        "dev_00000126"
+      ]
+    },
+    {
+      "id": "usr_4_000064",
+      "email": "Jameson.Quitzon@yahoo.com",
+      "role": "admin",
+      "department": "Computers",
+      "devices": [
+        "dev_00000129",
+        "dev_00000129"
+      ]
+    },
+    {
+      "id": "usr_4_000065",
+      "email": "Herta.Prosacco@yahoo.com",
+      "role": "admin",
+      "department": "Books",
+      "devices": [
+        "dev_00000131",
+        "dev_00000131"
+      ]
+    },
+    {
+      "id": "usr_4_000066",
+      "email": "Maryjane.Hodkiewicz20@gmail.com",
+      "role": "admin",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000133",
+        "dev_00000133"
+      ]
+    },
+    {
+      "id": "usr_4_000067",
+      "email": "Sharon_McClure33@gmail.com",
+      "role": "admin",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000135"
+      ]
+    },
+    {
+      "id": "usr_4_000068",
+      "email": "Alene.Gleichner@gmail.com",
+      "role": "manager",
+      "department": "Toys",
+      "devices": [
+        "dev_00000136",
+        "dev_00000136",
+        "dev_00000136"
+      ]
+    },
+    {
+      "id": "usr_4_000069",
+      "email": "Fiona.Kirlin@hotmail.com",
+      "role": "manager",
+      "department": "Toys",
+      "devices": [
+        "dev_00000139",
+        "dev_00000139",
+        "dev_00000139"
+      ]
+    },
+    {
+      "id": "usr_4_000070",
+      "email": "Walton67@hotmail.com",
+      "role": "manager",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000142"
+      ]
+    },
+    {
+      "id": "usr_4_000071",
+      "email": "Rashad.Lebsack20@yahoo.com",
+      "role": "manager",
+      "department": "Garden",
+      "devices": [
+        "dev_00000143",
+        "dev_00000143"
+      ]
+    },
+    {
+      "id": "usr_4_000072",
+      "email": "Nestor.Effertz@yahoo.com",
+      "role": "manager",
+      "department": "Tools",
+      "devices": [
+        "dev_00000145"
+      ]
+    },
+    {
+      "id": "usr_4_000073",
+      "email": "Alivia71@hotmail.com",
+      "role": "manager",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000146",
+        "dev_00000146",
+        "dev_00000146"
+      ]
+    },
+    {
+      "id": "usr_4_000074",
+      "email": "Rex_Dooley1@hotmail.com",
+      "role": "manager",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000149",
+        "dev_00000149"
+      ]
+    },
+    {
+      "id": "usr_4_000075",
+      "email": "Eleanora_Daniel@gmail.com",
+      "role": "manager",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000151",
+        "dev_00000151"
+      ]
+    },
+    {
+      "id": "usr_4_000076",
+      "email": "Kailee36@yahoo.com",
+      "role": "manager",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000153",
+        "dev_00000153",
+        "dev_00000153"
+      ]
+    },
+    {
+      "id": "usr_4_000077",
+      "email": "Eugene_Wintheiser@hotmail.com",
+      "role": "manager",
+      "department": "Tools",
+      "devices": [
+        "dev_00000156"
+      ]
+    },
+    {
+      "id": "usr_4_000078",
+      "email": "Dedric.Corkery@hotmail.com",
+      "role": "manager",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000157",
+        "dev_00000157"
+      ]
+    },
+    {
+      "id": "usr_4_000079",
+      "email": "Pierre_Borer@hotmail.com",
+      "role": "manager",
+      "department": "Movies",
+      "devices": [
+        "dev_00000159",
+        "dev_00000159",
+        "dev_00000159"
+      ]
+    },
+    {
+      "id": "usr_4_000080",
+      "email": "Orion.Oberbrunner@yahoo.com",
+      "role": "manager",
+      "department": "Sports",
+      "devices": [
+        "dev_00000162",
+        "dev_00000162"
+      ]
+    },
+    {
+      "id": "usr_4_000081",
+      "email": "Cleveland7@hotmail.com",
+      "role": "manager",
+      "department": "Books",
+      "devices": [
+        "dev_00000164",
+        "dev_00000164"
+      ]
+    },
+    {
+      "id": "usr_4_000082",
+      "email": "Amina_Hoeger38@gmail.com",
+      "role": "manager",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000166",
+        "dev_00000166",
+        "dev_00000166"
+      ]
+    },
+    {
+      "id": "usr_4_000083",
+      "email": "May.Beahan47@gmail.com",
+      "role": "manager",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000169",
+        "dev_00000169",
+        "dev_00000169"
+      ]
+    },
+    {
+      "id": "usr_4_000084",
+      "email": "Kieran_Nader@gmail.com",
+      "role": "manager",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000172",
+        "dev_00000172"
+      ]
+    },
+    {
+      "id": "usr_4_000085",
+      "email": "Carey89@gmail.com",
+      "role": "manager",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000174"
+      ]
+    },
+    {
+      "id": "usr_4_000086",
+      "email": "Malinda17@yahoo.com",
+      "role": "manager",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000175",
+        "dev_00000175",
+        "dev_00000175"
+      ]
+    },
+    {
+      "id": "usr_4_000087",
+      "email": "Tremayne_Bahringer32@yahoo.com",
+      "role": "manager",
+      "department": "Garden",
+      "devices": [
+        "dev_00000178",
+        "dev_00000178",
+        "dev_00000178"
+      ]
+    },
+    {
+      "id": "usr_4_000088",
+      "email": "Buster.Hamill73@hotmail.com",
+      "role": "manager",
+      "department": "Music",
+      "devices": [
+        "dev_00000181",
+        "dev_00000181",
+        "dev_00000181"
+      ]
+    },
+    {
+      "id": "usr_4_000089",
+      "email": "Michale_Beahan-Cummings10@yahoo.com",
+      "role": "manager",
+      "department": "Music",
+      "devices": [
+        "dev_00000184",
+        "dev_00000184",
+        "dev_00000184"
+      ]
+    },
+    {
+      "id": "usr_4_000090",
+      "email": "Elsa_Bechtelar@yahoo.com",
+      "role": "manager",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000187"
+      ]
+    },
+    {
+      "id": "usr_4_000091",
+      "email": "Darrick89@gmail.com",
+      "role": "manager",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000188",
+        "dev_00000188",
+        "dev_00000188"
+      ]
+    },
+    {
+      "id": "usr_4_000092",
+      "email": "Chester92@yahoo.com",
+      "role": "manager",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000191",
+        "dev_00000191",
+        "dev_00000191"
+      ]
+    },
+    {
+      "id": "usr_4_000093",
+      "email": "Gerard_Kutch33@yahoo.com",
+      "role": "manager",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000194",
+        "dev_00000194"
+      ]
+    },
+    {
+      "id": "usr_4_000094",
+      "email": "Kasey69@hotmail.com",
+      "role": "manager",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000196",
+        "dev_00000196"
+      ]
+    },
+    {
+      "id": "usr_4_000095",
+      "email": "Joan66@hotmail.com",
+      "role": "manager",
+      "department": "Kids",
+      "devices": [
+        "dev_00000198"
+      ]
+    },
+    {
+      "id": "usr_4_000096",
+      "email": "Moises_Turcotte15@gmail.com",
+      "role": "manager",
+      "department": "Kids",
+      "devices": [
+        "dev_00000199",
+        "dev_00000199",
+        "dev_00000199"
+      ]
+    },
+    {
+      "id": "usr_4_000097",
+      "email": "Jonathan.Roberts@yahoo.com",
+      "role": "manager",
+      "department": "Computers",
+      "devices": [
+        "dev_00000202",
+        "dev_00000202",
+        "dev_00000202"
+      ]
+    },
+    {
+      "id": "usr_4_000098",
+      "email": "Werner.Dibbert@hotmail.com",
+      "role": "manager",
+      "department": "Garden",
+      "devices": [
+        "dev_00000205"
+      ]
+    },
+    {
+      "id": "usr_4_000099",
+      "email": "Maud_Boyle@gmail.com",
+      "role": "manager",
+      "department": "Games",
+      "devices": [
+        "dev_00000206"
+      ]
+    },
+    {
+      "id": "usr_4_000100",
+      "email": "Era43@hotmail.com",
+      "role": "manager",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000207",
+        "dev_00000207"
+      ]
+    },
+    {
+      "id": "usr_4_000101",
+      "email": "Lonzo.Howell@hotmail.com",
+      "role": "manager",
+      "department": "Garden",
+      "devices": [
+        "dev_00000209"
+      ]
+    },
+    {
+      "id": "usr_4_000102",
+      "email": "Melyssa_Kirlin24@yahoo.com",
+      "role": "manager",
+      "department": "Tools",
+      "devices": [
+        "dev_00000210",
+        "dev_00000210",
+        "dev_00000210"
+      ]
+    },
+    {
+      "id": "usr_4_000103",
+      "email": "Jettie79@yahoo.com",
+      "role": "manager",
+      "department": "Toys",
+      "devices": [
+        "dev_00000213",
+        "dev_00000213",
+        "dev_00000213"
+      ]
+    },
+    {
+      "id": "usr_4_000104",
+      "email": "Emmet.Tremblay80@hotmail.com",
+      "role": "manager",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000216"
+      ]
+    },
+    {
+      "id": "usr_4_000105",
+      "email": "Prince26@yahoo.com",
+      "role": "manager",
+      "department": "Computers",
+      "devices": [
+        "dev_00000217"
+      ]
+    },
+    {
+      "id": "usr_4_000106",
+      "email": "Elenora2@hotmail.com",
+      "role": "manager",
+      "department": "Kids",
+      "devices": [
+        "dev_00000218",
+        "dev_00000218"
+      ]
+    },
+    {
+      "id": "usr_4_000107",
+      "email": "Adalberto.Kirlin-Keeling55@yahoo.com",
+      "role": "manager",
+      "department": "Health",
+      "devices": [
+        "dev_00000220"
+      ]
+    },
+    {
+      "id": "usr_4_000108",
+      "email": "Wilfrid39@yahoo.com",
+      "role": "manager",
+      "department": "Health",
+      "devices": [
+        "dev_00000221"
+      ]
+    },
+    {
+      "id": "usr_4_000109",
+      "email": "Pink.Spinka37@yahoo.com",
+      "role": "manager",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000222",
+        "dev_00000222",
+        "dev_00000222"
+      ]
+    },
+    {
+      "id": "usr_4_000110",
+      "email": "Robyn_Cummings@yahoo.com",
+      "role": "manager",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000225"
+      ]
+    },
+    {
+      "id": "usr_4_000111",
+      "email": "Darien_Cassin@hotmail.com",
+      "role": "manager",
+      "department": "Toys",
+      "devices": [
+        "dev_00000226",
+        "dev_00000226",
+        "dev_00000226"
+      ]
+    },
+    {
+      "id": "usr_4_000112",
+      "email": "Gerald_Schulist12@gmail.com",
+      "role": "manager",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000229"
+      ]
+    },
+    {
+      "id": "usr_4_000113",
+      "email": "Kathlyn.Abbott@yahoo.com",
+      "role": "manager",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000230"
+      ]
+    },
+    {
+      "id": "usr_4_000114",
+      "email": "Gerda_Rutherford43@gmail.com",
+      "role": "manager",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000231"
+      ]
+    },
+    {
+      "id": "usr_4_000115",
+      "email": "Velma94@gmail.com",
+      "role": "manager",
+      "department": "Toys",
+      "devices": [
+        "dev_00000232"
+      ]
+    },
+    {
+      "id": "usr_4_000116",
+      "email": "Gustave.Cummings@hotmail.com",
+      "role": "manager",
+      "department": "Kids",
+      "devices": [
+        "dev_00000233",
+        "dev_00000233",
+        "dev_00000233"
+      ]
+    },
+    {
+      "id": "usr_4_000117",
+      "email": "Rachelle37@gmail.com",
+      "role": "manager",
+      "department": "Movies",
+      "devices": [
+        "dev_00000236"
+      ]
+    },
+    {
+      "id": "usr_4_000118",
+      "email": "Sammy97@yahoo.com",
+      "role": "manager",
+      "department": "Sports",
+      "devices": [
+        "dev_00000237"
+      ]
+    },
+    {
+      "id": "usr_4_000119",
+      "email": "Maye54@gmail.com",
+      "role": "manager",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000238",
+        "dev_00000238",
+        "dev_00000238"
+      ]
+    },
+    {
+      "id": "usr_4_000120",
+      "email": "Sherman_McCullough13@yahoo.com",
+      "role": "manager",
+      "department": "Books",
+      "devices": [
+        "dev_00000241",
+        "dev_00000241",
+        "dev_00000241"
+      ]
+    },
+    {
+      "id": "usr_4_000121",
+      "email": "Greta_Romaguera@hotmail.com",
+      "role": "manager",
+      "department": "Toys",
+      "devices": [
+        "dev_00000244"
+      ]
+    },
+    {
+      "id": "usr_4_000122",
+      "email": "Miller89@gmail.com",
+      "role": "manager",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000245",
+        "dev_00000245",
+        "dev_00000245"
+      ]
+    },
+    {
+      "id": "usr_4_000123",
+      "email": "Wayne_Dooley@gmail.com",
+      "role": "manager",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000248",
+        "dev_00000248"
+      ]
+    },
+    {
+      "id": "usr_4_000124",
+      "email": "Beatrice_Purdy59@yahoo.com",
+      "role": "manager",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000250",
+        "dev_00000250",
+        "dev_00000250"
+      ]
+    },
+    {
+      "id": "usr_4_000125",
+      "email": "Kristofer.Murazik@yahoo.com",
+      "role": "manager",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000253",
+        "dev_00000253"
+      ]
+    },
+    {
+      "id": "usr_4_000126",
+      "email": "Favian.Mayert35@yahoo.com",
+      "role": "manager",
+      "department": "Books",
+      "devices": [
+        "dev_00000255",
+        "dev_00000255",
+        "dev_00000255"
+      ]
+    },
+    {
+      "id": "usr_4_000127",
+      "email": "Jonathon72@hotmail.com",
+      "role": "manager",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000258",
+        "dev_00000258",
+        "dev_00000258"
+      ]
+    },
+    {
+      "id": "usr_4_000128",
+      "email": "Maida_Mayert@yahoo.com",
+      "role": "manager",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000261",
+        "dev_00000261"
+      ]
+    },
+    {
+      "id": "usr_4_000129",
+      "email": "Sam.Weimann@yahoo.com",
+      "role": "manager",
+      "department": "Computers",
+      "devices": [
+        "dev_00000263",
+        "dev_00000263",
+        "dev_00000263"
+      ]
+    },
+    {
+      "id": "usr_4_000130",
+      "email": "Melyna36@hotmail.com",
+      "role": "manager",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000266",
+        "dev_00000266"
+      ]
+    },
+    {
+      "id": "usr_4_000131",
+      "email": "Kiera.Hahn@gmail.com",
+      "role": "manager",
+      "department": "Books",
+      "devices": [
+        "dev_00000268",
+        "dev_00000268"
+      ]
+    },
+    {
+      "id": "usr_4_000132",
+      "email": "Thora_Dietrich65@yahoo.com",
+      "role": "manager",
+      "department": "Movies",
+      "devices": [
+        "dev_00000270"
+      ]
+    },
+    {
+      "id": "usr_4_000133",
+      "email": "Kamren.Balistreri@hotmail.com",
+      "role": "manager",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000271",
+        "dev_00000271",
+        "dev_00000271"
+      ]
+    },
+    {
+      "id": "usr_4_000134",
+      "email": "Cruz_Williamson50@gmail.com",
+      "role": "manager",
+      "department": "Computers",
+      "devices": [
+        "dev_00000274",
+        "dev_00000274"
+      ]
+    },
+    {
+      "id": "usr_4_000135",
+      "email": "Mariah.Zieme65@gmail.com",
+      "role": "manager",
+      "department": "Movies",
+      "devices": [
+        "dev_00000276",
+        "dev_00000276",
+        "dev_00000276"
+      ]
+    },
+    {
+      "id": "usr_4_000136",
+      "email": "Ashlynn.MacGyver@gmail.com",
+      "role": "manager",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000279",
+        "dev_00000279",
+        "dev_00000279"
+      ]
+    },
+    {
+      "id": "usr_4_000137",
+      "email": "Jude_Schowalter@yahoo.com",
+      "role": "manager",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000282",
+        "dev_00000282",
+        "dev_00000282"
+      ]
+    },
+    {
+      "id": "usr_4_000138",
+      "email": "Quentin_Sauer@hotmail.com",
+      "role": "manager",
+      "department": "Music",
+      "devices": [
+        "dev_00000285",
+        "dev_00000285",
+        "dev_00000285"
+      ]
+    },
+    {
+      "id": "usr_4_000139",
+      "email": "Giovanna_Schimmel@yahoo.com",
+      "role": "manager",
+      "department": "Baby",
+      "devices": [
+        "dev_00000288",
+        "dev_00000288"
+      ]
+    },
+    {
+      "id": "usr_4_000140",
+      "email": "Marilou.Schultz48@gmail.com",
+      "role": "manager",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000290",
+        "dev_00000290",
+        "dev_00000290"
+      ]
+    },
+    {
+      "id": "usr_4_000141",
+      "email": "Josiah72@hotmail.com",
+      "role": "manager",
+      "department": "Garden",
+      "devices": [
+        "dev_00000293",
+        "dev_00000293"
+      ]
+    },
+    {
+      "id": "usr_4_000142",
+      "email": "Bo.Predovic@hotmail.com",
+      "role": "manager",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000295",
+        "dev_00000295"
+      ]
+    },
+    {
+      "id": "usr_4_000143",
+      "email": "Jamil87@yahoo.com",
+      "role": "manager",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000297"
+      ]
+    },
+    {
+      "id": "usr_4_000144",
+      "email": "Mazie.Kub8@hotmail.com",
+      "role": "manager",
+      "department": "Toys",
+      "devices": [
+        "dev_00000298"
+      ]
+    },
+    {
+      "id": "usr_4_000145",
+      "email": "Garland_VonRueden83@hotmail.com",
+      "role": "manager",
+      "department": "Movies",
+      "devices": [
+        "dev_00000299",
+        "dev_00000299"
+      ]
+    },
+    {
+      "id": "usr_4_000146",
+      "email": "Annie71@hotmail.com",
+      "role": "manager",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000301"
+      ]
+    },
+    {
+      "id": "usr_4_000147",
+      "email": "Evan_Connelly@gmail.com",
+      "role": "manager",
+      "department": "Sports",
+      "devices": [
+        "dev_00000302"
+      ]
+    },
+    {
+      "id": "usr_4_000148",
+      "email": "Dameon.Lehner@gmail.com",
+      "role": "manager",
+      "department": "Baby",
+      "devices": [
+        "dev_00000303",
+        "dev_00000303"
+      ]
+    },
+    {
+      "id": "usr_4_000149",
+      "email": "Clifford18@yahoo.com",
+      "role": "manager",
+      "department": "Garden",
+      "devices": [
+        "dev_00000305",
+        "dev_00000305"
+      ]
+    },
+    {
+      "id": "usr_4_000150",
+      "email": "Lucie.Torphy@hotmail.com",
+      "role": "manager",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000307"
+      ]
+    },
+    {
+      "id": "usr_4_000151",
+      "email": "Riley.Franey7@yahoo.com",
+      "role": "manager",
+      "department": "Games",
+      "devices": [
+        "dev_00000308",
+        "dev_00000308",
+        "dev_00000308"
+      ]
+    },
+    {
+      "id": "usr_4_000152",
+      "email": "Jamie.Kub61@gmail.com",
+      "role": "manager",
+      "department": "Health",
+      "devices": [
+        "dev_00000311",
+        "dev_00000311",
+        "dev_00000311"
+      ]
+    },
+    {
+      "id": "usr_4_000153",
+      "email": "Thomas.Anderson35@hotmail.com",
+      "role": "manager",
+      "department": "Baby",
+      "devices": [
+        "dev_00000314"
+      ]
+    },
+    {
+      "id": "usr_4_000154",
+      "email": "Clyde42@hotmail.com",
+      "role": "manager",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000315"
+      ]
+    },
+    {
+      "id": "usr_4_000155",
+      "email": "Syble.Spinka13@hotmail.com",
+      "role": "manager",
+      "department": "Games",
+      "devices": [
+        "dev_00000316"
+      ]
+    },
+    {
+      "id": "usr_4_000156",
+      "email": "Karley.Deckow87@hotmail.com",
+      "role": "manager",
+      "department": "Garden",
+      "devices": [
+        "dev_00000317"
+      ]
+    },
+    {
+      "id": "usr_4_000157",
+      "email": "Desmond_Schmidt@hotmail.com",
+      "role": "manager",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000318"
+      ]
+    },
+    {
+      "id": "usr_4_000158",
+      "email": "Hallie.Smitham11@gmail.com",
+      "role": "manager",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000319"
+      ]
+    },
+    {
+      "id": "usr_4_000159",
+      "email": "Haven_Balistreri@gmail.com",
+      "role": "manager",
+      "department": "Music",
+      "devices": [
+        "dev_00000320",
+        "dev_00000320",
+        "dev_00000320"
+      ]
+    },
+    {
+      "id": "usr_4_000160",
+      "email": "Shawn94@hotmail.com",
+      "role": "manager",
+      "department": "Tools",
+      "devices": [
+        "dev_00000323"
+      ]
+    },
+    {
+      "id": "usr_4_000161",
+      "email": "Hipolito.Stark@yahoo.com",
+      "role": "manager",
+      "department": "Tools",
+      "devices": [
+        "dev_00000324"
+      ]
+    },
+    {
+      "id": "usr_4_000162",
+      "email": "Ellen94@yahoo.com",
+      "role": "manager",
+      "department": "Movies",
+      "devices": [
+        "dev_00000325",
+        "dev_00000325"
+      ]
+    },
+    {
+      "id": "usr_4_000163",
+      "email": "Moshe81@gmail.com",
+      "role": "manager",
+      "department": "Toys",
+      "devices": [
+        "dev_00000327"
+      ]
+    },
+    {
+      "id": "usr_4_000164",
+      "email": "Judy.Greenholt52@hotmail.com",
+      "role": "manager",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000328"
+      ]
+    },
+    {
+      "id": "usr_4_000165",
+      "email": "Valerie_Hamill@gmail.com",
+      "role": "manager",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000329",
+        "dev_00000329",
+        "dev_00000329"
+      ]
+    },
+    {
+      "id": "usr_4_000166",
+      "email": "Saul.Turcotte@gmail.com",
+      "role": "manager",
+      "department": "Books",
+      "devices": [
+        "dev_00000332"
+      ]
+    },
+    {
+      "id": "usr_4_000167",
+      "email": "Mike.Sawayn48@gmail.com",
+      "role": "manager",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000333"
+      ]
+    },
+    {
+      "id": "usr_4_000168",
+      "email": "Houston_OKon22@yahoo.com",
+      "role": "manager",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000334"
+      ]
+    },
+    {
+      "id": "usr_4_000169",
+      "email": "Ashlee.Brown92@gmail.com",
+      "role": "manager",
+      "department": "Toys",
+      "devices": [
+        "dev_00000335"
+      ]
+    },
+    {
+      "id": "usr_4_000170",
+      "email": "Florence.Kshlerin57@hotmail.com",
+      "role": "manager",
+      "department": "Garden",
+      "devices": [
+        "dev_00000336"
+      ]
+    },
+    {
+      "id": "usr_4_000171",
+      "email": "Amelie.Mann33@gmail.com",
+      "role": "manager",
+      "department": "Music",
+      "devices": [
+        "dev_00000337",
+        "dev_00000337",
+        "dev_00000337"
+      ]
+    },
+    {
+      "id": "usr_4_000172",
+      "email": "Magnolia42@yahoo.com",
+      "role": "manager",
+      "department": "Kids",
+      "devices": [
+        "dev_00000340"
+      ]
+    },
+    {
+      "id": "usr_4_000173",
+      "email": "Mae_Beier@gmail.com",
+      "role": "manager",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000341",
+        "dev_00000341",
+        "dev_00000341"
+      ]
+    },
+    {
+      "id": "usr_4_000174",
+      "email": "Bernardo48@yahoo.com",
+      "role": "manager",
+      "department": "Garden",
+      "devices": [
+        "dev_00000344"
+      ]
+    },
+    {
+      "id": "usr_4_000175",
+      "email": "Odie_Trantow@gmail.com",
+      "role": "manager",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000345",
+        "dev_00000345"
+      ]
+    },
+    {
+      "id": "usr_4_000176",
+      "email": "Elmo_Harris31@gmail.com",
+      "role": "manager",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000347",
+        "dev_00000347"
+      ]
+    },
+    {
+      "id": "usr_4_000177",
+      "email": "Geovany_Treutel@hotmail.com",
+      "role": "manager",
+      "department": "Kids",
+      "devices": [
+        "dev_00000349",
+        "dev_00000349"
+      ]
+    },
+    {
+      "id": "usr_4_000178",
+      "email": "Lawrence.Schowalter@hotmail.com",
+      "role": "manager",
+      "department": "Baby",
+      "devices": [
+        "dev_00000351",
+        "dev_00000351",
+        "dev_00000351"
+      ]
+    },
+    {
+      "id": "usr_4_000179",
+      "email": "Blaze_Medhurst45@gmail.com",
+      "role": "manager",
+      "department": "Baby",
+      "devices": [
+        "dev_00000354",
+        "dev_00000354",
+        "dev_00000354"
+      ]
+    },
+    {
+      "id": "usr_4_000180",
+      "email": "Delpha_Labadie59@yahoo.com",
+      "role": "manager",
+      "department": "Garden",
+      "devices": [
+        "dev_00000357",
+        "dev_00000357"
+      ]
+    },
+    {
+      "id": "usr_4_000181",
+      "email": "Keshaun.Considine@yahoo.com",
+      "role": "manager",
+      "department": "Garden",
+      "devices": [
+        "dev_00000359"
+      ]
+    },
+    {
+      "id": "usr_4_000182",
+      "email": "Samantha4@hotmail.com",
+      "role": "manager",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000360",
+        "dev_00000360"
+      ]
+    },
+    {
+      "id": "usr_4_000183",
+      "email": "Addison.Franecki63@gmail.com",
+      "role": "manager",
+      "department": "Computers",
+      "devices": [
+        "dev_00000362"
+      ]
+    },
+    {
+      "id": "usr_4_000184",
+      "email": "Mariam_Fay81@yahoo.com",
+      "role": "manager",
+      "department": "Music",
+      "devices": [
+        "dev_00000363",
+        "dev_00000363"
+      ]
+    },
+    {
+      "id": "usr_4_000185",
+      "email": "Declan.Morar@gmail.com",
+      "role": "manager",
+      "department": "Kids",
+      "devices": [
+        "dev_00000365"
+      ]
+    },
+    {
+      "id": "usr_4_000186",
+      "email": "Arne.Gerlach@hotmail.com",
+      "role": "manager",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000366",
+        "dev_00000366",
+        "dev_00000366"
+      ]
+    },
+    {
+      "id": "usr_4_000187",
+      "email": "Woodrow.Anderson22@hotmail.com",
+      "role": "manager",
+      "department": "Games",
+      "devices": [
+        "dev_00000369",
+        "dev_00000369",
+        "dev_00000369"
+      ]
+    },
+    {
+      "id": "usr_4_000188",
+      "email": "Eugene_Schamberger@gmail.com",
+      "role": "manager",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000372",
+        "dev_00000372",
+        "dev_00000372"
+      ]
+    },
+    {
+      "id": "usr_4_000189",
+      "email": "Lyla.Jakubowski33@gmail.com",
+      "role": "manager",
+      "department": "Garden",
+      "devices": [
+        "dev_00000375",
+        "dev_00000375",
+        "dev_00000375"
+      ]
+    },
+    {
+      "id": "usr_4_000190",
+      "email": "Eleanora_Robel43@yahoo.com",
+      "role": "manager",
+      "department": "Games",
+      "devices": [
+        "dev_00000378",
+        "dev_00000378"
+      ]
+    },
+    {
+      "id": "usr_4_000191",
+      "email": "Elisabeth_Johnston-Krajcik13@yahoo.com",
+      "role": "manager",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000380",
+        "dev_00000380",
+        "dev_00000380"
+      ]
+    },
+    {
+      "id": "usr_4_000192",
+      "email": "Rhea_DAmore4@gmail.com",
+      "role": "manager",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000383",
+        "dev_00000383"
+      ]
+    },
+    {
+      "id": "usr_4_000193",
+      "email": "Elroy13@gmail.com",
+      "role": "manager",
+      "department": "Tools",
+      "devices": [
+        "dev_00000385"
+      ]
+    },
+    {
+      "id": "usr_4_000194",
+      "email": "Meagan.Parker93@gmail.com",
+      "role": "manager",
+      "department": "Games",
+      "devices": [
+        "dev_00000386"
+      ]
+    },
+    {
+      "id": "usr_4_000195",
+      "email": "Rene75@gmail.com",
+      "role": "manager",
+      "department": "Tools",
+      "devices": [
+        "dev_00000387",
+        "dev_00000387",
+        "dev_00000387"
+      ]
+    },
+    {
+      "id": "usr_4_000196",
+      "email": "Else95@yahoo.com",
+      "role": "manager",
+      "department": "Baby",
+      "devices": [
+        "dev_00000390",
+        "dev_00000390",
+        "dev_00000390"
+      ]
+    },
+    {
+      "id": "usr_4_000197",
+      "email": "Camilla_Labadie-Braun@gmail.com",
+      "role": "manager",
+      "department": "Movies",
+      "devices": [
+        "dev_00000393",
+        "dev_00000393"
+      ]
+    },
+    {
+      "id": "usr_4_000198",
+      "email": "Jaida.Bailey-Huel87@yahoo.com",
+      "role": "manager",
+      "department": "Health",
+      "devices": [
+        "dev_00000395",
+        "dev_00000395"
+      ]
+    },
+    {
+      "id": "usr_4_000199",
+      "email": "Rubye_Shanahan14@gmail.com",
+      "role": "manager",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000397",
+        "dev_00000397",
+        "dev_00000397"
+      ]
+    },
+    {
+      "id": "usr_4_000200",
+      "email": "Adam27@hotmail.com",
+      "role": "manager",
+      "department": "Games",
+      "devices": [
+        "dev_00000400"
+      ]
+    },
+    {
+      "id": "usr_4_000201",
+      "email": "Orpha67@hotmail.com",
+      "role": "manager",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000401"
+      ]
+    },
+    {
+      "id": "usr_4_000202",
+      "email": "Shirley_Hansen@gmail.com",
+      "role": "employee",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000402"
+      ]
+    },
+    {
+      "id": "usr_4_000203",
+      "email": "Karen13@gmail.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000403",
+        "dev_00000403",
+        "dev_00000403"
+      ]
+    },
+    {
+      "id": "usr_4_000204",
+      "email": "Randal.Carroll42@gmail.com",
+      "role": "employee",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000406"
+      ]
+    },
+    {
+      "id": "usr_4_000205",
+      "email": "Elody.Rempel@yahoo.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000407",
+        "dev_00000407"
+      ]
+    },
+    {
+      "id": "usr_4_000206",
+      "email": "Willis2@gmail.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000409",
+        "dev_00000409",
+        "dev_00000409"
+      ]
+    },
+    {
+      "id": "usr_4_000207",
+      "email": "Ressie_Borer-Effertz59@hotmail.com",
+      "role": "employee",
+      "department": "Toys",
+      "devices": [
+        "dev_00000412"
+      ]
+    },
+    {
+      "id": "usr_4_000208",
+      "email": "Kamren63@gmail.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000413",
+        "dev_00000413"
+      ]
+    },
+    {
+      "id": "usr_4_000209",
+      "email": "Carmella52@yahoo.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000415",
+        "dev_00000415"
+      ]
+    },
+    {
+      "id": "usr_4_000210",
+      "email": "Monte.Carroll@gmail.com",
+      "role": "employee",
+      "department": "Sports",
+      "devices": [
+        "dev_00000417",
+        "dev_00000417",
+        "dev_00000417"
+      ]
+    },
+    {
+      "id": "usr_4_000211",
+      "email": "Maryam.Ullrich@yahoo.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000420",
+        "dev_00000420",
+        "dev_00000420"
+      ]
+    },
+    {
+      "id": "usr_4_000212",
+      "email": "Sunny.Graham@hotmail.com",
+      "role": "employee",
+      "department": "Tools",
+      "devices": [
+        "dev_00000423",
+        "dev_00000423"
+      ]
+    },
+    {
+      "id": "usr_4_000213",
+      "email": "Lexi62@gmail.com",
+      "role": "employee",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000425"
+      ]
+    },
+    {
+      "id": "usr_4_000214",
+      "email": "Lea.Runolfsson@yahoo.com",
+      "role": "employee",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000426",
+        "dev_00000426"
+      ]
+    },
+    {
+      "id": "usr_4_000215",
+      "email": "Asa24@yahoo.com",
+      "role": "employee",
+      "department": "Books",
+      "devices": [
+        "dev_00000428"
+      ]
+    },
+    {
+      "id": "usr_4_000216",
+      "email": "Darrick.Purdy@yahoo.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000429"
+      ]
+    },
+    {
+      "id": "usr_4_000217",
+      "email": "Madge78@yahoo.com",
+      "role": "employee",
+      "department": "Garden",
+      "devices": [
+        "dev_00000430",
+        "dev_00000430"
+      ]
+    },
+    {
+      "id": "usr_4_000218",
+      "email": "Freeda_Cole@yahoo.com",
+      "role": "employee",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000432"
+      ]
+    },
+    {
+      "id": "usr_4_000219",
+      "email": "Vicenta.Cartwright@yahoo.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000433"
+      ]
+    },
+    {
+      "id": "usr_4_000220",
+      "email": "Lexie_Dach46@yahoo.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000434"
+      ]
+    },
+    {
+      "id": "usr_4_000221",
+      "email": "Davion_Beier9@hotmail.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000435"
+      ]
+    },
+    {
+      "id": "usr_4_000222",
+      "email": "Lizzie.Kling24@hotmail.com",
+      "role": "employee",
+      "department": "Home",
+      "devices": [
+        "dev_00000436"
+      ]
+    },
+    {
+      "id": "usr_4_000223",
+      "email": "Austin_Roberts38@yahoo.com",
+      "role": "employee",
+      "department": "Books",
+      "devices": [
+        "dev_00000437"
+      ]
+    },
+    {
+      "id": "usr_4_000224",
+      "email": "Earnestine43@gmail.com",
+      "role": "employee",
+      "department": "Home",
+      "devices": [
+        "dev_00000438",
+        "dev_00000438"
+      ]
+    },
+    {
+      "id": "usr_4_000225",
+      "email": "Jadon.Gorczany50@gmail.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000440",
+        "dev_00000440"
+      ]
+    },
+    {
+      "id": "usr_4_000226",
+      "email": "Meda.Corkery83@hotmail.com",
+      "role": "employee",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000442",
+        "dev_00000442",
+        "dev_00000442"
+      ]
+    },
+    {
+      "id": "usr_4_000227",
+      "email": "Lavern_Becker@gmail.com",
+      "role": "employee",
+      "department": "Movies",
+      "devices": [
+        "dev_00000445",
+        "dev_00000445"
+      ]
+    },
+    {
+      "id": "usr_4_000228",
+      "email": "Hettie71@hotmail.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000447",
+        "dev_00000447",
+        "dev_00000447"
+      ]
+    },
+    {
+      "id": "usr_4_000229",
+      "email": "Khalil_Swift41@hotmail.com",
+      "role": "employee",
+      "department": "Music",
+      "devices": [
+        "dev_00000450"
+      ]
+    },
+    {
+      "id": "usr_4_000230",
+      "email": "Kianna67@yahoo.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000451",
+        "dev_00000451"
+      ]
+    },
+    {
+      "id": "usr_4_000231",
+      "email": "Van_Jast@gmail.com",
+      "role": "employee",
+      "department": "Books",
+      "devices": [
+        "dev_00000453",
+        "dev_00000453"
+      ]
+    },
+    {
+      "id": "usr_4_000232",
+      "email": "Veda27@yahoo.com",
+      "role": "employee",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000455",
+        "dev_00000455",
+        "dev_00000455"
+      ]
+    },
+    {
+      "id": "usr_4_000233",
+      "email": "Quentin61@hotmail.com",
+      "role": "employee",
+      "department": "Home",
+      "devices": [
+        "dev_00000458",
+        "dev_00000458",
+        "dev_00000458"
+      ]
+    },
+    {
+      "id": "usr_4_000234",
+      "email": "Morton64@yahoo.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000461",
+        "dev_00000461",
+        "dev_00000461"
+      ]
+    },
+    {
+      "id": "usr_4_000235",
+      "email": "Dewayne66@gmail.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000464",
+        "dev_00000464",
+        "dev_00000464"
+      ]
+    },
+    {
+      "id": "usr_4_000236",
+      "email": "Ernie47@hotmail.com",
+      "role": "employee",
+      "department": "Sports",
+      "devices": [
+        "dev_00000467",
+        "dev_00000467"
+      ]
+    },
+    {
+      "id": "usr_4_000237",
+      "email": "Chester48@gmail.com",
+      "role": "employee",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000469",
+        "dev_00000469"
+      ]
+    },
+    {
+      "id": "usr_4_000238",
+      "email": "Major_Schneider@yahoo.com",
+      "role": "employee",
+      "department": "Toys",
+      "devices": [
+        "dev_00000471"
+      ]
+    },
+    {
+      "id": "usr_4_000239",
+      "email": "Myra_Anderson@gmail.com",
+      "role": "employee",
+      "department": "Garden",
+      "devices": [
+        "dev_00000472",
+        "dev_00000472",
+        "dev_00000472"
+      ]
+    },
+    {
+      "id": "usr_4_000240",
+      "email": "Arely.Smitham-Gleichner@yahoo.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000475",
+        "dev_00000475",
+        "dev_00000475"
+      ]
+    },
+    {
+      "id": "usr_4_000241",
+      "email": "Angelina_Reinger-Rolfson50@hotmail.com",
+      "role": "employee",
+      "department": "Garden",
+      "devices": [
+        "dev_00000478",
+        "dev_00000478",
+        "dev_00000478"
+      ]
+    },
+    {
+      "id": "usr_4_000242",
+      "email": "Nick.Rath@gmail.com",
+      "role": "employee",
+      "department": "Sports",
+      "devices": [
+        "dev_00000481",
+        "dev_00000481"
+      ]
+    },
+    {
+      "id": "usr_4_000243",
+      "email": "Patience_Ullrich79@yahoo.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000483",
+        "dev_00000483"
+      ]
+    },
+    {
+      "id": "usr_4_000244",
+      "email": "Lawrence_Leuschke24@gmail.com",
+      "role": "employee",
+      "department": "Toys",
+      "devices": [
+        "dev_00000485",
+        "dev_00000485"
+      ]
+    },
+    {
+      "id": "usr_4_000245",
+      "email": "Kathlyn.Okuneva8@hotmail.com",
+      "role": "employee",
+      "department": "Home",
+      "devices": [
+        "dev_00000487",
+        "dev_00000487",
+        "dev_00000487"
+      ]
+    },
+    {
+      "id": "usr_4_000246",
+      "email": "Gordon.Bernier@hotmail.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000490",
+        "dev_00000490",
+        "dev_00000490"
+      ]
+    },
+    {
+      "id": "usr_4_000247",
+      "email": "Abbie69@hotmail.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000493"
+      ]
+    },
+    {
+      "id": "usr_4_000248",
+      "email": "Robin_Block@gmail.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000494",
+        "dev_00000494",
+        "dev_00000494"
+      ]
+    },
+    {
+      "id": "usr_4_000249",
+      "email": "Zaria_Pfannerstill@yahoo.com",
+      "role": "employee",
+      "department": "Toys",
+      "devices": [
+        "dev_00000497",
+        "dev_00000497"
+      ]
+    },
+    {
+      "id": "usr_4_000250",
+      "email": "Lelia.Koelpin@yahoo.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000499",
+        "dev_00000499"
+      ]
+    },
+    {
+      "id": "usr_4_000251",
+      "email": "Joey72@gmail.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000501",
+        "dev_00000501"
+      ]
+    },
+    {
+      "id": "usr_4_000252",
+      "email": "Jermaine.Larkin@gmail.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000503"
+      ]
+    },
+    {
+      "id": "usr_4_000253",
+      "email": "Janick53@gmail.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000504",
+        "dev_00000504",
+        "dev_00000504"
+      ]
+    },
+    {
+      "id": "usr_4_000254",
+      "email": "Dorothy_Mann@yahoo.com",
+      "role": "employee",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000507"
+      ]
+    },
+    {
+      "id": "usr_4_000255",
+      "email": "Ubaldo_Osinski-Beer35@yahoo.com",
+      "role": "employee",
+      "department": "Sports",
+      "devices": [
+        "dev_00000508",
+        "dev_00000508"
+      ]
+    },
+    {
+      "id": "usr_4_000256",
+      "email": "Alphonso_Ruecker@yahoo.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000510",
+        "dev_00000510",
+        "dev_00000510"
+      ]
+    },
+    {
+      "id": "usr_4_000257",
+      "email": "Florian.Stokes@yahoo.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000513",
+        "dev_00000513",
+        "dev_00000513"
+      ]
+    },
+    {
+      "id": "usr_4_000258",
+      "email": "Delaney_Cartwright91@yahoo.com",
+      "role": "employee",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000516"
+      ]
+    },
+    {
+      "id": "usr_4_000259",
+      "email": "Keira.Bednar15@gmail.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000517"
+      ]
+    },
+    {
+      "id": "usr_4_000260",
+      "email": "Werner9@gmail.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000518",
+        "dev_00000518"
+      ]
+    },
+    {
+      "id": "usr_4_000261",
+      "email": "Rebeka20@hotmail.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000520",
+        "dev_00000520",
+        "dev_00000520"
+      ]
+    },
+    {
+      "id": "usr_4_000262",
+      "email": "Delphia.Powlowski@gmail.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000523",
+        "dev_00000523"
+      ]
+    },
+    {
+      "id": "usr_4_000263",
+      "email": "Lazaro57@hotmail.com",
+      "role": "employee",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000525"
+      ]
+    },
+    {
+      "id": "usr_4_000264",
+      "email": "Miles_Willms@yahoo.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000526",
+        "dev_00000526",
+        "dev_00000526"
+      ]
+    },
+    {
+      "id": "usr_4_000265",
+      "email": "Johnathan75@hotmail.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000529"
+      ]
+    },
+    {
+      "id": "usr_4_000266",
+      "email": "Alex_OKeefe@hotmail.com",
+      "role": "employee",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000530",
+        "dev_00000530",
+        "dev_00000530"
+      ]
+    },
+    {
+      "id": "usr_4_000267",
+      "email": "Micheal.Swift@hotmail.com",
+      "role": "employee",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000533",
+        "dev_00000533",
+        "dev_00000533"
+      ]
+    },
+    {
+      "id": "usr_4_000268",
+      "email": "Ova14@yahoo.com",
+      "role": "employee",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000536",
+        "dev_00000536",
+        "dev_00000536"
+      ]
+    },
+    {
+      "id": "usr_4_000269",
+      "email": "Stephon_Kirlin69@gmail.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000539"
+      ]
+    },
+    {
+      "id": "usr_4_000270",
+      "email": "Eleanore_Zboncak@gmail.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000540"
+      ]
+    },
+    {
+      "id": "usr_4_000271",
+      "email": "Chelsea61@gmail.com",
+      "role": "employee",
+      "department": "Books",
+      "devices": [
+        "dev_00000541",
+        "dev_00000541",
+        "dev_00000541"
+      ]
+    },
+    {
+      "id": "usr_4_000272",
+      "email": "Esteban_Becker17@yahoo.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000544",
+        "dev_00000544",
+        "dev_00000544"
+      ]
+    },
+    {
+      "id": "usr_4_000273",
+      "email": "Vella50@yahoo.com",
+      "role": "employee",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000547",
+        "dev_00000547"
+      ]
+    },
+    {
+      "id": "usr_4_000274",
+      "email": "Brennan_Windler@hotmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000549",
+        "dev_00000549",
+        "dev_00000549"
+      ]
+    },
+    {
+      "id": "usr_4_000275",
+      "email": "Andreanne73@gmail.com",
+      "role": "employee",
+      "department": "Toys",
+      "devices": [
+        "dev_00000552",
+        "dev_00000552",
+        "dev_00000552"
+      ]
+    },
+    {
+      "id": "usr_4_000276",
+      "email": "Alford22@gmail.com",
+      "role": "employee",
+      "department": "Toys",
+      "devices": [
+        "dev_00000555"
+      ]
+    },
+    {
+      "id": "usr_4_000277",
+      "email": "Marietta84@hotmail.com",
+      "role": "employee",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000556",
+        "dev_00000556"
+      ]
+    },
+    {
+      "id": "usr_4_000278",
+      "email": "Felicity_Yost25@yahoo.com",
+      "role": "employee",
+      "department": "Books",
+      "devices": [
+        "dev_00000558",
+        "dev_00000558",
+        "dev_00000558"
+      ]
+    },
+    {
+      "id": "usr_4_000279",
+      "email": "Helmer51@gmail.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000561"
+      ]
+    },
+    {
+      "id": "usr_4_000280",
+      "email": "Danielle70@hotmail.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000562",
+        "dev_00000562",
+        "dev_00000562"
+      ]
+    },
+    {
+      "id": "usr_4_000281",
+      "email": "Chanel_Lesch34@gmail.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000565"
+      ]
+    },
+    {
+      "id": "usr_4_000282",
+      "email": "Amely_Ryan1@yahoo.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000566"
+      ]
+    },
+    {
+      "id": "usr_4_000283",
+      "email": "Millie15@gmail.com",
+      "role": "employee",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000567"
+      ]
+    },
+    {
+      "id": "usr_4_000284",
+      "email": "Bennett_Hamill@hotmail.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000568"
+      ]
+    },
+    {
+      "id": "usr_4_000285",
+      "email": "Jane29@hotmail.com",
+      "role": "employee",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000569"
+      ]
+    },
+    {
+      "id": "usr_4_000286",
+      "email": "Colin27@yahoo.com",
+      "role": "employee",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000570",
+        "dev_00000570",
+        "dev_00000570"
+      ]
+    },
+    {
+      "id": "usr_4_000287",
+      "email": "Arne.Sanford@gmail.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000573",
+        "dev_00000573"
+      ]
+    },
+    {
+      "id": "usr_4_000288",
+      "email": "Carley.Langworth30@yahoo.com",
+      "role": "employee",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000575"
+      ]
+    },
+    {
+      "id": "usr_4_000289",
+      "email": "Wellington_Welch@hotmail.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000576",
+        "dev_00000576",
+        "dev_00000576"
+      ]
+    },
+    {
+      "id": "usr_4_000290",
+      "email": "Ashly.Kozey@hotmail.com",
+      "role": "employee",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000579"
+      ]
+    },
+    {
+      "id": "usr_4_000291",
+      "email": "Ila_Schoen44@gmail.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000580",
+        "dev_00000580"
+      ]
+    },
+    {
+      "id": "usr_4_000292",
+      "email": "Nicola66@yahoo.com",
+      "role": "employee",
+      "department": "Movies",
+      "devices": [
+        "dev_00000582",
+        "dev_00000582"
+      ]
+    },
+    {
+      "id": "usr_4_000293",
+      "email": "Burnice.Roob69@gmail.com",
+      "role": "employee",
+      "department": "Music",
+      "devices": [
+        "dev_00000584",
+        "dev_00000584"
+      ]
+    },
+    {
+      "id": "usr_4_000294",
+      "email": "Cale.Kohler@gmail.com",
+      "role": "employee",
+      "department": "Home",
+      "devices": [
+        "dev_00000586",
+        "dev_00000586"
+      ]
+    },
+    {
+      "id": "usr_4_000295",
+      "email": "Remington69@hotmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000588",
+        "dev_00000588",
+        "dev_00000588"
+      ]
+    },
+    {
+      "id": "usr_4_000296",
+      "email": "Cortez_Stokes28@hotmail.com",
+      "role": "employee",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000591",
+        "dev_00000591"
+      ]
+    },
+    {
+      "id": "usr_4_000297",
+      "email": "Elza.Metz80@gmail.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000593"
+      ]
+    },
+    {
+      "id": "usr_4_000298",
+      "email": "Patrick_Oberbrunner@yahoo.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000594",
+        "dev_00000594",
+        "dev_00000594"
+      ]
+    },
+    {
+      "id": "usr_4_000299",
+      "email": "Charity_Williamson4@gmail.com",
+      "role": "employee",
+      "department": "Books",
+      "devices": [
+        "dev_00000597",
+        "dev_00000597"
+      ]
+    },
+    {
+      "id": "usr_4_000300",
+      "email": "Chet_Legros@hotmail.com",
+      "role": "employee",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000599"
+      ]
+    },
+    {
+      "id": "usr_4_000301",
+      "email": "Kennedy_Roberts@gmail.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000600"
+      ]
+    },
+    {
+      "id": "usr_4_000302",
+      "email": "Donny9@gmail.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000601",
+        "dev_00000601",
+        "dev_00000601"
+      ]
+    },
+    {
+      "id": "usr_4_000303",
+      "email": "Mikayla.Upton54@yahoo.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000604",
+        "dev_00000604",
+        "dev_00000604"
+      ]
+    },
+    {
+      "id": "usr_4_000304",
+      "email": "Cindy58@hotmail.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000607",
+        "dev_00000607"
+      ]
+    },
+    {
+      "id": "usr_4_000305",
+      "email": "Unique.Wilderman@yahoo.com",
+      "role": "employee",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000609",
+        "dev_00000609",
+        "dev_00000609"
+      ]
+    },
+    {
+      "id": "usr_4_000306",
+      "email": "Hassan_Leuschke@gmail.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000612"
+      ]
+    },
+    {
+      "id": "usr_4_000307",
+      "email": "Alfonzo66@gmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000613"
+      ]
+    },
+    {
+      "id": "usr_4_000308",
+      "email": "Sylvester_Conroy48@hotmail.com",
+      "role": "employee",
+      "department": "Home",
+      "devices": [
+        "dev_00000614"
+      ]
+    },
+    {
+      "id": "usr_4_000309",
+      "email": "Sheridan.Morissette@hotmail.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000615"
+      ]
+    },
+    {
+      "id": "usr_4_000310",
+      "email": "Haskell27@gmail.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000616"
+      ]
+    },
+    {
+      "id": "usr_4_000311",
+      "email": "Devyn_Hansen83@yahoo.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000617",
+        "dev_00000617"
+      ]
+    },
+    {
+      "id": "usr_4_000312",
+      "email": "Kathryne_Erdman33@hotmail.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000619",
+        "dev_00000619",
+        "dev_00000619"
+      ]
+    },
+    {
+      "id": "usr_4_000313",
+      "email": "Otha_Sanford30@yahoo.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000622",
+        "dev_00000622"
+      ]
+    },
+    {
+      "id": "usr_4_000314",
+      "email": "Ramona75@gmail.com",
+      "role": "employee",
+      "department": "Music",
+      "devices": [
+        "dev_00000624"
+      ]
+    },
+    {
+      "id": "usr_4_000315",
+      "email": "Don_Ratke55@hotmail.com",
+      "role": "employee",
+      "department": "Tools",
+      "devices": [
+        "dev_00000625"
+      ]
+    },
+    {
+      "id": "usr_4_000316",
+      "email": "Alize60@hotmail.com",
+      "role": "employee",
+      "department": "Toys",
+      "devices": [
+        "dev_00000626",
+        "dev_00000626",
+        "dev_00000626"
+      ]
+    },
+    {
+      "id": "usr_4_000317",
+      "email": "Rosemarie8@gmail.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000629",
+        "dev_00000629",
+        "dev_00000629"
+      ]
+    },
+    {
+      "id": "usr_4_000318",
+      "email": "Murphy_Hegmann9@hotmail.com",
+      "role": "employee",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000632"
+      ]
+    },
+    {
+      "id": "usr_4_000319",
+      "email": "Melody64@hotmail.com",
+      "role": "employee",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000633",
+        "dev_00000633"
+      ]
+    },
+    {
+      "id": "usr_4_000320",
+      "email": "Viva_Volkman20@yahoo.com",
+      "role": "employee",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000635"
+      ]
+    },
+    {
+      "id": "usr_4_000321",
+      "email": "Jaida_Kling@gmail.com",
+      "role": "employee",
+      "department": "Movies",
+      "devices": [
+        "dev_00000636"
+      ]
+    },
+    {
+      "id": "usr_4_000322",
+      "email": "Keira11@hotmail.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000637",
+        "dev_00000637",
+        "dev_00000637"
+      ]
+    },
+    {
+      "id": "usr_4_000323",
+      "email": "Joelle_Hagenes26@hotmail.com",
+      "role": "employee",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000640",
+        "dev_00000640"
+      ]
+    },
+    {
+      "id": "usr_4_000324",
+      "email": "Frank.Williamson@gmail.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000642",
+        "dev_00000642",
+        "dev_00000642"
+      ]
+    },
+    {
+      "id": "usr_4_000325",
+      "email": "Dan.Lockman@gmail.com",
+      "role": "employee",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000645"
+      ]
+    },
+    {
+      "id": "usr_4_000326",
+      "email": "Adriel.Thiel97@gmail.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000646",
+        "dev_00000646"
+      ]
+    },
+    {
+      "id": "usr_4_000327",
+      "email": "Ariel_Lang@yahoo.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000648"
+      ]
+    },
+    {
+      "id": "usr_4_000328",
+      "email": "Hank_Gislason@yahoo.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000649",
+        "dev_00000649",
+        "dev_00000649"
+      ]
+    },
+    {
+      "id": "usr_4_000329",
+      "email": "Allene_Brekke@hotmail.com",
+      "role": "employee",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000652"
+      ]
+    },
+    {
+      "id": "usr_4_000330",
+      "email": "Rosalee69@yahoo.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000653",
+        "dev_00000653",
+        "dev_00000653"
+      ]
+    },
+    {
+      "id": "usr_4_000331",
+      "email": "Tremaine58@yahoo.com",
+      "role": "employee",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000656",
+        "dev_00000656",
+        "dev_00000656"
+      ]
+    },
+    {
+      "id": "usr_4_000332",
+      "email": "Savion28@hotmail.com",
+      "role": "employee",
+      "department": "Toys",
+      "devices": [
+        "dev_00000659",
+        "dev_00000659",
+        "dev_00000659"
+      ]
+    },
+    {
+      "id": "usr_4_000333",
+      "email": "Kelli.Kreiger@gmail.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000662"
+      ]
+    },
+    {
+      "id": "usr_4_000334",
+      "email": "Brown75@gmail.com",
+      "role": "employee",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000663"
+      ]
+    },
+    {
+      "id": "usr_4_000335",
+      "email": "Veda60@yahoo.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000664",
+        "dev_00000664",
+        "dev_00000664"
+      ]
+    },
+    {
+      "id": "usr_4_000336",
+      "email": "Laurianne_Krajcik91@gmail.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000667"
+      ]
+    },
+    {
+      "id": "usr_4_000337",
+      "email": "Luz.Gulgowski93@hotmail.com",
+      "role": "employee",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000668",
+        "dev_00000668"
+      ]
+    },
+    {
+      "id": "usr_4_000338",
+      "email": "Viola42@yahoo.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000670",
+        "dev_00000670",
+        "dev_00000670"
+      ]
+    },
+    {
+      "id": "usr_4_000339",
+      "email": "Jammie67@yahoo.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000673"
+      ]
+    },
+    {
+      "id": "usr_4_000340",
+      "email": "Kenton39@yahoo.com",
+      "role": "employee",
+      "department": "Movies",
+      "devices": [
+        "dev_00000674"
+      ]
+    },
+    {
+      "id": "usr_4_000341",
+      "email": "Domingo_Kautzer50@yahoo.com",
+      "role": "employee",
+      "department": "Sports",
+      "devices": [
+        "dev_00000675",
+        "dev_00000675",
+        "dev_00000675"
+      ]
+    },
+    {
+      "id": "usr_4_000342",
+      "email": "Jeremie_Mayer@gmail.com",
+      "role": "employee",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000678"
+      ]
+    },
+    {
+      "id": "usr_4_000343",
+      "email": "Anya_Yundt82@yahoo.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000679",
+        "dev_00000679"
+      ]
+    },
+    {
+      "id": "usr_4_000344",
+      "email": "Flavio.Wehner95@gmail.com",
+      "role": "employee",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000681"
+      ]
+    },
+    {
+      "id": "usr_4_000345",
+      "email": "Fredrick14@yahoo.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000682",
+        "dev_00000682",
+        "dev_00000682"
+      ]
+    },
+    {
+      "id": "usr_4_000346",
+      "email": "Taryn.Lesch42@yahoo.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000685",
+        "dev_00000685"
+      ]
+    },
+    {
+      "id": "usr_4_000347",
+      "email": "Vivien_Johnson23@hotmail.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000687",
+        "dev_00000687",
+        "dev_00000687"
+      ]
+    },
+    {
+      "id": "usr_4_000348",
+      "email": "Jerel_Kuhic83@gmail.com",
+      "role": "employee",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000690"
+      ]
+    },
+    {
+      "id": "usr_4_000349",
+      "email": "Maxime51@yahoo.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000691",
+        "dev_00000691"
+      ]
+    },
+    {
+      "id": "usr_4_000350",
+      "email": "Kayley_Larkin39@yahoo.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000693",
+        "dev_00000693",
+        "dev_00000693"
+      ]
+    },
+    {
+      "id": "usr_4_000351",
+      "email": "Fritz_Pfeffer@yahoo.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000696",
+        "dev_00000696"
+      ]
+    },
+    {
+      "id": "usr_4_000352",
+      "email": "Lillian_Reichert81@yahoo.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000698"
+      ]
+    },
+    {
+      "id": "usr_4_000353",
+      "email": "Rosemary.Powlowski-Mante@gmail.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000699",
+        "dev_00000699",
+        "dev_00000699"
+      ]
+    },
+    {
+      "id": "usr_4_000354",
+      "email": "Weldon.Schowalter56@gmail.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000702",
+        "dev_00000702",
+        "dev_00000702"
+      ]
+    },
+    {
+      "id": "usr_4_000355",
+      "email": "Maverick.Koelpin82@yahoo.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000705"
+      ]
+    },
+    {
+      "id": "usr_4_000356",
+      "email": "Bruce73@hotmail.com",
+      "role": "employee",
+      "department": "Tools",
+      "devices": [
+        "dev_00000706",
+        "dev_00000706",
+        "dev_00000706"
+      ]
+    },
+    {
+      "id": "usr_4_000357",
+      "email": "Lolita.Hane@yahoo.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000709",
+        "dev_00000709",
+        "dev_00000709"
+      ]
+    },
+    {
+      "id": "usr_4_000358",
+      "email": "Jaeden19@hotmail.com",
+      "role": "employee",
+      "department": "Music",
+      "devices": [
+        "dev_00000712",
+        "dev_00000712"
+      ]
+    },
+    {
+      "id": "usr_4_000359",
+      "email": "Dillan79@gmail.com",
+      "role": "employee",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000714"
+      ]
+    },
+    {
+      "id": "usr_4_000360",
+      "email": "Holden.Lueilwitz@gmail.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000715",
+        "dev_00000715"
+      ]
+    },
+    {
+      "id": "usr_4_000361",
+      "email": "Ida41@yahoo.com",
+      "role": "employee",
+      "department": "Books",
+      "devices": [
+        "dev_00000717"
+      ]
+    },
+    {
+      "id": "usr_4_000362",
+      "email": "Griffin.Witting@hotmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000718"
+      ]
+    },
+    {
+      "id": "usr_4_000363",
+      "email": "Ferne11@hotmail.com",
+      "role": "employee",
+      "department": "Home",
+      "devices": [
+        "dev_00000719",
+        "dev_00000719"
+      ]
+    },
+    {
+      "id": "usr_4_000364",
+      "email": "Edison_Bode80@yahoo.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000721"
+      ]
+    },
+    {
+      "id": "usr_4_000365",
+      "email": "Margarete_Gerhold@gmail.com",
+      "role": "employee",
+      "department": "Home",
+      "devices": [
+        "dev_00000722",
+        "dev_00000722",
+        "dev_00000722"
+      ]
+    },
+    {
+      "id": "usr_4_000366",
+      "email": "Alta.Vandervort@gmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000725",
+        "dev_00000725"
+      ]
+    },
+    {
+      "id": "usr_4_000367",
+      "email": "Mossie39@hotmail.com",
+      "role": "employee",
+      "department": "Movies",
+      "devices": [
+        "dev_00000727",
+        "dev_00000727",
+        "dev_00000727"
+      ]
+    },
+    {
+      "id": "usr_4_000368",
+      "email": "Laisha89@gmail.com",
+      "role": "employee",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000730",
+        "dev_00000730",
+        "dev_00000730"
+      ]
+    },
+    {
+      "id": "usr_4_000369",
+      "email": "Dessie18@yahoo.com",
+      "role": "employee",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000733",
+        "dev_00000733"
+      ]
+    },
+    {
+      "id": "usr_4_000370",
+      "email": "Janick_Prosacco6@hotmail.com",
+      "role": "employee",
+      "department": "Music",
+      "devices": [
+        "dev_00000735",
+        "dev_00000735",
+        "dev_00000735"
+      ]
+    },
+    {
+      "id": "usr_4_000371",
+      "email": "Devonte_Bruen66@gmail.com",
+      "role": "employee",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000738"
+      ]
+    },
+    {
+      "id": "usr_4_000372",
+      "email": "Angel_OKeefe@gmail.com",
+      "role": "employee",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000739"
+      ]
+    },
+    {
+      "id": "usr_4_000373",
+      "email": "Carmela.Senger@yahoo.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000740",
+        "dev_00000740"
+      ]
+    },
+    {
+      "id": "usr_4_000374",
+      "email": "Frederick43@gmail.com",
+      "role": "employee",
+      "department": "Tools",
+      "devices": [
+        "dev_00000742",
+        "dev_00000742",
+        "dev_00000742"
+      ]
+    },
+    {
+      "id": "usr_4_000375",
+      "email": "Ryleigh_Hane62@hotmail.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000745",
+        "dev_00000745"
+      ]
+    },
+    {
+      "id": "usr_4_000376",
+      "email": "Elvera.Fritsch-Hauck@yahoo.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000747",
+        "dev_00000747"
+      ]
+    },
+    {
+      "id": "usr_4_000377",
+      "email": "Melody_Kautzer-Hudson@hotmail.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000749",
+        "dev_00000749"
+      ]
+    },
+    {
+      "id": "usr_4_000378",
+      "email": "Berniece35@yahoo.com",
+      "role": "employee",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000751",
+        "dev_00000751",
+        "dev_00000751"
+      ]
+    },
+    {
+      "id": "usr_4_000379",
+      "email": "Alfred_McDermott@yahoo.com",
+      "role": "employee",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000754"
+      ]
+    },
+    {
+      "id": "usr_4_000380",
+      "email": "Elmer85@yahoo.com",
+      "role": "employee",
+      "department": "Sports",
+      "devices": [
+        "dev_00000755",
+        "dev_00000755"
+      ]
+    },
+    {
+      "id": "usr_4_000381",
+      "email": "Dana86@hotmail.com",
+      "role": "employee",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000757",
+        "dev_00000757"
+      ]
+    },
+    {
+      "id": "usr_4_000382",
+      "email": "Jermaine_Hayes84@yahoo.com",
+      "role": "employee",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000759"
+      ]
+    },
+    {
+      "id": "usr_4_000383",
+      "email": "Reggie22@hotmail.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000760",
+        "dev_00000760"
+      ]
+    },
+    {
+      "id": "usr_4_000384",
+      "email": "Vance.Tromp@hotmail.com",
+      "role": "employee",
+      "department": "Movies",
+      "devices": [
+        "dev_00000762"
+      ]
+    },
+    {
+      "id": "usr_4_000385",
+      "email": "Hollis92@yahoo.com",
+      "role": "employee",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000763"
+      ]
+    },
+    {
+      "id": "usr_4_000386",
+      "email": "Audreanne_Cummerata99@yahoo.com",
+      "role": "employee",
+      "department": "Music",
+      "devices": [
+        "dev_00000764",
+        "dev_00000764",
+        "dev_00000764"
+      ]
+    },
+    {
+      "id": "usr_4_000387",
+      "email": "Shayne.Walter23@yahoo.com",
+      "role": "employee",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000767"
+      ]
+    },
+    {
+      "id": "usr_4_000388",
+      "email": "Greg_Funk@hotmail.com",
+      "role": "employee",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000768"
+      ]
+    },
+    {
+      "id": "usr_4_000389",
+      "email": "Laury.Fritsch5@gmail.com",
+      "role": "employee",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000769",
+        "dev_00000769",
+        "dev_00000769"
+      ]
+    },
+    {
+      "id": "usr_4_000390",
+      "email": "Oral.Hane34@hotmail.com",
+      "role": "employee",
+      "department": "Toys",
+      "devices": [
+        "dev_00000772",
+        "dev_00000772",
+        "dev_00000772"
+      ]
+    },
+    {
+      "id": "usr_4_000391",
+      "email": "Kiana_Huel@yahoo.com",
+      "role": "employee",
+      "department": "Home",
+      "devices": [
+        "dev_00000775",
+        "dev_00000775",
+        "dev_00000775"
+      ]
+    },
+    {
+      "id": "usr_4_000392",
+      "email": "Frank74@yahoo.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000778",
+        "dev_00000778"
+      ]
+    },
+    {
+      "id": "usr_4_000393",
+      "email": "Dianna_Murazik62@gmail.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000780"
+      ]
+    },
+    {
+      "id": "usr_4_000394",
+      "email": "Alysha86@hotmail.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000781"
+      ]
+    },
+    {
+      "id": "usr_4_000395",
+      "email": "Delaney50@gmail.com",
+      "role": "employee",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000782",
+        "dev_00000782",
+        "dev_00000782"
+      ]
+    },
+    {
+      "id": "usr_4_000396",
+      "email": "Hobart.Bradtke4@yahoo.com",
+      "role": "employee",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000785"
+      ]
+    },
+    {
+      "id": "usr_4_000397",
+      "email": "Lula54@gmail.com",
+      "role": "employee",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000786",
+        "dev_00000786",
+        "dev_00000786"
+      ]
+    },
+    {
+      "id": "usr_4_000398",
+      "email": "Lelah_Yost97@hotmail.com",
+      "role": "employee",
+      "department": "Tools",
+      "devices": [
+        "dev_00000789"
+      ]
+    },
+    {
+      "id": "usr_4_000399",
+      "email": "Carolanne62@hotmail.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000790"
+      ]
+    },
+    {
+      "id": "usr_4_000400",
+      "email": "Dessie_Hauck@hotmail.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000791",
+        "dev_00000791",
+        "dev_00000791"
+      ]
+    },
+    {
+      "id": "usr_4_000401",
+      "email": "Rowena.Krajcik@hotmail.com",
+      "role": "employee",
+      "department": "Sports",
+      "devices": [
+        "dev_00000794",
+        "dev_00000794",
+        "dev_00000794"
+      ]
+    },
+    {
+      "id": "usr_4_000402",
+      "email": "Lolita14@hotmail.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000797"
+      ]
+    },
+    {
+      "id": "usr_4_000403",
+      "email": "Reuben_Reichert@hotmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000798",
+        "dev_00000798"
+      ]
+    },
+    {
+      "id": "usr_4_000404",
+      "email": "Natasha1@gmail.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000800",
+        "dev_00000800"
+      ]
+    },
+    {
+      "id": "usr_4_000405",
+      "email": "Krystal90@yahoo.com",
+      "role": "employee",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000802",
+        "dev_00000802",
+        "dev_00000802"
+      ]
+    },
+    {
+      "id": "usr_4_000406",
+      "email": "Cody.Dare@gmail.com",
+      "role": "employee",
+      "department": "Home",
+      "devices": [
+        "dev_00000805",
+        "dev_00000805",
+        "dev_00000805"
+      ]
+    },
+    {
+      "id": "usr_4_000407",
+      "email": "Sheridan.Rowe@gmail.com",
+      "role": "employee",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000808",
+        "dev_00000808",
+        "dev_00000808"
+      ]
+    },
+    {
+      "id": "usr_4_000408",
+      "email": "Lera_Keeling42@yahoo.com",
+      "role": "employee",
+      "department": "Home",
+      "devices": [
+        "dev_00000811",
+        "dev_00000811",
+        "dev_00000811"
+      ]
+    },
+    {
+      "id": "usr_4_000409",
+      "email": "Lexus73@hotmail.com",
+      "role": "employee",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00000814",
+        "dev_00000814"
+      ]
+    },
+    {
+      "id": "usr_4_000410",
+      "email": "Chasity_Schultz@gmail.com",
+      "role": "employee",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000816",
+        "dev_00000816",
+        "dev_00000816"
+      ]
+    },
+    {
+      "id": "usr_4_000411",
+      "email": "Syble48@hotmail.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000819",
+        "dev_00000819"
+      ]
+    },
+    {
+      "id": "usr_4_000412",
+      "email": "Gus.Lemke@hotmail.com",
+      "role": "employee",
+      "department": "Garden",
+      "devices": [
+        "dev_00000821",
+        "dev_00000821"
+      ]
+    },
+    {
+      "id": "usr_4_000413",
+      "email": "Barrett_Gusikowski81@gmail.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000823"
+      ]
+    },
+    {
+      "id": "usr_4_000414",
+      "email": "Seamus_Sauer@gmail.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000824"
+      ]
+    },
+    {
+      "id": "usr_4_000415",
+      "email": "Elta.Koss82@gmail.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000825"
+      ]
+    },
+    {
+      "id": "usr_4_000416",
+      "email": "Lincoln.Hahn33@yahoo.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000826"
+      ]
+    },
+    {
+      "id": "usr_4_000417",
+      "email": "Kennedy_Spinka19@hotmail.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000827",
+        "dev_00000827"
+      ]
+    },
+    {
+      "id": "usr_4_000418",
+      "email": "Doug43@gmail.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000829",
+        "dev_00000829"
+      ]
+    },
+    {
+      "id": "usr_4_000419",
+      "email": "Alysa.Purdy@hotmail.com",
+      "role": "employee",
+      "department": "Tools",
+      "devices": [
+        "dev_00000831",
+        "dev_00000831",
+        "dev_00000831"
+      ]
+    },
+    {
+      "id": "usr_4_000420",
+      "email": "Elinor_Thiel@hotmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000834",
+        "dev_00000834",
+        "dev_00000834"
+      ]
+    },
+    {
+      "id": "usr_4_000421",
+      "email": "Rafael.Wilderman80@gmail.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000837",
+        "dev_00000837",
+        "dev_00000837"
+      ]
+    },
+    {
+      "id": "usr_4_000422",
+      "email": "Malvina61@yahoo.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000840",
+        "dev_00000840",
+        "dev_00000840"
+      ]
+    },
+    {
+      "id": "usr_4_000423",
+      "email": "Muhammad.Hand-Lubowitz@gmail.com",
+      "role": "employee",
+      "department": "Home",
+      "devices": [
+        "dev_00000843",
+        "dev_00000843"
+      ]
+    },
+    {
+      "id": "usr_4_000424",
+      "email": "Ubaldo.Murray46@yahoo.com",
+      "role": "employee",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000845"
+      ]
+    },
+    {
+      "id": "usr_4_000425",
+      "email": "Candida64@yahoo.com",
+      "role": "employee",
+      "department": "Tools",
+      "devices": [
+        "dev_00000846",
+        "dev_00000846"
+      ]
+    },
+    {
+      "id": "usr_4_000426",
+      "email": "Bobbie36@hotmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000848"
+      ]
+    },
+    {
+      "id": "usr_4_000427",
+      "email": "Jamal51@yahoo.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000849"
+      ]
+    },
+    {
+      "id": "usr_4_000428",
+      "email": "Elmira56@hotmail.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000850"
+      ]
+    },
+    {
+      "id": "usr_4_000429",
+      "email": "Rosella.Wolff87@gmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000851",
+        "dev_00000851"
+      ]
+    },
+    {
+      "id": "usr_4_000430",
+      "email": "Karlie.Prosacco-Stroman@yahoo.com",
+      "role": "employee",
+      "department": "Movies",
+      "devices": [
+        "dev_00000853",
+        "dev_00000853",
+        "dev_00000853"
+      ]
+    },
+    {
+      "id": "usr_4_000431",
+      "email": "Ines.Wintheiser14@hotmail.com",
+      "role": "employee",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000856",
+        "dev_00000856"
+      ]
+    },
+    {
+      "id": "usr_4_000432",
+      "email": "Amelie18@hotmail.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000858",
+        "dev_00000858"
+      ]
+    },
+    {
+      "id": "usr_4_000433",
+      "email": "Pat.Lemke@hotmail.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000860",
+        "dev_00000860",
+        "dev_00000860"
+      ]
+    },
+    {
+      "id": "usr_4_000434",
+      "email": "Emmanuelle_Beer@gmail.com",
+      "role": "employee",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000863"
+      ]
+    },
+    {
+      "id": "usr_4_000435",
+      "email": "Steve_Mraz63@yahoo.com",
+      "role": "employee",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000864",
+        "dev_00000864",
+        "dev_00000864"
+      ]
+    },
+    {
+      "id": "usr_4_000436",
+      "email": "Addie.Bernier@hotmail.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000867",
+        "dev_00000867",
+        "dev_00000867"
+      ]
+    },
+    {
+      "id": "usr_4_000437",
+      "email": "Levi.Block@hotmail.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000870"
+      ]
+    },
+    {
+      "id": "usr_4_000438",
+      "email": "Eliza.Kuhlman@gmail.com",
+      "role": "employee",
+      "department": "Music",
+      "devices": [
+        "dev_00000871",
+        "dev_00000871"
+      ]
+    },
+    {
+      "id": "usr_4_000439",
+      "email": "Wendell_Ratke1@hotmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000873",
+        "dev_00000873",
+        "dev_00000873"
+      ]
+    },
+    {
+      "id": "usr_4_000440",
+      "email": "Joesph99@gmail.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000876",
+        "dev_00000876",
+        "dev_00000876"
+      ]
+    },
+    {
+      "id": "usr_4_000441",
+      "email": "Damion_Zemlak87@yahoo.com",
+      "role": "employee",
+      "department": "Tools",
+      "devices": [
+        "dev_00000879",
+        "dev_00000879",
+        "dev_00000879"
+      ]
+    },
+    {
+      "id": "usr_4_000442",
+      "email": "Leo.Heaney@yahoo.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000882",
+        "dev_00000882"
+      ]
+    },
+    {
+      "id": "usr_4_000443",
+      "email": "Destinee.Kub28@gmail.com",
+      "role": "employee",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000884",
+        "dev_00000884"
+      ]
+    },
+    {
+      "id": "usr_4_000444",
+      "email": "Jermaine.Morissette44@gmail.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000886"
+      ]
+    },
+    {
+      "id": "usr_4_000445",
+      "email": "Brianne.Howe@yahoo.com",
+      "role": "employee",
+      "department": "Sports",
+      "devices": [
+        "dev_00000887",
+        "dev_00000887"
+      ]
+    },
+    {
+      "id": "usr_4_000446",
+      "email": "Kelsie93@gmail.com",
+      "role": "employee",
+      "department": "Baby",
+      "devices": [
+        "dev_00000889",
+        "dev_00000889",
+        "dev_00000889"
+      ]
+    },
+    {
+      "id": "usr_4_000447",
+      "email": "Sofia88@gmail.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000892",
+        "dev_00000892",
+        "dev_00000892"
+      ]
+    },
+    {
+      "id": "usr_4_000448",
+      "email": "Erick_Fisher84@hotmail.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000895",
+        "dev_00000895",
+        "dev_00000895"
+      ]
+    },
+    {
+      "id": "usr_4_000449",
+      "email": "Fern_Herzog@gmail.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000898",
+        "dev_00000898",
+        "dev_00000898"
+      ]
+    },
+    {
+      "id": "usr_4_000450",
+      "email": "Maye98@yahoo.com",
+      "role": "employee",
+      "department": "Tools",
+      "devices": [
+        "dev_00000901",
+        "dev_00000901",
+        "dev_00000901"
+      ]
+    },
+    {
+      "id": "usr_4_000451",
+      "email": "Rosalia2@hotmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000904"
+      ]
+    },
+    {
+      "id": "usr_4_000452",
+      "email": "Arielle.Roberts61@yahoo.com",
+      "role": "employee",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000905",
+        "dev_00000905",
+        "dev_00000905"
+      ]
+    },
+    {
+      "id": "usr_4_000453",
+      "email": "Gertrude20@gmail.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000908",
+        "dev_00000908"
+      ]
+    },
+    {
+      "id": "usr_4_000454",
+      "email": "Theo5@yahoo.com",
+      "role": "employee",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000910"
+      ]
+    },
+    {
+      "id": "usr_4_000455",
+      "email": "Mohammed.Wolf@yahoo.com",
+      "role": "employee",
+      "department": "Toys",
+      "devices": [
+        "dev_00000911",
+        "dev_00000911",
+        "dev_00000911"
+      ]
+    },
+    {
+      "id": "usr_4_000456",
+      "email": "Syble48@hotmail.com",
+      "role": "employee",
+      "department": "Sports",
+      "devices": [
+        "dev_00000914"
+      ]
+    },
+    {
+      "id": "usr_4_000457",
+      "email": "Dewayne24@hotmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000915",
+        "dev_00000915"
+      ]
+    },
+    {
+      "id": "usr_4_000458",
+      "email": "Grayce_White@gmail.com",
+      "role": "employee",
+      "department": "Home",
+      "devices": [
+        "dev_00000917",
+        "dev_00000917"
+      ]
+    },
+    {
+      "id": "usr_4_000459",
+      "email": "Nedra.Bartell@hotmail.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000919"
+      ]
+    },
+    {
+      "id": "usr_4_000460",
+      "email": "Jose.Ruecker@yahoo.com",
+      "role": "employee",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000920",
+        "dev_00000920",
+        "dev_00000920"
+      ]
+    },
+    {
+      "id": "usr_4_000461",
+      "email": "Keely_Kuhic85@gmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000923",
+        "dev_00000923"
+      ]
+    },
+    {
+      "id": "usr_4_000462",
+      "email": "Sasha82@hotmail.com",
+      "role": "employee",
+      "department": "Tools",
+      "devices": [
+        "dev_00000925"
+      ]
+    },
+    {
+      "id": "usr_4_000463",
+      "email": "Jada.Kuhlman@hotmail.com",
+      "role": "employee",
+      "department": "Movies",
+      "devices": [
+        "dev_00000926",
+        "dev_00000926"
+      ]
+    },
+    {
+      "id": "usr_4_000464",
+      "email": "Emmet48@hotmail.com",
+      "role": "employee",
+      "department": "Toys",
+      "devices": [
+        "dev_00000928",
+        "dev_00000928"
+      ]
+    },
+    {
+      "id": "usr_4_000465",
+      "email": "Dave.Goyette60@gmail.com",
+      "role": "employee",
+      "department": "Games",
+      "devices": [
+        "dev_00000930",
+        "dev_00000930",
+        "dev_00000930"
+      ]
+    },
+    {
+      "id": "usr_4_000466",
+      "email": "Trinity99@hotmail.com",
+      "role": "employee",
+      "department": "Health",
+      "devices": [
+        "dev_00000933",
+        "dev_00000933"
+      ]
+    },
+    {
+      "id": "usr_4_000467",
+      "email": "Harmon80@yahoo.com",
+      "role": "employee",
+      "department": "Computers",
+      "devices": [
+        "dev_00000935",
+        "dev_00000935"
+      ]
+    },
+    {
+      "id": "usr_4_000468",
+      "email": "Lorenz.OConnell9@hotmail.com",
+      "role": "employee",
+      "department": "Sports",
+      "devices": [
+        "dev_00000937"
+      ]
+    },
+    {
+      "id": "usr_4_000469",
+      "email": "Kory.Wehner62@hotmail.com",
+      "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000938"
+      ]
+    },
+    {
+      "id": "usr_4_000470",
+      "email": "Otto_Murazik38@yahoo.com",
+      "role": "contractor",
+      "department": "Music",
+      "devices": [
+        "dev_00000939",
+        "dev_00000939"
+      ]
+    },
+    {
+      "id": "usr_4_000471",
+      "email": "Toby_Cruickshank@hotmail.com",
+      "role": "contractor",
+      "department": "Kids",
+      "devices": [
+        "dev_00000941",
+        "dev_00000941"
+      ]
+    },
+    {
+      "id": "usr_4_000472",
+      "email": "Estefania53@yahoo.com",
+      "role": "contractor",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000943",
+        "dev_00000943",
+        "dev_00000943"
+      ]
+    },
+    {
+      "id": "usr_4_000473",
+      "email": "Ashleigh84@gmail.com",
+      "role": "contractor",
+      "department": "Games",
+      "devices": [
+        "dev_00000946"
+      ]
+    },
+    {
+      "id": "usr_4_000474",
+      "email": "Charlotte65@hotmail.com",
+      "role": "contractor",
+      "department": "Health",
+      "devices": [
+        "dev_00000947"
+      ]
+    },
+    {
+      "id": "usr_4_000475",
+      "email": "Carlo_Aufderhar24@yahoo.com",
+      "role": "contractor",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000948",
+        "dev_00000948",
+        "dev_00000948"
+      ]
+    },
+    {
+      "id": "usr_4_000476",
+      "email": "Jayme.Thompson@yahoo.com",
+      "role": "contractor",
+      "department": "Health",
+      "devices": [
+        "dev_00000951"
+      ]
+    },
+    {
+      "id": "usr_4_000477",
+      "email": "Caleb28@gmail.com",
+      "role": "contractor",
+      "department": "Kids",
+      "devices": [
+        "dev_00000952",
+        "dev_00000952"
+      ]
+    },
+    {
+      "id": "usr_4_000478",
+      "email": "Lemuel_Jakubowski@gmail.com",
+      "role": "contractor",
+      "department": "Baby",
+      "devices": [
+        "dev_00000954"
+      ]
+    },
+    {
+      "id": "usr_4_000479",
+      "email": "Lucie89@hotmail.com",
+      "role": "contractor",
+      "department": "Sports",
+      "devices": [
+        "dev_00000955",
+        "dev_00000955"
+      ]
+    },
+    {
+      "id": "usr_4_000480",
+      "email": "Elias59@yahoo.com",
+      "role": "contractor",
+      "department": "Computers",
+      "devices": [
+        "dev_00000957"
+      ]
+    },
+    {
+      "id": "usr_4_000481",
+      "email": "Maudie_Osinski95@gmail.com",
+      "role": "contractor",
+      "department": "Garden",
+      "devices": [
+        "dev_00000958",
+        "dev_00000958",
+        "dev_00000958"
+      ]
+    },
+    {
+      "id": "usr_4_000482",
+      "email": "Tevin.Jast21@hotmail.com",
+      "role": "contractor",
+      "department": "Sports",
+      "devices": [
+        "dev_00000961",
+        "dev_00000961",
+        "dev_00000961"
+      ]
+    },
+    {
+      "id": "usr_4_000483",
+      "email": "Spencer.Prosacco@hotmail.com",
+      "role": "contractor",
+      "department": "Kids",
+      "devices": [
+        "dev_00000964",
+        "dev_00000964",
+        "dev_00000964"
+      ]
+    },
+    {
+      "id": "usr_4_000484",
+      "email": "Jacques.Lockman@yahoo.com",
+      "role": "contractor",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000967"
+      ]
+    },
+    {
+      "id": "usr_4_000485",
+      "email": "Anya5@yahoo.com",
+      "role": "contractor",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000968",
+        "dev_00000968",
+        "dev_00000968"
+      ]
+    },
+    {
+      "id": "usr_4_000486",
+      "email": "Beulah63@gmail.com",
+      "role": "contractor",
+      "department": "Games",
+      "devices": [
+        "dev_00000971",
+        "dev_00000971"
+      ]
+    },
+    {
+      "id": "usr_4_000487",
+      "email": "Sterling_Moore@gmail.com",
+      "role": "contractor",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000973",
+        "dev_00000973"
+      ]
+    },
+    {
+      "id": "usr_4_000488",
+      "email": "Ellis.Prohaska@hotmail.com",
+      "role": "contractor",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000975",
+        "dev_00000975"
+      ]
+    },
+    {
+      "id": "usr_4_000489",
+      "email": "Augustine.Hand65@gmail.com",
+      "role": "contractor",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000977"
+      ]
+    },
+    {
+      "id": "usr_4_000490",
+      "email": "Courtney46@hotmail.com",
+      "role": "contractor",
+      "department": "Music",
+      "devices": [
+        "dev_00000978"
+      ]
+    },
+    {
+      "id": "usr_4_000491",
+      "email": "Krista16@gmail.com",
+      "role": "contractor",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000979",
+        "dev_00000979"
+      ]
+    },
+    {
+      "id": "usr_4_000492",
+      "email": "Liza.Barton@gmail.com",
+      "role": "contractor",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000981",
+        "dev_00000981",
+        "dev_00000981"
+      ]
+    },
+    {
+      "id": "usr_4_000493",
+      "email": "Ardith_Koch79@gmail.com",
+      "role": "contractor",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000984",
+        "dev_00000984",
+        "dev_00000984"
+      ]
+    },
+    {
+      "id": "usr_4_000494",
+      "email": "Kenneth_Walter6@hotmail.com",
+      "role": "contractor",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000987",
+        "dev_00000987"
+      ]
+    },
+    {
+      "id": "usr_4_000495",
+      "email": "Sadye.Rippin3@hotmail.com",
+      "role": "contractor",
+      "department": "Baby",
+      "devices": [
+        "dev_00000989"
+      ]
+    },
+    {
+      "id": "usr_4_000496",
+      "email": "Frank_Grant90@gmail.com",
+      "role": "contractor",
+      "department": "Movies",
+      "devices": [
+        "dev_00000990",
+        "dev_00000990"
+      ]
+    },
+    {
+      "id": "usr_4_000497",
+      "email": "Winfield.Kessler-Gerlach@gmail.com",
+      "role": "contractor",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000992",
+        "dev_00000992"
+      ]
+    },
+    {
+      "id": "usr_4_000498",
+      "email": "Winnifred_Fisher-Bruen@yahoo.com",
+      "role": "contractor",
+      "department": "Home",
+      "devices": [
+        "dev_00000994",
+        "dev_00000994"
+      ]
+    },
+    {
+      "id": "usr_4_000499",
+      "email": "Orlando73@hotmail.com",
+      "role": "contractor",
+      "department": "Movies",
+      "devices": [
+        "dev_00000996"
+      ]
+    },
+    {
+      "id": "usr_4_000500",
+      "email": "Alycia_Carroll77@gmail.com",
+      "role": "contractor",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000997",
+        "dev_00000997",
+        "dev_00000997"
+      ]
+    },
+    {
+      "id": "usr_4_000501",
+      "email": "Alvis.Hauck@yahoo.com",
+      "role": "contractor",
+      "department": "Shoes",
+      "devices": [
+        "dev_00001000",
+        "dev_00001000",
+        "dev_00001000"
+      ]
+    },
+    {
+      "id": "usr_4_000502",
+      "email": "Taya.Hermiston95@yahoo.com",
+      "role": "contractor",
+      "department": "Toys",
+      "devices": [
+        "dev_00001003"
+      ]
+    },
+    {
+      "id": "usr_4_000503",
+      "email": "Ralph.Wiegand91@gmail.com",
+      "role": "contractor",
+      "department": "Clothing",
+      "devices": [
+        "dev_00001004",
+        "dev_00001004"
+      ]
+    },
+    {
+      "id": "usr_4_000504",
+      "email": "Roxanne_Barrows@yahoo.com",
+      "role": "contractor",
+      "department": "Games",
+      "devices": [
+        "dev_00001006",
+        "dev_00001006",
+        "dev_00001006"
+      ]
+    },
+    {
+      "id": "usr_4_000505",
+      "email": "Norma89@gmail.com",
+      "role": "contractor",
+      "department": "Baby",
+      "devices": [
+        "dev_00001009"
+      ]
+    },
+    {
+      "id": "usr_4_000506",
+      "email": "Flo.Bergnaum@gmail.com",
+      "role": "contractor",
+      "department": "Toys",
+      "devices": [
+        "dev_00001010",
+        "dev_00001010",
+        "dev_00001010"
+      ]
+    },
+    {
+      "id": "usr_4_000507",
+      "email": "Travis_Aufderhar35@gmail.com",
+      "role": "contractor",
+      "department": "Electronics",
+      "devices": [
+        "dev_00001013"
+      ]
+    },
+    {
+      "id": "usr_4_000508",
+      "email": "Neil.Leuschke5@gmail.com",
+      "role": "contractor",
+      "department": "Grocery",
+      "devices": [
+        "dev_00001014"
+      ]
+    },
+    {
+      "id": "usr_4_000509",
+      "email": "Kade_Beahan12@hotmail.com",
+      "role": "contractor",
+      "department": "Games",
+      "devices": [
+        "dev_00001015",
+        "dev_00001015"
+      ]
+    },
+    {
+      "id": "usr_4_000510",
+      "email": "Mikel.Predovic77@yahoo.com",
+      "role": "contractor",
+      "department": "Tools",
+      "devices": [
+        "dev_00001017",
+        "dev_00001017"
+      ]
+    },
+    {
+      "id": "usr_4_000511",
+      "email": "Erling_Moore@hotmail.com",
+      "role": "contractor",
+      "department": "Automotive",
+      "devices": [
+        "dev_00001019"
+      ]
+    },
+    {
+      "id": "usr_4_000512",
+      "email": "Wilton_Kovacek@hotmail.com",
+      "role": "contractor",
+      "department": "Grocery",
+      "devices": [
+        "dev_00001020",
+        "dev_00001020",
+        "dev_00001020"
+      ]
+    },
+    {
+      "id": "usr_4_000513",
+      "email": "Agnes6@hotmail.com",
+      "role": "contractor",
+      "department": "Games",
+      "devices": [
+        "dev_00001023",
+        "dev_00001023"
+      ]
+    },
+    {
+      "id": "usr_4_000514",
+      "email": "Alexandre_Watsica59@yahoo.com",
+      "role": "contractor",
+      "department": "Industrial",
+      "devices": [
+        "dev_00001025",
+        "dev_00001025"
+      ]
+    },
+    {
+      "id": "usr_4_000515",
+      "email": "Nya.Graham93@yahoo.com",
+      "role": "contractor",
+      "department": "Movies",
+      "devices": [
+        "dev_00001027",
+        "dev_00001027"
+      ]
+    },
+    {
+      "id": "usr_4_000516",
+      "email": "Brennon33@hotmail.com",
+      "role": "contractor",
+      "department": "Sports",
+      "devices": [
+        "dev_00001029",
+        "dev_00001029",
+        "dev_00001029"
+      ]
+    },
+    {
+      "id": "usr_4_000517",
+      "email": "Augusta57@hotmail.com",
+      "role": "contractor",
+      "department": "Garden",
+      "devices": [
+        "dev_00001032",
+        "dev_00001032",
+        "dev_00001032"
+      ]
+    },
+    {
+      "id": "usr_4_000518",
+      "email": "Dewitt.Borer@hotmail.com",
+      "role": "contractor",
+      "department": "Home",
+      "devices": [
+        "dev_00001035"
+      ]
+    },
+    {
+      "id": "usr_4_000519",
+      "email": "Rudolph.Hessel-Grant44@gmail.com",
+      "role": "contractor",
+      "department": "Computers",
+      "devices": [
+        "dev_00001036",
+        "dev_00001036"
+      ]
+    },
+    {
+      "id": "usr_4_000520",
+      "email": "Rico75@gmail.com",
+      "role": "contractor",
+      "department": "Grocery",
+      "devices": [
+        "dev_00001038",
+        "dev_00001038",
+        "dev_00001038"
+      ]
+    },
+    {
+      "id": "usr_4_000521",
+      "email": "Francesca8@yahoo.com",
+      "role": "contractor",
+      "department": "Home",
+      "devices": [
+        "dev_00001041"
+      ]
+    },
+    {
+      "id": "usr_4_000522",
+      "email": "Crystel.Lubowitz94@yahoo.com",
+      "role": "contractor",
+      "department": "Automotive",
+      "devices": [
+        "dev_00001042",
+        "dev_00001042"
+      ]
+    },
+    {
+      "id": "usr_4_000523",
+      "email": "Austyn.Gulgowski-Ortiz@gmail.com",
+      "role": "contractor",
+      "department": "Beauty",
+      "devices": [
+        "dev_00001044",
+        "dev_00001044"
+      ]
+    },
+    {
+      "id": "usr_4_000524",
+      "email": "Coby.Dooley@hotmail.com",
+      "role": "contractor",
+      "department": "Health",
+      "devices": [
+        "dev_00001046"
+      ]
+    },
+    {
+      "id": "usr_4_000525",
+      "email": "Linnea75@gmail.com",
+      "role": "contractor",
+      "department": "Grocery",
+      "devices": [
+        "dev_00001047",
+        "dev_00001047"
+      ]
+    },
+    {
+      "id": "usr_4_000526",
+      "email": "Ludwig_Hoppe@yahoo.com",
+      "role": "contractor",
+      "department": "Sports",
+      "devices": [
+        "dev_00001049",
+        "dev_00001049",
+        "dev_00001049"
+      ]
+    },
+    {
+      "id": "usr_4_000527",
+      "email": "Jennie_Goldner34@yahoo.com",
+      "role": "contractor",
+      "department": "Clothing",
+      "devices": [
+        "dev_00001052",
+        "dev_00001052",
+        "dev_00001052"
+      ]
+    },
+    {
+      "id": "usr_4_000528",
+      "email": "Juana_Barrows67@yahoo.com",
+      "role": "contractor",
+      "department": "Grocery",
+      "devices": [
+        "dev_00001055",
+        "dev_00001055",
+        "dev_00001055"
+      ]
+    },
+    {
+      "id": "usr_4_000529",
+      "email": "Mariah.McKenzie45@yahoo.com",
+      "role": "contractor",
+      "department": "Automotive",
+      "devices": [
+        "dev_00001058",
+        "dev_00001058"
+      ]
+    },
+    {
+      "id": "usr_4_000530",
+      "email": "Caroline69@gmail.com",
+      "role": "contractor",
+      "department": "Automotive",
+      "devices": [
+        "dev_00001060",
+        "dev_00001060",
+        "dev_00001060"
+      ]
+    },
+    {
+      "id": "usr_4_000531",
+      "email": "Jaquan.Wilkinson@hotmail.com",
+      "role": "contractor",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00001063",
+        "dev_00001063"
+      ]
+    },
+    {
+      "id": "usr_4_000532",
+      "email": "Claudia_Rice93@gmail.com",
+      "role": "contractor",
+      "department": "Health",
+      "devices": [
+        "dev_00001065"
+      ]
+    },
+    {
+      "id": "usr_4_000533",
+      "email": "Leopold.Schroeder23@hotmail.com",
+      "role": "contractor",
+      "department": "Music",
+      "devices": [
+        "dev_00001066",
+        "dev_00001066"
+      ]
+    },
+    {
+      "id": "usr_4_000534",
+      "email": "Tatyana_Schmidt@gmail.com",
+      "role": "contractor",
+      "department": "Kids",
+      "devices": [
+        "dev_00001068",
+        "dev_00001068"
+      ]
+    },
+    {
+      "id": "usr_4_000535",
+      "email": "Fern_Jacobson@yahoo.com",
+      "role": "contractor",
+      "department": "Shoes",
+      "devices": [
+        "dev_00001070"
+      ]
+    },
+    {
+      "id": "usr_4_000536",
+      "email": "Mattie.Powlowski@hotmail.com",
+      "role": "contractor",
+      "department": "Baby",
+      "devices": [
+        "dev_00001071"
+      ]
+    },
+    {
+      "id": "usr_4_000537",
+      "email": "Declan.Witting@yahoo.com",
+      "role": "contractor",
+      "department": "Clothing",
+      "devices": [
+        "dev_00001072"
+      ]
+    },
+    {
+      "id": "usr_4_000538",
+      "email": "Hailie43@yahoo.com",
+      "role": "contractor",
+      "department": "Health",
+      "devices": [
+        "dev_00001073",
+        "dev_00001073",
+        "dev_00001073"
+      ]
+    },
+    {
+      "id": "usr_4_000539",
+      "email": "Newell98@yahoo.com",
+      "role": "contractor",
+      "department": "Movies",
+      "devices": [
+        "dev_00001076",
+        "dev_00001076"
+      ]
+    },
+    {
+      "id": "usr_4_000540",
+      "email": "Myrtie24@gmail.com",
+      "role": "contractor",
+      "department": "Computers",
+      "devices": [
+        "dev_00001078",
+        "dev_00001078",
+        "dev_00001078"
+      ]
+    },
+    {
+      "id": "usr_4_000541",
+      "email": "Deonte_Beatty-Johnson@gmail.com",
+      "role": "contractor",
+      "department": "Beauty",
+      "devices": [
+        "dev_00001081",
+        "dev_00001081",
+        "dev_00001081"
+      ]
+    },
+    {
+      "id": "usr_4_000542",
+      "email": "Aimee71@gmail.com",
+      "role": "contractor",
+      "department": "Music",
+      "devices": [
+        "dev_00001084",
+        "dev_00001084"
+      ]
+    },
+    {
+      "id": "usr_4_000543",
+      "email": "Beryl_Bergstrom@gmail.com",
+      "role": "contractor",
+      "department": "Garden",
+      "devices": [
+        "dev_00001086"
+      ]
+    },
+    {
+      "id": "usr_4_000544",
+      "email": "Graham.King@hotmail.com",
+      "role": "contractor",
+      "department": "Grocery",
+      "devices": [
+        "dev_00001087",
+        "dev_00001087",
+        "dev_00001087"
+      ]
+    },
+    {
+      "id": "usr_4_000545",
+      "email": "Diana_Terry@gmail.com",
+      "role": "contractor",
+      "department": "Shoes",
+      "devices": [
+        "dev_00001090",
+        "dev_00001090",
+        "dev_00001090"
+      ]
+    },
+    {
+      "id": "usr_4_000546",
+      "email": "Magnolia73@yahoo.com",
+      "role": "contractor",
+      "department": "Games",
+      "devices": [
+        "dev_00001093",
+        "dev_00001093"
+      ]
+    },
+    {
+      "id": "usr_4_000547",
+      "email": "Houston33@hotmail.com",
+      "role": "contractor",
+      "department": "Beauty",
+      "devices": [
+        "dev_00001095",
+        "dev_00001095"
+      ]
+    },
+    {
+      "id": "usr_4_000548",
+      "email": "Jackson17@gmail.com",
+      "role": "contractor",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00001097",
+        "dev_00001097",
+        "dev_00001097"
+      ]
+    },
+    {
+      "id": "usr_4_000549",
+      "email": "Jaylon_Gerhold54@hotmail.com",
+      "role": "contractor",
+      "department": "Kids",
+      "devices": [
+        "dev_00001100"
+      ]
+    },
+    {
+      "id": "usr_4_000550",
+      "email": "Bernice.Welch@yahoo.com",
+      "role": "contractor",
+      "department": "Sports",
+      "devices": [
+        "dev_00001101",
+        "dev_00001101"
+      ]
+    },
+    {
+      "id": "usr_4_000551",
+      "email": "Verona.Rippin85@yahoo.com",
+      "role": "contractor",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00001103",
+        "dev_00001103"
+      ]
+    },
+    {
+      "id": "usr_4_000552",
+      "email": "Bernardo.Reichert9@gmail.com",
+      "role": "contractor",
+      "department": "Music",
+      "devices": [
+        "dev_00001105",
+        "dev_00001105"
+      ]
+    },
+    {
+      "id": "usr_4_000553",
+      "email": "Dan_Hahn@gmail.com",
+      "role": "contractor",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00001107",
+        "dev_00001107"
+      ]
+    },
+    {
+      "id": "usr_4_000554",
+      "email": "Ahmad45@yahoo.com",
+      "role": "contractor",
+      "department": "Automotive",
+      "devices": [
+        "dev_00001109",
+        "dev_00001109"
+      ]
+    },
+    {
+      "id": "usr_4_000555",
+      "email": "Clyde95@yahoo.com",
+      "role": "contractor",
+      "department": "Industrial",
+      "devices": [
+        "dev_00001111",
+        "dev_00001111",
+        "dev_00001111"
+      ]
+    },
+    {
+      "id": "usr_4_000556",
+      "email": "Aniya_Grant@hotmail.com",
+      "role": "contractor",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00001114",
+        "dev_00001114",
+        "dev_00001114"
+      ]
+    },
+    {
+      "id": "usr_4_000557",
+      "email": "Joesph_Herman95@gmail.com",
+      "role": "contractor",
+      "department": "Sports",
+      "devices": [
+        "dev_00001117",
+        "dev_00001117",
+        "dev_00001117"
+      ]
+    },
+    {
+      "id": "usr_4_000558",
+      "email": "Rosie76@hotmail.com",
+      "role": "contractor",
+      "department": "Movies",
+      "devices": [
+        "dev_00001120",
+        "dev_00001120",
+        "dev_00001120"
+      ]
+    },
+    {
+      "id": "usr_4_000559",
+      "email": "Alda_Yundt59@hotmail.com",
+      "role": "contractor",
+      "department": "Clothing",
+      "devices": [
+        "dev_00001123",
+        "dev_00001123"
+      ]
+    },
+    {
+      "id": "usr_4_000560",
+      "email": "Anissa54@hotmail.com",
+      "role": "contractor",
+      "department": "Electronics",
+      "devices": [
+        "dev_00001125",
+        "dev_00001125"
+      ]
+    },
+    {
+      "id": "usr_4_000561",
+      "email": "Emery.Aufderhar@gmail.com",
+      "role": "contractor",
+      "department": "Electronics",
+      "devices": [
+        "dev_00001127"
+      ]
+    },
+    {
+      "id": "usr_4_000562",
+      "email": "Vidal61@yahoo.com",
+      "role": "contractor",
+      "department": "Movies",
+      "devices": [
+        "dev_00001128",
+        "dev_00001128",
+        "dev_00001128"
+      ]
+    },
+    {
+      "id": "usr_4_000563",
+      "email": "Robyn81@gmail.com",
+      "role": "contractor",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00001131",
+        "dev_00001131"
+      ]
+    },
+    {
+      "id": "usr_4_000564",
+      "email": "Asha79@gmail.com",
+      "role": "contractor",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00001133"
+      ]
+    },
+    {
+      "id": "usr_4_000565",
+      "email": "Charlotte_OKeefe@yahoo.com",
+      "role": "contractor",
+      "department": "Books",
+      "devices": [
+        "dev_00001134",
+        "dev_00001134"
+      ]
+    },
+    {
+      "id": "usr_4_000566",
+      "email": "Lily82@hotmail.com",
+      "role": "contractor",
+      "department": "Toys",
+      "devices": [
+        "dev_00001136"
+      ]
+    },
+    {
+      "id": "usr_4_000567",
+      "email": "Hilma_McLaughlin@gmail.com",
+      "role": "contractor",
+      "department": "Kids",
+      "devices": [
+        "dev_00001137"
+      ]
+    },
+    {
+      "id": "usr_4_000568",
+      "email": "Emma_Kozey@hotmail.com",
+      "role": "contractor",
+      "department": "Music",
+      "devices": [
+        "dev_00001138",
+        "dev_00001138"
+      ]
+    },
+    {
+      "id": "usr_4_000569",
+      "email": "Breanna.OHara@gmail.com",
+      "role": "contractor",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00001140",
+        "dev_00001140"
+      ]
+    },
+    {
+      "id": "usr_4_000570",
+      "email": "Bryana.Jacobson30@gmail.com",
+      "role": "contractor",
+      "department": "Toys",
+      "devices": [
+        "dev_00001142"
+      ]
+    },
+    {
+      "id": "usr_4_000571",
+      "email": "Thomas95@gmail.com",
+      "role": "contractor",
+      "department": "Music",
+      "devices": [
+        "dev_00001143",
+        "dev_00001143"
+      ]
+    },
+    {
+      "id": "usr_4_000572",
+      "email": "Randi.Hansen88@gmail.com",
+      "role": "contractor",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00001145",
+        "dev_00001145",
+        "dev_00001145"
+      ]
+    },
+    {
+      "id": "usr_4_000573",
+      "email": "Mckenna34@hotmail.com",
+      "role": "contractor",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00001148",
+        "dev_00001148",
+        "dev_00001148"
+      ]
+    },
+    {
+      "id": "usr_4_000574",
+      "email": "Jerad.Braun@hotmail.com",
+      "role": "contractor",
+      "department": "Games",
+      "devices": [
+        "dev_00001151",
+        "dev_00001151"
+      ]
+    },
+    {
+      "id": "usr_4_000575",
+      "email": "Bette_Wiza19@yahoo.com",
+      "role": "contractor",
+      "department": "Baby",
+      "devices": [
+        "dev_00001153",
+        "dev_00001153"
+      ]
+    },
+    {
+      "id": "usr_4_000576",
+      "email": "Susan_Reichel@yahoo.com",
+      "role": "contractor",
+      "department": "Home",
+      "devices": [
+        "dev_00001155",
+        "dev_00001155",
+        "dev_00001155"
+      ]
+    },
+    {
+      "id": "usr_4_000577",
+      "email": "Alberto.Torphy-Parker35@gmail.com",
+      "role": "contractor",
+      "department": "Industrial",
+      "devices": [
+        "dev_00001158",
+        "dev_00001158"
+      ]
+    },
+    {
+      "id": "usr_4_000578",
+      "email": "Cecelia.Kutch@gmail.com",
+      "role": "contractor",
+      "department": "Clothing",
+      "devices": [
+        "dev_00001160",
+        "dev_00001160"
+      ]
+    },
+    {
+      "id": "usr_4_000579",
+      "email": "Carlie.Mayert33@yahoo.com",
+      "role": "contractor",
+      "department": "Music",
+      "devices": [
+        "dev_00001162"
+      ]
+    },
+    {
+      "id": "usr_4_000580",
+      "email": "Hipolito58@gmail.com",
+      "role": "contractor",
+      "department": "Books",
+      "devices": [
+        "dev_00001163"
+      ]
+    },
+    {
+      "id": "usr_4_000581",
+      "email": "Rosemary_Pfannerstill-Renner@hotmail.com",
+      "role": "contractor",
+      "department": "Games",
+      "devices": [
+        "dev_00001164",
+        "dev_00001164",
+        "dev_00001164"
+      ]
+    },
+    {
+      "id": "usr_4_000582",
+      "email": "Fermin.Kassulke@hotmail.com",
+      "role": "contractor",
+      "department": "Beauty",
+      "devices": [
+        "dev_00001167"
+      ]
+    },
+    {
+      "id": "usr_4_000583",
+      "email": "Kristoffer.Cole60@gmail.com",
+      "role": "contractor",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00001168"
+      ]
+    },
+    {
+      "id": "usr_4_000584",
+      "email": "Alexanne_Armstrong@yahoo.com",
+      "role": "contractor",
+      "department": "Beauty",
+      "devices": [
+        "dev_00001169",
+        "dev_00001169"
+      ]
+    },
+    {
+      "id": "usr_4_000585",
+      "email": "Tristin_Prosacco30@gmail.com",
+      "role": "contractor",
+      "department": "Home",
+      "devices": [
+        "dev_00001171"
+      ]
+    },
+    {
+      "id": "usr_4_000586",
+      "email": "Doyle.Marquardt-Heaney45@gmail.com",
+      "role": "contractor",
+      "department": "Beauty",
+      "devices": [
+        "dev_00001172"
+      ]
+    },
+    {
+      "id": "usr_4_000587",
+      "email": "Claudia.Hayes@gmail.com",
+      "role": "contractor",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00001173",
+        "dev_00001173"
+      ]
+    },
+    {
+      "id": "usr_4_000588",
+      "email": "Imelda_Daugherty@yahoo.com",
+      "role": "contractor",
+      "department": "Kids",
+      "devices": [
+        "dev_00001175",
+        "dev_00001175"
+      ]
+    },
+    {
+      "id": "usr_4_000589",
+      "email": "Chanelle.Sanford@hotmail.com",
+      "role": "contractor",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00001177"
+      ]
+    },
+    {
+      "id": "usr_4_000590",
+      "email": "Esta.West55@gmail.com",
+      "role": "contractor",
+      "department": "Movies",
+      "devices": [
+        "dev_00001178",
+        "dev_00001178"
+      ]
+    },
+    {
+      "id": "usr_4_000591",
+      "email": "Janiya62@gmail.com",
+      "role": "contractor",
+      "department": "Grocery",
+      "devices": [
+        "dev_00001180"
+      ]
+    },
+    {
+      "id": "usr_4_000592",
+      "email": "Holden.Gibson@yahoo.com",
+      "role": "contractor",
+      "department": "Kids",
+      "devices": [
+        "dev_00001181"
+      ]
+    },
+    {
+      "id": "usr_4_000593",
+      "email": "Amy.Deckow63@gmail.com",
+      "role": "contractor",
+      "department": "Sports",
+      "devices": [
+        "dev_00001182",
+        "dev_00001182",
+        "dev_00001182"
+      ]
+    },
+    {
+      "id": "usr_4_000594",
+      "email": "Nash_Sauer54@hotmail.com",
+      "role": "contractor",
+      "department": "Home",
+      "devices": [
+        "dev_00001185",
+        "dev_00001185"
+      ]
+    },
+    {
+      "id": "usr_4_000595",
+      "email": "Leland.Corkery76@yahoo.com",
+      "role": "contractor",
+      "department": "Beauty",
+      "devices": [
+        "dev_00001187",
+        "dev_00001187",
+        "dev_00001187"
+      ]
+    },
+    {
+      "id": "usr_4_000596",
+      "email": "Lexus_Leuschke28@gmail.com",
+      "role": "contractor",
+      "department": "Movies",
+      "devices": [
+        "dev_00001190",
+        "dev_00001190",
+        "dev_00001190"
+      ]
+    },
+    {
+      "id": "usr_4_000597",
+      "email": "Kylee.Oberbrunner5@gmail.com",
+      "role": "contractor",
+      "department": "Beauty",
+      "devices": [
+        "dev_00001193"
+      ]
+    },
+    {
+      "id": "usr_4_000598",
+      "email": "Lemuel28@yahoo.com",
+      "role": "contractor",
+      "department": "Sports",
+      "devices": [
+        "dev_00001194",
+        "dev_00001194",
+        "dev_00001194"
+      ]
+    },
+    {
+      "id": "usr_4_000599",
+      "email": "Alda.Hirthe98@hotmail.com",
+      "role": "contractor",
+      "department": "Tools",
+      "devices": [
+        "dev_00001197"
+      ]
+    },
+    {
+      "id": "usr_4_000600",
+      "email": "Earnest_Huels87@gmail.com",
+      "role": "contractor",
+      "department": "Computers",
+      "devices": [
+        "dev_00001198",
+        "dev_00001198",
+        "dev_00001198"
+      ]
+    },
+    {
+      "id": "usr_4_000601",
+      "email": "Shaun_Swift70@hotmail.com",
+      "role": "contractor",
+      "department": "Health",
+      "devices": [
+        "dev_00001201",
+        "dev_00001201",
+        "dev_00001201"
+      ]
+    },
+    {
+      "id": "usr_4_000602",
+      "email": "Tamia_Bernier-OConner11@gmail.com",
+      "role": "contractor",
+      "department": "Grocery",
+      "devices": [
+        "dev_00001204"
+      ]
+    },
+    {
+      "id": "usr_4_000603",
+      "email": "Jarod50@hotmail.com",
+      "role": "contractor",
+      "department": "Kids",
+      "devices": [
+        "dev_00001205",
+        "dev_00001205"
+      ]
+    },
+    {
+      "id": "usr_4_000604",
+      "email": "Jeanie0@hotmail.com",
+      "role": "guest",
+      "department": "Garden",
+      "devices": [
+        "dev_00001207",
+        "dev_00001207"
+      ]
+    },
+    {
+      "id": "usr_4_000605",
+      "email": "Jennie.Kertzmann47@hotmail.com",
+      "role": "guest",
+      "department": "Computers",
+      "devices": [
+        "dev_00001209"
+      ]
+    },
+    {
+      "id": "usr_4_000606",
+      "email": "Charley_Davis@gmail.com",
+      "role": "guest",
+      "department": "Books",
+      "devices": [
+        "dev_00001210"
+      ]
+    },
+    {
+      "id": "usr_4_000607",
+      "email": "Marcellus.Effertz87@yahoo.com",
+      "role": "guest",
+      "department": "Music",
+      "devices": [
+        "dev_00001211",
+        "dev_00001211"
+      ]
+    },
+    {
+      "id": "usr_4_000608",
+      "email": "Colt_Gottlieb@hotmail.com",
+      "role": "guest",
+      "department": "Electronics",
+      "devices": [
+        "dev_00001213",
+        "dev_00001213"
+      ]
+    },
+    {
+      "id": "usr_4_000609",
+      "email": "Miles6@gmail.com",
+      "role": "guest",
+      "department": "Books",
+      "devices": [
+        "dev_00001215",
+        "dev_00001215",
+        "dev_00001215"
+      ]
+    },
+    {
+      "id": "usr_4_000610",
+      "email": "Jackeline.Bashirian@gmail.com",
+      "role": "guest",
+      "department": "Books",
+      "devices": [
+        "dev_00001218"
+      ]
+    },
+    {
+      "id": "usr_4_000611",
+      "email": "Arlo46@yahoo.com",
+      "role": "guest",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00001219",
+        "dev_00001219",
+        "dev_00001219"
+      ]
+    },
+    {
+      "id": "usr_4_000612",
+      "email": "Andre54@yahoo.com",
+      "role": "guest",
+      "department": "Kids",
+      "devices": [
+        "dev_00001222",
+        "dev_00001222",
+        "dev_00001222"
+      ]
+    },
+    {
+      "id": "usr_4_000613",
+      "email": "Frida37@gmail.com",
+      "role": "guest",
+      "department": "Clothing",
+      "devices": [
+        "dev_00001225"
+      ]
+    },
+    {
+      "id": "usr_4_000614",
+      "email": "Elmore67@hotmail.com",
+      "role": "guest",
+      "department": "Home",
+      "devices": [
+        "dev_00001226",
+        "dev_00001226"
+      ]
+    },
+    {
+      "id": "usr_4_000615",
+      "email": "Teagan.Ullrich@hotmail.com",
+      "role": "guest",
+      "department": "Books",
+      "devices": [
+        "dev_00001228"
+      ]
+    },
+    {
+      "id": "usr_4_000616",
+      "email": "Lavern0@hotmail.com",
+      "role": "guest",
+      "department": "Books",
+      "devices": [
+        "dev_00001229",
+        "dev_00001229",
+        "dev_00001229"
+      ]
+    },
+    {
+      "id": "usr_4_000617",
+      "email": "Kenyatta61@gmail.com",
+      "role": "guest",
+      "department": "Sports",
+      "devices": [
+        "dev_00001232",
+        "dev_00001232"
+      ]
+    },
+    {
+      "id": "usr_4_000618",
+      "email": "Rhea7@hotmail.com",
+      "role": "guest",
+      "department": "Health",
+      "devices": [
+        "dev_00001234",
+        "dev_00001234"
+      ]
+    },
+    {
+      "id": "usr_4_000619",
+      "email": "Gerald89@hotmail.com",
+      "role": "guest",
+      "department": "Tools",
+      "devices": [
+        "dev_00001236",
+        "dev_00001236",
+        "dev_00001236"
+      ]
+    },
+    {
+      "id": "usr_4_000620",
+      "email": "Elenor.Hintz@hotmail.com",
+      "role": "guest",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00001239"
+      ]
+    },
+    {
+      "id": "usr_4_000621",
+      "email": "Emmanuel48@hotmail.com",
+      "role": "guest",
+      "department": "Beauty",
+      "devices": [
+        "dev_00001240"
+      ]
+    },
+    {
+      "id": "usr_4_000622",
+      "email": "Mallory34@gmail.com",
+      "role": "guest",
+      "department": "Garden",
+      "devices": [
+        "dev_00001241",
+        "dev_00001241",
+        "dev_00001241"
+      ]
+    },
+    {
+      "id": "usr_4_000623",
+      "email": "Dion_Thiel89@yahoo.com",
+      "role": "guest",
+      "department": "Shoes",
+      "devices": [
+        "dev_00001244",
+        "dev_00001244",
+        "dev_00001244"
+      ]
+    },
+    {
+      "id": "usr_4_000624",
+      "email": "Kyla_Murazik49@hotmail.com",
+      "role": "guest",
+      "department": "Beauty",
+      "devices": [
+        "dev_00001247",
+        "dev_00001247"
+      ]
+    },
+    {
+      "id": "usr_4_000625",
+      "email": "Gregoria63@gmail.com",
+      "role": "guest",
+      "department": "Baby",
+      "devices": [
+        "dev_00001249",
+        "dev_00001249"
+      ]
+    },
+    {
+      "id": "usr_4_000626",
+      "email": "Coby.Lebsack@yahoo.com",
+      "role": "guest",
+      "department": "Home",
+      "devices": [
+        "dev_00001251",
+        "dev_00001251",
+        "dev_00001251"
+      ]
+    },
+    {
+      "id": "usr_4_000627",
+      "email": "Nigel48@gmail.com",
+      "role": "guest",
+      "department": "Industrial",
+      "devices": [
+        "dev_00001254",
+        "dev_00001254"
+      ]
+    },
+    {
+      "id": "usr_4_000628",
+      "email": "Katharina.King@hotmail.com",
+      "role": "guest",
+      "department": "Sports",
+      "devices": [
+        "dev_00001256"
+      ]
+    },
+    {
+      "id": "usr_4_000629",
+      "email": "Alberta_Fadel73@gmail.com",
+      "role": "guest",
+      "department": "Garden",
+      "devices": [
+        "dev_00001257",
+        "dev_00001257"
+      ]
+    },
+    {
+      "id": "usr_4_000630",
+      "email": "Birdie.Grant85@yahoo.com",
+      "role": "guest",
+      "department": "Shoes",
+      "devices": [
+        "dev_00001259"
+      ]
+    },
+    {
+      "id": "usr_4_000631",
+      "email": "Devonte.Keeling49@yahoo.com",
+      "role": "guest",
+      "department": "Garden",
+      "devices": [
+        "dev_00001260",
+        "dev_00001260",
+        "dev_00001260"
+      ]
+    },
+    {
+      "id": "usr_4_000632",
+      "email": "Dasia_Carter94@yahoo.com",
+      "role": "guest",
+      "department": "Movies",
+      "devices": [
+        "dev_00001263"
+      ]
+    },
+    {
+      "id": "usr_4_000633",
+      "email": "Candido10@gmail.com",
+      "role": "guest",
+      "department": "Baby",
+      "devices": [
+        "dev_00001264"
+      ]
+    },
+    {
+      "id": "usr_4_000634",
+      "email": "Rosario49@hotmail.com",
+      "role": "guest",
+      "department": "Baby",
+      "devices": [
+        "dev_00001265",
+        "dev_00001265",
+        "dev_00001265"
+      ]
+    },
+    {
+      "id": "usr_4_000635",
+      "email": "Emmanuelle.Brakus96@gmail.com",
+      "role": "guest",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00001268",
+        "dev_00001268"
+      ]
+    },
+    {
+      "id": "usr_4_000636",
+      "email": "Waldo3@hotmail.com",
+      "role": "guest",
+      "department": "Industrial",
+      "devices": [
+        "dev_00001270",
+        "dev_00001270",
+        "dev_00001270"
+      ]
+    },
+    {
+      "id": "usr_4_000637",
+      "email": "Pattie.Lowe@gmail.com",
+      "role": "guest",
+      "department": "Shoes",
+      "devices": [
+        "dev_00001273",
+        "dev_00001273"
+      ]
+    },
+    {
+      "id": "usr_4_000638",
+      "email": "Talon_Lebsack83@yahoo.com",
+      "role": "guest",
+      "department": "Baby",
+      "devices": [
+        "dev_00001275"
+      ]
+    },
+    {
+      "id": "usr_4_000639",
+      "email": "Oda.Wunsch62@yahoo.com",
+      "role": "guest",
+      "department": "Clothing",
+      "devices": [
+        "dev_00001276",
+        "dev_00001276"
+      ]
+    },
+    {
+      "id": "usr_4_000640",
+      "email": "Sarai21@hotmail.com",
+      "role": "guest",
+      "department": "Electronics",
+      "devices": [
+        "dev_00001278",
+        "dev_00001278",
+        "dev_00001278"
+      ]
+    },
+    {
+      "id": "usr_4_000641",
+      "email": "Orie_DAmore@hotmail.com",
+      "role": "guest",
+      "department": "Toys",
+      "devices": [
+        "dev_00001281",
+        "dev_00001281",
+        "dev_00001281"
+      ]
+    },
+    {
+      "id": "usr_4_000642",
+      "email": "Sim.Schuster@hotmail.com",
+      "role": "guest",
+      "department": "Games",
+      "devices": [
+        "dev_00001284",
+        "dev_00001284"
+      ]
+    },
+    {
+      "id": "usr_4_000643",
+      "email": "Kenneth.Schiller10@gmail.com",
+      "role": "guest",
+      "department": "Industrial",
+      "devices": [
+        "dev_00001286",
+        "dev_00001286",
+        "dev_00001286"
+      ]
+    },
+    {
+      "id": "usr_4_000644",
+      "email": "Nathanael.Johnston8@gmail.com",
+      "role": "guest",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00001289",
+        "dev_00001289",
+        "dev_00001289"
+      ]
+    },
+    {
+      "id": "usr_4_000645",
+      "email": "Cara.Conn28@gmail.com",
+      "role": "guest",
+      "department": "Music",
+      "devices": [
+        "dev_00001292"
+      ]
+    },
+    {
+      "id": "usr_4_000646",
+      "email": "Talon.Russel@yahoo.com",
+      "role": "guest",
+      "department": "Computers",
+      "devices": [
+        "dev_00001293",
+        "dev_00001293",
+        "dev_00001293"
+      ]
+    },
+    {
+      "id": "usr_4_000647",
+      "email": "Colt29@yahoo.com",
+      "role": "guest",
+      "department": "Health",
+      "devices": [
+        "dev_00001296",
+        "dev_00001296",
+        "dev_00001296"
+      ]
+    },
+    {
+      "id": "usr_4_000648",
+      "email": "Brianne1@hotmail.com",
+      "role": "guest",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00001299"
+      ]
+    },
+    {
+      "id": "usr_4_000649",
+      "email": "Charlotte.Considine93@hotmail.com",
+      "role": "guest",
+      "department": "Games",
+      "devices": [
+        "dev_00001300",
+        "dev_00001300"
+      ]
+    },
+    {
+      "id": "usr_4_000650",
+      "email": "Kara.Ritchie@yahoo.com",
+      "role": "guest",
+      "department": "Beauty",
+      "devices": [
+        "dev_00001302",
+        "dev_00001302",
+        "dev_00001302"
+      ]
+    },
+    {
+      "id": "usr_4_000651",
+      "email": "Erich.Lind@hotmail.com",
+      "role": "guest",
+      "department": "Beauty",
+      "devices": [
+        "dev_00001305",
+        "dev_00001305"
+      ]
+    },
+    {
+      "id": "usr_4_000652",
+      "email": "Madelynn_Blanda57@yahoo.com",
+      "role": "guest",
+      "department": "Clothing",
+      "devices": [
+        "dev_00001307",
+        "dev_00001307",
+        "dev_00001307"
+      ]
+    },
+    {
+      "id": "usr_4_000653",
+      "email": "Priscilla_Morar@hotmail.com",
+      "role": "guest",
+      "department": "Garden",
+      "devices": [
+        "dev_00001310"
+      ]
+    },
+    {
+      "id": "usr_4_000654",
+      "email": "Marjorie.Legros@gmail.com",
+      "role": "guest",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00001311",
+        "dev_00001311"
+      ]
+    },
+    {
+      "id": "usr_4_000655",
+      "email": "Mara5@gmail.com",
+      "role": "guest",
+      "department": "Health",
+      "devices": [
+        "dev_00001313",
+        "dev_00001313",
+        "dev_00001313"
+      ]
+    },
+    {
+      "id": "usr_4_000656",
+      "email": "Dorris58@hotmail.com",
+      "role": "guest",
+      "department": "Health",
+      "devices": [
+        "dev_00001316"
+      ]
+    },
+    {
+      "id": "usr_4_000657",
+      "email": "Ciara_Jenkins@hotmail.com",
+      "role": "guest",
+      "department": "Tools",
+      "devices": [
+        "dev_00001317",
+        "dev_00001317"
+      ]
+    },
+    {
+      "id": "usr_4_000658",
+      "email": "Wava_Marks2@hotmail.com",
+      "role": "guest",
+      "department": "Tools",
+      "devices": [
+        "dev_00001319"
+      ]
+    },
+    {
+      "id": "usr_4_000659",
+      "email": "Celine_Heaney@yahoo.com",
+      "role": "guest",
+      "department": "Music",
+      "devices": [
+        "dev_00001320",
+        "dev_00001320"
+      ]
+    },
+    {
+      "id": "usr_4_000660",
+      "email": "Coty_Buckridge@gmail.com",
+      "role": "guest",
+      "department": "Home",
+      "devices": [
+        "dev_00001322",
+        "dev_00001322"
+      ]
+    },
+    {
+      "id": "usr_4_000661",
+      "email": "Oleta83@yahoo.com",
+      "role": "guest",
+      "department": "Industrial",
+      "devices": [
+        "dev_00001324",
+        "dev_00001324",
+        "dev_00001324"
+      ]
+    },
+    {
+      "id": "usr_4_000662",
+      "email": "Otilia15@yahoo.com",
+      "role": "guest",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00001327",
+        "dev_00001327"
+      ]
+    },
+    {
+      "id": "usr_4_000663",
+      "email": "Judy.Stamm@yahoo.com",
+      "role": "guest",
+      "department": "Baby",
+      "devices": [
+        "dev_00001329",
+        "dev_00001329"
+      ]
+    },
+    {
+      "id": "usr_4_000664",
+      "email": "Darren.Boehm77@gmail.com",
+      "role": "guest",
+      "department": "Jewelry",
+      "devices": [
+        "dev_00001331",
+        "dev_00001331"
+      ]
+    },
+    {
+      "id": "usr_4_000665",
+      "email": "Kole_Runte@gmail.com",
+      "role": "guest",
+      "department": "Movies",
+      "devices": [
+        "dev_00001333",
+        "dev_00001333"
+      ]
+    },
+    {
+      "id": "usr_4_000666",
+      "email": "Stephania_Conroy32@hotmail.com",
+      "role": "guest",
+      "department": "Automotive",
+      "devices": [
+        "dev_00001335"
+      ]
+    },
+    {
+      "id": "usr_4_000667",
+      "email": "Donato49@hotmail.com",
+      "role": "guest",
+      "department": "Home",
+      "devices": [
+        "dev_00001336"
+      ]
+    },
+    {
+      "id": "usr_4_000668",
+      "email": "Madge_Thompson@hotmail.com",
+      "role": "guest",
+      "department": "Electronics",
+      "devices": [
+        "dev_00001337",
+        "dev_00001337"
+      ]
+    },
+    {
+      "id": "usr_4_000669",
+      "email": "Maureen32@yahoo.com",
+      "role": "guest",
+      "department": "Home",
+      "devices": [
+        "dev_00001339",
+        "dev_00001339"
+      ]
+    },
+    {
+      "id": "usr_4_000670",
+      "email": "Michele_Fay54@gmail.com",
+      "role": "guest",
+      "department": "Baby",
+      "devices": [
+        "dev_00001341",
+        "dev_00001341"
+      ]
+    }
+  ],
+  "policies": [
+    "pol_BSYFNK8S",
+    "pol_GLKMKJUU",
+    "pol_JMRKPMXK",
+    "pol_H0EPB51U",
+    "pol_V2LWAQQA",
+    "pol_PPC0FTHR",
+    "pol_EOBQHDLU",
+    "pol_VEKZE4VB",
+    "pol_O6KE2QCL",
+    "pol_KSAQJO0Q",
+    "pol_MYSXWW8Y",
+    "pol_VRX7FZMQ",
+    "pol_RHYRTH5N",
+    "pol_DRELAVKC",
+    "pol_SSXXACDU"
+  ],
+  "integrations": [
+    {
+      "type": "real_estate",
+      "provider": "American Tower Corporation",
+      "status": "active",
+      "lastSync": "2025-06-02T18:29:27.461Z"
+    },
+    {
+      "type": "carrier",
+      "provider": "US Cellular",
+      "status": "active",
+      "lastSync": "2025-06-03T06:39:18.478Z"
+    }
+  ],
+  "connectedTowers": [
+    "tower_00000004",
+    "tower_00000012",
+    "tower_00000001",
+    "tower_00000020",
+    "tower_00000006",
+    "tower_00000018",
+    "tower_00000002",
+    "tower_00000011",
+    "tower_00000007",
+    "tower_00000019",
+    "tower_00000013",
+    "tower_00000017",
+    "tower_00000009",
+    "tower_00000015"
+  ]
+}

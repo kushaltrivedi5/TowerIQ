@@ -1,0 +1,1586 @@
+[
+  {
+    "id": "tower_00000004",
+    "name": "Leannon Inc Tower BWXS",
+    "status": "inactive",
+    "location": {
+      "latitude": 53.4523,
+      "longitude": -45.7827,
+      "address": "8914 E Franklin Street"
+    },
+    "carriers": [
+      {
+        "carrier": "Verizon",
+        "supportedOS": [
+          "Windows",
+          "Linux",
+          "Android"
+        ],
+        "supportedDevices": [
+          "smartphone"
+        ],
+        "bandwidth": 393,
+        "frequency": 4574
+      },
+      {
+        "carrier": "AT&T",
+        "supportedOS": [
+          "Android",
+          "macOS",
+          "Windows"
+        ],
+        "supportedDevices": [
+          "tablet"
+        ],
+        "bandwidth": 988,
+        "frequency": 3692
+      },
+      {
+        "carrier": "T-Mobile",
+        "supportedOS": [
+          "Linux",
+          "Windows"
+        ],
+        "supportedDevices": [
+          "laptop",
+          "gateway"
+        ],
+        "bandwidth": 283,
+        "frequency": 1825
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Nokia AirScale",
+        "status": "faulty",
+        "lastMaintenance": "2025-04-19T14:46:29.812Z"
+      }
+    ],
+    "coverage": {
+      "radius": 10,
+      "signalStrength": -90,
+      "capacity": 123
+    },
+    "realEstateProvider": "Uniti Group",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-02T07:49:08.990Z",
+      "provider": "TowerDB"
+    },
+    "connectedDevices": [
+      "dev_00000016",
+      "dev_00000016",
+      "dev_00000026",
+      "dev_00000037",
+      "dev_00000047",
+      "dev_00000049",
+      "dev_00000075",
+      "dev_00000098",
+      "dev_00000105",
+      "dev_00000120",
+      "dev_00000125",
+      "dev_00000133",
+      "dev_00000140",
+      "dev_00000142",
+      "dev_00000171",
+      "dev_00000183",
+      "dev_00000187",
+      "dev_00000199",
+      "dev_00000229",
+      "dev_00000235",
+      "dev_00000239",
+      "dev_00000272",
+      "dev_00000296",
+      "dev_00000302",
+      "dev_00000323",
+      "dev_00000334",
+      "dev_00000339",
+      "dev_00000342",
+      "dev_00000344",
+      "dev_00000355",
+      "dev_00000372",
+      "dev_00000377"
+    ]
+  },
+  {
+    "id": "tower_00000008",
+    "name": "McKenzie - Grimes Tower E0T6",
+    "status": "active",
+    "location": {
+      "latitude": -12.9645,
+      "longitude": 158.1018,
+      "address": "160 Nolan Circles"
+    },
+    "carriers": [
+      {
+        "carrier": "AT&T",
+        "supportedOS": [
+          "Linux",
+          "iOS",
+          "macOS"
+        ],
+        "supportedDevices": [
+          "laptop",
+          "smartphone",
+          "IoT"
+        ],
+        "bandwidth": 865,
+        "frequency": 1779
+      },
+      {
+        "carrier": "T-Mobile",
+        "supportedOS": [
+          "Windows"
+        ],
+        "supportedDevices": [
+          "laptop",
+          "tablet",
+          "gateway"
+        ],
+        "bandwidth": 383,
+        "frequency": 3414
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Samsung MIMO",
+        "status": "faulty",
+        "lastMaintenance": "2025-03-06T20:13:58.855Z"
+      }
+    ],
+    "coverage": {
+      "radius": 3,
+      "signalStrength": -58,
+      "capacity": 836
+    },
+    "realEstateProvider": "SBA Communications",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-03T05:20:57.489Z",
+      "provider": "CarrierConnect"
+    },
+    "connectedDevices": [
+      "dev_00000005",
+      "dev_00000013",
+      "dev_00000040",
+      "dev_00000041",
+      "dev_00000044",
+      "dev_00000059",
+      "dev_00000071",
+      "dev_00000078",
+      "dev_00000078",
+      "dev_00000089",
+      "dev_00000101",
+      "dev_00000112",
+      "dev_00000114",
+      "dev_00000114",
+      "dev_00000123",
+      "dev_00000140",
+      "dev_00000142",
+      "dev_00000160",
+      "dev_00000170",
+      "dev_00000183",
+      "dev_00000183",
+      "dev_00000187",
+      "dev_00000193",
+      "dev_00000199",
+      "dev_00000242",
+      "dev_00000246",
+      "dev_00000247",
+      "dev_00000263",
+      "dev_00000269",
+      "dev_00000274",
+      "dev_00000304",
+      "dev_00000305",
+      "dev_00000313",
+      "dev_00000331",
+      "dev_00000344",
+      "dev_00000361",
+      "dev_00000371",
+      "dev_00000372"
+    ]
+  },
+  {
+    "id": "tower_00000005",
+    "name": "Collins, Harvey and Dickens Tower ZXNN",
+    "status": "inactive",
+    "location": {
+      "latitude": -62.4898,
+      "longitude": -23.4504,
+      "address": "5430 Lelia Neck"
+    },
+    "carriers": [
+      {
+        "carrier": "Verizon",
+        "supportedOS": [
+          "Linux"
+        ],
+        "supportedDevices": [
+          "IoT",
+          "gateway",
+          "laptop"
+        ],
+        "bandwidth": 424,
+        "frequency": 1917
+      },
+      {
+        "carrier": "Sprint",
+        "supportedOS": [
+          "Windows"
+        ],
+        "supportedDevices": [
+          "IoT",
+          "smartphone"
+        ],
+        "bandwidth": 301,
+        "frequency": 1342
+      },
+      {
+        "carrier": "T-Mobile",
+        "supportedOS": [
+          "macOS",
+          "iOS",
+          "Windows"
+        ],
+        "supportedDevices": [
+          "smartphone",
+          "laptop",
+          "IoT"
+        ],
+        "bandwidth": 590,
+        "frequency": 4561
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Samsung MIMO",
+        "status": "faulty",
+        "lastMaintenance": "2025-03-11T16:32:34.930Z"
+      }
+    ],
+    "coverage": {
+      "radius": 10,
+      "signalStrength": -48,
+      "capacity": 668
+    },
+    "realEstateProvider": "Vertical Bridge",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-02T13:17:33.823Z",
+      "provider": "TowerSync"
+    },
+    "connectedDevices": [
+      "dev_00000008",
+      "dev_00000010",
+      "dev_00000025",
+      "dev_00000028",
+      "dev_00000041",
+      "dev_00000044",
+      "dev_00000046",
+      "dev_00000048",
+      "dev_00000062",
+      "dev_00000068",
+      "dev_00000068",
+      "dev_00000086",
+      "dev_00000088",
+      "dev_00000105",
+      "dev_00000107",
+      "dev_00000127",
+      "dev_00000130",
+      "dev_00000142",
+      "dev_00000162",
+      "dev_00000167",
+      "dev_00000168",
+      "dev_00000183",
+      "dev_00000196",
+      "dev_00000216",
+      "dev_00000226",
+      "dev_00000230",
+      "dev_00000240",
+      "dev_00000250",
+      "dev_00000280",
+      "dev_00000282",
+      "dev_00000317",
+      "dev_00000344",
+      "dev_00000344",
+      "dev_00000348",
+      "dev_00000351",
+      "dev_00000351",
+      "dev_00000368",
+      "dev_00000368"
+    ]
+  },
+  {
+    "id": "tower_00000002",
+    "name": "Herzog, Leuschke and Gutkowski Tower PUXU",
+    "status": "maintenance",
+    "location": {
+      "latitude": 11.4645,
+      "longitude": 33.0825,
+      "address": "7085 Henry Street"
+    },
+    "carriers": [
+      {
+        "carrier": "US Cellular",
+        "supportedOS": [
+          "macOS",
+          "Android",
+          "Windows"
+        ],
+        "supportedDevices": [
+          "laptop",
+          "IoT"
+        ],
+        "bandwidth": 408,
+        "frequency": 2654
+      },
+      {
+        "carrier": "Sprint",
+        "supportedOS": [
+          "macOS"
+        ],
+        "supportedDevices": [
+          "gateway",
+          "laptop"
+        ],
+        "bandwidth": 715,
+        "frequency": 5661
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Ericsson AIR 6449",
+        "status": "maintenance",
+        "lastMaintenance": "2025-04-09T18:41:21.921Z"
+      }
+    ],
+    "coverage": {
+      "radius": 2,
+      "signalStrength": -88,
+      "capacity": 887
+    },
+    "realEstateProvider": "American Tower Corporation",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-03T00:38:33.626Z",
+      "provider": "TowerDB"
+    },
+    "connectedDevices": [
+      "dev_00000021",
+      "dev_00000026",
+      "dev_00000029",
+      "dev_00000039",
+      "dev_00000049",
+      "dev_00000097",
+      "dev_00000137",
+      "dev_00000216",
+      "dev_00000256",
+      "dev_00000315",
+      "dev_00000320",
+      "dev_00000328",
+      "dev_00000336",
+      "dev_00000363",
+      "dev_00000374"
+    ]
+  },
+  {
+    "id": "tower_00000011",
+    "name": "Wintheiser - Satterfield Tower RM7M",
+    "status": "maintenance",
+    "location": {
+      "latitude": 1.3805,
+      "longitude": 95.9411,
+      "address": "187 Simonis Gardens"
+    },
+    "carriers": [
+      {
+        "carrier": "Sprint",
+        "supportedOS": [
+          "macOS",
+          "Android"
+        ],
+        "supportedDevices": [
+          "IoT",
+          "laptop",
+          "smartphone"
+        ],
+        "bandwidth": 601,
+        "frequency": 1893
+      },
+      {
+        "carrier": "US Cellular",
+        "supportedOS": [
+          "iOS",
+          "macOS"
+        ],
+        "supportedDevices": [
+          "laptop",
+          "gateway",
+          "IoT"
+        ],
+        "bandwidth": 985,
+        "frequency": 3824
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Samsung MIMO",
+        "status": "faulty",
+        "lastMaintenance": "2025-05-17T12:07:32.602Z"
+      }
+    ],
+    "coverage": {
+      "radius": 9,
+      "signalStrength": -74,
+      "capacity": 839
+    },
+    "realEstateProvider": "SBA Communications",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-02T17:37:45.635Z",
+      "provider": "CarrierConnect"
+    },
+    "connectedDevices": [
+      "dev_00000001",
+      "dev_00000013",
+      "dev_00000026",
+      "dev_00000032",
+      "dev_00000035",
+      "dev_00000037",
+      "dev_00000039",
+      "dev_00000041",
+      "dev_00000049",
+      "dev_00000095",
+      "dev_00000117",
+      "dev_00000143",
+      "dev_00000156",
+      "dev_00000156",
+      "dev_00000160",
+      "dev_00000177",
+      "dev_00000177",
+      "dev_00000192",
+      "dev_00000196",
+      "dev_00000212",
+      "dev_00000216",
+      "dev_00000219",
+      "dev_00000226",
+      "dev_00000256",
+      "dev_00000288",
+      "dev_00000288",
+      "dev_00000290",
+      "dev_00000310",
+      "dev_00000328",
+      "dev_00000334",
+      "dev_00000348",
+      "dev_00000357",
+      "dev_00000378"
+    ]
+  },
+  {
+    "id": "tower_00000010",
+    "name": "Hermiston - Waters Tower YGT9",
+    "status": "active",
+    "location": {
+      "latitude": 26.8291,
+      "longitude": -38.7353,
+      "address": "5901 Funk Parkways"
+    },
+    "carriers": [
+      {
+        "carrier": "US Cellular",
+        "supportedOS": [
+          "iOS",
+          "Android"
+        ],
+        "supportedDevices": [
+          "laptop",
+          "smartphone",
+          "tablet"
+        ],
+        "bandwidth": 330,
+        "frequency": 1015
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Nokia AirScale",
+        "status": "operational",
+        "lastMaintenance": "2025-05-13T01:48:54.836Z"
+      }
+    ],
+    "coverage": {
+      "radius": 3,
+      "signalStrength": -80,
+      "capacity": 690
+    },
+    "realEstateProvider": "Crown Castle",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-02T20:40:52.077Z",
+      "provider": "TowerSync"
+    },
+    "connectedDevices": [
+      "dev_00000010",
+      "dev_00000075",
+      "dev_00000128",
+      "dev_00000137",
+      "dev_00000210",
+      "dev_00000247",
+      "dev_00000250",
+      "dev_00000320",
+      "dev_00000336",
+      "dev_00000348",
+      "dev_00000359",
+      "dev_00000363",
+      "dev_00000378",
+      "dev_00000378"
+    ]
+  },
+  {
+    "id": "tower_00000012",
+    "name": "Stanton - Davis Tower KQDI",
+    "status": "active",
+    "location": {
+      "latitude": -37.9418,
+      "longitude": -118.0768,
+      "address": "486 S Broadway Street"
+    },
+    "carriers": [
+      {
+        "carrier": "T-Mobile",
+        "supportedOS": [
+          "iOS"
+        ],
+        "supportedDevices": [
+          "laptop",
+          "gateway",
+          "IoT"
+        ],
+        "bandwidth": 395,
+        "frequency": 3250
+      },
+      {
+        "carrier": "US Cellular",
+        "supportedOS": [
+          "Android",
+          "macOS"
+        ],
+        "supportedDevices": [
+          "tablet",
+          "laptop",
+          "gateway"
+        ],
+        "bandwidth": 554,
+        "frequency": 4016
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Nokia AirScale",
+        "status": "operational",
+        "lastMaintenance": "2025-04-26T12:19:42.251Z"
+      }
+    ],
+    "coverage": {
+      "radius": 10,
+      "signalStrength": -76,
+      "capacity": 325
+    },
+    "realEstateProvider": "Vertical Bridge",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-02T17:19:06.068Z",
+      "provider": "TowerDB"
+    },
+    "connectedDevices": [
+      "dev_00000010",
+      "dev_00000025",
+      "dev_00000039",
+      "dev_00000048",
+      "dev_00000086",
+      "dev_00000089",
+      "dev_00000095",
+      "dev_00000105",
+      "dev_00000128",
+      "dev_00000137",
+      "dev_00000145",
+      "dev_00000162",
+      "dev_00000233",
+      "dev_00000266",
+      "dev_00000272",
+      "dev_00000310",
+      "dev_00000328",
+      "dev_00000336",
+      "dev_00000342",
+      "dev_00000363"
+    ]
+  },
+  {
+    "id": "tower_00000013",
+    "name": "Streich LLC Tower I0QR",
+    "status": "inactive",
+    "location": {
+      "latitude": 55.4128,
+      "longitude": 5.2244,
+      "address": "4303 Shields Curve"
+    },
+    "carriers": [
+      {
+        "carrier": "Sprint",
+        "supportedOS": [
+          "Linux",
+          "Android"
+        ],
+        "supportedDevices": [
+          "gateway",
+          "tablet",
+          "laptop"
+        ],
+        "bandwidth": 665,
+        "frequency": 4790
+      },
+      {
+        "carrier": "Verizon",
+        "supportedOS": [
+          "iOS",
+          "Windows",
+          "Linux"
+        ],
+        "supportedDevices": [
+          "laptop",
+          "IoT"
+        ],
+        "bandwidth": 382,
+        "frequency": 3008
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Ericsson AIR 6449",
+        "status": "operational",
+        "lastMaintenance": "2025-05-19T18:18:33.044Z"
+      }
+    ],
+    "coverage": {
+      "radius": 7,
+      "signalStrength": -69,
+      "capacity": 183
+    },
+    "realEstateProvider": "Vertical Bridge",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-02T10:41:47.022Z",
+      "provider": "TowerSync"
+    },
+    "connectedDevices": [
+      "dev_00000001",
+      "dev_00000003",
+      "dev_00000013",
+      "dev_00000019",
+      "dev_00000024",
+      "dev_00000037",
+      "dev_00000060",
+      "dev_00000068",
+      "dev_00000073",
+      "dev_00000075",
+      "dev_00000081",
+      "dev_00000088",
+      "dev_00000117",
+      "dev_00000120",
+      "dev_00000149",
+      "dev_00000150",
+      "dev_00000196",
+      "dev_00000216",
+      "dev_00000232",
+      "dev_00000237",
+      "dev_00000256",
+      "dev_00000258",
+      "dev_00000307",
+      "dev_00000327",
+      "dev_00000344",
+      "dev_00000354",
+      "dev_00000365"
+    ]
+  },
+  {
+    "id": "tower_00000016",
+    "name": "Champlin, Kovacek and Langosh Tower CCW7",
+    "status": "active",
+    "location": {
+      "latitude": -80.6986,
+      "longitude": 154.7795,
+      "address": "906 Church Close"
+    },
+    "carriers": [
+      {
+        "carrier": "Verizon",
+        "supportedOS": [
+          "Linux",
+          "macOS"
+        ],
+        "supportedDevices": [
+          "smartphone"
+        ],
+        "bandwidth": 944,
+        "frequency": 3809
+      },
+      {
+        "carrier": "Sprint",
+        "supportedOS": [
+          "Linux",
+          "iOS",
+          "macOS"
+        ],
+        "supportedDevices": [
+          "tablet",
+          "laptop"
+        ],
+        "bandwidth": 890,
+        "frequency": 3081
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Ericsson AIR 6449",
+        "status": "faulty",
+        "lastMaintenance": "2025-04-25T20:42:09.758Z"
+      }
+    ],
+    "coverage": {
+      "radius": 9,
+      "signalStrength": -68,
+      "capacity": 162
+    },
+    "realEstateProvider": "Crown Castle",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-02T08:17:34.475Z",
+      "provider": "TowerSync"
+    },
+    "connectedDevices": [
+      "dev_00000016",
+      "dev_00000016",
+      "dev_00000016",
+      "dev_00000021",
+      "dev_00000026",
+      "dev_00000049",
+      "dev_00000052",
+      "dev_00000054",
+      "dev_00000060",
+      "dev_00000073",
+      "dev_00000075",
+      "dev_00000101",
+      "dev_00000150",
+      "dev_00000202",
+      "dev_00000225",
+      "dev_00000237",
+      "dev_00000239",
+      "dev_00000296",
+      "dev_00000300",
+      "dev_00000302",
+      "dev_00000325",
+      "dev_00000331",
+      "dev_00000363",
+      "dev_00000365"
+    ]
+  },
+  {
+    "id": "tower_00000014",
+    "name": "Klein LLC Tower R6RD",
+    "status": "active",
+    "location": {
+      "latitude": -54.6764,
+      "longitude": 98.2571,
+      "address": "95369 Montana Estates"
+    },
+    "carriers": [
+      {
+        "carrier": "T-Mobile",
+        "supportedOS": [
+          "Windows",
+          "Linux"
+        ],
+        "supportedDevices": [
+          "smartphone",
+          "tablet",
+          "gateway"
+        ],
+        "bandwidth": 905,
+        "frequency": 4951
+      },
+      {
+        "carrier": "US Cellular",
+        "supportedOS": [
+          "Windows",
+          "macOS"
+        ],
+        "supportedDevices": [
+          "tablet",
+          "gateway",
+          "IoT"
+        ],
+        "bandwidth": 784,
+        "frequency": 2154
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Ericsson AIR 6449",
+        "status": "faulty",
+        "lastMaintenance": "2025-05-10T11:00:05.065Z"
+      }
+    ],
+    "coverage": {
+      "radius": 3,
+      "signalStrength": -81,
+      "capacity": 263
+    },
+    "realEstateProvider": "Vertical Bridge",
+    "integrationStatus": {
+      "isActive": false,
+      "lastSync": "2025-06-02T09:33:40.646Z",
+      "provider": "TowerSync"
+    },
+    "connectedDevices": [
+      "dev_00000005",
+      "dev_00000028",
+      "dev_00000029",
+      "dev_00000029",
+      "dev_00000047",
+      "dev_00000049",
+      "dev_00000068",
+      "dev_00000089",
+      "dev_00000095",
+      "dev_00000105",
+      "dev_00000109",
+      "dev_00000127",
+      "dev_00000140",
+      "dev_00000174",
+      "dev_00000187",
+      "dev_00000199",
+      "dev_00000199",
+      "dev_00000215",
+      "dev_00000216",
+      "dev_00000229",
+      "dev_00000235",
+      "dev_00000245",
+      "dev_00000253",
+      "dev_00000272",
+      "dev_00000292",
+      "dev_00000305",
+      "dev_00000310",
+      "dev_00000328",
+      "dev_00000372",
+      "dev_00000377"
+    ]
+  },
+  {
+    "id": "tower_00000007",
+    "name": "Kulas - Wunsch Tower N9LY",
+    "status": "active",
+    "location": {
+      "latitude": -22.9544,
+      "longitude": -56.6488,
+      "address": "7620 Grady Field"
+    },
+    "carriers": [
+      {
+        "carrier": "Verizon",
+        "supportedOS": [
+          "Linux",
+          "macOS",
+          "Windows"
+        ],
+        "supportedDevices": [
+          "IoT",
+          "laptop",
+          "tablet"
+        ],
+        "bandwidth": 649,
+        "frequency": 3179
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Samsung MIMO",
+        "status": "maintenance",
+        "lastMaintenance": "2025-04-02T17:25:59.683Z"
+      }
+    ],
+    "coverage": {
+      "radius": 7,
+      "signalStrength": -68,
+      "capacity": 843
+    },
+    "realEstateProvider": "Uniti Group",
+    "integrationStatus": {
+      "isActive": false,
+      "lastSync": "2025-06-03T03:17:39.382Z",
+      "provider": "TowerDB"
+    },
+    "connectedDevices": [
+      "dev_00000001",
+      "dev_00000003",
+      "dev_00000021",
+      "dev_00000068",
+      "dev_00000073",
+      "dev_00000088",
+      "dev_00000095",
+      "dev_00000098",
+      "dev_00000126",
+      "dev_00000136",
+      "dev_00000149",
+      "dev_00000168",
+      "dev_00000174",
+      "dev_00000196",
+      "dev_00000202",
+      "dev_00000202",
+      "dev_00000208",
+      "dev_00000216",
+      "dev_00000219",
+      "dev_00000258",
+      "dev_00000261",
+      "dev_00000323",
+      "dev_00000327",
+      "dev_00000340",
+      "dev_00000344",
+      "dev_00000347"
+    ]
+  },
+  {
+    "id": "tower_00000018",
+    "name": "Conn Inc Tower DTF2",
+    "status": "inactive",
+    "location": {
+      "latitude": 73.4906,
+      "longitude": 33.6076,
+      "address": "8238 Victor Parkway"
+    },
+    "carriers": [
+      {
+        "carrier": "US Cellular",
+        "supportedOS": [
+          "Linux",
+          "macOS"
+        ],
+        "supportedDevices": [
+          "tablet"
+        ],
+        "bandwidth": 937,
+        "frequency": 5742
+      },
+      {
+        "carrier": "AT&T",
+        "supportedOS": [
+          "Linux"
+        ],
+        "supportedDevices": [
+          "IoT",
+          "gateway",
+          "laptop"
+        ],
+        "bandwidth": 781,
+        "frequency": 2826
+      },
+      {
+        "carrier": "Verizon",
+        "supportedOS": [
+          "Android"
+        ],
+        "supportedDevices": [
+          "smartphone",
+          "tablet"
+        ],
+        "bandwidth": 512,
+        "frequency": 5820
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Samsung MIMO",
+        "status": "faulty",
+        "lastMaintenance": "2025-04-19T08:55:09.774Z"
+      }
+    ],
+    "coverage": {
+      "radius": 9,
+      "signalStrength": -51,
+      "capacity": 760
+    },
+    "realEstateProvider": "American Tower Corporation",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-02T18:20:43.173Z",
+      "provider": "TowerSync"
+    },
+    "connectedDevices": [
+      "dev_00000005",
+      "dev_00000013",
+      "dev_00000052",
+      "dev_00000062",
+      "dev_00000089",
+      "dev_00000089",
+      "dev_00000092",
+      "dev_00000125",
+      "dev_00000148",
+      "dev_00000153",
+      "dev_00000156",
+      "dev_00000183",
+      "dev_00000199",
+      "dev_00000247",
+      "dev_00000277",
+      "dev_00000280",
+      "dev_00000302",
+      "dev_00000313",
+      "dev_00000323",
+      "dev_00000359",
+      "dev_00000361",
+      "dev_00000370"
+    ]
+  },
+  {
+    "id": "tower_00000020",
+    "name": "Beer and Sons Tower E8VA",
+    "status": "inactive",
+    "location": {
+      "latitude": -23.6716,
+      "longitude": 98.228,
+      "address": "195 Stephen Gateway"
+    },
+    "carriers": [
+      {
+        "carrier": "AT&T",
+        "supportedOS": [
+          "iOS",
+          "macOS"
+        ],
+        "supportedDevices": [
+          "laptop"
+        ],
+        "bandwidth": 135,
+        "frequency": 5728
+      },
+      {
+        "carrier": "T-Mobile",
+        "supportedOS": [
+          "Windows",
+          "iOS",
+          "Android"
+        ],
+        "supportedDevices": [
+          "smartphone"
+        ],
+        "bandwidth": 485,
+        "frequency": 5741
+      },
+      {
+        "carrier": "US Cellular",
+        "supportedOS": [
+          "iOS",
+          "Windows"
+        ],
+        "supportedDevices": [
+          "IoT",
+          "gateway",
+          "tablet"
+        ],
+        "bandwidth": 952,
+        "frequency": 2925
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Ericsson AIR 6449",
+        "status": "faulty",
+        "lastMaintenance": "2025-04-10T20:10:46.082Z"
+      }
+    ],
+    "coverage": {
+      "radius": 6,
+      "signalStrength": -66,
+      "capacity": 611
+    },
+    "realEstateProvider": "American Tower Corporation",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-02T22:46:31.591Z",
+      "provider": "TowerDB"
+    },
+    "connectedDevices": [
+      "dev_00000028",
+      "dev_00000029",
+      "dev_00000029",
+      "dev_00000041",
+      "dev_00000041",
+      "dev_00000068",
+      "dev_00000071",
+      "dev_00000127",
+      "dev_00000130",
+      "dev_00000160",
+      "dev_00000170",
+      "dev_00000210",
+      "dev_00000215",
+      "dev_00000242",
+      "dev_00000245",
+      "dev_00000250",
+      "dev_00000263",
+      "dev_00000290",
+      "dev_00000328",
+      "dev_00000331",
+      "dev_00000359",
+      "dev_00000368",
+      "dev_00000371"
+    ]
+  },
+  {
+    "id": "tower_00000019",
+    "name": "Farrell - Kuhn Tower 4GCA",
+    "status": "active",
+    "location": {
+      "latitude": 35.0806,
+      "longitude": -63.9262,
+      "address": "2073 Cross Lane"
+    },
+    "carriers": [
+      {
+        "carrier": "Sprint",
+        "supportedOS": [
+          "iOS",
+          "Windows",
+          "Android"
+        ],
+        "supportedDevices": [
+          "laptop",
+          "smartphone",
+          "IoT"
+        ],
+        "bandwidth": 843,
+        "frequency": 2107
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Ericsson AIR 6449",
+        "status": "operational",
+        "lastMaintenance": "2025-05-17T12:10:17.381Z"
+      }
+    ],
+    "coverage": {
+      "radius": 5,
+      "signalStrength": -72,
+      "capacity": 488
+    },
+    "realEstateProvider": "American Tower Corporation",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-02T11:03:46.830Z",
+      "provider": "TowerSync"
+    },
+    "connectedDevices": [
+      "dev_00000001",
+      "dev_00000010",
+      "dev_00000013",
+      "dev_00000021",
+      "dev_00000032",
+      "dev_00000037",
+      "dev_00000101",
+      "dev_00000104",
+      "dev_00000107",
+      "dev_00000109",
+      "dev_00000114",
+      "dev_00000117",
+      "dev_00000117",
+      "dev_00000160",
+      "dev_00000171",
+      "dev_00000187",
+      "dev_00000192",
+      "dev_00000202",
+      "dev_00000212",
+      "dev_00000225",
+      "dev_00000226",
+      "dev_00000226",
+      "dev_00000240",
+      "dev_00000240",
+      "dev_00000256",
+      "dev_00000277",
+      "dev_00000280",
+      "dev_00000288",
+      "dev_00000300",
+      "dev_00000317",
+      "dev_00000348",
+      "dev_00000351",
+      "dev_00000363",
+      "dev_00000368"
+    ]
+  },
+  {
+    "id": "tower_00000006",
+    "name": "Moen - Erdman Tower ESAE",
+    "status": "inactive",
+    "location": {
+      "latitude": -69.7306,
+      "longitude": 112.9295,
+      "address": "4423 Lakin Neck"
+    },
+    "carriers": [
+      {
+        "carrier": "T-Mobile",
+        "supportedOS": [
+          "macOS",
+          "iOS",
+          "Linux"
+        ],
+        "supportedDevices": [
+          "tablet",
+          "smartphone"
+        ],
+        "bandwidth": 314,
+        "frequency": 5485
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Nokia AirScale",
+        "status": "operational",
+        "lastMaintenance": "2025-03-14T00:02:23.498Z"
+      }
+    ],
+    "coverage": {
+      "radius": 8,
+      "signalStrength": -88,
+      "capacity": 586
+    },
+    "realEstateProvider": "American Tower Corporation",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-02T15:53:04.617Z",
+      "provider": "CarrierConnect"
+    },
+    "connectedDevices": [
+      "dev_00000044",
+      "dev_00000109",
+      "dev_00000130",
+      "dev_00000174",
+      "dev_00000180",
+      "dev_00000180",
+      "dev_00000190",
+      "dev_00000199",
+      "dev_00000250",
+      "dev_00000253",
+      "dev_00000263",
+      "dev_00000266",
+      "dev_00000282",
+      "dev_00000292",
+      "dev_00000292",
+      "dev_00000311",
+      "dev_00000316",
+      "dev_00000368",
+      "dev_00000374"
+    ]
+  },
+  {
+    "id": "tower_00000003",
+    "name": "Kutch Inc Tower 4NB2",
+    "status": "active",
+    "location": {
+      "latitude": -72.2107,
+      "longitude": -148.1695,
+      "address": "56489 Thiel Curve"
+    },
+    "carriers": [
+      {
+        "carrier": "US Cellular",
+        "supportedOS": [
+          "iOS",
+          "Android"
+        ],
+        "supportedDevices": [
+          "tablet"
+        ],
+        "bandwidth": 722,
+        "frequency": 4931
+      },
+      {
+        "carrier": "Sprint",
+        "supportedOS": [
+          "Android"
+        ],
+        "supportedDevices": [
+          "gateway"
+        ],
+        "bandwidth": 680,
+        "frequency": 1272
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Ericsson AIR 6449",
+        "status": "operational",
+        "lastMaintenance": "2025-03-19T09:38:38.156Z"
+      }
+    ],
+    "coverage": {
+      "radius": 10,
+      "signalStrength": -87,
+      "capacity": 816
+    },
+    "realEstateProvider": "Vertical Bridge",
+    "integrationStatus": {
+      "isActive": false,
+      "lastSync": "2025-06-02T10:41:39.865Z",
+      "provider": "TowerSync"
+    },
+    "connectedDevices": [
+      "dev_00000210",
+      "dev_00000250",
+      "dev_00000354",
+      "dev_00000359"
+    ]
+  },
+  {
+    "id": "tower_00000017",
+    "name": "Ledner, Spencer and Ledner Tower BK8U",
+    "status": "active",
+    "location": {
+      "latitude": -28.8524,
+      "longitude": 170.4037,
+      "address": "8994 Lake Drive"
+    },
+    "carriers": [
+      {
+        "carrier": "T-Mobile",
+        "supportedOS": [
+          "Linux",
+          "Android"
+        ],
+        "supportedDevices": [
+          "IoT",
+          "tablet"
+        ],
+        "bandwidth": 856,
+        "frequency": 3099
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Samsung MIMO",
+        "status": "maintenance",
+        "lastMaintenance": "2025-04-11T18:24:28.692Z"
+      }
+    ],
+    "coverage": {
+      "radius": 3,
+      "signalStrength": -82,
+      "capacity": 269
+    },
+    "realEstateProvider": "Crown Castle",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-03T05:27:10.250Z",
+      "provider": "TowerDB"
+    },
+    "connectedDevices": [
+      "dev_00000092",
+      "dev_00000117",
+      "dev_00000133",
+      "dev_00000137",
+      "dev_00000174",
+      "dev_00000208",
+      "dev_00000222",
+      "dev_00000247",
+      "dev_00000253",
+      "dev_00000282",
+      "dev_00000290",
+      "dev_00000292",
+      "dev_00000317",
+      "dev_00000344",
+      "dev_00000365"
+    ]
+  },
+  {
+    "id": "tower_00000015",
+    "name": "Moen, Lowe and Gutmann Tower QW24",
+    "status": "maintenance",
+    "location": {
+      "latitude": 37.7706,
+      "longitude": -152.3747,
+      "address": "610 Valentin Curve"
+    },
+    "carriers": [
+      {
+        "carrier": "Sprint",
+        "supportedOS": [
+          "Windows",
+          "macOS",
+          "Linux"
+        ],
+        "supportedDevices": [
+          "laptop"
+        ],
+        "bandwidth": 775,
+        "frequency": 2076
+      },
+      {
+        "carrier": "AT&T",
+        "supportedOS": [
+          "macOS"
+        ],
+        "supportedDevices": [
+          "smartphone",
+          "tablet",
+          "gateway"
+        ],
+        "bandwidth": 355,
+        "frequency": 1866
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Samsung MIMO",
+        "status": "maintenance",
+        "lastMaintenance": "2025-04-17T08:53:04.710Z"
+      }
+    ],
+    "coverage": {
+      "radius": 3,
+      "signalStrength": -42,
+      "capacity": 198
+    },
+    "realEstateProvider": "Vertical Bridge",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-03T05:29:03.033Z",
+      "provider": "TowerDB"
+    },
+    "connectedDevices": [
+      "dev_00000026",
+      "dev_00000037",
+      "dev_00000049",
+      "dev_00000101",
+      "dev_00000104",
+      "dev_00000114",
+      "dev_00000117",
+      "dev_00000123",
+      "dev_00000133",
+      "dev_00000143",
+      "dev_00000171",
+      "dev_00000193",
+      "dev_00000237",
+      "dev_00000274",
+      "dev_00000342"
+    ]
+  },
+  {
+    "id": "tower_00000009",
+    "name": "Crooks, Abshire and McClure Tower ICNO",
+    "status": "maintenance",
+    "location": {
+      "latitude": -51.2448,
+      "longitude": 120.2959,
+      "address": "6645 Church Lane"
+    },
+    "carriers": [
+      {
+        "carrier": "Sprint",
+        "supportedOS": [
+          "macOS",
+          "iOS",
+          "Android"
+        ],
+        "supportedDevices": [
+          "gateway",
+          "smartphone",
+          "IoT"
+        ],
+        "bandwidth": 848,
+        "frequency": 2491
+      },
+      {
+        "carrier": "Verizon",
+        "supportedOS": [
+          "Linux"
+        ],
+        "supportedDevices": [
+          "laptop",
+          "IoT"
+        ],
+        "bandwidth": 915,
+        "frequency": 4050
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Samsung MIMO",
+        "status": "maintenance",
+        "lastMaintenance": "2025-04-05T03:49:00.321Z"
+      }
+    ],
+    "coverage": {
+      "radius": 5,
+      "signalStrength": -44,
+      "capacity": 318
+    },
+    "realEstateProvider": "Vertical Bridge",
+    "integrationStatus": {
+      "isActive": false,
+      "lastSync": "2025-06-02T14:36:38.177Z",
+      "provider": "TowerSync"
+    },
+    "connectedDevices": [
+      "dev_00000001",
+      "dev_00000032",
+      "dev_00000035",
+      "dev_00000065",
+      "dev_00000068",
+      "dev_00000088",
+      "dev_00000109",
+      "dev_00000114",
+      "dev_00000143",
+      "dev_00000156",
+      "dev_00000156",
+      "dev_00000160",
+      "dev_00000166",
+      "dev_00000177",
+      "dev_00000177",
+      "dev_00000187",
+      "dev_00000192",
+      "dev_00000193",
+      "dev_00000196",
+      "dev_00000196",
+      "dev_00000212",
+      "dev_00000216",
+      "dev_00000219",
+      "dev_00000226",
+      "dev_00000240",
+      "dev_00000266",
+      "dev_00000277",
+      "dev_00000288",
+      "dev_00000288",
+      "dev_00000320",
+      "dev_00000334",
+      "dev_00000344",
+      "dev_00000354",
+      "dev_00000357",
+      "dev_00000367"
+    ]
+  }
+]

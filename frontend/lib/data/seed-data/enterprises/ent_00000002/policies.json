@@ -1,0 +1,633 @@
+[
+  {
+    "id": "pol_QTRIWHDK",
+    "enterpriseId": "ent_00000002",
+    "name": "Schaefer LLC Security Policy",
+    "description": "Supra cohaero vergo volubilis.",
+    "priority": "medium",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "1c772dd2-36ef-4571-a073-0a95338e1fd4",
+        "actions": [
+          {
+            "actionId": "8e14b398-58e6-43dc-9db5-dc57a78e3fda",
+            "allowedRoles": [
+              "guest",
+              "employee"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "tablet"
+              ],
+              "operatingSystems": [
+                "Linux",
+                "Windows",
+                "Android"
+              ],
+              "carriers": [
+                "T-Mobile",
+                "Verizon",
+                "US Cellular"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2024-09-21T18:08:18.205Z",
+    "updatedAt": "2025-05-19T19:51:08.978Z"
+  },
+  {
+    "id": "pol_KQP6RAAJ",
+    "enterpriseId": "ent_00000002",
+    "name": "Wolff - Deckow Security Policy",
+    "description": "Tredecim aduro ulterius adulescens aegrotatio assentator eligendi clarus dedecor delibero.",
+    "priority": "low",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "95ede121-f32a-4a41-9d2b-2123e908d481",
+        "actions": [
+          {
+            "actionId": "3eee8a36-6775-40ee-bf2d-1ee291a91c34",
+            "allowedRoles": [
+              "admin",
+              "employee"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "IoT"
+              ],
+              "operatingSystems": [
+                "macOS"
+              ],
+              "carriers": [
+                "T-Mobile"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2025-01-05T22:43:17.386Z",
+    "updatedAt": "2025-05-18T11:04:34.222Z"
+  },
+  {
+    "id": "pol_0KL22AOR",
+    "enterpriseId": "ent_00000002",
+    "name": "Strosin, Haag and Rolfson Security Policy",
+    "description": "Illum colligo deleniti veniam studio uterque.",
+    "priority": "low",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "ae29dc6a-bb66-481a-8275-bbbba562bbf1",
+        "actions": [
+          {
+            "actionId": "54d417dc-3e33-4770-9662-648dfb6b8d46",
+            "allowedRoles": [
+              "guest"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "laptop",
+                "IoT",
+                "tablet"
+              ],
+              "operatingSystems": [
+                "Windows"
+              ],
+              "carriers": [
+                "Sprint",
+                "US Cellular",
+                "T-Mobile"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "notify",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2024-12-28T18:00:29.733Z",
+    "updatedAt": "2025-05-28T12:05:12.402Z"
+  },
+  {
+    "id": "pol_OKWEBWNX",
+    "enterpriseId": "ent_00000002",
+    "name": "Collier, Hintz and Labadie Security Policy",
+    "description": "Voluntarius vulnus trans voco ipsam.",
+    "priority": "medium",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "c90a8983-fc1e-460e-bf11-da6e430995bb",
+        "actions": [
+          {
+            "actionId": "4ba5dbef-d1ce-442a-865a-3a7a003c4e1b",
+            "allowedRoles": [
+              "admin"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "smartphone",
+                "laptop"
+              ],
+              "operatingSystems": [
+                "macOS",
+                "Linux"
+              ],
+              "carriers": [
+                "Verizon",
+                "US Cellular"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "quarantine",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2024-09-22T05:06:35.288Z",
+    "updatedAt": "2025-06-02T20:49:29.977Z"
+  },
+  {
+    "id": "pol_T7RFHPYH",
+    "enterpriseId": "ent_00000002",
+    "name": "Ryan, Grant and Spinka Security Policy",
+    "description": "Cedo curvo mollitia sollers architecto.",
+    "priority": "critical",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "0a01cc60-1484-4f7d-8a86-3228d1a9ed95",
+        "actions": [
+          {
+            "actionId": "dc48a789-2132-4a73-a27e-7880aeb85e85",
+            "allowedRoles": [
+              "admin"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "tablet"
+              ],
+              "operatingSystems": [
+                "Windows"
+              ],
+              "carriers": [
+                "AT&T"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "quarantine",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2024-09-21T08:51:16.182Z",
+    "updatedAt": "2025-06-03T03:24:01.526Z"
+  },
+  {
+    "id": "pol_DNT4U3BP",
+    "enterpriseId": "ent_00000002",
+    "name": "Daniel - Collier Security Policy",
+    "description": "Derideo vallum infit pariatur attero cui cursim animi.",
+    "priority": "critical",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "5f6627ac-4e15-4665-857a-3cee5b279932",
+        "actions": [
+          {
+            "actionId": "8818389d-5f77-40e1-aac4-a8b09cbf9edf",
+            "allowedRoles": [
+              "manager",
+              "admin"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "gateway"
+              ],
+              "operatingSystems": [
+                "iOS"
+              ],
+              "carriers": [
+                "T-Mobile",
+                "US Cellular",
+                "Sprint"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "allow",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2025-04-06T17:06:35.730Z",
+    "updatedAt": "2025-05-05T00:32:38.445Z"
+  },
+  {
+    "id": "pol_JBTRHSAS",
+    "enterpriseId": "ent_00000002",
+    "name": "Johns, Dooley and Langosh Security Policy",
+    "description": "Officia canonicus stella minus adhaero.",
+    "priority": "low",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "2cb85b3c-1d1e-4a7d-809b-be2e1473c3b4",
+        "actions": [
+          {
+            "actionId": "d8ee9244-7c96-4238-b7f4-85fd626a7db9",
+            "allowedRoles": [
+              "guest",
+              "employee"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "laptop",
+                "gateway",
+                "tablet"
+              ],
+              "operatingSystems": [
+                "iOS",
+                "Android"
+              ],
+              "carriers": [
+                "Verizon"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2024-11-01T05:17:55.001Z",
+    "updatedAt": "2025-05-20T19:53:50.008Z"
+  },
+  {
+    "id": "pol_7XUKKIZQ",
+    "enterpriseId": "ent_00000002",
+    "name": "Stoltenberg LLC Security Policy",
+    "description": "Tabesco ago quos tot tricesimus tredecim vetus somniculosus.",
+    "priority": "low",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "1e3c5e9e-c1d1-4056-9555-f0c62775b750",
+        "actions": [
+          {
+            "actionId": "1a1fb4e0-2115-4476-9597-805be90470b8",
+            "allowedRoles": [
+              "guest"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "gateway",
+                "tablet"
+              ],
+              "operatingSystems": [
+                "Linux"
+              ],
+              "carriers": [
+                "US Cellular",
+                "Sprint",
+                "Verizon"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "notify",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2024-08-11T15:16:29.968Z",
+    "updatedAt": "2025-05-10T01:52:12.569Z"
+  },
+  {
+    "id": "pol_N1WTMGU6",
+    "enterpriseId": "ent_00000002",
+    "name": "Morar - DuBuque Security Policy",
+    "description": "Alveus anser colligo conicio absconditus praesentium tendo conspergo ustilo basium.",
+    "priority": "high",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "d09195ac-a5ed-4f08-bec7-997c5c390f9e",
+        "actions": [
+          {
+            "actionId": "05460dc8-f5b5-484d-9148-f1a20a6dbb9e",
+            "allowedRoles": [
+              "employee"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "IoT",
+                "tablet",
+                "laptop"
+              ],
+              "operatingSystems": [
+                "Android",
+                "Windows",
+                "Linux"
+              ],
+              "carriers": [
+                "T-Mobile",
+                "Sprint"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "notify",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2024-10-03T21:42:31.443Z",
+    "updatedAt": "2025-06-01T00:08:08.339Z"
+  },
+  {
+    "id": "pol_7QCQGRGL",
+    "enterpriseId": "ent_00000002",
+    "name": "Kling, Cole and Quigley Security Policy",
+    "description": "Communis contabesco cursus est sophismata summisse unde allatus.",
+    "priority": "low",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "2e134914-88f3-4365-86c6-612ba50cd0a3",
+        "actions": [
+          {
+            "actionId": "d9bf1eeb-a8f1-40bf-87de-e1e21f2f5aff",
+            "allowedRoles": [
+              "admin",
+              "contractor"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "gateway"
+              ],
+              "operatingSystems": [
+                "Windows"
+              ],
+              "carriers": [
+                "Verizon",
+                "T-Mobile"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2025-04-24T03:03:38.613Z",
+    "updatedAt": "2025-05-30T09:16:43.153Z"
+  },
+  {
+    "id": "pol_VKCNEPVP",
+    "enterpriseId": "ent_00000002",
+    "name": "Ferry - Wisoky Security Policy",
+    "description": "Sumo votum adversus.",
+    "priority": "critical",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "a8b18fc2-35d3-41c1-bb9a-0c0917dab0c8",
+        "actions": [
+          {
+            "actionId": "4fcf147b-534f-4f9a-993e-7364b1378324",
+            "allowedRoles": [
+              "manager",
+              "admin",
+              "contractor"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "gateway",
+                "laptop"
+              ],
+              "operatingSystems": [
+                "Android"
+              ],
+              "carriers": [
+                "T-Mobile",
+                "Sprint",
+                "US Cellular"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2024-10-06T15:57:53.866Z",
+    "updatedAt": "2025-05-09T22:38:02.432Z"
+  },
+  {
+    "id": "pol_DY8397DM",
+    "enterpriseId": "ent_00000002",
+    "name": "Howe and Sons Security Policy",
+    "description": "Provident adsum commodi abduco summisse.",
+    "priority": "critical",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "efc3e11f-0273-432c-b2d2-23ffc4e6ca3f",
+        "actions": [
+          {
+            "actionId": "c2a225c9-e512-488d-9c55-0e5c2d66a169",
+            "allowedRoles": [
+              "admin"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "tablet",
+                "gateway",
+                "smartphone"
+              ],
+              "operatingSystems": [
+                "iOS"
+              ],
+              "carriers": [
+                "Sprint",
+                "T-Mobile"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "allow",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2024-07-04T21:14:00.142Z",
+    "updatedAt": "2025-05-24T00:44:08.871Z"
+  },
+  {
+    "id": "pol_WRIP48ZP",
+    "enterpriseId": "ent_00000002",
+    "name": "Bradtke, Gerlach and Runolfsdottir Security Policy",
+    "description": "Ademptio varius earum decipio aliquam communis.",
+    "priority": "medium",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "aaa4a813-cdde-4169-8909-4b8f1bdf2e12",
+        "actions": [
+          {
+            "actionId": "ccabe750-16be-43c7-8bce-ed323b4e0fc3",
+            "allowedRoles": [
+              "employee",
+              "admin"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "smartphone"
+              ],
+              "operatingSystems": [
+                "Linux",
+                "Windows"
+              ],
+              "carriers": [
+                "Sprint"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "allow",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2025-02-08T13:48:00.222Z",
+    "updatedAt": "2025-05-21T03:00:55.161Z"
+  },
+  {
+    "id": "pol_OIMCTDYO",
+    "enterpriseId": "ent_00000002",
+    "name": "Volkman Group Security Policy",
+    "description": "Considero utpote tum comprehendo derideo pecco somnus bis tredecim crur.",
+    "priority": "critical",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "2515a80d-db0e-4402-8f93-45ebe05c9e54",
+        "actions": [
+          {
+            "actionId": "1c6e93a5-227e-4be5-8a86-91275ad90a58",
+            "allowedRoles": [
+              "manager"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "smartphone",
+                "gateway"
+              ],
+              "operatingSystems": [
+                "Android",
+                "Linux"
+              ],
+              "carriers": [
+                "T-Mobile",
+                "Sprint",
+                "AT&T"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "quarantine",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2024-09-18T03:24:18.235Z",
+    "updatedAt": "2025-05-25T06:35:22.553Z"
+  },
+  {
+    "id": "pol_A5YRAUSX",
+    "enterpriseId": "ent_00000002",
+    "name": "Fahey, Terry and Wisozk Security Policy",
+    "description": "Somnus cumque spoliatio admiratio peccatus suppono balbus derideo.",
+    "priority": "high",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "ad5c93b1-dc92-42c6-9ba3-5c7951ff997b",
+        "actions": [
+          {
+            "actionId": "2223d211-564b-4b75-8259-daed6709688c",
+            "allowedRoles": [
+              "admin"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "IoT"
+              ],
+              "operatingSystems": [
+                "Windows",
+                "Linux",
+                "macOS"
+              ],
+              "carriers": [
+                "AT&T"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2024-08-09T12:02:34.375Z",
+    "updatedAt": "2025-05-30T13:19:48.600Z"
+  }
+]

@@ -2,39 +2,55 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { getToken } from "next-auth/jwt";
 
-// Add paths that should be accessible without authentication
-const publicPaths = ["/", "/login"];
+// Define protected and public routes
+const protectedRoutes = ['/enterprises'];
+const publicRoutes = ['/login', '/api/auth'];
 
 export async function middleware(request: NextRequest) {
-  const token = await getToken({ req: request });
   const { pathname } = request.nextUrl;
+  
+  // Check if the route is public
+  if (publicRoutes.some(route => pathname.startsWith(route))) {
+    return NextResponse.next();
+  }
 
-  // Allow access to public paths
-  if (publicPaths.includes(pathname)) {
-    // If user is already logged in and tries to access login page, redirect to dashboard
-    if (pathname === "/login" && token) {
-      return NextResponse.redirect(new URL("/dashboard", request.url));
+  // Get the session token
+  const token = await getToken({ req: request });
+
+  // Check if the route is protected
+  if (protectedRoutes.some(route => pathname.startsWith(route))) {
+    // If no token, redirect to login
+    if (!token) {
+      const url = new URL('/login', request.url);
+      url.searchParams.set('callbackUrl', encodeURI(request.url));
+      return NextResponse.redirect(url);
     }
+
+    // If not an admin, redirect to login
+    if (token.role !== 'admin') {
+      const url = new URL('/login', request.url);
+      url.searchParams.set('error', 'AccessDenied');
+      return NextResponse.redirect(url);
+    }
+
+    // For enterprise-specific routes, verify access
+    if (pathname.startsWith('/enterprises/')) {
+      const enterpriseId = pathname.split('/')[2];
+      if (enterpriseId && token.enterpriseId !== enterpriseId) {
+        const url = new URL('/login', request.url);
+        url.searchParams.set('error', 'AccessDenied');
+        return NextResponse.redirect(url);
+      }
+    }
+
     return NextResponse.next();
   }
 
-  // Check if the path starts with /api/auth (for NextAuth endpoints)
-  if (pathname.startsWith("/api/auth")) {
-    return NextResponse.next();
-  }
-
-  // Protect all other routes
-  if (!token) {
-    const loginUrl = new URL("/login", request.url);
-    // Add the original URL as a redirect parameter
-    loginUrl.searchParams.set("callbackUrl", pathname);
-    return NextResponse.redirect(loginUrl);
-  }
-
+  // For all other routes, allow access
   return NextResponse.next();
 }
 
-// Configure which routes to run the middleware on
+// Configure which routes to run middleware on
 export const config = {
   matcher: [
     /*

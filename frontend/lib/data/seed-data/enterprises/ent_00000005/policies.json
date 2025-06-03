@@ -1,0 +1,641 @@
+[
+  {
+    "id": "pol_A4TJXQML",
+    "enterpriseId": "ent_00000005",
+    "name": "Harber, Price and Hermiston Security Policy",
+    "description": "Summisse adulatio sunt substantia sit surculus.",
+    "priority": "low",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "d04d71e1-27fe-4b2c-8a95-d9f7a161ae2a",
+        "actions": [
+          {
+            "actionId": "2ce63b68-c23d-451f-b40d-2b84ef22561b",
+            "allowedRoles": [
+              "guest"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "gateway",
+                "IoT",
+                "tablet"
+              ],
+              "operatingSystems": [
+                "Windows"
+              ],
+              "carriers": [
+                "AT&T"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "notify",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2024-11-16T20:13:26.794Z",
+    "updatedAt": "2025-05-12T23:04:56.771Z"
+  },
+  {
+    "id": "pol_9GLXWM0J",
+    "enterpriseId": "ent_00000005",
+    "name": "Torphy Group Security Policy",
+    "description": "Cetera cimentarius neque video.",
+    "priority": "medium",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "9615d41e-9031-4e70-a68d-14bd08b025b0",
+        "actions": [
+          {
+            "actionId": "00ea0e85-299b-41b5-bf1f-30a1a72ca651",
+            "allowedRoles": [
+              "manager",
+              "contractor"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "tablet",
+                "laptop"
+              ],
+              "operatingSystems": [
+                "iOS",
+                "Linux"
+              ],
+              "carriers": [
+                "Verizon"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2025-03-18T20:20:04.519Z",
+    "updatedAt": "2025-05-27T14:03:34.080Z"
+  },
+  {
+    "id": "pol_9ADRHBL7",
+    "enterpriseId": "ent_00000005",
+    "name": "Collier Inc Security Policy",
+    "description": "Talus curriculum deludo patria amet dapifer desino angelus.",
+    "priority": "medium",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "30a1f1d6-c20d-4512-a750-213c37bbb7f4",
+        "actions": [
+          {
+            "actionId": "1f06bcff-d9a0-4b3a-9665-6ef47960c60e",
+            "allowedRoles": [
+              "manager"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "laptop"
+              ],
+              "operatingSystems": [
+                "iOS"
+              ],
+              "carriers": [
+                "Verizon",
+                "Sprint"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "notify",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2025-04-05T23:32:20.960Z",
+    "updatedAt": "2025-05-12T15:55:45.838Z"
+  },
+  {
+    "id": "pol_PNANVWPC",
+    "enterpriseId": "ent_00000005",
+    "name": "Daniel, Jacobi and Goodwin Security Policy",
+    "description": "Armarium clam debeo.",
+    "priority": "high",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "1e73204c-77df-42b4-8ed9-1d7e31df252e",
+        "actions": [
+          {
+            "actionId": "2bdee5db-acaf-4e00-898a-131a401b1fef",
+            "allowedRoles": [
+              "guest"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "smartphone"
+              ],
+              "operatingSystems": [
+                "Android",
+                "macOS"
+              ],
+              "carriers": [
+                "US Cellular",
+                "T-Mobile"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2024-09-30T16:03:56.656Z",
+    "updatedAt": "2025-05-21T07:25:13.874Z"
+  },
+  {
+    "id": "pol_GIOW2UJU",
+    "enterpriseId": "ent_00000005",
+    "name": "Brown Group Security Policy",
+    "description": "Recusandae astrum atrox vinitor.",
+    "priority": "high",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "617f8f8b-5786-4969-8ad6-94884fe9e3cb",
+        "actions": [
+          {
+            "actionId": "3dc7744d-8602-4576-86b0-7f09932fedbd",
+            "allowedRoles": [
+              "contractor",
+              "guest",
+              "manager"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "laptop",
+                "tablet",
+                "gateway"
+              ],
+              "operatingSystems": [
+                "iOS",
+                "Linux",
+                "Android"
+              ],
+              "carriers": [
+                "US Cellular",
+                "Sprint"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2024-10-04T14:02:42.787Z",
+    "updatedAt": "2025-05-08T19:40:20.998Z"
+  },
+  {
+    "id": "pol_W1KHP8ER",
+    "enterpriseId": "ent_00000005",
+    "name": "Kilback, Leuschke and Huels Security Policy",
+    "description": "Totam acsi amplitudo aequus facere explicabo magnam solvo accusantium turpis.",
+    "priority": "low",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "7a91a950-0526-4ecb-9c6e-8cadf84b8247",
+        "actions": [
+          {
+            "actionId": "2d215e53-0bbb-4cb2-bac7-c64bf636f233",
+            "allowedRoles": [
+              "guest",
+              "admin"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "IoT",
+                "gateway",
+                "smartphone"
+              ],
+              "operatingSystems": [
+                "Linux"
+              ],
+              "carriers": [
+                "Verizon"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "notify",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2024-06-28T07:33:15.655Z",
+    "updatedAt": "2025-05-15T21:30:52.641Z"
+  },
+  {
+    "id": "pol_7IU1WPUJ",
+    "enterpriseId": "ent_00000005",
+    "name": "Goyette - Bradtke Security Policy",
+    "description": "Tero corrumpo basium censura arguo corroboro vita illum tonsor.",
+    "priority": "low",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "1a9be8d0-89b1-4f75-9858-1ae5bc9c73dd",
+        "actions": [
+          {
+            "actionId": "56b0c039-b64c-432d-9adc-bbbeaaab773a",
+            "allowedRoles": [
+              "contractor"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "tablet",
+                "IoT"
+              ],
+              "operatingSystems": [
+                "Windows"
+              ],
+              "carriers": [
+                "AT&T",
+                "Verizon",
+                "Sprint"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "allow",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2025-05-22T19:38:59.065Z",
+    "updatedAt": "2025-05-06T12:14:03.388Z"
+  },
+  {
+    "id": "pol_WA5LINLL",
+    "enterpriseId": "ent_00000005",
+    "name": "Mraz Group Security Policy",
+    "description": "Quis thymum una amaritudo basium iste tamdiu aegre.",
+    "priority": "medium",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "2a94c8ba-9984-46ae-87e0-0f5c3bd0873c",
+        "actions": [
+          {
+            "actionId": "cf146e35-f7cb-4197-a062-b8e26e1e65cd",
+            "allowedRoles": [
+              "admin",
+              "employee"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "smartphone",
+                "laptop",
+                "gateway"
+              ],
+              "operatingSystems": [
+                "Windows",
+                "macOS",
+                "Android"
+              ],
+              "carriers": [
+                "Verizon",
+                "US Cellular"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2024-07-08T06:26:31.180Z",
+    "updatedAt": "2025-05-11T01:16:14.344Z"
+  },
+  {
+    "id": "pol_VQNFLVRF",
+    "enterpriseId": "ent_00000005",
+    "name": "Parisian, Jast and Hyatt Security Policy",
+    "description": "Tutis attero conservo vicinus.",
+    "priority": "low",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "aacb05f2-960d-4d0b-8177-4893973d4cb4",
+        "actions": [
+          {
+            "actionId": "4b66358c-24b0-42f5-903b-19971fab90e3",
+            "allowedRoles": [
+              "employee",
+              "admin",
+              "manager"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "tablet"
+              ],
+              "operatingSystems": [
+                "Windows",
+                "macOS",
+                "iOS"
+              ],
+              "carriers": [
+                "T-Mobile"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "quarantine",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2025-04-21T14:45:02.024Z",
+    "updatedAt": "2025-06-01T07:53:05.140Z"
+  },
+  {
+    "id": "pol_K6SQT6LI",
+    "enterpriseId": "ent_00000005",
+    "name": "Kemmer - Barton Security Policy",
+    "description": "Nemo iusto una coadunatio victoria commemoro anser.",
+    "priority": "high",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "f7c2970c-6c93-4a21-9a54-0ace4c7c6e73",
+        "actions": [
+          {
+            "actionId": "6ccc7641-340e-4922-b774-5ba0698909ee",
+            "allowedRoles": [
+              "admin"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "smartphone",
+                "gateway",
+                "IoT"
+              ],
+              "operatingSystems": [
+                "Android"
+              ],
+              "carriers": [
+                "US Cellular",
+                "AT&T",
+                "T-Mobile"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "quarantine",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2025-03-21T02:29:58.822Z",
+    "updatedAt": "2025-05-06T20:37:45.358Z"
+  },
+  {
+    "id": "pol_H1AUIAK7",
+    "enterpriseId": "ent_00000005",
+    "name": "Zemlak, Lebsack and O'Kon Security Policy",
+    "description": "Curatio conatus talus sponte tunc tristis quam uter talus.",
+    "priority": "low",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "a145b073-abeb-40ef-80d4-b0d3800747bf",
+        "actions": [
+          {
+            "actionId": "3b1fae33-9efa-4ce6-a0bb-f877d37e79f1",
+            "allowedRoles": [
+              "employee",
+              "contractor",
+              "admin"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "tablet",
+                "smartphone",
+                "IoT"
+              ],
+              "operatingSystems": [
+                "Android",
+                "Windows"
+              ],
+              "carriers": [
+                "Sprint",
+                "Verizon",
+                "US Cellular"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "notify",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2025-03-26T11:06:51.522Z",
+    "updatedAt": "2025-05-15T12:56:57.177Z"
+  },
+  {
+    "id": "pol_UGF7OLXT",
+    "enterpriseId": "ent_00000005",
+    "name": "Torphy, Rodriguez and Lueilwitz Security Policy",
+    "description": "Velut sub suggero quidem verus.",
+    "priority": "critical",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "80387b6e-b317-4ac4-bc14-832337d2685e",
+        "actions": [
+          {
+            "actionId": "b0816ee5-aa2b-49f0-96fd-91d794842d5a",
+            "allowedRoles": [
+              "employee"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "laptop",
+                "IoT"
+              ],
+              "operatingSystems": [
+                "Windows",
+                "Android"
+              ],
+              "carriers": [
+                "US Cellular",
+                "Sprint",
+                "T-Mobile"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2024-07-03T07:20:07.094Z",
+    "updatedAt": "2025-05-21T22:52:22.321Z"
+  },
+  {
+    "id": "pol_RCIWK9LQ",
+    "enterpriseId": "ent_00000005",
+    "name": "Langworth, Quitzon and Fisher Security Policy",
+    "description": "Vigilo vado arto vulgivagus.",
+    "priority": "low",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "644fbfb2-7c82-432f-a782-3fa0bff2b4ad",
+        "actions": [
+          {
+            "actionId": "49fa9d86-b212-4169-8fc2-f7d9e5bbcb7e",
+            "allowedRoles": [
+              "contractor"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "tablet",
+                "IoT",
+                "smartphone"
+              ],
+              "operatingSystems": [
+                "Linux",
+                "macOS"
+              ],
+              "carriers": [
+                "AT&T",
+                "Verizon"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "quarantine",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2025-05-11T13:12:00.836Z",
+    "updatedAt": "2025-05-30T02:12:28.469Z"
+  },
+  {
+    "id": "pol_DK2QVS1K",
+    "enterpriseId": "ent_00000005",
+    "name": "Kub, Jones and Steuber Security Policy",
+    "description": "Aestivus adhuc apostolus antiquus adeptio clementia magnam textilis pax.",
+    "priority": "high",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "681cc5df-5ac1-4479-8da1-68a9d42aff93",
+        "actions": [
+          {
+            "actionId": "9660e4af-4214-4e20-8db3-3f94b7969917",
+            "allowedRoles": [
+              "manager"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "IoT",
+                "laptop"
+              ],
+              "operatingSystems": [
+                "iOS",
+                "macOS"
+              ],
+              "carriers": [
+                "AT&T"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "quarantine",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2024-07-26T20:28:01.352Z",
+    "updatedAt": "2025-05-04T13:50:01.692Z"
+  },
+  {
+    "id": "pol_1ETV6NHG",
+    "enterpriseId": "ent_00000005",
+    "name": "Kutch - Collier Security Policy",
+    "description": "Deleo tamisium vicissitudo vesica admitto.",
+    "priority": "medium",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "4bc1563a-082f-48a8-8b8e-e13d36e54ef5",
+        "actions": [
+          {
+            "actionId": "0b4c999a-1d2a-4dd3-a1c0-274607b5938f",
+            "allowedRoles": [
+              "guest"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "tablet",
+                "gateway"
+              ],
+              "operatingSystems": [
+                "Windows",
+                "Android"
+              ],
+              "carriers": [
+                "T-Mobile"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "quarantine",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2025-01-13T07:14:36.521Z",
+    "updatedAt": "2025-05-14T05:12:22.462Z"
+  }
+]

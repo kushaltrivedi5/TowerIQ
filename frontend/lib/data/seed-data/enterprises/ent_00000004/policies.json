@@ -1,0 +1,646 @@
+[
+  {
+    "id": "pol_BSYFNK8S",
+    "enterpriseId": "ent_00000004",
+    "name": "Konopelski - Wintheiser Security Policy",
+    "description": "Ulciscor deripio repudiandae audax depopulo adiuvo argumentum torrens tamdiu.",
+    "priority": "medium",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "c508b497-81c6-4372-b1e1-0a927c8f9b86",
+        "actions": [
+          {
+            "actionId": "5cf0d40f-4710-45a1-b7fa-2bdc53e3b844",
+            "allowedRoles": [
+              "admin",
+              "guest",
+              "contractor"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "IoT",
+                "smartphone",
+                "laptop"
+              ],
+              "operatingSystems": [
+                "iOS"
+              ],
+              "carriers": [
+                "Verizon",
+                "AT&T",
+                "Sprint"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "quarantine",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2025-01-08T16:11:51.427Z",
+    "updatedAt": "2025-05-30T17:13:09.053Z"
+  },
+  {
+    "id": "pol_GLKMKJUU",
+    "enterpriseId": "ent_00000004",
+    "name": "Vandervort and Sons Security Policy",
+    "description": "Territo ea asperiores advenio depopulo bellicus aperiam.",
+    "priority": "critical",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "7d5d9025-9e2f-492a-88c7-6c35f46bde13",
+        "actions": [
+          {
+            "actionId": "3757bf7d-a893-42b1-bd7f-6adf4816bbdb",
+            "allowedRoles": [
+              "manager"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "gateway"
+              ],
+              "operatingSystems": [
+                "macOS",
+                "iOS"
+              ],
+              "carriers": [
+                "Sprint"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2024-11-06T10:47:57.598Z",
+    "updatedAt": "2025-05-18T13:50:49.787Z"
+  },
+  {
+    "id": "pol_JMRKPMXK",
+    "enterpriseId": "ent_00000004",
+    "name": "Mueller, Baumbach and Lakin Security Policy",
+    "description": "Velum ultio calcar varius.",
+    "priority": "high",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "d6d33e76-7b8b-413d-94a4-0a7cec097090",
+        "actions": [
+          {
+            "actionId": "96f63d20-eedb-4bb2-a791-d4bfa6c44ecf",
+            "allowedRoles": [
+              "guest",
+              "contractor",
+              "manager"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "IoT"
+              ],
+              "operatingSystems": [
+                "Linux",
+                "Android",
+                "macOS"
+              ],
+              "carriers": [
+                "Verizon",
+                "AT&T",
+                "Sprint"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2025-05-30T23:55:56.919Z",
+    "updatedAt": "2025-06-03T02:26:22.660Z"
+  },
+  {
+    "id": "pol_H0EPB51U",
+    "enterpriseId": "ent_00000004",
+    "name": "Langosh - Ritchie Security Policy",
+    "description": "Adiuvo viridis incidunt corroboro apto.",
+    "priority": "high",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "05de7394-149e-4524-bee5-a3c570c8cf33",
+        "actions": [
+          {
+            "actionId": "01a80dd4-40b1-490b-9e6b-8c683bc42f6e",
+            "allowedRoles": [
+              "guest",
+              "contractor"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "IoT",
+                "gateway",
+                "laptop"
+              ],
+              "operatingSystems": [
+                "macOS",
+                "Windows",
+                "Android"
+              ],
+              "carriers": [
+                "Verizon",
+                "T-Mobile"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "allow",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2025-01-04T12:57:34.149Z",
+    "updatedAt": "2025-05-31T08:07:37.784Z"
+  },
+  {
+    "id": "pol_V2LWAQQA",
+    "enterpriseId": "ent_00000004",
+    "name": "Funk - Kiehn Security Policy",
+    "description": "Aequus alioqui aer defendo maiores temptatio velociter claro.",
+    "priority": "medium",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "bc6dcb41-3035-4008-a181-2f6dd6448ce3",
+        "actions": [
+          {
+            "actionId": "fb13b31f-f4de-464f-8a41-205aa925378c",
+            "allowedRoles": [
+              "manager",
+              "employee",
+              "contractor"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "tablet",
+                "smartphone"
+              ],
+              "operatingSystems": [
+                "Linux"
+              ],
+              "carriers": [
+                "AT&T"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "notify",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2025-05-29T17:43:57.992Z",
+    "updatedAt": "2025-05-23T16:58:47.778Z"
+  },
+  {
+    "id": "pol_PPC0FTHR",
+    "enterpriseId": "ent_00000004",
+    "name": "Lehner Group Security Policy",
+    "description": "Voco iusto tripudio tolero urbs.",
+    "priority": "high",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "e6e94ca0-4d47-4516-a09d-3626c2ad1602",
+        "actions": [
+          {
+            "actionId": "9c15343a-42a4-421b-8dfc-dbfcf6748f8c",
+            "allowedRoles": [
+              "manager"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "laptop",
+                "gateway",
+                "tablet"
+              ],
+              "operatingSystems": [
+                "Linux"
+              ],
+              "carriers": [
+                "AT&T"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "allow",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2024-10-30T06:06:41.638Z",
+    "updatedAt": "2025-05-18T19:27:19.181Z"
+  },
+  {
+    "id": "pol_EOBQHDLU",
+    "enterpriseId": "ent_00000004",
+    "name": "Kreiger, Raynor and Kovacek Security Policy",
+    "description": "Patrocinor fugit approbo concedo.",
+    "priority": "high",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "192ca959-dc7e-4d72-a4f2-21125cb07d1f",
+        "actions": [
+          {
+            "actionId": "1d231e4e-e9f3-4513-aed7-b646e13e5d74",
+            "allowedRoles": [
+              "admin"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "tablet",
+                "laptop",
+                "IoT"
+              ],
+              "operatingSystems": [
+                "iOS",
+                "Android",
+                "macOS"
+              ],
+              "carriers": [
+                "Verizon"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2024-10-03T17:14:39.834Z",
+    "updatedAt": "2025-05-31T00:59:20.310Z"
+  },
+  {
+    "id": "pol_VEKZE4VB",
+    "enterpriseId": "ent_00000004",
+    "name": "Corkery - Wiza Security Policy",
+    "description": "Cernuus deinde valde terga.",
+    "priority": "high",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "847ae183-c109-44a6-8d3f-e19c20314b0f",
+        "actions": [
+          {
+            "actionId": "70fedf86-719e-4fff-bc80-141304ccd52a",
+            "allowedRoles": [
+              "manager",
+              "employee",
+              "contractor"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "IoT",
+                "tablet"
+              ],
+              "operatingSystems": [
+                "Linux"
+              ],
+              "carriers": [
+                "T-Mobile",
+                "Verizon"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "allow",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2025-02-05T16:38:43.282Z",
+    "updatedAt": "2025-05-24T18:56:43.653Z"
+  },
+  {
+    "id": "pol_O6KE2QCL",
+    "enterpriseId": "ent_00000004",
+    "name": "Christiansen - Pacocha Security Policy",
+    "description": "Aut debeo corpus placeat arceo.",
+    "priority": "medium",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "c697ee3e-87dd-4ecf-8d36-0b0c1c051b5c",
+        "actions": [
+          {
+            "actionId": "d1374d65-3575-4fbd-83ea-1f9315c828d3",
+            "allowedRoles": [
+              "contractor"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "tablet",
+                "gateway"
+              ],
+              "operatingSystems": [
+                "Windows",
+                "iOS"
+              ],
+              "carriers": [
+                "Sprint"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2024-10-28T01:15:38.535Z",
+    "updatedAt": "2025-05-22T00:45:33.831Z"
+  },
+  {
+    "id": "pol_KSAQJO0Q",
+    "enterpriseId": "ent_00000004",
+    "name": "Skiles, Mitchell and Torphy Security Policy",
+    "description": "Unus vir volaticus.",
+    "priority": "medium",
+    "status": "inactive",
+    "rules": [
+      {
+        "appId": "033c5d01-08a4-40a6-82d9-6d58ba2e7ce8",
+        "actions": [
+          {
+            "actionId": "993b3619-d990-4630-a71c-21c6134beefa",
+            "allowedRoles": [
+              "contractor"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "smartphone",
+                "gateway",
+                "laptop"
+              ],
+              "operatingSystems": [
+                "Android",
+                "macOS",
+                "Windows"
+              ],
+              "carriers": [
+                "T-Mobile",
+                "Verizon",
+                "US Cellular"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "quarantine",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2025-04-02T19:32:53.810Z",
+    "updatedAt": "2025-05-05T22:34:16.434Z"
+  },
+  {
+    "id": "pol_MYSXWW8Y",
+    "enterpriseId": "ent_00000004",
+    "name": "Emmerich LLC Security Policy",
+    "description": "Auctor animi taceo.",
+    "priority": "high",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "dfeaac98-9d03-4bda-b7f5-406e8e1f599b",
+        "actions": [
+          {
+            "actionId": "e6312a8e-b7e0-4927-80a2-7cf7f4aa01ca",
+            "allowedRoles": [
+              "manager"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "laptop"
+              ],
+              "operatingSystems": [
+                "macOS",
+                "Android",
+                "Windows"
+              ],
+              "carriers": [
+                "US Cellular"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "allow",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2025-02-19T22:24:20.193Z",
+    "updatedAt": "2025-05-05T06:49:59.087Z"
+  },
+  {
+    "id": "pol_VRX7FZMQ",
+    "enterpriseId": "ent_00000004",
+    "name": "Schroeder, Cartwright and Kuvalis Security Policy",
+    "description": "Tibi volaticus campana alias cunae sto cras sortitus sortitus perspiciatis.",
+    "priority": "low",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "561aa353-e761-4fd4-a281-1d77bcf98c8c",
+        "actions": [
+          {
+            "actionId": "992be728-0b03-464f-b494-7975d6fe6db5",
+            "allowedRoles": [
+              "employee",
+              "contractor"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "gateway"
+              ],
+              "operatingSystems": [
+                "Linux"
+              ],
+              "carriers": [
+                "Sprint",
+                "US Cellular",
+                "AT&T"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "deny",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2024-06-11T06:40:16.458Z",
+    "updatedAt": "2025-05-28T17:43:47.413Z"
+  },
+  {
+    "id": "pol_RHYRTH5N",
+    "enterpriseId": "ent_00000004",
+    "name": "Collins Inc Security Policy",
+    "description": "Reiciendis pauci thesis ad ter eveniet suggero sonitus.",
+    "priority": "high",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "e7b38fd9-6ef3-4249-8724-2411436640b0",
+        "actions": [
+          {
+            "actionId": "4c20fad6-e985-4c1d-b8e8-213e15af6913",
+            "allowedRoles": [
+              "contractor",
+              "employee",
+              "admin"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "IoT",
+                "gateway",
+                "smartphone"
+              ],
+              "operatingSystems": [
+                "macOS",
+                "iOS"
+              ],
+              "carriers": [
+                "US Cellular",
+                "Verizon",
+                "AT&T"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "allow",
+      "notifyUsers": [],
+      "autoRemediation": true
+    },
+    "createdAt": "2025-05-09T04:23:26.151Z",
+    "updatedAt": "2025-05-31T20:05:44.648Z"
+  },
+  {
+    "id": "pol_DRELAVKC",
+    "enterpriseId": "ent_00000004",
+    "name": "Hartmann - Bahringer Security Policy",
+    "description": "Acsi compono defaeco blandior concedo tamisium amplus versus.",
+    "priority": "medium",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "2b28cc3a-6875-4bc7-ad52-749898bf3fac",
+        "actions": [
+          {
+            "actionId": "ea262c50-42dc-4d31-ba84-cd25a60387b0",
+            "allowedRoles": [
+              "employee",
+              "guest",
+              "admin"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "tablet"
+              ],
+              "operatingSystems": [
+                "macOS"
+              ],
+              "carriers": [
+                "Verizon"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "quarantine",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2024-08-15T08:07:45.865Z",
+    "updatedAt": "2025-05-06T01:58:40.538Z"
+  },
+  {
+    "id": "pol_SSXXACDU",
+    "enterpriseId": "ent_00000004",
+    "name": "Upton and Sons Security Policy",
+    "description": "Demulceo stipes argumentum cetera.",
+    "priority": "critical",
+    "status": "active",
+    "rules": [
+      {
+        "appId": "da3bcf54-c0b0-47d1-998d-6bd5bc5be01d",
+        "actions": [
+          {
+            "actionId": "db33e032-1a6d-4a7e-87a1-46638431e275",
+            "allowedRoles": [
+              "guest",
+              "admin",
+              "contractor"
+            ],
+            "conditions": {
+              "deviceTypes": [
+                "gateway",
+                "tablet",
+                "laptop"
+              ],
+              "operatingSystems": [
+                "Windows"
+              ],
+              "carriers": [
+                "Sprint",
+                "AT&T"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "enforcement": {
+      "action": "notify",
+      "notifyUsers": [],
+      "autoRemediation": false
+    },
+    "createdAt": "2025-01-13T09:48:59.746Z",
+    "updatedAt": "2025-05-25T00:10:24.571Z"
+  }
+]

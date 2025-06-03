@@ -88,14 +88,7 @@
   --transition-timing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Custom gradients */
-  --lightBackground: linear-gradient(
-    135deg,
-    #f8faff 0%,
-    #f0f4ff 25%,
-    #e8eeff 50%,
-    #f0f4ff 75%,
-    #f8faff 100%
-  );
+  --lightBackground: linear-gradient(-10deg, #f5f1f9 0%, #dad1ee 100%);
   --darkBackground: linear-gradient(-10deg, #3e3d40 0%, #18161d 100%);
 
   /* Background and foreground colors */
@@ -174,24 +167,24 @@
 
   /* Glass effects */
   .glassEffect-light {
-    @apply bg-white/30 dark:bg-[#2929292e]
-           shadow-[0_5px_20px_#aeaeae80] dark:shadow-[0_5px_20px_#00000047]
-           backdrop-blur-[5px]
-           border border-white/10;
+    @apply bg-[#ffffff33] dark:bg-[#2929292e]
+           shadow-[0_5px_20px_#00000040] dark:shadow-[0_5px_20px_#00000047]
+           backdrop-blur-[8px]
+           border border-[#ffffff33] dark:border-[#ffffff1a];
   }
 
   .glassEffect-medium {
-    @apply bg-white/40 dark:bg-[#29292936]
-           shadow-[0_5px_20px_#aeaeae80] dark:shadow-[0_5px_20px_#00000047]
-           backdrop-blur-[10px]
-           border border-white/10;
+    @apply bg-[#ffffff40] dark:bg-[#29292936]
+           shadow-[0_5px_20px_#00000040] dark:shadow-[0_5px_20px_#00000047]
+           backdrop-blur-[12px]
+           border border-[#ffffff40] dark:border-[#ffffff1a];
   }
 
   .glassEffect-heavy {
-    @apply bg-white/50 dark:bg-[#29292940]
-           shadow-[0_5px_20px_#aeaeae80] dark:shadow-[0_5px_20px_#00000047]
-           backdrop-blur-[15px]
-           border border-white/10;
+    @apply bg-[#ffffff4d] dark:bg-[#29292940]
+           shadow-[0_5px_20px_#00000040] dark:shadow-[0_5px_20px_#00000047]
+           backdrop-blur-[16px]
+           border border-[#ffffff4d] dark:border-[#ffffff1a];
   }
 
   /* Updated component styles for rounded design */

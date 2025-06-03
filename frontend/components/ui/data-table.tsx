@@ -11,7 +11,6 @@ import {
   SelectValue,
 } from "./select";
 import { ChevronDown, ChevronUp, ChevronsUpDown, Search } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "./card";
 import { Badge } from "./badge";
 import {
   searchData,
@@ -131,22 +130,23 @@ export function DataTable<T extends Record<string, any>>({
   };
 
   return (
-    <Card className={cn("w-full", className)}>
+    <div className={cn("w-full glassEffect-medium rounded-xl p-6", className)}>
       {(title || description) && (
-        <CardHeader>
-          {title && <CardTitle>{title}</CardTitle>}
+        <div className="mb-6">
+          {title && <h3 className="text-lg font-semibold">{title}</h3>}
           {description && (
-            <p className="text-sm text-muted-foreground">{description}</p>
+            <p className="text-sm text-muted-foreground mt-1">{description}</p>
           )}
-        </CardHeader>
+        </div>
       )}
-      <CardContent>
-        <div className="space-y-4">
-          {/* Search and Filters */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            {searchableColumns.length > 0 && (
-              <div className="relative flex-1">
-                <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
+
+      <div className="space-y-4">
+        {/* Search and Filters */}
+        <div className="flex flex-col sm:flex-row gap-4">
+          {searchableColumns.length > 0 && (
+            <div className="relative flex-1">
+              <div className="relative bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 rounded-lg border shadow-sm">
+                <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
                 <Input
                   placeholder="Search..."
                   value={searchTerm}
@@ -154,116 +154,114 @@ export function DataTable<T extends Record<string, any>>({
                     setSearchTerm(e.target.value);
                     setCurrentPage(1);
                   }}
-                  className="pl-8"
+                  className="pl-9 bg-transparent border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
                 />
               </div>
-            )}
-            {columns
-              .filter((col) => col.filterable && col.options)
-              .map((col) => (
-                <Select
-                  key={String(col.key)}
-                  value={filters[col.key] as string}
-                  onValueChange={(value) => handleFilterChange(col.key, value)}
-                >
-                  <SelectTrigger className="w-[180px]">
-                    <SelectValue placeholder={`Filter by ${col.label}`} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="__all__">All</SelectItem>
-                    {col.options?.map((option) => (
-                      <SelectItem key={option.value} value={option.value}>
-                        {option.label}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              ))}
-          </div>
-
-          {/* Table */}
-          <div className="rounded-md border">
-            <div className="relative w-full overflow-auto">
-              <table className="w-full caption-bottom text-sm">
-                <thead className="[&_tr]:border-b">
-                  <tr className="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
-                    {columns.map((column) => (
-                      <th
-                        key={String(column.key)}
-                        className="h-12 px-4 text-left align-middle font-medium text-muted-foreground"
-                      >
-                        <div className="flex items-center gap-2">
-                          {column.label}
-                          {column.sortable && (
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              className="h-8 w-8 p-0"
-                              onClick={() => handleSort(column.key)}
-                            >
-                              {renderSortIcon(column.key)}
-                            </Button>
-                          )}
-                        </div>
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody className="[&_tr:last-child]:border-0">
-                  {paginatedData.map((row, rowIndex) => (
-                    <tr
-                      key={rowIndex}
-                      className="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                    >
-                      {columns.map((column) => (
-                        <td
-                          key={String(column.key)}
-                          className="p-4 align-middle"
-                        >
-                          {column.render
-                            ? column.render(row[column.key], row)
-                            : row[column.key]?.toString() ?? "-"}
-                        </td>
-                      ))}
-                    </tr>
+            </div>
+          )}
+          {columns
+            .filter((col) => col.filterable && col.options)
+            .map((col) => (
+              <Select
+                key={String(col.key)}
+                value={filters[col.key] as string}
+                onValueChange={(value) => handleFilterChange(col.key, value)}
+              >
+                <SelectTrigger className="w-[180px] bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border shadow-sm">
+                  <SelectValue placeholder={`Filter by ${col.label}`} />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="__all__">All</SelectItem>
+                  {col.options?.map((option) => (
+                    <SelectItem key={option.value} value={option.value}>
+                      {option.label}
+                    </SelectItem>
                   ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
+                </SelectContent>
+              </Select>
+            ))}
+        </div>
 
-          {/* Pagination */}
-          <div className="flex items-center justify-between">
-            <div className="text-sm text-muted-foreground">
-              Showing {(currentPage - 1) * pageSize + 1} to{" "}
-              {Math.min(currentPage * pageSize, total)} of {total} entries
-            </div>
-            <div className="flex items-center gap-2">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-                disabled={currentPage === 1}
-              >
-                Previous
-              </Button>
-              <Badge variant="outline" className="px-4">
-                Page {currentPage} of {totalPages}
-              </Badge>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() =>
-                  setCurrentPage((p) => Math.min(totalPages, p + 1))
-                }
-                disabled={currentPage === totalPages}
-              >
-                Next
-              </Button>
-            </div>
+        {/* Table */}
+        <div className="relative w-full overflow-auto rounded-lg border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
+          <table className="w-full caption-bottom text-sm">
+            <thead className="[&_tr]:border-b">
+              <tr className="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                {columns.map((column) => (
+                  <th
+                    key={String(column.key)}
+                    className="h-12 px-4 text-left align-middle font-medium text-foreground bg-muted/50"
+                  >
+                    <div className="flex items-center gap-2">
+                      {column.label}
+                      {column.sortable && (
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="h-8 w-8 p-0 hover:bg-muted"
+                          onClick={() => handleSort(column.key)}
+                        >
+                          {renderSortIcon(column.key)}
+                        </Button>
+                      )}
+                    </div>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {paginatedData.map((row, rowIndex) => (
+                <tr
+                  key={rowIndex}
+                  className="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                >
+                  {columns.map((column) => (
+                    <td key={String(column.key)} className="p-4 align-middle">
+                      {column.render
+                        ? column.render(row[column.key], row)
+                        : row[column.key]?.toString() ?? "-"}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Pagination */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4">
+          <div className="text-sm text-foreground">
+            Showing {(currentPage - 1) * pageSize + 1} to{" "}
+            {Math.min(currentPage * pageSize, total)} of {total} entries
+          </div>
+          <div className="flex items-center gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+              disabled={currentPage === 1}
+              className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+            >
+              Previous
+            </Button>
+            <Badge
+              variant="outline"
+              className="px-4 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+            >
+              Page {currentPage} of {totalPages}
+            </Badge>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+              disabled={currentPage === totalPages}
+              className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+            >
+              Next
+            </Button>
           </div>
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 }

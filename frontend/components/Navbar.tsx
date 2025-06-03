@@ -1,184 +1,113 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
-import { cn } from "@/lib/utils";
-import { ModeToggle } from "@/components/ThemeToggle";
-import { Button } from "./ui/button";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { GradientText } from "./ui/gradient-text";
-import {
-  LogOut,
-  User,
-  Clover,
-  LayoutDashboard,
-  Shield,
-  RadioTower,
-  Smartphone,
-  LogIn,
-  ChevronDown,
-} from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { Clover } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
-import { Avatar } from "./ui/avatar";
-import { useEffect, useState } from "react";
+} from "@/components/ui/dropdown-menu";
+import { Avatar } from "@/components/ui/avatar";
+import { ModeToggle } from "@/components/ThemeToggle";
+import Sidebar from "@/components/Sidebar";
+import { cn } from "@/lib/utils";
 
 export default function Navbar() {
   const { data: session, status } = useSession();
   const router = useRouter();
-  const pathname = usePathname();
-  const { scrollY } = useScroll();
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Transform scroll position to background opacity with higher density
-  const backgroundOpacity = useTransform(scrollY, [0, 100], [0, 0.98]);
+  const handleSignOut = async () => {
+    await signOut({ redirect: true, callbackUrl: "/login" });
+  };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  if (status === "loading") {
+    return null;
+  }
 
-  const navigation = [
-    {
-      name: "Dashboard",
-      href: "/dashboard",
-      icon: LayoutDashboard,
-    },
-    {
-      name: "Policies",
-      href: "/policies",
-      icon: Shield,
-    },
-    {
-      name: "Towers",
-      href: "/towers",
-      icon: RadioTower,
-    },
-    {
-      name: "Devices",
-      href: "/devices",
-      icon: Smartphone,
-    },
-  ];
+  if (!session?.user) {
+    return null;
+  }
+
+  const enterpriseId = session.user.enterpriseId || "";
+  const enterpriseName = session.user.enterpriseName || "";
+  const userName =
+    session.user.name || session.user.email?.split("@")[0] || "User";
 
   return (
-    <motion.nav
-      style={{
-        backgroundColor: `rgb(var(--background) / ${backgroundOpacity.get()})`,
-      }}
-      className={cn(
-        "sticky top-0 z-50 w-full border-b border-border/40 backdrop-blur-md supports-[backdrop-filter]:bg-background/80 transition-all duration-200",
-        isScrolled ? "bg-background/98 shadow-md" : "bg-background/90"
-      )}
-    >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
-          <div className="flex items-center gap-12">
-            <Link href="/" className="flex items-center gap-3">
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              >
-                <Clover className="h-10 w-10 text-primary" />
-              </motion.div>
-              <span className="text-2xl font-semibold">TowerIQ</span>
-            </Link>
-            {status === "authenticated" && (
-              <div className="hidden md:flex md:items-center md:gap-8">
-                {navigation.map((item) => {
-                  const isActive = pathname === item.href;
-                  return (
-                    <motion.div
-                      key={item.name}
-                      className="relative"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      <Link
-                        href={item.href}
-                        className={cn(
-                          "flex items-center gap-2 px-4 py-2 text-sm font-medium transition-colors rounded-lg",
-                          isActive
-                            ? "text-primary bg-primary/10"
-                            : "text-muted-foreground hover:text-foreground hover:bg-accent"
-                        )}
-                      >
-                        <item.icon className="h-5 w-5" />
-                        {item.name}
-                      </Link>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            )}
-          </div>
+    <nav className="sticky top-0 z-50 w-full glassEffect-medium border-b border-border/40">
+      <div className="flex h-20 items-center px-6">
+        {/* Mobile Sidebar Trigger */}
+        <div className="md:hidden">
+          <Sidebar
+            enterpriseId={enterpriseId}
+            isMobile
+            onClose={() => setIsMobileMenuOpen(false)}
+          />
+        </div>
 
-          <div className="flex items-center gap-6">
-            <ModeToggle />
-            {status === "authenticated" ? (
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button
-                    variant="ghost"
-                    className="flex items-center gap-3 px-3 py-2 h-auto hover:bg-background/80"
-                  >
-                    <Avatar
-                      image={session.user?.image || undefined}
-                      name={session.user?.name || undefined}
-                      size="md"
-                      className="ring-2 ring-background/80"
-                    />
-                    <div className="flex flex-col items-start">
-                      <span className="text-sm font-semibold text-foreground">
-                        {session.user?.name || "User"}
-                      </span>
-                      <span className="text-xs font-medium text-muted-foreground/90">
-                        {session.user?.email}
-                      </span>
-                    </div>
-                    <ChevronDown className="h-4 w-4 text-muted-foreground/80" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent
-                  align="end"
-                  className="w-56 bg-background/95 backdrop-blur-md border-border/40"
-                >
-                  <DropdownMenuItem
-                    className="text-destructive focus:text-destructive cursor-pointer focus:bg-destructive/10"
-                    onClick={() => signOut()}
-                  >
-                    <LogOut className="mr-2 h-4 w-4" />
-                    Sign Out
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            ) : (
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Button
-                  variant="default"
-                  onClick={() => router.push("/login")}
-                  className="gap-2 h-11 px-6"
-                >
-                  <LogIn className="h-5 w-5" />
-                  Enterprise Login
-                </Button>
-              </motion.div>
-            )}
+        {/* Logo and Enterprise Name */}
+        <div className="flex items-center gap-3">
+          <Clover className="h-8 w-8 text-primary" />
+          <div className="flex items-center gap-3">
+            <span className="text-xl font-semibold">TowerIQ</span>
+            <div className="hidden md:block h-6 w-px bg-border" />
+            <span className="hidden md:inline text-base text-muted-foreground">
+              {enterpriseName}
+            </span>
           </div>
         </div>
+
+        <div className="ml-auto flex items-center gap-4">
+          {/* Theme Toggle - Always visible */}
+          <ModeToggle />
+
+          {/* User Menu */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button
+                variant="ghost"
+                className="relative h-10 w-10 rounded-full"
+              >
+                <Avatar className="h-10 w-10">
+                  <div className="flex h-full w-full items-center justify-center bg-muted text-muted-foreground text-lg">
+                    {userName
+                      .split(" ")
+                      .map((n) => n[0])
+                      .join("")
+                      .toUpperCase()}
+                  </div>
+                </Avatar>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-64" align="end" forceMount>
+              <DropdownMenuLabel className="font-normal">
+                <div className="flex flex-col space-y-1">
+                  <p className="text-base font-medium leading-none">
+                    {userName}
+                  </p>
+                  <p className="text-sm leading-none text-muted-foreground">
+                    {session.user.email}
+                  </p>
+                </div>
+              </DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem
+                className="text-destructive focus:text-destructive text-base"
+                onClick={handleSignOut}
+              >
+                Sign out
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
       </div>
-    </motion.nav>
+    </nav>
   );
 }

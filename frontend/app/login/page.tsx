@@ -41,14 +41,24 @@ export default function LoginPage() {
         redirect: false,
         email: data.email.trim(),
         password: data.password,
-        callbackUrl: "/dashboard",
       });
 
       console.log("Login response:", res);
 
       if (res?.ok) {
-        console.log("Login successful, redirecting to dashboard");
-        router.push("/dashboard");
+        // Get the enterprise ID from the session
+        const sessionRes = await fetch("/api/auth/session");
+        const session = await sessionRes.json();
+
+        if (session?.user?.enterpriseId) {
+          console.log("Login successful, redirecting to enterprise dashboard");
+          router.push(`/enterprises/${session.user.enterpriseId}`);
+        } else {
+          console.error("No enterprise ID found in session");
+          setError("root", {
+            message: "Failed to get enterprise information. Please try again.",
+          });
+        }
       } else {
         console.error("Login failed:", res?.error);
         setError("root", {
