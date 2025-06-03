@@ -133,10 +133,12 @@ export function ContentLoadingSpinner({
   text?: string;
 }) {
   return (
-    <div className="flex items-center justify-center h-full min-h-[400px] w-full">
-      <div className="flex flex-col items-center gap-4">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" />
-        <p className="text-muted-foreground text-sm">{text}</p>
+    <div className="relative w-full h-full">
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="flex flex-col items-center gap-4">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary" />
+          <p className="text-muted-foreground text-sm">{text}</p>
+        </div>
       </div>
     </div>
   );

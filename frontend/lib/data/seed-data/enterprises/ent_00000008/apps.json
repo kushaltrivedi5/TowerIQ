@@ -1,0 +1,1924 @@
+[
+  {
+    "id": "app_00000001",
+    "name": "Rippin, Davis and Jenkins Productivity App",
+    "category": "productivity",
+    "description": "Stand-alone full-range interface",
+    "vendor": "Treutel Inc",
+    "version": "2.8.2",
+    "actions": [
+      {
+        "id": "f996f7a3-1373-4e04-a73a-82bf328f1962",
+        "name": "outlandish_oof_meh.ods",
+        "description": "Tendo sodalitas casso tergo patruus derideo angustus veritatis bellum.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "3e903012-b39a-4a31-ad55-ad219f39b3b3",
+        "name": "since_definite_heavenly.img",
+        "description": "Sublime cavus cursim voluptatem benigne spiritus congregatio.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "294fcbcf-068c-48b5-b8cb-08fa94ee6aea",
+        "name": "given.gz",
+        "description": "Sordeo sumo adversus aedificium.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "df7cdb32-a661-4440-bec3-841ebde23f3b",
+        "name": "vengeful_whoever.xlsx",
+        "description": "Deleniti stella sufficio teneo adflicto itaque.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "2615cc0c-d203-4aba-a523-e5fa51540201",
+        "name": "nor_sudden.webm",
+        "description": "Excepturi accusantium adduco aegrotatio.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "044a0b1c-b5f3-4539-bca6-241500ebd950",
+        "name": "ashamed_thankfully_cantaloupe.woff2",
+        "description": "Caste accusantium tyrannus contra tenuis hic victus.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "9384220c-0db3-4744-bd89-658ebc64ba27",
+        "name": "reopen_out.ogg",
+        "description": "Adulatio apud cena.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "ca1bb275-021e-4799-a7da-aa6edd9be56f",
+        "name": "trench_shred.conf",
+        "description": "Civitas custodia caelestis compello adipisci distinctio decimus.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "675a98f6-776d-4dcc-87e7-5835769cbee4",
+        "name": "descent_kindheartedly.zip",
+        "description": "Statua vindico spero conicio solus torrens nisi contigo sollers laudantium.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "be33dcbd-137e-4211-baee-24a6cf377d8b",
+        "name": "geez_clavicle_eek.rmi",
+        "description": "Vapulus iure adimpleo volaticus voro infit vulnero.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "eb30f96d-3b14-4561-8b0a-ad1156b8789c",
+        "name": "phony_godfather.mpg",
+        "description": "Tantum patria urbanus reprehenderit.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "43dfd3ea-d9bf-493c-b4b8-9eb830229fad",
+        "name": "huzzah_dreamily_beyond.mpe",
+        "description": "Ventus cenaculum nulla cito ipsa angustus demens.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "0422a2c6-4ec6-4dd4-b026-243a2d88d820",
+        "name": "smoke_geez_edge.xsd",
+        "description": "Aegrotatio armarium adipiscor.",
+        "riskLevel": "critical"
+      }
+    ],
+    "supportedOS": [
+      "iOS"
+    ],
+    "supportedDevices": [
+      "smartphone"
+    ],
+    "createdAt": "2024-06-22T07:05:47.365Z",
+    "updatedAt": "2025-05-24T20:30:34.273Z"
+  },
+  {
+    "id": "app_00000002",
+    "name": "Kutch, Marks and Haag Security App",
+    "category": "security",
+    "description": "Universal neutral website",
+    "vendor": "Lang - Balistreri",
+    "version": "8.7.9",
+    "actions": [
+      {
+        "id": "86951096-3e62-403a-aabe-4817e2e9c50d",
+        "name": "yippee.ttf",
+        "description": "Contabesco abscido ambitus cometes trucido coniuratio virga strues crinis convoco.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "e0c2fc09-f923-422d-94f3-7ae72044c9d6",
+        "name": "pear_tabulate.boz",
+        "description": "Ait vorax tutis conventus volaticus.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "34dafb79-6e82-41da-a6bd-84b9dca68e23",
+        "name": "hose_language.dmg",
+        "description": "Video solus tepidus concedo spiculum.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "cc479394-04a3-4e0b-bedc-5c9b7b3e5cf6",
+        "name": "pricey_yuck.eot",
+        "description": "Aqua voro anser vel atqui sponte socius curso uberrime.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "adf83c96-2dda-428e-9569-db75a9734c9e",
+        "name": "bicycle_connect_sand.m1v",
+        "description": "Acidus ager vociferor voluptas bis capillus virtus statua.",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "Linux"
+    ],
+    "supportedDevices": [
+      "laptop",
+      "gateway"
+    ],
+    "createdAt": "2024-09-12T13:33:25.796Z",
+    "updatedAt": "2025-05-26T00:27:14.472Z"
+  },
+  {
+    "id": "app_00000003",
+    "name": "Maggio - McCullough Custom App",
+    "category": "custom",
+    "description": "Versatile reciprocal local area network",
+    "vendor": "Klein - Ankunding",
+    "version": "1.0.5",
+    "actions": [
+      {
+        "id": "2a29e461-52a9-4d2e-b05b-879c1feeb393",
+        "name": "license.opus",
+        "description": "Vicinus ex corona.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "f37b7a43-11f8-4e8c-a51e-3c7076833929",
+        "name": "via.rar",
+        "description": "Mollitia solitudo communis approbo patrocinor arca uxor.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "96a5ef75-a3db-471b-adc8-51f05c30eed5",
+        "name": "potentially.epub",
+        "description": "Video cultura universe claudeo taedium harum cumque delectus quos.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "f993f299-ac12-42b5-bf25-d9383124ac24",
+        "name": "silently_wherever_ah.dot",
+        "description": "Accusamus tempus surgo claustrum spectaculum tergum adiuvo tempus arma.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "d9f957ce-d864-4ccf-af04-72d5e96a1c0b",
+        "name": "singing_below.map",
+        "description": "Volo vox aperte suadeo.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "8a20f5a0-2ed3-4f42-9e5a-86ceaa2232d4",
+        "name": "peninsula.msi",
+        "description": "Adhuc ait soleo nostrum vilis vito ab.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "3749f66b-c1bf-4da5-adfe-a74a263671e0",
+        "name": "fooey.mpg",
+        "description": "Auditor possimus eveniet dolores antepono tantillus tactus conatus.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "6d7ad2ff-2c59-4a81-842f-1f58ede6fccc",
+        "name": "abaft_because.mar",
+        "description": "Beatus demulceo rem dolorem umbra tabella triduana victus expedita solum.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "078640d3-a274-484e-b60a-cd96db9bb1e2",
+        "name": "provided_which.7z",
+        "description": "Repellat tersus depraedor cruciamentum demoror censura deporto amor tergeo ager.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "545e2def-cd05-4ba9-b3cc-f7468a73abe7",
+        "name": "phooey_that.svgz",
+        "description": "Textor deprimo abduco deprimo sol tego annus veritas decretum assentator.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "033de341-bc55-43a8-bffa-29783bc41e57",
+        "name": "formation_until.iso",
+        "description": "Delego tutis impedit speciosus.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "b4175fbe-5d53-4667-9229-b3732f6ba4c1",
+        "name": "uncork_phew_over.shtml",
+        "description": "Deputo laudantium amor dicta quod cena asporto volo admiratio.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "b4815204-3a1b-4b02-b891-0c405e9994b9",
+        "name": "glow_off_past.vss",
+        "description": "Deprimo voco attero approbo articulus.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "8bab3efd-f329-45d4-b92c-01e61984afec",
+        "name": "affectionate_sans.gz",
+        "description": "Conventus claustrum antiquus umquam stips.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "3ac9cc90-4d27-4b82-9d68-8c7946b27e39",
+        "name": "cappelletti_cone_kookily.midi",
+        "description": "Apto attero utrum.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "08a5af90-afd9-4f2e-b187-4893cc9eb1f6",
+        "name": "inasmuch_beloved_ouch.war",
+        "description": "Apparatus iure teneo alius aeger.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "ace61a9e-21b8-4686-a44c-19857698ebcc",
+        "name": "aw.jsonld",
+        "description": "Cavus conqueror averto tabula uberrime cumque creta.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "923659b3-4941-4c0f-a3b8-8fb81725133d",
+        "name": "concentration_fair.txt",
+        "description": "Theologus suus uterque aequus cicuta adinventitias reprehenderit defluo accusantium capitulus.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "469f6546-beef-414b-8180-b81dd6d6ed29",
+        "name": "upbeat_beyond_lender.conf",
+        "description": "Confero dolorum tersus aetas color clamo caste.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "62ddb314-d7bf-49fe-b98d-bb8654c8d3f5",
+        "name": "junior_steeple_enormously.woff",
+        "description": "Vilis suffoco coaegresco appello verumtamen collum cena.",
+        "riskLevel": "critical"
+      }
+    ],
+    "supportedOS": [
+      "macOS"
+    ],
+    "supportedDevices": [
+      "gateway",
+      "laptop"
+    ],
+    "createdAt": "2024-11-14T14:46:12.856Z",
+    "updatedAt": "2025-05-04T10:39:30.699Z"
+  },
+  {
+    "id": "app_00000004",
+    "name": "Runolfsson, Berge and Emard Communication App",
+    "category": "communication",
+    "description": "Configurable impactful portal",
+    "vendor": "Boyer, Romaguera and Powlowski",
+    "version": "6.8.1",
+    "actions": [
+      {
+        "id": "93747cc1-5462-4986-9dbb-ac874c2e19c2",
+        "name": "ha_than.deb",
+        "description": "Caveo taceo vaco quis termes.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "0d305a9d-0bd3-44a4-ba80-b2060eb1a4db",
+        "name": "majority.avif",
+        "description": "Vacuus adamo undique caterva conventus barba carmen casso cupressus.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "2e2ef6d7-fcf6-44f6-a8e6-869c57dc0d7a",
+        "name": "blacken.tiff",
+        "description": "Alter dedico suscipit voluptatibus.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "51c98e45-8713-4402-a629-01d73d629d81",
+        "name": "attest_supposing_upliftingly.jpg",
+        "description": "Deludo a ancilla utilis conduco cum adhaero tantillus.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "1e847828-8c89-4481-80be-ada9b6b292f2",
+        "name": "with_nor_demob.svg",
+        "description": "Conturbo tero videlicet strenuus tres ara usitas inventore suspendo vetus.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "e015117d-ccbf-4cbe-8876-3855ff1c816b",
+        "name": "afore_deeply.mp4",
+        "description": "Cunabula sum absconditus abduco textilis super.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "0bed5c9d-2b05-4455-83cc-a2b486a788da",
+        "name": "supposing_baggy_catalog.rtf",
+        "description": "Voluptate usus delibero templum urbanus contego dapifer adulescens.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "9d10ae6d-2dec-4d67-bc3b-a9ca69167323",
+        "name": "if.deb",
+        "description": "Ater civitas stillicidium colo pauci capillus via.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "e2f127a8-19f6-442f-98fc-18a75afad742",
+        "name": "apropos_exactly_flight.m1v",
+        "description": "Deduco theologus vomito vulnus vereor expedita amiculum aveho bis.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "b6ebc3ca-1de0-441b-8282-eb80ae739644",
+        "name": "scary.pps",
+        "description": "Solitudo totam sapiente capillus odio repellat tot claudeo via.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "010564c4-5d97-48e7-9c8f-ec6f98a7b6e2",
+        "name": "fooey_drat_daughter.vst",
+        "description": "Contigo truculenter cruentus clarus.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "ee274fbd-0db3-45d3-9d1f-71ca521e1624",
+        "name": "admonish.rng",
+        "description": "Thalassinus crebro concido conservo comprehendo aggredior tendo molestias.",
+        "riskLevel": "low"
+      }
+    ],
+    "supportedOS": [
+      "Android"
+    ],
+    "supportedDevices": [
+      "laptop"
+    ],
+    "createdAt": "2025-05-27T03:36:01.606Z",
+    "updatedAt": "2025-05-27T14:11:42.439Z"
+  },
+  {
+    "id": "app_00000005",
+    "name": "Ortiz and Sons Communication App",
+    "category": "communication",
+    "description": "Exclusive systematic infrastructure",
+    "vendor": "Fahey - Kuphal",
+    "version": "5.7.8",
+    "actions": [
+      {
+        "id": "f6a0cd05-da0d-4576-9111-1b8f8dec65ff",
+        "name": "onto.jar",
+        "description": "Voluptas spargo tersus.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "8a743c57-e8f1-4976-97c2-2135a485d346",
+        "name": "instead_descendant_meh.json",
+        "description": "Averto sumptus balbus calamitas unde celo concedo usque.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "06de85f0-e917-4f3d-9d7c-47a22e925d39",
+        "name": "beyond_within_accidentally.avi",
+        "description": "Acerbitas damno est delinquo aestas bellicus tametsi alias.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "4d9fac42-b668-4484-97c9-210f0b9e270b",
+        "name": "zowie_perfectly_home.list",
+        "description": "Deprecator quaerat tutamen cruentus deprimo.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "31e1e9fa-8de3-4355-ad68-fb841bed6b55",
+        "name": "quinoa_but_sting.avif",
+        "description": "Arx cunctatio repudiandae succurro concido aptus vulgus undique conqueror.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "6f75df3a-bce1-409d-9add-f11909f292bc",
+        "name": "bitterly_bungalow.buffer",
+        "description": "Quis aestas amplitudo balbus sponte umbra vulpes defungo modi.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "0052d629-4dcc-498f-a979-1cf131365d15",
+        "name": "gosh.ts",
+        "description": "Candidus admiratio annus veritas decens spiritus alioqui vorago.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "640cd731-cb42-448c-8f28-89b56e133f2c",
+        "name": "supplier.jpeg",
+        "description": "Cura voco cultellus molestiae neque temperantia amicitia.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "d3ac8e7c-7350-49bc-b4fb-3659fc9008c3",
+        "name": "whenever_aw_via.zip",
+        "description": "Denego natus pel vindico contego teneo.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "c3a3af5c-8900-449c-9666-84fad9452bad",
+        "name": "accurate.zip",
+        "description": "Exercitationem adinventitias calcar tondeo arcesso porro verbum angustus autem acsi.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "3b5ea1ee-308d-4481-bf9c-d64d4b3c8de6",
+        "name": "boo.bz2",
+        "description": "Decens velum videlicet.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "95da7f06-9a25-442b-8903-341faae9ac2a",
+        "name": "zowie_flight.jpg",
+        "description": "Altus votum explicabo.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "5c4d5ef0-064c-4c77-99d4-d175a1f888cb",
+        "name": "flawed_gloomy_gleefully.3gp",
+        "description": "Audeo surgo conventus derelinquo thema argentum subnecto quasi tego.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "031d1130-d43b-4034-8bd6-c4e1080b6ffc",
+        "name": "knowingly_publicize_sometimes.vss",
+        "description": "Tamisium iusto brevis defendo claro vindico corroboro astrum.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "a2924e97-da76-4544-90f1-b39e03380a66",
+        "name": "inasmuch_woefully.vst",
+        "description": "Natus desparatus viriliter solio statim sit ut cognatus truculenter vitium.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "8190acf0-da0e-469c-b2c3-82f28014fb2e",
+        "name": "print_crystallize.csh",
+        "description": "Uterque exercitationem aestas ventosus distinctio vulgus stultus debeo.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "3bd8b177-0069-4d07-ac25-69ca4ae25d34",
+        "name": "complete_onto.boz",
+        "description": "Abduco abduco termes.",
+        "riskLevel": "critical"
+      }
+    ],
+    "supportedOS": [
+      "Android",
+      "macOS",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "IoT",
+      "smartphone",
+      "gateway"
+    ],
+    "createdAt": "2024-09-09T03:23:07.372Z",
+    "updatedAt": "2025-05-28T09:50:15.018Z"
+  },
+  {
+    "id": "app_00000006",
+    "name": "White LLC Communication App",
+    "category": "communication",
+    "description": "Organized context-sensitive attitude",
+    "vendor": "Hudson - Daniel",
+    "version": "9.0.1",
+    "actions": [
+      {
+        "id": "9807c49e-1ced-4e01-b3f6-d5ec0422e4ca",
+        "name": "for_sport_qua.rtf",
+        "description": "Admoveo crustulum adfero cumque aeternus vesica.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "9a44379f-9269-4f45-aeb7-056f861b18a8",
+        "name": "pulp.ear",
+        "description": "Abutor delectus arcus laborum defetiscor ante vel arx vulariter utroque.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "f88771b4-060b-4aec-8241-53b336662825",
+        "name": "boom_skeletal_where.xul",
+        "description": "Audax comminor sufficio crapula in averto despecto.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "09c3e6fa-3045-4c61-ab9a-cd6cdefebcf3",
+        "name": "crossly.wav",
+        "description": "Summa comburo tristis.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "e17fe582-0471-4ba2-ba11-0807fd53e46f",
+        "name": "sadly.mp2a",
+        "description": "Surculus deripio valde solutio sint cornu color charisma molestias conscendo.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "2c084bc2-3b40-42c8-8d01-23260754301c",
+        "name": "duh_defendant_swing.js",
+        "description": "Tabernus coadunatio cornu cruentus et degenero torrens averto coaegresco.",
+        "riskLevel": "medium"
+      }
+    ],
+    "supportedOS": [
+      "Windows",
+      "macOS"
+    ],
+    "supportedDevices": [
+      "laptop",
+      "gateway"
+    ],
+    "createdAt": "2025-05-12T13:19:41.740Z",
+    "updatedAt": "2025-05-30T13:05:36.726Z"
+  },
+  {
+    "id": "app_00000007",
+    "name": "Bogisich, Upton and Corkery Security App",
+    "category": "security",
+    "description": "Programmable leading edge hub",
+    "vendor": "Balistreri, Barrows and Lakin",
+    "version": "8.3.0",
+    "actions": [
+      {
+        "id": "e5bfce5e-b067-40b1-859f-4233dcacb216",
+        "name": "bloom_ski.deploy",
+        "description": "Studio chirographum videlicet aegrotatio casus ago nisi cubitum.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "75a89d31-0fca-4dd5-b93c-b8e4c3fd2fd4",
+        "name": "consequently_joy_incline.dmg",
+        "description": "Corrigo debeo bellum accendo angelus impedit demens aequitas amplitudo.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "2037990f-a499-46d4-99fe-d10ca30265d5",
+        "name": "new_rapidly.3gpp",
+        "description": "Curatio denique absorbeo cibo cunabula adflicto bis solitudo.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "5b983f05-f108-4581-a8ce-79fc3f911dd2",
+        "name": "gosh_er.ics",
+        "description": "Cena volaticus depono strenuus absorbeo cunctatio blandior nostrum sui.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "2897ec68-6302-4de8-9ea6-80b437555a76",
+        "name": "whether.doc",
+        "description": "Doloribus supplanto cognomen supplanto.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "238bc6da-9bd9-4d09-9b17-82a232924c53",
+        "name": "which_acquaintance_ouch.dmg",
+        "description": "Velum solium benevolentia adhuc theatrum.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "e3df8edb-2060-4519-ab32-d158339b7dba",
+        "name": "lively_tribe.azw",
+        "description": "Deserunt audeo absconditus ipsum damno demergo vulnus iure impedit coma.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "f57969b0-4d2e-4b36-8b3e-17213b6ebbf9",
+        "name": "gratefully_rarely.epub",
+        "description": "Coniuratio alii coadunatio absorbeo.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "9b179a53-04d0-4b75-a55d-44376178d547",
+        "name": "instead.pps",
+        "description": "Deludo libero amor sodalitas venio angelus abduco denuncio stabilis.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "a8e1fbd5-7c66-48df-96a7-8be8e0a747b9",
+        "name": "cool_emerge.3g2",
+        "description": "Audio caelestis campana audeo.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "8587e6cc-62c5-4427-8fe5-ac94d8d04724",
+        "name": "cleverly_since_reward.xlsx",
+        "description": "Demulceo coaegresco abstergo adflicto pauper clibanus.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "011bae67-71c7-4d91-9b1c-8685ae8b2a7a",
+        "name": "shush_fathom_yin.deploy",
+        "description": "Atqui deputo quibusdam deprecator vilis artificiose degero suspendo coaegresco ciminatio.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "83797244-7dcf-4941-b3b1-5633bce9bf0d",
+        "name": "thread_separate_agitated.3g2",
+        "description": "Vacuus pax crustulum taceo.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "4d8bc2d6-0ade-4d02-8121-59c69ad32849",
+        "name": "geez.ods",
+        "description": "Vinco doloremque centum deinde.",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "Windows",
+      "iOS"
+    ],
+    "supportedDevices": [
+      "gateway"
+    ],
+    "createdAt": "2025-04-07T14:04:42.004Z",
+    "updatedAt": "2025-05-31T09:25:49.304Z"
+  },
+  {
+    "id": "app_00000008",
+    "name": "Wiza, Kutch and Stamm Custom App",
+    "category": "custom",
+    "description": "Reduced human-resource challenge",
+    "vendor": "McGlynn Inc",
+    "version": "4.5.7",
+    "actions": [
+      {
+        "id": "6bfd95da-eb8b-44ec-82c1-9bfb803fe078",
+        "name": "though_happily.exe",
+        "description": "Spectaculum hic apto deleniti est voluptas inventore arceo.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "01116501-e847-4f9e-ac6e-b24fb75f9a95",
+        "name": "what.mp3",
+        "description": "Aut cuppedia stipes.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "77adfa42-b8db-4af6-834d-4ef3735c458a",
+        "name": "blaspheme_old.list",
+        "description": "Ipsa theologus catena.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "5db7c7e1-c9e8-4348-8922-27c2c809de2f",
+        "name": "bench.vst",
+        "description": "Copia depraedor libero blandior aeternus.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "1af7b751-6aaa-4a96-a7f6-e735061a623a",
+        "name": "ajar.ear",
+        "description": "Aptus ut torrens.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "8fde452d-dfa3-49cf-98d7-6c6106f5302b",
+        "name": "whenever.midi",
+        "description": "Odit valens utrimque sustineo arguo aperte iste accendo.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "c9717512-5946-4efe-b689-e90752adad23",
+        "name": "under_eek.jpe",
+        "description": "Caveo stips admiratio atque.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "af3f2c39-af86-44c2-898b-c66b08e3aaf6",
+        "name": "knottily_corner.zip",
+        "description": "Clamo tonsor auctus provident verbum candidus tabernus.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "cbcd209d-671e-4a3f-9e9c-8bff99f688ac",
+        "name": "too_comb_venom.webm",
+        "description": "Vicinus aro commodo temporibus agnosco solium.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "785ecb71-dfdb-4ea1-87ad-9f404c22badd",
+        "name": "outfox_key.wav",
+        "description": "Terga tardus tubineus defetiscor dens bellicus autem.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "d54046e7-ebe7-445e-8861-495d4373a6cd",
+        "name": "yippee_aw_wolf.docx",
+        "description": "Succedo alioqui sunt corpus volva xiphias.",
+        "riskLevel": "critical"
+      }
+    ],
+    "supportedOS": [
+      "Android",
+      "macOS",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "tablet",
+      "gateway",
+      "laptop"
+    ],
+    "createdAt": "2024-09-23T17:05:02.789Z",
+    "updatedAt": "2025-05-11T15:31:51.187Z"
+  },
+  {
+    "id": "app_00000009",
+    "name": "Hoeger - Berge Communication App",
+    "category": "communication",
+    "description": "Persevering global implementation",
+    "vendor": "Hettinger, Cummings and Reynolds",
+    "version": "2.9.0",
+    "actions": [
+      {
+        "id": "52abff30-faf5-4157-aa6e-a83f61040d8c",
+        "name": "immediately_strictly.xls",
+        "description": "Peccatus summopere conventus aestus consequuntur cupressus cubicularis depraedor bos ter.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "f2c28086-7f24-4659-bd58-75cadb2d4dc4",
+        "name": "excluding_pressure.in",
+        "description": "Ullus depopulo cetera impedit argumentum.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "012285b1-6c51-4056-a77f-7ba2d97699cc",
+        "name": "ugh.mp2a",
+        "description": "Assumenda facilis cursim.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "abd63525-80c8-48a2-8f73-c216a3c61093",
+        "name": "without_about_sharply.opus",
+        "description": "Magnam custodia taceo capillus appello.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "44c83de1-7c28-4246-bfb2-39163f4f74ec",
+        "name": "horse_patiently.txt",
+        "description": "Supra dignissimos voluptatibus absque vinitor vulgaris supellex angustus cum.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "810f752a-28d8-48f6-8f68-e66700174267",
+        "name": "cruelly.pot",
+        "description": "Auxilium tabgo utrimque quaerat desidero aeneus apparatus.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "2633874d-aed2-49a4-b2b4-c5eff825057a",
+        "name": "airbrush_meanwhile_guacamole.in",
+        "description": "Tres animadverto laboriosam cotidie volva.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "8ef4d1cb-e4f3-4ec5-9327-85c819587ac5",
+        "name": "meh.avi",
+        "description": "Depopulo campana modi vivo suadeo defetiscor statua tabgo.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "31f02f8f-c209-429b-b8ad-0820356bdb9b",
+        "name": "resort.xls",
+        "description": "Demens ipsam aranea verbum barba.",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "iOS"
+    ],
+    "supportedDevices": [
+      "gateway"
+    ],
+    "createdAt": "2024-06-26T10:05:03.896Z",
+    "updatedAt": "2025-05-07T17:17:27.667Z"
+  },
+  {
+    "id": "app_00000010",
+    "name": "Grimes, Volkman and Mayert Communication App",
+    "category": "communication",
+    "description": "Operative actuating collaboration",
+    "vendor": "Mueller - Muller",
+    "version": "2.9.6",
+    "actions": [
+      {
+        "id": "051f80a7-bc6f-46d2-962e-721d85a2a223",
+        "name": "but_unless_ha.m1v",
+        "description": "Vulpes cibo non.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "a3635ceb-87ff-495b-8523-a17b9d22ecbb",
+        "name": "unusual.ods",
+        "description": "Tantillus cubitum approbo votum convoco culpa distinctio viriliter.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "a3373843-b49c-4acf-ba48-0aa3835d2553",
+        "name": "though_indeed.csh",
+        "description": "Vacuus theologus consequatur amicitia perspiciatis compello.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "410fc6f2-ae22-40e6-96dd-861af9c410b7",
+        "name": "painfully_zowie_yawn.mp4v",
+        "description": "Adsuesco audacia suggero solum cerno blanditiis.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "63ea24ff-94f3-49af-b438-0393f31b9b09",
+        "name": "loudly_whenever_severe.img",
+        "description": "Sufficio stillicidium demitto virgo.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "ee88a9ea-0a80-4c48-9824-15c72ae3735d",
+        "name": "object.avif",
+        "description": "Voluptatibus tego vinitor.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "772983d2-4a59-44f8-ae0b-e3b5a72fa20e",
+        "name": "polarisation_longingly.boz",
+        "description": "Aeternus appello verecundia thema.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "ee1c40b4-6d06-4f72-9c1d-08787655be3e",
+        "name": "towards_hence.ods",
+        "description": "Est verbera carmen supplanto nisi traho templum iste callide.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "71195521-0f16-4780-bb23-36eee2f6a305",
+        "name": "whereas_redesign.xlt",
+        "description": "Spectaculum cui creo labore depraedor spectaculum clarus arcus.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "3437fc18-09f1-47af-bdbe-4e2f7805e1b8",
+        "name": "once_clonk_like.sh",
+        "description": "Debitis terebro admiratio architecto substantia vesper statua torrens.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "fb4ddb97-5cd8-4b2f-be71-aa90a9bc44f1",
+        "name": "discontinue_why_daddy.m1v",
+        "description": "Cinis cimentarius dolor tenetur.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "fd00f3c3-2457-45fb-9399-06b3a272cbf2",
+        "name": "bitterly_meh.gz",
+        "description": "Natus charisma patrocinor voco delinquo.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "c09ea214-b969-4f7b-ac54-335510f0e9e0",
+        "name": "outside.pkg",
+        "description": "Creptio in debitis commodi tertius aro harum.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "d0247ac9-c1af-4921-a32d-80a09a3fb380",
+        "name": "aha_fooey.doc",
+        "description": "Damno suadeo cupio titulus commodi deduco dedico tonsor.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "1f8a95ed-6ef3-4c8c-a4ab-cbeb81305559",
+        "name": "cannibalise.ear",
+        "description": "Terra tutamen balbus adflicto demoror absque curo curatio.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "7e6432ec-44d0-4cd5-9915-578a5450942c",
+        "name": "behind_ignorance_give.m2v",
+        "description": "Vinco delicate tersus odio sto molestiae.",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "Android",
+      "macOS",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "IoT",
+      "gateway"
+    ],
+    "createdAt": "2024-12-17T07:13:21.012Z",
+    "updatedAt": "2025-05-08T21:33:43.749Z"
+  },
+  {
+    "id": "app_00000011",
+    "name": "Mraz - Botsford Security App",
+    "category": "security",
+    "description": "Business-focused immersive definition",
+    "vendor": "Muller, Schuster and Gibson",
+    "version": "5.9.1",
+    "actions": [
+      {
+        "id": "d97aa828-49dd-4185-bce2-b1a30d6d2587",
+        "name": "wasabi_while.odp",
+        "description": "Canonicus verbum crux.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "27610f78-7adc-4982-aeec-9cff796f2129",
+        "name": "popularity.ttf",
+        "description": "Allatus sumptus spoliatio vaco vis aestas damno laboriosam suffoco.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "fd62aebb-372e-41b6-8a8c-f71f1c28ccbc",
+        "name": "foolish_ick_mixture.xht",
+        "description": "Theologus substantia conduco.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "ced95b8d-8bb7-40c8-a98d-88facdb9693b",
+        "name": "with_supposing.xlc",
+        "description": "Magni amet aequitas decor cavus vomer considero coaegresco.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "657097f5-70b3-4a21-ab13-f520992e0124",
+        "name": "geez_fooey_beneath.mpg4",
+        "description": "Vita venio turpis verumtamen hic.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "e6e17c72-60ce-4e1b-9f92-8b53be709763",
+        "name": "relieve_unexpectedly.kar",
+        "description": "Repellat summopere amitto audentia acquiro volaticus patruus demo.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "77c0c370-823e-41d5-9118-24301d374dbb",
+        "name": "signature_ah.ogv",
+        "description": "Taceo cimentarius surculus ascit solitudo angustus stips cuius adeo thermae.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "b79c37d4-5980-4b6b-a517-837082d8bcb8",
+        "name": "circumnavigate.log",
+        "description": "Validus cupio conturbo vinco amiculum amplitudo coadunatio similique.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "eb33d6dc-d4d6-4168-993b-1316023acd24",
+        "name": "by_always.avif",
+        "description": "Ventosus modi unde benevolentia adstringo aperiam cupiditas.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "3e418cbd-a613-4aed-a9a0-366489dbccc4",
+        "name": "hunt_knavishly_versus.3gpp",
+        "description": "Confugo quibusdam brevis pariatur admoveo.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "dae037a3-0ba6-43a5-80df-bb277508545c",
+        "name": "provided_briefly_an.text",
+        "description": "Clibanus textus est textilis adflicto aegrus veritatis tergum capto.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "eb72b328-3906-476f-ae54-c47a090966cb",
+        "name": "bind_worth.dist",
+        "description": "Calculus consequuntur tonsor.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "3d7610a9-a9a7-45ff-83de-2f714cc747b3",
+        "name": "gosh.mjs",
+        "description": "Fuga iste aequitas defessus sint subito pax vomer sopor pax.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "15483060-feda-407d-b194-3db2d0847ef3",
+        "name": "each_worth.mp2a",
+        "description": "Nisi deleo sint deporto terreo.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "6fe0ae28-fa0d-4576-8db8-8b8eb98efa6e",
+        "name": "that_tuxedo_meanwhile.avif",
+        "description": "Culpa suus tabesco caelestis.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "3fd2289c-0e72-49c1-b363-78a2de9dcefe",
+        "name": "so_accessorise_represent.text",
+        "description": "Aegrus ascit voluptatum tracto taedium accommodo ambitus.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "a7b02c81-0145-4d6d-b6a6-c09fbdd45efd",
+        "name": "shakily.m3a",
+        "description": "Cupiditas dolorum corporis ventus.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "d048cfb5-9e74-4e1a-ac69-c6a14e5b4d6f",
+        "name": "bah_singing.css",
+        "description": "Cupiditate impedit molestias consequatur consequatur.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "f22eeb46-ee5d-46fb-ba91-b11f9fac1257",
+        "name": "aw.list",
+        "description": "Blandior amitto dedecor tyrannus taceo quas subito cerno eos.",
+        "riskLevel": "low"
+      }
+    ],
+    "supportedOS": [
+      "Linux"
+    ],
+    "supportedDevices": [
+      "IoT"
+    ],
+    "createdAt": "2024-07-04T20:24:17.849Z",
+    "updatedAt": "2025-05-26T19:54:51.969Z"
+  },
+  {
+    "id": "app_00000012",
+    "name": "Mayert Inc Enterprise App",
+    "category": "enterprise",
+    "description": "Adaptive stable circuit",
+    "vendor": "Prosacco, Ernser and Considine",
+    "version": "5.8.0",
+    "actions": [
+      {
+        "id": "1e45ad6a-0fa2-4089-8e1c-0c720f85c767",
+        "name": "hm_after_midst.wav",
+        "description": "Dolores complectus tenax tersus.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "417527ad-6d6a-408e-99e2-9be4ed840b11",
+        "name": "cross_heighten.htm",
+        "description": "Tyrannus adflicto candidus cicuta corroboro caveo spero ad curvo.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "d0d4fffe-ae6d-4fe3-bd69-26134cad393f",
+        "name": "so_plus_mixture.dll",
+        "description": "Debitis eveniet carmen caries vomica cauda appello.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "f1839316-4e83-4a16-9f91-995039393855",
+        "name": "repeat_altruistic.vsd",
+        "description": "Depono curto iure vos stella abundans.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "8a7d0d3a-4e3b-4ed7-9d08-d1bd2aa63695",
+        "name": "instead.odt",
+        "description": "Decet cribro umerus tenuis catena allatus.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "e318f115-397b-42da-bd91-9b8ab88a8cb1",
+        "name": "pfft_finally_painfully.pps",
+        "description": "Cattus rerum amplexus desparatus.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "95b6e218-5781-4c9b-a8c8-3591795a201a",
+        "name": "nor_accentuate_huzzah.shtml",
+        "description": "Thermae certus cimentarius.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "8f6fc5b2-e7c2-4f74-af4a-adc1b7c1efaa",
+        "name": "eek_appertain_unlike.xul",
+        "description": "Amissio vesper solum demens concido curso vado advenio curto studio.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "84019fc2-645f-49a8-8491-57f974530af2",
+        "name": "skateboard_blowgun.bz2",
+        "description": "Clibanus uter coadunatio tepidus canto creptio arma terminatio.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "55f08465-4ee0-4c40-9ce5-77d44f402510",
+        "name": "round_oof.bpk",
+        "description": "Ver cibus curatio approbo terminatio succurro.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "771e7027-d2bb-4a5c-8e07-7c02b7e43d20",
+        "name": "highly_icebreaker_annually.list",
+        "description": "Aequus esse cursim facilis speciosus inventore.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "f9a8e26a-6525-45ea-8e72-e6581e5c5368",
+        "name": "dissemble.ts",
+        "description": "Astrum colligo vulgus solio blandior iste ulterius comis cubo.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "e362d241-4bb1-4aa6-bb0e-4c92ea2a7946",
+        "name": "whoa.vss",
+        "description": "Dolor tabula una virga.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "410b536c-bfbd-4584-a9d8-d4fa9c231d6b",
+        "name": "er_ready.gz",
+        "description": "Quae vir sit terga ascit curriculum tollo.",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "macOS",
+      "Android",
+      "iOS"
+    ],
+    "supportedDevices": [
+      "smartphone"
+    ],
+    "createdAt": "2024-08-12T23:21:57.726Z",
+    "updatedAt": "2025-05-06T03:40:28.611Z"
+  },
+  {
+    "id": "app_00000013",
+    "name": "Thiel Group Custom App",
+    "category": "custom",
+    "description": "Front-line analyzing system engine",
+    "vendor": "Stracke and Sons",
+    "version": "6.8.6",
+    "actions": [
+      {
+        "id": "8de15a38-9053-4476-bb89-18cc48e50098",
+        "name": "gadzooks.tar",
+        "description": "Vacuus casso tenetur bestia cuppedia.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "f0b16fb6-6871-474e-9111-1ef5345bd2c3",
+        "name": "mild.war",
+        "description": "Vallum voluptatum velum officiis carpo crustulum vitae pauci somniculosus sol.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "64b4b8b6-75f2-4608-a1ef-abbab1fb14b5",
+        "name": "aw_disgorge.in",
+        "description": "Aeger amplus fuga suffragium sopor verecundia desparatus ocer adfero.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "12162411-bbe7-42c0-ac88-7dd57074de75",
+        "name": "famously_per_goat.tiff",
+        "description": "Tunc audacia administratio depulso id beatus cimentarius tergeo solus.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "1de0f808-231e-49bd-b850-93d42b44c343",
+        "name": "finally_inside_inasmuch.avif",
+        "description": "Avaritia thalassinus speciosus adhaero adflicto agnosco carpo non deleo.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "ed9bdb55-1f7a-487d-832e-7a378d13ee43",
+        "name": "house_provider_madly.bmp",
+        "description": "Cura incidunt cubitum amiculum ipsa aperiam crudelis taceo peccatus.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "31e44afb-cbf0-4da4-9176-2772576082c9",
+        "name": "cake_fail_blowgun.mp3",
+        "description": "Aestas vergo tenax venio suffragium calcar accendo.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "4bb53937-84ac-4f7d-b3af-88c5d5bcc183",
+        "name": "ouch.xhtml",
+        "description": "Victoria debeo vigor colo coerceo explicabo despecto.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "519c716d-2883-4626-91c0-f99dbddd0ac2",
+        "name": "likewise.kar",
+        "description": "Corrigo alioqui carmen.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "538777f6-5cf0-485d-bcc6-fdcfa3bc70dc",
+        "name": "wilt.svg",
+        "description": "Odit vox bellicus.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "871ff889-611f-446b-86be-a9b11e617a5b",
+        "name": "detain_horst.rmi",
+        "description": "Cicuta synagoga ascit verto.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "79504900-4088-4770-8639-f7968d6de3b8",
+        "name": "reluctantly.webm",
+        "description": "Clamo degenero autem.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "1c96505d-9556-4a21-b1a3-ffe16807100f",
+        "name": "among_consistency_draw.dll",
+        "description": "Thesaurus solum architecto desipio aduro.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "180e150a-3a97-4e10-8af0-469023e39518",
+        "name": "boo_relative.ogx",
+        "description": "Deporto accommodo deficio qui.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "e9c09c55-2468-48e7-91be-81541b908d3a",
+        "name": "aware_knowledgeably.ifb",
+        "description": "Verto spes somniculosus nam tribuo sursum.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "9bb6d1c4-d08d-46da-994b-36ca38090e4d",
+        "name": "restfully.eot",
+        "description": "Suffoco benigne suscipit tamquam conventus tui eaque.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "c97ada9b-927a-4462-ad18-5d7c15cdf7d0",
+        "name": "dead_doting_typeface.m1v",
+        "description": "Certe dolore uxor volaticus ager.",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "macOS"
+    ],
+    "supportedDevices": [
+      "smartphone"
+    ],
+    "createdAt": "2025-01-07T08:27:21.800Z",
+    "updatedAt": "2025-05-13T15:09:48.467Z"
+  },
+  {
+    "id": "app_00000014",
+    "name": "Bode - Jacobs Custom App",
+    "category": "custom",
+    "description": "Fully-configurable optimal middleware",
+    "vendor": "Kiehn - Thiel",
+    "version": "9.7.7",
+    "actions": [
+      {
+        "id": "b61d2201-bb5f-4e2d-89d1-2988ddd416f0",
+        "name": "institutionalize.gz",
+        "description": "Quo arcesso angelus eligendi speculum delibero ulciscor angulus vita.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "f4780264-96fe-4ca0-a36d-a7bacfaddc22",
+        "name": "brochure_hasty.ts",
+        "description": "Cupressus ocer decor tametsi tendo.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "2390b027-f63a-475e-81ae-e65969c2da93",
+        "name": "excepting.pot",
+        "description": "Tardus defaeco abstergo ducimus alveus templum vesper.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "cdb4f2bf-a8b7-40d3-817d-597cfb051589",
+        "name": "vice_part_inasmuch.mid",
+        "description": "Nulla arto bellicus deduco esse earum ad coruscus degero.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "f92e8104-c7e4-49e3-9767-f65893cda6c8",
+        "name": "though_mentor_ugh.ods",
+        "description": "Demonstro angelus adulatio perferendis accendo volutabrum callide cura tepesco.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "c4f638fc-eb27-4809-a26c-6ff8fc331252",
+        "name": "boo_atop_provided.jar",
+        "description": "Adnuo tyrannus damnatio aranea thymum.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "10eeaece-ae05-440b-80be-862d0b08965f",
+        "name": "yowza_guest.img",
+        "description": "Calculus volva thesaurus vel cilicium succurro administratio.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "66607ea2-692d-486e-8123-23fe536efd3c",
+        "name": "meanwhile_hmph.deb",
+        "description": "Cunae usitas antea acsi cupressus.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "a2572e58-1174-4567-bc87-928b51a55588",
+        "name": "supposing.vsw",
+        "description": "Amicitia statim vetus ab aegrus adeptio.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "17fe1645-1480-4b4d-b6c9-f7a09985b47d",
+        "name": "optimistic_rigid_yum.lrf",
+        "description": "Aequitas conqueror unde.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "d09860f7-60e7-48a8-aec3-dfcb5c108a20",
+        "name": "hoick.jpeg",
+        "description": "Admitto coniecto carcer tantum illo.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "11f21d6e-6f2c-4e47-8920-9d8f4fb6073e",
+        "name": "paintwork_deeply_gosh.deb",
+        "description": "Dedecor aiunt sto comitatus cohaero tribuo voluptates correptius demo deduco.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "9becb25a-4be3-48d3-b548-0d4b3cf513fc",
+        "name": "but.woff2",
+        "description": "Deduco neque cum ceno.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "0c5bf55c-4590-486a-808a-340e009ec54e",
+        "name": "unhealthy_accredit.list",
+        "description": "Tam deficio terga cito vivo ter facilis.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "9e3edf28-f2b5-4b3d-88dd-66641aa379f9",
+        "name": "that_but_overload.ods",
+        "description": "Tredecim blanditiis tametsi vis cruciamentum assumenda cohors vilitas hic pectus.",
+        "riskLevel": "medium"
+      }
+    ],
+    "supportedOS": [
+      "Linux"
+    ],
+    "supportedDevices": [
+      "tablet"
+    ],
+    "createdAt": "2024-08-27T18:41:10.918Z",
+    "updatedAt": "2025-05-10T07:03:20.220Z"
+  },
+  {
+    "id": "app_00000015",
+    "name": "Bayer, Cremin and Friesen Security App",
+    "category": "security",
+    "description": "Robust neutral capability",
+    "vendor": "Hoeger, Glover and McClure",
+    "version": "5.1.3",
+    "actions": [
+      {
+        "id": "97588898-6091-482e-b08c-de4ba061bc57",
+        "name": "zowie.wav",
+        "description": "Stultus abscido tendo candidus.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "d7074854-55cc-4936-9c45-17f08a0b3f50",
+        "name": "phooey_turbulent_because.ifb",
+        "description": "Pectus uterque spiritus magnam tero venustas trado valetudo.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "fd635732-9514-4400-91ba-2766dfa3fb2f",
+        "name": "woot_uncommon_flustered.msm",
+        "description": "Degusto viriliter sequi accommodo deorsum.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "fd5b2c4c-2bb0-4066-940c-72689e2536fc",
+        "name": "huzzah_neatly.xml",
+        "description": "Comparo ater aduro una totidem appositus universe reiciendis.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "faff89c7-5b54-4b2e-bbec-718ec7dffc38",
+        "name": "optimistically.oga",
+        "description": "Cornu caste abscido deleo concedo.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "abe73231-f77a-4a10-9369-86bcbef0a4e8",
+        "name": "sharply.buffer",
+        "description": "Comminor delectus acsi pariatur volva arcus.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "38322c6e-48a8-4a20-9e8f-40e64bf3e186",
+        "name": "slimy.bz",
+        "description": "Casus ascisco tenax amicitia vomito.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "5a543672-69a7-407c-b701-77eba70bafd3",
+        "name": "unwilling_shakily_austere.dmg",
+        "description": "Denuncio crinis voluntarius candidus ambulo eaque velut cunctatio cattus aspernatur.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "e10cd389-471c-49ba-a8de-d9d7c1f3523d",
+        "name": "limp_during.tiff",
+        "description": "Voluptatibus demoror adaugeo socius amita sollers.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "11ed0a20-1cd9-4a61-9f7e-13af0c37cf9c",
+        "name": "far_brr.webp",
+        "description": "Celo texo temeritas versus umbra aliquam cui comedo cupressus.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "693e9f75-df5d-41a4-a315-07261dfa27cf",
+        "name": "rigid_so.docx",
+        "description": "Tandem conor torrens amiculum quod tantillus adeptio subseco.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "c4929122-e090-4c7f-b027-9ce483f87247",
+        "name": "rightfully_generously_coordination.abw",
+        "description": "Thema vergo reprehenderit barba itaque amita.",
+        "riskLevel": "low"
+      }
+    ],
+    "supportedOS": [
+      "Linux",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "IoT",
+      "smartphone",
+      "laptop"
+    ],
+    "createdAt": "2024-12-01T12:12:27.984Z",
+    "updatedAt": "2025-05-24T13:39:30.793Z"
+  },
+  {
+    "id": "app_00000016",
+    "name": "Bruen, Hudson and Wisoky Communication App",
+    "category": "communication",
+    "description": "Operative cohesive moratorium",
+    "vendor": "Pacocha - Donnelly",
+    "version": "5.8.7",
+    "actions": [
+      {
+        "id": "902b3309-d5d7-49d7-9387-071c0d4714ba",
+        "name": "easily_tensely.gz",
+        "description": "Casus carmen cunabula.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "8900f362-49e4-4fe1-b1a6-0dbcd85804a5",
+        "name": "failing_off_before.wav",
+        "description": "Contra doloremque adfero uterque curia.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "9b9ab4ca-52b4-4e3a-970c-cf894a4dca88",
+        "name": "properly_whether_apropos.bin",
+        "description": "Civitas depopulo delibero calamitas.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "3c1a3fad-8556-40c1-ba36-a46af8f4075d",
+        "name": "dispense_ugh_despite.vss",
+        "description": "Laudantium tero urbs thema fugiat vulnero omnis.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "8ca56cdf-3ace-4d13-a507-740cafea827b",
+        "name": "source.pdf",
+        "description": "Creo sublime cornu totidem vorago vesco terminatio decerno.",
+        "riskLevel": "low"
+      }
+    ],
+    "supportedOS": [
+      "Android"
+    ],
+    "supportedDevices": [
+      "IoT",
+      "tablet"
+    ],
+    "createdAt": "2025-05-26T02:05:39.953Z",
+    "updatedAt": "2025-05-25T22:13:34.354Z"
+  },
+  {
+    "id": "app_00000017",
+    "name": "Hodkiewicz - Effertz Custom App",
+    "category": "custom",
+    "description": "Decentralized human-resource focus group",
+    "vendor": "Mohr LLC",
+    "version": "4.2.2",
+    "actions": [
+      {
+        "id": "edeb96b1-9f58-407e-a448-bd4332bfc1f4",
+        "name": "pike_beside.mp4v",
+        "description": "Ait debilito delectatio dignissimos vulpes eveniet.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "f4f88b94-cc78-48dc-aa99-b9668ed1e1e9",
+        "name": "slight_house_justly.pdf",
+        "description": "Velum crastinus vilicus sum non altus.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "b36696df-90d4-4d63-9cdf-8b65f24fbf9c",
+        "name": "but_portray.ts",
+        "description": "Autus censura attero.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "a76de34e-9c32-4ecd-bf6b-507916f12ea2",
+        "name": "that_circa_import.ogx",
+        "description": "Sollicito cariosus magni valens validus delibero celer ventito vicinus.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "edaffd14-1d07-4dea-8989-f58a8ecffd03",
+        "name": "tense_yeast.json",
+        "description": "Clamo patruus terebro saepe sperno abbas consuasor acsi uterque apto.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "f6aa5e14-fb7b-4a33-8f49-c10ac53eaabe",
+        "name": "however_veg.txt",
+        "description": "Curiositas sollicito culpa deporto toties.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "0dc5ad73-de47-4ba0-a143-a899716815e7",
+        "name": "yum_male.ogv",
+        "description": "Cursim hic molestias vinitor vinum quia cena tabernus aequitas synagoga.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "f77d09e8-7b10-481b-b9ea-8a85bde0a03f",
+        "name": "short.json",
+        "description": "Stips ver crinis tempus adsidue approbo.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "7b9143db-d078-4297-a7a6-1f1a7c12aad5",
+        "name": "courtroom.mpkg",
+        "description": "Tibi veniam acervus cunae adeo uxor verus.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "e28c9bcd-da00-45cb-ac78-9199dbe586a9",
+        "name": "clamor_lest.mpg4",
+        "description": "Calco color aptus depraedor abundans cui arbitro universe aurum delego.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "da0d6800-8bd4-4d7b-a1f3-4ef4f300e62c",
+        "name": "enormously_bah_whether.xml",
+        "description": "Coepi terga verumtamen adsum suffoco callide alias sono sursum.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "af721ce5-7175-4bfd-aa89-449dd4005247",
+        "name": "curse.mp4",
+        "description": "Attonbitus textor capitulus aegrotatio speciosus corrupti cedo acies supra.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "b3d1f387-f9b9-4575-bbf2-74081ce853c1",
+        "name": "gosh.log",
+        "description": "Aggredior delicate umerus deserunt accusantium amoveo suppono timor fugiat taceo.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "f9c2500c-5356-4afb-8fff-a9e3955b9ec3",
+        "name": "boohoo_always.epub",
+        "description": "Decretum cum basium tumultus compello artificiose aperte stipes cogito vere.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "c13a1dfc-8366-43e7-870a-e10f00e672b8",
+        "name": "near_er_version.dms",
+        "description": "Solus texo combibo thorax thymbra textor custodia corrigo.",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "iOS"
+    ],
+    "supportedDevices": [
+      "IoT",
+      "tablet"
+    ],
+    "createdAt": "2024-08-05T07:36:53.357Z",
+    "updatedAt": "2025-05-17T18:09:06.421Z"
+  },
+  {
+    "id": "app_00000018",
+    "name": "Stracke - Kris Communication App",
+    "category": "communication",
+    "description": "Face to face logistical throughput",
+    "vendor": "Monahan Inc",
+    "version": "9.5.7",
+    "actions": [
+      {
+        "id": "18500031-48c1-42a2-8382-08405e1763fa",
+        "name": "till.odt",
+        "description": "Addo vociferor suscipio atavus calcar creo crur valens cuppedia solitudo.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "baaadab5-d279-4b67-b74e-efd42b64abe8",
+        "name": "abaft.txt",
+        "description": "Urbanus amitto qui balbus coerceo tamdiu averto termes tracto deputo.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "4d8f7acb-9fd3-47ed-ba53-83897be9a7c5",
+        "name": "gosh.avi",
+        "description": "Patior defluo casus stipes textor conicio concido artificiose coniuratio carpo.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "8db3ca44-5637-4d08-8717-228d3890de17",
+        "name": "fixed.opus",
+        "description": "Creber soleo incidunt temptatio facilis dapifer tabgo vomica theologus abutor.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "f08c37f7-f2e1-4694-bdbc-205750bb2f51",
+        "name": "shakily.epub",
+        "description": "Ustilo volubilis confero absens coniecto termes clementia.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "ba7fdea8-dbec-458c-ba61-7765d53bcbc7",
+        "name": "vet_wedge.xsl",
+        "description": "Subvenio subiungo vobis antepono temeritas ter odit ultio brevis.",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "Windows",
+      "Linux",
+      "iOS"
+    ],
+    "supportedDevices": [
+      "tablet",
+      "IoT"
+    ],
+    "createdAt": "2025-06-02T03:49:37.550Z",
+    "updatedAt": "2025-05-05T09:45:21.163Z"
+  },
+  {
+    "id": "app_00000019",
+    "name": "Ritchie - Jakubowski Communication App",
+    "category": "communication",
+    "description": "Streamlined mission-critical archive",
+    "vendor": "Fritsch, Thiel and Wolf",
+    "version": "1.6.8",
+    "actions": [
+      {
+        "id": "bfbab4de-649b-43d3-8fd9-a3766a36dc17",
+        "name": "beautifully_that_possible.xlm",
+        "description": "Annus illo consuasor derelinquo bis victus.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "587061e4-515a-4446-b854-5bd42cbcf5c9",
+        "name": "coincide_swine.jpe",
+        "description": "Virgo officia soleo bene tergo turpis conor demens nulla.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "ff4d966c-67f6-466d-87b2-ef3e7a28e3f5",
+        "name": "worth.csv",
+        "description": "Articulus adstringo thesaurus certe cohaero ciminatio.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "c21acf18-01ac-49be-869a-c5dea8fabc32",
+        "name": "swanling_confusion.vst",
+        "description": "Solum abbas sono bonus minus sperno ulterius dedecor demitto temporibus.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "e44d2c1e-9289-4dc2-99c7-63727857a297",
+        "name": "meh_phooey.oga",
+        "description": "Vito amitto cenaculum calculus tardus adicio tersus totam inventore.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "db1f4f40-e6e5-4e05-9e7c-39ce136c4862",
+        "name": "tough.vss",
+        "description": "Solum copia architecto solutio absque ait.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "23203ca1-0e02-466f-a78a-62b2be47679a",
+        "name": "and_geez.doc",
+        "description": "Denuo capitulus a curiositas tremo tum vito deorsum.",
+        "riskLevel": "medium"
+      }
+    ],
+    "supportedOS": [
+      "Android"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "IoT",
+      "laptop"
+    ],
+    "createdAt": "2024-12-16T07:10:17.328Z",
+    "updatedAt": "2025-05-12T09:58:07.634Z"
+  },
+  {
+    "id": "app_00000020",
+    "name": "Lueilwitz Group Security App",
+    "category": "security",
+    "description": "Organized leading edge workforce",
+    "vendor": "Heller Group",
+    "version": "5.1.2",
+    "actions": [
+      {
+        "id": "36deb981-21c6-4dba-919e-9b7cf6efc727",
+        "name": "frozen_table.xlw",
+        "description": "Toties synagoga aut creo vulgivagus carpo cito clam impedit iste.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "b35df759-4c09-47d3-9052-5304e19c7713",
+        "name": "scenario_indeed.img",
+        "description": "Victus vestrum claustrum tutis vitium quidem voluntarius clementia alias quas.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "ef64a871-4c01-4869-be20-be0a74e4bb4c",
+        "name": "drat.otf",
+        "description": "Credo coruscus vilis appositus repudiandae.",
+        "riskLevel": "high"
+      },
+      {
+        "id": "cfe8a798-b490-46bd-8757-fda764ddadb0",
+        "name": "rapidly_whether_for.bz2",
+        "description": "Cohors dolore maiores cibus atrocitas ventus patria acies caritas.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "0869182f-d8e0-4797-bafc-f31e4995801d",
+        "name": "ew_gadzooks.xsl",
+        "description": "Beneficium tener aliquid aiunt.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "a5036bbe-a0cc-4623-99bf-49aa424c5586",
+        "name": "truthfully_incidentally_among.ogg",
+        "description": "Ullus coniuratio timidus dolor varietas temptatio textus sollers autus minima.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "e4a76d28-9605-4dfd-85ce-cadb5863e96a",
+        "name": "ah.mpg",
+        "description": "Iusto corona alioqui virtus peior.",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "iOS"
+    ],
+    "supportedDevices": [
+      "laptop"
+    ],
+    "createdAt": "2025-04-27T23:38:58.726Z",
+    "updatedAt": "2025-05-14T06:54:31.813Z"
+  },
+  {
+    "id": "app_00000021",
+    "name": "Kovacek, Crist and Keebler Security App",
+    "category": "security",
+    "description": "Organic composite definition",
+    "vendor": "DuBuque Inc",
+    "version": "9.8.9",
+    "actions": [
+      {
+        "id": "ed6bd2a8-7cc1-4ce4-88c6-69a35173155c",
+        "name": "draft.ods",
+        "description": "Carbo defungo consequuntur acidus confido.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "9f410c6a-7144-481b-aace-192baf6a2da9",
+        "name": "until_fen.ppt",
+        "description": "Caecus officia asperiores avarus.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "1fefe1c0-aad1-4171-a5d8-80b8ba909697",
+        "name": "proofread_shout_hence.conf",
+        "description": "Aut solio utrum sodalitas terebro candidus distinctio agnosco apparatus vulgo.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "c83bcc0f-32e8-49ca-afa0-be1ab4239019",
+        "name": "unwieldy_zany.msm",
+        "description": "Ante demum sollers dolores adsidue verbum audax.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "3745f20d-91f6-4df4-a6b6-2aec24f1565a",
+        "name": "meanwhile_woot_rubbery.vsd",
+        "description": "Studio speciosus abutor.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "207f471b-9992-455f-a1af-3317e5816c4d",
+        "name": "duh_crossly_considerate.xlw",
+        "description": "Abbas suppellex vesper tabgo culpo defessus crastinus vinum vinculum cresco.",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "1fcc4c88-bac0-47d0-a6cb-1b2a49bd1aac",
+        "name": "chapel.tar",
+        "description": "Calculus complectus cariosus casus ulciscor correptius voluptates demens beatus aetas.",
+        "riskLevel": "critical"
+      },
+      {
+        "id": "187aa5d5-2dc1-4c46-a5fe-f1537174da93",
+        "name": "anaesthetise_lined.mp3",
+        "description": "Somnus sustineo stips utique casus traho caelestis.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "f4af9b3e-4aff-4ae0-bb3c-cf51fac42d44",
+        "name": "mechanic.ogx",
+        "description": "Stips vero tam aspernatur tubineus civitas neque viduo.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "7979bc75-4261-4817-8ea3-21b28fbf4ecd",
+        "name": "pendant.arc",
+        "description": "Tolero tergeo pectus benigne tendo verumtamen nisi.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "1463249f-96e5-4011-906a-73c5451dfcf1",
+        "name": "unaccountably_fatally.tif",
+        "description": "Coaegresco dedecor vereor aut amplitudo.",
+        "riskLevel": "low"
+      },
+      {
+        "id": "5e410076-8163-4f73-be5e-966d0665b9a1",
+        "name": "which.xls",
+        "description": "Tabula vulgus synagoga surculus ait aliquam appositus versus.",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "Windows",
+      "iOS",
+      "Android"
+    ],
+    "supportedDevices": [
+      "tablet",
+      "gateway"
+    ],
+    "createdAt": "2025-03-18T10:08:39.269Z",
+    "updatedAt": "2025-05-07T21:59:25.488Z"
+  }
+]

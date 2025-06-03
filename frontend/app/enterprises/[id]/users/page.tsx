@@ -8,21 +8,22 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DataTable, Column } from "@/components/ui/data-table";
 import { FullPageLoadingSpinner } from "@/components/ui/loading-spinner";
-import { Users, Shield, UserPlus, UserCheck, UserX } from "lucide-react";
-import { Enterprise } from "@/lib/data/domain-types";
+import {
+  Users,
+  Shield,
+  UserPlus,
+  UserCheck,
+  UserX,
+  Settings,
+} from "lucide-react";
+import type { Enterprise, UserRole } from "@/lib/data/domain-types";
 import { GradientText } from "@/components/ui/gradient-text";
 
-// Define the enterprise user type
-interface EnterpriseUser {
-  id: string;
-  email: string;
-  role: string;
-  department: string;
-  devices: string[];
+// Define the enterprise user type based on the Enterprise interface
+type EnterpriseUser = Enterprise["users"][number] & {
   enterpriseId: string;
   enterpriseName: string;
-  lastLogin?: string;
-}
+};
 
 // Define columns for users table
 const userColumns: Column<EnterpriseUser>[] = [
@@ -50,7 +51,7 @@ const userColumns: Column<EnterpriseUser>[] = [
       { label: "Contractor", value: "contractor" },
       { label: "Guest", value: "guest" },
     ],
-    render: (value: EnterpriseUser["role"]) => (
+    render: (value: UserRole) => (
       <Badge
         variant={
           value === "admin"
@@ -79,6 +80,30 @@ const userColumns: Column<EnterpriseUser>[] = [
     ),
   },
   {
+    key: "status",
+    label: "Status",
+    sortable: true,
+    filterable: true,
+    options: [
+      { label: "Active", value: "active" },
+      { label: "Inactive", value: "inactive" },
+      { label: "Suspended", value: "suspended" },
+    ],
+    render: (value: EnterpriseUser["status"]) => (
+      <Badge
+        variant={
+          value === "active"
+            ? "default"
+            : value === "inactive"
+            ? "secondary"
+            : "destructive"
+        }
+      >
+        {value.charAt(0).toUpperCase() + value.slice(1)}
+      </Badge>
+    ),
+  },
+  {
     key: "lastLogin",
     label: "Last Login",
     sortable: true,
@@ -99,8 +124,10 @@ export default function EnterpriseUsersPage({
   const router = useRouter();
   const [metrics, setMetrics] = useState<{
     total: number;
-    admins: number;
-    active: number;
+    byRole: Record<UserRole, number>;
+    byStatus: Record<EnterpriseUser["status"], number>;
+    byDepartment: Record<string, number>;
+    activeDevices: number;
   } | null>(null);
   const [users, setUsers] = useState<EnterpriseUser[]>([]);
   const [loading, setLoading] = useState(true);
@@ -198,7 +225,7 @@ export default function EnterpriseUsersPage({
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="blue">Total Users</GradientText>
+                <GradientText variant="blue">Users</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -206,7 +233,7 @@ export default function EnterpriseUsersPage({
                 {metrics.total}
               </div>
               <p className="text-xs text-muted-foreground">
-                Across all departments
+                Total enterprise users
               </p>
             </CardContent>
           </Card>
@@ -224,10 +251,11 @@ export default function EnterpriseUsersPage({
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-purple-500">
-                {metrics.admins}
+                {metrics.byRole.admin}
               </div>
               <p className="text-xs text-muted-foreground">
-                {((metrics.admins / metrics.total) * 100).toFixed(1)}% of total
+                {((metrics.byRole.admin / metrics.total) * 100).toFixed(1)}% of
+                total
               </p>
             </CardContent>
           </Card>
@@ -245,10 +273,11 @@ export default function EnterpriseUsersPage({
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-green-500">
-                {metrics.active}
+                {metrics.byStatus.active}
               </div>
               <p className="text-xs text-muted-foreground">
-                {((metrics.active / metrics.total) * 100).toFixed(1)}% of total
+                {((metrics.byStatus.active / metrics.total) * 100).toFixed(1)}%
+                of total
               </p>
             </CardContent>
           </Card>
@@ -257,24 +286,79 @@ export default function EnterpriseUsersPage({
             variant="orange"
             intensity="medium"
             className="glassEffect-medium"
-            icon={UserX}
+            icon={Settings}
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="orange">Inactive Users</GradientText>
+                <GradientText variant="orange">Active Devices</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-orange-500">
-                {metrics.total - metrics.active}
+                {metrics.activeDevices}
               </div>
-              <p className="text-xs text-muted-foreground">
-                {(
-                  ((metrics.total - metrics.active) / metrics.total) *
-                  100
-                ).toFixed(1)}
-                % of total
-              </p>
+              <p className="text-xs text-muted-foreground">Across all users</p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-3">
+          <Card className="glassEffect-light">
+            <CardHeader>
+              <CardTitle className="text-sm font-medium">User Roles</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                {Object.entries(metrics.byRole).map(([role, count]) => (
+                  <div key={role} className="flex items-center justify-between">
+                    <span className="text-sm capitalize">{role}</span>
+                    <Badge variant="outline">{count}</Badge>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="glassEffect-light">
+            <CardHeader>
+              <CardTitle className="text-sm font-medium">User Status</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                {Object.entries(metrics.byStatus).map(([status, count]) => (
+                  <div
+                    key={status}
+                    className="flex items-center justify-between"
+                  >
+                    <span className="text-sm capitalize">{status}</span>
+                    <Badge variant="outline">{count}</Badge>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="glassEffect-light">
+            <CardHeader>
+              <CardTitle className="text-sm font-medium">
+                Top Departments
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                {Object.entries(metrics.byDepartment)
+                  .sort(([, a], [, b]) => b - a)
+                  .slice(0, 5)
+                  .map(([department, count]) => (
+                    <div
+                      key={department}
+                      className="flex items-center justify-between"
+                    >
+                      <span className="text-sm">{department}</span>
+                      <Badge variant="outline">{count}</Badge>
+                    </div>
+                  ))}
+              </div>
             </CardContent>
           </Card>
         </div>

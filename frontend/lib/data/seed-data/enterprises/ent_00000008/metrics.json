@@ -1,9 +1,233 @@
 {
-  "deviceCount": 1887,
-  "activeDevices": 618,
-  "nonCompliantDevices": 372,
-  "policyCount": 15,
-  "activePolicies": 5,
-  "towerConnections": 19,
-  "securityScore": 69
+  "devices": {
+    "total": 1717,
+    "active": 416,
+    "nonCompliant": 357,
+    "discovered": 417,
+    "byType": {
+      "smartphone": 356,
+      "tablet": 346,
+      "laptop": 350,
+      "IoT": 320,
+      "gateway": 345
+    },
+    "byOS": {
+      "iOS": 363,
+      "Android": 325,
+      "Windows": 345,
+      "macOS": 347,
+      "Linux": 337
+    },
+    "byCarrier": {
+      "AT&T": 336,
+      "Verizon": 331,
+      "T-Mobile": 352,
+      "Sprint": 331,
+      "US Cellular": 367
+    }
+  },
+  "policies": {
+    "total": 17,
+    "active": 5,
+    "byPriority": {
+      "low": 3,
+      "medium": 5,
+      "high": 4,
+      "critical": 5
+    },
+    "enforcementStats": {
+      "total": 6315,
+      "violations": 913,
+      "autoRemediated": 390
+    }
+  },
+  "towers": {
+    "total": 7,
+    "active": 2,
+    "byCarrier": {
+      "AT&T": 4,
+      "Verizon": 5,
+      "T-Mobile": 3,
+      "Sprint": 2,
+      "US Cellular": 3
+    },
+    "byStatus": {
+      "active": 2,
+      "maintenance": 3,
+      "inactive": 2
+    }
+  },
+  "security": {
+    "complianceScore": 82,
+    "criticalAlerts": 4,
+    "recentIncidents": [
+      {
+        "id": "7619d07e-48b7-4091-970e-aaa8566c092e",
+        "type": "device_discovery",
+        "severity": "critical",
+        "description": "Derelinquo absum contego alioqui.",
+        "timestamp": "2025-05-29T22:45:13.028Z",
+        "affectedEntities": [
+          {
+            "type": "policy",
+            "id": "4b8bc3ee-809f-46df-9798-c6f21ddf3cda"
+          },
+          {
+            "type": "user",
+            "id": "7bb0d44f-a920-40d1-ab5a-c8262b05ef91"
+          },
+          {
+            "type": "device",
+            "id": "09236086-cfb5-4a0c-b834-3582152342d0"
+          }
+        ],
+        "status": "open",
+        "resolution": {
+          "action": "Cervus suppono basium pauci cubo defluo copia.",
+          "resolvedBy": "6094beab-0164-4e49-b2cb-0fabe30eb006",
+          "resolvedAt": "2025-06-02T21:57:18.735Z"
+        }
+      },
+      {
+        "id": "ede44559-db1d-4157-b2f5-dfe0d4ac6715",
+        "type": "policy_violation",
+        "severity": "low",
+        "description": "Arbitro bene beneficium ago pecto synagoga verumtamen molestias adduco paulatim.",
+        "timestamp": "2025-06-02T05:17:38.829Z",
+        "affectedEntities": [
+          {
+            "type": "user",
+            "id": "e7797428-b2c7-45f1-b448-cff70ef2ecf4"
+          }
+        ],
+        "status": "resolved",
+        "resolution": {
+          "action": "Arma vehemens benigne error curiositas.",
+          "resolvedBy": "f5e0f997-6361-46be-8360-7396c750f4d1",
+          "resolvedAt": "2025-06-02T23:23:44.581Z"
+        }
+      }
+    ]
+  },
+  "apps": {
+    "total": 21,
+    "byCategory": {
+      "productivity": 1,
+      "security": 6,
+      "communication": 8,
+      "enterprise": 1,
+      "custom": 5
+    },
+    "usageStats": {
+      "totalActions": 28276,
+      "violations": 18731,
+      "byApp": {
+        "app_00000001": {
+          "total": 1342,
+          "violations": 873,
+          "lastUsed": ""
+        },
+        "app_00000002": {
+          "total": 1375,
+          "violations": 909,
+          "lastUsed": ""
+        },
+        "app_00000003": {
+          "total": 1368,
+          "violations": 913,
+          "lastUsed": ""
+        },
+        "app_00000004": {
+          "total": 1285,
+          "violations": 864,
+          "lastUsed": ""
+        },
+        "app_00000005": {
+          "total": 1302,
+          "violations": 840,
+          "lastUsed": ""
+        },
+        "app_00000006": {
+          "total": 1455,
+          "violations": 959,
+          "lastUsed": ""
+        },
+        "app_00000007": {
+          "total": 1409,
+          "violations": 941,
+          "lastUsed": ""
+        },
+        "app_00000008": {
+          "total": 1201,
+          "violations": 808,
+          "lastUsed": ""
+        },
+        "app_00000009": {
+          "total": 1337,
+          "violations": 894,
+          "lastUsed": ""
+        },
+        "app_00000010": {
+          "total": 1140,
+          "violations": 749,
+          "lastUsed": ""
+        },
+        "app_00000011": {
+          "total": 1317,
+          "violations": 892,
+          "lastUsed": ""
+        },
+        "app_00000012": {
+          "total": 1326,
+          "violations": 879,
+          "lastUsed": ""
+        },
+        "app_00000013": {
+          "total": 1371,
+          "violations": 908,
+          "lastUsed": ""
+        },
+        "app_00000014": {
+          "total": 1417,
+          "violations": 965,
+          "lastUsed": ""
+        },
+        "app_00000015": {
+          "total": 1416,
+          "violations": 939,
+          "lastUsed": ""
+        },
+        "app_00000016": {
+          "total": 1403,
+          "violations": 909,
+          "lastUsed": ""
+        },
+        "app_00000017": {
+          "total": 1403,
+          "violations": 949,
+          "lastUsed": ""
+        },
+        "app_00000018": {
+          "total": 1221,
+          "violations": 808,
+          "lastUsed": ""
+        },
+        "app_00000019": {
+          "total": 1276,
+          "violations": 860,
+          "lastUsed": ""
+        },
+        "app_00000020": {
+          "total": 1456,
+          "violations": 955,
+          "lastUsed": ""
+        },
+        "app_00000021": {
+          "total": 1456,
+          "violations": 917,
+          "lastUsed": ""
+        }
+      }
+    }
+  }
 }

@@ -10,7 +10,7 @@ import { DataTable, Column } from "@/components/ui/data-table";
 import { FullPageLoadingSpinner } from "@/components/ui/loading-spinner";
 import { Shield, AlertTriangle, CheckCircle } from "lucide-react";
 import { useEnterpriseData } from "@/lib/hooks/useEnterpriseData";
-import { Policy } from "@/lib/data/domain-types";
+import type { Policy, PolicyPriority } from "@/lib/data/domain-types";
 import { GradientText } from "@/components/ui/gradient-text";
 
 // Define columns for policies table
@@ -116,6 +116,12 @@ export default function EnterprisePoliciesPage({
   const [metrics, setMetrics] = useState<{
     total: number;
     active: number;
+    byPriority: Record<PolicyPriority, number>;
+    enforcementStats: {
+      total: number;
+      violations: number;
+      autoRemediated: number;
+    };
   } | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -193,7 +199,7 @@ export default function EnterprisePoliciesPage({
           </h1>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-4">
           <Card
             variant="purple"
             intensity="medium"
@@ -202,16 +208,62 @@ export default function EnterprisePoliciesPage({
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="purple">Total Policies</GradientText>
+                <GradientText variant="purple">Policies</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-purple-500">
                 {metrics.total}
               </div>
-              <p className="text-xs text-muted-foreground">
-                {metrics.active} active policies
-              </p>
+              <div className="mt-2 space-y-1">
+                <p className="text-xs text-muted-foreground">
+                  {metrics.active} active policies
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {metrics.enforcementStats.violations} violations
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {metrics.enforcementStats.autoRemediated} auto-remediated
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card
+            variant="blue"
+            intensity="medium"
+            className="glassEffect-medium"
+            icon={Shield}
+          >
+            <CardHeader>
+              <CardTitle>
+                <GradientText variant="blue">Policy Priority</GradientText>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                {Object.entries(metrics.byPriority).map(([priority, count]) => (
+                  <div
+                    key={priority}
+                    className="flex justify-between items-center"
+                  >
+                    <span className="text-sm capitalize">{priority}</span>
+                    <Badge
+                      variant={
+                        priority === "critical"
+                          ? "destructive"
+                          : priority === "high"
+                          ? "secondary"
+                          : priority === "medium"
+                          ? "default"
+                          : "outline"
+                      }
+                    >
+                      {count}
+                    </Badge>
+                  </div>
+                ))}
+              </div>
             </CardContent>
           </Card>
 
@@ -223,16 +275,30 @@ export default function EnterprisePoliciesPage({
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="green">Active Policies</GradientText>
+                <GradientText variant="green">Enforcement</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-green-500">
-                {metrics.active}
+              <div className="space-y-2">
+                <div className="flex justify-between items-center">
+                  <span className="text-sm">Total Enforcements</span>
+                  <Badge variant="outline">
+                    {metrics.enforcementStats.total}
+                  </Badge>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm">Violations</span>
+                  <Badge variant="destructive">
+                    {metrics.enforcementStats.violations}
+                  </Badge>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm">Auto-Remediated</span>
+                  <Badge variant="default">
+                    {metrics.enforcementStats.autoRemediated}
+                  </Badge>
+                </div>
               </div>
-              <p className="text-xs text-muted-foreground">
-                {((metrics.active / metrics.total) * 100).toFixed(1)}% of total
-              </p>
             </CardContent>
           </Card>
 
@@ -244,20 +310,40 @@ export default function EnterprisePoliciesPage({
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="orange">Inactive Policies</GradientText>
+                <GradientText variant="orange">Compliance</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-orange-500">
-                {metrics.total - metrics.active}
+              <div className="space-y-2">
+                <div className="flex justify-between items-center">
+                  <span className="text-sm">Active Rate</span>
+                  <Badge variant="default">
+                    {((metrics.active / metrics.total) * 100).toFixed(1)}%
+                  </Badge>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm">Violation Rate</span>
+                  <Badge variant="destructive">
+                    {(
+                      (metrics.enforcementStats.violations /
+                        metrics.enforcementStats.total) *
+                      100
+                    ).toFixed(1)}
+                    %
+                  </Badge>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm">Auto-Remediation Rate</span>
+                  <Badge variant="default">
+                    {(
+                      (metrics.enforcementStats.autoRemediated /
+                        metrics.enforcementStats.violations) *
+                      100
+                    ).toFixed(1)}
+                    %
+                  </Badge>
+                </div>
               </div>
-              <p className="text-xs text-muted-foreground">
-                {(
-                  ((metrics.total - metrics.active) / metrics.total) *
-                  100
-                ).toFixed(1)}
-                % of total
-              </p>
             </CardContent>
           </Card>
         </div>

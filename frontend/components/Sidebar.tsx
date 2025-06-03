@@ -88,7 +88,7 @@ export default function Sidebar({
                   "flex items-center gap-4 rounded-xl px-4 py-3 text-base transition-colors",
                   isActive(item.href)
                     ? "bg-accent/80 text-accent-foreground font-medium border border-accent-foreground/20 shadow-sm"
-                    : "text-muted-foreground hover:bg-accent/40 hover:text-accent-foreground"
+                    : "text-foreground hover:bg-accent/40 hover:text-accent-foreground"
                 )}
               >
                 {content}
@@ -105,7 +105,7 @@ export default function Sidebar({
               "flex items-center gap-4 rounded-xl px-4 py-3 text-base transition-colors",
               isActive(item.href)
                 ? "bg-accent/80 text-accent-foreground font-medium border border-accent-foreground/20 shadow-sm"
-                : "text-muted-foreground hover:bg-accent/40 hover:text-accent-foreground"
+                : "text-foreground hover:bg-accent/40 hover:text-accent-foreground"
             )}
           >
             {content}

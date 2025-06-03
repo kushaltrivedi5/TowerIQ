@@ -3,7 +3,7 @@
 import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { Clover } from "lucide-react";
+import { Clover, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -58,7 +58,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <span className="text-xl font-semibold">TowerIQ</span>
             <div className="hidden md:block h-6 w-px bg-border" />
-            <span className="hidden md:inline text-base text-muted-foreground">
+            <span className="hidden md:inline text-base text-foreground">
               {enterpriseName}
             </span>
           </div>
@@ -73,36 +73,33 @@ export default function Navbar() {
             <DropdownMenuTrigger asChild>
               <Button
                 variant="ghost"
-                className="relative h-10 w-10 rounded-full"
+                className="relative h-12 w-12 rounded-full"
               >
-                <Avatar className="h-10 w-10">
-                  <div className="flex h-full w-full items-center justify-center bg-muted text-muted-foreground text-lg">
-                    {userName
-                      .split(" ")
-                      .map((n) => n[0])
-                      .join("")
-                      .toUpperCase()}
+                <Avatar className="h-8 w-8">
+                  <div className="flex h-full w-full items-center justify-center bg-muted text-foreground text-lg">
+                    {session.user?.name?.charAt(0) || "U"}
                   </div>
                 </Avatar>
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-64" align="end" forceMount>
+            <DropdownMenuContent className="w-56" align="end" forceMount>
               <DropdownMenuLabel className="font-normal">
                 <div className="flex flex-col space-y-1">
-                  <p className="text-base font-medium leading-none">
-                    {userName}
+                  <p className="text-sm font-medium leading-none text-foreground">
+                    {session.user?.name}
                   </p>
-                  <p className="text-sm leading-none text-muted-foreground">
-                    {session.user.email}
+                  <p className="text-xs leading-none text-foreground">
+                    {session.user?.email}
                   </p>
                 </div>
               </DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem
-                className="text-destructive focus:text-destructive text-base"
+                className="text-foreground cursor-pointer"
                 onClick={handleSignOut}
               >
-                Sign out
+                <LogOut className="mr-2 h-4 w-4" />
+                <span>Sign out</span>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

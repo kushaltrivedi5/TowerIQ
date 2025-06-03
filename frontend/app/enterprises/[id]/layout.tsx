@@ -64,7 +64,7 @@ export default function EnterpriseLayout({
           <Sidebar enterpriseId={id} />
         </div>
         <div className="hidden md:block w-72 flex-shrink-0" />
-        <main className="flex-1 p-4 md:p-8 overflow-auto w-full md:ml-0">
+        <main className="relative flex-1 p-4 md:p-8 overflow-auto w-full md:ml-0">
           <ContentLoadingSpinner text="Loading enterprise..." />
         </main>
       </div>
@@ -78,8 +78,8 @@ export default function EnterpriseLayout({
           <Sidebar enterpriseId={id} />
         </div>
         <div className="hidden md:block w-72 flex-shrink-0" />
-        <main className="flex-1 p-4 md:p-8 overflow-auto w-full md:ml-0">
-          <div className="flex items-center justify-center h-full min-h-[400px]">
+        <main className="relative flex-1 p-4 md:p-8 overflow-auto w-full md:ml-0">
+          <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center">
               <h1 className="text-2xl font-bold text-destructive mb-2">
                 {error || "Failed to load enterprise data"}
@@ -101,7 +101,7 @@ export default function EnterpriseLayout({
         <Sidebar enterpriseId={enterprise.id} />
       </div>
       <div className="hidden md:block w-72 flex-shrink-0" />
-      <main className="flex-1 p-4 md:p-8 overflow-auto w-full md:ml-0">
+      <main className="relative flex-1 p-4 md:p-8 overflow-auto w-full md:ml-0">
         {children}
       </main>
     </div>

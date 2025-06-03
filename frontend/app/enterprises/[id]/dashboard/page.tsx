@@ -30,19 +30,43 @@ import {
   BarChart,
   Bar,
 } from "recharts";
+import type {
+  DeviceType,
+  OperatingSystem,
+  Carrier,
+  PolicyPriority,
+  TowerStatus,
+} from "@/lib/data/domain-types";
 
 interface EnterpriseMetrics {
   devices: {
     total: number;
     active: number;
     nonCompliant: number;
+    discovered: number;
+    byType: Record<DeviceType, number>;
+    byOS: Record<OperatingSystem, number>;
+    byCarrier: Record<Carrier, number>;
   };
   policies: {
     total: number;
     active: number;
+    byPriority: Record<PolicyPriority, number>;
+    enforcementStats: {
+      total: number;
+      violations: number;
+      autoRemediated: number;
+    };
   };
   towers: {
     total: number;
+    active: number;
+    byCarrier: Record<Carrier, number>;
+    byStatus: Record<TowerStatus, number>;
+  };
+  users: {
+    total: number;
+    admins: number;
     active: number;
   };
   security: {
@@ -51,13 +75,19 @@ interface EnterpriseMetrics {
     recentIncidents: Array<{
       id: string;
       type: string;
-      severity: string;
+      severity: "low" | "medium" | "high" | "critical";
       description: string;
       timestamp: string;
       affectedEntities: Array<{
-        type: string;
+        type: "device" | "tower" | "policy" | "user";
         id: string;
       }>;
+      status: "open" | "investigating" | "resolved";
+      resolution?: {
+        action: string;
+        resolvedBy: string;
+        resolvedAt: string;
+      };
     }>;
   };
 }
@@ -240,16 +270,24 @@ export default function EnterpriseDashboardPage({
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="blue">Total Devices</GradientText>
+                <GradientText variant="blue">Devices</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-blue-500">
                 {metrics.devices.total}
               </div>
-              <p className="text-xs text-muted-foreground">
-                {metrics.devices.active} active devices
-              </p>
+              <div className="mt-2 space-y-1">
+                <p className="text-xs text-muted-foreground">
+                  {metrics.devices.active} active devices
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {metrics.devices.nonCompliant} non-compliant
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {metrics.devices.discovered} discovered
+                </p>
+              </div>
             </CardContent>
           </Card>
 
@@ -261,16 +299,25 @@ export default function EnterpriseDashboardPage({
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="purple">Security Policies</GradientText>
+                <GradientText variant="purple">Policies</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-purple-500">
                 {metrics.policies.total}
               </div>
-              <p className="text-xs text-muted-foreground">
-                {metrics.policies.active} active policies
-              </p>
+              <div className="mt-2 space-y-1">
+                <p className="text-xs text-muted-foreground">
+                  {metrics.policies.active} active policies
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {metrics.policies.enforcementStats.violations} violations
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {metrics.policies.enforcementStats.autoRemediated}{" "}
+                  auto-remediated
+                </p>
+              </div>
             </CardContent>
           </Card>
 
@@ -282,16 +329,24 @@ export default function EnterpriseDashboardPage({
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="green">Network Towers</GradientText>
+                <GradientText variant="green">Towers</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-green-500">
                 {metrics.towers.total}
               </div>
-              <p className="text-xs text-muted-foreground">
-                {metrics.towers.active} active towers
-              </p>
+              <div className="mt-2 space-y-1">
+                <p className="text-xs text-muted-foreground">
+                  {metrics.towers.active} active towers
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {metrics.towers.byStatus.maintenance} in maintenance
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {metrics.towers.byStatus.inactive} inactive
+                </p>
+              </div>
             </CardContent>
           </Card>
 
@@ -303,16 +358,24 @@ export default function EnterpriseDashboardPage({
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="orange">Critical Alerts</GradientText>
+                <GradientText variant="orange">Security</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-orange-500">
-                {metrics.security.criticalAlerts}
+                {metrics.security.complianceScore}%
               </div>
-              <p className="text-xs text-muted-foreground">
-                Active security incidents
-              </p>
+              <div className="mt-2 space-y-1">
+                <p className="text-xs text-muted-foreground">
+                  {metrics.security.criticalAlerts} critical alerts
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {metrics.users.total} total users
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {metrics.users.admins} admin users
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>

@@ -10,7 +10,12 @@ import { DataTable, Column } from "@/components/ui/data-table";
 import { FullPageLoadingSpinner } from "@/components/ui/loading-spinner";
 import { Smartphone, Shield, AlertTriangle } from "lucide-react";
 import { useEnterpriseData } from "@/lib/hooks/useEnterpriseData";
-import { Device } from "@/lib/data/domain-types";
+import type {
+  Device,
+  DeviceType,
+  OperatingSystem,
+  Carrier,
+} from "@/lib/data/domain-types";
 import { GradientText } from "@/components/ui/gradient-text";
 
 // Define columns for devices table
@@ -118,6 +123,10 @@ export default function EnterpriseDevicesPage({
     total: number;
     active: number;
     nonCompliant: number;
+    discovered: number;
+    byType: Record<DeviceType, number>;
+    byOS: Record<OperatingSystem, number>;
+    byCarrier: Record<Carrier, number>;
   } | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -201,58 +210,105 @@ export default function EnterpriseDevicesPage({
           </h1>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-3">
-          <Card>
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">
-                Total Devices
+        <div className="grid gap-4 md:grid-cols-4">
+          <Card
+            variant="blue"
+            intensity="medium"
+            className="glassEffect-medium"
+            icon={Smartphone}
+          >
+            <CardHeader>
+              <CardTitle>
+                <GradientText variant="blue">Devices</GradientText>
               </CardTitle>
-              <Smartphone className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">{metrics.total}</div>
-              <p className="text-xs text-muted-foreground">
-                {metrics.active} active devices
-              </p>
+              <div className="text-3xl font-bold text-blue-500">
+                {metrics.total}
+              </div>
+              <div className="mt-2 space-y-1">
+                <p className="text-xs text-muted-foreground">
+                  {metrics.active} active devices
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {metrics.discovered} discovered
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {metrics.nonCompliant} non-compliant
+                </p>
+              </div>
             </CardContent>
           </Card>
 
-          <Card>
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">
-                Non-Compliant Devices
+          <Card
+            variant="purple"
+            intensity="medium"
+            className="glassEffect-medium"
+            icon={Smartphone}
+          >
+            <CardHeader>
+              <CardTitle>
+                <GradientText variant="purple">Device Types</GradientText>
               </CardTitle>
-              <AlertTriangle className="h-4 w-4 text-destructive" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-destructive">
-                {metrics.nonCompliant}
+              <div className="space-y-2">
+                {Object.entries(metrics.byType).map(([type, count]) => (
+                  <div key={type} className="flex justify-between items-center">
+                    <span className="text-sm capitalize">{type}</span>
+                    <Badge variant="outline">{count}</Badge>
+                  </div>
+                ))}
               </div>
-              <p className="text-xs text-muted-foreground">
-                {((metrics.nonCompliant / metrics.total) * 100).toFixed(1)}% of
-                total
-              </p>
             </CardContent>
           </Card>
 
-          <Card>
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">
-                Compliance Rate
+          <Card
+            variant="green"
+            intensity="medium"
+            className="glassEffect-medium"
+            icon={Smartphone}
+          >
+            <CardHeader>
+              <CardTitle>
+                <GradientText variant="green">Operating Systems</GradientText>
               </CardTitle>
-              <Shield className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">
-                {(
-                  ((metrics.total - metrics.nonCompliant) / metrics.total) *
-                  100
-                ).toFixed(1)}
-                %
+              <div className="space-y-2">
+                {Object.entries(metrics.byOS).map(([os, count]) => (
+                  <div key={os} className="flex justify-between items-center">
+                    <span className="text-sm">{os}</span>
+                    <Badge variant="outline">{count}</Badge>
+                  </div>
+                ))}
               </div>
-              <p className="text-xs text-muted-foreground">
-                {metrics.total - metrics.nonCompliant} compliant devices
-              </p>
+            </CardContent>
+          </Card>
+
+          <Card
+            variant="orange"
+            intensity="medium"
+            className="glassEffect-medium"
+            icon={Smartphone}
+          >
+            <CardHeader>
+              <CardTitle>
+                <GradientText variant="orange">Carriers</GradientText>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                {Object.entries(metrics.byCarrier).map(([carrier, count]) => (
+                  <div
+                    key={carrier}
+                    className="flex justify-between items-center"
+                  >
+                    <span className="text-sm">{carrier}</span>
+                    <Badge variant="outline">{count}</Badge>
+                  </div>
+                ))}
+              </div>
             </CardContent>
           </Card>
         </div>
@@ -261,8 +317,9 @@ export default function EnterpriseDevicesPage({
           columns={deviceColumns}
           data={devices || []}
           searchKey="name"
-          title="Device Directory"
-          description="Manage and monitor all devices in your enterprise"
+          pageSize={10}
+          title="Devices"
+          description="Manage and monitor your enterprise devices"
         />
       </div>
     </PageTransition>

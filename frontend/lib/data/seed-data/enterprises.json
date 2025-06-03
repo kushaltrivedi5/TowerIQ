@@ -1,42 +1,202 @@
 [
   {
     "id": "ent_00000001",
-    "name": "Yost LLC Ltd"
+    "name": "Armstrong Group Ltd",
+    "tier": "premium",
+    "subscription": {
+      "startDate": "2024-10-27T18:46:56.084Z",
+      "endDate": "2027-03-24T19:54:28.786Z",
+      "status": "active",
+      "tier": "basic",
+      "features": {
+        "autoRemediation": false,
+        "realTimeMonitoring": true,
+        "customPolicies": false,
+        "deviceDiscovery": true,
+        "apiAccess": false,
+        "towerEnforcement": false,
+        "appMonitoring": true
+      }
+    }
   },
   {
     "id": "ent_00000002",
-    "name": "Beer Inc Corp"
+    "name": "O'Reilly - Funk Ltd",
+    "tier": "standard",
+    "subscription": {
+      "startDate": "2025-02-05T05:23:39.039Z",
+      "endDate": "2026-11-26T22:19:03.558Z",
+      "status": "active",
+      "tier": "premium",
+      "features": {
+        "autoRemediation": true,
+        "realTimeMonitoring": true,
+        "customPolicies": true,
+        "deviceDiscovery": true,
+        "apiAccess": true,
+        "towerEnforcement": true,
+        "appMonitoring": true
+      }
+    }
   },
   {
     "id": "ent_00000003",
-    "name": "Schumm, Walker and Stark Ltd"
+    "name": "Lockman, Leannon and Berge Ltd",
+    "tier": "premium",
+    "subscription": {
+      "startDate": "2024-09-16T05:24:12.021Z",
+      "endDate": "2026-07-22T07:55:05.544Z",
+      "status": "active",
+      "tier": "standard",
+      "features": {
+        "autoRemediation": false,
+        "realTimeMonitoring": true,
+        "customPolicies": true,
+        "deviceDiscovery": true,
+        "apiAccess": true,
+        "towerEnforcement": false,
+        "appMonitoring": true
+      }
+    }
   },
   {
     "id": "ent_00000004",
-    "name": "Windler - Larson Ltd"
+    "name": "Harvey Group Ltd",
+    "tier": "premium",
+    "subscription": {
+      "startDate": "2025-04-21T15:59:09.549Z",
+      "endDate": "2027-02-23T08:29:34.345Z",
+      "status": "active",
+      "tier": "standard",
+      "features": {
+        "autoRemediation": false,
+        "realTimeMonitoring": true,
+        "customPolicies": true,
+        "deviceDiscovery": true,
+        "apiAccess": true,
+        "towerEnforcement": false,
+        "appMonitoring": true
+      }
+    }
   },
   {
     "id": "ent_00000005",
-    "name": "Kassulke, Schowalter and Spencer Group"
+    "name": "Abernathy, Bosco and Bailey Ltd",
+    "tier": "premium",
+    "subscription": {
+      "startDate": "2025-05-12T17:51:00.003Z",
+      "endDate": "2026-11-03T01:33:08.256Z",
+      "status": "active",
+      "tier": "basic",
+      "features": {
+        "autoRemediation": false,
+        "realTimeMonitoring": true,
+        "customPolicies": false,
+        "deviceDiscovery": true,
+        "apiAccess": false,
+        "towerEnforcement": false,
+        "appMonitoring": true
+      }
+    }
   },
   {
     "id": "ent_00000006",
-    "name": "Abshire - Hoeger LLC"
+    "name": "Grady, Grant and Hoppe Ltd",
+    "tier": "standard",
+    "subscription": {
+      "startDate": "2024-06-29T03:17:53.174Z",
+      "endDate": "2027-01-31T08:12:19.825Z",
+      "status": "active",
+      "tier": "basic",
+      "features": {
+        "autoRemediation": false,
+        "realTimeMonitoring": true,
+        "customPolicies": false,
+        "deviceDiscovery": true,
+        "apiAccess": false,
+        "towerEnforcement": false,
+        "appMonitoring": true
+      }
+    }
   },
   {
     "id": "ent_00000007",
-    "name": "Dooley, Langosh and Mann LLC"
+    "name": "Maggio, Leffler and Haley Ltd",
+    "tier": "standard",
+    "subscription": {
+      "startDate": "2024-09-23T13:06:24.604Z",
+      "endDate": "2026-11-06T10:32:11.321Z",
+      "status": "active",
+      "tier": "basic",
+      "features": {
+        "autoRemediation": false,
+        "realTimeMonitoring": true,
+        "customPolicies": false,
+        "deviceDiscovery": true,
+        "apiAccess": false,
+        "towerEnforcement": false,
+        "appMonitoring": true
+      }
+    }
   },
   {
     "id": "ent_00000008",
-    "name": "Stark, Schmitt and Gerlach Corp"
+    "name": "Braun - Nienow Ltd",
+    "tier": "standard",
+    "subscription": {
+      "startDate": "2024-11-02T00:42:12.707Z",
+      "endDate": "2026-06-29T08:36:50.566Z",
+      "status": "active",
+      "tier": "premium",
+      "features": {
+        "autoRemediation": true,
+        "realTimeMonitoring": true,
+        "customPolicies": true,
+        "deviceDiscovery": true,
+        "apiAccess": true,
+        "towerEnforcement": true,
+        "appMonitoring": true
+      }
+    }
   },
   {
     "id": "ent_00000009",
-    "name": "Champlin - Graham Corp"
+    "name": "Lueilwitz LLC Ltd",
+    "tier": "premium",
+    "subscription": {
+      "startDate": "2024-08-12T19:45:45.820Z",
+      "endDate": "2027-01-24T06:26:39.171Z",
+      "status": "active",
+      "tier": "enterprise",
+      "features": {
+        "autoRemediation": true,
+        "realTimeMonitoring": true,
+        "customPolicies": true,
+        "deviceDiscovery": true,
+        "apiAccess": true,
+        "towerEnforcement": true,
+        "appMonitoring": true
+      }
+    }
   },
   {
     "id": "ent_00000010",
-    "name": "Wyman, Kling and Haag Inc"
+    "name": "Jaskolski, Emard and Ortiz Ltd",
+    "tier": "standard",
+    "subscription": {
+      "startDate": "2025-02-01T18:54:38.329Z",
+      "endDate": "2027-03-20T07:56:18.594Z",
+      "status": "active",
+      "tier": "standard",
+      "features": {
+        "autoRemediation": false,
+        "realTimeMonitoring": true,
+        "customPolicies": true,
+        "deviceDiscovery": true,
+        "apiAccess": true,
+        "towerEnforcement": false,
+        "appMonitoring": true
+      }
+    }
   }
 ]

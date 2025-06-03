@@ -8,9 +8,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DataTable, Column } from "@/components/ui/data-table";
 import { FullPageLoadingSpinner } from "@/components/ui/loading-spinner";
-import { RadioTower, Signal, Wifi, AlertTriangle } from "lucide-react";
+import { RadioTower, Signal, Wifi, AlertTriangle, Users } from "lucide-react";
 import { useEnterpriseData } from "@/lib/hooks/useEnterpriseData";
-import { Tower } from "@/lib/data/domain-types";
+import type { Tower, TowerStatus } from "@/lib/data/domain-types";
 import { GradientText } from "@/components/ui/gradient-text";
 
 // Define columns for towers table
@@ -32,6 +32,9 @@ const towerColumns: Column<Tower>[] = [
     label: "Location",
     sortable: true,
     searchable: true,
+    render: (value: Tower["location"]) => (
+      <span className="text-sm">{value.address}</span>
+    ),
   },
   {
     key: "status",
@@ -41,7 +44,7 @@ const towerColumns: Column<Tower>[] = [
     options: [
       { label: "Active", value: "active" },
       { label: "Maintenance", value: "maintenance" },
-      { label: "Offline", value: "offline" },
+      { label: "Inactive", value: "inactive" },
     ],
     render: (value: Tower["status"]) => (
       <Badge
@@ -58,12 +61,17 @@ const towerColumns: Column<Tower>[] = [
     ),
   },
   {
-    key: "coverage",
-    label: "Coverage",
+    key: "carriers",
+    label: "Signal Strength",
     sortable: true,
-    render: (value: Tower["coverage"]) => (
-      <Badge variant="outline">{value.radius} km radius</Badge>
-    ),
+    render: (value: Tower["carriers"]) => {
+      const avgSignalStrength =
+        value.reduce(
+          (sum, carrier) => sum + carrier.coverage.signalStrength,
+          0
+        ) / value.length;
+      return <Badge variant="outline">{avgSignalStrength.toFixed(1)}%</Badge>;
+    },
   },
   {
     key: "connectedDevices",
@@ -77,13 +85,16 @@ const towerColumns: Column<Tower>[] = [
     key: "equipment",
     label: "Last Maintenance",
     sortable: true,
-    render: (value: Tower["equipment"]) => (
-      <span className="text-sm">
-        {value[0]?.lastMaintenance
-          ? new Date(value[0].lastMaintenance).toLocaleString()
-          : "Never"}
-      </span>
-    ),
+    render: (value: Tower["equipment"]) => {
+      const lastMaintenance = value[0]?.lastMaintenance;
+      return (
+        <span className="text-sm">
+          {lastMaintenance
+            ? new Date(lastMaintenance).toLocaleString()
+            : "Never"}
+        </span>
+      );
+    },
   },
 ];
 
@@ -97,6 +108,10 @@ export default function EnterpriseTowersPage({
   const [metrics, setMetrics] = useState<{
     total: number;
     active: number;
+    byStatus: Record<TowerStatus, number>;
+    totalConnectedDevices: number;
+    averageSignalStrength: number;
+    maintenanceRequired: number;
   } | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -174,7 +189,7 @@ export default function EnterpriseTowersPage({
           </h1>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-4">
           <Card
             variant="blue"
             intensity="medium"
@@ -183,7 +198,7 @@ export default function EnterpriseTowersPage({
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="blue">Total Towers</GradientText>
+                <GradientText variant="blue">Towers</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -191,7 +206,7 @@ export default function EnterpriseTowersPage({
                 {metrics.total}
               </div>
               <p className="text-xs text-muted-foreground">
-                Across all locations
+                Total network towers
               </p>
             </CardContent>
           </Card>
@@ -204,15 +219,36 @@ export default function EnterpriseTowersPage({
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="green">Active Towers</GradientText>
+                <GradientText variant="green">Signal Strength</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-green-500">
-                {metrics.active}
+                {metrics.averageSignalStrength.toFixed(1)}%
               </div>
               <p className="text-xs text-muted-foreground">
-                {((metrics.active / metrics.total) * 100).toFixed(1)}% of total
+                Average across network
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card
+            variant="orange"
+            intensity="medium"
+            className="glassEffect-medium"
+            icon={Users}
+          >
+            <CardHeader>
+              <CardTitle>
+                <GradientText variant="orange">Connected Devices</GradientText>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="text-3xl font-bold text-orange-500">
+                {metrics.totalConnectedDevices}
+              </div>
+              <p className="text-xs text-muted-foreground">
+                Active connections
               </p>
             </CardContent>
           </Card>
@@ -225,20 +261,93 @@ export default function EnterpriseTowersPage({
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="orange">Offline Towers</GradientText>
+                <GradientText variant="orange">Maintenance</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-orange-500">
-                {metrics.total - metrics.active}
+                {metrics.maintenanceRequired}
               </div>
               <p className="text-xs text-muted-foreground">
-                {(
-                  ((metrics.total - metrics.active) / metrics.total) *
-                  100
-                ).toFixed(1)}
-                % of total
+                Towers requiring attention
               </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-3">
+          <Card className="glassEffect-light">
+            <CardHeader>
+              <CardTitle className="text-sm font-medium">
+                Tower Status
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                {Object.entries(metrics.byStatus).map(([status, count]) => (
+                  <div
+                    key={status}
+                    className="flex items-center justify-between"
+                  >
+                    <span className="text-sm capitalize">{status}</span>
+                    <Badge variant="outline">{count}</Badge>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="glassEffect-light">
+            <CardHeader>
+              <CardTitle className="text-sm font-medium">
+                Network Health
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Active Towers</span>
+                  <Badge variant="outline">{metrics.active}</Badge>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Offline Towers</span>
+                  <Badge variant="outline">
+                    {metrics.byStatus["inactive"] || 0}
+                  </Badge>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">In Maintenance</span>
+                  <Badge variant="outline">
+                    {metrics.byStatus["maintenance"] || 0}
+                  </Badge>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="glassEffect-light">
+            <CardHeader>
+              <CardTitle className="text-sm font-medium">Performance</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Signal Strength</span>
+                  <Badge variant="outline">
+                    {metrics.averageSignalStrength.toFixed(1)}%
+                  </Badge>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Connected Devices</span>
+                  <Badge variant="outline">
+                    {metrics.totalConnectedDevices}
+                  </Badge>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm">Maintenance Required</span>
+                  <Badge variant="outline">{metrics.maintenanceRequired}</Badge>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>

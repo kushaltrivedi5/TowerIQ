@@ -13,23 +13,37 @@ import {
   Tower,
   Enterprise,
   Policy,
+  App,
+  AppUsage,
   SeedConfig,
   EnterpriseData,
-  EnterpriseTier
+  EnterpriseTier,
+  RealEstateProvider,
+  PolicyAction,
+  PolicyPriority,
+  DeviceStatus,
+  TowerStatus
 } from './domain-types';
 
 // Configuration
 const CONFIG: SeedConfig = {
   enterprises: {
-    count: 100,
+    count: 10,
     usersPerEnterprise: { min: 50, max: 1000 },
     devicesPerUser: { min: 1, max: 3 },
-    policiesPerEnterprise: { min: 10, max: 50 }
+    policiesPerEnterprise: { min: 10, max: 50 },
+    appsPerEnterprise: { min: 20, max: 100 }
   },
   towers: {
     count: 5000,
     carriersPerTower: { min: 1, max: 3 },
-    devicesPerTower: { min: 1, max: 5 }
+    devicesPerTower: { min: 1, max: 5 },
+    discoveryEnabled: true
+  },
+  apps: {
+    count: 200,
+    actionsPerApp: { min: 5, max: 20 },
+    categories: ['productivity', 'security', 'communication', 'enterprise', 'custom']
   },
   carriers: ['AT&T', 'Verizon', 'T-Mobile', 'Sprint', 'US Cellular'],
   operatingSystems: ['iOS', 'Android', 'Windows', 'macOS', 'Linux'],
@@ -60,164 +74,477 @@ const HASHED_PASSWORD = '$2a$10$K7L1OJ45/4Y2nIvhRVpCe.FSmhDdWoXehVzJptJ/op0lSsvq
 const getRandomElement = <T>(array: T[]): T => 
   array[Math.floor(Math.random() * array.length)];
 
-const getRandomInt = (min: number, max: number): number =>
+const getRandomInt = (min: number, max: number): number => 
   Math.floor(Math.random() * (max - min + 1)) + min;
 
-const getRandomDate = (start: Date, end: Date): string =>
+const getRandomDate = (start: Date, end: Date): string => 
   new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime())).toISOString();
 
-// Helper function to generate a random enterprise tier
-function generateEnterpriseTier(): EnterpriseTier {
-  return faker.helpers.arrayElement(['standard', 'premium']);
-}
+const getRandomLocation = () => ({
+  latitude: Number(faker.location.latitude()),
+  longitude: Number(faker.location.longitude()),
+  address: faker.location.streetAddress()
+});
 
-// Helper function to generate enterprise features based on tier
-function generateEnterpriseFeatures(tier: EnterpriseTier) {
+// Generate apps with realistic actions
+const generateApp = (id: number): App => {
+  const category = getRandomElement(CONFIG.appCategories);
+  const supportedOS = faker.helpers.arrayElements(CONFIG.operatingSystems, getRandomInt(1, 3));
+  const supportedDevices = faker.helpers.arrayElements(CONFIG.deviceTypes, getRandomInt(1, 3));
+  const actionCount = getRandomInt(CONFIG.apps.actionsPerApp.min, CONFIG.apps.actionsPerApp.max);
+
+  const major = getRandomInt(1, 9).toString();
+  const minor = getRandomInt(0, 9).toString();
+  const patch = getRandomInt(0, 9).toString();
+
   return {
-    autoRemediation: tier === 'premium',
-    realTimeMonitoring: tier === 'premium',
-    customPolicies: tier === 'premium',
-    deviceDiscovery: true, // Available for both tiers
-    apiAccess: tier === 'premium'
+    id: `app_${String(id).padStart(8, '0')}`,
+    name: `${faker.company.name()} ${category.charAt(0).toUpperCase() + category.slice(1)} App`,
+    category: category as AppCategory,
+    description: faker.company.catchPhrase(),
+    vendor: faker.company.name(),
+    version: `${major}.${minor}.${patch}`,
+    actions: Array.from({ length: actionCount }, (_, i) => ({
+      id: faker.string.uuid(),
+      name: faker.system.fileName(),
+      description: faker.lorem.sentence(),
+      riskLevel: getRandomElement(['low', 'medium', 'high', 'critical'] as const)
+    })),
+    supportedOS,
+    supportedDevices,
+    createdAt: getRandomDate(new Date(Date.now() - 365 * 24 * 60 * 60 * 1000), new Date()),
+    updatedAt: getRandomDate(new Date(Date.now() - 30 * 24 * 60 * 60 * 1000), new Date())
   };
-}
+};
 
-// Generate individual entities
+// Generate app usage data
+const generateAppUsage = (
+  app: App,
+  device: Device,
+  enterpriseId: string,
+  towerId?: string
+): AppUsage => {
+  const actionCount = getRandomInt(1, 10);
+  const lastUsed = getRandomDate(new Date(Date.now() - 7 * 24 * 60 * 60 * 1000), new Date());
+  
+  return {
+    appId: app.id,
+    deviceId: device.id,
+    userId: device.userId,
+    enterpriseId,
+    lastUsed,
+    actions: Array.from({ length: actionCount }, () => {
+      const action = getRandomElement(app.actions);
+      const timestamp = getRandomDate(new Date(Date.parse(lastUsed) - 24 * 60 * 60 * 1000), new Date(lastUsed));
+      const status = getRandomElement(['allowed', 'denied', 'notified'] as const);
+      
+      return {
+        actionId: action.id,
+        timestamp,
+        status,
+        policyId: status !== 'allowed' ? faker.string.uuid() : undefined,
+        towerId,
+        details: {
+          location: device.location,
+          signalStrength: getRandomInt(-90, -40),
+          carrier: device.carrier
+        }
+      };
+    })
+  };
+};
+
+// Generate device with proper relationships
 const generateDevice = (
   id: number,
   enterpriseId: string,
   userId: string,
-  carrier: Carrier,
-  os: OperatingSystem,
-  towerId?: string
-): Device => ({
-  id: `dev_${id.toString().padStart(8, '0')}`,
-  name: `${faker.company.name()} ${getRandomElement(CONFIG.deviceTypes)} ${faker.string.alphanumeric(4).toUpperCase()}`,
-  type: getRandomElement(CONFIG.deviceTypes),
-  os,
-  carrier,
-  model: `${os} Device ${faker.string.alphanumeric(4)}`,
-  serialNumber: faker.string.alphanumeric(12).toUpperCase(),
-  status: getRandomElement(['active', 'inactive', 'quarantined']),
-  lastSeen: getRandomDate(new Date(Date.now() - 7 * 24 * 60 * 60 * 1000), new Date()),
-  enterpriseId,
-  userId,
-  towerId,
-  location: {
-    latitude: parseFloat(faker.location.latitude().toString()),
-    longitude: parseFloat(faker.location.longitude().toString()),
-    address: faker.location.streetAddress()
-  },
-  securityStatus: {
-    isCompliant: Math.random() > 0.2,
-    lastScan: getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date()),
-    vulnerabilities: getRandomInt(0, 5),
-    patchLevel: faker.system.semver()
-  },
-  appUsage: []
-});
+  tower?: Tower
+): Device => {
+  const type = getRandomElement(CONFIG.deviceTypes);
+  const os = getRandomElement(CONFIG.operatingSystems);
+  const carrier = getRandomElement(CONFIG.carriers);
+  const status = getRandomElement(['active', 'inactive', 'quarantined', 'discovered'] as const);
+  const isCompliant = Math.random() > 0.2;
+  const vulnerabilities = getRandomInt(0, 5);
+  
+  const major = String(getRandomInt(1, 9));
+  const minor = String(getRandomInt(0, 9));
+  const patch = String(getRandomInt(0, 9));
+  
+  const baseDevice = {
+    id: `dev_${String(id).padStart(8, '0')}`,
+    name: `${faker.company.name()} ${type} ${faker.string.alphanumeric(4).toUpperCase()}`,
+    type,
+    os,
+    carrier,
+    model: `${os} Device ${faker.string.alphanumeric(4)}`,
+    serialNumber: faker.string.alphanumeric(12).toUpperCase(),
+    status,
+    lastSeen: getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date()),
+    enterpriseId,
+    userId,
+    towerId: tower?.id,
+    location: getRandomLocation(),
+    securityStatus: {
+      isCompliant,
+      lastScan: getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date()),
+      vulnerabilities,
+      patchLevel: `${major}.${minor}.${patch}`,
+      securityScore: Math.max(0, 100 - (vulnerabilities * 10) - (isCompliant ? 0 : 20)),
+      lastPolicyCheck: getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date()),
+      policyViolations: isCompliant ? [] : Array.from({ length: getRandomInt(1, 3) }, () => ({
+        policyId: faker.string.uuid(),
+        timestamp: getRandomDate(new Date(Date.now() - 7 * 24 * 60 * 60 * 1000), new Date()),
+        action: getRandomElement(['deny', 'notify', 'quarantine'] as const),
+        resolved: Math.random() > 0.5
+      }))
+    }
+  };
 
+  if (status === 'discovered') {
+    return {
+      ...baseDevice,
+      discovery: {
+        discoveredAt: getRandomDate(new Date(Date.now() - 7 * 24 * 60 * 60 * 1000), new Date()),
+        discoveredBy: tower?.id || faker.string.uuid(),
+        autoApproved: Math.random() > 0.5,
+        approvedBy: Math.random() > 0.5 ? faker.string.uuid() : undefined,
+        approvedAt: Math.random() > 0.5 ? getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date()) : undefined
+      }
+    };
+  }
+
+  return {
+    ...baseDevice,
+    discovery: {
+      discoveredAt: new Date().toISOString(),
+      discoveredBy: tower?.id || faker.string.uuid(),
+      autoApproved: false,
+      approvedBy: undefined,
+      approvedAt: undefined
+    }
+  };
+};
+
+// Generate tower with proper carrier and device support
 const generateTower = (id: number): Tower => {
   const carrierCount = getRandomInt(CONFIG.towers.carriersPerTower.min, CONFIG.towers.carriersPerTower.max);
   const selectedCarriers = faker.helpers.arrayElements(CONFIG.carriers, carrierCount);
+  const status = getRandomElement(['active', 'maintenance', 'inactive'] as const);
+  const location = getRandomLocation();
 
   return {
-    id: `tower_${id.toString().padStart(8, '0')}`,
+    id: `tower_${String(id).padStart(8, '0')}`,
     name: `${faker.company.name()} Tower ${faker.string.alphanumeric(4).toUpperCase()}`,
-    status: getRandomElement(['active', 'maintenance', 'inactive']),
-    location: {
-      latitude: parseFloat(faker.location.latitude().toString()),
-      longitude: parseFloat(faker.location.longitude().toString()),
-      address: faker.location.streetAddress()
-    },
+    status,
+    location,
     carriers: selectedCarriers.map(carrier => ({
       carrier,
       supportedOS: faker.helpers.arrayElements(CONFIG.operatingSystems, getRandomInt(1, 3)),
       supportedDevices: faker.helpers.arrayElements(CONFIG.deviceTypes, getRandomInt(1, 3)),
       bandwidth: getRandomInt(100, 1000),
-      frequency: getRandomInt(700, 6000)
+      frequency: getRandomInt(700, 6000),
+      coverage: {
+        radius: getRandomInt(2, 10),
+        signalStrength: getRandomInt(-90, -40)
+      }
     })),
     equipment: [
       {
         type: 'Antenna',
         model: faker.helpers.arrayElement(['Ericsson AIR 6449', 'Nokia AirScale', 'Samsung MIMO']),
-        status: getRandomElement(['operational', 'maintenance', 'faulty']),
-        lastMaintenance: getRandomDate(new Date(Date.now() - 90 * 24 * 60 * 60 * 1000), new Date())
+        status: getRandomElement(['operational', 'maintenance', 'faulty'] as const),
+        lastMaintenance: getRandomDate(new Date(Date.now() - 90 * 24 * 60 * 60 * 1000), new Date()),
+        capabilities: {
+          deviceDiscovery: true,
+          policyEnforcement: true,
+          appMonitoring: true
+        }
       }
     ],
-    coverage: {
-      radius: getRandomInt(2, 10),
-      signalStrength: getRandomInt(-90, -40),
-      capacity: getRandomInt(100, 1000)
-    },
     realEstateProvider: getRandomElement(CONFIG.realEstateProviders),
     integrationStatus: {
       isActive: Math.random() > 0.1,
       lastSync: getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date()),
-      provider: getRandomElement(['TowerDB', 'CarrierConnect', 'TowerSync'])
+      provider: getRandomElement(['TowerDB', 'CarrierConnect', 'TowerSync'] as const),
+      features: {
+        deviceDiscovery: true,
+        policyEnforcement: true,
+        appMonitoring: true
+      }
+    },
+    deviceDiscovery: {
+      enabled: CONFIG.towers.discoveryEnabled,
+      lastScan: getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date()),
+      discoveredDevices: []
+    },
+    policyEnforcement: {
+      activePolicies: [],
+      lastEnforcement: getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date()),
+      violations: []
     },
     connectedDevices: []
   };
 };
 
-const generatePolicy = (enterpriseId: string): Policy => ({
-  id: `pol_${faker.string.alphanumeric(8).toUpperCase()}`,
-  enterpriseId,
-  name: `${faker.company.name()} Security Policy`,
-  description: faker.lorem.sentence(),
-  priority: getRandomElement(['low', 'medium', 'high', 'critical']),
-  status: getRandomElement(['active', 'inactive']),
-  rules: [
-    {
-      appId: faker.string.uuid(),
-      actions: [
-        {
-          actionId: faker.string.uuid(),
-          allowedRoles: faker.helpers.arrayElements(CONFIG.userRoles, getRandomInt(1, 3)),
-          conditions: {
-            deviceTypes: faker.helpers.arrayElements(CONFIG.deviceTypes, getRandomInt(1, 3)),
-            operatingSystems: faker.helpers.arrayElements(CONFIG.operatingSystems, getRandomInt(1, 3)),
-            carriers: faker.helpers.arrayElements(CONFIG.carriers, getRandomInt(1, 3))
-          }
-        }
-      ]
-    }
-  ],
-  enforcement: {
-    action: getRandomElement(['allow', 'deny', 'notify', 'quarantine']),
-    notifyUsers: [],
-    autoRemediation: Math.random() > 0.5
-  },
-  createdAt: getRandomDate(new Date(Date.now() - 365 * 24 * 60 * 60 * 1000), new Date()),
-  updatedAt: getRandomDate(new Date(Date.now() - 30 * 24 * 60 * 60 * 1000), new Date())
-});
+// Generate policy with proper rules and enforcement
+const generatePolicy = (
+  id: string,
+  enterpriseId: string,
+  apps: App[],
+  users: { id: string; role: UserRole }[]
+): Policy => {
+  const priority = getRandomElement(['low', 'medium', 'high', 'critical'] as const);
+  const status = getRandomElement(['active', 'inactive'] as const);
+  const selectedApps = faker.helpers.arrayElements(apps, getRandomInt(1, 3));
+  const selectedUsers = faker.helpers.arrayElements(users, getRandomInt(1, 5));
 
-const generateEnterprise = (id: number): Enterprise => {
-  const userCount = getRandomInt(CONFIG.enterprises.usersPerEnterprise.min, CONFIG.enterprises.usersPerEnterprise.max);
-  const tier = generateEnterpriseTier();
-  
-  // Generate users with all roles
-  const users = Array.from({ length: userCount }, (_, i) => {
-    // Determine role based on index
-    let role: UserRole;
-    if (i < userCount * 0.1) role = 'admin';
-    else if (i < userCount * 0.3) role = 'manager';
-    else if (i < userCount * 0.7) role = 'employee';
-    else if (i < userCount * 0.9) role = 'contractor';
-    else role = 'guest';
-
-    return {
-      id: `usr_${id}_${i.toString().padStart(6, '0')}`,
-      email: faker.internet.email(),
-      role,
-      department: faker.commerce.department(),
-      devices: [] as string[]
-    };
-  });
-  
   return {
+    id: `pol_${id}`,
+    enterpriseId,
+    name: `${faker.company.name()} Security Policy`,
+    description: faker.lorem.sentence(),
+    priority,
+    status,
+    rules: selectedApps.map(app => ({
+      appId: app.id,
+      actions: app.actions.map(action => ({
+        actionId: action.id,
+        allowedRoles: faker.helpers.arrayElements(CONFIG.userRoles, getRandomInt(1, 3)),
+    conditions: {
+          deviceTypes: faker.helpers.arrayElements(CONFIG.deviceTypes, getRandomInt(1, 3)),
+          operatingSystems: faker.helpers.arrayElements(CONFIG.operatingSystems, getRandomInt(1, 3)),
+      carriers: faker.helpers.arrayElements(CONFIG.carriers, getRandomInt(1, 3)),
+      timeRestrictions: Math.random() > 0.7 ? {
+        start: '09:00',
+        end: '17:00',
+            days: [1, 2, 3, 4, 5]
+      } : undefined,
+          locationRestrictions: Math.random() > 0.7 ? {
+            radius: getRandomInt(1, 5)
+      } : undefined
+        }
+      }))
+    })),
+    enforcement: {
+      action: getRandomElement(['allow', 'deny', 'notify', 'quarantine'] as const),
+      notifyUsers: selectedUsers.map(u => u.id),
+      autoRemediation: Math.random() > 0.5,
+      towerEnforcement: {
+        enabled: Math.random() > 0.3,
+        priority: getRandomInt(1, 5),
+        affectedTowers: [],
+        lastEnforced: getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date())
+      }
+    },
+    metrics: {
+      totalEnforcements: getRandomInt(0, 1000),
+      violations: getRandomInt(0, 100),
+      autoRemediated: getRandomInt(0, 50),
+      lastViolation: Math.random() > 0.7 ? getRandomDate(new Date(Date.now() - 7 * 24 * 60 * 60 * 1000), new Date()) : undefined
+    },
+    createdAt: getRandomDate(new Date(Date.now() - 365 * 24 * 60 * 60 * 1000), new Date()),
+    updatedAt: getRandomDate(new Date(Date.now() - 30 * 24 * 60 * 60 * 1000), new Date())
+  };
+};
+
+// Generate enterprise with all related data
+const generateEnterprise = async (id: number): Promise<EnterpriseData> => {
+  const tier = getRandomElement(['standard', 'premium'] as const);
+  const subscriptionTier = getRandomElement(CONFIG.subscriptionTiers);
+  const userCount = getRandomInt(CONFIG.enterprises.usersPerEnterprise.min, CONFIG.enterprises.usersPerEnterprise.max);
+  const policyCount = getRandomInt(CONFIG.enterprises.policiesPerEnterprise.min, CONFIG.enterprises.policiesPerEnterprise.max);
+  const appCount = getRandomInt(CONFIG.enterprises.appsPerEnterprise.min, CONFIG.enterprises.appsPerEnterprise.max);
+  
+  // Generate apps first
+  const apps = Array.from({ length: appCount }, (_, i) => generateApp(i + 1));
+  
+  // Generate users
+  const users = Array.from({ length: userCount }, (_, i) => ({
+    id: `usr_${id}_${i.toString().padStart(6, '0')}`,
+    email: faker.internet.email(),
+    role: getRandomElement(CONFIG.userRoles),
+    department: faker.commerce.department(),
+    devices: [] as string[],
+    lastLogin: getRandomDate(new Date(Date.now() - 30 * 24 * 60 * 60 * 1000), new Date()),
+    status: getRandomElement(['active', 'inactive', 'suspended'] as const),
+    preferences: {
+      theme: getRandomElement(['light', 'dark', 'system'] as const),
+      notifications: {
+        email: Math.random() > 0.2,
+        push: Math.random() > 0.2,
+        sms: Math.random() > 0.5
+      }
+    }
+  }));
+
+  // Generate policies
+  const policies = Array.from({ length: policyCount }, (_, i) => 
+    generatePolicy(faker.string.alphanumeric(8).toUpperCase(), `ent_${id.toString().padStart(8, '0')}`, apps, users)
+  );
+
+  // Generate towers
+  const towerCount = getRandomInt(5, 20);
+  const towers = Array.from({ length: towerCount }, (_, i) => generateTower(i + 1));
+
+  // Generate devices for each user
+  let deviceId = 1;
+  const devices: Device[] = [];
+  const appUsage: AppUsage[] = [];
+
+  for (const user of users) {
+    const deviceCount = getRandomInt(CONFIG.enterprises.devicesPerUser.min, CONFIG.enterprises.devicesPerUser.max);
+    const userDevices: string[] = [];
+
+    for (let i = 0; i < deviceCount; i++) {
+      const tower = getRandomElement(towers);
+      const device = generateDevice(deviceId++, `ent_${id.toString().padStart(8, '0')}`, user.id, tower);
+      devices.push(device);
+      userDevices.push(device.id);
+
+      // Generate app usage for each device
+      const deviceApps = faker.helpers.arrayElements(apps, getRandomInt(1, 5));
+      for (const app of deviceApps) {
+        appUsage.push(generateAppUsage(app, device, `ent_${id.toString().padStart(8, '0')}`, tower.id));
+      }
+
+      // Update tower's connected devices
+      tower.connectedDevices.push(device.id);
+    }
+
+    user.devices = userDevices;
+  }
+
+  // Update tower discovery and policy enforcement
+  for (const tower of towers) {
+    // Add discovered devices
+    const discoveredCount = getRandomInt(0, 5);
+    tower.deviceDiscovery.discoveredDevices = Array.from({ length: discoveredCount }, () => ({
+      deviceId: faker.string.uuid(),
+      discoveredAt: getRandomDate(new Date(Date.now() - 7 * 24 * 60 * 60 * 1000), new Date()),
+      status: getRandomElement(['pending', 'approved', 'rejected']),
+      autoApproval: Math.random() > 0.5,
+      details: {
+        type: getRandomElement(CONFIG.deviceTypes),
+        os: getRandomElement(CONFIG.operatingSystems),
+        carrier: getRandomElement(CONFIG.carriers),
+        signalStrength: getRandomInt(-90, -40)
+      }
+    }));
+
+    // Add policy enforcement
+    const activePolicies = faker.helpers.arrayElements(policies, getRandomInt(1, 5));
+    tower.policyEnforcement.activePolicies = activePolicies.map(p => p.id);
+    tower.policyEnforcement.violations = Array.from({ length: getRandomInt(0, 10) }, () => ({
+      policyId: getRandomElement(activePolicies).id,
+      deviceId: getRandomElement(devices).id,
+      timestamp: getRandomDate(new Date(Date.now() - 7 * 24 * 60 * 60 * 1000), new Date()),
+      action: getRandomElement(['deny', 'notify', 'quarantine'] as const),
+      resolved: Math.random() > 0.3
+    }));
+  }
+
+  // Calculate metrics
+  const metrics = {
+    devices: {
+      total: devices.length,
+      active: devices.filter(d => d.status === 'active').length,
+      nonCompliant: devices.filter(d => !d.securityStatus.isCompliant).length,
+      discovered: devices.filter(d => d.status === 'discovered').length,
+      byType: CONFIG.deviceTypes.reduce((acc, type) => ({
+        ...acc,
+        [type]: devices.filter(d => d.type === type).length
+      }), {} as Record<DeviceType, number>),
+      byOS: CONFIG.operatingSystems.reduce((acc, os) => ({
+        ...acc,
+        [os]: devices.filter(d => d.os === os).length
+      }), {} as Record<OperatingSystem, number>),
+      byCarrier: CONFIG.carriers.reduce((acc, carrier) => ({
+        ...acc,
+        [carrier]: devices.filter(d => d.carrier === carrier).length
+      }), {} as Record<Carrier, number>)
+    },
+    policies: {
+      total: policies.length,
+      active: policies.filter(p => p.status === 'active').length,
+      byPriority: (['low', 'medium', 'high', 'critical'] as const).reduce((acc, priority) => ({
+        ...acc,
+        [priority]: policies.filter(p => p.priority === priority).length
+      }), {} as Record<PolicyPriority, number>),
+      enforcementStats: {
+        total: policies.reduce((sum, p) => sum + p.metrics.totalEnforcements, 0),
+        violations: policies.reduce((sum, p) => sum + p.metrics.violations, 0),
+        autoRemediated: policies.reduce((sum, p) => sum + p.metrics.autoRemediated, 0)
+      }
+    },
+    towers: {
+      total: towers.length,
+      active: towers.filter(t => t.status === 'active').length,
+      byCarrier: CONFIG.carriers.reduce((acc, carrier) => ({
+        ...acc,
+        [carrier]: towers.filter(t => t.carriers.some(c => c.carrier === carrier)).length
+      }), {} as Record<Carrier, number>),
+      byStatus: (['active', 'maintenance', 'inactive'] as const).reduce((acc, status) => ({
+        ...acc,
+        [status]: towers.filter(t => t.status === status).length
+      }), {} as Record<TowerStatus, number>)
+    },
+    security: {
+      complianceScore: Math.floor(Math.random() * 40) + 60,
+      criticalAlerts: getRandomInt(0, 5),
+      recentIncidents: Array.from({ length: getRandomInt(0, 5) }, () => ({
+        id: faker.string.uuid(),
+        type: getRandomElement(['policy_violation', 'device_discovery', 'tower_maintenance', 'security_breach'] as const),
+        severity: getRandomElement(['low', 'medium', 'high', 'critical'] as const),
+        description: faker.lorem.sentence(),
+        timestamp: getRandomDate(new Date(Date.now() - 7 * 24 * 60 * 60 * 1000), new Date()),
+        affectedEntities: Array.from({ length: getRandomInt(1, 3) }, () => ({
+          type: getRandomElement(['device', 'tower', 'policy', 'user'] as const),
+          id: faker.string.uuid()
+        })),
+        status: getRandomElement(['open', 'investigating', 'resolved'] as const),
+        resolution: Math.random() > 0.5 ? {
+          action: faker.lorem.sentence(),
+          resolvedBy: faker.string.uuid(),
+          resolvedAt: getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date())
+        } : undefined
+      }))
+    },
+    apps: {
+      total: apps.length,
+      byCategory: CONFIG.appCategories.reduce((acc, category) => ({
+        ...acc,
+        [category]: apps.filter(a => a.category === category).length
+      }), {} as Record<AppCategory, number>),
+      usageStats: {
+        totalActions: appUsage.reduce((sum, usage) => sum + usage.actions.length, 0),
+        violations: appUsage.reduce((sum, usage) => 
+          sum + usage.actions.filter(a => a.status !== 'allowed').length, 0),
+        byApp: apps.reduce((acc, app) => {
+          const appUsages = appUsage.filter(u => u.appId === app.id);
+          const lastUsed = appUsages.length > 0 
+            ? appUsages.reduce((latest, u) => 
+                new Date(u.lastUsed) > new Date(latest) ? u.lastUsed : latest, '')
+            : new Date().toISOString(); // Use current time as fallback
+          return {
+            ...acc,
+            [app.id]: {
+              total: appUsages.reduce((sum, u) => sum + u.actions.length, 0),
+              violations: appUsages.reduce((sum, u) => 
+                sum + u.actions.filter(a => a.status !== 'allowed').length, 0),
+              lastUsed
+            }
+          };
+        }, {} as Record<string, { total: number; violations: number; lastUsed: string }>)
+      }
+    }
+  };
+
+  // Create enterprise object
+  const enterprise: Enterprise = {
     id: `ent_${id.toString().padStart(8, '0')}`,
-    name: `${faker.company.name()} ${faker.helpers.arrayElement(['Inc', 'LLC', 'Corp', 'Ltd', 'Group'])}`,
+    name: `${faker.company.name()} Ltd`,
     tier,
     createdAt: getRandomDate(new Date(Date.now() - 365 * 24 * 60 * 60 * 1000), new Date()),
     updatedAt: getRandomDate(new Date(Date.now() - 30 * 24 * 60 * 60 * 1000), new Date()),
@@ -232,86 +559,67 @@ const generateEnterprise = (id: number): Enterprise => {
     },
     subscription: {
       startDate: getRandomDate(new Date(Date.now() - 365 * 24 * 60 * 60 * 1000), new Date()),
-      endDate: getRandomDate(new Date(), new Date(Date.now() + 365 * 24 * 60 * 60 * 1000)),
+      endDate: getRandomDate(new Date(Date.now() + 365 * 24 * 60 * 60 * 1000), new Date(Date.now() + 730 * 24 * 60 * 60 * 1000)),
       status: 'active',
-      features: generateEnterpriseFeatures(tier)
-    },
-    metrics: {
-      devices: {
-        total: 0, // Will be updated after device generation
-        active: 0,
-        nonCompliant: 0
-      },
-      policies: {
-        total: 0, // Will be updated after policy generation
-        active: 0
-      },
-      towers: {
-        total: 0, // Will be updated after tower connection
-        active: 0
-      },
-      security: {
-        complianceScore: Math.floor(Math.random() * 40) + 60, // Random score between 60-100
-        criticalAlerts: Math.floor(Math.random() * 5),
-        recentIncidents: []
+      tier: subscriptionTier,
+      features: {
+        autoRemediation: subscriptionTier === 'premium' || subscriptionTier === 'enterprise',
+        realTimeMonitoring: true,
+        customPolicies: subscriptionTier !== 'basic',
+        deviceDiscovery: true,
+        apiAccess: subscriptionTier !== 'basic',
+        towerEnforcement: subscriptionTier === 'premium' || subscriptionTier === 'enterprise',
+        appMonitoring: true
       }
     },
+    metrics,
     users,
-    policies: [],
+    policies: policies.map(p => p.id),
+    apps: apps.map(a => a.id),
     integrations: [
       {
         type: 'real_estate',
         provider: getRandomElement(CONFIG.realEstateProviders),
         status: 'active',
-        lastSync: getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date())
+        lastSync: getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date()),
+        features: {
+          deviceDiscovery: true,
+          policyEnforcement: subscriptionTier === 'premium' || subscriptionTier === 'enterprise',
+          appMonitoring: true
+        }
       },
       {
         type: 'carrier',
         provider: getRandomElement(CONFIG.carriers),
         status: 'active',
-        lastSync: getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date())
+        lastSync: getRandomDate(new Date(Date.now() - 24 * 60 * 60 * 1000), new Date()),
+        features: {
+          deviceDiscovery: true,
+          policyEnforcement: true,
+          appMonitoring: true
+        }
       }
     ],
-    connectedTowers: []
+    connectedTowers: towers.map(t => t.id)
+  };
+
+  return {
+    enterprise,
+    devices,
+    policies,
+    apps,
+    appUsage,
+    connectedTowers: towers,
+    metrics
   };
 };
 
 // Main generation function
 export const generateDataset = async () => {
   console.log('Generating enterprises...');
-  const enterprises = Array.from({ length: ENTERPRISE_COUNT }, (_, i) => generateEnterprise(i + 1));
-
-  // Create users.json with all users but only admin users will be able to log in
-  const allUsers = enterprises.flatMap(enterprise => 
-    enterprise.users.map(user => ({
-      id: user.id,
-      name: faker.person.fullName(),
-      email: user.email,
-      password: HASHED_PASSWORD, // All users have the same password for demo
-      role: user.role,
-      enterpriseId: enterprise.id,
-      enterpriseName: enterprise.name,
-      lastLogin: getRandomDate(new Date(Date.now() - 30 * 24 * 60 * 60 * 1000), new Date()),
-      status: 'active',
-      preferences: {
-        theme: 'system',
-        notifications: {
-          email: true,
-          push: true,
-          sms: false
-        }
-      }
-    }))
+  const enterprises = await Promise.all(
+    Array.from({ length: CONFIG.enterprises.count }, (_, i) => generateEnterprise(i + 1))
   );
-
-  // Write users.json
-  await fs.writeFile(
-    path.join(process.cwd(), 'lib/data/seed-data/users.json'),
-    JSON.stringify(allUsers, null, 2)
-  );
-
-  console.log('Generating towers...');
-  const towers = Array.from({ length: TOWERS_PER_ENTERPRISE }, (_, i) => generateTower(i + 1));
 
   // Create base directory for seed data
   const seedDataDir = path.join(process.cwd(), 'lib/data/seed-data');
@@ -321,116 +629,60 @@ export const generateDataset = async () => {
   const enterprisesDir = path.join(seedDataDir, 'enterprises');
   await fs.mkdir(enterprisesDir, { recursive: true });
 
-  // Generate data for each enterprise
-  for (const enterprise of enterprises) {
-    console.log(`\nGenerating data for enterprise ${enterprise.id}...`);
-    const enterpriseDir = path.join(enterprisesDir, enterprise.id);
+  // Write enterprise data
+  for (const data of enterprises) {
+    const enterpriseDir = path.join(enterprisesDir, data.enterprise.id);
     await fs.mkdir(enterpriseDir, { recursive: true });
-
-    // Generate devices for each user
-    const devices: Device[] = [];
-    enterprise.users.forEach(user => {
-      const deviceCount = getRandomInt(CONFIG.enterprises.devicesPerUser.min, CONFIG.enterprises.devicesPerUser.max);
-      const userDevices = Array.from({ length: deviceCount }, (_, i) => {
-        const carrier = getRandomElement(CONFIG.carriers);
-        const os = getRandomElement(CONFIG.operatingSystems);
-        // Find a compatible tower
-        const compatibleTower = towers.find(tower => 
-          tower.carriers.some(c => 
-            c.carrier === carrier && 
-            c.supportedOS.includes(os) && 
-            c.supportedDevices.includes(getRandomElement(CONFIG.deviceTypes))
-          )
-        );
-        return generateDevice(devices.length + 1, enterprise.id, user.id, carrier, os, compatibleTower?.id);
-      });
-      devices.push(...userDevices);
-      user.devices = userDevices.map(d => d.id);
-    });
-
-    // Generate policies
-    const policies = Array.from(
-      { length: POLICIES_PER_ENTERPRISE },
-      () => generatePolicy(enterprise.id)
-    );
-    enterprise.policies = policies.map(p => p.id);
-
-    // Connect towers to enterprise
-    const connectedTowers = faker.helpers.arrayElements(
-      towers,
-      getRandomInt(5, 20)
-    );
-    enterprise.connectedTowers = connectedTowers.map(t => t.id);
-
-    // Update tower connected devices
-    connectedTowers.forEach(tower => {
-      const towerDevices = devices.filter(d => 
-        tower.carriers.some(c => 
-          c.carrier === d.carrier && 
-          c.supportedOS.includes(d.os) && 
-          c.supportedDevices.includes(d.type)
-        )
-      );
-      tower.connectedDevices = towerDevices.map(d => d.id);
-    });
-
-    // Calculate enterprise metrics
-    const metrics = {
-      deviceCount: devices.length,
-      activeDevices: devices.filter(d => d.status === 'active').length,
-      nonCompliantDevices: devices.filter(d => !d.securityStatus.isCompliant).length,
-      policyCount: policies.length,
-      activePolicies: policies.filter(p => p.status === 'active').length,
-      towerConnections: enterprise.connectedTowers.length,
-      securityScore: Math.floor(Math.random() * 40) + 60 // Random score between 60-100
-    };
-
-    // Create enterprise data object
-    const enterpriseData: EnterpriseData = {
-      enterprise,
-      devices,
-      policies,
-      connectedTowers: connectedTowers,
-      metrics
-    };
 
     // Write enterprise data to separate files
     await fs.writeFile(
       path.join(enterpriseDir, 'enterprise.json'),
-      JSON.stringify(enterprise, null, 2)
+      JSON.stringify(data.enterprise, null, 2)
     );
     await fs.writeFile(
       path.join(enterpriseDir, 'devices.json'),
-      JSON.stringify(devices, null, 2)
+      JSON.stringify(data.devices, null, 2)
     );
     await fs.writeFile(
       path.join(enterpriseDir, 'policies.json'),
-      JSON.stringify(policies, null, 2)
+      JSON.stringify(data.policies, null, 2)
     );
     await fs.writeFile(
       path.join(enterpriseDir, 'towers.json'),
-      JSON.stringify(connectedTowers, null, 2)
+      JSON.stringify(data.connectedTowers, null, 2)
+    );
+    await fs.writeFile(
+      path.join(enterpriseDir, 'apps.json'),
+      JSON.stringify(data.apps, null, 2)
+    );
+    await fs.writeFile(
+      path.join(enterpriseDir, 'app-usage.json'),
+      JSON.stringify(data.appUsage, null, 2)
     );
     await fs.writeFile(
       path.join(enterpriseDir, 'metrics.json'),
-      JSON.stringify(metrics, null, 2)
+      JSON.stringify(data.metrics, null, 2)
     );
   }
 
   // Write global data
   await fs.writeFile(
     path.join(seedDataDir, 'enterprises.json'),
-    JSON.stringify(enterprises.map(e => ({ id: e.id, name: e.name })), null, 2)
+    JSON.stringify(enterprises.map(e => ({ 
+      id: e.enterprise.id, 
+      name: e.enterprise.name,
+      tier: e.enterprise.tier,
+      subscription: e.enterprise.subscription
+    })), null, 2)
   );
-  await fs.writeFile(
-    path.join(seedDataDir, 'towers.json'),
-    JSON.stringify(towers.map(t => ({ id: t.id, name: t.name })), null, 2)
-  );
-
+  
   console.log('\nDataset generation complete!');
   console.log(`Generated:
     - ${enterprises.length} enterprises
-    - ${towers.length} towers
+    - ${enterprises.reduce((sum, e) => sum + e.devices.length, 0)} devices
+    - ${enterprises.reduce((sum, e) => sum + e.policies.length, 0)} policies
+    - ${enterprises.reduce((sum, e) => sum + e.apps.length, 0)} apps
+    - ${enterprises.reduce((sum, e) => sum + e.connectedTowers.length, 0)} towers
   `);
   console.log(`\nData written to: ${seedDataDir}`);
 };
