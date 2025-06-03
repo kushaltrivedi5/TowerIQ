@@ -1,23 +1,23 @@
 {
   "id": "ent_00000004",
-  "name": "Friesen, Stehr and Paucek Ltd",
-  "tier": "premium",
-  "createdAt": "2025-04-09T11:10:41.702Z",
-  "updatedAt": "2025-05-30T06:18:23.879Z",
-  "contactEmail": "Gianni_Hettinger@hotmail.com",
-  "contactPhone": "1-879-451-4398 x22059",
+  "name": "Schumm Inc Ltd",
+  "tier": "standard",
+  "createdAt": "2025-04-04T02:10:12.308Z",
+  "updatedAt": "2025-05-13T20:26:17.006Z",
+  "contactEmail": "Desmond_Shields@yahoo.com",
+  "contactPhone": "(427) 852-2724 x287",
   "address": {
-    "street": "155 Devante Gateway",
-    "city": "South Merritt",
-    "state": "Minnesota",
-    "country": "Colombia",
-    "zipCode": "18069-1037"
+    "street": "432 W Bridge Street",
+    "city": "Conntown",
+    "state": "West Virginia",
+    "country": "Democratic Republic of the Congo",
+    "zipCode": "42407"
   },
   "subscription": {
-    "startDate": "2024-07-22T12:13:57.970Z",
-    "endDate": "2026-09-29T01:25:37.445Z",
+    "startDate": "2025-02-23T23:15:59.707Z",
+    "endDate": "2026-09-08T05:54:59.471Z",
     "status": "active",
-    "tier": "enterprise",
+    "tier": "premium",
     "features": {
       "autoRemediation": true,
       "realTimeMonitoring": true,
@@ -30,528 +30,442 @@
   },
   "metrics": {
     "devices": {
-      "total": 99,
-      "active": 21,
-      "nonCompliant": 23,
-      "discovered": 22,
+      "total": 138,
+      "active": 26,
+      "nonCompliant": 25,
+      "discovered": 32,
       "byType": {
-        "smartphone": 15,
-        "tablet": 15,
-        "laptop": 22,
-        "IoT": 32,
-        "gateway": 15
+        "smartphone": 32,
+        "tablet": 30,
+        "laptop": 25,
+        "IoT": 24,
+        "gateway": 27
       },
       "byOS": {
-        "iOS": 23,
-        "Android": 28,
-        "Windows": 27,
-        "Other": 21
+        "iOS": 39,
+        "Android": 29,
+        "Windows": 30,
+        "Other": 40
       },
       "byCarrier": {
-        "AT&T": 22,
-        "Verizon": 18,
-        "T-Mobile": 18,
-        "Sprint": 21,
-        "US Cellular": 20
+        "AT&T": 26,
+        "Verizon": 23,
+        "T-Mobile": 29,
+        "Sprint": 36,
+        "US Cellular": 24
       }
     },
     "policies": {
-      "total": 20,
-      "active": 10,
+      "total": 10,
+      "active": 3,
       "byPriority": {
-        "low": 7,
-        "medium": 5,
-        "high": 5,
+        "low": 4,
+        "medium": 2,
+        "high": 1,
         "critical": 3
       },
       "enforcementStats": {
-        "total": 11958,
-        "violations": 845,
-        "autoRemediated": 552
+        "total": 5343,
+        "violations": 440,
+        "autoRemediated": 258
       }
     },
     "towers": {
-      "total": 18,
-      "active": 9,
+      "total": 13,
+      "active": 4,
       "byCarrier": {
-        "AT&T": 5,
-        "Verizon": 7,
+        "AT&T": 4,
+        "Verizon": 3,
         "T-Mobile": 6,
-        "Sprint": 6,
-        "US Cellular": 7
+        "Sprint": 8,
+        "US Cellular": 4
       },
       "byStatus": {
-        "active": 9,
+        "active": 4,
         "maintenance": 5,
         "inactive": 4
       }
     },
     "security": {
-      "complianceScore": 64,
-      "criticalAlerts": 1,
+      "complianceScore": 65,
+      "criticalAlerts": 2,
       "recentIncidents": [
         {
-          "id": "17d2e3f7-7574-498a-9b62-b24bf49ae9a1",
-          "type": "policy_violation",
-          "severity": "high",
-          "description": "Assumenda uxor voluptatem pauci.",
-          "timestamp": "2025-05-28T12:27:32.727Z",
-          "affectedEntities": [
-            {
-              "type": "tower",
-              "id": "816afe05-0f9f-43dd-9507-dc6178963c2e"
-            },
-            {
-              "type": "tower",
-              "id": "c1fcac54-d37d-4839-94e6-4f7cd08213d7"
-            },
-            {
-              "type": "tower",
-              "id": "199c2616-f2f2-43c1-ae41-e4ad545ae34d"
-            }
-          ],
-          "status": "resolved"
-        },
-        {
-          "id": "fa8cf6a8-8990-4a3d-a119-f3536e89f8dc",
-          "type": "policy_violation",
+          "id": "971f9d52-30b1-4b02-b075-5e76d9287a34",
+          "type": "tower_maintenance",
           "severity": "medium",
-          "description": "Suscipio custodia sodalitas tredecim libero clamo.",
-          "timestamp": "2025-05-29T14:38:42.404Z",
+          "description": "Nemo sub advoco adsidue.",
+          "timestamp": "2025-06-03T01:24:09.588Z",
           "affectedEntities": [
             {
               "type": "tower",
-              "id": "659084b1-39eb-41c8-ba6d-973ac961019f"
+              "id": "f1116a8b-4779-4f73-a1eb-3ad503f2f96e"
             },
             {
-              "type": "user",
-              "id": "05c2e21a-4de9-46cc-a1b3-70e60229a9db"
+              "type": "tower",
+              "id": "0a462548-5b56-481c-8b50-25166a275f31"
+            },
+            {
+              "type": "policy",
+              "id": "1cbe3ead-6e16-4347-b655-64ffe6b6ec72"
             }
           ],
           "status": "open",
           "resolution": {
-            "action": "Cenaculum necessitatibus vero sopor caritas armarium cura attollo cubitum.",
-            "resolvedBy": "2d282d12-a5ed-48e2-92cf-614000351e3b",
-            "resolvedAt": "2025-06-03T02:52:41.716Z"
+            "action": "Conforto benevolentia demulceo casso aegre mollitia tenuis.",
+            "resolvedBy": "9d4cc470-f511-4144-8a1c-5e01ecc592ce",
+            "resolvedAt": "2025-06-03T05:17:38.143Z"
           }
         },
         {
-          "id": "7afefec0-4e8e-4576-b801-526386fa01c3",
-          "type": "policy_violation",
+          "id": "80c337b7-c824-4777-ab82-4a3712a69c5c",
+          "type": "security_breach",
           "severity": "high",
-          "description": "Repellendus antea cuius defetiscor tondeo vergo theca crur tutis vorago.",
-          "timestamp": "2025-05-29T19:15:40.410Z",
+          "description": "Autem crebro adimpleo tunc officia.",
+          "timestamp": "2025-05-31T18:40:37.693Z",
           "affectedEntities": [
             {
-              "type": "tower",
-              "id": "ade436cf-a30f-4443-a3b8-291b921ff0fe"
-            },
-            {
-              "type": "tower",
-              "id": "668720b8-6302-47ea-92e9-2a3141c1639d"
-            },
-            {
-              "type": "tower",
-              "id": "d0e5881b-1d0a-4a86-a180-0468cefd5e06"
+              "type": "policy",
+              "id": "0e1b6681-11f9-4ba5-bf07-487c49582d89"
             }
           ],
           "status": "investigating"
         },
         {
-          "id": "77c90857-77b0-4d47-86cb-fa353169eabe",
-          "type": "security_breach",
-          "severity": "medium",
-          "description": "Iure concido versus depulso defessus sopor curo correptius.",
-          "timestamp": "2025-06-01T13:12:03.531Z",
+          "id": "f4979ac9-80f2-4909-9919-0bb95f86020f",
+          "type": "device_discovery",
+          "severity": "high",
+          "description": "Deporto apud defero.",
+          "timestamp": "2025-05-28T02:39:19.956Z",
           "affectedEntities": [
             {
-              "type": "user",
-              "id": "60c0d4cb-c289-4a27-b5e8-1f11162b0cf4"
+              "type": "tower",
+              "id": "05ad8419-b766-408a-8d2a-3698688540fb"
             },
             {
               "type": "user",
-              "id": "aabd5040-ffc2-4433-95de-f9b584be351d"
+              "id": "5d2a2b1d-4e94-4aab-9fb1-56c59ca2791a"
             },
             {
-              "type": "user",
-              "id": "6890f403-cca7-4eef-b213-7c318c174183"
+              "type": "tower",
+              "id": "834a5958-65b4-4920-b0d7-587fa239ff24"
             }
           ],
-          "status": "resolved"
+          "status": "open"
         }
       ]
     },
     "apps": {
-      "total": 72,
+      "total": 60,
       "byCategory": {
-        "productivity": 17,
-        "security": 8,
-        "communication": 15,
-        "enterprise": 17,
-        "custom": 15
+        "productivity": 12,
+        "security": 0,
+        "communication": 24,
+        "enterprise": 24,
+        "custom": 0
       },
       "usageStats": {
-        "totalActions": 1688,
-        "violations": 1138,
+        "totalActions": 2165,
+        "violations": 1426,
         "byApp": {
           "app_00000001": {
             "total": 20,
-            "violations": 15,
+            "violations": 13,
             "lastUsed": ""
           },
           "app_00000002": {
-            "total": 21,
-            "violations": 14,
-            "lastUsed": ""
-          },
-          "app_00000003": {
-            "total": 43,
-            "violations": 29,
-            "lastUsed": ""
-          },
-          "app_00000004": {
-            "total": 21,
-            "violations": 15,
-            "lastUsed": ""
-          },
-          "app_00000005": {
-            "total": 26,
-            "violations": 18,
-            "lastUsed": ""
-          },
-          "app_00000006": {
             "total": 8,
             "violations": 4,
             "lastUsed": ""
           },
+          "app_00000003": {
+            "total": 27,
+            "violations": 22,
+            "lastUsed": ""
+          },
+          "app_00000004": {
+            "total": 47,
+            "violations": 28,
+            "lastUsed": ""
+          },
+          "app_00000005": {
+            "total": 25,
+            "violations": 19,
+            "lastUsed": ""
+          },
+          "app_00000006": {
+            "total": 24,
+            "violations": 13,
+            "lastUsed": ""
+          },
           "app_00000007": {
-            "total": 35,
-            "violations": 23,
+            "total": 15,
+            "violations": 6,
             "lastUsed": ""
           },
           "app_00000008": {
             "total": 17,
-            "violations": 11,
+            "violations": 12,
             "lastUsed": ""
           },
           "app_00000009": {
-            "total": 58,
-            "violations": 42,
+            "total": 37,
+            "violations": 26,
             "lastUsed": ""
           },
           "app_00000010": {
-            "total": 17,
-            "violations": 10,
+            "total": 34,
+            "violations": 24,
             "lastUsed": ""
           },
           "app_00000011": {
-            "total": 31,
-            "violations": 22,
+            "total": 37,
+            "violations": 26,
             "lastUsed": ""
           },
           "app_00000012": {
-            "total": 18,
-            "violations": 14,
-            "lastUsed": ""
-          },
-          "app_00000013": {
-            "total": 38,
-            "violations": 23,
-            "lastUsed": ""
-          },
-          "app_00000014": {
-            "total": 17,
-            "violations": 11,
-            "lastUsed": ""
-          },
-          "app_00000015": {
-            "total": 32,
-            "violations": 15,
-            "lastUsed": ""
-          },
-          "app_00000016": {
-            "total": 0,
-            "violations": 0,
-            "lastUsed": "2025-06-03T12:26:14.345Z"
-          },
-          "app_00000017": {
-            "total": 20,
-            "violations": 13,
-            "lastUsed": ""
-          },
-          "app_00000018": {
-            "total": 31,
-            "violations": 20,
-            "lastUsed": ""
-          },
-          "app_00000019": {
-            "total": 22,
-            "violations": 17,
-            "lastUsed": ""
-          },
-          "app_00000020": {
-            "total": 27,
-            "violations": 21,
-            "lastUsed": ""
-          },
-          "app_00000021": {
-            "total": 29,
-            "violations": 20,
-            "lastUsed": ""
-          },
-          "app_00000022": {
-            "total": 27,
-            "violations": 15,
-            "lastUsed": ""
-          },
-          "app_00000023": {
-            "total": 29,
-            "violations": 17,
-            "lastUsed": ""
-          },
-          "app_00000024": {
-            "total": 26,
-            "violations": 20,
-            "lastUsed": ""
-          },
-          "app_00000025": {
-            "total": 34,
-            "violations": 30,
-            "lastUsed": ""
-          },
-          "app_00000026": {
-            "total": 24,
-            "violations": 17,
-            "lastUsed": ""
-          },
-          "app_00000027": {
-            "total": 31,
-            "violations": 28,
-            "lastUsed": ""
-          },
-          "app_00000028": {
-            "total": 1,
-            "violations": 1,
-            "lastUsed": ""
-          },
-          "app_00000029": {
-            "total": 18,
-            "violations": 14,
-            "lastUsed": ""
-          },
-          "app_00000030": {
-            "total": 24,
-            "violations": 15,
-            "lastUsed": ""
-          },
-          "app_00000031": {
-            "total": 31,
-            "violations": 20,
-            "lastUsed": ""
-          },
-          "app_00000032": {
-            "total": 12,
-            "violations": 7,
-            "lastUsed": ""
-          },
-          "app_00000033": {
-            "total": 20,
-            "violations": 16,
-            "lastUsed": ""
-          },
-          "app_00000034": {
-            "total": 16,
-            "violations": 11,
-            "lastUsed": ""
-          },
-          "app_00000035": {
-            "total": 16,
+            "total": 11,
             "violations": 10,
             "lastUsed": ""
           },
-          "app_00000036": {
+          "app_00000013": {
+            "total": 70,
+            "violations": 47,
+            "lastUsed": ""
+          },
+          "app_00000014": {
+            "total": 50,
+            "violations": 34,
+            "lastUsed": ""
+          },
+          "app_00000015": {
+            "total": 55,
+            "violations": 41,
+            "lastUsed": ""
+          },
+          "app_00000016": {
+            "total": 45,
+            "violations": 27,
+            "lastUsed": ""
+          },
+          "app_00000017": {
+            "total": 26,
+            "violations": 16,
+            "lastUsed": ""
+          },
+          "app_00000018": {
+            "total": 41,
+            "violations": 27,
+            "lastUsed": ""
+          },
+          "app_00000019": {
+            "total": 59,
+            "violations": 36,
+            "lastUsed": ""
+          },
+          "app_00000020": {
+            "total": 22,
+            "violations": 13,
+            "lastUsed": ""
+          },
+          "app_00000021": {
             "total": 19,
             "violations": 9,
             "lastUsed": ""
           },
-          "app_00000037": {
-            "total": 49,
-            "violations": 31,
+          "app_00000022": {
+            "total": 56,
+            "violations": 37,
             "lastUsed": ""
           },
-          "app_00000038": {
-            "total": 25,
-            "violations": 19,
+          "app_00000023": {
+            "total": 45,
+            "violations": 28,
             "lastUsed": ""
           },
-          "app_00000039": {
+          "app_00000024": {
+            "total": 16,
+            "violations": 14,
+            "lastUsed": ""
+          },
+          "app_00000025": {
             "total": 25,
             "violations": 17,
             "lastUsed": ""
           },
-          "app_00000040": {
-            "total": 20,
-            "violations": 13,
+          "app_00000026": {
+            "total": 53,
+            "violations": 38,
             "lastUsed": ""
           },
-          "app_00000041": {
-            "total": 13,
-            "violations": 8,
+          "app_00000027": {
+            "total": 41,
+            "violations": 30,
             "lastUsed": ""
           },
-          "app_00000042": {
-            "total": 42,
+          "app_00000028": {
+            "total": 74,
+            "violations": 54,
+            "lastUsed": ""
+          },
+          "app_00000029": {
+            "total": 33,
+            "violations": 22,
+            "lastUsed": ""
+          },
+          "app_00000030": {
+            "total": 16,
+            "violations": 10,
+            "lastUsed": ""
+          },
+          "app_00000031": {
+            "total": 31,
+            "violations": 22,
+            "lastUsed": ""
+          },
+          "app_00000032": {
+            "total": 45,
+            "violations": 28,
+            "lastUsed": ""
+          },
+          "app_00000033": {
+            "total": 34,
             "violations": 23,
             "lastUsed": ""
           },
-          "app_00000043": {
-            "total": 49,
-            "violations": 32,
+          "app_00000034": {
+            "total": 89,
+            "violations": 55,
             "lastUsed": ""
           },
-          "app_00000044": {
-            "total": 15,
-            "violations": 8,
-            "lastUsed": ""
-          },
-          "app_00000045": {
-            "total": 31,
-            "violations": 21,
-            "lastUsed": ""
-          },
-          "app_00000046": {
-            "total": 20,
-            "violations": 16,
-            "lastUsed": ""
-          },
-          "app_00000047": {
-            "total": 24,
-            "violations": 17,
-            "lastUsed": ""
-          },
-          "app_00000048": {
-            "total": 14,
-            "violations": 13,
-            "lastUsed": ""
-          },
-          "app_00000049": {
-            "total": 22,
-            "violations": 12,
-            "lastUsed": ""
-          },
-          "app_00000050": {
-            "total": 42,
+          "app_00000035": {
+            "total": 44,
             "violations": 29,
             "lastUsed": ""
           },
-          "app_00000051": {
-            "total": 0,
-            "violations": 0,
-            "lastUsed": "2025-06-03T12:26:14.345Z"
-          },
-          "app_00000052": {
-            "total": 15,
-            "violations": 10,
+          "app_00000036": {
+            "total": 41,
+            "violations": 29,
             "lastUsed": ""
           },
-          "app_00000053": {
-            "total": 7,
-            "violations": 4,
+          "app_00000037": {
+            "total": 45,
+            "violations": 28,
             "lastUsed": ""
           },
-          "app_00000054": {
+          "app_00000038": {
+            "total": 18,
+            "violations": 12,
+            "lastUsed": ""
+          },
+          "app_00000039": {
+            "total": 46,
+            "violations": 32,
+            "lastUsed": ""
+          },
+          "app_00000040": {
+            "total": 27,
+            "violations": 18,
+            "lastUsed": ""
+          },
+          "app_00000041": {
+            "total": 56,
+            "violations": 33,
+            "lastUsed": ""
+          },
+          "app_00000042": {
             "total": 26,
-            "violations": 16,
+            "violations": 18,
             "lastUsed": ""
           },
-          "app_00000055": {
-            "total": 15,
-            "violations": 10,
-            "lastUsed": ""
-          },
-          "app_00000056": {
-            "total": 37,
+          "app_00000043": {
+            "total": 38,
             "violations": 23,
             "lastUsed": ""
           },
-          "app_00000057": {
-            "total": 32,
-            "violations": 25,
+          "app_00000044": {
+            "total": 40,
+            "violations": 24,
             "lastUsed": ""
           },
-          "app_00000058": {
+          "app_00000045": {
+            "total": 51,
+            "violations": 36,
+            "lastUsed": ""
+          },
+          "app_00000046": {
+            "total": 66,
+            "violations": 36,
+            "lastUsed": ""
+          },
+          "app_00000047": {
+            "total": 10,
+            "violations": 8,
+            "lastUsed": ""
+          },
+          "app_00000048": {
+            "total": 60,
+            "violations": 36,
+            "lastUsed": ""
+          },
+          "app_00000049": {
+            "total": 25,
+            "violations": 20,
+            "lastUsed": ""
+          },
+          "app_00000050": {
+            "total": 18,
+            "violations": 11,
+            "lastUsed": ""
+          },
+          "app_00000051": {
+            "total": 27,
+            "violations": 16,
+            "lastUsed": ""
+          },
+          "app_00000052": {
+            "total": 43,
+            "violations": 33,
+            "lastUsed": ""
+          },
+          "app_00000053": {
+            "total": 40,
+            "violations": 29,
+            "lastUsed": ""
+          },
+          "app_00000054": {
+            "total": 23,
+            "violations": 15,
+            "lastUsed": ""
+          },
+          "app_00000055": {
+            "total": 21,
+            "violations": 15,
+            "lastUsed": ""
+          },
+          "app_00000056": {
             "total": 5,
             "violations": 4,
             "lastUsed": ""
           },
+          "app_00000057": {
+            "total": 45,
+            "violations": 25,
+            "lastUsed": ""
+          },
+          "app_00000058": {
+            "total": 40,
+            "violations": 24,
+            "lastUsed": ""
+          },
           "app_00000059": {
-            "total": 28,
-            "violations": 16,
+            "total": 12,
+            "violations": 7,
             "lastUsed": ""
           },
           "app_00000060": {
-            "total": 4,
-            "violations": 4,
-            "lastUsed": ""
-          },
-          "app_00000061": {
-            "total": 23,
-            "violations": 17,
-            "lastUsed": ""
-          },
-          "app_00000062": {
-            "total": 32,
-            "violations": 21,
-            "lastUsed": ""
-          },
-          "app_00000063": {
-            "total": 10,
-            "violations": 6,
-            "lastUsed": ""
-          },
-          "app_00000064": {
-            "total": 25,
-            "violations": 19,
-            "lastUsed": ""
-          },
-          "app_00000065": {
-            "total": 23,
-            "violations": 14,
-            "lastUsed": ""
-          },
-          "app_00000066": {
-            "total": 52,
-            "violations": 32,
-            "lastUsed": ""
-          },
-          "app_00000067": {
-            "total": 36,
-            "violations": 19,
-            "lastUsed": ""
-          },
-          "app_00000068": {
-            "total": 28,
-            "violations": 22,
-            "lastUsed": ""
-          },
-          "app_00000069": {
-            "total": 1,
-            "violations": 1,
-            "lastUsed": ""
-          },
-          "app_00000070": {
-            "total": 19,
-            "violations": 14,
-            "lastUsed": ""
-          },
-          "app_00000071": {
-            "total": 11,
-            "violations": 8,
-            "lastUsed": ""
-          },
-          "app_00000072": {
-            "total": 9,
-            "violations": 7,
+            "total": 51,
+            "violations": 34,
             "lastUsed": ""
           }
         }
@@ -561,35 +475,16 @@
   "users": [
     {
       "id": "usr_4_000000",
-      "email": "Gabriella_Gerhold0@hotmail.com",
-      "role": "admin",
-      "department": "Beauty",
+      "email": "Cathrine.Hand3@yahoo.com",
+      "role": "manager",
+      "department": "Jewelry",
       "devices": [
         "dev_00000001",
         "dev_00000002",
         "dev_00000003"
       ],
-      "lastLogin": "2025-05-12T22:25:49.042Z",
+      "lastLogin": "2025-05-20T23:08:19.766Z",
       "status": "suspended",
-      "preferences": {
-        "theme": "light",
-        "notifications": {
-          "email": true,
-          "push": false,
-          "sms": true
-        }
-      }
-    },
-    {
-      "id": "usr_4_000001",
-      "email": "Afton43@hotmail.com",
-      "role": "manager",
-      "department": "Books",
-      "devices": [
-        "dev_00000004"
-      ],
-      "lastLogin": "2025-06-03T02:35:52.356Z",
-      "status": "active",
       "preferences": {
         "theme": "light",
         "notifications": {
@@ -600,19 +495,38 @@
       }
     },
     {
-      "id": "usr_4_000002",
-      "email": "Bette22@hotmail.com",
+      "id": "usr_4_000001",
+      "email": "Dangelo_Stamm@gmail.com",
       "role": "contractor",
-      "department": "Music",
+      "department": "Baby",
+      "devices": [
+        "dev_00000004"
+      ],
+      "lastLogin": "2025-05-07T10:10:06.701Z",
+      "status": "suspended",
+      "preferences": {
+        "theme": "system",
+        "notifications": {
+          "email": false,
+          "push": false,
+          "sms": true
+        }
+      }
+    },
+    {
+      "id": "usr_4_000002",
+      "email": "Dahlia_West@hotmail.com",
+      "role": "guest",
+      "department": "Shoes",
       "devices": [
         "dev_00000005",
         "dev_00000006",
         "dev_00000007"
       ],
-      "lastLogin": "2025-05-20T10:43:40.279Z",
+      "lastLogin": "2025-05-18T08:49:27.546Z",
       "status": "active",
       "preferences": {
-        "theme": "light",
+        "theme": "system",
         "notifications": {
           "email": true,
           "push": true,
@@ -622,17 +536,16 @@
     },
     {
       "id": "usr_4_000003",
-      "email": "Preston_Wilderman@hotmail.com",
-      "role": "employee",
-      "department": "Movies",
+      "email": "Pauline89@gmail.com",
+      "role": "admin",
+      "department": "Clothing",
       "devices": [
-        "dev_00000008",
-        "dev_00000009"
+        "dev_00000008"
       ],
-      "lastLogin": "2025-05-11T05:38:12.738Z",
-      "status": "inactive",
+      "lastLogin": "2025-05-22T08:08:17.989Z",
+      "status": "active",
       "preferences": {
-        "theme": "light",
+        "theme": "dark",
         "notifications": {
           "email": true,
           "push": true,
@@ -642,18 +555,20 @@
     },
     {
       "id": "usr_4_000004",
-      "email": "Johan.Kohler39@gmail.com",
-      "role": "employee",
-      "department": "Baby",
+      "email": "Gerard_Krajcik@yahoo.com",
+      "role": "contractor",
+      "department": "Grocery",
       "devices": [
-        "dev_00000010"
+        "dev_00000009",
+        "dev_00000010",
+        "dev_00000011"
       ],
-      "lastLogin": "2025-05-09T01:25:27.876Z",
+      "lastLogin": "2025-05-11T14:07:30.097Z",
       "status": "active",
       "preferences": {
-        "theme": "light",
+        "theme": "dark",
         "notifications": {
-          "email": true,
+          "email": false,
           "push": true,
           "sms": true
         }
@@ -661,14 +576,15 @@
     },
     {
       "id": "usr_4_000005",
-      "email": "Jayde57@gmail.com",
-      "role": "guest",
-      "department": "Shoes",
+      "email": "Sylvester34@gmail.com",
+      "role": "contractor",
+      "department": "Books",
       "devices": [
-        "dev_00000011"
+        "dev_00000012",
+        "dev_00000013"
       ],
-      "lastLogin": "2025-05-31T15:24:27.196Z",
-      "status": "suspended",
+      "lastLogin": "2025-05-12T01:33:23.066Z",
+      "status": "inactive",
       "preferences": {
         "theme": "light",
         "notifications": {
@@ -680,75 +596,14 @@
     },
     {
       "id": "usr_4_000006",
-      "email": "Aiden.Auer@yahoo.com",
-      "role": "manager",
-      "department": "Shoes",
-      "devices": [
-        "dev_00000012",
-        "dev_00000013"
-      ],
-      "lastLogin": "2025-05-28T18:48:17.393Z",
-      "status": "suspended",
-      "preferences": {
-        "theme": "dark",
-        "notifications": {
-          "email": true,
-          "push": false,
-          "sms": true
-        }
-      }
-    },
-    {
-      "id": "usr_4_000007",
-      "email": "Mariam_Erdman@hotmail.com",
-      "role": "guest",
-      "department": "Kids",
+      "email": "Armando_Torp44@hotmail.com",
+      "role": "admin",
+      "department": "Baby",
       "devices": [
         "dev_00000014",
-        "dev_00000015",
-        "dev_00000016"
+        "dev_00000015"
       ],
-      "lastLogin": "2025-05-27T17:18:43.717Z",
-      "status": "inactive",
-      "preferences": {
-        "theme": "dark",
-        "notifications": {
-          "email": false,
-          "push": true,
-          "sms": true
-        }
-      }
-    },
-    {
-      "id": "usr_4_000008",
-      "email": "Enola.Breitenberg@yahoo.com",
-      "role": "guest",
-      "department": "Health",
-      "devices": [
-        "dev_00000017"
-      ],
-      "lastLogin": "2025-05-09T08:45:10.318Z",
-      "status": "inactive",
-      "preferences": {
-        "theme": "dark",
-        "notifications": {
-          "email": false,
-          "push": false,
-          "sms": true
-        }
-      }
-    },
-    {
-      "id": "usr_4_000009",
-      "email": "Maureen_Wehner72@hotmail.com",
-      "role": "guest",
-      "department": "Kids",
-      "devices": [
-        "dev_00000018",
-        "dev_00000019",
-        "dev_00000020"
-      ],
-      "lastLogin": "2025-05-10T21:18:40.753Z",
+      "lastLogin": "2025-05-06T19:40:39.250Z",
       "status": "active",
       "preferences": {
         "theme": "system",
@@ -760,18 +615,78 @@
       }
     },
     {
-      "id": "usr_4_000010",
-      "email": "Rowan_Fahey@yahoo.com",
-      "role": "employee",
+      "id": "usr_4_000007",
+      "email": "Noemie28@gmail.com",
+      "role": "manager",
       "department": "Books",
       "devices": [
-        "dev_00000021",
-        "dev_00000022"
+        "dev_00000016",
+        "dev_00000017"
       ],
-      "lastLogin": "2025-05-22T15:37:37.116Z",
+      "lastLogin": "2025-05-20T14:02:34.846Z",
       "status": "active",
       "preferences": {
         "theme": "dark",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000008",
+      "email": "Jaylan51@hotmail.com",
+      "role": "manager",
+      "department": "Kids",
+      "devices": [
+        "dev_00000018"
+      ],
+      "lastLogin": "2025-05-30T23:22:25.619Z",
+      "status": "suspended",
+      "preferences": {
+        "theme": "light",
+        "notifications": {
+          "email": true,
+          "push": false,
+          "sms": true
+        }
+      }
+    },
+    {
+      "id": "usr_4_000009",
+      "email": "Jaleel.Rogahn@gmail.com",
+      "role": "employee",
+      "department": "Toys",
+      "devices": [
+        "dev_00000019",
+        "dev_00000020",
+        "dev_00000021"
+      ],
+      "lastLogin": "2025-05-07T20:12:37.418Z",
+      "status": "active",
+      "preferences": {
+        "theme": "dark",
+        "notifications": {
+          "email": true,
+          "push": false,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000010",
+      "email": "Johann_Boyle@gmail.com",
+      "role": "employee",
+      "department": "Sports",
+      "devices": [
+        "dev_00000022",
+        "dev_00000023"
+      ],
+      "lastLogin": "2025-05-16T00:33:22.307Z",
+      "status": "suspended",
+      "preferences": {
+        "theme": "light",
         "notifications": {
           "email": false,
           "push": true,
@@ -781,75 +696,58 @@
     },
     {
       "id": "usr_4_000011",
-      "email": "Wilber22@hotmail.com",
-      "role": "guest",
-      "department": "Sports",
+      "email": "Kevon52@hotmail.com",
+      "role": "employee",
+      "department": "Jewelry",
       "devices": [
-        "dev_00000023"
+        "dev_00000024"
       ],
-      "lastLogin": "2025-05-09T07:15:19.245Z",
-      "status": "suspended",
+      "lastLogin": "2025-05-24T03:01:53.923Z",
+      "status": "inactive",
       "preferences": {
-        "theme": "dark",
+        "theme": "light",
         "notifications": {
-          "email": true,
-          "push": true,
+          "email": false,
+          "push": false,
           "sms": true
         }
       }
     },
     {
       "id": "usr_4_000012",
-      "email": "Marie72@yahoo.com",
+      "email": "Jewel.Grady-Mayer@gmail.com",
       "role": "guest",
-      "department": "Outdoors",
+      "department": "Toys",
       "devices": [
-        "dev_00000024",
         "dev_00000025",
-        "dev_00000026"
+        "dev_00000026",
+        "dev_00000027"
       ],
-      "lastLogin": "2025-05-27T06:35:49.338Z",
+      "lastLogin": "2025-05-13T02:42:03.708Z",
       "status": "active",
       "preferences": {
-        "theme": "light",
+        "theme": "system",
         "notifications": {
           "email": true,
           "push": true,
-          "sms": true
+          "sms": false
         }
       }
     },
     {
       "id": "usr_4_000013",
-      "email": "Bridgette.OConnell82@yahoo.com",
-      "role": "contractor",
-      "department": "Outdoors",
+      "email": "Marques_Ankunding@hotmail.com",
+      "role": "guest",
+      "department": "Electronics",
       "devices": [
-        "dev_00000027"
+        "dev_00000028",
+        "dev_00000029",
+        "dev_00000030"
       ],
-      "lastLogin": "2025-05-30T20:19:15.736Z",
+      "lastLogin": "2025-05-28T00:56:39.185Z",
       "status": "suspended",
       "preferences": {
-        "theme": "dark",
-        "notifications": {
-          "email": true,
-          "push": true,
-          "sms": true
-        }
-      }
-    },
-    {
-      "id": "usr_4_000014",
-      "email": "Aurelio_Osinski@gmail.com",
-      "role": "contractor",
-      "department": "Games",
-      "devices": [
-        "dev_00000028"
-      ],
-      "lastLogin": "2025-05-31T03:23:17.288Z",
-      "status": "active",
-      "preferences": {
-        "theme": "light",
+        "theme": "system",
         "notifications": {
           "email": false,
           "push": true,
@@ -858,16 +756,36 @@
       }
     },
     {
-      "id": "usr_4_000015",
-      "email": "Enoch46@yahoo.com",
+      "id": "usr_4_000014",
+      "email": "Erna.Koch-Hackett@hotmail.com",
       "role": "employee",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000031"
+      ],
+      "lastLogin": "2025-05-26T04:56:15.592Z",
+      "status": "active",
+      "preferences": {
+        "theme": "system",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": true
+        }
+      }
+    },
+    {
+      "id": "usr_4_000015",
+      "email": "Lucas.Champlin@gmail.com",
+      "role": "guest",
       "department": "Shoes",
       "devices": [
-        "dev_00000029",
-        "dev_00000030"
+        "dev_00000032",
+        "dev_00000033",
+        "dev_00000034"
       ],
-      "lastLogin": "2025-05-06T01:20:13.504Z",
-      "status": "inactive",
+      "lastLogin": "2025-05-08T01:28:22.757Z",
+      "status": "suspended",
       "preferences": {
         "theme": "system",
         "notifications": {
@@ -879,18 +797,17 @@
     },
     {
       "id": "usr_4_000016",
-      "email": "Kamron_Keebler@yahoo.com",
-      "role": "guest",
-      "department": "Automotive",
+      "email": "Bernardo_Ziemann97@gmail.com",
+      "role": "admin",
+      "department": "Toys",
       "devices": [
-        "dev_00000031",
-        "dev_00000032",
-        "dev_00000033"
+        "dev_00000035",
+        "dev_00000036"
       ],
-      "lastLogin": "2025-05-11T21:15:54.742Z",
-      "status": "suspended",
+      "lastLogin": "2025-05-16T00:30:25.389Z",
+      "status": "inactive",
       "preferences": {
-        "theme": "light",
+        "theme": "dark",
         "notifications": {
           "email": true,
           "push": true,
@@ -900,118 +817,116 @@
     },
     {
       "id": "usr_4_000017",
-      "email": "Lera.OKon42@gmail.com",
-      "role": "contractor",
-      "department": "Computers",
+      "email": "German60@yahoo.com",
+      "role": "employee",
+      "department": "Jewelry",
       "devices": [
-        "dev_00000034",
-        "dev_00000035",
-        "dev_00000036"
+        "dev_00000037"
       ],
-      "lastLogin": "2025-05-28T05:13:24.842Z",
-      "status": "active",
+      "lastLogin": "2025-05-11T18:24:53.025Z",
+      "status": "suspended",
       "preferences": {
-        "theme": "system",
+        "theme": "light",
         "notifications": {
-          "email": false,
-          "push": true,
+          "email": true,
+          "push": false,
           "sms": false
         }
       }
     },
     {
       "id": "usr_4_000018",
-      "email": "Erik2@hotmail.com",
-      "role": "manager",
-      "department": "Shoes",
+      "email": "Kitty5@gmail.com",
+      "role": "guest",
+      "department": "Electronics",
       "devices": [
-        "dev_00000037",
-        "dev_00000038",
-        "dev_00000039"
+        "dev_00000038"
       ],
-      "lastLogin": "2025-05-10T00:32:15.159Z",
-      "status": "active",
+      "lastLogin": "2025-05-28T04:00:44.042Z",
+      "status": "suspended",
       "preferences": {
-        "theme": "dark",
+        "theme": "light",
         "notifications": {
           "email": true,
           "push": true,
-          "sms": true
+          "sms": false
         }
       }
     },
     {
       "id": "usr_4_000019",
-      "email": "Trycia21@hotmail.com",
-      "role": "manager",
-      "department": "Movies",
+      "email": "Travon_Boyle@yahoo.com",
+      "role": "employee",
+      "department": "Electronics",
       "devices": [
-        "dev_00000040"
+        "dev_00000039"
       ],
-      "lastLogin": "2025-05-05T13:20:17.712Z",
-      "status": "inactive",
+      "lastLogin": "2025-05-08T16:42:03.264Z",
+      "status": "suspended",
       "preferences": {
-        "theme": "light",
+        "theme": "system",
         "notifications": {
-          "email": false,
-          "push": false,
-          "sms": true
+          "email": true,
+          "push": true,
+          "sms": false
         }
       }
     },
     {
       "id": "usr_4_000020",
-      "email": "Eliza36@yahoo.com",
-      "role": "guest",
-      "department": "Jewelry",
+      "email": "Quincy_Cremin@hotmail.com",
+      "role": "contractor",
+      "department": "Toys",
       "devices": [
-        "dev_00000041"
+        "dev_00000040",
+        "dev_00000041",
+        "dev_00000042"
       ],
-      "lastLogin": "2025-05-28T09:02:26.143Z",
+      "lastLogin": "2025-06-03T09:48:31.027Z",
+      "status": "active",
+      "preferences": {
+        "theme": "light",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000021",
+      "email": "Eusebio.Homenick1@gmail.com",
+      "role": "guest",
+      "department": "Tools",
+      "devices": [
+        "dev_00000043",
+        "dev_00000044"
+      ],
+      "lastLogin": "2025-05-08T15:55:32.864Z",
       "status": "inactive",
       "preferences": {
         "theme": "dark",
         "notifications": {
           "email": false,
           "push": true,
-          "sms": true
-        }
-      }
-    },
-    {
-      "id": "usr_4_000021",
-      "email": "Vern94@gmail.com",
-      "role": "contractor",
-      "department": "Toys",
-      "devices": [
-        "dev_00000042"
-      ],
-      "lastLogin": "2025-05-25T08:28:36.092Z",
-      "status": "active",
-      "preferences": {
-        "theme": "light",
-        "notifications": {
-          "email": true,
-          "push": false,
           "sms": false
         }
       }
     },
     {
       "id": "usr_4_000022",
-      "email": "Lottie_Quitzon@hotmail.com",
-      "role": "guest",
-      "department": "Clothing",
+      "email": "Haven.Lehner@yahoo.com",
+      "role": "contractor",
+      "department": "Automotive",
       "devices": [
-        "dev_00000043",
-        "dev_00000044"
+        "dev_00000045"
       ],
-      "lastLogin": "2025-06-02T21:58:13.146Z",
-      "status": "inactive",
+      "lastLogin": "2025-05-28T04:03:24.207Z",
+      "status": "suspended",
       "preferences": {
-        "theme": "system",
+        "theme": "dark",
         "notifications": {
-          "email": true,
+          "email": false,
           "push": true,
           "sms": true
         }
@@ -1019,73 +934,55 @@
     },
     {
       "id": "usr_4_000023",
-      "email": "Caroline.Price@gmail.com",
-      "role": "employee",
-      "department": "Sports",
+      "email": "Richie.Jerde@yahoo.com",
+      "role": "manager",
+      "department": "Outdoors",
       "devices": [
-        "dev_00000045"
+        "dev_00000046",
+        "dev_00000047",
+        "dev_00000048"
       ],
-      "lastLogin": "2025-05-20T20:48:02.564Z",
+      "lastLogin": "2025-06-01T02:33:24.254Z",
       "status": "inactive",
       "preferences": {
         "theme": "light",
         "notifications": {
-          "email": true,
+          "email": false,
           "push": true,
-          "sms": false
+          "sms": true
         }
       }
     },
     {
       "id": "usr_4_000024",
-      "email": "Kamren84@hotmail.com",
-      "role": "contractor",
-      "department": "Music",
+      "email": "Tyrique53@yahoo.com",
+      "role": "employee",
+      "department": "Tools",
       "devices": [
-        "dev_00000046"
+        "dev_00000049"
       ],
-      "lastLogin": "2025-05-04T17:59:06.116Z",
-      "status": "inactive",
+      "lastLogin": "2025-05-29T15:05:36.673Z",
+      "status": "active",
       "preferences": {
         "theme": "light",
         "notifications": {
-          "email": true,
+          "email": false,
           "push": true,
-          "sms": false
+          "sms": true
         }
       }
     },
     {
       "id": "usr_4_000025",
-      "email": "Lew_Rogahn@yahoo.com",
-      "role": "employee",
-      "department": "Music",
+      "email": "Andres72@hotmail.com",
+      "role": "manager",
+      "department": "Automotive",
       "devices": [
-        "dev_00000047",
-        "dev_00000048"
-      ],
-      "lastLogin": "2025-05-10T08:05:41.438Z",
-      "status": "suspended",
-      "preferences": {
-        "theme": "light",
-        "notifications": {
-          "email": true,
-          "push": true,
-          "sms": false
-        }
-      }
-    },
-    {
-      "id": "usr_4_000026",
-      "email": "Ruby89@hotmail.com",
-      "role": "employee",
-      "department": "Music",
-      "devices": [
-        "dev_00000049",
         "dev_00000050",
-        "dev_00000051"
+        "dev_00000051",
+        "dev_00000052"
       ],
-      "lastLogin": "2025-05-05T10:55:24.231Z",
+      "lastLogin": "2025-05-10T03:09:41.103Z",
       "status": "active",
       "preferences": {
         "theme": "dark",
@@ -1097,17 +994,36 @@
       }
     },
     {
-      "id": "usr_4_000027",
-      "email": "Ryann_Bartoletti87@gmail.com",
+      "id": "usr_4_000026",
+      "email": "Dane.Langworth19@hotmail.com",
       "role": "contractor",
-      "department": "Sports",
+      "department": "Beauty",
       "devices": [
-        "dev_00000052",
         "dev_00000053",
         "dev_00000054"
       ],
-      "lastLogin": "2025-05-04T15:07:34.775Z",
-      "status": "suspended",
+      "lastLogin": "2025-06-03T07:20:46.825Z",
+      "status": "inactive",
+      "preferences": {
+        "theme": "light",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000027",
+      "email": "Myah.Kozey36@yahoo.com",
+      "role": "manager",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000055",
+        "dev_00000056"
+      ],
+      "lastLogin": "2025-05-20T21:13:05.816Z",
+      "status": "inactive",
       "preferences": {
         "theme": "system",
         "notifications": {
@@ -1119,15 +1035,14 @@
     },
     {
       "id": "usr_4_000028",
-      "email": "Cathryn_Upton@hotmail.com",
-      "role": "admin",
-      "department": "Beauty",
+      "email": "Jaime_Wilderman25@hotmail.com",
+      "role": "guest",
+      "department": "Clothing",
       "devices": [
-        "dev_00000055",
-        "dev_00000056",
-        "dev_00000057"
+        "dev_00000057",
+        "dev_00000058"
       ],
-      "lastLogin": "2025-05-27T02:38:03.629Z",
+      "lastLogin": "2025-05-08T22:55:35.760Z",
       "status": "suspended",
       "preferences": {
         "theme": "dark",
@@ -1140,38 +1055,39 @@
     },
     {
       "id": "usr_4_000029",
-      "email": "Ernest_Johns56@yahoo.com",
-      "role": "admin",
-      "department": "Sports",
+      "email": "Lillian.Wyman-Rath@hotmail.com",
+      "role": "employee",
+      "department": "Books",
       "devices": [
-        "dev_00000058",
-        "dev_00000059"
+        "dev_00000059",
+        "dev_00000060"
       ],
-      "lastLogin": "2025-05-27T08:10:12.207Z",
-      "status": "inactive",
+      "lastLogin": "2025-06-02T10:10:26.399Z",
+      "status": "suspended",
       "preferences": {
         "theme": "system",
         "notifications": {
           "email": true,
-          "push": false,
-          "sms": true
+          "push": true,
+          "sms": false
         }
       }
     },
     {
       "id": "usr_4_000030",
-      "email": "Jaiden_Emmerich@gmail.com",
-      "role": "employee",
-      "department": "Beauty",
+      "email": "Tristin_Bednar-Klein@gmail.com",
+      "role": "guest",
+      "department": "Tools",
       "devices": [
-        "dev_00000060"
+        "dev_00000061",
+        "dev_00000062"
       ],
-      "lastLogin": "2025-05-05T09:08:08.361Z",
+      "lastLogin": "2025-05-10T14:04:09.283Z",
       "status": "inactive",
       "preferences": {
         "theme": "dark",
         "notifications": {
-          "email": true,
+          "email": false,
           "push": true,
           "sms": true
         }
@@ -1179,35 +1095,77 @@
     },
     {
       "id": "usr_4_000031",
-      "email": "Marta.Mitchell@gmail.com",
-      "role": "employee",
-      "department": "Automotive",
+      "email": "Lamar.Heller74@yahoo.com",
+      "role": "guest",
+      "department": "Shoes",
       "devices": [
-        "dev_00000061",
-        "dev_00000062"
+        "dev_00000063",
+        "dev_00000064",
+        "dev_00000065"
       ],
-      "lastLogin": "2025-05-29T14:45:26.123Z",
-      "status": "active",
+      "lastLogin": "2025-05-18T22:32:32.620Z",
+      "status": "suspended",
       "preferences": {
-        "theme": "system",
+        "theme": "light",
         "notifications": {
-          "email": false,
-          "push": false,
+          "email": true,
+          "push": true,
           "sms": true
         }
       }
     },
     {
       "id": "usr_4_000032",
-      "email": "Ubaldo_Kertzmann@hotmail.com",
-      "role": "employee",
-      "department": "Baby",
+      "email": "Marquis41@gmail.com",
+      "role": "contractor",
+      "department": "Health",
       "devices": [
-        "dev_00000063",
-        "dev_00000064"
+        "dev_00000066",
+        "dev_00000067",
+        "dev_00000068"
       ],
-      "lastLogin": "2025-05-09T12:09:52.958Z",
-      "status": "active",
+      "lastLogin": "2025-05-15T22:08:26.376Z",
+      "status": "suspended",
+      "preferences": {
+        "theme": "light",
+        "notifications": {
+          "email": false,
+          "push": true,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000033",
+      "email": "Holly5@yahoo.com",
+      "role": "contractor",
+      "department": "Health",
+      "devices": [
+        "dev_00000069"
+      ],
+      "lastLogin": "2025-05-11T23:55:41.617Z",
+      "status": "inactive",
+      "preferences": {
+        "theme": "system",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000034",
+      "email": "Filiberto.Nicolas@gmail.com",
+      "role": "manager",
+      "department": "Automotive",
+      "devices": [
+        "dev_00000070",
+        "dev_00000071",
+        "dev_00000072"
+      ],
+      "lastLogin": "2025-05-10T01:52:28.257Z",
+      "status": "inactive",
       "preferences": {
         "theme": "dark",
         "notifications": {
@@ -1218,96 +1176,55 @@
       }
     },
     {
-      "id": "usr_4_000033",
-      "email": "Mathias64@yahoo.com",
-      "role": "guest",
-      "department": "Baby",
-      "devices": [
-        "dev_00000065",
-        "dev_00000066"
-      ],
-      "lastLogin": "2025-06-02T21:04:25.275Z",
-      "status": "suspended",
-      "preferences": {
-        "theme": "system",
-        "notifications": {
-          "email": true,
-          "push": false,
-          "sms": false
-        }
-      }
-    },
-    {
-      "id": "usr_4_000034",
-      "email": "Matilda_Orn@yahoo.com",
-      "role": "contractor",
-      "department": "Movies",
-      "devices": [
-        "dev_00000067",
-        "dev_00000068"
-      ],
-      "lastLogin": "2025-05-20T01:45:20.151Z",
-      "status": "active",
-      "preferences": {
-        "theme": "light",
-        "notifications": {
-          "email": true,
-          "push": false,
-          "sms": false
-        }
-      }
-    },
-    {
       "id": "usr_4_000035",
-      "email": "Lexi_Pfannerstill0@gmail.com",
-      "role": "guest",
-      "department": "Music",
+      "email": "Alycia_Macejkovic@yahoo.com",
+      "role": "manager",
+      "department": "Games",
       "devices": [
-        "dev_00000069",
-        "dev_00000070",
-        "dev_00000071"
+        "dev_00000073",
+        "dev_00000074"
       ],
-      "lastLogin": "2025-05-12T17:14:22.488Z",
+      "lastLogin": "2025-05-17T18:12:04.726Z",
       "status": "suspended",
       "preferences": {
         "theme": "light",
         "notifications": {
           "email": true,
-          "push": false,
-          "sms": false
+          "push": true,
+          "sms": true
         }
       }
     },
     {
       "id": "usr_4_000036",
-      "email": "Emma_Gutkowski@gmail.com",
-      "role": "manager",
-      "department": "Baby",
+      "email": "Carlos13@hotmail.com",
+      "role": "admin",
+      "department": "Industrial",
       "devices": [
-        "dev_00000072"
+        "dev_00000075"
       ],
-      "lastLogin": "2025-05-28T20:40:59.107Z",
+      "lastLogin": "2025-05-25T11:27:45.597Z",
       "status": "suspended",
       "preferences": {
-        "theme": "system",
+        "theme": "dark",
         "notifications": {
           "email": true,
-          "push": false,
-          "sms": false
+          "push": true,
+          "sms": true
         }
       }
     },
     {
       "id": "usr_4_000037",
-      "email": "Carmela_Rodriguez44@gmail.com",
-      "role": "guest",
-      "department": "Computers",
+      "email": "Courtney52@gmail.com",
+      "role": "manager",
+      "department": "Home",
       "devices": [
-        "dev_00000073",
-        "dev_00000074"
+        "dev_00000076",
+        "dev_00000077"
       ],
-      "lastLogin": "2025-05-24T20:47:45.004Z",
-      "status": "inactive",
+      "lastLogin": "2025-05-15T14:42:06.016Z",
+      "status": "suspended",
       "preferences": {
         "theme": "dark",
         "notifications": {
@@ -1319,14 +1236,15 @@
     },
     {
       "id": "usr_4_000038",
-      "email": "Brooke36@gmail.com",
-      "role": "contractor",
-      "department": "Outdoors",
+      "email": "Royal_Bogan83@hotmail.com",
+      "role": "admin",
+      "department": "Electronics",
       "devices": [
-        "dev_00000075"
+        "dev_00000078",
+        "dev_00000079"
       ],
-      "lastLogin": "2025-05-17T18:18:40.167Z",
-      "status": "suspended",
+      "lastLogin": "2025-05-07T07:14:52.036Z",
+      "status": "active",
       "preferences": {
         "theme": "system",
         "notifications": {
@@ -1338,37 +1256,37 @@
     },
     {
       "id": "usr_4_000039",
-      "email": "Hilda.Sanford@yahoo.com",
-      "role": "admin",
-      "department": "Grocery",
+      "email": "Rhoda.Bechtelar60@gmail.com",
+      "role": "manager",
+      "department": "Electronics",
       "devices": [
-        "dev_00000076"
+        "dev_00000080"
       ],
-      "lastLogin": "2025-05-12T04:43:57.926Z",
+      "lastLogin": "2025-05-14T05:12:29.590Z",
       "status": "inactive",
       "preferences": {
         "theme": "dark",
         "notifications": {
-          "email": false,
+          "email": true,
           "push": true,
-          "sms": true
+          "sms": false
         }
       }
     },
     {
       "id": "usr_4_000040",
-      "email": "Jaeden51@hotmail.com",
-      "role": "contractor",
-      "department": "Games",
+      "email": "Christophe.Barton10@gmail.com",
+      "role": "manager",
+      "department": "Shoes",
       "devices": [
-        "dev_00000077",
-        "dev_00000078",
-        "dev_00000079"
+        "dev_00000081",
+        "dev_00000082",
+        "dev_00000083"
       ],
-      "lastLogin": "2025-05-20T08:19:26.973Z",
+      "lastLogin": "2025-05-26T20:52:38.639Z",
       "status": "suspended",
       "preferences": {
-        "theme": "system",
+        "theme": "light",
         "notifications": {
           "email": true,
           "push": true,
@@ -1378,18 +1296,18 @@
     },
     {
       "id": "usr_4_000041",
-      "email": "Era_Blanda@yahoo.com",
-      "role": "admin",
-      "department": "Home",
+      "email": "Mariam70@hotmail.com",
+      "role": "employee",
+      "department": "Health",
       "devices": [
-        "dev_00000080",
-        "dev_00000081",
-        "dev_00000082"
+        "dev_00000084",
+        "dev_00000085",
+        "dev_00000086"
       ],
-      "lastLogin": "2025-05-07T16:48:13.240Z",
-      "status": "inactive",
+      "lastLogin": "2025-05-30T00:34:31.821Z",
+      "status": "suspended",
       "preferences": {
-        "theme": "light",
+        "theme": "system",
         "notifications": {
           "email": true,
           "push": true,
@@ -1399,18 +1317,17 @@
     },
     {
       "id": "usr_4_000042",
-      "email": "Benedict6@yahoo.com",
-      "role": "manager",
-      "department": "Home",
+      "email": "Pat58@yahoo.com",
+      "role": "employee",
+      "department": "Books",
       "devices": [
-        "dev_00000083",
-        "dev_00000084",
-        "dev_00000085"
+        "dev_00000087",
+        "dev_00000088"
       ],
-      "lastLogin": "2025-05-23T00:34:46.162Z",
-      "status": "inactive",
+      "lastLogin": "2025-05-30T02:23:58.096Z",
+      "status": "suspended",
       "preferences": {
-        "theme": "dark",
+        "theme": "system",
         "notifications": {
           "email": true,
           "push": true,
@@ -1420,56 +1337,14 @@
     },
     {
       "id": "usr_4_000043",
-      "email": "Wilfredo.Shields@hotmail.com",
-      "role": "admin",
-      "department": "Computers",
+      "email": "Jacklyn.Upton79@gmail.com",
+      "role": "manager",
+      "department": "Health",
       "devices": [
-        "dev_00000086",
-        "dev_00000087",
-        "dev_00000088"
+        "dev_00000089"
       ],
-      "lastLogin": "2025-05-13T19:39:44.412Z",
-      "status": "suspended",
-      "preferences": {
-        "theme": "system",
-        "notifications": {
-          "email": false,
-          "push": true,
-          "sms": false
-        }
-      }
-    },
-    {
-      "id": "usr_4_000044",
-      "email": "Camron_Schumm-Trantow21@hotmail.com",
-      "role": "employee",
-      "department": "Movies",
-      "devices": [
-        "dev_00000089",
-        "dev_00000090",
-        "dev_00000091"
-      ],
-      "lastLogin": "2025-05-29T17:52:21.951Z",
-      "status": "suspended",
-      "preferences": {
-        "theme": "system",
-        "notifications": {
-          "email": false,
-          "push": true,
-          "sms": true
-        }
-      }
-    },
-    {
-      "id": "usr_4_000045",
-      "email": "Bernard.Sporer50@hotmail.com",
-      "role": "admin",
-      "department": "Garden",
-      "devices": [
-        "dev_00000092"
-      ],
-      "lastLogin": "2025-05-10T14:27:32.334Z",
-      "status": "suspended",
+      "lastLogin": "2025-05-21T05:40:11.585Z",
+      "status": "active",
       "preferences": {
         "theme": "dark",
         "notifications": {
@@ -1480,16 +1355,34 @@
       }
     },
     {
-      "id": "usr_4_000046",
-      "email": "Tod81@gmail.com",
-      "role": "guest",
-      "department": "Shoes",
+      "id": "usr_4_000044",
+      "email": "Felicia_Flatley@hotmail.com",
+      "role": "admin",
+      "department": "Tools",
       "devices": [
-        "dev_00000093",
-        "dev_00000094"
+        "dev_00000090"
       ],
-      "lastLogin": "2025-05-28T21:19:29.264Z",
+      "lastLogin": "2025-05-06T08:13:24.716Z",
       "status": "active",
+      "preferences": {
+        "theme": "system",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000045",
+      "email": "Rodrigo46@gmail.com",
+      "role": "guest",
+      "department": "Beauty",
+      "devices": [
+        "dev_00000091"
+      ],
+      "lastLogin": "2025-05-26T12:17:02.865Z",
+      "status": "suspended",
       "preferences": {
         "theme": "light",
         "notifications": {
@@ -1500,15 +1393,36 @@
       }
     },
     {
-      "id": "usr_4_000047",
-      "email": "Antonetta_Considine84@yahoo.com",
+      "id": "usr_4_000046",
+      "email": "Hilma70@yahoo.com",
       "role": "guest",
-      "department": "Games",
+      "department": "Clothing",
       "devices": [
+        "dev_00000092"
+      ],
+      "lastLogin": "2025-05-21T16:43:49.586Z",
+      "status": "active",
+      "preferences": {
+        "theme": "dark",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000047",
+      "email": "Easter.Schaden42@yahoo.com",
+      "role": "employee",
+      "department": "Kids",
+      "devices": [
+        "dev_00000093",
+        "dev_00000094",
         "dev_00000095"
       ],
-      "lastLogin": "2025-05-28T06:19:11.668Z",
-      "status": "active",
+      "lastLogin": "2025-05-31T12:34:04.208Z",
+      "status": "inactive",
       "preferences": {
         "theme": "dark",
         "notifications": {
@@ -1520,13 +1434,74 @@
     },
     {
       "id": "usr_4_000048",
-      "email": "Andreane33@yahoo.com",
+      "email": "Lavina.Bradtke@gmail.com",
       "role": "admin",
-      "department": "Movies",
+      "department": "Books",
       "devices": [
         "dev_00000096"
       ],
-      "lastLogin": "2025-05-29T08:38:50.556Z",
+      "lastLogin": "2025-05-15T05:01:18.286Z",
+      "status": "active",
+      "preferences": {
+        "theme": "dark",
+        "notifications": {
+          "email": true,
+          "push": false,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000049",
+      "email": "Dandre_Robel@yahoo.com",
+      "role": "contractor",
+      "department": "Computers",
+      "devices": [
+        "dev_00000097",
+        "dev_00000098",
+        "dev_00000099"
+      ],
+      "lastLogin": "2025-05-28T23:32:03.023Z",
+      "status": "inactive",
+      "preferences": {
+        "theme": "dark",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": true
+        }
+      }
+    },
+    {
+      "id": "usr_4_000050",
+      "email": "Itzel31@hotmail.com",
+      "role": "guest",
+      "department": "Garden",
+      "devices": [
+        "dev_00000100",
+        "dev_00000101"
+      ],
+      "lastLogin": "2025-05-23T14:42:32.667Z",
+      "status": "suspended",
+      "preferences": {
+        "theme": "dark",
+        "notifications": {
+          "email": false,
+          "push": false,
+          "sms": true
+        }
+      }
+    },
+    {
+      "id": "usr_4_000051",
+      "email": "Sydnee61@hotmail.com",
+      "role": "manager",
+      "department": "Tools",
+      "devices": [
+        "dev_00000102",
+        "dev_00000103"
+      ],
+      "lastLogin": "2025-05-13T02:37:31.297Z",
       "status": "active",
       "preferences": {
         "theme": "light",
@@ -1538,15 +1513,135 @@
       }
     },
     {
-      "id": "usr_4_000049",
-      "email": "Jayda_Lakin@hotmail.com",
-      "role": "manager",
-      "department": "Baby",
+      "id": "usr_4_000052",
+      "email": "Freida36@hotmail.com",
+      "role": "guest",
+      "department": "Movies",
       "devices": [
-        "dev_00000097",
-        "dev_00000098"
+        "dev_00000104"
       ],
-      "lastLogin": "2025-06-01T05:40:30.460Z",
+      "lastLogin": "2025-05-24T22:33:50.701Z",
+      "status": "active",
+      "preferences": {
+        "theme": "light",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": true
+        }
+      }
+    },
+    {
+      "id": "usr_4_000053",
+      "email": "Lora.Friesen-Rice78@gmail.com",
+      "role": "admin",
+      "department": "Shoes",
+      "devices": [
+        "dev_00000105",
+        "dev_00000106",
+        "dev_00000107"
+      ],
+      "lastLogin": "2025-05-20T02:03:13.229Z",
+      "status": "suspended",
+      "preferences": {
+        "theme": "system",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": true
+        }
+      }
+    },
+    {
+      "id": "usr_4_000054",
+      "email": "Melvina_Torp40@yahoo.com",
+      "role": "manager",
+      "department": "Clothing",
+      "devices": [
+        "dev_00000108",
+        "dev_00000109"
+      ],
+      "lastLogin": "2025-05-21T16:58:04.924Z",
+      "status": "active",
+      "preferences": {
+        "theme": "system",
+        "notifications": {
+          "email": true,
+          "push": false,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000055",
+      "email": "Marge_Reinger43@hotmail.com",
+      "role": "manager",
+      "department": "Toys",
+      "devices": [
+        "dev_00000110",
+        "dev_00000111"
+      ],
+      "lastLogin": "2025-05-27T04:06:22.661Z",
+      "status": "active",
+      "preferences": {
+        "theme": "dark",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000056",
+      "email": "Terrence_Graham23@hotmail.com",
+      "role": "guest",
+      "department": "Outdoors",
+      "devices": [
+        "dev_00000112",
+        "dev_00000113"
+      ],
+      "lastLogin": "2025-05-17T03:35:40.123Z",
+      "status": "inactive",
+      "preferences": {
+        "theme": "light",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": true
+        }
+      }
+    },
+    {
+      "id": "usr_4_000057",
+      "email": "Katelyn57@hotmail.com",
+      "role": "admin",
+      "department": "Industrial",
+      "devices": [
+        "dev_00000114",
+        "dev_00000115"
+      ],
+      "lastLogin": "2025-06-02T05:15:27.069Z",
+      "status": "suspended",
+      "preferences": {
+        "theme": "light",
+        "notifications": {
+          "email": false,
+          "push": true,
+          "sms": true
+        }
+      }
+    },
+    {
+      "id": "usr_4_000058",
+      "email": "Gaetano.Miller20@hotmail.com",
+      "role": "guest",
+      "department": "Sports",
+      "devices": [
+        "dev_00000116",
+        "dev_00000117"
+      ],
+      "lastLogin": "2025-05-29T11:12:45.458Z",
       "status": "inactive",
       "preferences": {
         "theme": "system",
@@ -1558,14 +1653,137 @@
       }
     },
     {
-      "id": "usr_4_000050",
-      "email": "Amira_Kerluke@hotmail.com",
+      "id": "usr_4_000059",
+      "email": "Torey40@hotmail.com",
+      "role": "manager",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000118",
+        "dev_00000119"
+      ],
+      "lastLogin": "2025-05-21T09:26:37.883Z",
+      "status": "suspended",
+      "preferences": {
+        "theme": "system",
+        "notifications": {
+          "email": false,
+          "push": true,
+          "sms": true
+        }
+      }
+    },
+    {
+      "id": "usr_4_000060",
+      "email": "Zaria.Satterfield-Bahringer@gmail.com",
+      "role": "guest",
+      "department": "Grocery",
+      "devices": [
+        "dev_00000120"
+      ],
+      "lastLogin": "2025-05-06T23:54:00.209Z",
+      "status": "suspended",
+      "preferences": {
+        "theme": "system",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000061",
+      "email": "Elton.Feil@gmail.com",
       "role": "manager",
       "department": "Shoes",
       "devices": [
-        "dev_00000099"
+        "dev_00000121",
+        "dev_00000122",
+        "dev_00000123"
       ],
-      "lastLogin": "2025-05-10T05:09:44.105Z",
+      "lastLogin": "2025-06-02T10:59:09.348Z",
+      "status": "suspended",
+      "preferences": {
+        "theme": "dark",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000062",
+      "email": "Agustina29@gmail.com",
+      "role": "guest",
+      "department": "Home",
+      "devices": [
+        "dev_00000124",
+        "dev_00000125",
+        "dev_00000126"
+      ],
+      "lastLogin": "2025-05-15T17:37:57.511Z",
+      "status": "inactive",
+      "preferences": {
+        "theme": "dark",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000063",
+      "email": "Brandyn.Kautzer99@yahoo.com",
+      "role": "manager",
+      "department": "Games",
+      "devices": [
+        "dev_00000127",
+        "dev_00000128",
+        "dev_00000129"
+      ],
+      "lastLogin": "2025-05-06T01:43:58.841Z",
+      "status": "suspended",
+      "preferences": {
+        "theme": "system",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": false
+        }
+      }
+    },
+    {
+      "id": "usr_4_000064",
+      "email": "Myrtice_Schulist@hotmail.com",
+      "role": "contractor",
+      "department": "Books",
+      "devices": [
+        "dev_00000130",
+        "dev_00000131"
+      ],
+      "lastLogin": "2025-05-05T12:32:28.658Z",
+      "status": "active",
+      "preferences": {
+        "theme": "dark",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": true
+        }
+      }
+    },
+    {
+      "id": "usr_4_000065",
+      "email": "June.Little94@hotmail.com",
+      "role": "admin",
+      "department": "Garden",
+      "devices": [
+        "dev_00000132",
+        "dev_00000133"
+      ],
+      "lastLogin": "2025-05-20T22:21:29.049Z",
       "status": "inactive",
       "preferences": {
         "theme": "light",
@@ -1575,29 +1793,60 @@
           "sms": false
         }
       }
+    },
+    {
+      "id": "usr_4_000066",
+      "email": "Lukas.Kling@yahoo.com",
+      "role": "guest",
+      "department": "Electronics",
+      "devices": [
+        "dev_00000134",
+        "dev_00000135"
+      ],
+      "lastLogin": "2025-05-06T09:05:42.614Z",
+      "status": "suspended",
+      "preferences": {
+        "theme": "system",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": true
+        }
+      }
+    },
+    {
+      "id": "usr_4_000067",
+      "email": "Lennie.Hammes@yahoo.com",
+      "role": "guest",
+      "department": "Computers",
+      "devices": [
+        "dev_00000136",
+        "dev_00000137",
+        "dev_00000138"
+      ],
+      "lastLogin": "2025-05-20T08:06:19.408Z",
+      "status": "active",
+      "preferences": {
+        "theme": "system",
+        "notifications": {
+          "email": true,
+          "push": true,
+          "sms": false
+        }
+      }
     }
   ],
   "policies": [
-    "pol_HROGJMPE",
-    "pol_FTN7RDUD",
-    "pol_9UFB82NZ",
-    "pol_HA16EVCV",
-    "pol_MXK9OY0J",
-    "pol_NEW8XKD8",
-    "pol_SB3GRZAU",
-    "pol_KH09M71E",
-    "pol_XTTQ0EK3",
-    "pol_GSCEUI93",
-    "pol_PWHLDEEG",
-    "pol_IWVCN6VR",
-    "pol_WAWUV8HA",
-    "pol_YJWNGLMX",
-    "pol_U1JEZIEF",
-    "pol_UQHH8ZZN",
-    "pol_W8PCVMI4",
-    "pol_OLSCRU3V",
-    "pol_EB3TWEPL",
-    "pol_QTSIVZ4M"
+    "pol_IDOAAY72",
+    "pol_PUSQZTDB",
+    "pol_P9JNUKPF",
+    "pol_QIJOKXMI",
+    "pol_7WMRHMES",
+    "pol_9ZXUY4RR",
+    "pol_Z9NZ6LPJ",
+    "pol_9JPOGADK",
+    "pol_PUP8HEA8",
+    "pol_SN28AXU2"
   ],
   "apps": [
     "app_00000001",
@@ -1659,26 +1908,14 @@
     "app_00000057",
     "app_00000058",
     "app_00000059",
-    "app_00000060",
-    "app_00000061",
-    "app_00000062",
-    "app_00000063",
-    "app_00000064",
-    "app_00000065",
-    "app_00000066",
-    "app_00000067",
-    "app_00000068",
-    "app_00000069",
-    "app_00000070",
-    "app_00000071",
-    "app_00000072"
+    "app_00000060"
   ],
   "integrations": [
     {
       "type": "real_estate",
-      "provider": "Vertical Bridge",
+      "provider": "SBA Communications",
       "status": "active",
-      "lastSync": "2025-06-02T21:19:55.839Z",
+      "lastSync": "2025-06-02T16:18:17.101Z",
       "features": {
         "deviceDiscovery": true,
         "policyEnforcement": true,
@@ -1687,9 +1924,9 @@
     },
     {
       "type": "carrier",
-      "provider": "AT&T",
+      "provider": "Verizon",
       "status": "active",
-      "lastSync": "2025-06-03T06:56:46.479Z",
+      "lastSync": "2025-06-02T20:11:55.577Z",
       "features": {
         "deviceDiscovery": true,
         "policyEnforcement": true,
@@ -1710,11 +1947,6 @@
     "tower_00000010",
     "tower_00000011",
     "tower_00000012",
-    "tower_00000013",
-    "tower_00000014",
-    "tower_00000015",
-    "tower_00000016",
-    "tower_00000017",
-    "tower_00000018"
+    "tower_00000013"
   ]
 }

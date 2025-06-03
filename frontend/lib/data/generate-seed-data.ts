@@ -70,6 +70,330 @@ const INCIDENTS_PER_ENTERPRISE = 25;
 // Pre-hashed password for all users (password123)
 const HASHED_PASSWORD = '$2a$10$K7L1OJ45/4Y2nIvhRVpCe.FSmhDdWoXehVzJptJ/op0lSsvqNu9Uu';
 
+// Predefined apps with their actions
+const PREDEFINED_APPS: App[] = [
+  {
+    id: "app_00000001",
+    name: "Microsoft Teams",
+    category: "communication",
+    description: "Enterprise communication and collaboration platform",
+    vendor: "Microsoft",
+    version: "1.0.0",
+    actions: [
+      {
+        id: "teams_join_meeting",
+        name: "Join Meeting",
+        description: "User joins a Teams meeting",
+        riskLevel: "low"
+      },
+      {
+        id: "teams_share_screen",
+        name: "Share Screen",
+        description: "User shares their screen in a meeting",
+        riskLevel: "medium"
+      },
+      {
+        id: "teams_share_file",
+        name: "Share File",
+        description: "User shares a file in chat or meeting",
+        riskLevel: "high"
+      }
+    ],
+    supportedOS: ["iOS", "Android", "Windows"],
+    supportedDevices: ["smartphone", "tablet", "laptop"],
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  },
+  {
+    id: "app_00000002",
+    name: "Slack",
+    category: "communication",
+    description: "Business communication platform",
+    vendor: "Salesforce",
+    version: "1.0.0",
+    actions: [
+      {
+        id: "slack_send_message",
+        name: "Send Message",
+        description: "User sends a message in a channel or DM",
+        riskLevel: "low"
+      },
+      {
+        id: "slack_upload_file",
+        name: "Upload File",
+        description: "User uploads a file to a channel or DM",
+        riskLevel: "high"
+      },
+      {
+        id: "slack_join_channel",
+        name: "Join Channel",
+        description: "User joins a new channel",
+        riskLevel: "low"
+      }
+    ],
+    supportedOS: ["iOS", "Android", "Windows"],
+    supportedDevices: ["smartphone", "tablet", "laptop"],
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  },
+  {
+    id: "app_00000003",
+    name: "Zoom",
+    category: "communication",
+    description: "Video conferencing platform",
+    vendor: "Zoom Video Communications",
+    version: "1.0.0",
+    actions: [
+      {
+        id: "zoom_join_meeting",
+        name: "Join Meeting",
+        description: "User joins a Zoom meeting",
+        riskLevel: "low"
+      },
+      {
+        id: "zoom_record_meeting",
+        name: "Record Meeting",
+        description: "User starts recording a meeting",
+        riskLevel: "high"
+      },
+      {
+        id: "zoom_share_screen",
+        name: "Share Screen",
+        description: "User shares their screen in a meeting",
+        riskLevel: "medium"
+      }
+    ],
+    supportedOS: ["iOS", "Android", "Windows"],
+    supportedDevices: ["smartphone", "tablet", "laptop"],
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  },
+  {
+    id: "app_00000004",
+    name: "Google Drive",
+    category: "productivity",
+    description: "Cloud storage and file sharing platform",
+    vendor: "Google",
+    version: "1.0.0",
+    actions: [
+      {
+        id: "drive_view_file",
+        name: "View File",
+        description: "User views a file in Drive",
+        riskLevel: "low"
+      },
+      {
+        id: "drive_edit_file",
+        name: "Edit File",
+        description: "User edits a file in Drive",
+        riskLevel: "medium"
+      },
+      {
+        id: "drive_share_file",
+        name: "Share File",
+        description: "User shares a file with others",
+        riskLevel: "high"
+      }
+    ],
+    supportedOS: ["iOS", "Android", "Windows"],
+    supportedDevices: ["smartphone", "tablet", "laptop"],
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  },
+  {
+    id: "app_00000005",
+    name: "Microsoft OneDrive",
+    category: "productivity",
+    description: "Cloud storage and file sharing platform",
+    vendor: "Microsoft",
+    version: "1.0.0",
+    actions: [
+      {
+        id: "onedrive_sync_file",
+        name: "Sync File",
+        description: "User syncs a file to local device",
+        riskLevel: "medium"
+      },
+      {
+        id: "onedrive_share_file",
+        name: "Share File",
+        description: "User shares a file with others",
+        riskLevel: "high"
+      },
+      {
+        id: "onedrive_edit_file",
+        name: "Edit File",
+        description: "User edits a file in OneDrive",
+        riskLevel: "medium"
+      }
+    ],
+    supportedOS: ["iOS", "Android", "Windows"],
+    supportedDevices: ["smartphone", "tablet", "laptop"],
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  },
+  {
+    id: "app_00000006",
+    name: "Microsoft Outlook",
+    category: "communication",
+    description: "Email and calendar management platform",
+    vendor: "Microsoft",
+    version: "1.0.0",
+    actions: [
+      {
+        id: "outlook_send_email",
+        name: "Send Email",
+        description: "User sends an email",
+        riskLevel: "medium"
+      },
+      {
+        id: "outlook_forward_email",
+        name: "Forward Email",
+        description: "User forwards an email",
+        riskLevel: "high"
+      },
+      {
+        id: "outlook_attach_file",
+        name: "Attach File",
+        description: "User attaches a file to an email",
+        riskLevel: "high"
+      }
+    ],
+    supportedOS: ["iOS", "Android", "Windows"],
+    supportedDevices: ["smartphone", "tablet", "laptop"],
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  },
+  {
+    id: "app_00000007",
+    name: "Salesforce",
+    category: "enterprise",
+    description: "Customer relationship management platform",
+    vendor: "Salesforce",
+    version: "1.0.0",
+    actions: [
+      {
+        id: "salesforce_view_record",
+        name: "View Record",
+        description: "User views a customer record",
+        riskLevel: "low"
+      },
+      {
+        id: "salesforce_edit_record",
+        name: "Edit Record",
+        description: "User edits a customer record",
+        riskLevel: "high"
+      },
+      {
+        id: "salesforce_export_data",
+        name: "Export Data",
+        description: "User exports data from Salesforce",
+        riskLevel: "high"
+      }
+    ],
+    supportedOS: ["iOS", "Android", "Windows"],
+    supportedDevices: ["smartphone", "tablet", "laptop"],
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  },
+  {
+    id: "app_00000008",
+    name: "ServiceNow",
+    category: "enterprise",
+    description: "IT service management platform",
+    vendor: "ServiceNow",
+    version: "1.0.0",
+    actions: [
+      {
+        id: "servicenow_create_ticket",
+        name: "Create Ticket",
+        description: "User creates a new service ticket",
+        riskLevel: "low"
+      },
+      {
+        id: "servicenow_approve_change",
+        name: "Approve Change",
+        description: "User approves a change request",
+        riskLevel: "high"
+      },
+      {
+        id: "servicenow_view_incident",
+        name: "View Incident",
+        description: "User views an incident record",
+        riskLevel: "medium"
+      }
+    ],
+    supportedOS: ["iOS", "Android", "Windows"],
+    supportedDevices: ["smartphone", "tablet", "laptop"],
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  },
+  {
+    id: "app_00000009",
+    name: "Jira",
+    category: "enterprise",
+    description: "Project management and issue tracking platform",
+    vendor: "Atlassian",
+    version: "1.0.0",
+    actions: [
+      {
+        id: "jira_create_issue",
+        name: "Create Issue",
+        description: "User creates a new issue",
+        riskLevel: "low"
+      },
+      {
+        id: "jira_assign_issue",
+        name: "Assign Issue",
+        description: "User assigns an issue to someone",
+        riskLevel: "medium"
+      },
+      {
+        id: "jira_export_board",
+        name: "Export Board",
+        description: "User exports a board's data",
+        riskLevel: "high"
+      }
+    ],
+    supportedOS: ["iOS", "Android", "Windows"],
+    supportedDevices: ["smartphone", "tablet", "laptop"],
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  },
+  {
+    id: "app_00000010",
+    name: "Confluence",
+    category: "enterprise",
+    description: "Team collaboration and documentation platform",
+    vendor: "Atlassian",
+    version: "1.0.0",
+    actions: [
+      {
+        id: "confluence_view_page",
+        name: "View Page",
+        description: "User views a Confluence page",
+        riskLevel: "low"
+      },
+      {
+        id: "confluence_edit_page",
+        name: "Edit Page",
+        description: "User edits a Confluence page",
+        riskLevel: "medium"
+      },
+      {
+        id: "confluence_export_space",
+        name: "Export Space",
+        description: "User exports a space's content",
+        riskLevel: "high"
+      }
+    ],
+    supportedOS: ["iOS", "Android", "Windows"],
+    supportedDevices: ["smartphone", "tablet", "laptop"],
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
+  }
+];
+
 // Helper functions
 const getRandomElement = <T>(array: T[]): T => 
   array[Math.floor(Math.random() * array.length)];
@@ -86,32 +410,13 @@ const getRandomLocation = () => ({
   address: faker.location.streetAddress()
 });
 
-// Generate apps with realistic actions
+// Modify the generateApp function to use predefined apps
 const generateApp = (id: number): App => {
-  const category = getRandomElement(CONFIG.appCategories);
-  const supportedOS = faker.helpers.arrayElements(CONFIG.operatingSystems, getRandomInt(1, 3));
-  const supportedDevices = faker.helpers.arrayElements(CONFIG.deviceTypes, getRandomInt(1, 3));
-  const actionCount = getRandomInt(CONFIG.apps.actionsPerApp.min, CONFIG.apps.actionsPerApp.max);
-
-  const major = getRandomInt(1, 9).toString();
-  const minor = getRandomInt(0, 9).toString();
-  const patch = getRandomInt(0, 9).toString();
-
+  // Use predefined apps instead of generating random ones
+  const appIndex = (id - 1) % PREDEFINED_APPS.length;
   return {
+    ...PREDEFINED_APPS[appIndex],
     id: `app_${String(id).padStart(8, '0')}`,
-    name: `${faker.company.name()} ${category.charAt(0).toUpperCase() + category.slice(1)} App`,
-    category: category as AppCategory,
-    description: faker.company.catchPhrase(),
-    vendor: faker.company.name(),
-    version: `${major}.${minor}.${patch}`,
-    actions: Array.from({ length: actionCount }, (_, i) => ({
-      id: faker.string.uuid(),
-      name: faker.system.fileName(),
-      description: faker.lorem.sentence(),
-      riskLevel: getRandomElement(['low', 'medium', 'high', 'critical'] as const)
-    })),
-    supportedOS,
-    supportedDevices,
     createdAt: getRandomDate(new Date(Date.now() - 365 * 24 * 60 * 60 * 1000), new Date()),
     updatedAt: getRandomDate(new Date(Date.now() - 30 * 24 * 60 * 60 * 1000), new Date())
   };

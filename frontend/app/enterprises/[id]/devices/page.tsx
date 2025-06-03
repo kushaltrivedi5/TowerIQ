@@ -119,6 +119,7 @@ export default function EnterpriseDevicesPage({
 }) {
   const { data: session, status } = useSession();
   const router = useRouter();
+  const [devices, setDevices] = useState<Device[]>([]);
   const [metrics, setMetrics] = useState<{
     total: number;
     active: number;
@@ -132,39 +133,41 @@ export default function EnterpriseDevicesPage({
   const [error, setError] = useState<string | null>(null);
   const { id } = use(params);
 
-  const { data: devices } = useEnterpriseData<Device>({
-    type: "devices",
-    pageSize: 10,
-  });
-
   useEffect(() => {
-    async function loadMetrics() {
+    async function loadData() {
       if (status === "loading") return;
 
-      if (
-        !session?.user ||
-        session.user.role !== "admin" ||
-        session.user.enterpriseId !== id
-      ) {
+      if (!session?.user) {
         router.push("/login");
         return;
       }
 
       try {
-        const response = await fetch(`/api/enterprises/${id}/metrics`);
-        if (!response.ok) {
+        // Load devices data
+        const devicesResponse = await fetch(
+          `/api/enterprises/${id}/data?type=devices`
+        );
+        if (!devicesResponse.ok) {
+          throw new Error("Failed to load devices data");
+        }
+        const devicesData = await devicesResponse.json();
+        setDevices(devicesData.data);
+
+        // Load metrics
+        const metricsResponse = await fetch(`/api/enterprises/${id}/metrics`);
+        if (!metricsResponse.ok) {
           throw new Error("Failed to load metrics");
         }
-        const data = await response.json();
-        setMetrics(data.devices);
+        const metricsData = await metricsResponse.json();
+        setMetrics(metricsData.devices);
       } catch (err) {
-        setError(err instanceof Error ? err.message : "Failed to load metrics");
+        setError(err instanceof Error ? err.message : "Failed to load data");
       } finally {
         setLoading(false);
       }
     }
 
-    loadMetrics();
+    loadData();
   }, [session, status, id, router]);
 
   if (status === "loading" || loading) {

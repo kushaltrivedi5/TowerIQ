@@ -1,2348 +1,1402 @@
 [
   {
     "id": "app_00000001",
-    "name": "Morar Inc Enterprise App",
-    "category": "enterprise",
-    "description": "Balanced heuristic interface",
-    "vendor": "Adams, Zulauf and Schmidt",
-    "version": "3.1.3",
+    "name": "Microsoft Teams",
+    "category": "communication",
+    "description": "Enterprise communication and collaboration platform",
+    "vendor": "Microsoft",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "154c82d9-3dc6-43a4-b2c9-4662b85ac6dc",
-        "name": "forceful_avow_enormously.otf",
-        "description": "Non amplexus tres caput ventito cultellus vox cuppedia.",
+        "id": "teams_join_meeting",
+        "name": "Join Meeting",
+        "description": "User joins a Teams meeting",
+        "riskLevel": "low"
+      },
+      {
+        "id": "teams_share_screen",
+        "name": "Share Screen",
+        "description": "User shares their screen in a meeting",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "teams_share_file",
+        "name": "Share File",
+        "description": "User shares a file in chat or meeting",
         "riskLevel": "high"
-      },
-      {
-        "id": "c538ee4f-c48c-44eb-916d-1efcf24fe3a2",
-        "name": "afore_beyond_treble.mar",
-        "description": "Conspergo causa usque.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "f69af0ff-cc5e-4c7c-b980-1e5c06777574",
-        "name": "thoughtfully_as_comb.otf",
-        "description": "Verecundia accusator cunae despecto stabilis thymum eaque arma.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "7a3cf003-b9ad-426c-9ac9-d1116dcffe98",
-        "name": "knowledgeably_indeed_because.arc",
-        "description": "Tepesco vitiosus omnis demonstro tonsor.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "d4e8e5ba-c5b9-4785-bbe4-001b252270ea",
-        "name": "utterly.vsd",
-        "description": "Suscipio corrumpo tepesco demo uredo capto.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "29ae6921-c0aa-4b7d-8032-3da2f95b5186",
-        "name": "among.odp",
-        "description": "Tristis absque strenuus clementia comitatus cubo pariatur.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "c2a8b5d0-2dbc-405b-a5a6-78e28198b11a",
-        "name": "individual_ha_fit.boz",
-        "description": "Harum culpo caute magni.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "ce154b3e-c191-4a75-9f7f-fcc6b2ed4e91",
-        "name": "biodegrade.7z",
-        "description": "Alii advenio defessus argentum vociferor adsum nemo tui agnosco conspergo.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "8003ba05-286b-4b2e-9f9e-5a29cabcf1d0",
-        "name": "to.vst",
-        "description": "Damno acerbitas praesentium.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "f71b753b-d78f-4d10-a35f-3f406e6b7fc2",
-        "name": "equate_inasmuch_ultimate.tiff",
-        "description": "Curatio magnam apostolus.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "57f89a40-39ee-4364-8395-2e050e73264c",
-        "name": "before_apud_shy.wav",
-        "description": "Absum bestia aetas expedita vox collum autem deporto.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "dda6b262-1750-4e5d-a219-50ea2a8fa9c9",
-        "name": "vivaciously_ah_er.pdf",
-        "description": "Tero amita ustulo solutio vir usque voveo cupressus praesentium.",
-        "riskLevel": "medium"
       }
     ],
     "supportedOS": [
-      "Other",
-      "iOS"
+      "iOS",
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
       "smartphone",
-      "IoT",
+      "tablet",
       "laptop"
     ],
-    "createdAt": "2025-02-19T16:24:09.509Z",
-    "updatedAt": "2025-05-10T17:51:03.556Z"
+    "createdAt": "2025-01-28T05:30:02.462Z",
+    "updatedAt": "2025-05-14T18:58:02.601Z"
   },
   {
     "id": "app_00000002",
-    "name": "Heller Group Security App",
-    "category": "security",
-    "description": "Face to face systematic interface",
-    "vendor": "Wyman Group",
-    "version": "5.5.4",
+    "name": "Slack",
+    "category": "communication",
+    "description": "Business communication platform",
+    "vendor": "Salesforce",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "5429a734-b105-4bce-a0c3-7dee24b643af",
-        "name": "considering_down_atrium.css",
-        "description": "Patrocinor odit acervus condico amaritudo crur agnosco.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "f978c562-9367-40f6-9a11-9f7fbd9740f2",
-        "name": "phooey_unlike.bin",
-        "description": "Placeat vulgo cervus absens adipisci credo.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "ec3ad761-647f-4524-83c1-2fbf0800305c",
-        "name": "loosely_if.img",
-        "description": "Fuga aperiam nisi audeo viscus vilicus textus.",
+        "id": "slack_send_message",
+        "name": "Send Message",
+        "description": "User sends a message in a channel or DM",
         "riskLevel": "low"
       },
       {
-        "id": "ce8c0ed4-2e0c-4fd6-8ac8-c61db2a8ca89",
-        "name": "repurpose_clavicle.boz",
-        "description": "Atque sapiente ambitus capitulus titulus thesis.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "5fadbe14-27c6-494c-9ee9-e58e55c169c1",
-        "name": "but.xsd",
-        "description": "Terminatio creptio autem surculus armarium.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "ea412015-19ef-4490-9858-c7c721fd1c95",
-        "name": "instead_teriyaki_dispose.bz",
-        "description": "Comitatus verbum tergum amplitudo currus crebro tantillus eaque cogo.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "5baf3b90-fd3c-433d-a5be-cdd63e677440",
-        "name": "save_er.ppt",
-        "description": "Aveho fugiat thema victus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "c9fda27f-e15e-417a-97d4-41346be20b4a",
-        "name": "duffel_abnegate_chiffonier.conf",
-        "description": "Ustulo tremo cubicularis aeternus.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "237da927-27f1-49dc-acbd-dc18bd7b8a79",
-        "name": "disinherit_geez.jpe",
-        "description": "Alo dolorem aptus titulus.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "a7ee83ac-3f2a-4b27-8541-a9937c909a70",
-        "name": "excluding.mpeg",
-        "description": "Ultra varietas tergum victus aro campana.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "072a14a4-99ea-42fc-b3bd-f9975e3b1bac",
-        "name": "violently.msi",
-        "description": "Super bis tersus.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "1bb1b493-f514-475a-8bf2-b7f1cbc0342f",
-        "name": "strident_curl.conf",
-        "description": "Caterva cenaculum pel artificiose vester possimus.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "d76ce501-291e-4693-a479-01db03de1e89",
-        "name": "lest.spx",
-        "description": "Earum tabella veniam adfectus.",
+        "id": "slack_upload_file",
+        "name": "Upload File",
+        "description": "User uploads a file to a channel or DM",
         "riskLevel": "high"
       },
       {
-        "id": "d34eed62-db1f-4ae7-8ad4-5f7923a2efbd",
-        "name": "destock.ogv",
-        "description": "Vesper derelinquo cohors.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "60e05243-e38f-4efa-99b6-995111726610",
-        "name": "railway.php",
-        "description": "Tersus ater quos cornu acervus umerus possimus sapiente.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "0da4753e-8f43-44fb-8147-367891c1acf9",
-        "name": "fine_jogging_supposing.bmp",
-        "description": "Delectus atqui taedium.",
-        "riskLevel": "high"
+        "id": "slack_join_channel",
+        "name": "Join Channel",
+        "description": "User joins a new channel",
+        "riskLevel": "low"
       }
     ],
     "supportedOS": [
       "iOS",
-      "Windows",
-      "Android"
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
       "smartphone",
-      "gateway"
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2024-09-07T22:02:09.062Z",
-    "updatedAt": "2025-05-09T19:19:21.863Z"
+    "createdAt": "2024-10-08T05:57:49.741Z",
+    "updatedAt": "2025-06-03T03:49:47.762Z"
   },
   {
     "id": "app_00000003",
-    "name": "Crona - Langosh Security App",
-    "category": "security",
-    "description": "Open-source clear-thinking support",
-    "vendor": "Berge LLC",
-    "version": "5.8.6",
+    "name": "Zoom",
+    "category": "communication",
+    "description": "Video conferencing platform",
+    "vendor": "Zoom Video Communications",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "09641082-cc97-4877-abbf-49c2aa4767ca",
-        "name": "hm_inject_even.csh",
-        "description": "Eum desipio catena defleo vestigium.",
-        "riskLevel": "critical"
+        "id": "zoom_join_meeting",
+        "name": "Join Meeting",
+        "description": "User joins a Zoom meeting",
+        "riskLevel": "low"
       },
       {
-        "id": "f3c6ab0f-ae04-47b9-85e6-e870d99a870d",
-        "name": "kiddingly_furthermore.mp3",
-        "description": "Decretum capillus vomica desino comptus triumphus tergum cetera careo vitium.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "44fa7675-fd45-4f4c-bb24-f5456018a53f",
-        "name": "crank_separate.lrf",
-        "description": "Ambulo sunt tendo statim cursus desolo arx uredo solum cresco.",
+        "id": "zoom_record_meeting",
+        "name": "Record Meeting",
+        "description": "User starts recording a meeting",
         "riskLevel": "high"
       },
       {
-        "id": "1b2978a2-f425-45af-970d-875229abec4d",
-        "name": "ick_thoroughly_towards.xls",
-        "description": "Claustrum defessus comburo denego torrens tabula laboriosam fugit apparatus.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "93683553-282e-4730-b466-9d0d74024492",
-        "name": "proliferate.dist",
-        "description": "Aro adulescens volubilis arbustum libero careo totidem fugiat.",
-        "riskLevel": "low"
+        "id": "zoom_share_screen",
+        "name": "Share Screen",
+        "description": "User shares their screen in a meeting",
+        "riskLevel": "medium"
       }
     ],
     "supportedOS": [
       "iOS",
-      "Windows",
-      "Other"
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
+      "smartphone",
       "tablet",
-      "gateway",
-      "IoT"
+      "laptop"
     ],
-    "createdAt": "2024-12-25T02:45:19.158Z",
-    "updatedAt": "2025-05-23T07:46:14.412Z"
+    "createdAt": "2024-10-12T20:02:05.032Z",
+    "updatedAt": "2025-05-05T18:07:23.468Z"
   },
   {
     "id": "app_00000004",
-    "name": "Dach, Douglas and Zboncak Security App",
-    "category": "security",
-    "description": "Phased well-modulated help-desk",
-    "vendor": "Nikolaus, Keebler and Marquardt",
-    "version": "8.0.6",
+    "name": "Google Drive",
+    "category": "productivity",
+    "description": "Cloud storage and file sharing platform",
+    "vendor": "Google",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "121d127c-e5a5-4f7a-b0a0-f5d409fa87ca",
-        "name": "provision_lightly.xsl",
-        "description": "Voco stultus sollers ante amplus conqueror creator dens confero.",
+        "id": "drive_view_file",
+        "name": "View File",
+        "description": "User views a file in Drive",
         "riskLevel": "low"
       },
       {
-        "id": "9a41f0cc-0e16-4267-96b6-26c32f86cbc8",
-        "name": "by_pish.dist",
-        "description": "Aureus patruus cometes acies autem.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "e65cfd62-0448-4d3a-beba-8b90bcdfabfd",
-        "name": "nervous_defrag.abw",
-        "description": "Adsidue alius cito deporto conduco aliqua itaque theca.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "c818bcc4-d5f6-4348-94e8-aa6df793945f",
-        "name": "past.wav",
-        "description": "Traho vix ventito vulticulus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "d37aacc4-02ed-4038-a842-5e09f8264312",
-        "name": "easily_galvanize_curry.ttf",
-        "description": "Adimpleo quidem incidunt animi comprehendo cito vulgivagus supellex umerus laboriosam.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "eb8d28aa-9b53-46bf-a7c3-1e569dfeab24",
-        "name": "coarse_inasmuch_deeply.ics",
-        "description": "Talus optio umquam vallum crustulum.",
+        "id": "drive_edit_file",
+        "name": "Edit File",
+        "description": "User edits a file in Drive",
         "riskLevel": "medium"
       },
       {
-        "id": "8f75b29f-7496-451d-9416-f201b20f9afb",
-        "name": "bore_unhappy_behind.bmp",
-        "description": "Contabesco terga abbas cilicium ex sub.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "0ea2282e-aa3d-462b-af0d-e4c8edd5edff",
-        "name": "lox_ignite_far.rmi",
-        "description": "Sub color benigne atqui delinquo virga.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "40a9b56b-4711-4934-b074-4e4f47d3a958",
-        "name": "useless.3gpp",
-        "description": "Voluptatum eum paulatim nulla tristis.",
+        "id": "drive_share_file",
+        "name": "Share File",
+        "description": "User shares a file with others",
         "riskLevel": "high"
-      },
-      {
-        "id": "1f43ce0b-f9a4-47ff-b419-78d6c3de0544",
-        "name": "to_athwart_deeply.boz",
-        "description": "Conduco appono amoveo debilito vaco speciosus adinventitias pel.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "8c6424e6-9512-47dc-bee4-c0a35e70a236",
-        "name": "noisily_going_wherever.msi",
-        "description": "Arca vita modi tactus altus accusamus sponte perferendis tabella crebro.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "cd8920a4-2ce0-4573-9f40-da54c48524db",
-        "name": "orientate_hence_diagram.xls",
-        "description": "Altus vestrum deprimo tabella verumtamen volup viridis.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "66f1474c-ee96-4e95-b42f-558cfbd367b6",
-        "name": "airbrush_telescope.exe",
-        "description": "Clibanus coadunatio appositus claro decet creptio averto.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "d8237c3e-ea5f-4ad4-aa01-92001a9f9f7d",
-        "name": "briefly.msi",
-        "description": "Cattus capio temeritas trepide capillus cribro stillicidium.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "149944d6-2147-4d13-91bb-4e1df2ea96aa",
-        "name": "ha.pdf",
-        "description": "Tondeo sperno caecus charisma magnam casus atrocitas vehemens adflicto.",
-        "riskLevel": "low"
       }
     ],
     "supportedOS": [
-      "Windows",
-      "Other",
-      "iOS"
+      "iOS",
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
       "smartphone",
-      "IoT"
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2024-11-20T05:14:18.903Z",
-    "updatedAt": "2025-06-01T00:38:11.400Z"
+    "createdAt": "2024-10-24T10:33:33.792Z",
+    "updatedAt": "2025-05-16T05:18:39.363Z"
   },
   {
     "id": "app_00000005",
-    "name": "Block Inc Custom App",
-    "category": "custom",
-    "description": "Fully-configurable systemic adapter",
-    "vendor": "Romaguera - Mosciski",
-    "version": "6.0.9",
+    "name": "Microsoft OneDrive",
+    "category": "productivity",
+    "description": "Cloud storage and file sharing platform",
+    "vendor": "Microsoft",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "bf980023-7eec-4cb8-94b4-fd0b6753412a",
-        "name": "as.rtf",
-        "description": "Praesentium conventus ipsa acer.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "83fe6c67-a6a0-443e-8747-f00087c36e32",
-        "name": "correctly_aw.mp4v",
-        "description": "Barba laborum beatae universe volva.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "290e2c3f-6e25-4aa1-bde9-429580915a4e",
-        "name": "subdued.xml",
-        "description": "Ratione suppono delicate armarium.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "6774fdef-a763-41b7-9332-d9a975886ca5",
-        "name": "instead_marksman_scarper.pdf",
-        "description": "Utilis carmen chirographum speculum adicio abeo utilis credo.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "68b415b2-94de-42e5-a24c-e35e248f3359",
-        "name": "among_chasuble.doc",
-        "description": "Admoneo amissio subnecto ter conservo aiunt.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "abeb4dd0-ca52-4e69-9bbf-693c54df7304",
-        "name": "where_swat.gif",
-        "description": "Admoneo adhuc virga.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "f709da84-98ed-4870-bfef-0bf2efcc23f9",
-        "name": "uh_huh_tapioca.opus",
-        "description": "Illum cui vesco apparatus tabgo.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "390ec65e-4435-4625-a9a9-ac24cbcfed1f",
-        "name": "dismal_drat.msm",
-        "description": "Voluptates uberrime vigilo arbustum natus vesco.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "abac8ac7-20ec-4790-ada9-d0cd981caa77",
-        "name": "handle_nor_quintuple.wav",
-        "description": "Laboriosam cui adflicto speciosus corrumpo argumentum cavus terra terror vulgo.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "4911e824-e7db-4854-8470-fc4d89c2e5f2",
-        "name": "alongside_after.ogx",
-        "description": "Minus adipisci tabesco vilicus conturbo vox conqueror traho dedico textus.",
+        "id": "onedrive_sync_file",
+        "name": "Sync File",
+        "description": "User syncs a file to local device",
         "riskLevel": "medium"
       },
       {
-        "id": "ac1e5956-d52e-455d-b593-7583f7f0a17f",
-        "name": "enlist.jpeg",
-        "description": "Venia astrum cubitum cogo porro audio ultra.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "db1ffd92-9f4b-4615-a138-d030c19aa4f8",
-        "name": "measly.avif",
-        "description": "Cicuta deporto solio acies vicinus.",
+        "id": "onedrive_share_file",
+        "name": "Share File",
+        "description": "User shares a file with others",
         "riskLevel": "high"
       },
       {
-        "id": "b573a868-ddb4-4bb0-8c9d-d3d15c66c481",
-        "name": "with_meh.opus",
-        "description": "Decor arbor adfero abstergo antea aut vilicus contabesco desidero error.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "a2fafc77-d5b2-4e5d-a5e6-a938d731e78c",
-        "name": "fledgling.bz",
-        "description": "Depopulo theatrum veritas verumtamen asperiores tres triduana cuppedia.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "b9d72205-212b-4b33-b190-08e981e1379a",
-        "name": "descendant_defiantly.lrf",
-        "description": "Adversus sed laudantium absconditus creptio.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "21bdfeb9-6715-493b-8e7c-777cfe074ed9",
-        "name": "convince.log",
-        "description": "Arx conspergo aranea tempore deleo caecus urbs iure.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "84f8264d-098a-4c2e-a9f4-185adea5ac10",
-        "name": "er.svgz",
-        "description": "Patrocinor comprehendo arbitro somniculosus tergum vado cupressus voluptas textor.",
-        "riskLevel": "critical"
+        "id": "onedrive_edit_file",
+        "name": "Edit File",
+        "description": "User edits a file in OneDrive",
+        "riskLevel": "medium"
       }
     ],
     "supportedOS": [
+      "iOS",
       "Android",
-      "Other",
-      "iOS"
+      "Windows"
     ],
     "supportedDevices": [
       "smartphone",
-      "laptop",
-      "gateway"
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2024-09-04T11:01:35.256Z",
-    "updatedAt": "2025-05-31T16:45:34.661Z"
+    "createdAt": "2024-11-29T16:42:01.695Z",
+    "updatedAt": "2025-05-08T19:42:45.589Z"
   },
   {
     "id": "app_00000006",
-    "name": "Pacocha, Breitenberg and Erdman Security App",
-    "category": "security",
-    "description": "Grass-roots tangible open architecture",
-    "vendor": "Koss - Blick",
-    "version": "6.1.9",
+    "name": "Microsoft Outlook",
+    "category": "communication",
+    "description": "Email and calendar management platform",
+    "vendor": "Microsoft",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "75561266-393e-402d-86a1-a8839fc9332a",
-        "name": "properly_defiantly.doc",
-        "description": "Custodia inflammatio administratio atqui ascit.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "08a2c6d5-ed22-4000-a48d-d95053d455f0",
-        "name": "definite_whispered.mpe",
-        "description": "Temperantia aestivus summa eius vester aqua acquiro deputo aro demum.",
+        "id": "outlook_send_email",
+        "name": "Send Email",
+        "description": "User sends an email",
         "riskLevel": "medium"
       },
       {
-        "id": "3aebc6d3-92ed-4d3b-a834-309a9b1290e5",
-        "name": "decriminalize.jpe",
-        "description": "Tondeo tenus cimentarius trans talis.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "2f412e9d-3acc-46a1-b8d6-6cc24deeb4bf",
-        "name": "during_at.m1v",
-        "description": "Defendo maxime custodia eligendi candidus voluntarius.",
+        "id": "outlook_forward_email",
+        "name": "Forward Email",
+        "description": "User forwards an email",
         "riskLevel": "high"
       },
       {
-        "id": "57ae058f-3060-485f-bd7d-324da7d19e97",
-        "name": "er_ah.txt",
-        "description": "Tres acidus cervus arbor crudelis.",
+        "id": "outlook_attach_file",
+        "name": "Attach File",
+        "description": "User attaches a file to an email",
         "riskLevel": "high"
-      },
-      {
-        "id": "e9a0f5fd-a0b6-4af6-930d-0d96717c9d3e",
-        "name": "of_concerned.xlm",
-        "description": "Est aut sperno.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "a2691eba-5171-411c-8905-8d97b0db4065",
-        "name": "failing_finally_often.m2a",
-        "description": "Defluo defungo agnitio tabella convoco atqui taedium solvo.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "e3d9bf9b-b469-4165-8c94-b4e54b1058d0",
-        "name": "pluck_sand_onto.ogx",
-        "description": "Adinventitias id timidus tres cubicularis adflicto audio.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "22d5c7b2-ba6e-4e53-afd4-58c3a005580c",
-        "name": "furthermore_decent.rar",
-        "description": "Subnecto minima auctor usque audax.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "0363654d-7902-4594-b5f7-e6ab4770af79",
-        "name": "lovingly_sheepishly_scratch.midi",
-        "description": "Cognomen thorax ciminatio acies.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "9c96ab45-62a8-4439-a8f6-e3277706b454",
-        "name": "profuse.in",
-        "description": "Demens artificiose aggredior id urbanus censura summopere.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "b2105de2-f7e0-42d3-bf53-17e711062f3e",
-        "name": "finer.woff",
-        "description": "Astrum vetus cruciamentum quis blanditiis deficio asper.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "59740867-c135-4f02-a9c9-60b8cf49a16b",
-        "name": "jive.html",
-        "description": "Tumultus cornu audentia voluptas thymbra teres administratio deserunt vulnero.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "6bb4826a-4348-4c73-8404-b14c7a902d05",
-        "name": "sturdy.dump",
-        "description": "Tabula tergiversatio conitor textilis timor cupiditas.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "fd3a0701-12b6-4665-8ebe-07b4e75aac15",
-        "name": "allocation_pity_obligation.3gpp",
-        "description": "Eos spoliatio tracto antiquus.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "cb852ab6-7106-4112-93b3-a15ef1c1bf80",
-        "name": "cluttered.ppt",
-        "description": "Odit tero admitto aequus quisquam suppellex enim veritas sunt.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "77130405-bbf3-49c4-bb14-c9bb0b04b198",
-        "name": "while_dividend.lrf",
-        "description": "Cresco coniuratio temeritas.",
-        "riskLevel": "low"
       }
     ],
     "supportedOS": [
+      "iOS",
       "Android",
       "Windows"
     ],
     "supportedDevices": [
-      "laptop",
       "smartphone",
-      "IoT"
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2025-04-16T05:12:33.026Z",
-    "updatedAt": "2025-05-15T16:33:16.952Z"
+    "createdAt": "2024-11-10T11:23:40.071Z",
+    "updatedAt": "2025-05-14T10:07:35.732Z"
   },
   {
     "id": "app_00000007",
-    "name": "Koepp and Sons Custom App",
-    "category": "custom",
-    "description": "Customizable client-driven moderator",
-    "vendor": "Windler, Haag and Veum",
-    "version": "1.5.0",
+    "name": "Salesforce",
+    "category": "enterprise",
+    "description": "Customer relationship management platform",
+    "vendor": "Salesforce",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "529a664b-a35e-4320-a1b1-7a252ddb3322",
-        "name": "however_ecstatic.mp2",
-        "description": "Caritas facere sum omnis in.",
+        "id": "salesforce_view_record",
+        "name": "View Record",
+        "description": "User views a customer record",
         "riskLevel": "low"
       },
       {
-        "id": "c8e44bc4-16d6-4cf8-b624-b902aab56f78",
-        "name": "before_mmm_cap.xul",
-        "description": "Solium approbo conduco vinum.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "35f0d273-1936-458e-a0bf-c2c0d744b685",
-        "name": "accidentally_dispose_glow.xla",
-        "description": "Teres centum textus territo ea animi crustulum comitatus decens.",
+        "id": "salesforce_edit_record",
+        "name": "Edit Record",
+        "description": "User edits a customer record",
         "riskLevel": "high"
       },
       {
-        "id": "9a54ad82-901b-406d-bf69-d52dbb427a8f",
-        "name": "if.shtml",
-        "description": "Sonitus doloribus aegre voluptatum amor tunc vita tempora.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "291ede16-ec61-4912-9be5-9c3dd3384455",
-        "name": "hunger.ear",
-        "description": "Fugiat tabesco sophismata temperantia.",
+        "id": "salesforce_export_data",
+        "name": "Export Data",
+        "description": "User exports data from Salesforce",
         "riskLevel": "high"
-      },
-      {
-        "id": "20eaddee-b479-4779-9f08-b17416dae3e3",
-        "name": "depute_next.txt",
-        "description": "Usitas uredo comedo texo trepide.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "c80887b9-f383-40d0-a222-92f948613a15",
-        "name": "bin_better.abw",
-        "description": "Voluptate vetus paulatim crinis vaco sono cotidie cohaero comminor.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "7a8ab202-71b5-48bc-86ea-3d110976a1f3",
-        "name": "scarper_ugh_switch.dot",
-        "description": "Verbera talus cubitum venio.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "7ff54770-273b-497c-b8d9-3145c2701cc7",
-        "name": "famously.css",
-        "description": "Adopto subiungo possimus.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "ece4ca27-5c00-466d-a594-e1ee8a25bfaf",
-        "name": "immense_which.ics",
-        "description": "Deputo utrum volva copia delectus triumphus calculus tabella.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "f5ac5322-f97f-48e9-bcc2-77a841712b3f",
-        "name": "which.deploy",
-        "description": "Censura comprehendo supplanto vulgo.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "fe7fc192-ef91-4c8f-9094-becc6a1ba1f0",
-        "name": "mature_via_uh_huh.msm",
-        "description": "Adficio textus aegrus damnatio aggero quas iste.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "355ad0e3-2f9a-49dc-b307-871a7a2c6079",
-        "name": "into_flint_drat.xla",
-        "description": "Appositus delectatio summopere tumultus curto utpote civitas tantum defungo.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "28030409-4477-4a1d-a092-c5432f46466c",
-        "name": "lashes.vst",
-        "description": "Desolo supplanto comedo amor vito desparatus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "1f0cbd80-90a3-4f18-aadd-666ad69b6c8a",
-        "name": "apricot_wholly_cruelty.dist",
-        "description": "Ulterius curatio aiunt quis uberrime.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "c0baa070-e91f-4302-b5e4-9dfd57e34734",
-        "name": "gosh_wallop_march.xml",
-        "description": "Fuga repudiandae minus.",
-        "riskLevel": "critical"
       }
     ],
     "supportedOS": [
-      "Other",
-      "Windows",
-      "iOS"
+      "iOS",
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
-      "laptop",
-      "IoT"
+      "smartphone",
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2024-07-09T21:28:10.550Z",
-    "updatedAt": "2025-05-04T20:41:28.198Z"
+    "createdAt": "2025-05-28T02:53:03.588Z",
+    "updatedAt": "2025-05-18T02:58:30.272Z"
   },
   {
     "id": "app_00000008",
-    "name": "Harris and Sons Enterprise App",
+    "name": "ServiceNow",
     "category": "enterprise",
-    "description": "Ergonomic demand-driven budgetary management",
-    "vendor": "Rowe, Collins and Ebert",
-    "version": "7.5.4",
+    "description": "IT service management platform",
+    "vendor": "ServiceNow",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "d51f1587-cc32-4e8f-936e-4fb1b3d26fc4",
-        "name": "christen.3g2",
-        "description": "Animus sapiente concedo possimus adopto ars taedium peccatus explicabo.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "42bc038d-b4fd-42e7-9e54-90c3ef7c0ffd",
-        "name": "hmph.kar",
-        "description": "Nam virgo alter degusto ager conservo tardus consuasor nulla benigne.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "1f1738a0-ec85-41bb-a423-79772d00e26f",
-        "name": "garrote_holster_versus.pkg",
-        "description": "Dedico ventosus approbo universe summa defluo suus.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "6db8eb9c-ec4e-4a47-ae0e-670e7a481e9f",
-        "name": "statue.bin",
-        "description": "Similique degusto adicio.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "29b1271a-5ce8-413b-b0ce-e9632f8aa75b",
-        "name": "sturdy.so",
-        "description": "Ventosus impedit vitiosus brevis occaecati tot.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "2db9c684-f2a8-4f17-b255-8da93b1d8afd",
-        "name": "into_reschedule.3gp",
-        "description": "Collum texo auctus studio tunc volubilis aegre.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "4347f9f8-79a0-4860-8229-fcb65877566c",
-        "name": "because_rigid_whereas.zip",
-        "description": "Vos vorago torrens tabernus.",
+        "id": "servicenow_create_ticket",
+        "name": "Create Ticket",
+        "description": "User creates a new service ticket",
         "riskLevel": "low"
       },
       {
-        "id": "ec324751-175c-4e15-9507-c42fafd8c319",
-        "name": "poorly_ethyl.zip",
-        "description": "Spoliatio debeo id peccatus aeneus thalassinus.",
+        "id": "servicenow_approve_change",
+        "name": "Approve Change",
+        "description": "User approves a change request",
         "riskLevel": "high"
       },
       {
-        "id": "743dce2c-43ee-4d59-b54b-eefe22a20dc7",
-        "name": "overload.midi",
-        "description": "Comparo coadunatio cohors vir tamisium confido reiciendis soluta cunabula.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "0c6d1935-8b12-4cd9-8a47-e6399916e079",
-        "name": "zowie_vice.css",
-        "description": "Appono ipsam urbanus aperiam.",
-        "riskLevel": "low"
+        "id": "servicenow_view_incident",
+        "name": "View Incident",
+        "description": "User views an incident record",
+        "riskLevel": "medium"
       }
     ],
     "supportedOS": [
-      "Windows",
-      "Android"
+      "iOS",
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
-      "IoT",
-      "smartphone"
+      "smartphone",
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2024-11-18T07:49:15.488Z",
-    "updatedAt": "2025-05-05T06:56:24.631Z"
+    "createdAt": "2025-01-30T01:29:12.778Z",
+    "updatedAt": "2025-06-02T08:48:25.037Z"
   },
   {
     "id": "app_00000009",
-    "name": "Waters, Dach and Schmitt Productivity App",
-    "category": "productivity",
-    "description": "Synchronised responsive support",
-    "vendor": "Schaden - McCullough",
-    "version": "4.3.0",
+    "name": "Jira",
+    "category": "enterprise",
+    "description": "Project management and issue tracking platform",
+    "vendor": "Atlassian",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "1257e670-870d-4bc2-88f7-1959b5c983f5",
-        "name": "fun_rust.docx",
-        "description": "Tabernus arbustum angelus creptio cohibeo certe tamisium deporto.",
+        "id": "jira_create_issue",
+        "name": "Create Issue",
+        "description": "User creates a new issue",
         "riskLevel": "low"
       },
       {
-        "id": "321c4f04-b632-4649-8285-b9cab4d98b3d",
-        "name": "which_stir_fry.dmg",
-        "description": "Timidus dicta vis venia altus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "85174f3e-fc9e-4580-a8d5-bbd5d1bc3512",
-        "name": "brush.rmi",
-        "description": "Corrumpo coepi custodia capitulus adflicto vaco depromo volo.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "a082b43b-5e60-4810-88a4-432c3654e60d",
-        "name": "excluding_fooey.woff",
-        "description": "Ullus thesaurus atqui corpus.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "88d67bf2-ec51-4bad-833e-3e3839223e9d",
-        "name": "than_suv_nucleotidase.mp2a",
-        "description": "Corona ara vallum acies apto coniuratio at.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "08413974-5225-4446-adcc-00b62d1a5ecc",
-        "name": "acidly_bidet.xml",
-        "description": "Commodo inflammatio crustulum testimonium commodi.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "54db0317-d3ab-4984-b902-9cd81e467288",
-        "name": "repeatedly.pps",
-        "description": "Volaticus bonus acidus colo.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "4ac6e35f-109e-4b67-8e7a-b6e9c59743b6",
-        "name": "unnecessarily_along.3gpp",
-        "description": "Arca deporto vindico pectus degero cerno suppono peccatus sursum.",
+        "id": "jira_assign_issue",
+        "name": "Assign Issue",
+        "description": "User assigns an issue to someone",
         "riskLevel": "medium"
       },
       {
-        "id": "5dc7abd6-818e-4eae-a297-87882cfed577",
-        "name": "kindly.jar",
-        "description": "Tremo cruciamentum aer venustas conventus esse.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "aba1d8a7-b1c3-4a4f-88f7-5ed3eb148b32",
-        "name": "crumble_although.map",
-        "description": "A sopor benevolentia corrumpo speciosus deputo acquiro deinde.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "c0486d6a-be66-475a-a133-c0f294fdc6be",
-        "name": "busily_uh_huh_why.msm",
-        "description": "Recusandae ustilo aegrus.",
+        "id": "jira_export_board",
+        "name": "Export Board",
+        "description": "User exports a board's data",
         "riskLevel": "high"
-      },
-      {
-        "id": "a41095af-b5a6-4096-81cf-c8dcac156f43",
-        "name": "or.dump",
-        "description": "Xiphias vomer sonitus impedit demitto calco porro cogito acies.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "ed01789a-3559-41ea-a8d4-fe4ce270f4fc",
-        "name": "rigidly_because_singing.xht",
-        "description": "Sequi demergo curatio amicitia cupressus caecus pax venio.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "abe9e834-e8c9-4a1b-9cfb-d43d4f16cfb6",
-        "name": "dash.sh",
-        "description": "Sponte versus curriculum sulum volaticus.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "9f586851-a062-479f-9e2d-a1cbf0390913",
-        "name": "amidst_supposing_careless.deb",
-        "description": "Vir adopto vis placeat.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "ca8079e5-9e85-4932-a63d-024d14b983f3",
-        "name": "yippee.pps",
-        "description": "Xiphias derideo magnam nam.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "2863401c-64d5-451a-b0b3-f888446297cc",
-        "name": "emboss.avi",
-        "description": "Trepide colligo tutamen.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "132a421c-0cb8-486c-8619-277439d56f49",
-        "name": "innocently_quarterly_pfft.msp",
-        "description": "Thorax pecus carbo tam angelus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "e8dfc02b-16dd-4646-951f-5cbdc497b668",
-        "name": "minor.msm",
-        "description": "Annus cunabula sum iusto thema impedit cornu esse surculus subvenio.",
-        "riskLevel": "medium"
       }
     ],
     "supportedOS": [
-      "Android",
       "iOS",
-      "Other"
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
-      "laptop",
-      "tablet"
+      "smartphone",
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2025-06-03T06:35:15.403Z",
-    "updatedAt": "2025-05-08T02:40:23.902Z"
+    "createdAt": "2025-02-16T04:21:59.273Z",
+    "updatedAt": "2025-05-25T20:30:39.263Z"
   },
   {
     "id": "app_00000010",
-    "name": "Franecki Inc Enterprise App",
+    "name": "Confluence",
     "category": "enterprise",
-    "description": "Persistent fresh-thinking analyzer",
-    "vendor": "Frami and Sons",
-    "version": "5.6.1",
+    "description": "Team collaboration and documentation platform",
+    "vendor": "Atlassian",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "9c7d9d39-66f7-4576-b00d-ce158036f8d3",
-        "name": "along_wicked.conf",
-        "description": "Defaeco viriliter approbo abutor decens taceo adaugeo saepe.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "416b51a2-54fc-4282-b6c2-0d3fe7433d63",
-        "name": "tankful_below_kookily.rng",
-        "description": "Accedo incidunt dolore.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "ab74dd9e-b3d0-453d-825f-a9651deb83f5",
-        "name": "frankly.dump",
-        "description": "Textus via casus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "c435bf1a-43fb-4764-bb9c-025be048e360",
-        "name": "bleakly_oval_if.kar",
-        "description": "Stips triduana venustas debitis venia umerus vulgaris stella spiritus.",
+        "id": "confluence_view_page",
+        "name": "View Page",
+        "description": "User views a Confluence page",
         "riskLevel": "low"
       },
       {
-        "id": "ad545565-4b00-4d8b-bf30-35ba3b6646e4",
-        "name": "tribe.txt",
-        "description": "Acidus tibi tantillus.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "2a30e754-1042-438c-86bb-615c90472238",
-        "name": "whether.weba",
-        "description": "Illo absorbeo aequitas verbera.",
+        "id": "confluence_edit_page",
+        "name": "Edit Page",
+        "description": "User edits a Confluence page",
         "riskLevel": "medium"
       },
       {
-        "id": "fec85f08-e839-44f3-be77-61305e5f601d",
-        "name": "jubilantly.pkg",
-        "description": "Speciosus neque clamo virgo tum thymum.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "bd095b5c-4fba-4696-a131-fca7374038af",
-        "name": "sprinkles.odt",
-        "description": "Balbus tubineus depereo supellex cibo summisse vobis doloribus cavus.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "2d104355-946f-4ea3-bd44-046066b43e38",
-        "name": "provider.mid",
-        "description": "Decor demum solitudo torqueo causa quas turba.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "2876f465-64f1-459e-b056-4cc373696fe7",
-        "name": "upside_down_suckle_stump.dist",
-        "description": "Rem somniculosus vulgo brevis cilicium.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "58838a7f-49ec-4c8f-a6c5-58e305316158",
-        "name": "misread.list",
-        "description": "Supplanto recusandae dolore crepusculum clarus adnuo deleniti campana coadunatio.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "24d09410-bf56-4127-813c-86424e5c40f8",
-        "name": "amongst.buffer",
-        "description": "Depraedor eius valde vero cernuus vito argentum voveo.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "b4379237-bf1c-4ac3-ba55-f95c1169e88b",
-        "name": "dual_plain_pause.svg",
-        "description": "Concido tantillus versus crepusculum repudiandae commodo quo colligo paulatim tabula.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "ff0e5d16-51f6-449f-9f58-3dc0e5a4ac93",
-        "name": "acclaimed_ick_whenever.csv",
-        "description": "Aspernatur ex alveus tripudio aspicio tempus compono adipisci vapulus.",
+        "id": "confluence_export_space",
+        "name": "Export Space",
+        "description": "User exports a space's content",
         "riskLevel": "high"
       }
     ],
     "supportedOS": [
       "iOS",
-      "Windows",
-      "Other"
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
-      "IoT",
-      "gateway"
+      "smartphone",
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2024-11-01T13:52:32.247Z",
-    "updatedAt": "2025-05-07T21:26:31.300Z"
+    "createdAt": "2024-08-15T02:20:20.456Z",
+    "updatedAt": "2025-05-29T21:25:29.499Z"
   },
   {
     "id": "app_00000011",
-    "name": "Cummerata LLC Productivity App",
-    "category": "productivity",
-    "description": "Distributed context-sensitive artificial intelligence",
-    "vendor": "Paucek and Sons",
-    "version": "3.6.3",
+    "name": "Microsoft Teams",
+    "category": "communication",
+    "description": "Enterprise communication and collaboration platform",
+    "vendor": "Microsoft",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "06fe9fff-4ebb-4fb4-aebe-1606b5dcb0c0",
-        "name": "wash_aw.wav",
-        "description": "Clamo solio vulgus.",
+        "id": "teams_join_meeting",
+        "name": "Join Meeting",
+        "description": "User joins a Teams meeting",
         "riskLevel": "low"
       },
       {
-        "id": "5ce5a8b5-88d6-432d-8d6a-acde950437e3",
-        "name": "calculating_whether.zip",
-        "description": "Adduco succurro verto incidunt.",
+        "id": "teams_share_screen",
+        "name": "Share Screen",
+        "description": "User shares their screen in a meeting",
         "riskLevel": "medium"
       },
       {
-        "id": "b3bb3497-229f-499d-bd6a-730fb3d16894",
-        "name": "pant_considering_wearily.svgz",
-        "description": "Aduro absconditus cunctatio vero aer timidus tabernus depromo debitis cunae.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "d44251d5-5f0d-4899-9e3e-a1b4663527c9",
-        "name": "opposite_cleave.xlt",
-        "description": "Cubicularis decens trucido administratio demoror tabernus talis cogito circumvenio.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "63c1ef71-62ca-4a14-9271-516508ead7b6",
-        "name": "where_like_corral.ods",
-        "description": "Usque totam clam usus ducimus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "4927dbc0-7738-44c1-b9b4-a847f7c02d4e",
-        "name": "orchestrate_lowball.mp3",
-        "description": "Thymum addo annus somniculosus arbor aequus pecco.",
+        "id": "teams_share_file",
+        "name": "Share File",
+        "description": "User shares a file in chat or meeting",
         "riskLevel": "high"
-      },
-      {
-        "id": "495468db-ade4-478d-8c56-9c6cba1ce3f2",
-        "name": "failing_quicker.zip",
-        "description": "Vomito vulgaris cauda audio anser demum terror desidero conventus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "436251fb-70c8-4492-9b6f-65c935cbb98e",
-        "name": "quietly_fairly_presell.3gpp",
-        "description": "Teneo ratione tertius bardus canonicus vir truculenter.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "d0e0716a-4be3-4d4b-bf28-621f35f47533",
-        "name": "ugh.ogv",
-        "description": "Vicinus cavus uterque vester adfero somniculosus solum aer denego.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "0e5fb1db-4674-43d4-a9d4-da8a25180070",
-        "name": "seagull.eot",
-        "description": "Cui amicitia ab adeo sursum.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "1959d29f-f910-4ad4-a2cd-04df0b590d99",
-        "name": "beneath_never_cop_out.msm",
-        "description": "Claudeo urbanus amplus cado currus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "8eabc007-d433-47e6-888f-62590bd3614c",
-        "name": "overconfidently_voluminous.xht",
-        "description": "Deorsum adnuo curtus comedo voro deputo clementia torrens abutor delinquo.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "bb17de0d-982f-4138-a346-67931f17de4f",
-        "name": "woot.dmg",
-        "description": "Accusantium videlicet adulescens aqua tego ex.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "57dd1300-3b65-408f-be13-308ee59e7377",
-        "name": "mispronounce.php",
-        "description": "Vero omnis chirographum suggero.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "7eaefe52-a641-4a3a-b616-eeb628bd79e9",
-        "name": "finally_astride_when.mp2",
-        "description": "Vobis viridis ubi demens.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "aa96ccb8-01f1-4177-8748-05629d7d31c6",
-        "name": "while.pdf",
-        "description": "Aliqua veritas via quae super validus eaque aer.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "d94ef20b-30b1-4a7c-969e-1a549a1aa3c7",
-        "name": "although_comfortable_ick.docx",
-        "description": "Ullus vetus officiis aliquam vorax comis subnecto tutamen quia.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "406b4a88-b37f-4d92-9a1b-9ace8ec31b74",
-        "name": "awesome_cod_about.azw",
-        "description": "Curriculum aptus verto sapiente vulgivagus vaco cibo cornu officiis.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "be2ad28d-cba5-4b6c-9e36-ed80837ca6d8",
-        "name": "kooky.aac",
-        "description": "Sponte alienus ipsum contego claudeo deprecator absum arca aequitas repudiandae.",
-        "riskLevel": "critical"
       }
     ],
     "supportedOS": [
-      "Other",
+      "iOS",
       "Android",
-      "iOS"
+      "Windows"
     ],
     "supportedDevices": [
       "smartphone",
-      "laptop",
-      "IoT"
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2024-08-27T03:00:30.112Z",
-    "updatedAt": "2025-05-07T23:52:12.989Z"
+    "createdAt": "2025-04-14T20:46:06.062Z",
+    "updatedAt": "2025-05-18T19:33:10.122Z"
   },
   {
     "id": "app_00000012",
-    "name": "Spencer - Fay Productivity App",
-    "category": "productivity",
-    "description": "Reduced sustainable approach",
-    "vendor": "Pagac - Cassin",
-    "version": "9.4.4",
+    "name": "Slack",
+    "category": "communication",
+    "description": "Business communication platform",
+    "vendor": "Salesforce",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "f00a0b54-2309-44e0-a30f-db2da24b5316",
-        "name": "phew_juggernaut.lrf",
-        "description": "Depromo sunt communis eius.",
-        "riskLevel": "critical"
+        "id": "slack_send_message",
+        "name": "Send Message",
+        "description": "User sends a message in a channel or DM",
+        "riskLevel": "low"
       },
       {
-        "id": "053e9566-0f9a-474c-aa9f-5e40134adec4",
-        "name": "why_worse_rudely.3gpp",
-        "description": "Compono benevolentia absum strenuus amaritudo aduro adinventitias stips.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "12973afc-220a-447c-b85d-516d9f839f59",
-        "name": "qua_shovel.rar",
-        "description": "Vulticulus sollers dolor cursim decens aduro stipes.",
+        "id": "slack_upload_file",
+        "name": "Upload File",
+        "description": "User uploads a file to a channel or DM",
         "riskLevel": "high"
       },
       {
-        "id": "22325aa2-ca69-4e87-a193-03156d1cfc33",
-        "name": "thorough_but_punctually.tif",
-        "description": "Brevis coadunatio vesica tamen quas odio calcar amet decet.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "b4c25882-a28a-4fbc-91cc-483e64362e43",
-        "name": "beautifully.mpga",
-        "description": "Voluptatum ciminatio coepi socius comprehendo uredo supellex facere strenuus curvo.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "c7f1874a-aca6-4b5b-93b0-a2356252c004",
-        "name": "majestically.bin",
-        "description": "Cur amoveo cognatus rem.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "9911de88-f460-4f02-8a88-dbf7665cff12",
-        "name": "hmph_unlike.so",
-        "description": "Verecundia sapiente validus versus abeo viscus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "defaf362-33e3-4704-850a-6838306303e5",
-        "name": "kiddingly_readily.svgz",
-        "description": "Tolero volubilis absorbeo attonbitus.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "0063bc09-1a78-4ba1-9426-aa917dcbf052",
-        "name": "word_bah.epub",
-        "description": "Calculus desolo textus enim apud comptus.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "07d84d40-e434-4cec-b28b-8e472df9154c",
-        "name": "maestro.bmp",
-        "description": "Adhaero comes cavus vito.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "e6cc557d-bb93-4419-87a1-c562e400771c",
-        "name": "sedately.vss",
-        "description": "Quasi asper abduco voco uterque arceo voro desolo.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "8dbe12cf-67f2-4473-b8e5-a5af8e8156c9",
-        "name": "taxicab_rewarding_taro.bz",
-        "description": "Compello acidus consequuntur delinquo.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "ef2e85da-4239-4726-9561-6b669b3a8c8f",
-        "name": "spanish_eternity.ttf",
-        "description": "Defessus necessitatibus sordeo ubi conventus color trans teneo.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "163f3834-e04d-46c6-ad9e-cec3bf4cec75",
-        "name": "yum_intellect_major.weba",
-        "description": "Absconditus sequi turpis aro aveho sumo communis voluptate ipsum consectetur.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "52c0607c-1364-4c26-88f6-9040284ca544",
-        "name": "while_where_disposer.ts",
-        "description": "Audacia torrens inventore dapifer itaque umbra adamo conitor delego degenero.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "8936ff65-1c2a-426a-9cda-46b43b7281b1",
-        "name": "boohoo_sardonic_silt.rng",
-        "description": "Doloribus commodo in theatrum tamquam sumo validus.",
-        "riskLevel": "medium"
+        "id": "slack_join_channel",
+        "name": "Join Channel",
+        "description": "User joins a new channel",
+        "riskLevel": "low"
       }
     ],
     "supportedOS": [
-      "Android"
+      "iOS",
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
-      "gateway",
-      "IoT"
+      "smartphone",
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2025-03-08T08:54:35.671Z",
-    "updatedAt": "2025-05-29T09:34:36.966Z"
+    "createdAt": "2025-04-10T17:32:45.462Z",
+    "updatedAt": "2025-05-15T11:45:06.691Z"
   },
   {
     "id": "app_00000013",
-    "name": "Veum LLC Custom App",
-    "category": "custom",
-    "description": "Networked systematic collaboration",
-    "vendor": "Lowe - Wyman",
-    "version": "6.0.0",
+    "name": "Zoom",
+    "category": "communication",
+    "description": "Video conferencing platform",
+    "vendor": "Zoom Video Communications",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "55381cc9-a41a-45d1-96f7-f7707ea7656d",
-        "name": "if_frantically.xul",
-        "description": "Veritatis trucido alioqui amor desidero corona ipsa tersus tamen undique.",
+        "id": "zoom_join_meeting",
+        "name": "Join Meeting",
+        "description": "User joins a Zoom meeting",
         "riskLevel": "low"
       },
       {
-        "id": "a6ca3241-5d5b-435c-bdcf-0b067ed9dc0f",
-        "name": "analogy.3g2",
-        "description": "Abbas aro temeritas turpis cogo.",
+        "id": "zoom_record_meeting",
+        "name": "Record Meeting",
+        "description": "User starts recording a meeting",
         "riskLevel": "high"
       },
       {
-        "id": "656e1a94-7df4-4b68-9888-6526db63e10a",
-        "name": "common_inveigle.bpk",
-        "description": "Aeternus bellum claustrum benevolentia tenus turba aptus sub venustas.",
+        "id": "zoom_share_screen",
+        "name": "Share Screen",
+        "description": "User shares their screen in a meeting",
         "riskLevel": "medium"
-      },
-      {
-        "id": "d1576334-987e-4ed9-8fc2-99b870cff4a5",
-        "name": "stake.svgz",
-        "description": "Denego deinde talus aduro alo delinquo.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "4817096a-90af-4bd1-a793-f99c55977059",
-        "name": "nervous_ick.kar",
-        "description": "Campana tripudio trado quam adiuvo demitto deputo.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "b2c197f4-13f5-4034-a028-958da1c1c6e1",
-        "name": "bah.in",
-        "description": "Ambitus comedo aegrus tergo concido deleniti nostrum.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "3fe56cc5-9446-4ec8-89fe-9b691be06e63",
-        "name": "circa.rtf",
-        "description": "Carcer conqueror occaecati contabesco.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "6bcb74ca-923c-4b3e-ab7a-c91b60f3d41c",
-        "name": "uproot_unconscious.pot",
-        "description": "Sursum totidem cavus varius nobis cicuta alii aqua.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "7ea64213-89d0-4d76-9b0a-12b12c00c79b",
-        "name": "obnoxiously.shtml",
-        "description": "Terreo adduco cognatus cibus coruscus nemo amiculum crinis vicissitudo creptio.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "2a0a44df-aa2e-48df-aa96-76bc3ea07b6e",
-        "name": "whereas_splendid.conf",
-        "description": "Tandem adaugeo demens conscendo.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "c9b8ec7b-85fa-435d-97f6-12950a142ead",
-        "name": "assist_underplay_failing.avif",
-        "description": "Amo repudiandae altus caries adicio illo crapula.",
-        "riskLevel": "critical"
       }
     ],
     "supportedOS": [
-      "Other",
       "iOS",
+      "Android",
       "Windows"
     ],
     "supportedDevices": [
-      "tablet",
       "smartphone",
+      "tablet",
       "laptop"
     ],
-    "createdAt": "2024-09-02T16:52:23.760Z",
-    "updatedAt": "2025-05-25T14:38:52.152Z"
+    "createdAt": "2024-12-08T22:45:52.986Z",
+    "updatedAt": "2025-05-04T19:27:36.753Z"
   },
   {
     "id": "app_00000014",
-    "name": "Botsford - Abernathy Custom App",
-    "category": "custom",
-    "description": "Versatile composite infrastructure",
-    "vendor": "Walsh - Stanton",
-    "version": "5.6.0",
+    "name": "Google Drive",
+    "category": "productivity",
+    "description": "Cloud storage and file sharing platform",
+    "vendor": "Google",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "55fe5816-e0f4-4380-8f55-114c50206a7e",
-        "name": "following_accept_cautiously.jsonld",
-        "description": "Correptius cupiditas repudiandae ancilla pecus vallum.",
-        "riskLevel": "critical"
+        "id": "drive_view_file",
+        "name": "View File",
+        "description": "User views a file in Drive",
+        "riskLevel": "low"
       },
       {
-        "id": "7f9e1db0-4b97-4dda-90e1-2ceac1ac3f9a",
-        "name": "usefully_around.boz",
-        "description": "Creo sufficio cubicularis.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "7bb266b5-1af7-4a7a-82cb-452ed5d61dc9",
-        "name": "however_juggernaut_scarily.vsd",
-        "description": "Claro itaque tollo atrox deporto tum decerno.",
+        "id": "drive_edit_file",
+        "name": "Edit File",
+        "description": "User edits a file in Drive",
         "riskLevel": "medium"
       },
       {
-        "id": "82b99dfc-0377-4ead-93e8-cbb686e433fd",
-        "name": "yahoo_reproach_abaft.mid",
-        "description": "Villa amplus acquiro conculco admitto maxime aranea cultellus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "3079e37c-ec88-479f-a440-c7ecca4b40f6",
-        "name": "gah.otf",
-        "description": "Tergiversatio claro temporibus amplus conitor.",
+        "id": "drive_share_file",
+        "name": "Share File",
+        "description": "User shares a file with others",
         "riskLevel": "high"
-      },
-      {
-        "id": "bae74244-227c-4f9a-a7ed-c339a408326f",
-        "name": "gosh_talkative_oof.ico",
-        "description": "Succurro anser adstringo facere tumultus.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "32030f23-6243-42c2-aeff-8a1c747de6a5",
-        "name": "ultimately_aha.m1v",
-        "description": "Campana tumultus damnatio tolero modi.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "50e316a9-d04e-4492-a9c6-85e5b9edfa9a",
-        "name": "microchip_heartfelt.azw",
-        "description": "Aperio voco carcer casus quas pecco ventus arcus defleo calcar.",
-        "riskLevel": "low"
       }
     ],
     "supportedOS": [
-      "Other",
-      "iOS"
+      "iOS",
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
-      "IoT",
-      "smartphone"
+      "smartphone",
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2024-09-01T03:24:46.296Z",
-    "updatedAt": "2025-05-21T11:55:05.760Z"
+    "createdAt": "2025-05-31T21:36:29.857Z",
+    "updatedAt": "2025-05-31T00:36:01.033Z"
   },
   {
     "id": "app_00000015",
-    "name": "Osinski and Sons Communication App",
-    "category": "communication",
-    "description": "Horizontal explicit circuit",
-    "vendor": "Kub - Gutmann",
-    "version": "4.0.5",
+    "name": "Microsoft OneDrive",
+    "category": "productivity",
+    "description": "Cloud storage and file sharing platform",
+    "vendor": "Microsoft",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "7a9ddec7-472a-47d8-b415-2b17368e2e43",
-        "name": "huzzah_carouse.xlm",
-        "description": "Decipio amo termes candidus vir.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "925bdf02-d93d-4d10-890d-d8b2414e6ebc",
-        "name": "strident_account_climb.dll",
-        "description": "Casso defero cedo utroque deserunt comes ullus vetus voluptatibus.",
+        "id": "onedrive_sync_file",
+        "name": "Sync File",
+        "description": "User syncs a file to local device",
         "riskLevel": "medium"
       },
       {
-        "id": "ef5517a7-4cb0-4035-99a3-4f75be9c0e86",
-        "name": "notwithstanding_dearly_unethically.webp",
-        "description": "Currus audax tergum aer vicinus tredecim.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "36060b66-4407-4993-8a84-5707c57372d1",
-        "name": "inwardly_abnormally_down.jpg",
-        "description": "Creator aggero alo ipsa sumptus cavus theologus damno desipio.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "00588008-ffa7-4792-930d-d704d825e35c",
-        "name": "often.xsd",
-        "description": "Despecto totus demonstro cibo denuo aequus ullam sumo adaugeo balbus.",
+        "id": "onedrive_share_file",
+        "name": "Share File",
+        "description": "User shares a file with others",
         "riskLevel": "high"
       },
       {
-        "id": "a1ef4a8c-ab10-4c9a-b6d1-00432f1d68da",
-        "name": "councilman.odt",
-        "description": "Comis vix tabernus molestiae clarus.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "35603aba-36c0-4698-926d-d3441f7d8425",
-        "name": "blue_yet.midi",
-        "description": "Convoco cerno claudeo crapula textus utor ulciscor.",
+        "id": "onedrive_edit_file",
+        "name": "Edit File",
+        "description": "User edits a file in OneDrive",
         "riskLevel": "medium"
-      },
-      {
-        "id": "f53ed260-481b-4c59-be07-e094e8832a84",
-        "name": "wrongly.in",
-        "description": "Decretum voluntarius adsum.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "bd75b63b-256e-4853-9cc6-8f76d42a38e3",
-        "name": "incidentally_after.7z",
-        "description": "Surgo demonstro summa paulatim delibero.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "c7962401-09ff-438a-92eb-301ea016a894",
-        "name": "acceptable_swing.zip",
-        "description": "Quisquam catena occaecati.",
-        "riskLevel": "critical"
       }
     ],
     "supportedOS": [
       "iOS",
-      "Android"
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
-      "IoT",
-      "tablet"
+      "smartphone",
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2025-03-09T02:30:21.076Z",
-    "updatedAt": "2025-05-18T00:10:02.339Z"
+    "createdAt": "2024-08-03T19:12:15.322Z",
+    "updatedAt": "2025-06-01T13:30:05.037Z"
   },
   {
     "id": "app_00000016",
-    "name": "Yost, Schmidt and Dach Custom App",
-    "category": "custom",
-    "description": "Face to face scalable success",
-    "vendor": "Halvorson and Sons",
-    "version": "4.6.7",
+    "name": "Microsoft Outlook",
+    "category": "communication",
+    "description": "Email and calendar management platform",
+    "vendor": "Microsoft",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "b5c385ec-cc7e-4854-ba36-01450c6d625f",
-        "name": "gentle.sh",
-        "description": "Velociter claustrum angulus.",
-        "riskLevel": "critical"
+        "id": "outlook_send_email",
+        "name": "Send Email",
+        "description": "User sends an email",
+        "riskLevel": "medium"
       },
       {
-        "id": "15afa1b7-0403-40a7-8df0-bd6ee0d56b17",
-        "name": "furthermore.msm",
-        "description": "Carmen coma tutamen vulpes vilitas ad catena cavus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "d90d929f-a81d-411c-bb9e-69cc870a8d83",
-        "name": "dial_because_birdbath.buffer",
-        "description": "Theologus voco solutio.",
+        "id": "outlook_forward_email",
+        "name": "Forward Email",
+        "description": "User forwards an email",
         "riskLevel": "high"
       },
       {
-        "id": "a5916c30-b3ec-43cd-b6ad-9352b53f4b53",
-        "name": "retract_brand.ttf",
-        "description": "Creber eum asporto patria.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "607e12ef-6529-4e54-b18d-fa6e9723428c",
-        "name": "apud.dll",
-        "description": "Ventus crastinus virgo vir.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "4e374494-7ab8-4900-9b0b-10eedc648aa4",
-        "name": "sensitize.m3a",
-        "description": "Depulso civis magni vallum tripudio.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "2cf90317-080f-4f98-952e-52d1a1afabc1",
-        "name": "vacantly_slowly.m2a",
-        "description": "Curtus attonbitus aperte bonus alienus.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "d3ab6425-e1c8-4935-80e2-3c6518c2a347",
-        "name": "intensely_knowingly_hold.xsl",
-        "description": "Adflicto adficio confido tabella velum averto demens surgo vestrum eveniet.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "74b6b754-65e8-4f3c-9963-bfea371f233d",
-        "name": "waver_when_kissingly.tiff",
-        "description": "Ascisco umbra suscipit aufero.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "2f1306ec-436a-4ee6-920a-bdac606ca8aa",
-        "name": "consequently.sh",
-        "description": "Terreo benevolentia tricesimus tempus suasoria.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "d7c14706-c997-4d6a-9e14-26976afff06a",
-        "name": "troubled.avif",
-        "description": "Casus audax sodalitas canis desolo.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "268e0853-8ac2-4483-849c-28b83b08e1a3",
-        "name": "nor_zen_magnificent.pkg",
-        "description": "Velum tui nulla videlicet.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "57c480bd-57a8-4148-af97-34ca3c492ea2",
-        "name": "mooch_after_and.epub",
-        "description": "Quasi conqueror cui vivo.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "24f2936d-83c6-412c-bd4a-6bf1587c44c2",
-        "name": "across_drat_inasmuch.war",
-        "description": "Audax tergo vulgaris quaerat conculco soleo adfectus trado.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "22364d1d-a013-43d0-9f5f-aba4b2ea86dd",
-        "name": "underneath_gee.text",
-        "description": "Et subvenio tonsor aegrus calco.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "d073a366-033f-43e6-a5cb-62a8befba879",
-        "name": "presell_gnaw.3g2",
-        "description": "Acer adduco valeo tergeo tabella aveho desolo impedit.",
+        "id": "outlook_attach_file",
+        "name": "Attach File",
+        "description": "User attaches a file to an email",
         "riskLevel": "high"
       }
     ],
     "supportedOS": [
-      "Android"
+      "iOS",
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
-      "IoT",
+      "smartphone",
       "tablet",
-      "smartphone"
+      "laptop"
     ],
-    "createdAt": "2025-04-23T08:16:33.785Z",
-    "updatedAt": "2025-05-29T21:25:50.477Z"
+    "createdAt": "2025-03-18T21:28:46.249Z",
+    "updatedAt": "2025-05-15T16:48:49.244Z"
   },
   {
     "id": "app_00000017",
-    "name": "Lynch - Morar Enterprise App",
+    "name": "Salesforce",
     "category": "enterprise",
-    "description": "Sharable immersive budgetary management",
-    "vendor": "Heathcote, Howell and Parker",
-    "version": "6.2.3",
+    "description": "Customer relationship management platform",
+    "vendor": "Salesforce",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "b843426b-6258-4fe6-b089-5c68ebc5c0ef",
-        "name": "once.avif",
-        "description": "Temptatio ambulo numquam.",
+        "id": "salesforce_view_record",
+        "name": "View Record",
+        "description": "User views a customer record",
         "riskLevel": "low"
       },
       {
-        "id": "a2e65d0a-7a2e-4e1c-869b-b5fc685887a6",
-        "name": "while_gee_heavily.ogg",
-        "description": "Caritas tubineus colo.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "1168ead5-556a-4e71-afc1-26e1a41dd67f",
-        "name": "hmph_aware.json",
-        "description": "Nisi deprecator ante talis qui abduco.",
+        "id": "salesforce_edit_record",
+        "name": "Edit Record",
+        "description": "User edits a customer record",
         "riskLevel": "high"
       },
       {
-        "id": "858d7706-ff72-41de-b6b6-9d9ce5db07bc",
-        "name": "likewise_flickering.deploy",
-        "description": "Provident nostrum qui.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "d6ffc082-153a-46e8-ab8c-64c9f9889c23",
-        "name": "gee_whenever.3gpp",
-        "description": "Neque clam excepturi eaque enim ulciscor.",
+        "id": "salesforce_export_data",
+        "name": "Export Data",
+        "description": "User exports data from Salesforce",
         "riskLevel": "high"
-      },
-      {
-        "id": "f6f84919-5ed0-4b4d-9722-c9aa270a33a7",
-        "name": "softly_considering_fooey.mpkg",
-        "description": "Tandem thermae cunabula sperno temporibus contra adulatio.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "828a1436-bb5e-41c7-9ce1-7f56ddf4c538",
-        "name": "reluctantly.xlt",
-        "description": "Coruscus cubitum stella vestrum angelus strenuus volva caterva aedificium.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "83309f40-8414-43b3-bacb-d28ba3515a01",
-        "name": "a_soap_carelessly.shtml",
-        "description": "Spargo absum audacia velit aestus timidus depono crux velociter.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "0d1cc862-cf30-4dc3-9cc0-814db682963a",
-        "name": "eek.woff2",
-        "description": "Apparatus delicate comptus titulus agnosco cilicium.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "db50bdf2-d883-4b7c-bbad-cf99231faa79",
-        "name": "blah_ownership.svg",
-        "description": "Cursus utpote curtus textilis ocer sublime laboriosam comedo attonbitus.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "113f346d-a7d1-4c26-a792-ccab0a1b5513",
-        "name": "bludgeon_aha.eot",
-        "description": "Callide animus turbo corrumpo adsidue unus virtus comes civis nulla.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "6e0ca37e-2bf8-4896-8403-778acfb301dd",
-        "name": "depot_whenever.iso",
-        "description": "Natus dolorum bibo.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "a1342f20-a31b-4240-bfe3-d3eaba0bd8a0",
-        "name": "schlep_after.deb",
-        "description": "Vicissitudo conservo tutamen templum caecus caelum bis ceno ultra asper.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "54b732cf-a48c-4192-a57e-17b48af409ab",
-        "name": "likewise_kowtow_huzzah.aac",
-        "description": "Assumenda peccatus cauda canto.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "c8cd3a59-1719-4e3b-acbd-398ca4a2c006",
-        "name": "until.mpeg",
-        "description": "Vesica curso voluptates conspergo templum tamen.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "6e3bfa8d-146b-4f03-898e-cafd4cfb89e8",
-        "name": "nor_chasuble.odp",
-        "description": "Amet labore coniuratio aer nihil aperiam copia pecto.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "a0993a85-ca0a-475c-a5ce-66d9ed28e973",
-        "name": "design.odp",
-        "description": "Campana tubineus suppono quae subiungo charisma voveo umquam.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "fb5972aa-4456-428c-bcd4-4ebed58010c5",
-        "name": "packaging_construe.rtf",
-        "description": "Defetiscor suggero tribuo coniecto valde.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "3e9ffbee-6daf-4119-96bf-9045e385cfd2",
-        "name": "brr_blah.ttf",
-        "description": "Advenio laudantium ager amplitudo speculum adfectus varietas.",
-        "riskLevel": "critical"
       }
     ],
     "supportedOS": [
+      "iOS",
+      "Android",
       "Windows"
     ],
     "supportedDevices": [
-      "gateway",
-      "smartphone"
+      "smartphone",
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2025-03-29T15:30:21.162Z",
-    "updatedAt": "2025-05-09T22:18:21.525Z"
+    "createdAt": "2025-01-31T13:48:54.655Z",
+    "updatedAt": "2025-05-10T17:56:45.328Z"
   },
   {
     "id": "app_00000018",
-    "name": "Wuckert - Moen Productivity App",
-    "category": "productivity",
-    "description": "Networked data-driven access",
-    "vendor": "Stoltenberg - Flatley",
-    "version": "2.5.0",
+    "name": "ServiceNow",
+    "category": "enterprise",
+    "description": "IT service management platform",
+    "vendor": "ServiceNow",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "adb501cc-bc4f-41c5-945d-e58624e661b6",
-        "name": "intensely.jpe",
-        "description": "Vorax numquam tolero.",
+        "id": "servicenow_create_ticket",
+        "name": "Create Ticket",
+        "description": "User creates a new service ticket",
         "riskLevel": "low"
       },
       {
-        "id": "dd292904-5bb8-4b44-a1d7-ba2bebb06932",
-        "name": "aw_consequently.buffer",
-        "description": "Exercitationem acidus adfectus cenaculum amicitia reprehenderit inflammatio usque iure.",
+        "id": "servicenow_approve_change",
+        "name": "Approve Change",
+        "description": "User approves a change request",
         "riskLevel": "high"
       },
       {
-        "id": "bdfef64d-0aca-430c-a422-6a28fa24562d",
-        "name": "why_knight_till.jpg",
-        "description": "Theca cognatus carbo asper dolore iusto cubicularis.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "43c2144e-584d-452f-827a-4d5e95e8178b",
-        "name": "like.json",
-        "description": "Correptius absens talus tamdiu sufficio claro.",
+        "id": "servicenow_view_incident",
+        "name": "View Incident",
+        "description": "User views an incident record",
         "riskLevel": "medium"
-      },
-      {
-        "id": "d301b416-ff9b-42ae-a254-3e199987ed53",
-        "name": "yuck_but_to.bmp",
-        "description": "Corroboro cubitum baiulus taedium volup commodi aegrotatio.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "555b2f1a-a1d8-49f1-a7be-eb5ea86a4a28",
-        "name": "as_obligation.mp2a",
-        "description": "Creo theatrum apto brevis cinis caelestis acceptus decens.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "30e6ca92-caa5-422e-905a-5a56fab81583",
-        "name": "during_compromise.txt",
-        "description": "Textilis consuasor tero thalassinus constans ullam incidunt supellex voluptatem demitto.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "2a94005d-baa7-4c5d-8d18-1c202275a71c",
-        "name": "clearly_tired_mmm.aac",
-        "description": "Tremo appono adinventitias doloribus corrumpo tricesimus cupiditas textus.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "2d4b989c-9c70-4f35-9c4f-b313e904b1a5",
-        "name": "or_goose_final.mp4v",
-        "description": "Vinco calamitas adduco corrigo.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "818f6ae8-87e3-47fa-9aa6-9ddd70ee1ff6",
-        "name": "toward.svgz",
-        "description": "Expedita cotidie brevis certus absque.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "3bfcc7bd-3ebc-4763-a88c-71a714b583c7",
-        "name": "blindly_excitedly.msi",
-        "description": "Aliqua timor viscus adamo depromo valens accusator.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "f649a61c-0f0a-48eb-b608-cfeafec993e5",
-        "name": "proceed_sneak.tar",
-        "description": "Cohibeo acceptus sodalitas vulnus.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "185e0452-9540-4997-8db2-f9f294c18b06",
-        "name": "tensely_gee_cellar.rar",
-        "description": "Congregatio arguo coaegresco facere.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "c0f369b0-981e-430c-b164-39798b80b4be",
-        "name": "hm.tar",
-        "description": "Arcesso eos caelestis ultra cervus.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "9bc7c80f-9dfa-4d3f-8881-45e1c0b0a62f",
-        "name": "greedily_leap_bookend.tif",
-        "description": "Sumptus bardus volutabrum decerno.",
-        "riskLevel": "high"
       }
     ],
     "supportedOS": [
-      "Other",
-      "Windows",
-      "iOS"
+      "iOS",
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
-      "tablet"
+      "smartphone",
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2025-05-14T00:28:18.620Z",
-    "updatedAt": "2025-05-19T01:49:29.356Z"
+    "createdAt": "2024-06-28T08:04:52.386Z",
+    "updatedAt": "2025-05-04T18:05:35.241Z"
   },
   {
     "id": "app_00000019",
-    "name": "Howell - Adams Productivity App",
-    "category": "productivity",
-    "description": "Realigned fresh-thinking ability",
-    "vendor": "Funk, Lubowitz and Blanda",
-    "version": "8.3.0",
+    "name": "Jira",
+    "category": "enterprise",
+    "description": "Project management and issue tracking platform",
+    "vendor": "Atlassian",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "b46ec4c2-4862-469d-9ac2-aef7c268a4d6",
-        "name": "except.mar",
-        "description": "Cura tremo voluntarius.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "66a077e7-e029-4a19-ae02-d41e6e69b515",
-        "name": "unnaturally_oddly_volunteer.ppt",
-        "description": "Spiculum tres cotidie coniecto sub.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "91c1aaa4-e62c-494a-b1a3-9d48d9e035ad",
-        "name": "dash_extent.xht",
-        "description": "Carbo aperiam bestia cupiditas.",
+        "id": "jira_create_issue",
+        "name": "Create Issue",
+        "description": "User creates a new issue",
         "riskLevel": "low"
       },
       {
-        "id": "ecb1b434-484d-4ffb-9c91-d38f307b28c7",
-        "name": "ouch.webm",
-        "description": "Argumentum alii cetera unde trans cumque.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "2d77df68-86fd-4ebf-bc87-fdb8a6437687",
-        "name": "because_unless_until.jpg",
-        "description": "Curatio veritatis supra velut deduco.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "55d87e6b-77e3-4021-a3b0-82b20c32f9af",
-        "name": "promise_better_outflank.bpk",
-        "description": "Tabella tergeo tripudio amicitia dicta.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "8981a134-c825-460e-9e14-a84c7b1e604d",
-        "name": "politely_astonishing_elliptical.3gpp",
-        "description": "Capto depulso coma super benigne altus termes placeat.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "9d9f2db9-a455-46b1-9de1-631efa0108d3",
-        "name": "better_oddly.3g2",
-        "description": "Quaerat valetudo paens arma victus conicio valetudo antiquus coniuratio cenaculum.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "591f1055-001c-4d43-97ec-dac6246fe9f8",
-        "name": "before_lively_overcooked.msm",
-        "description": "Doloremque suadeo tubineus decimus appono accendo aurum deprecator temporibus admoveo.",
+        "id": "jira_assign_issue",
+        "name": "Assign Issue",
+        "description": "User assigns an issue to someone",
         "riskLevel": "medium"
       },
       {
-        "id": "2b37eefd-1147-4a52-a12d-41e1dbe4acd8",
-        "name": "out_sign_wherever.boz",
-        "description": "Odio via pectus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "3935d86e-83b1-4eab-82c3-e77664ec7131",
-        "name": "who.bz",
-        "description": "Advoco dignissimos conatus ars bellum.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "de4db713-4ab7-4bdd-94ad-e4a990f41246",
-        "name": "probable_rebound_fooey.ts",
-        "description": "Contigo creator sopor velum.",
+        "id": "jira_export_board",
+        "name": "Export Board",
+        "description": "User exports a board's data",
         "riskLevel": "high"
-      },
-      {
-        "id": "28a70f0b-9f3b-44fd-b513-8b320d8a2314",
-        "name": "schedule.mpe",
-        "description": "Caelestis assentator voluntarius.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "d7228dff-89cf-4876-8a5a-3df5c470bbc7",
-        "name": "that_cheerfully.vss",
-        "description": "Cado adinventitias utrum aegre amo terra calcar.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "8a6e2c45-2828-428a-9f91-e8474591b913",
-        "name": "urgently.pkg",
-        "description": "Advenio ultra tubineus deprimo asperiores.",
-        "riskLevel": "low"
       }
     ],
     "supportedOS": [
-      "Windows",
-      "Android"
+      "iOS",
+      "Android",
+      "Windows"
     ],
     "supportedDevices": [
       "smartphone",
-      "IoT"
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2024-06-21T00:15:48.869Z",
-    "updatedAt": "2025-05-06T11:30:02.035Z"
+    "createdAt": "2024-09-09T10:21:51.077Z",
+    "updatedAt": "2025-05-20T19:53:58.687Z"
   },
   {
     "id": "app_00000020",
-    "name": "Murphy, Reilly and Tremblay Productivity App",
-    "category": "productivity",
-    "description": "AI-driven fault-tolerant firmware",
-    "vendor": "Roob - Sauer",
-    "version": "6.4.1",
+    "name": "Confluence",
+    "category": "enterprise",
+    "description": "Team collaboration and documentation platform",
+    "vendor": "Atlassian",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "573575b2-1e49-4940-b8b8-1718207fe531",
-        "name": "consequently_so_viciously.jpeg",
-        "description": "Vivo tantillus audio thema tabgo verumtamen subnecto velit.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "837cee65-7a80-43ed-94cd-e0b769a29f0c",
-        "name": "gadzooks_tomography_endow.txt",
-        "description": "Vociferor tamisium arto reprehenderit censura.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "d2393de2-26e0-40f6-af1a-ad34c6501a05",
-        "name": "mid_grimy.m3a",
-        "description": "Advenio defetiscor verecundia temeritas veniam.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "7ecbdc64-aee0-44db-835d-429e7458c14d",
-        "name": "now_circa.oga",
-        "description": "Clibanus credo cohaero cariosus aperte cultura arx delectatio.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "af3e6da4-acdf-4f42-99fd-f45986a7845b",
-        "name": "in_prohibition.deb",
-        "description": "Convoco amiculum caritas videlicet vir triumphus theologus annus currus accommodo.",
+        "id": "confluence_view_page",
+        "name": "View Page",
+        "description": "User views a Confluence page",
         "riskLevel": "low"
       },
       {
-        "id": "a8de93bc-58c7-4fe2-91e8-551e8eb463b4",
-        "name": "yogurt.iso",
-        "description": "Color colligo cognatus conspergo decor valeo correptius.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "caa421e7-ce51-430c-b570-d80d41fcc386",
-        "name": "limp.pkg",
-        "description": "Vesper apto tamisium synagoga quis atavus ago carcer dens claro.",
+        "id": "confluence_edit_page",
+        "name": "Edit Page",
+        "description": "User edits a Confluence page",
         "riskLevel": "medium"
       },
       {
-        "id": "711cbbad-0821-498e-8413-128301ef25fc",
-        "name": "kinase.gif",
-        "description": "Corona somnus aeger pectus vaco decipio aiunt venio.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "0abc25ac-9f62-448d-8421-2ee72064e8db",
-        "name": "warm_alligator.html",
-        "description": "Beatus acerbitas quos atque super vel contabesco contigo advoco turpis.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "7b50bdfc-f2f4-44b9-a865-3426cc34b098",
-        "name": "cleverly_corporation_but.webm",
-        "description": "Totus vulgivagus solus tam libero volubilis absum eum.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "a99fd836-f1e0-4141-8216-965a3ad21fea",
-        "name": "boo_hovercraft.lrf",
-        "description": "Avaritia a aegre depraedor taedium tepidus triduana arcus supra omnis.",
+        "id": "confluence_export_space",
+        "name": "Export Space",
+        "description": "User exports a space's content",
         "riskLevel": "high"
       }
     ],
     "supportedOS": [
+      "iOS",
       "Android",
-      "iOS",
-      "Other"
-    ],
-    "supportedDevices": [
-      "IoT",
-      "tablet",
-      "gateway"
-    ],
-    "createdAt": "2024-07-01T04:07:53.552Z",
-    "updatedAt": "2025-05-25T17:00:17.844Z"
-  },
-  {
-    "id": "app_00000021",
-    "name": "Fahey LLC Security App",
-    "category": "security",
-    "description": "Multi-tiered exuding time-frame",
-    "vendor": "Gerhold Inc",
-    "version": "6.2.4",
-    "actions": [
-      {
-        "id": "2a901e4d-abf8-499b-9a89-b2c4c22683b0",
-        "name": "casement.buffer",
-        "description": "Curtus civitas chirographum claustrum.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "e8488eeb-3e10-4c8f-ab0e-045d5054df7a",
-        "name": "ah_since.mp4",
-        "description": "Spes aut basium tristis architecto.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "569262c1-0d11-4db9-a5ad-622f3a121a6e",
-        "name": "noisily_yowza.def",
-        "description": "Talio sordeo atrox defungo venio civitas vigor copia provident statua.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "88116e4e-5725-4159-80e7-eec61f8245d2",
-        "name": "fluctuate_spirit.def",
-        "description": "Tendo voluptatem thesis.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "7a884150-b029-4c89-b4da-2fe73ff00622",
-        "name": "blink_direct_finally.dms",
-        "description": "Traho utpote depraedor damnatio.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "202113cc-a1ad-43fe-aca2-9bc662aeb3bf",
-        "name": "questionably.ppt",
-        "description": "Bene canto capio adeo nesciunt artificiose conor ascit copia versus.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "f6648246-18a0-4d1f-8864-ff3d0f7d8f68",
-        "name": "hm_aside.pptx",
-        "description": "Triumphus rerum tricesimus animus approbo.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "6210d91c-af26-45c2-9900-b06b5ffe6c8b",
-        "name": "overheard_hypothesise.woff",
-        "description": "Commemoro uredo umquam tepidus deficio facilis cognomen caveo cuppedia.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "57648894-96d8-4455-91c2-d8f4a3422013",
-        "name": "phew_forceful.weba",
-        "description": "Terra consequuntur cunae deinde temptatio praesentium.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "87156fae-fcd0-4c78-a6b7-c234cfb2a01f",
-        "name": "readjust.xsd",
-        "description": "Aspernatur virga varietas desino.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "5a05d6f8-a1ad-487d-9f92-7abf69b506ea",
-        "name": "bathhouse_emotional_immediate.html",
-        "description": "Autem coniecto accusator.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "115d7244-0cde-4c71-bb4b-7db5af525d86",
-        "name": "silently.oga",
-        "description": "Qui suspendo tergiversatio defetiscor umbra carus suffoco clamo.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "a1169d70-1407-419b-b08b-459173a0e96d",
-        "name": "gigantic_who_going.zip",
-        "description": "Possimus statua saepe decet suffragium crustulum somniculosus surculus cohaero.",
-        "riskLevel": "low"
-      }
-    ],
-    "supportedOS": [
-      "iOS",
       "Windows"
     ],
     "supportedDevices": [
       "smartphone",
-      "tablet"
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2025-05-13T14:19:00.240Z",
-    "updatedAt": "2025-06-01T14:39:05.122Z"
+    "createdAt": "2024-06-16T15:27:25.216Z",
+    "updatedAt": "2025-05-30T01:05:09.792Z"
   },
   {
-    "id": "app_00000022",
-    "name": "VonRueden - Lockman Custom App",
-    "category": "custom",
-    "description": "Robust client-server matrix",
-    "vendor": "Streich and Sons",
-    "version": "8.9.4",
+    "id": "app_00000021",
+    "name": "Microsoft Teams",
+    "category": "communication",
+    "description": "Enterprise communication and collaboration platform",
+    "vendor": "Microsoft",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "8b51bc36-16cc-4c76-aa87-0340eae30ac0",
-        "name": "unto_devil.tif",
-        "description": "Balbus claudeo tantillus caveo absens.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "4c327201-d9b1-443b-80b4-fc15f934eb8f",
-        "name": "instead_cloudy.ear",
-        "description": "Stips verbum unus.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "f2777372-0ec6-4fc5-a040-4734480433f7",
-        "name": "whose.dms",
-        "description": "Necessitatibus vulgivagus curso aetas tum somnus sophismata trado.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "cc3b6770-2435-4c11-9dd0-6178be462d0a",
-        "name": "condense_enhance.mp2a",
-        "description": "Validus incidunt avaritia harum illum tenax conor ulterius suppono.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "0db06b74-323e-47ef-9b9d-160ec3269f9a",
-        "name": "ignorant_or.ogx",
-        "description": "Depopulo civitas crapula cultellus adfero comminor ter universe alienus.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "93d71bf3-6e64-462a-a3c3-775328742585",
-        "name": "next_duh_colorfully.log",
-        "description": "Callide careo spectaculum magnam vulgaris vapulus ab suffragium vorax magni.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "1e992697-adbd-4f63-afef-0fca7a9bdc1e",
-        "name": "impact.ods",
-        "description": "Provident amiculum supellex.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "976c3d13-a55d-427e-89a5-7ef8b3a1ecc1",
-        "name": "canter.elc",
-        "description": "Copia coepi coepi succedo deficio.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "b671ec6c-6ca0-4a7a-8d8e-151d6b128465",
-        "name": "upliftingly.ifb",
-        "description": "Deserunt allatus surgo ocer velut.",
-        "riskLevel": "high"
-      },
-      {
-        "id": "537ab8d4-54ce-482c-811f-d4f7f6d4c7b5",
-        "name": "absent_separately.midi",
-        "description": "Derelinquo sortitus apto bardus vir validus recusandae cruentus dignissimos alius.",
+        "id": "teams_join_meeting",
+        "name": "Join Meeting",
+        "description": "User joins a Teams meeting",
         "riskLevel": "low"
+      },
+      {
+        "id": "teams_share_screen",
+        "name": "Share Screen",
+        "description": "User shares their screen in a meeting",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "teams_share_file",
+        "name": "Share File",
+        "description": "User shares a file in chat or meeting",
+        "riskLevel": "high"
       }
     ],
     "supportedOS": [
-      "Other",
+      "iOS",
+      "Android",
       "Windows"
     ],
     "supportedDevices": [
-      "tablet"
+      "smartphone",
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2025-05-17T04:00:23.530Z",
-    "updatedAt": "2025-05-28T04:00:27.551Z"
+    "createdAt": "2025-01-28T19:25:58.982Z",
+    "updatedAt": "2025-05-26T18:14:01.601Z"
   },
   {
-    "id": "app_00000023",
-    "name": "Marvin, Hickle and Lubowitz Communication App",
+    "id": "app_00000022",
+    "name": "Slack",
     "category": "communication",
-    "description": "Persevering value-added product",
-    "vendor": "Nienow Group",
-    "version": "8.6.9",
+    "description": "Business communication platform",
+    "vendor": "Salesforce",
+    "version": "1.0.0",
     "actions": [
       {
-        "id": "0d7d362f-13cb-4e81-9e0e-4f959d558a4f",
-        "name": "duh_fooey_absent.rmi",
-        "description": "Molestias terror commodo cohaero alter cedo.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "95555977-4761-4f74-8be0-ab95105060b5",
-        "name": "libel_tightly_fully.spx",
-        "description": "Adipiscor degusto usque velit.",
+        "id": "slack_send_message",
+        "name": "Send Message",
+        "description": "User sends a message in a channel or DM",
         "riskLevel": "low"
       },
       {
-        "id": "c7f5bc9c-622c-44ec-b549-d4779f08e672",
-        "name": "tectonics_silently_until.mid",
-        "description": "Omnis eaque ter stillicidium attollo pauci solium.",
-        "riskLevel": "low"
+        "id": "slack_upload_file",
+        "name": "Upload File",
+        "description": "User uploads a file to a channel or DM",
+        "riskLevel": "high"
       },
       {
-        "id": "9133755e-8a1c-434e-b8e2-a04b1b7593b7",
-        "name": "likewise_boohoo.spx",
-        "description": "Suffragium agnosco caute capio temeritas.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "ddae036a-cab3-49e1-b582-9105aee1d397",
-        "name": "provided.lrf",
-        "description": "Aedificium culpo contigo decet.",
-        "riskLevel": "medium"
-      },
-      {
-        "id": "ed5dac0f-a2f2-43cb-ac3a-5b3f4b9f142a",
-        "name": "what.mpe",
-        "description": "Deporto deprecator trepide thymum conspergo voluptas.",
-        "riskLevel": "low"
-      },
-      {
-        "id": "adc71dfb-c33a-4c71-802d-be4e8725dc87",
-        "name": "heartfelt_challenge_divine.aac",
-        "description": "Canis aliquid doloribus admiratio acervus cribro sortitus.",
-        "riskLevel": "critical"
-      },
-      {
-        "id": "b59033c7-4e8a-45b1-8054-8cf7154d855d",
-        "name": "justly_bemuse.docx",
-        "description": "Angelus uxor adamo tero labore utique auxilium vilicus.",
+        "id": "slack_join_channel",
+        "name": "Join Channel",
+        "description": "User joins a new channel",
         "riskLevel": "low"
       }
     ],
     "supportedOS": [
       "iOS",
+      "Android",
       "Windows"
     ],
     "supportedDevices": [
-      "IoT",
-      "gateway"
+      "smartphone",
+      "tablet",
+      "laptop"
     ],
-    "createdAt": "2025-03-30T05:49:18.084Z",
-    "updatedAt": "2025-05-09T05:59:11.233Z"
+    "createdAt": "2025-05-23T08:10:15.287Z",
+    "updatedAt": "2025-05-13T17:29:32.155Z"
+  },
+  {
+    "id": "app_00000023",
+    "name": "Zoom",
+    "category": "communication",
+    "description": "Video conferencing platform",
+    "vendor": "Zoom Video Communications",
+    "version": "1.0.0",
+    "actions": [
+      {
+        "id": "zoom_join_meeting",
+        "name": "Join Meeting",
+        "description": "User joins a Zoom meeting",
+        "riskLevel": "low"
+      },
+      {
+        "id": "zoom_record_meeting",
+        "name": "Record Meeting",
+        "description": "User starts recording a meeting",
+        "riskLevel": "high"
+      },
+      {
+        "id": "zoom_share_screen",
+        "name": "Share Screen",
+        "description": "User shares their screen in a meeting",
+        "riskLevel": "medium"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "tablet",
+      "laptop"
+    ],
+    "createdAt": "2024-06-21T08:23:31.152Z",
+    "updatedAt": "2025-05-31T18:04:32.616Z"
+  },
+  {
+    "id": "app_00000024",
+    "name": "Google Drive",
+    "category": "productivity",
+    "description": "Cloud storage and file sharing platform",
+    "vendor": "Google",
+    "version": "1.0.0",
+    "actions": [
+      {
+        "id": "drive_view_file",
+        "name": "View File",
+        "description": "User views a file in Drive",
+        "riskLevel": "low"
+      },
+      {
+        "id": "drive_edit_file",
+        "name": "Edit File",
+        "description": "User edits a file in Drive",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "drive_share_file",
+        "name": "Share File",
+        "description": "User shares a file with others",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "tablet",
+      "laptop"
+    ],
+    "createdAt": "2025-05-20T01:44:19.915Z",
+    "updatedAt": "2025-05-25T17:45:17.175Z"
+  },
+  {
+    "id": "app_00000025",
+    "name": "Microsoft OneDrive",
+    "category": "productivity",
+    "description": "Cloud storage and file sharing platform",
+    "vendor": "Microsoft",
+    "version": "1.0.0",
+    "actions": [
+      {
+        "id": "onedrive_sync_file",
+        "name": "Sync File",
+        "description": "User syncs a file to local device",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "onedrive_share_file",
+        "name": "Share File",
+        "description": "User shares a file with others",
+        "riskLevel": "high"
+      },
+      {
+        "id": "onedrive_edit_file",
+        "name": "Edit File",
+        "description": "User edits a file in OneDrive",
+        "riskLevel": "medium"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "tablet",
+      "laptop"
+    ],
+    "createdAt": "2025-01-21T11:22:04.645Z",
+    "updatedAt": "2025-05-27T17:44:38.438Z"
+  },
+  {
+    "id": "app_00000026",
+    "name": "Microsoft Outlook",
+    "category": "communication",
+    "description": "Email and calendar management platform",
+    "vendor": "Microsoft",
+    "version": "1.0.0",
+    "actions": [
+      {
+        "id": "outlook_send_email",
+        "name": "Send Email",
+        "description": "User sends an email",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "outlook_forward_email",
+        "name": "Forward Email",
+        "description": "User forwards an email",
+        "riskLevel": "high"
+      },
+      {
+        "id": "outlook_attach_file",
+        "name": "Attach File",
+        "description": "User attaches a file to an email",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "tablet",
+      "laptop"
+    ],
+    "createdAt": "2024-10-15T00:55:35.063Z",
+    "updatedAt": "2025-05-17T11:12:53.471Z"
+  },
+  {
+    "id": "app_00000027",
+    "name": "Salesforce",
+    "category": "enterprise",
+    "description": "Customer relationship management platform",
+    "vendor": "Salesforce",
+    "version": "1.0.0",
+    "actions": [
+      {
+        "id": "salesforce_view_record",
+        "name": "View Record",
+        "description": "User views a customer record",
+        "riskLevel": "low"
+      },
+      {
+        "id": "salesforce_edit_record",
+        "name": "Edit Record",
+        "description": "User edits a customer record",
+        "riskLevel": "high"
+      },
+      {
+        "id": "salesforce_export_data",
+        "name": "Export Data",
+        "description": "User exports data from Salesforce",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "tablet",
+      "laptop"
+    ],
+    "createdAt": "2024-08-20T22:03:52.889Z",
+    "updatedAt": "2025-05-17T23:17:29.112Z"
+  },
+  {
+    "id": "app_00000028",
+    "name": "ServiceNow",
+    "category": "enterprise",
+    "description": "IT service management platform",
+    "vendor": "ServiceNow",
+    "version": "1.0.0",
+    "actions": [
+      {
+        "id": "servicenow_create_ticket",
+        "name": "Create Ticket",
+        "description": "User creates a new service ticket",
+        "riskLevel": "low"
+      },
+      {
+        "id": "servicenow_approve_change",
+        "name": "Approve Change",
+        "description": "User approves a change request",
+        "riskLevel": "high"
+      },
+      {
+        "id": "servicenow_view_incident",
+        "name": "View Incident",
+        "description": "User views an incident record",
+        "riskLevel": "medium"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "tablet",
+      "laptop"
+    ],
+    "createdAt": "2025-04-10T18:29:43.203Z",
+    "updatedAt": "2025-05-04T22:20:04.787Z"
+  },
+  {
+    "id": "app_00000029",
+    "name": "Jira",
+    "category": "enterprise",
+    "description": "Project management and issue tracking platform",
+    "vendor": "Atlassian",
+    "version": "1.0.0",
+    "actions": [
+      {
+        "id": "jira_create_issue",
+        "name": "Create Issue",
+        "description": "User creates a new issue",
+        "riskLevel": "low"
+      },
+      {
+        "id": "jira_assign_issue",
+        "name": "Assign Issue",
+        "description": "User assigns an issue to someone",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "jira_export_board",
+        "name": "Export Board",
+        "description": "User exports a board's data",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "tablet",
+      "laptop"
+    ],
+    "createdAt": "2024-07-16T17:13:53.811Z",
+    "updatedAt": "2025-05-11T22:26:49.440Z"
+  },
+  {
+    "id": "app_00000030",
+    "name": "Confluence",
+    "category": "enterprise",
+    "description": "Team collaboration and documentation platform",
+    "vendor": "Atlassian",
+    "version": "1.0.0",
+    "actions": [
+      {
+        "id": "confluence_view_page",
+        "name": "View Page",
+        "description": "User views a Confluence page",
+        "riskLevel": "low"
+      },
+      {
+        "id": "confluence_edit_page",
+        "name": "Edit Page",
+        "description": "User edits a Confluence page",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "confluence_export_space",
+        "name": "Export Space",
+        "description": "User exports a space's content",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "tablet",
+      "laptop"
+    ],
+    "createdAt": "2025-03-27T21:43:09.005Z",
+    "updatedAt": "2025-05-16T02:02:52.008Z"
+  },
+  {
+    "id": "app_00000031",
+    "name": "Microsoft Teams",
+    "category": "communication",
+    "description": "Enterprise communication and collaboration platform",
+    "vendor": "Microsoft",
+    "version": "1.0.0",
+    "actions": [
+      {
+        "id": "teams_join_meeting",
+        "name": "Join Meeting",
+        "description": "User joins a Teams meeting",
+        "riskLevel": "low"
+      },
+      {
+        "id": "teams_share_screen",
+        "name": "Share Screen",
+        "description": "User shares their screen in a meeting",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "teams_share_file",
+        "name": "Share File",
+        "description": "User shares a file in chat or meeting",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "tablet",
+      "laptop"
+    ],
+    "createdAt": "2025-03-21T17:49:24.523Z",
+    "updatedAt": "2025-05-19T00:25:56.338Z"
+  },
+  {
+    "id": "app_00000032",
+    "name": "Slack",
+    "category": "communication",
+    "description": "Business communication platform",
+    "vendor": "Salesforce",
+    "version": "1.0.0",
+    "actions": [
+      {
+        "id": "slack_send_message",
+        "name": "Send Message",
+        "description": "User sends a message in a channel or DM",
+        "riskLevel": "low"
+      },
+      {
+        "id": "slack_upload_file",
+        "name": "Upload File",
+        "description": "User uploads a file to a channel or DM",
+        "riskLevel": "high"
+      },
+      {
+        "id": "slack_join_channel",
+        "name": "Join Channel",
+        "description": "User joins a new channel",
+        "riskLevel": "low"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "tablet",
+      "laptop"
+    ],
+    "createdAt": "2025-01-26T23:58:04.395Z",
+    "updatedAt": "2025-05-14T09:15:31.385Z"
+  },
+  {
+    "id": "app_00000033",
+    "name": "Zoom",
+    "category": "communication",
+    "description": "Video conferencing platform",
+    "vendor": "Zoom Video Communications",
+    "version": "1.0.0",
+    "actions": [
+      {
+        "id": "zoom_join_meeting",
+        "name": "Join Meeting",
+        "description": "User joins a Zoom meeting",
+        "riskLevel": "low"
+      },
+      {
+        "id": "zoom_record_meeting",
+        "name": "Record Meeting",
+        "description": "User starts recording a meeting",
+        "riskLevel": "high"
+      },
+      {
+        "id": "zoom_share_screen",
+        "name": "Share Screen",
+        "description": "User shares their screen in a meeting",
+        "riskLevel": "medium"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "tablet",
+      "laptop"
+    ],
+    "createdAt": "2024-06-22T04:03:10.096Z",
+    "updatedAt": "2025-05-21T08:18:14.000Z"
+  },
+  {
+    "id": "app_00000034",
+    "name": "Google Drive",
+    "category": "productivity",
+    "description": "Cloud storage and file sharing platform",
+    "vendor": "Google",
+    "version": "1.0.0",
+    "actions": [
+      {
+        "id": "drive_view_file",
+        "name": "View File",
+        "description": "User views a file in Drive",
+        "riskLevel": "low"
+      },
+      {
+        "id": "drive_edit_file",
+        "name": "Edit File",
+        "description": "User edits a file in Drive",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "drive_share_file",
+        "name": "Share File",
+        "description": "User shares a file with others",
+        "riskLevel": "high"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "tablet",
+      "laptop"
+    ],
+    "createdAt": "2024-10-18T22:27:56.835Z",
+    "updatedAt": "2025-05-24T12:23:46.244Z"
+  },
+  {
+    "id": "app_00000035",
+    "name": "Microsoft OneDrive",
+    "category": "productivity",
+    "description": "Cloud storage and file sharing platform",
+    "vendor": "Microsoft",
+    "version": "1.0.0",
+    "actions": [
+      {
+        "id": "onedrive_sync_file",
+        "name": "Sync File",
+        "description": "User syncs a file to local device",
+        "riskLevel": "medium"
+      },
+      {
+        "id": "onedrive_share_file",
+        "name": "Share File",
+        "description": "User shares a file with others",
+        "riskLevel": "high"
+      },
+      {
+        "id": "onedrive_edit_file",
+        "name": "Edit File",
+        "description": "User edits a file in OneDrive",
+        "riskLevel": "medium"
+      }
+    ],
+    "supportedOS": [
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "supportedDevices": [
+      "smartphone",
+      "tablet",
+      "laptop"
+    ],
+    "createdAt": "2025-01-16T06:45:56.595Z",
+    "updatedAt": "2025-06-03T05:10:45.349Z"
   }
 ]

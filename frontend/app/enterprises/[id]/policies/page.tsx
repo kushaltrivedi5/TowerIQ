@@ -113,6 +113,7 @@ export default function EnterprisePoliciesPage({
 }) {
   const { data: session, status } = useSession();
   const router = useRouter();
+  const [policies, setPolicies] = useState<Policy[]>([]);
   const [metrics, setMetrics] = useState<{
     total: number;
     active: number;
@@ -127,43 +128,41 @@ export default function EnterprisePoliciesPage({
   const [error, setError] = useState<string | null>(null);
   const { id } = use(params);
 
-  const {
-    data: policies,
-    loading: policiesLoading,
-    error: policiesError,
-  } = useEnterpriseData<Policy>({
-    type: "policies",
-    pageSize: 10,
-  });
-
   useEffect(() => {
-    async function loadMetrics() {
+    async function loadData() {
       if (status === "loading") return;
 
-      if (
-        !session?.user ||
-        session.user.role !== "admin" ||
-        session.user.enterpriseId !== id
-      ) {
+      if (!session?.user) {
         router.push("/login");
         return;
       }
 
       try {
-        const response = await fetch(`/api/enterprises/${id}/metrics`);
-        if (!response.ok) {
+        // Load policies data
+        const policiesResponse = await fetch(
+          `/api/enterprises/${id}/data?type=policies`
+        );
+        if (!policiesResponse.ok) {
+          throw new Error("Failed to load policies data");
+        }
+        const policiesData = await policiesResponse.json();
+        setPolicies(policiesData.data);
+
+        // Load metrics
+        const metricsResponse = await fetch(`/api/enterprises/${id}/metrics`);
+        if (!metricsResponse.ok) {
           throw new Error("Failed to load metrics");
         }
-        const data = await response.json();
-        setMetrics(data.policies);
+        const metricsData = await metricsResponse.json();
+        setMetrics(metricsData.policies);
       } catch (err) {
-        setError(err instanceof Error ? err.message : "Failed to load metrics");
+        setError(err instanceof Error ? err.message : "Failed to load data");
       } finally {
         setLoading(false);
       }
     }
 
-    loadMetrics();
+    loadData();
   }, [session, status, id, router]);
 
   if (status === "loading" || loading) {

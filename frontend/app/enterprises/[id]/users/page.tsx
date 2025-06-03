@@ -122,6 +122,7 @@ export default function EnterpriseUsersPage({
 }) {
   const { data: session, status } = useSession();
   const router = useRouter();
+  const [users, setUsers] = useState<EnterpriseUser[]>([]);
   const [metrics, setMetrics] = useState<{
     total: number;
     byRole: Record<UserRole, number>;
@@ -129,7 +130,6 @@ export default function EnterpriseUsersPage({
     byDepartment: Record<string, number>;
     activeDevices: number;
   } | null>(null);
-  const [users, setUsers] = useState<EnterpriseUser[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const { id } = use(params);
@@ -138,41 +138,29 @@ export default function EnterpriseUsersPage({
     async function loadData() {
       if (status === "loading") return;
 
-      if (
-        !session?.user ||
-        session.user.role !== "admin" ||
-        session.user.enterpriseId !== id
-      ) {
+      if (!session?.user) {
         router.push("/login");
         return;
       }
 
       try {
-        // Load enterprise data to get users
-        const enterpriseResponse = await fetch(`/api/enterprises/${id}`);
-        if (!enterpriseResponse.ok) {
-          throw new Error("Failed to load enterprise data");
-        }
-        const enterprise = (await enterpriseResponse.json()) as Enterprise;
-
-        // Transform enterprise users to include enterprise info
-        const enterpriseUsers: EnterpriseUser[] = enterprise.users.map(
-          (user) => ({
-            ...user,
-            enterpriseId: enterprise.id,
-            enterpriseName: enterprise.name,
-          })
+        // Load users data
+        const usersResponse = await fetch(
+          `/api/enterprises/${id}/data?type=users`
         );
-
-        setUsers(enterpriseUsers);
+        if (!usersResponse.ok) {
+          throw new Error("Failed to load users data");
+        }
+        const usersData = await usersResponse.json();
+        setUsers(usersData.data);
 
         // Load metrics
         const metricsResponse = await fetch(`/api/enterprises/${id}/metrics`);
         if (!metricsResponse.ok) {
           throw new Error("Failed to load metrics");
         }
-        const data = await metricsResponse.json();
-        setMetrics(data.users);
+        const metricsData = await metricsResponse.json();
+        setMetrics(metricsData.users);
       } catch (err) {
         setError(err instanceof Error ? err.message : "Failed to load data");
       } finally {

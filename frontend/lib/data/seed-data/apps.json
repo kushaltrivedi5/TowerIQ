@@ -1,0 +1,264 @@
+{
+  "apps": [
+    {
+      "id": "app_00000001",
+      "name": "Microsoft Teams",
+      "type": "BUSINESS",
+      "category": "Communication",
+      "actions": [
+        {
+          "id": "teams_join_meeting",
+          "name": "Join Meeting",
+          "description": "User joins a Teams meeting",
+          "riskLevel": "LOW"
+        },
+        {
+          "id": "teams_share_screen",
+          "name": "Share Screen",
+          "description": "User shares their screen in a meeting",
+          "riskLevel": "MEDIUM"
+        },
+        {
+          "id": "teams_share_file",
+          "name": "Share File",
+          "description": "User shares a file in chat or meeting",
+          "riskLevel": "HIGH"
+        }
+      ]
+    },
+    {
+      "id": "app_00000002",
+      "name": "Slack",
+      "type": "BUSINESS",
+      "category": "Communication",
+      "actions": [
+        {
+          "id": "slack_send_message",
+          "name": "Send Message",
+          "description": "User sends a message in a channel or DM",
+          "riskLevel": "LOW"
+        },
+        {
+          "id": "slack_upload_file",
+          "name": "Upload File",
+          "description": "User uploads a file to a channel or DM",
+          "riskLevel": "HIGH"
+        },
+        {
+          "id": "slack_join_channel",
+          "name": "Join Channel",
+          "description": "User joins a new channel",
+          "riskLevel": "LOW"
+        }
+      ]
+    },
+    {
+      "id": "app_00000003",
+      "name": "Zoom",
+      "type": "BUSINESS",
+      "category": "Communication",
+      "actions": [
+        {
+          "id": "zoom_join_meeting",
+          "name": "Join Meeting",
+          "description": "User joins a Zoom meeting",
+          "riskLevel": "LOW"
+        },
+        {
+          "id": "zoom_record_meeting",
+          "name": "Record Meeting",
+          "description": "User starts recording a meeting",
+          "riskLevel": "HIGH"
+        },
+        {
+          "id": "zoom_share_screen",
+          "name": "Share Screen",
+          "description": "User shares their screen in a meeting",
+          "riskLevel": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "id": "app_00000004",
+      "name": "Google Drive",
+      "type": "BUSINESS",
+      "category": "Productivity",
+      "actions": [
+        {
+          "id": "drive_view_file",
+          "name": "View File",
+          "description": "User views a file in Drive",
+          "riskLevel": "LOW"
+        },
+        {
+          "id": "drive_edit_file",
+          "name": "Edit File",
+          "description": "User edits a file in Drive",
+          "riskLevel": "MEDIUM"
+        },
+        {
+          "id": "drive_share_file",
+          "name": "Share File",
+          "description": "User shares a file with others",
+          "riskLevel": "HIGH"
+        }
+      ]
+    },
+    {
+      "id": "app_00000005",
+      "name": "Microsoft OneDrive",
+      "type": "BUSINESS",
+      "category": "Productivity",
+      "actions": [
+        {
+          "id": "onedrive_sync_file",
+          "name": "Sync File",
+          "description": "User syncs a file to local device",
+          "riskLevel": "MEDIUM"
+        },
+        {
+          "id": "onedrive_share_file",
+          "name": "Share File",
+          "description": "User shares a file with others",
+          "riskLevel": "HIGH"
+        },
+        {
+          "id": "onedrive_edit_file",
+          "name": "Edit File",
+          "description": "User edits a file in OneDrive",
+          "riskLevel": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "id": "app_00000006",
+      "name": "Microsoft Outlook",
+      "type": "BUSINESS",
+      "category": "Communication",
+      "actions": [
+        {
+          "id": "outlook_send_email",
+          "name": "Send Email",
+          "description": "User sends an email",
+          "riskLevel": "MEDIUM"
+        },
+        {
+          "id": "outlook_forward_email",
+          "name": "Forward Email",
+          "description": "User forwards an email",
+          "riskLevel": "HIGH"
+        },
+        {
+          "id": "outlook_attach_file",
+          "name": "Attach File",
+          "description": "User attaches a file to an email",
+          "riskLevel": "HIGH"
+        }
+      ]
+    },
+    {
+      "id": "app_00000007",
+      "name": "Salesforce",
+      "type": "BUSINESS",
+      "category": "CRM",
+      "actions": [
+        {
+          "id": "salesforce_view_record",
+          "name": "View Record",
+          "description": "User views a customer record",
+          "riskLevel": "LOW"
+        },
+        {
+          "id": "salesforce_edit_record",
+          "name": "Edit Record",
+          "description": "User edits a customer record",
+          "riskLevel": "HIGH"
+        },
+        {
+          "id": "salesforce_export_data",
+          "name": "Export Data",
+          "description": "User exports data from Salesforce",
+          "riskLevel": "HIGH"
+        }
+      ]
+    },
+    {
+      "id": "app_00000008",
+      "name": "ServiceNow",
+      "type": "BUSINESS",
+      "category": "ITSM",
+      "actions": [
+        {
+          "id": "servicenow_create_ticket",
+          "name": "Create Ticket",
+          "description": "User creates a new service ticket",
+          "riskLevel": "LOW"
+        },
+        {
+          "id": "servicenow_approve_change",
+          "name": "Approve Change",
+          "description": "User approves a change request",
+          "riskLevel": "HIGH"
+        },
+        {
+          "id": "servicenow_view_incident",
+          "name": "View Incident",
+          "description": "User views an incident record",
+          "riskLevel": "MEDIUM"
+        }
+      ]
+    },
+    {
+      "id": "app_00000009",
+      "name": "Jira",
+      "type": "BUSINESS",
+      "category": "Project Management",
+      "actions": [
+        {
+          "id": "jira_create_issue",
+          "name": "Create Issue",
+          "description": "User creates a new issue",
+          "riskLevel": "LOW"
+        },
+        {
+          "id": "jira_assign_issue",
+          "name": "Assign Issue",
+          "description": "User assigns an issue to someone",
+          "riskLevel": "MEDIUM"
+        },
+        {
+          "id": "jira_export_board",
+          "name": "Export Board",
+          "description": "User exports a board's data",
+          "riskLevel": "HIGH"
+        }
+      ]
+    },
+    {
+      "id": "app_00000010",
+      "name": "Confluence",
+      "type": "BUSINESS",
+      "category": "Documentation",
+      "actions": [
+        {
+          "id": "confluence_view_page",
+          "name": "View Page",
+          "description": "User views a Confluence page",
+          "riskLevel": "LOW"
+        },
+        {
+          "id": "confluence_edit_page",
+          "name": "Edit Page",
+          "description": "User edits a Confluence page",
+          "riskLevel": "MEDIUM"
+        },
+        {
+          "id": "confluence_export_space",
+          "name": "Export Space",
+          "description": "User exports a space's content",
+          "riskLevel": "HIGH"
+        }
+      ]
+    }
+  ]
+}
