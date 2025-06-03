@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { GradientText } from "@/components/ui/gradient-text";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -76,7 +77,13 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] p-4">
+    <motion.div
+      initial={{ opacity: 0, y: 24 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 24 }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+      className="relative flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] p-4"
+    >
       {/* Login Card */}
       <Card
         variant="blue"
@@ -162,6 +169,6 @@ export default function LoginPage() {
           </Form>
         </CardContent>
       </Card>
-    </div>
+    </motion.div>
   );
 }

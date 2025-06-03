@@ -4,16 +4,39 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { WifiOff, Wifi, RefreshCw, Database, Shield } from "lucide-react";
+import {
+  registerServiceWorker,
+  isServiceWorkerActive,
+  getServiceWorkerRegistration,
+} from "@/lib/utils/service-worker-registration";
 
 export default function OfflineTestPage() {
   const [isOnline, setIsOnline] = useState(true);
   const [cacheStatus, setCacheStatus] = useState<Record<string, boolean>>({});
   const [isTesting, setIsTesting] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+  const [isServiceWorkerRegistered, setIsServiceWorkerRegistered] =
+    useState(false);
+
+  // Handle client-side mounting and service worker registration
+  useEffect(() => {
+    const init = async () => {
+      setIsMounted(true);
+      const registration = await registerServiceWorker();
+      setIsServiceWorkerRegistered(!!registration);
+    };
+    init();
+  }, []);
 
   // Check online status
   useEffect(() => {
+    if (!isMounted) return;
+
     const handleOnline = () => setIsOnline(true);
     const handleOffline = () => setIsOnline(false);
+
+    // Set initial online status
+    setIsOnline(navigator.onLine);
 
     window.addEventListener("online", handleOnline);
     window.addEventListener("offline", handleOffline);
@@ -22,10 +45,12 @@ export default function OfflineTestPage() {
       window.removeEventListener("online", handleOnline);
       window.removeEventListener("offline", handleOffline);
     };
-  }, []);
+  }, [isMounted]);
 
   // Test cache status
   const testCache = async () => {
+    if (!isMounted) return;
+
     setIsTesting(true);
     const status: Record<string, boolean> = {};
 
@@ -69,15 +94,19 @@ export default function OfflineTestPage() {
   };
 
   // Toggle offline mode
-  const toggleOffline = () => {
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.ready.then((registration) => {
-        if (registration.active) {
-          registration.active.postMessage({ type: "TOGGLE_OFFLINE" });
-        }
-      });
+  const toggleOffline = async () => {
+    if (!isMounted) return;
+
+    const registration = await getServiceWorkerRegistration();
+    if (registration?.active) {
+      registration.active.postMessage({ type: "TOGGLE_OFFLINE" });
     }
   };
+
+  // Don't render anything until client-side
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <div className="container mx-auto p-6 space-y-6">
@@ -108,12 +137,19 @@ export default function OfflineTestPage() {
                 <Shield className="w-5 h-5" />
                 Service Worker
               </span>
-              <span className="text-green-500">Active</span>
+              <span
+                className={
+                  isServiceWorkerRegistered ? "text-green-500" : "text-red-500"
+                }
+              >
+                {isServiceWorkerRegistered ? "Active" : "Inactive"}
+              </span>
             </div>
             <Button
               onClick={toggleOffline}
               variant="outline"
               className="w-full"
+              disabled={!isServiceWorkerRegistered}
             >
               {isOnline ? "Simulate Offline" : "Simulate Online"}
             </Button>
@@ -130,7 +166,7 @@ export default function OfflineTestPage() {
               </span>
               <Button
                 onClick={testCache}
-                disabled={isTesting}
+                disabled={isTesting || !isServiceWorkerRegistered}
                 variant="outline"
                 size="sm"
               >
@@ -163,10 +199,11 @@ export default function OfflineTestPage() {
       <Card className="p-6">
         <h2 className="text-xl font-semibold mb-4">Testing Instructions</h2>
         <div className="space-y-4 text-sm text-muted-foreground">
-          <p>1. Use the "Simulate Offline" button to test offline behavior</p>
-          <p>2. Click "Test Cache" to verify cached resources</p>
-          <p>3. Try navigating to different pages while offline</p>
-          <p>4. Check if the offline fallback page appears when needed</p>
+          <p>1. Wait for the Service Worker to be active (green status)</p>
+          <p>2. Use the "Simulate Offline" button to test offline behavior</p>
+          <p>3. Click "Test Cache" to verify cached resources</p>
+          <p>4. Try navigating to different pages while offline</p>
+          <p>5. Check if the offline fallback page appears when needed</p>
         </div>
       </Card>
     </div>

@@ -1,99 +1,97 @@
-const isLocalhost = Boolean(
-  window.location.hostname === 'localhost' ||
-    window.location.hostname === '[::1]' ||
-    window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
-);
+'use client';
 
-type Config = {
-  onSuccess?: (registration: ServiceWorkerRegistration) => void;
-  onUpdate?: (registration: ServiceWorkerRegistration) => void;
-};
+let registrationPromise: Promise<ServiceWorkerRegistration> | null = null;
 
-export function register(config?: Config) {
-  if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
-    const publicUrl = new URL(process.env.PUBLIC_URL || '', window.location.href);
-    if (publicUrl.origin !== window.location.origin) {
-      return;
-    }
+export async function registerServiceWorker() {
+  // Return early if we're on the server
+  if (typeof window === 'undefined') {
+    return null;
+  }
 
-    window.addEventListener('load', () => {
-      const swUrl = `${process.env.PUBLIC_URL || ''}/service-worker.js`;
+  // Return existing registration if available
+  if (registrationPromise) {
+    return registrationPromise;
+  }
 
-      if (isLocalhost) {
-        checkValidServiceWorker(swUrl, config);
-        navigator.serviceWorker.ready.then(() => {
-          console.log('This web app is being served cache-first by a service worker.');
+  // Check if service workers are supported
+  if (!('serviceWorker' in navigator)) {
+    console.warn('Service workers are not supported');
+    return null;
+  }
+
+  try {
+    // Register the service worker
+    registrationPromise = navigator.serviceWorker.register('/service-worker.js', {
+      scope: '/',
+    });
+
+    const registration = await registrationPromise;
+
+    // Handle updates
+    registration.addEventListener('updatefound', () => {
+      const newWorker = registration.installing;
+      if (newWorker) {
+        newWorker.addEventListener('statechange', () => {
+          if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+            // New content is available, show update notification
+            console.log('New content is available; please refresh.');
+          }
         });
-      } else {
-        registerValidSW(swUrl, config);
       }
     });
+
+    // Handle controller change
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      console.log('New service worker activated');
+    });
+
+    return registration;
+  } catch (error) {
+    console.error('Service worker registration failed:', error);
+    registrationPromise = null;
+    return null;
   }
 }
 
-function registerValidSW(swUrl: string, config?: Config) {
-  navigator.serviceWorker
-    .register(swUrl)
-    .then((registration) => {
-      registration.onupdatefound = () => {
-        const installingWorker = registration.installing;
-        if (installingWorker == null) {
-          return;
-        }
-        installingWorker.onstatechange = () => {
-          if (installingWorker.state === 'installed') {
-            if (navigator.serviceWorker.controller) {
-              console.log('New content is available and will be used when all tabs for this page are closed.');
-              if (config && config.onUpdate) {
-                config.onUpdate(registration);
-              }
-            } else {
-              console.log('Content is cached for offline use.');
-              if (config && config.onSuccess) {
-                config.onSuccess(registration);
-              }
-            }
-          }
-        };
-      };
-    })
-    .catch((error) => {
-      console.error('Error during service worker registration:', error);
-    });
-}
+export async function unregisterServiceWorker() {
+  if (typeof window === 'undefined') {
+    return;
+  }
 
-function checkValidServiceWorker(swUrl: string, config?: Config) {
-  fetch(swUrl, {
-    headers: { 'Service-Worker': 'script' },
-  })
-    .then((response) => {
-      const contentType = response.headers.get('content-type');
-      if (
-        response.status === 404 ||
-        (contentType != null && contentType.indexOf('javascript') === -1)
-      ) {
-        navigator.serviceWorker.ready.then((registration) => {
-          registration.unregister().then(() => {
-            window.location.reload();
-          });
-        });
-      } else {
-        registerValidSW(swUrl, config);
-      }
-    })
-    .catch(() => {
-      console.log('No internet connection found. App is running in offline mode.');
-    });
-}
-
-export function unregister() {
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.ready
-      .then((registration) => {
-        registration.unregister();
-      })
-      .catch((error) => {
-        console.error(error.message);
-      });
+    try {
+      const registration = await navigator.serviceWorker.ready;
+      await registration.unregister();
+      console.log('Service worker unregistered');
+    } catch (error) {
+      console.error('Service worker unregistration failed:', error);
+    }
+  }
+}
+
+// Helper function to check if service worker is active
+export function isServiceWorkerActive(): boolean {
+  if (typeof window === 'undefined') {
+    return false;
+  }
+
+  return !!navigator.serviceWorker.controller;
+}
+
+// Helper function to get service worker registration
+export async function getServiceWorkerRegistration(): Promise<ServiceWorkerRegistration | null> {
+  if (typeof window === 'undefined') {
+    return null;
+  }
+
+  if (!('serviceWorker' in navigator)) {
+    return null;
+  }
+
+  try {
+    return await navigator.serviceWorker.ready;
+  } catch (error) {
+    console.error('Failed to get service worker registration:', error);
+    return null;
   }
 } 
