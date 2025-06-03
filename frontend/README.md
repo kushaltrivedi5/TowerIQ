@@ -112,6 +112,8 @@ The live version is hosted on Azure App Service and containerized using Docker f
    npm run generate-seed
    ```
 
+   After seeding, check `lib/data/seed-data/enterprises/enterprise_name/enterprise.json` for the admin role email - password remains the same
+
 5. Start the development server:
 
    ```bash
