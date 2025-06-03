@@ -1,6 +1,13 @@
 # TowerIQ - Telecom Mission Control
 
-TowerIQ is a modern, enterprise-grade telecom infrastructure management platform that provides comprehensive control and monitoring capabilities for telecom towers, devices, and security policies. Built with a focus on user experience and modern design, TowerIQ helps telecom operators visualize and manage their infrastructure efficiently.
+A modern web application for managing telecom infrastructure, built with Next.js 15+, TypeScript, and Tailwind CSS.
+
+## Live Demo
+
+The application is currently deployed and accessible at:
+[https://toweriq-abg9cwfsephvh0dv.centralindia-01.azurewebsites.net/](https://toweriq-abg9cwfsephvh0dv.centralindia-01.azurewebsites.net/)
+
+The live version is hosted on Azure App Service and containerized using Docker for consistent deployment and scaling.
 
 ## 🌟 Features
 
@@ -104,6 +111,8 @@ TowerIQ is a modern, enterprise-grade telecom infrastructure management platform
    ```bash
    npm run generate-seed
    ```
+
+   After seeding, check `lib/data/seed-data/enterprises/enterprise_name/enterprise.json` for the admin role email - password remains the same
 
 5. Start the development server:
 
