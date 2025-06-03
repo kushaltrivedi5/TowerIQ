@@ -199,9 +199,9 @@ export function DataTable<T extends Record<string, any>>({
                           variant="ghost"
                           size="sm"
                           className="h-8 w-8 p-0 hover:bg-muted"
-                          onClick={() => handleSort(column.key)}
+                          onClick={() => handleSort(column.key as keyof T)}
                         >
-                          {renderSortIcon(column.key)}
+                          {renderSortIcon(column.key as keyof T)}
                         </Button>
                       )}
                     </div>
@@ -218,8 +218,8 @@ export function DataTable<T extends Record<string, any>>({
                   {columns.map((column) => (
                     <td key={String(column.key)} className="p-4 align-middle">
                       {column.render
-                        ? column.render(row[column.key], row)
-                        : row[column.key]?.toString() ?? "-"}
+                        ? column.render(row[column.key as keyof T], row)
+                        : row[column.key as keyof T]?.toString() ?? "-"}
                     </td>
                   ))}
                 </tr>

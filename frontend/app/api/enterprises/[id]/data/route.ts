@@ -33,10 +33,10 @@ export async function GET(
     // Get query parameters
     const { searchParams } = new URL(request.url);
     const page = parseInt(searchParams.get('page') || '1');
-    const type = searchParams.get('type') || 'devices'; // devices, policies, towers, users
+    const type = searchParams.get('type') || 'devices'; // devices, policies, towers, users, remediation
 
     // Validate type parameter
-    if (!['devices', 'policies', 'towers', 'users'].includes(type)) {
+    if (!['devices', 'policies', 'towers', 'users', 'remediation'].includes(type)) {
       return NextResponse.json(
         { error: 'Invalid data type' },
         { status: 400 }
@@ -57,6 +57,57 @@ export async function GET(
         const data = await fs.readFile(enterprisePath, 'utf-8');
         const enterprise = JSON.parse(data);
         items = enterprise.users || [];
+      } catch (error) {
+        if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+          return NextResponse.json(
+            { error: 'Enterprise data not found' },
+            { status: 404 }
+          );
+        }
+        throw error;
+      }
+    } else if (type === 'remediation') {
+      // Read metrics.json to get policy violations and security incidents
+      const metricsPath = path.join(
+        process.cwd(),
+        'lib/data/seed-data/enterprises',
+        id,
+        'metrics.json'
+      );
+      try {
+        const data = await fs.readFile(metricsPath, 'utf-8');
+        const metrics = JSON.parse(data);
+        
+        // Transform security incidents into remediation actions
+        items = metrics.security.recentIncidents.map((incident: any) => ({
+          id: incident.id,
+          title: incident.description,
+          status: incident.status,
+          priority: incident.severity,
+          progress: incident.status === "resolved" ? 100 : incident.status === "investigating" ? 50 : 0,
+          dueDate: incident.timestamp,
+          type: incident.type,
+          affectedEntities: incident.affectedEntities
+        }));
+
+        // Add policy violations as remediation actions
+        const policyViolations = metrics.policies.enforcementStats.violations;
+        const autoRemediated = metrics.policies.enforcementStats.autoRemediated;
+        const pendingViolations = policyViolations - autoRemediated;
+
+        // Add pending policy violations as remediation actions
+        for (let i = 0; i < pendingViolations; i++) {
+          items.push({
+            id: `pol_viol_${i + 1}`,
+            title: `Policy Violation #${i + 1}`,
+            status: "active",
+            priority: "high",
+            progress: 0,
+            dueDate: new Date(Date.now() + 86400000 * (i + 1)).toISOString(), // Due in i+1 days
+            type: "policy_violation",
+            affectedEntities: []
+          });
+        }
       } catch (error) {
         if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
           return NextResponse.json(

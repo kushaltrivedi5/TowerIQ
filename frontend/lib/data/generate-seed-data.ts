@@ -271,7 +271,7 @@ const PREDEFINED_APPS: App[] = [
     description: "Customer relationship management platform",
     vendor: "Salesforce",
     version: "1.0.0",
-    actions: [
+      actions: [
       {
         id: "salesforce_view_record",
         name: "View Record",
@@ -303,7 +303,7 @@ const PREDEFINED_APPS: App[] = [
     description: "IT service management platform",
     vendor: "ServiceNow",
     version: "1.0.0",
-    actions: [
+      actions: [
       {
         id: "servicenow_create_ticket",
         name: "Create Ticket",
@@ -335,7 +335,7 @@ const PREDEFINED_APPS: App[] = [
     description: "Project management and issue tracking platform",
     vendor: "Atlassian",
     version: "1.0.0",
-    actions: [
+      actions: [
       {
         id: "jira_create_issue",
         name: "Create Issue",

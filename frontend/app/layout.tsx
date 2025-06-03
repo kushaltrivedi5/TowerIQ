@@ -4,6 +4,7 @@ import "./globals.css";
 import AuthProvider from "@/components/AuthProvider";
 import { ThemeProvider } from "@/components/ThemeProivder";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
           <AuthProvider>
             <Navbar />
             {children}
+            <Toaster richColors position="top-center" />
           </AuthProvider>
         </ThemeProvider>
       </body>

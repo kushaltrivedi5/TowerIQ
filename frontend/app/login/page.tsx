@@ -11,13 +11,13 @@ import {
   FormItem,
   FormLabel,
   FormControl,
-  FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { GradientText } from "@/components/ui/gradient-text";
 import { motion } from "framer-motion";
+import { toast } from "sonner";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -29,8 +29,7 @@ export default function LoginPage() {
   });
   const {
     handleSubmit,
-    setError,
-    formState: { errors, isSubmitting },
+    formState: { isSubmitting },
   } = form;
 
   const onSubmit = async (data: { email: string; password: string }) => {
@@ -52,26 +51,21 @@ export default function LoginPage() {
 
         if (session?.user?.enterpriseId) {
           console.log("Login successful, redirecting to enterprise dashboard");
+          toast.success("Welcome back! Redirecting to dashboard...");
           router.push(`/enterprises/${session.user.enterpriseId}`);
         } else {
           console.error("No enterprise ID found in session");
-          setError("root", {
-            message: "Failed to get enterprise information. Please try again.",
-          });
+          toast.error(
+            "Failed to get enterprise information. Please try again."
+          );
         }
       } else {
         console.error("Login failed:", res?.error);
-        setError("root", {
-          message: res?.error || "Invalid email or password",
-        });
-        setError("email", { message: "Invalid email or password" });
-        setError("password", { message: "Invalid email or password" });
+        toast.error(res?.error || "Invalid email or password");
       }
     } catch (error) {
       console.error("Login error:", error);
-      setError("root", {
-        message: "An unexpected error occurred. Please try again.",
-      });
+      toast.error("An unexpected error occurred. Please try again.");
     }
   };
 
@@ -103,11 +97,6 @@ export default function LoginPage() {
         <CardContent>
           <Form {...form}>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-              {errors.root && (
-                <div className="text-sm text-destructive text-center">
-                  {errors.root.message}
-                </div>
-              )}
               <FormField
                 control={form.control}
                 name="email"
@@ -124,7 +113,6 @@ export default function LoginPage() {
                         required
                       />
                     </FormControl>
-                    <FormMessage className="text-xs" />
                   </FormItem>
                 )}
               />
@@ -146,7 +134,6 @@ export default function LoginPage() {
                         required
                       />
                     </FormControl>
-                    <FormMessage className="text-xs" />
                   </FormItem>
                 )}
               />

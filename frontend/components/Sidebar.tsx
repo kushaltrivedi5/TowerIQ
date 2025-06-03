@@ -11,6 +11,7 @@ import {
   Settings,
   ChevronRight,
   Menu,
+  Wrench,
 } from "lucide-react";
 import {
   Sheet,
@@ -28,12 +29,14 @@ interface SidebarProps {
   enterpriseId: string;
   isMobile?: boolean;
   onClose?: () => void;
+  user?: { role: string };
 }
 
 export default function Sidebar({
   enterpriseId,
   isMobile,
   onClose,
+  user,
 }: SidebarProps) {
   const pathname = usePathname();
 
@@ -66,6 +69,24 @@ export default function Sidebar({
       href: "/users",
       label: "Users",
       icon: Settings,
+    },
+  ];
+
+  const adminRoutes = [
+    {
+      title: "Admin Panel",
+      items: [
+        {
+          title: "Overview",
+          href: `/enterprises/${enterpriseId}/admin`,
+          icon: LayoutDashboard,
+        },
+        {
+          title: "Remediation",
+          href: `/enterprises/${enterpriseId}/admin/remediation`,
+          icon: Wrench,
+        },
+      ],
     },
   ];
 
@@ -116,6 +137,34 @@ export default function Sidebar({
           </Link>
         );
       })}
+
+      <div className="my-4 border-t border-border" />
+      <div className="space-y-4">
+        {adminRoutes.map((section) => (
+          <div key={section.title}>
+            <h3 className="mb-2 px-4 text-lg font-semibold tracking-tight text-primary">
+              {section.title}
+            </h3>
+            <div className="space-y-1">
+              {section.items.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={cn(
+                    "flex items-center gap-3 rounded-lg px-4 py-2 text-sm transition-all hover:bg-accent",
+                    pathname === item.href
+                      ? "bg-accent text-accent-foreground"
+                      : "text-foreground"
+                  )}
+                >
+                  <item.icon className="h-4 w-4" />
+                  {item.title}
+                </Link>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
     </nav>
   );
 
