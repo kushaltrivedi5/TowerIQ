@@ -1,161 +1,184 @@
 "use client";
 
-import * as React from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useSession, signOut } from "next-auth/react";
+import { cn } from "@/lib/utils";
+import { ModeToggle } from "@/components/ThemeToggle";
+import { Button } from "./ui/button";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { GradientText } from "./ui/gradient-text";
 import {
+  LogOut,
   User,
   Clover,
   LayoutDashboard,
   Shield,
-  Radio,
+  RadioTower,
   Smartphone,
+  LogIn,
+  ChevronDown,
 } from "lucide-react";
-import { useSession, signOut } from "next-auth/react";
-
-import { cn } from "@/lib/utils";
-import { ModeToggle } from "@/components/ThemeToggle";
-import { Button } from "@/components/ui/button";
 import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetHeader,
-  SheetTitle,
-} from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
-
-const navigationItems = [
-  {
-    title: "Dashboard",
-    href: "/dashboard",
-    icon: LayoutDashboard,
-  },
-  {
-    title: "Policies",
-    href: "/policies",
-    icon: Shield,
-  },
-  {
-    title: "Towers",
-    href: "/towers",
-    icon: Radio,
-  },
-  {
-    title: "Devices",
-    href: "/devices",
-    icon: Smartphone,
-  },
-];
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
+import { Avatar } from "./ui/avatar";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
+  const router = useRouter();
   const pathname = usePathname();
+  const { scrollY } = useScroll();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Transform scroll position to background opacity with higher density
+  const backgroundOpacity = useTransform(scrollY, [0, 100], [0, 0.98]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navigation = [
+    {
+      name: "Dashboard",
+      href: "/dashboard",
+      icon: LayoutDashboard,
+    },
+    {
+      name: "Policies",
+      href: "/policies",
+      icon: Shield,
+    },
+    {
+      name: "Towers",
+      href: "/towers",
+      icon: RadioTower,
+    },
+    {
+      name: "Devices",
+      href: "/devices",
+      icon: Smartphone,
+    },
+  ];
 
   return (
-    <>
-      <div className="fixed top-0 left-0 right-0 z-50 border-b glassEffect-medium">
-        <div className="container mx-auto flex h-20 items-center justify-between px-8">
-          {/* Mobile Menu */}
-          <div className="flex md:hidden">
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="mr-2">
-                  <Menu className="h-7 w-7" />
-                  <span className="sr-only">Toggle menu</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent
-                side="left"
-                className="w-full sm:w-[400px] p-6 transition-all duration-300 ease-in-out"
+    <motion.nav
+      style={{
+        backgroundColor: `rgb(var(--background) / ${backgroundOpacity.get()})`,
+      }}
+      className={cn(
+        "sticky top-0 z-50 w-full border-b border-border/40 backdrop-blur-md supports-[backdrop-filter]:bg-background/80 transition-all duration-200",
+        isScrolled ? "bg-background/98 shadow-md" : "bg-background/90"
+      )}
+    >
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex h-20 items-center justify-between">
+          <div className="flex items-center gap-12">
+            <Link href="/" className="flex items-center gap-3">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
-                <SheetHeader className="mb-6">
-                  <SheetTitle className="text-2xl">Navigation Menu</SheetTitle>
-                </SheetHeader>
-                <nav className="flex flex-col gap-6">
-                  <div className="space-y-4">
-                    {navigationItems.map((item) => (
+                <Clover className="h-10 w-10 text-primary" />
+              </motion.div>
+              <span className="text-2xl font-semibold">TowerIQ</span>
+            </Link>
+            {status === "authenticated" && (
+              <div className="hidden md:flex md:items-center md:gap-8">
+                {navigation.map((item) => {
+                  const isActive = pathname === item.href;
+                  return (
+                    <motion.div
+                      key={item.name}
+                      className="relative"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
                       <Link
-                        key={item.href}
                         href={item.href}
                         className={cn(
-                          "flex items-center gap-2 text-xl font-semibold hover:text-primary transition-colors duration-200",
-                          pathname === item.href && "text-primary"
+                          "flex items-center gap-2 px-4 py-2 text-sm font-medium transition-colors rounded-lg",
+                          isActive
+                            ? "text-primary bg-primary/10"
+                            : "text-muted-foreground hover:text-foreground hover:bg-accent"
                         )}
                       >
                         <item.icon className="h-5 w-5" />
-                        {item.title}
+                        {item.name}
                       </Link>
-                    ))}
-                  </div>
-                  <div className="flex items-center space-x-4 mt-8">
-                    <span className="text-3xl font-extrabold text-primary">
-                      TowerIQ
-                    </span>
-                  </div>
-                </nav>
-              </SheetContent>
-            </Sheet>
-            <Link
-              href="/dashboard"
-              className="flex items-center gap-4 font-semibold"
-            >
-              <Clover className="h-12 w-12 text-foreground" />
-              <span className="text-3xl font-extrabold">TowerIQ</span>
-            </Link>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-12">
-            <Link
-              href="/dashboard"
-              className="flex items-center gap-4 font-semibold"
-            >
-              <Clover className="h-12 w-12 text-foreground" />
-              <span className="text-3xl font-extrabold">TowerIQ</span>
-            </Link>
-            <nav className="flex items-center gap-6">
-              {navigationItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={cn(
-                    "flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors duration-200",
-                    pathname === item.href
-                      ? "text-primary"
-                      : "text-muted-foreground"
-                  )}
-                >
-                  <item.icon className="h-4 w-4" />
-                  {item.title}
-                </Link>
-              ))}
-            </nav>
-          </div>
-
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
             <ModeToggle />
-            {session ? (
-              <Button
-                variant="ghost"
-                size="icon"
-                className="relative"
-                onClick={() => signOut()}
-              >
-                <User className="h-7 w-7" />
-              </Button>
+            {status === "authenticated" ? (
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    className="flex items-center gap-3 px-3 py-2 h-auto hover:bg-background/80"
+                  >
+                    <Avatar
+                      image={session.user?.image || undefined}
+                      name={session.user?.name || undefined}
+                      size="md"
+                      className="ring-2 ring-background/80"
+                    />
+                    <div className="flex flex-col items-start">
+                      <span className="text-sm font-semibold text-foreground">
+                        {session.user?.name || "User"}
+                      </span>
+                      <span className="text-xs font-medium text-muted-foreground/90">
+                        {session.user?.email}
+                      </span>
+                    </div>
+                    <ChevronDown className="h-4 w-4 text-muted-foreground/80" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent
+                  align="end"
+                  className="w-56 bg-background/95 backdrop-blur-md border-border/40"
+                >
+                  <DropdownMenuItem
+                    className="text-destructive focus:text-destructive cursor-pointer focus:bg-destructive/10"
+                    onClick={() => signOut()}
+                  >
+                    <LogOut className="mr-2 h-4 w-4" />
+                    Sign Out
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             ) : (
-              <Link href="/login">
-                <Button variant="ghost" size="icon" className="relative">
-                  <User className="h-7 w-7" />
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Button
+                  variant="default"
+                  onClick={() => router.push("/login")}
+                  className="gap-2 h-11 px-6"
+                >
+                  <LogIn className="h-5 w-5" />
+                  Enterprise Login
                 </Button>
-              </Link>
+              </motion.div>
             )}
           </div>
         </div>
       </div>
-      <div className="h-28" />{" "}
-      {/* Spacer div to prevent content from being hidden under the fixed navbar */}
-    </>
+    </motion.nav>
   );
 }

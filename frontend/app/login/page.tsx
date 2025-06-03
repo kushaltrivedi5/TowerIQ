@@ -3,8 +3,8 @@
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
-import { LogIn, Clover } from "lucide-react";
-import { ModeToggle } from "@/components/ThemeToggle";
+import { LogIn } from "lucide-react";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import {
   Form,
   FormField,
@@ -34,21 +34,39 @@ export default function LoginPage() {
   } = form;
 
   const onSubmit = async (data: { email: string; password: string }) => {
-    const res = await signIn("credentials", {
-      redirect: false,
-      email: data.email,
-      password: data.password,
-    });
-    if (res?.ok) {
-      router.push("/dashboard");
-    } else {
-      setError("email", { message: "Invalid email or password" });
-      setError("password", { message: "Invalid email or password" });
+    try {
+      console.log("Attempting login with:", { email: data.email });
+
+      const res = await signIn("credentials", {
+        redirect: false,
+        email: data.email.trim(),
+        password: data.password,
+        callbackUrl: "/dashboard",
+      });
+
+      console.log("Login response:", res);
+
+      if (res?.ok) {
+        console.log("Login successful, redirecting to dashboard");
+        router.push("/dashboard");
+      } else {
+        console.error("Login failed:", res?.error);
+        setError("root", {
+          message: res?.error || "Invalid email or password",
+        });
+        setError("email", { message: "Invalid email or password" });
+        setError("password", { message: "Invalid email or password" });
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+      setError("root", {
+        message: "An unexpected error occurred. Please try again.",
+      });
     }
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center p-4">
+    <div className="relative flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] p-4">
       {/* Login Card */}
       <Card
         variant="blue"
@@ -69,6 +87,11 @@ export default function LoginPage() {
         <CardContent>
           <Form {...form}>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+              {errors.root && (
+                <div className="text-sm text-destructive text-center">
+                  {errors.root.message}
+                </div>
+              )}
               <FormField
                 control={form.control}
                 name="email"
@@ -78,6 +101,7 @@ export default function LoginPage() {
                     <FormControl>
                       <Input
                         type="email"
+                        placeholder="alice@enterprise.com"
                         autoComplete="email"
                         className="glassEffect-light border-primary/10 focus:border-primary/30"
                         {...field}
@@ -99,6 +123,7 @@ export default function LoginPage() {
                     <FormControl>
                       <Input
                         type="password"
+                        placeholder="••••••••"
                         autoComplete="current-password"
                         className="glassEffect-light border-primary/10 focus:border-primary/30"
                         {...field}
@@ -116,8 +141,8 @@ export default function LoginPage() {
               >
                 {isSubmitting ? (
                   <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
-                    Signing in...
+                    <LoadingSpinner size="sm" text="" variant="contrast" />
+                    <span>Signing in...</span>
                   </div>
                 ) : (
                   "Sign In"

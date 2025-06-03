@@ -19,6 +19,7 @@ import {
   sortData,
   paginateData,
 } from "@/lib/data/loadSeedData";
+import { cn } from "@/lib/utils";
 
 export type Column<T> = {
   key: keyof T;
@@ -37,6 +38,7 @@ type DataTableProps<T> = {
   pageSize?: number;
   title?: string;
   description?: string;
+  className?: string;
 };
 
 export function DataTable<T extends Record<string, any>>({
@@ -46,6 +48,7 @@ export function DataTable<T extends Record<string, any>>({
   pageSize = 10,
   title,
   description,
+  className,
 }: DataTableProps<T>) {
   const [searchTerm, setSearchTerm] = useState("");
   const [filters, setFilters] = useState<Partial<Record<keyof T, any>>>({});
@@ -110,7 +113,7 @@ export function DataTable<T extends Record<string, any>>({
   const handleFilterChange = (key: keyof T, value: any) => {
     setFilters((current) => ({
       ...current,
-      [key]: value || undefined,
+      [key]: value === "__all__" ? undefined : value,
     }));
     setCurrentPage(1);
   };
@@ -128,7 +131,7 @@ export function DataTable<T extends Record<string, any>>({
   };
 
   return (
-    <Card className="w-full">
+    <Card className={cn("w-full", className)}>
       {(title || description) && (
         <CardHeader>
           {title && <CardTitle>{title}</CardTitle>}
@@ -167,7 +170,7 @@ export function DataTable<T extends Record<string, any>>({
                     <SelectValue placeholder={`Filter by ${col.label}`} />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">All</SelectItem>
+                    <SelectItem value="__all__">All</SelectItem>
                     {col.options?.map((option) => (
                       <SelectItem key={option.value} value={option.value}>
                         {option.label}

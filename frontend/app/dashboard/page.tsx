@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PageTransition from "@/components/PageTransition";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DataTable, Column } from "@/components/ui/data-table";
+import { FullPageLoadingSpinner } from "@/components/ui/loading-spinner";
 import {
   loadSeedData,
   Device,
@@ -20,15 +21,10 @@ import {
   Shield,
   AlertTriangle,
   Users,
+  LayoutDashboard,
+  RadioTower,
 } from "lucide-react";
 import { GradientText } from "@/components/ui/gradient-text";
-
-// Load all data
-const metrics = loadSeedData<"dashboardMetrics">("dashboardMetrics");
-const devices = loadSeedData<"devices">("devices");
-const towers = loadSeedData<"towers">("towers");
-const enterprises = loadSeedData<"enterprises">("enterprises");
-const policies = loadSeedData<"policies">("policies");
 
 // Define columns for recent incidents
 const incidentColumns: Column<
@@ -124,6 +120,70 @@ const incidentColumns: Column<
 ];
 
 export default function DashboardPage() {
+  const [metrics, setMetrics] = useState<DashboardMetrics | null>(null);
+  const [devices, setDevices] = useState<Device[]>([]);
+  const [towers, setTowers] = useState<Tower[]>([]);
+  const [enterprises, setEnterprises] = useState<Enterprise[]>([]);
+  const [policies, setPolicies] = useState<Policy[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const [
+          metricsData,
+          devicesData,
+          towersData,
+          enterprisesData,
+          policiesData,
+        ] = await Promise.all([
+          loadSeedData("dashboardMetrics"),
+          loadSeedData("devices"),
+          loadSeedData("towers"),
+          loadSeedData("enterprises"),
+          loadSeedData("policies"),
+        ]);
+
+        setMetrics(metricsData as DashboardMetrics);
+        setDevices(devicesData as Device[]);
+        setTowers(towersData as Tower[]);
+        setEnterprises(enterprisesData as Enterprise[]);
+        setPolicies(policiesData as Policy[]);
+      } catch (err) {
+        setError("Failed to load dashboard data");
+        console.error("Error loading dashboard data:", err);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    loadData();
+  }, []);
+
+  if (loading) {
+    return <FullPageLoadingSpinner text="Loading dashboard data..." />;
+  }
+
+  if (error || !metrics) {
+    return (
+      <div className="flex items-center justify-center min-h-[400px]">
+        <Card className="w-full max-w-md">
+          <CardContent className="pt-6">
+            <div className="text-center text-destructive">
+              <p className="text-lg font-semibold">
+                {error || "Failed to load dashboard data"}
+              </p>
+              <p className="text-sm text-muted-foreground mt-2">
+                Please try refreshing the page
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
   const {
     enterprises: enterpriseMetrics,
     devices: deviceMetrics,
@@ -132,37 +192,37 @@ export default function DashboardPage() {
     security: securityMetrics,
   } = metrics;
 
+  // Calculate counts from the actual data arrays
+  const enterpriseCount = enterprises.length;
+  const deviceCount = devices.length;
+  const towerCount = towers.length;
+  const securityScore = metrics.security?.complianceScore ?? 0;
+
   return (
     <PageTransition>
-      <div className="container mx-auto py-8 space-y-8">
-        <div className="flex items-center justify-between">
-          <h1 className="text-4xl font-bold">
-            <GradientText variant="multi">
-              Mission Control Dashboard
-            </GradientText>
-          </h1>
-          <Badge variant="outline" className="text-sm px-4 py-1">
-            {enterpriseMetrics.total} Enterprises
-          </Badge>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+        <div className="flex items-center gap-3">
+          <LayoutDashboard className="h-8 w-8 text-primary" />
+          <h1 className="text-3xl font-bold">Dashboard</h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-fr">
           <Card
             variant="blue"
             intensity="medium"
-            className="glass dark:glass-dark"
+            className="glass dark:glass-dark h-full"
+            icon={Building2}
           >
-            <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardHeader>
               <CardTitle>
                 <GradientText variant="blue">Enterprises</GradientText>
               </CardTitle>
-              <Building2 className="h-6 w-6 text-primary" />
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-gradient">
-                {enterpriseMetrics.total.toLocaleString()}
+                {enterpriseCount.toLocaleString()}
               </div>
-              <div className="text-xs text-muted-foreground mt-2">
+              <div className="text-xs text-muted-foreground">
                 {enterpriseMetrics.active} Active
               </div>
             </CardContent>
@@ -171,19 +231,19 @@ export default function DashboardPage() {
           <Card
             variant="green"
             intensity="medium"
-            className="glass dark:glass-dark"
+            className="glass dark:glass-dark h-full"
+            icon={Smartphone}
           >
-            <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardHeader>
               <CardTitle>
                 <GradientText variant="green">Devices</GradientText>
               </CardTitle>
-              <Smartphone className="h-6 w-6 text-green-500" />
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-green-500">
-                {deviceMetrics.total.toLocaleString()}
+                {deviceCount.toLocaleString()}
               </div>
-              <div className="text-xs text-muted-foreground mt-2">
+              <div className="text-xs text-muted-foreground">
                 {deviceMetrics.active} Active, {deviceMetrics.nonCompliant}{" "}
                 Non-compliant
               </div>
@@ -193,19 +253,19 @@ export default function DashboardPage() {
           <Card
             variant="orange"
             intensity="medium"
-            className="glass dark:glass-dark"
+            className="glass dark:glass-dark h-full"
+            icon={RadioTower}
           >
-            <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardHeader>
               <CardTitle>
                 <GradientText variant="orange">Towers</GradientText>
               </CardTitle>
-              <Wifi className="h-6 w-6 text-orange-500" />
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-orange-500">
-                {towerMetrics.total.toLocaleString()}
+                {towerCount.toLocaleString()}
               </div>
-              <div className="text-xs text-muted-foreground mt-2">
+              <div className="text-xs text-muted-foreground">
                 {towerMetrics.active} Active
               </div>
             </CardContent>
@@ -214,30 +274,29 @@ export default function DashboardPage() {
           <Card
             variant="purple"
             intensity="medium"
-            className="glass dark:glass-dark"
+            className="glass dark:glass-dark h-full"
+            icon={Shield}
           >
-            <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardHeader>
               <CardTitle>
                 <GradientText variant="purple">Security Score</GradientText>
               </CardTitle>
-              <Shield className="h-6 w-6 text-purple-500" />
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-purple-500">
-                {securityMetrics.complianceScore}%
+                {securityScore}%
               </div>
-              <div className="text-xs text-muted-foreground mt-2">
+              <div className="text-xs text-muted-foreground">
                 {securityMetrics.criticalAlerts} Critical Alerts
               </div>
             </CardContent>
           </Card>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Card className="glass dark:glass-dark">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 auto-rows-fr">
+          <Card className="glass dark:glass-dark h-full" icon={Users}>
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Users className="h-5 w-5 text-primary" />
+              <CardTitle>
                 <GradientText variant="blue">
                   Enterprise Distribution
                 </GradientText>
@@ -273,10 +332,9 @@ export default function DashboardPage() {
             </CardContent>
           </Card>
 
-          <Card className="glass dark:glass-dark">
+          <Card className="glass dark:glass-dark h-full" icon={AlertTriangle}>
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <AlertTriangle className="h-5 w-5 text-orange-500" />
+              <CardTitle>
                 <GradientText variant="orange">Recent Incidents</GradientText>
               </CardTitle>
             </CardHeader>

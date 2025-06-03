@@ -1,6 +1,4 @@
-import { readFileSync } from 'fs';
-import path from 'path';
-import { Device, Tower, Enterprise, Policy, DashboardMetrics, SubscriptionTier, OperatingSystem, Carrier, TowerStatus, PolicyPriority } from './generate-seed-data';
+import { Device, Tower, Enterprise, Policy, DashboardMetrics } from './generate-seed-data';
 
 type SeedDataType = {
   devices: Device[];
@@ -9,8 +7,6 @@ type SeedDataType = {
   policies: Policy[];
   dashboardMetrics: DashboardMetrics;
 };
-
-const SEED_DATA_DIR = path.join(process.cwd(), 'lib/data/seed-data');
 
 const emptyDashboardMetrics: DashboardMetrics = {
   enterprises: {
@@ -82,11 +78,13 @@ const emptyDashboardMetrics: DashboardMetrics = {
   }
 };
 
-export function loadSeedData<T extends keyof SeedDataType>(type: T): SeedDataType[T] {
+export async function loadSeedData<T extends keyof SeedDataType>(type: T): Promise<SeedDataType[T]> {
   try {
-    const filePath = path.join(SEED_DATA_DIR, `${type}.json`);
-    const data = readFileSync(filePath, 'utf-8');
-    return JSON.parse(data) as SeedDataType[T];
+    const response = await fetch(`/api/seed-data?type=${type}`);
+    if (!response.ok) {
+      throw new Error(`Failed to load seed data: ${response.statusText}`);
+    }
+    return await response.json();
   } catch (error) {
     console.error(`Error loading seed data for ${type}:`, error);
     // Return appropriate empty value based on type
@@ -170,7 +168,6 @@ export function sortData<T extends Record<string, any>>(
   });
 }
 
-// Pagination helper
 export function paginateData<T>(
   data: T[],
   page: number,

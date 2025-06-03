@@ -88,25 +88,17 @@
   --transition-timing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Custom gradients */
-  --lightGradient1: linear-gradient(
-    -10deg,
-    #f0f4ff 0%,
-    #e6eaff 50%,
-    #dce0ff 100%
+  --lightBackground: linear-gradient(
+    135deg,
+    #f8faff 0%,
+    #f0f4ff 25%,
+    #e8eeff 50%,
+    #f0f4ff 75%,
+    #f8faff 100%
   );
-  --lightGradient2: linear-gradient(
-    -10deg,
-    #ffffff 0%,
-    #f8faff 50%,
-    #f0f4ff 100%
-  );
-  --darkGradient1: linear-gradient(-10deg, #3e3d40 0%, #18161d 100%);
-  --darkGradient2: linear-gradient(
-    -10deg,
-    #2a2a2e 0%,
-    #1a1a1f 50%,
-    #121218 100%
-  );
+  --darkBackground: linear-gradient(-10deg, #3e3d40 0%, #18161d 100%);
+
+  /* Background and foreground colors */
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
 }
@@ -149,12 +141,14 @@
   html,
   body {
     @apply bg-background text-foreground min-h-screen font-sans antialiased;
-    background: var(--lightGradient1);
+    background: var(--lightBackground);
+    background-attachment: fixed;
   }
 
   .dark html,
   .dark body {
-    background: var(--darkGradient1);
+    background: var(--darkBackground);
+    background-attachment: fixed;
   }
 
   /* Global transition classes */

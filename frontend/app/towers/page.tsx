@@ -1,16 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PageTransition from "@/components/PageTransition";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DataTable, Column } from "@/components/ui/data-table";
-import { loadSeedData, Tower } from "@/lib/data/loadSeedData";
-import { MapPin, Wifi, Shield, Activity } from "lucide-react";
+import {
+  loadSeedData,
+  Tower,
+  DashboardMetrics,
+} from "../../lib/data/loadSeedData";
+import { RadioTower, Activity, Wrench, Link } from "lucide-react";
 import { GradientText } from "@/components/ui/gradient-text";
-
-// Load towers data
-const towers = loadSeedData<"towers">("towers");
+import { FullPageLoadingSpinner } from "@/components/ui/loading-spinner";
 
 // Define columns for the data table
 const columns: Column<Tower>[] = [
@@ -54,13 +56,9 @@ const columns: Column<Tower>[] = [
     key: "location",
     label: "Location",
     sortable: true,
+    searchable: true,
     render: (value: Tower["location"]) => (
-      <div className="flex flex-col">
-        <span>{value.address}</span>
-        <span className="text-xs text-muted-foreground">
-          {value.latitude.toFixed(4)}, {value.longitude.toFixed(4)}
-        </span>
-      </div>
+      <span className="text-sm">{value.address}</span>
     ),
   },
   {
@@ -68,16 +66,11 @@ const columns: Column<Tower>[] = [
     label: "Carriers",
     sortable: true,
     render: (value: Tower["carriers"]) => (
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-wrap gap-1">
         {value.map((carrier, i) => (
-          <div key={i} className="flex items-center gap-2">
-            <Badge variant="outline" className="w-fit">
-              {carrier.carrier}
-            </Badge>
-            <span className="text-xs text-muted-foreground">
-              {carrier.bandwidth}Mbps
-            </span>
-          </div>
+          <Badge key={i} variant="outline" className="w-fit">
+            {carrier.carrier}
+          </Badge>
         ))}
       </div>
     ),
@@ -87,19 +80,10 @@ const columns: Column<Tower>[] = [
     label: "Coverage",
     sortable: true,
     render: (value: Tower["coverage"]) => (
-      <div className="flex flex-col gap-1">
-        <div className="flex items-center gap-2">
-          <span className="text-xs">Radius:</span>
-          <span className="text-sm font-medium">{value.radius}km</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="text-xs">Signal:</span>
-          <span className="text-sm font-medium">{value.signalStrength}dBm</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="text-xs">Capacity:</span>
-          <span className="text-sm font-medium">{value.capacity} devices</span>
-        </div>
+      <div className="text-sm">
+        <div>Radius: {value.radius}km</div>
+        <div>Signal: {value.signalStrength}dBm</div>
+        <div>Capacity: {value.capacity} devices</div>
       </div>
     ),
   },
@@ -108,7 +92,7 @@ const columns: Column<Tower>[] = [
     label: "Equipment",
     sortable: true,
     render: (value: Tower["equipment"]) => (
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-wrap gap-1">
         {value.map((item, i) => (
           <Badge
             key={i}
@@ -121,7 +105,7 @@ const columns: Column<Tower>[] = [
             }
             className="w-fit"
           >
-            {item.type} ({item.model})
+            {item.type}
           </Badge>
         ))}
       </div>
@@ -132,133 +116,163 @@ const columns: Column<Tower>[] = [
     label: "Integration",
     sortable: true,
     render: (value: Tower["integrationStatus"]) => (
-      <div className="flex flex-col gap-1">
-        <Badge
-          variant={value.isActive ? "default" : "destructive"}
-          className="w-fit"
-        >
-          {value.provider}
-        </Badge>
-        <span className="text-xs text-muted-foreground">
-          Last sync: {new Date(value.lastSync).toLocaleString()}
-        </span>
-      </div>
+      <Badge
+        variant={value.isActive ? "default" : "secondary"}
+        className="w-fit"
+      >
+        {value.isActive ? "Active" : "Inactive"}
+      </Badge>
     ),
   },
 ];
 
 export default function TowersPage() {
-  // Compute dashboard metrics
-  const totalTowers = towers.length;
-  const activeTowers = towers.filter(
-    (t: Tower) => t.status === "active"
-  ).length;
-  const maintenanceTowers = towers.filter(
-    (t: Tower) => t.status === "maintenance"
-  ).length;
-  const totalCarriers = towers.reduce(
-    (sum: number, t: Tower) => sum + t.carriers.length,
+  const [towers, setTowers] = useState<Tower[]>([]);
+  const [metrics, setMetrics] = useState<DashboardMetrics | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const [towersData, metricsData] = await Promise.all([
+          loadSeedData("towers"),
+          loadSeedData("dashboardMetrics"),
+        ]);
+        setTowers(towersData);
+        setMetrics(metricsData);
+        setError(null);
+      } catch (error) {
+        console.error("Error loading tower data:", error);
+        setError("Failed to load tower data. Please try again later.");
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    loadData();
+  }, []);
+
+  if (loading) {
+    return <FullPageLoadingSpinner text="Loading tower data..." />;
+  }
+
+  if (error) {
+    return (
+      <PageTransition>
+        <div className="container mx-auto py-8">
+          <div className="flex items-center justify-center h-64">
+            <div className="text-lg text-destructive">{error}</div>
+          </div>
+        </div>
+      </PageTransition>
+    );
+  }
+
+  const { total, active, byStatus } = metrics?.towers ?? {
+    total: 0,
+    active: 0,
+    byStatus: {
+      active: 0,
+      maintenance: 0,
+      inactive: 0,
+    },
+  };
+
+  const totalCarrierConnections = towers.reduce(
+    (sum, tower) => sum + tower.carriers.length,
     0
   );
 
+  const cards = [
+    {
+      title: "Total Towers",
+      value: total.toLocaleString(),
+      description: "Network infrastructure",
+      icon: RadioTower,
+    },
+    {
+      title: "Active Towers",
+      value: active.toLocaleString(),
+      description: "Currently operational",
+      icon: Activity,
+    },
+    {
+      title: "Maintenance",
+      value: byStatus.maintenance.toLocaleString(),
+      description: "Under maintenance",
+      icon: Wrench,
+    },
+    {
+      title: "Carrier Connections",
+      value: totalCarrierConnections.toLocaleString(),
+      description: "Total carrier links",
+      icon: Link,
+    },
+  ];
+
   return (
     <PageTransition>
-      <div className="container mx-auto py-8 space-y-8">
-        <div className="flex items-center justify-between">
-          <h1 className="text-4xl font-bold">
-            <GradientText variant="multi">Tower Management</GradientText>
-          </h1>
-          <Badge variant="outline" className="text-sm px-4 py-1">
-            {totalTowers.toLocaleString()} Towers
-          </Badge>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex items-center gap-3 mb-8">
+          <RadioTower className="h-8 w-8 text-primary" />
+          <h1 className="text-3xl font-bold">Towers</h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-          <Card
-            variant="blue"
-            intensity="medium"
-            className="glass dark:glass-dark"
-          >
-            <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle>
-                <GradientText variant="blue">Total Towers</GradientText>
-              </CardTitle>
-              <MapPin className="h-6 w-6 text-primary" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-3xl font-bold text-gradient">
-                {totalTowers.toLocaleString()}
-              </div>
-              <div className="text-xs text-muted-foreground mt-2">
-                Network infrastructure
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card
-            variant="green"
-            intensity="medium"
-            className="glass dark:glass-dark"
-          >
-            <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle>
-                <GradientText variant="green">Active Towers</GradientText>
-              </CardTitle>
-              <Activity className="h-6 w-6 text-green-500" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-3xl font-bold text-green-500">
-                {activeTowers.toLocaleString()}
-              </div>
-              <div className="text-xs text-muted-foreground mt-2">
-                Currently operational
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card
-            variant="orange"
-            intensity="medium"
-            className="glass dark:glass-dark"
-          >
-            <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle>
-                <GradientText variant="orange">Maintenance</GradientText>
-              </CardTitle>
-              <Shield className="h-6 w-6 text-orange-500" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-3xl font-bold text-orange-500">
-                {maintenanceTowers.toLocaleString()}
-              </div>
-              <div className="text-xs text-muted-foreground mt-2">
-                Under maintenance
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card
-            variant="purple"
-            intensity="medium"
-            className="glass dark:glass-dark"
-          >
-            <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle>
-                <GradientText variant="purple">
-                  Carrier Connections
-                </GradientText>
-              </CardTitle>
-              <Wifi className="h-6 w-6 text-purple-500" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-3xl font-bold text-purple-500">
-                {totalCarriers.toLocaleString()}
-              </div>
-              <div className="text-xs text-muted-foreground mt-2">
-                Active carrier connections
-              </div>
-            </CardContent>
-          </Card>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-fr mb-8">
+          {cards.map((card) => (
+            <Card
+              key={card.title}
+              variant={
+                card.title === "Total Towers"
+                  ? "blue"
+                  : card.title === "Active Towers"
+                  ? "green"
+                  : card.title === "Maintenance"
+                  ? "orange"
+                  : "purple"
+              }
+              intensity="medium"
+              className="glass dark:glass-dark h-full"
+              icon={card.icon}
+            >
+              <CardHeader>
+                <CardTitle>
+                  <GradientText
+                    variant={
+                      card.title === "Total Towers"
+                        ? "blue"
+                        : card.title === "Active Towers"
+                        ? "green"
+                        : card.title === "Maintenance"
+                        ? "orange"
+                        : "purple"
+                    }
+                  >
+                    {card.title}
+                  </GradientText>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div
+                  className={`text-3xl font-bold ${
+                    card.title === "Total Towers"
+                      ? "text-gradient"
+                      : card.title === "Active Towers"
+                      ? "text-green-500"
+                      : card.title === "Maintenance"
+                      ? "text-orange-500"
+                      : "text-purple-500"
+                  }`}
+                >
+                  {card.value}
+                </div>
+                <div className="text-xs text-muted-foreground">
+                  {card.description}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
         <DataTable
@@ -267,6 +281,7 @@ export default function TowersPage() {
           pageSize={20}
           title="Tower Directory"
           description="Manage and monitor all towers in your network"
+          className="col-span-full"
         />
       </div>
     </PageTransition>
