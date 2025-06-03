@@ -210,7 +210,8 @@ export default function EnterpriseDevicesPage({
           </h1>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-4">
+        {/* Overview Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
           <Card
             variant="blue"
             intensity="medium"

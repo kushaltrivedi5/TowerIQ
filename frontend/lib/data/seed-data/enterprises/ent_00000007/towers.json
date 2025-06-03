@@ -1,62 +1,44 @@
 [
   {
     "id": "tower_00000001",
-    "name": "Jones, Weimann and Batz Tower 4VCQ",
+    "name": "Collier LLC Tower QX64",
     "status": "maintenance",
     "location": {
-      "latitude": -41.9891,
-      "longitude": 14.1217,
-      "address": "558 Stiedemann Plains"
+      "latitude": 5.972,
+      "longitude": 35.6156,
+      "address": "62636 Heaney Knoll"
     },
     "carriers": [
       {
         "carrier": "T-Mobile",
         "supportedOS": [
-          "macOS"
+          "Other"
         ],
         "supportedDevices": [
-          "laptop"
+          "tablet"
         ],
-        "bandwidth": 106,
-        "frequency": 3821,
+        "bandwidth": 749,
+        "frequency": 3849,
         "coverage": {
-          "radius": 6,
-          "signalStrength": -87
+          "radius": 9,
+          "signalStrength": -59
         }
       },
       {
-        "carrier": "AT&T",
+        "carrier": "Sprint",
         "supportedOS": [
-          "iOS",
-          "macOS"
+          "Android"
         ],
         "supportedDevices": [
           "tablet",
-          "IoT"
+          "IoT",
+          "smartphone"
         ],
-        "bandwidth": 659,
-        "frequency": 1447,
+        "bandwidth": 951,
+        "frequency": 4263,
         "coverage": {
-          "radius": 5,
-          "signalStrength": -49
-        }
-      },
-      {
-        "carrier": "Verizon",
-        "supportedOS": [
-          "Linux",
-          "Android",
-          "iOS"
-        ],
-        "supportedDevices": [
-          "gateway",
-          "IoT"
-        ],
-        "bandwidth": 846,
-        "frequency": 2757,
-        "coverage": {
-          "radius": 7,
-          "signalStrength": -46
+          "radius": 4,
+          "signalStrength": -76
         }
       }
     ],
@@ -65,7 +47,7 @@
         "type": "Antenna",
         "model": "Ericsson AIR 6449",
         "status": "maintenance",
-        "lastMaintenance": "2025-05-25T10:55:47.920Z",
+        "lastMaintenance": "2025-03-08T07:14:40.482Z",
         "capabilities": {
           "deviceDiscovery": true,
           "policyEnforcement": true,
@@ -73,10 +55,402 @@
         }
       }
     ],
-    "realEstateProvider": "SBA Communications",
+    "realEstateProvider": "Crown Castle",
     "integrationStatus": {
       "isActive": true,
-      "lastSync": "2025-06-03T09:04:34.871Z",
+      "lastSync": "2025-06-03T07:25:56.054Z",
+      "provider": "TowerDB",
+      "features": {
+        "deviceDiscovery": true,
+        "policyEnforcement": true,
+        "appMonitoring": true
+      }
+    },
+    "deviceDiscovery": {
+      "enabled": true,
+      "lastScan": "2025-06-02T12:30:40.286Z",
+      "discoveredDevices": []
+    },
+    "policyEnforcement": {
+      "activePolicies": [
+        "pol_DBY8GS5R",
+        "pol_YEKTFGIB",
+        "pol_BU89CVKQ",
+        "pol_BXRG9F44",
+        "pol_PUUGD2OA"
+      ],
+      "lastEnforcement": "2025-06-03T07:12:35.798Z",
+      "violations": [
+        {
+          "policyId": "pol_DBY8GS5R",
+          "deviceId": "dev_00000593",
+          "timestamp": "2025-06-01T13:15:25.358Z",
+          "action": "deny",
+          "resolved": true
+        }
+      ]
+    },
+    "connectedDevices": [
+      "dev_00000007",
+      "dev_00000020",
+      "dev_00000028",
+      "dev_00000048",
+      "dev_00000051",
+      "dev_00000061",
+      "dev_00000064",
+      "dev_00000065",
+      "dev_00000070",
+      "dev_00000074",
+      "dev_00000079",
+      "dev_00000082",
+      "dev_00000083",
+      "dev_00000102",
+      "dev_00000114",
+      "dev_00000122",
+      "dev_00000125",
+      "dev_00000130",
+      "dev_00000144",
+      "dev_00000145",
+      "dev_00000151",
+      "dev_00000169",
+      "dev_00000172",
+      "dev_00000176",
+      "dev_00000185",
+      "dev_00000196",
+      "dev_00000230",
+      "dev_00000234",
+      "dev_00000244",
+      "dev_00000252",
+      "dev_00000261",
+      "dev_00000263",
+      "dev_00000291",
+      "dev_00000296",
+      "dev_00000311",
+      "dev_00000314",
+      "dev_00000315",
+      "dev_00000317",
+      "dev_00000318",
+      "dev_00000319",
+      "dev_00000320",
+      "dev_00000327",
+      "dev_00000330",
+      "dev_00000331",
+      "dev_00000334",
+      "dev_00000342",
+      "dev_00000343",
+      "dev_00000348",
+      "dev_00000353",
+      "dev_00000358",
+      "dev_00000383",
+      "dev_00000386",
+      "dev_00000389",
+      "dev_00000390",
+      "dev_00000397",
+      "dev_00000402",
+      "dev_00000407",
+      "dev_00000412",
+      "dev_00000423",
+      "dev_00000425",
+      "dev_00000438",
+      "dev_00000443",
+      "dev_00000445",
+      "dev_00000449",
+      "dev_00000453",
+      "dev_00000455",
+      "dev_00000463",
+      "dev_00000467",
+      "dev_00000495",
+      "dev_00000501",
+      "dev_00000512",
+      "dev_00000527",
+      "dev_00000534",
+      "dev_00000536",
+      "dev_00000539",
+      "dev_00000546",
+      "dev_00000547",
+      "dev_00000548",
+      "dev_00000571",
+      "dev_00000579",
+      "dev_00000592",
+      "dev_00000595",
+      "dev_00000624",
+      "dev_00000628",
+      "dev_00000636",
+      "dev_00000642",
+      "dev_00000652",
+      "dev_00000655",
+      "dev_00000662",
+      "dev_00000663",
+      "dev_00000670",
+      "dev_00000673",
+      "dev_00000674",
+      "dev_00000676",
+      "dev_00000677",
+      "dev_00000692",
+      "dev_00000701",
+      "dev_00000707",
+      "dev_00000726",
+      "dev_00000747",
+      "dev_00000758",
+      "dev_00000762",
+      "dev_00000767",
+      "dev_00000778",
+      "dev_00000783"
+    ]
+  },
+  {
+    "id": "tower_00000002",
+    "name": "Heaney, Sawayn and Lind Tower GWLG",
+    "status": "inactive",
+    "location": {
+      "latitude": -77.0847,
+      "longitude": 129.1595,
+      "address": "2201 Birch Close"
+    },
+    "carriers": [
+      {
+        "carrier": "Sprint",
+        "supportedOS": [
+          "Android",
+          "Other",
+          "Windows"
+        ],
+        "supportedDevices": [
+          "IoT"
+        ],
+        "bandwidth": 610,
+        "frequency": 2963,
+        "coverage": {
+          "radius": 4,
+          "signalStrength": -77
+        }
+      },
+      {
+        "carrier": "US Cellular",
+        "supportedOS": [
+          "Windows"
+        ],
+        "supportedDevices": [
+          "IoT",
+          "tablet"
+        ],
+        "bandwidth": 433,
+        "frequency": 2440,
+        "coverage": {
+          "radius": 8,
+          "signalStrength": -76
+        }
+      },
+      {
+        "carrier": "AT&T",
+        "supportedOS": [
+          "Windows"
+        ],
+        "supportedDevices": [
+          "smartphone",
+          "tablet"
+        ],
+        "bandwidth": 103,
+        "frequency": 3835,
+        "coverage": {
+          "radius": 9,
+          "signalStrength": -63
+        }
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Samsung MIMO",
+        "status": "operational",
+        "lastMaintenance": "2025-03-26T20:10:40.035Z",
+        "capabilities": {
+          "deviceDiscovery": true,
+          "policyEnforcement": true,
+          "appMonitoring": true
+        }
+      }
+    ],
+    "realEstateProvider": "Crown Castle",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-03T10:41:26.631Z",
+      "provider": "CarrierConnect",
+      "features": {
+        "deviceDiscovery": true,
+        "policyEnforcement": true,
+        "appMonitoring": true
+      }
+    },
+    "deviceDiscovery": {
+      "enabled": true,
+      "lastScan": "2025-06-03T05:53:39.565Z",
+      "discoveredDevices": [
+        {
+          "deviceId": "b77a9240-4ba9-4541-887c-ddf242a954a5",
+          "discoveredAt": "2025-05-29T04:13:58.711Z",
+          "status": "approved",
+          "autoApproval": false,
+          "details": {
+            "type": "tablet",
+            "os": "iOS",
+            "carrier": "Sprint",
+            "signalStrength": -43
+          }
+        }
+      ]
+    },
+    "policyEnforcement": {
+      "activePolicies": [
+        "pol_2DJRX7SN",
+        "pol_DBY8GS5R",
+        "pol_KQFZEXZL",
+        "pol_PUUGD2OA",
+        "pol_A9PHEQ3U"
+      ],
+      "lastEnforcement": "2025-06-03T09:14:45.323Z",
+      "violations": []
+    },
+    "connectedDevices": [
+      "dev_00000010",
+      "dev_00000013",
+      "dev_00000014",
+      "dev_00000022",
+      "dev_00000027",
+      "dev_00000034",
+      "dev_00000035",
+      "dev_00000036",
+      "dev_00000050",
+      "dev_00000062",
+      "dev_00000069",
+      "dev_00000072",
+      "dev_00000078",
+      "dev_00000088",
+      "dev_00000090",
+      "dev_00000093",
+      "dev_00000095",
+      "dev_00000121",
+      "dev_00000132",
+      "dev_00000135",
+      "dev_00000138",
+      "dev_00000146",
+      "dev_00000148",
+      "dev_00000174",
+      "dev_00000175",
+      "dev_00000187",
+      "dev_00000209",
+      "dev_00000210",
+      "dev_00000225",
+      "dev_00000226",
+      "dev_00000228",
+      "dev_00000240",
+      "dev_00000241",
+      "dev_00000242",
+      "dev_00000246",
+      "dev_00000253",
+      "dev_00000264",
+      "dev_00000265",
+      "dev_00000276",
+      "dev_00000278",
+      "dev_00000293",
+      "dev_00000294",
+      "dev_00000299",
+      "dev_00000322",
+      "dev_00000371",
+      "dev_00000375",
+      "dev_00000377",
+      "dev_00000393",
+      "dev_00000406",
+      "dev_00000420",
+      "dev_00000431",
+      "dev_00000437",
+      "dev_00000439",
+      "dev_00000456",
+      "dev_00000457",
+      "dev_00000464",
+      "dev_00000476",
+      "dev_00000491",
+      "dev_00000500",
+      "dev_00000509",
+      "dev_00000520",
+      "dev_00000526",
+      "dev_00000537",
+      "dev_00000544",
+      "dev_00000573",
+      "dev_00000575",
+      "dev_00000576",
+      "dev_00000577",
+      "dev_00000584",
+      "dev_00000594",
+      "dev_00000596",
+      "dev_00000600",
+      "dev_00000603",
+      "dev_00000606",
+      "dev_00000614",
+      "dev_00000616",
+      "dev_00000618",
+      "dev_00000627",
+      "dev_00000629",
+      "dev_00000639",
+      "dev_00000651",
+      "dev_00000654",
+      "dev_00000669",
+      "dev_00000704",
+      "dev_00000715",
+      "dev_00000719",
+      "dev_00000724",
+      "dev_00000725",
+      "dev_00000728",
+      "dev_00000743",
+      "dev_00000770",
+      "dev_00000780",
+      "dev_00000788",
+      "dev_00000793"
+    ]
+  },
+  {
+    "id": "tower_00000003",
+    "name": "DuBuque - Kshlerin Tower MIGK",
+    "status": "inactive",
+    "location": {
+      "latitude": 66.1619,
+      "longitude": 16.5772,
+      "address": "84943 Fisher Points"
+    },
+    "carriers": [
+      {
+        "carrier": "Verizon",
+        "supportedOS": [
+          "Other"
+        ],
+        "supportedDevices": [
+          "IoT"
+        ],
+        "bandwidth": 193,
+        "frequency": 1038,
+        "coverage": {
+          "radius": 9,
+          "signalStrength": -73
+        }
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Ericsson AIR 6449",
+        "status": "maintenance",
+        "lastMaintenance": "2025-04-08T15:21:40.046Z",
+        "capabilities": {
+          "deviceDiscovery": true,
+          "policyEnforcement": true,
+          "appMonitoring": true
+        }
+      }
+    ],
+    "realEstateProvider": "Uniti Group",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-02T23:32:48.064Z",
       "provider": "TowerSync",
       "features": {
         "deviceDiscovery": true,
@@ -86,209 +460,502 @@
     },
     "deviceDiscovery": {
       "enabled": true,
-      "lastScan": "2025-06-02T18:31:51.114Z",
+      "lastScan": "2025-06-03T03:00:25.398Z",
       "discoveredDevices": [
         {
-          "deviceId": "ab82f4db-89bd-4f6d-aa4b-a54c801c83ad",
-          "discoveredAt": "2025-06-02T02:34:38.544Z",
+          "deviceId": "37feb3fe-d7b8-4c71-a13a-dd841ebdd38b",
+          "discoveredAt": "2025-05-31T05:29:22.404Z",
           "status": "approved",
-          "autoApproval": true,
+          "autoApproval": false,
           "details": {
-            "type": "gateway",
+            "type": "laptop",
             "os": "Windows",
-            "carrier": "Verizon",
-            "signalStrength": -75
-          }
-        },
-        {
-          "deviceId": "425633c2-bfd4-4b68-9ccc-cccfcc33ad08",
-          "discoveredAt": "2025-05-30T07:24:12.894Z",
-          "status": "pending",
-          "autoApproval": true,
-          "details": {
-            "type": "tablet",
-            "os": "iOS",
-            "carrier": "Sprint",
-            "signalStrength": -75
-          }
-        },
-        {
-          "deviceId": "313d6eeb-e37b-4774-ae56-761aaf0c5f6f",
-          "discoveredAt": "2025-05-29T03:21:57.625Z",
-          "status": "approved",
-          "autoApproval": true,
-          "details": {
-            "type": "tablet",
-            "os": "iOS",
             "carrier": "T-Mobile",
-            "signalStrength": -42
+            "signalStrength": -51
+          }
+        },
+        {
+          "deviceId": "0c350b0f-30d7-4837-a9b6-59bbbd618d4e",
+          "discoveredAt": "2025-05-30T20:00:20.016Z",
+          "status": "approved",
+          "autoApproval": false,
+          "details": {
+            "type": "smartphone",
+            "os": "iOS",
+            "carrier": "US Cellular",
+            "signalStrength": -64
           }
         }
       ]
     },
     "policyEnforcement": {
       "activePolicies": [
-        "pol_47YZYQ3R",
-        "pol_P033QPPR",
-        "pol_BTLDAW2E",
-        "pol_RPF9B9E0"
+        "pol_1DW41WA6",
+        "pol_BU89CVKQ",
+        "pol_AKCT3JHA",
+        "pol_BXRG9F44"
       ],
-      "lastEnforcement": "2025-06-02T17:16:17.550Z",
+      "lastEnforcement": "2025-06-02T16:56:24.374Z",
       "violations": [
         {
-          "policyId": "pol_47YZYQ3R",
-          "deviceId": "dev_00000420",
-          "timestamp": "2025-06-01T02:23:32.412Z",
-          "action": "quarantine",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_BTLDAW2E",
-          "deviceId": "dev_00000275",
-          "timestamp": "2025-06-01T19:45:26.685Z",
+          "policyId": "pol_AKCT3JHA",
+          "deviceId": "dev_00000475",
+          "timestamp": "2025-05-28T23:45:25.963Z",
           "action": "deny",
           "resolved": true
         },
         {
-          "policyId": "pol_47YZYQ3R",
-          "deviceId": "dev_00000157",
-          "timestamp": "2025-05-29T19:56:04.460Z",
+          "policyId": "pol_BXRG9F44",
+          "deviceId": "dev_00000718",
+          "timestamp": "2025-06-03T04:25:38.928Z",
+          "action": "deny",
+          "resolved": true
+        },
+        {
+          "policyId": "pol_1DW41WA6",
+          "deviceId": "dev_00000135",
+          "timestamp": "2025-05-27T19:48:30.480Z",
           "action": "quarantine",
           "resolved": true
         },
         {
-          "policyId": "pol_RPF9B9E0",
-          "deviceId": "dev_00000522",
-          "timestamp": "2025-05-28T17:32:16.987Z",
-          "action": "notify",
+          "policyId": "pol_1DW41WA6",
+          "deviceId": "dev_00000379",
+          "timestamp": "2025-05-28T15:43:22.291Z",
+          "action": "deny",
           "resolved": true
         }
       ]
     },
     "connectedDevices": [
-      "dev_00000015",
-      "dev_00000041",
-      "dev_00000045",
-      "dev_00000051",
-      "dev_00000058",
-      "dev_00000067",
-      "dev_00000078",
-      "dev_00000086",
-      "dev_00000092",
-      "dev_00000098",
-      "dev_00000102",
+      "dev_00000002",
+      "dev_00000004",
+      "dev_00000023",
+      "dev_00000031",
+      "dev_00000037",
+      "dev_00000039",
+      "dev_00000047",
+      "dev_00000054",
+      "dev_00000066",
+      "dev_00000068",
+      "dev_00000071",
+      "dev_00000080",
+      "dev_00000087",
+      "dev_00000089",
+      "dev_00000096",
+      "dev_00000097",
+      "dev_00000100",
       "dev_00000103",
+      "dev_00000104",
+      "dev_00000105",
+      "dev_00000107",
       "dev_00000112",
+      "dev_00000115",
+      "dev_00000120",
       "dev_00000124",
       "dev_00000134",
-      "dev_00000145",
-      "dev_00000170",
-      "dev_00000172",
-      "dev_00000173",
+      "dev_00000142",
+      "dev_00000149",
+      "dev_00000156",
+      "dev_00000159",
+      "dev_00000164",
       "dev_00000183",
-      "dev_00000187",
-      "dev_00000198",
-      "dev_00000204",
-      "dev_00000220",
+      "dev_00000194",
+      "dev_00000197",
+      "dev_00000208",
+      "dev_00000211",
+      "dev_00000216",
       "dev_00000221",
-      "dev_00000234",
       "dev_00000236",
-      "dev_00000238",
-      "dev_00000250",
-      "dev_00000286",
-      "dev_00000302",
+      "dev_00000243",
+      "dev_00000247",
+      "dev_00000248",
+      "dev_00000251",
+      "dev_00000270",
+      "dev_00000274",
+      "dev_00000275",
+      "dev_00000285",
+      "dev_00000289",
+      "dev_00000300",
+      "dev_00000333",
+      "dev_00000335",
+      "dev_00000341",
       "dev_00000352",
-      "dev_00000368",
-      "dev_00000387",
-      "dev_00000390",
+      "dev_00000382",
+      "dev_00000392",
       "dev_00000398",
+      "dev_00000399",
       "dev_00000411",
-      "dev_00000426",
-      "dev_00000430",
-      "dev_00000440",
-      "dev_00000456",
-      "dev_00000464",
-      "dev_00000465",
-      "dev_00000478",
-      "dev_00000486",
-      "dev_00000503",
-      "dev_00000519",
-      "dev_00000525",
-      "dev_00000526",
-      "dev_00000527",
-      "dev_00000534",
-      "dev_00000536",
-      "dev_00000538",
-      "dev_00000541",
-      "dev_00000563",
-      "dev_00000577",
+      "dev_00000417",
+      "dev_00000422",
+      "dev_00000424",
+      "dev_00000429",
+      "dev_00000452",
+      "dev_00000461",
+      "dev_00000462",
+      "dev_00000471",
+      "dev_00000473",
+      "dev_00000479",
+      "dev_00000511",
+      "dev_00000514",
+      "dev_00000518",
+      "dev_00000530",
+      "dev_00000550",
+      "dev_00000555",
+      "dev_00000556",
+      "dev_00000559",
+      "dev_00000580",
+      "dev_00000591",
+      "dev_00000601",
       "dev_00000602",
-      "dev_00000627",
-      "dev_00000633",
-      "dev_00000644",
-      "dev_00000649",
-      "dev_00000682",
+      "dev_00000620",
+      "dev_00000622",
+      "dev_00000638",
+      "dev_00000641",
+      "dev_00000650",
+      "dev_00000656",
+      "dev_00000675",
+      "dev_00000678",
+      "dev_00000680",
+      "dev_00000688",
       "dev_00000689",
+      "dev_00000705",
       "dev_00000708",
-      "dev_00000732",
-      "dev_00000774",
-      "dev_00000775",
-      "dev_00000781",
-      "dev_00000788",
-      "dev_00000792",
-      "dev_00000800",
-      "dev_00000803",
-      "dev_00000804",
-      "dev_00000817",
-      "dev_00000830",
-      "dev_00000831",
-      "dev_00000839",
-      "dev_00000849",
-      "dev_00000850",
-      "dev_00000856",
-      "dev_00000907",
-      "dev_00000925",
-      "dev_00000940",
-      "dev_00000951",
-      "dev_00000953",
-      "dev_00000956",
-      "dev_00000970"
+      "dev_00000718",
+      "dev_00000720",
+      "dev_00000721",
+      "dev_00000735",
+      "dev_00000753",
+      "dev_00000760",
+      "dev_00000777",
+      "dev_00000785"
     ]
   },
   {
-    "id": "tower_00000002",
-    "name": "Pacocha - Bode Tower RAYK",
+    "id": "tower_00000004",
+    "name": "Hermann - Hand Tower 47G3",
     "status": "active",
     "location": {
-      "latitude": -12.9466,
-      "longitude": -83.1532,
-      "address": "400 Dennis Wall"
+      "latitude": -89.4392,
+      "longitude": 153.8333,
+      "address": "224 Ritchie Terrace"
     },
     "carriers": [
       {
-        "carrier": "Sprint",
+        "carrier": "T-Mobile",
         "supportedOS": [
-          "Android",
-          "Linux"
+          "Windows",
+          "Android"
+        ],
+        "supportedDevices": [
+          "smartphone",
+          "gateway"
+        ],
+        "bandwidth": 298,
+        "frequency": 5409,
+        "coverage": {
+          "radius": 10,
+          "signalStrength": -78
+        }
+      },
+      {
+        "carrier": "US Cellular",
+        "supportedOS": [
+          "Other",
+          "Windows",
+          "iOS"
         ],
         "supportedDevices": [
           "IoT",
+          "smartphone",
           "tablet"
         ],
-        "bandwidth": 629,
-        "frequency": 3132,
+        "bandwidth": 146,
+        "frequency": 1909,
         "coverage": {
-          "radius": 4,
-          "signalStrength": -43
+          "radius": 8,
+          "signalStrength": -82
         }
       }
     ],
     "equipment": [
       {
         "type": "Antenna",
-        "model": "Samsung MIMO",
+        "model": "Nokia AirScale",
         "status": "operational",
-        "lastMaintenance": "2025-03-12T07:17:22.581Z",
+        "lastMaintenance": "2025-04-06T14:51:53.838Z",
+        "capabilities": {
+          "deviceDiscovery": true,
+          "policyEnforcement": true,
+          "appMonitoring": true
+        }
+      }
+    ],
+    "realEstateProvider": "Uniti Group",
+    "integrationStatus": {
+      "isActive": true,
+      "lastSync": "2025-06-03T01:37:13.858Z",
+      "provider": "CarrierConnect",
+      "features": {
+        "deviceDiscovery": true,
+        "policyEnforcement": true,
+        "appMonitoring": true
+      }
+    },
+    "deviceDiscovery": {
+      "enabled": true,
+      "lastScan": "2025-06-02T22:38:29.189Z",
+      "discoveredDevices": [
+        {
+          "deviceId": "0ce0c377-1aa3-4a00-9382-5e0545b89621",
+          "discoveredAt": "2025-06-01T05:39:34.546Z",
+          "status": "approved",
+          "autoApproval": true,
+          "details": {
+            "type": "IoT",
+            "os": "Windows",
+            "carrier": "US Cellular",
+            "signalStrength": -54
+          }
+        },
+        {
+          "deviceId": "2ff9fe92-152a-4020-a9d5-54d8862c603d",
+          "discoveredAt": "2025-06-02T02:26:37.818Z",
+          "status": "pending",
+          "autoApproval": true,
+          "details": {
+            "type": "gateway",
+            "os": "iOS",
+            "carrier": "Verizon",
+            "signalStrength": -45
+          }
+        },
+        {
+          "deviceId": "3c628e77-e820-4af5-8492-66e042102c08",
+          "discoveredAt": "2025-05-29T05:19:40.584Z",
+          "status": "rejected",
+          "autoApproval": true,
+          "details": {
+            "type": "IoT",
+            "os": "Windows",
+            "carrier": "AT&T",
+            "signalStrength": -70
+          }
+        },
+        {
+          "deviceId": "8fdab7a2-b86c-4d97-a5c8-26165e8c754f",
+          "discoveredAt": "2025-05-29T07:53:47.935Z",
+          "status": "rejected",
+          "autoApproval": true,
+          "details": {
+            "type": "smartphone",
+            "os": "Other",
+            "carrier": "T-Mobile",
+            "signalStrength": -58
+          }
+        }
+      ]
+    },
+    "policyEnforcement": {
+      "activePolicies": [
+        "pol_YEKTFGIB",
+        "pol_1DW41WA6",
+        "pol_A9PHEQ3U",
+        "pol_2DJRX7SN"
+      ],
+      "lastEnforcement": "2025-06-02T21:25:28.754Z",
+      "violations": [
+        {
+          "policyId": "pol_1DW41WA6",
+          "deviceId": "dev_00000225",
+          "timestamp": "2025-05-29T03:18:57.307Z",
+          "action": "quarantine",
+          "resolved": true
+        },
+        {
+          "policyId": "pol_YEKTFGIB",
+          "deviceId": "dev_00000784",
+          "timestamp": "2025-05-28T07:32:39.036Z",
+          "action": "quarantine",
+          "resolved": false
+        },
+        {
+          "policyId": "pol_2DJRX7SN",
+          "deviceId": "dev_00000278",
+          "timestamp": "2025-05-30T15:10:02.537Z",
+          "action": "deny",
+          "resolved": true
+        },
+        {
+          "policyId": "pol_YEKTFGIB",
+          "deviceId": "dev_00000118",
+          "timestamp": "2025-05-29T23:44:19.164Z",
+          "action": "quarantine",
+          "resolved": true
+        },
+        {
+          "policyId": "pol_2DJRX7SN",
+          "deviceId": "dev_00000296",
+          "timestamp": "2025-05-29T21:07:45.660Z",
+          "action": "quarantine",
+          "resolved": true
+        }
+      ]
+    },
+    "connectedDevices": [
+      "dev_00000011",
+      "dev_00000024",
+      "dev_00000025",
+      "dev_00000040",
+      "dev_00000041",
+      "dev_00000044",
+      "dev_00000053",
+      "dev_00000055",
+      "dev_00000058",
+      "dev_00000091",
+      "dev_00000108",
+      "dev_00000127",
+      "dev_00000131",
+      "dev_00000147",
+      "dev_00000150",
+      "dev_00000152",
+      "dev_00000160",
+      "dev_00000180",
+      "dev_00000195",
+      "dev_00000204",
+      "dev_00000207",
+      "dev_00000213",
+      "dev_00000214",
+      "dev_00000220",
+      "dev_00000222",
+      "dev_00000245",
+      "dev_00000250",
+      "dev_00000255",
+      "dev_00000256",
+      "dev_00000258",
+      "dev_00000266",
+      "dev_00000268",
+      "dev_00000269",
+      "dev_00000273",
+      "dev_00000280",
+      "dev_00000302",
+      "dev_00000305",
+      "dev_00000306",
+      "dev_00000324",
+      "dev_00000346",
+      "dev_00000349",
+      "dev_00000364",
+      "dev_00000367",
+      "dev_00000372",
+      "dev_00000373",
+      "dev_00000385",
+      "dev_00000394",
+      "dev_00000404",
+      "dev_00000409",
+      "dev_00000416",
+      "dev_00000418",
+      "dev_00000419",
+      "dev_00000432",
+      "dev_00000434",
+      "dev_00000441",
+      "dev_00000444",
+      "dev_00000448",
+      "dev_00000458",
+      "dev_00000468",
+      "dev_00000469",
+      "dev_00000472",
+      "dev_00000483",
+      "dev_00000487",
+      "dev_00000489",
+      "dev_00000492",
+      "dev_00000493",
+      "dev_00000497",
+      "dev_00000502",
+      "dev_00000503",
+      "dev_00000507",
+      "dev_00000508",
+      "dev_00000515",
+      "dev_00000529",
+      "dev_00000531",
+      "dev_00000551",
+      "dev_00000552",
+      "dev_00000554",
+      "dev_00000560",
+      "dev_00000565",
+      "dev_00000566",
+      "dev_00000569",
+      "dev_00000598",
+      "dev_00000607",
+      "dev_00000612",
+      "dev_00000613",
+      "dev_00000621",
+      "dev_00000625",
+      "dev_00000633",
+      "dev_00000634",
+      "dev_00000646",
+      "dev_00000649",
+      "dev_00000657",
+      "dev_00000660",
+      "dev_00000661",
+      "dev_00000665",
+      "dev_00000671",
+      "dev_00000679",
+      "dev_00000683",
+      "dev_00000698",
+      "dev_00000703",
+      "dev_00000711",
+      "dev_00000712",
+      "dev_00000727",
+      "dev_00000730",
+      "dev_00000738",
+      "dev_00000740",
+      "dev_00000751",
+      "dev_00000756",
+      "dev_00000768",
+      "dev_00000773",
+      "dev_00000775",
+      "dev_00000776",
+      "dev_00000784",
+      "dev_00000789",
+      "dev_00000794"
+    ]
+  },
+  {
+    "id": "tower_00000005",
+    "name": "Oberbrunner - Walter Tower ZSB7",
+    "status": "active",
+    "location": {
+      "latitude": -46.1891,
+      "longitude": -81.5261,
+      "address": "3442 Cemetery Road"
+    },
+    "carriers": [
+      {
+        "carrier": "Verizon",
+        "supportedOS": [
+          "iOS",
+          "Android",
+          "Other"
+        ],
+        "supportedDevices": [
+          "laptop",
+          "gateway",
+          "IoT"
+        ],
+        "bandwidth": 970,
+        "frequency": 5339,
+        "coverage": {
+          "radius": 9,
+          "signalStrength": -45
+        }
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Antenna",
+        "model": "Ericsson AIR 6449",
+        "status": "operational",
+        "lastMaintenance": "2025-05-15T13:24:15.579Z",
         "capabilities": {
           "deviceDiscovery": true,
           "policyEnforcement": true,
@@ -299,8 +966,8 @@
     "realEstateProvider": "American Tower Corporation",
     "integrationStatus": {
       "isActive": true,
-      "lastSync": "2025-06-02T21:02:44.477Z",
-      "provider": "TowerDB",
+      "lastSync": "2025-06-02T22:48:49.575Z",
+      "provider": "TowerSync",
       "features": {
         "deviceDiscovery": true,
         "policyEnforcement": true,
@@ -309,941 +976,174 @@
     },
     "deviceDiscovery": {
       "enabled": true,
-      "lastScan": "2025-06-02T13:29:51.667Z",
+      "lastScan": "2025-06-03T02:13:28.077Z",
       "discoveredDevices": [
         {
-          "deviceId": "b93d8da3-ca18-4af4-a586-fb8c3ee9a6d9",
-          "discoveredAt": "2025-05-31T19:45:06.526Z",
+          "deviceId": "323674d0-a0df-460a-847a-e19511e10071",
+          "discoveredAt": "2025-06-02T16:43:38.839Z",
           "status": "rejected",
-          "autoApproval": false,
+          "autoApproval": true,
           "details": {
             "type": "smartphone",
-            "os": "Windows",
-            "carrier": "US Cellular",
-            "signalStrength": -75
+            "os": "Android",
+            "carrier": "T-Mobile",
+            "signalStrength": -69
           }
-        }
-      ]
-    },
-    "policyEnforcement": {
-      "activePolicies": [
-        "pol_0KYVJAFS",
-        "pol_NYTYGXTP",
-        "pol_KSYTOSLN",
-        "pol_TUFKPGXE",
-        "pol_N3S6GOJL"
-      ],
-      "lastEnforcement": "2025-06-02T18:14:45.688Z",
-      "violations": [
-        {
-          "policyId": "pol_N3S6GOJL",
-          "deviceId": "dev_00000280",
-          "timestamp": "2025-05-30T23:48:24.713Z",
-          "action": "notify",
-          "resolved": true
         },
         {
-          "policyId": "pol_KSYTOSLN",
-          "deviceId": "dev_00000677",
-          "timestamp": "2025-05-31T12:09:09.759Z",
-          "action": "notify",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_NYTYGXTP",
-          "deviceId": "dev_00000867",
-          "timestamp": "2025-06-03T05:50:11.649Z",
-          "action": "notify",
-          "resolved": true
-        }
-      ]
-    },
-    "connectedDevices": [
-      "dev_00000017",
-      "dev_00000027",
-      "dev_00000028",
-      "dev_00000029",
-      "dev_00000030",
-      "dev_00000046",
-      "dev_00000049",
-      "dev_00000052",
-      "dev_00000099",
-      "dev_00000104",
-      "dev_00000109",
-      "dev_00000118",
-      "dev_00000138",
-      "dev_00000142",
-      "dev_00000158",
-      "dev_00000162",
-      "dev_00000166",
-      "dev_00000168",
-      "dev_00000171",
-      "dev_00000181",
-      "dev_00000182",
-      "dev_00000192",
-      "dev_00000195",
-      "dev_00000197",
-      "dev_00000206",
-      "dev_00000231",
-      "dev_00000252",
-      "dev_00000254",
-      "dev_00000255",
-      "dev_00000278",
-      "dev_00000295",
-      "dev_00000298",
-      "dev_00000308",
-      "dev_00000315",
-      "dev_00000321",
-      "dev_00000339",
-      "dev_00000345",
-      "dev_00000351",
-      "dev_00000367",
-      "dev_00000374",
-      "dev_00000396",
-      "dev_00000418",
-      "dev_00000427",
-      "dev_00000428",
-      "dev_00000431",
-      "dev_00000435",
-      "dev_00000437",
-      "dev_00000475",
-      "dev_00000482",
-      "dev_00000501",
-      "dev_00000513",
-      "dev_00000530",
-      "dev_00000557",
-      "dev_00000568",
-      "dev_00000572",
-      "dev_00000573",
-      "dev_00000575",
-      "dev_00000590",
-      "dev_00000601",
-      "dev_00000605",
-      "dev_00000614",
-      "dev_00000628",
-      "dev_00000634",
-      "dev_00000657",
-      "dev_00000658",
-      "dev_00000660",
-      "dev_00000672",
-      "dev_00000680",
-      "dev_00000685",
-      "dev_00000701",
-      "dev_00000718",
-      "dev_00000720",
-      "dev_00000722",
-      "dev_00000725",
-      "dev_00000769",
-      "dev_00000776",
-      "dev_00000780",
-      "dev_00000806",
-      "dev_00000814",
-      "dev_00000843",
-      "dev_00000845",
-      "dev_00000863",
-      "dev_00000872",
-      "dev_00000888",
-      "dev_00000895",
-      "dev_00000917",
-      "dev_00000928",
-      "dev_00000939",
-      "dev_00000941",
-      "dev_00000943",
-      "dev_00000952",
-      "dev_00000963",
-      "dev_00000973",
-      "dev_00000975",
-      "dev_00000978"
-    ]
-  },
-  {
-    "id": "tower_00000003",
-    "name": "Kuhn Inc Tower M1NN",
-    "status": "inactive",
-    "location": {
-      "latitude": -56.4368,
-      "longitude": 91.9652,
-      "address": "72967 Leopoldo Trail"
-    },
-    "carriers": [
-      {
-        "carrier": "Verizon",
-        "supportedOS": [
-          "Windows",
-          "Linux",
-          "Android"
-        ],
-        "supportedDevices": [
-          "IoT",
-          "tablet",
-          "gateway"
-        ],
-        "bandwidth": 146,
-        "frequency": 3959,
-        "coverage": {
-          "radius": 7,
-          "signalStrength": -72
-        }
-      },
-      {
-        "carrier": "Sprint",
-        "supportedOS": [
-          "Android",
-          "Windows"
-        ],
-        "supportedDevices": [
-          "laptop"
-        ],
-        "bandwidth": 314,
-        "frequency": 1310,
-        "coverage": {
-          "radius": 10,
-          "signalStrength": -43
-        }
-      },
-      {
-        "carrier": "AT&T",
-        "supportedOS": [
-          "iOS"
-        ],
-        "supportedDevices": [
-          "IoT",
-          "tablet",
-          "gateway"
-        ],
-        "bandwidth": 843,
-        "frequency": 2580,
-        "coverage": {
-          "radius": 3,
-          "signalStrength": -46
-        }
-      }
-    ],
-    "equipment": [
-      {
-        "type": "Antenna",
-        "model": "Samsung MIMO",
-        "status": "faulty",
-        "lastMaintenance": "2025-05-14T07:41:54.269Z",
-        "capabilities": {
-          "deviceDiscovery": true,
-          "policyEnforcement": true,
-          "appMonitoring": true
-        }
-      }
-    ],
-    "realEstateProvider": "Crown Castle",
-    "integrationStatus": {
-      "isActive": true,
-      "lastSync": "2025-06-02T10:24:23.023Z",
-      "provider": "CarrierConnect",
-      "features": {
-        "deviceDiscovery": true,
-        "policyEnforcement": true,
-        "appMonitoring": true
-      }
-    },
-    "deviceDiscovery": {
-      "enabled": true,
-      "lastScan": "2025-06-03T06:12:44.205Z",
-      "discoveredDevices": []
-    },
-    "policyEnforcement": {
-      "activePolicies": [
-        "pol_TUFKPGXE",
-        "pol_SCROE15V",
-        "pol_NYTYGXTP"
-      ],
-      "lastEnforcement": "2025-06-02T10:32:58.452Z",
-      "violations": [
-        {
-          "policyId": "pol_NYTYGXTP",
-          "deviceId": "dev_00000248",
-          "timestamp": "2025-05-30T04:07:11.564Z",
-          "action": "quarantine",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_NYTYGXTP",
-          "deviceId": "dev_00000301",
-          "timestamp": "2025-05-28T10:31:34.558Z",
-          "action": "quarantine",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_NYTYGXTP",
-          "deviceId": "dev_00000720",
-          "timestamp": "2025-06-02T21:46:53.813Z",
-          "action": "deny",
-          "resolved": true
-        }
-      ]
-    },
-    "connectedDevices": [
-      "dev_00000012",
-      "dev_00000018",
-      "dev_00000032",
-      "dev_00000038",
-      "dev_00000040",
-      "dev_00000043",
-      "dev_00000054",
-      "dev_00000060",
-      "dev_00000073",
-      "dev_00000093",
-      "dev_00000111",
-      "dev_00000114",
-      "dev_00000123",
-      "dev_00000133",
-      "dev_00000137",
-      "dev_00000141",
-      "dev_00000159",
-      "dev_00000169",
-      "dev_00000179",
-      "dev_00000193",
-      "dev_00000199",
-      "dev_00000203",
-      "dev_00000209",
-      "dev_00000224",
-      "dev_00000227",
-      "dev_00000230",
-      "dev_00000232",
-      "dev_00000246",
-      "dev_00000259",
-      "dev_00000260",
-      "dev_00000261",
-      "dev_00000264",
-      "dev_00000266",
-      "dev_00000283",
-      "dev_00000299",
-      "dev_00000300",
-      "dev_00000307",
-      "dev_00000314",
-      "dev_00000322",
-      "dev_00000328",
-      "dev_00000338",
-      "dev_00000340",
-      "dev_00000341",
-      "dev_00000372",
-      "dev_00000400",
-      "dev_00000410",
-      "dev_00000416",
-      "dev_00000432",
-      "dev_00000438",
-      "dev_00000458",
-      "dev_00000492",
-      "dev_00000493",
-      "dev_00000496",
-      "dev_00000533",
-      "dev_00000546",
-      "dev_00000547",
-      "dev_00000551",
-      "dev_00000589",
-      "dev_00000591",
-      "dev_00000597",
-      "dev_00000609",
-      "dev_00000632",
-      "dev_00000640",
-      "dev_00000654",
-      "dev_00000667",
-      "dev_00000688",
-      "dev_00000690",
-      "dev_00000710",
-      "dev_00000715",
-      "dev_00000739",
-      "dev_00000741",
-      "dev_00000754",
-      "dev_00000760",
-      "dev_00000783",
-      "dev_00000796",
-      "dev_00000798",
-      "dev_00000801",
-      "dev_00000824",
-      "dev_00000871",
-      "dev_00000876",
-      "dev_00000877",
-      "dev_00000882",
-      "dev_00000887",
-      "dev_00000889",
-      "dev_00000896",
-      "dev_00000898",
-      "dev_00000926",
-      "dev_00000935",
-      "dev_00000964"
-    ]
-  },
-  {
-    "id": "tower_00000004",
-    "name": "Boyle, Parker and Ledner Tower 8SY8",
-    "status": "inactive",
-    "location": {
-      "latitude": -3.0701,
-      "longitude": -30.311,
-      "address": "375 Kaci Glens"
-    },
-    "carriers": [
-      {
-        "carrier": "US Cellular",
-        "supportedOS": [
-          "macOS"
-        ],
-        "supportedDevices": [
-          "smartphone",
-          "IoT",
-          "tablet"
-        ],
-        "bandwidth": 613,
-        "frequency": 3801,
-        "coverage": {
-          "radius": 6,
-          "signalStrength": -63
-        }
-      },
-      {
-        "carrier": "Sprint",
-        "supportedOS": [
-          "Android",
-          "macOS"
-        ],
-        "supportedDevices": [
-          "tablet",
-          "smartphone"
-        ],
-        "bandwidth": 929,
-        "frequency": 1501,
-        "coverage": {
-          "radius": 4,
-          "signalStrength": -56
-        }
-      }
-    ],
-    "equipment": [
-      {
-        "type": "Antenna",
-        "model": "Samsung MIMO",
-        "status": "maintenance",
-        "lastMaintenance": "2025-04-25T16:36:08.693Z",
-        "capabilities": {
-          "deviceDiscovery": true,
-          "policyEnforcement": true,
-          "appMonitoring": true
-        }
-      }
-    ],
-    "realEstateProvider": "Vertical Bridge",
-    "integrationStatus": {
-      "isActive": true,
-      "lastSync": "2025-06-03T04:56:40.213Z",
-      "provider": "TowerDB",
-      "features": {
-        "deviceDiscovery": true,
-        "policyEnforcement": true,
-        "appMonitoring": true
-      }
-    },
-    "deviceDiscovery": {
-      "enabled": true,
-      "lastScan": "2025-06-03T04:42:08.587Z",
-      "discoveredDevices": [
-        {
-          "deviceId": "9bede42d-99c8-41d7-86e5-0b631f9be8f8",
-          "discoveredAt": "2025-05-31T09:08:26.302Z",
+          "deviceId": "4bdbb390-ce2c-4dcb-8ecf-a1ac99c96f6b",
+          "discoveredAt": "2025-06-03T06:51:37.235Z",
           "status": "approved",
           "autoApproval": true,
           "details": {
             "type": "smartphone",
             "os": "Android",
-            "carrier": "AT&T",
-            "signalStrength": -73
+            "carrier": "US Cellular",
+            "signalStrength": -54
           }
         },
         {
-          "deviceId": "e47ea99b-0b67-4118-b5ac-3754cc552586",
-          "discoveredAt": "2025-05-31T16:54:52.340Z",
-          "status": "rejected",
-          "autoApproval": false,
-          "details": {
-            "type": "gateway",
-            "os": "Windows",
-            "carrier": "Sprint",
-            "signalStrength": -55
-          }
-        },
-        {
-          "deviceId": "1891257c-23ed-47c3-a6f4-b6bc1827712b",
-          "discoveredAt": "2025-06-02T11:48:39.798Z",
-          "status": "rejected",
-          "autoApproval": false,
-          "details": {
-            "type": "tablet",
-            "os": "Android",
-            "carrier": "AT&T",
-            "signalStrength": -71
-          }
-        },
-        {
-          "deviceId": "0580a110-bffc-44eb-ba35-48cb34d0892f",
-          "discoveredAt": "2025-05-31T15:02:10.731Z",
-          "status": "pending",
-          "autoApproval": false,
-          "details": {
-            "type": "gateway",
-            "os": "Linux",
-            "carrier": "Sprint",
-            "signalStrength": -49
-          }
-        }
-      ]
-    },
-    "policyEnforcement": {
-      "activePolicies": [
-        "pol_TUFKPGXE",
-        "pol_UE5RRENZ",
-        "pol_47YZYQ3R",
-        "pol_KSYTOSLN"
-      ],
-      "lastEnforcement": "2025-06-03T00:43:07.473Z",
-      "violations": [
-        {
-          "policyId": "pol_TUFKPGXE",
-          "deviceId": "dev_00000462",
-          "timestamp": "2025-05-29T23:52:20.081Z",
-          "action": "notify",
-          "resolved": false
-        },
-        {
-          "policyId": "pol_TUFKPGXE",
-          "deviceId": "dev_00000144",
-          "timestamp": "2025-05-27T13:11:13.758Z",
-          "action": "notify",
-          "resolved": false
-        },
-        {
-          "policyId": "pol_TUFKPGXE",
-          "deviceId": "dev_00000932",
-          "timestamp": "2025-06-03T08:02:14.536Z",
-          "action": "deny",
-          "resolved": false
-        },
-        {
-          "policyId": "pol_KSYTOSLN",
-          "deviceId": "dev_00000208",
-          "timestamp": "2025-05-28T08:29:55.405Z",
-          "action": "deny",
-          "resolved": true
-        }
-      ]
-    },
-    "connectedDevices": [
-      "dev_00000004",
-      "dev_00000005",
-      "dev_00000016",
-      "dev_00000039",
-      "dev_00000059",
-      "dev_00000068",
-      "dev_00000091",
-      "dev_00000105",
-      "dev_00000110",
-      "dev_00000113",
-      "dev_00000116",
-      "dev_00000120",
-      "dev_00000156",
-      "dev_00000164",
-      "dev_00000176",
-      "dev_00000212",
-      "dev_00000223",
-      "dev_00000225",
-      "dev_00000240",
-      "dev_00000243",
-      "dev_00000248",
-      "dev_00000267",
-      "dev_00000268",
-      "dev_00000287",
-      "dev_00000291",
-      "dev_00000292",
-      "dev_00000310",
-      "dev_00000312",
-      "dev_00000317",
-      "dev_00000320",
-      "dev_00000343",
-      "dev_00000359",
-      "dev_00000384",
-      "dev_00000388",
-      "dev_00000401",
-      "dev_00000412",
-      "dev_00000421",
-      "dev_00000439",
-      "dev_00000441",
-      "dev_00000445",
-      "dev_00000455",
-      "dev_00000483",
-      "dev_00000485",
-      "dev_00000499",
-      "dev_00000507",
-      "dev_00000521",
-      "dev_00000523",
-      "dev_00000531",
-      "dev_00000564",
-      "dev_00000566",
-      "dev_00000582",
-      "dev_00000613",
-      "dev_00000637",
-      "dev_00000638",
-      "dev_00000641",
-      "dev_00000661",
-      "dev_00000664",
-      "dev_00000679",
-      "dev_00000684",
-      "dev_00000693",
-      "dev_00000706",
-      "dev_00000707",
-      "dev_00000735",
-      "dev_00000749",
-      "dev_00000752",
-      "dev_00000771",
-      "dev_00000779",
-      "dev_00000784",
-      "dev_00000793",
-      "dev_00000808",
-      "dev_00000812",
-      "dev_00000816",
-      "dev_00000826",
-      "dev_00000833",
-      "dev_00000837",
-      "dev_00000852",
-      "dev_00000855",
-      "dev_00000857",
-      "dev_00000869",
-      "dev_00000881",
-      "dev_00000884",
-      "dev_00000900",
-      "dev_00000903",
-      "dev_00000905",
-      "dev_00000911",
-      "dev_00000933",
-      "dev_00000944",
-      "dev_00000946"
-    ]
-  },
-  {
-    "id": "tower_00000005",
-    "name": "Ryan - Tromp Tower CPQY",
-    "status": "inactive",
-    "location": {
-      "latitude": 89.0863,
-      "longitude": 28.8303,
-      "address": "5315 Ursula Plaza"
-    },
-    "carriers": [
-      {
-        "carrier": "Sprint",
-        "supportedOS": [
-          "Linux",
-          "macOS",
-          "Android"
-        ],
-        "supportedDevices": [
-          "laptop",
-          "gateway"
-        ],
-        "bandwidth": 274,
-        "frequency": 2730,
-        "coverage": {
-          "radius": 10,
-          "signalStrength": -53
-        }
-      }
-    ],
-    "equipment": [
-      {
-        "type": "Antenna",
-        "model": "Samsung MIMO",
-        "status": "faulty",
-        "lastMaintenance": "2025-03-17T10:04:52.793Z",
-        "capabilities": {
-          "deviceDiscovery": true,
-          "policyEnforcement": true,
-          "appMonitoring": true
-        }
-      }
-    ],
-    "realEstateProvider": "Crown Castle",
-    "integrationStatus": {
-      "isActive": true,
-      "lastSync": "2025-06-02T09:33:00.474Z",
-      "provider": "TowerDB",
-      "features": {
-        "deviceDiscovery": true,
-        "policyEnforcement": true,
-        "appMonitoring": true
-      }
-    },
-    "deviceDiscovery": {
-      "enabled": true,
-      "lastScan": "2025-06-02T09:55:49.319Z",
-      "discoveredDevices": [
-        {
-          "deviceId": "024405b8-4751-40ce-bcdf-9ea8382b16f8",
-          "discoveredAt": "2025-05-27T19:50:15.043Z",
-          "status": "pending",
-          "autoApproval": true,
-          "details": {
-            "type": "laptop",
-            "os": "iOS",
-            "carrier": "Verizon",
-            "signalStrength": -69
-          }
-        },
-        {
-          "deviceId": "a61d2fa6-5e7e-4c1c-8b50-78afb3a574dd",
-          "discoveredAt": "2025-06-01T19:51:36.959Z",
-          "status": "rejected",
-          "autoApproval": false,
-          "details": {
-            "type": "gateway",
-            "os": "iOS",
-            "carrier": "Verizon",
-            "signalStrength": -77
-          }
-        },
-        {
-          "deviceId": "a4d4c9fc-31f1-4be3-bf9e-9dda1c314b52",
-          "discoveredAt": "2025-05-28T10:46:32.864Z",
+          "deviceId": "5219d3d1-c198-471e-9a40-415b5bd856ea",
+          "discoveredAt": "2025-05-29T08:48:38.264Z",
           "status": "rejected",
           "autoApproval": false,
           "details": {
             "type": "IoT",
-            "os": "macOS",
+            "os": "Android",
             "carrier": "T-Mobile",
-            "signalStrength": -48
+            "signalStrength": -41
+          }
+        },
+        {
+          "deviceId": "5295e012-f9ad-46bd-a499-554eac883389",
+          "discoveredAt": "2025-05-31T12:17:31.076Z",
+          "status": "pending",
+          "autoApproval": false,
+          "details": {
+            "type": "tablet",
+            "os": "Windows",
+            "carrier": "US Cellular",
+            "signalStrength": -67
           }
         }
       ]
     },
     "policyEnforcement": {
       "activePolicies": [
-        "pol_SE5FC5RR",
-        "pol_TUFKPGXE",
-        "pol_SCROE15V"
+        "pol_DBY8GS5R",
+        "pol_A9PHEQ3U"
       ],
-      "lastEnforcement": "2025-06-02T20:39:06.547Z",
-      "violations": [
-        {
-          "policyId": "pol_SCROE15V",
-          "deviceId": "dev_00000346",
-          "timestamp": "2025-06-01T14:55:13.273Z",
-          "action": "deny",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_SE5FC5RR",
-          "deviceId": "dev_00000142",
-          "timestamp": "2025-05-30T10:53:06.028Z",
-          "action": "notify",
-          "resolved": false
-        },
-        {
-          "policyId": "pol_TUFKPGXE",
-          "deviceId": "dev_00000588",
-          "timestamp": "2025-06-02T07:41:08.841Z",
-          "action": "quarantine",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_SCROE15V",
-          "deviceId": "dev_00000706",
-          "timestamp": "2025-05-30T04:27:22.470Z",
-          "action": "deny",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_SE5FC5RR",
-          "deviceId": "dev_00000016",
-          "timestamp": "2025-05-31T04:49:09.889Z",
-          "action": "notify",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_SCROE15V",
-          "deviceId": "dev_00000550",
-          "timestamp": "2025-05-29T19:40:43.448Z",
-          "action": "notify",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_SE5FC5RR",
-          "deviceId": "dev_00000189",
-          "timestamp": "2025-06-02T11:40:59.029Z",
-          "action": "quarantine",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_SCROE15V",
-          "deviceId": "dev_00000637",
-          "timestamp": "2025-06-01T00:47:21.902Z",
-          "action": "quarantine",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_TUFKPGXE",
-          "deviceId": "dev_00000757",
-          "timestamp": "2025-06-02T20:39:43.408Z",
-          "action": "deny",
-          "resolved": false
-        },
-        {
-          "policyId": "pol_SCROE15V",
-          "deviceId": "dev_00000405",
-          "timestamp": "2025-06-01T13:34:31.320Z",
-          "action": "deny",
-          "resolved": false
-        }
-      ]
+      "lastEnforcement": "2025-06-02T20:01:37.442Z",
+      "violations": []
     },
     "connectedDevices": [
-      "dev_00000008",
-      "dev_00000022",
-      "dev_00000024",
-      "dev_00000031",
-      "dev_00000034",
-      "dev_00000035",
-      "dev_00000037",
-      "dev_00000048",
-      "dev_00000080",
+      "dev_00000015",
+      "dev_00000016",
+      "dev_00000017",
+      "dev_00000019",
+      "dev_00000029",
+      "dev_00000052",
+      "dev_00000056",
+      "dev_00000063",
       "dev_00000084",
-      "dev_00000087",
-      "dev_00000090",
-      "dev_00000122",
-      "dev_00000143",
-      "dev_00000151",
-      "dev_00000163",
-      "dev_00000174",
-      "dev_00000175",
-      "dev_00000207",
-      "dev_00000251",
-      "dev_00000272",
+      "dev_00000085",
+      "dev_00000101",
+      "dev_00000128",
+      "dev_00000137",
+      "dev_00000162",
+      "dev_00000181",
+      "dev_00000184",
+      "dev_00000188",
+      "dev_00000190",
+      "dev_00000192",
+      "dev_00000202",
+      "dev_00000206",
+      "dev_00000212",
+      "dev_00000217",
+      "dev_00000218",
+      "dev_00000219",
+      "dev_00000224",
+      "dev_00000231",
+      "dev_00000235",
+      "dev_00000249",
+      "dev_00000267",
+      "dev_00000279",
+      "dev_00000287",
+      "dev_00000288",
       "dev_00000290",
-      "dev_00000318",
-      "dev_00000326",
-      "dev_00000330",
-      "dev_00000337",
-      "dev_00000347",
-      "dev_00000353",
-      "dev_00000361",
-      "dev_00000371",
-      "dev_00000383",
-      "dev_00000394",
-      "dev_00000442",
-      "dev_00000450",
+      "dev_00000297",
+      "dev_00000298",
+      "dev_00000336",
+      "dev_00000338",
+      "dev_00000344",
+      "dev_00000354",
+      "dev_00000356",
+      "dev_00000359",
+      "dev_00000366",
+      "dev_00000384",
+      "dev_00000400",
+      "dev_00000408",
+      "dev_00000427",
+      "dev_00000428",
+      "dev_00000433",
       "dev_00000451",
-      "dev_00000457",
-      "dev_00000467",
-      "dev_00000473",
-      "dev_00000484",
-      "dev_00000497",
-      "dev_00000522",
-      "dev_00000528",
-      "dev_00000529",
-      "dev_00000532",
-      "dev_00000537",
-      "dev_00000542",
+      "dev_00000454",
+      "dev_00000460",
+      "dev_00000477",
+      "dev_00000478",
+      "dev_00000481",
+      "dev_00000486",
+      "dev_00000540",
+      "dev_00000541",
       "dev_00000543",
-      "dev_00000549",
-      "dev_00000594",
-      "dev_00000595",
-      "dev_00000598",
-      "dev_00000606",
-      "dev_00000608",
-      "dev_00000624",
-      "dev_00000666",
-      "dev_00000676",
-      "dev_00000698",
-      "dev_00000721",
-      "dev_00000728",
-      "dev_00000733",
-      "dev_00000737",
-      "dev_00000745",
-      "dev_00000750",
+      "dev_00000562",
+      "dev_00000583",
+      "dev_00000586",
+      "dev_00000587",
+      "dev_00000593",
+      "dev_00000597",
+      "dev_00000619",
+      "dev_00000623",
+      "dev_00000635",
+      "dev_00000653",
+      "dev_00000687",
+      "dev_00000700",
+      "dev_00000702",
+      "dev_00000713",
+      "dev_00000739",
+      "dev_00000742",
+      "dev_00000749",
+      "dev_00000757",
       "dev_00000761",
-      "dev_00000782",
-      "dev_00000789",
-      "dev_00000790",
-      "dev_00000791",
-      "dev_00000794",
-      "dev_00000822",
-      "dev_00000823",
-      "dev_00000828",
-      "dev_00000842",
-      "dev_00000854",
-      "dev_00000862",
-      "dev_00000865",
-      "dev_00000867",
-      "dev_00000878",
-      "dev_00000879",
-      "dev_00000880",
-      "dev_00000885",
-      "dev_00000892",
-      "dev_00000893",
-      "dev_00000904",
-      "dev_00000908",
-      "dev_00000912",
-      "dev_00000913",
-      "dev_00000915",
-      "dev_00000921",
-      "dev_00000923",
-      "dev_00000924",
-      "dev_00000934",
-      "dev_00000949",
-      "dev_00000950",
-      "dev_00000954",
-      "dev_00000960",
-      "dev_00000966",
-      "dev_00000967",
-      "dev_00000971"
+      "dev_00000763",
+      "dev_00000765"
     ]
   },
   {
     "id": "tower_00000006",
-    "name": "Kihn Inc Tower HYN0",
-    "status": "maintenance",
+    "name": "Purdy - Wuckert Tower UJ3F",
+    "status": "inactive",
     "location": {
-      "latitude": 16.9477,
-      "longitude": -160.214,
-      "address": "62436 Burdette Mount"
+      "latitude": -39.7152,
+      "longitude": 52.2797,
+      "address": "265 Ryley Haven"
     },
     "carriers": [
       {
-        "carrier": "Verizon",
-        "supportedOS": [
-          "Android",
-          "Windows"
-        ],
-        "supportedDevices": [
-          "laptop",
-          "IoT",
-          "smartphone"
-        ],
-        "bandwidth": 417,
-        "frequency": 2777,
-        "coverage": {
-          "radius": 6,
-          "signalStrength": -54
-        }
-      },
-      {
-        "carrier": "T-Mobile",
+        "carrier": "AT&T",
         "supportedOS": [
           "Windows",
-          "Android"
+          "Android",
+          "iOS"
         ],
         "supportedDevices": [
-          "tablet",
-          "laptop"
+          "IoT"
         ],
-        "bandwidth": 400,
-        "frequency": 710,
+        "bandwidth": 409,
+        "frequency": 1186,
         "coverage": {
           "radius": 10,
-          "signalStrength": -61
+          "signalStrength": -71
         }
       }
     ],
@@ -1252,7 +1152,7 @@
         "type": "Antenna",
         "model": "Samsung MIMO",
         "status": "operational",
-        "lastMaintenance": "2025-05-29T05:58:01.024Z",
+        "lastMaintenance": "2025-04-11T13:04:07.395Z",
         "capabilities": {
           "deviceDiscovery": true,
           "policyEnforcement": true,
@@ -1263,8 +1163,8 @@
     "realEstateProvider": "Uniti Group",
     "integrationStatus": {
       "isActive": true,
-      "lastSync": "2025-06-02T12:10:45.262Z",
-      "provider": "TowerSync",
+      "lastSync": "2025-06-02T23:28:52.422Z",
+      "provider": "TowerDB",
       "features": {
         "deviceDiscovery": true,
         "policyEnforcement": true,
@@ -1273,225 +1173,304 @@
     },
     "deviceDiscovery": {
       "enabled": true,
-      "lastScan": "2025-06-02T16:17:09.451Z",
+      "lastScan": "2025-06-03T02:24:26.083Z",
       "discoveredDevices": [
         {
-          "deviceId": "7480c663-4567-45dc-b00c-26c29a33332a",
-          "discoveredAt": "2025-06-02T16:31:25.824Z",
+          "deviceId": "20acd9f3-59d1-4fb7-8a97-439bf4812b6d",
+          "discoveredAt": "2025-05-28T22:18:07.823Z",
           "status": "approved",
-          "autoApproval": false,
-          "details": {
-            "type": "IoT",
-            "os": "Linux",
-            "carrier": "AT&T",
-            "signalStrength": -61
-          }
-        },
-        {
-          "deviceId": "05b73f36-8c97-4bde-8c89-3dd17d4d2c47",
-          "discoveredAt": "2025-06-01T20:55:24.894Z",
-          "status": "rejected",
           "autoApproval": true,
           "details": {
-            "type": "laptop",
-            "os": "Windows",
-            "carrier": "US Cellular",
+            "type": "smartphone",
+            "os": "iOS",
+            "carrier": "AT&T",
             "signalStrength": -66
           }
         },
         {
-          "deviceId": "6f0536fd-1038-4495-b7a7-eb741e77809f",
-          "discoveredAt": "2025-06-02T19:52:14.289Z",
+          "deviceId": "f666c8da-277e-482e-8a56-f1bdfb27dbd3",
+          "discoveredAt": "2025-06-01T21:08:03.261Z",
           "status": "pending",
           "autoApproval": false,
           "details": {
+            "type": "IoT",
+            "os": "Windows",
+            "carrier": "T-Mobile",
+            "signalStrength": -73
+          }
+        },
+        {
+          "deviceId": "58ebed5c-f817-4886-842a-0023b23a257d",
+          "discoveredAt": "2025-05-31T01:03:13.284Z",
+          "status": "approved",
+          "autoApproval": true,
+          "details": {
             "type": "gateway",
-            "os": "macOS",
-            "carrier": "AT&T",
-            "signalStrength": -90
+            "os": "Other",
+            "carrier": "T-Mobile",
+            "signalStrength": -65
+          }
+        },
+        {
+          "deviceId": "539cc02f-78f6-4ea5-880e-64e3f60eedcc",
+          "discoveredAt": "2025-05-27T15:46:36.686Z",
+          "status": "rejected",
+          "autoApproval": true,
+          "details": {
+            "type": "tablet",
+            "os": "Android",
+            "carrier": "US Cellular",
+            "signalStrength": -65
           }
         }
       ]
     },
     "policyEnforcement": {
       "activePolicies": [
-        "pol_UE5RRENZ",
-        "pol_P033QPPR",
-        "pol_SE5FC5RR",
-        "pol_QTZY7S5P"
+        "pol_SRYFRX8G",
+        "pol_PUUGD2OA"
       ],
-      "lastEnforcement": "2025-06-02T18:04:38.548Z",
+      "lastEnforcement": "2025-06-03T04:56:26.318Z",
       "violations": [
         {
-          "policyId": "pol_SE5FC5RR",
-          "deviceId": "dev_00000192",
-          "timestamp": "2025-05-28T21:50:48.841Z",
+          "policyId": "pol_SRYFRX8G",
+          "deviceId": "dev_00000699",
+          "timestamp": "2025-05-29T21:09:23.048Z",
           "action": "quarantine",
           "resolved": true
         },
         {
-          "policyId": "pol_QTZY7S5P",
-          "deviceId": "dev_00000789",
-          "timestamp": "2025-06-01T20:29:43.242Z",
+          "policyId": "pol_PUUGD2OA",
+          "deviceId": "dev_00000757",
+          "timestamp": "2025-05-31T18:29:33.176Z",
           "action": "quarantine",
+          "resolved": true
+        },
+        {
+          "policyId": "pol_PUUGD2OA",
+          "deviceId": "dev_00000051",
+          "timestamp": "2025-05-28T16:52:31.543Z",
+          "action": "notify",
           "resolved": false
         },
         {
-          "policyId": "pol_QTZY7S5P",
-          "deviceId": "dev_00000084",
-          "timestamp": "2025-06-03T04:45:29.970Z",
+          "policyId": "pol_PUUGD2OA",
+          "deviceId": "dev_00000082",
+          "timestamp": "2025-05-29T05:44:42.082Z",
           "action": "deny",
           "resolved": true
         },
         {
-          "policyId": "pol_SE5FC5RR",
-          "deviceId": "dev_00000745",
-          "timestamp": "2025-06-02T22:23:57.809Z",
-          "action": "notify",
+          "policyId": "pol_PUUGD2OA",
+          "deviceId": "dev_00000644",
+          "timestamp": "2025-05-28T03:13:17.630Z",
+          "action": "quarantine",
+          "resolved": true
+        },
+        {
+          "policyId": "pol_PUUGD2OA",
+          "deviceId": "dev_00000317",
+          "timestamp": "2025-05-29T05:38:48.578Z",
+          "action": "deny",
+          "resolved": false
+        },
+        {
+          "policyId": "pol_PUUGD2OA",
+          "deviceId": "dev_00000613",
+          "timestamp": "2025-06-01T08:10:08.031Z",
+          "action": "quarantine",
+          "resolved": true
+        },
+        {
+          "policyId": "pol_PUUGD2OA",
+          "deviceId": "dev_00000193",
+          "timestamp": "2025-05-30T08:01:49.759Z",
+          "action": "quarantine",
+          "resolved": true
+        },
+        {
+          "policyId": "pol_PUUGD2OA",
+          "deviceId": "dev_00000650",
+          "timestamp": "2025-06-01T16:01:30.847Z",
+          "action": "quarantine",
           "resolved": false
         }
       ]
     },
     "connectedDevices": [
-      "dev_00000002",
-      "dev_00000003",
-      "dev_00000009",
-      "dev_00000062",
-      "dev_00000096",
-      "dev_00000119",
-      "dev_00000121",
-      "dev_00000126",
-      "dev_00000136",
-      "dev_00000154",
+      "dev_00000006",
+      "dev_00000012",
+      "dev_00000038",
+      "dev_00000045",
+      "dev_00000059",
+      "dev_00000060",
+      "dev_00000067",
+      "dev_00000076",
+      "dev_00000077",
+      "dev_00000081",
+      "dev_00000111",
+      "dev_00000116",
+      "dev_00000123",
+      "dev_00000133",
+      "dev_00000141",
+      "dev_00000143",
+      "dev_00000153",
       "dev_00000155",
-      "dev_00000157",
+      "dev_00000161",
+      "dev_00000165",
       "dev_00000167",
       "dev_00000177",
-      "dev_00000184",
-      "dev_00000185",
-      "dev_00000188",
-      "dev_00000196",
-      "dev_00000216",
-      "dev_00000237",
-      "dev_00000280",
-      "dev_00000281",
-      "dev_00000289",
-      "dev_00000294",
+      "dev_00000229",
+      "dev_00000232",
+      "dev_00000257",
+      "dev_00000260",
+      "dev_00000284",
+      "dev_00000292",
+      "dev_00000301",
+      "dev_00000309",
       "dev_00000313",
-      "dev_00000319",
-      "dev_00000336",
-      "dev_00000354",
-      "dev_00000356",
-      "dev_00000357",
-      "dev_00000373",
-      "dev_00000378",
-      "dev_00000385",
+      "dev_00000321",
+      "dev_00000325",
+      "dev_00000332",
+      "dev_00000337",
+      "dev_00000345",
+      "dev_00000351",
+      "dev_00000355",
+      "dev_00000362",
+      "dev_00000368",
+      "dev_00000379",
+      "dev_00000380",
+      "dev_00000381",
+      "dev_00000387",
       "dev_00000391",
       "dev_00000395",
-      "dev_00000407",
-      "dev_00000452",
-      "dev_00000460",
+      "dev_00000413",
+      "dev_00000415",
+      "dev_00000421",
+      "dev_00000430",
+      "dev_00000446",
       "dev_00000470",
-      "dev_00000487",
-      "dev_00000508",
-      "dev_00000510",
-      "dev_00000571",
-      "dev_00000576",
-      "dev_00000580",
-      "dev_00000581",
-      "dev_00000592",
-      "dev_00000596",
-      "dev_00000599",
-      "dev_00000604",
+      "dev_00000474",
+      "dev_00000482",
+      "dev_00000485",
+      "dev_00000505",
+      "dev_00000519",
+      "dev_00000524",
+      "dev_00000525",
+      "dev_00000528",
+      "dev_00000533",
+      "dev_00000535",
+      "dev_00000553",
+      "dev_00000557",
+      "dev_00000567",
+      "dev_00000568",
       "dev_00000611",
-      "dev_00000615",
-      "dev_00000621",
-      "dev_00000623",
-      "dev_00000635",
-      "dev_00000646",
-      "dev_00000653",
-      "dev_00000655",
-      "dev_00000656",
-      "dev_00000678",
+      "dev_00000630",
+      "dev_00000632",
+      "dev_00000668",
+      "dev_00000672",
+      "dev_00000681",
+      "dev_00000684",
+      "dev_00000694",
       "dev_00000695",
-      "dev_00000699",
-      "dev_00000705",
-      "dev_00000723",
-      "dev_00000736",
-      "dev_00000740",
-      "dev_00000743",
-      "dev_00000747",
-      "dev_00000767",
-      "dev_00000807",
-      "dev_00000820",
-      "dev_00000834",
-      "dev_00000866",
-      "dev_00000875",
-      "dev_00000883",
-      "dev_00000886",
-      "dev_00000891",
-      "dev_00000901",
-      "dev_00000902",
-      "dev_00000919",
-      "dev_00000927",
-      "dev_00000931",
-      "dev_00000945",
-      "dev_00000947",
-      "dev_00000957",
-      "dev_00000969",
-      "dev_00000972"
+      "dev_00000696",
+      "dev_00000697",
+      "dev_00000706",
+      "dev_00000709",
+      "dev_00000710",
+      "dev_00000714",
+      "dev_00000716",
+      "dev_00000729",
+      "dev_00000731",
+      "dev_00000733",
+      "dev_00000734",
+      "dev_00000737",
+      "dev_00000741",
+      "dev_00000745",
+      "dev_00000746",
+      "dev_00000752",
+      "dev_00000755",
+      "dev_00000764",
+      "dev_00000771",
+      "dev_00000772",
+      "dev_00000779",
+      "dev_00000782",
+      "dev_00000787",
+      "dev_00000792"
     ]
   },
   {
     "id": "tower_00000007",
-    "name": "Leannon Group Tower VH5W",
-    "status": "inactive",
+    "name": "Bradtke LLC Tower 8ZZ4",
+    "status": "maintenance",
     "location": {
-      "latitude": -2.8766,
-      "longitude": -59.5577,
-      "address": "7505 Ash Road"
+      "latitude": -65.1203,
+      "longitude": 64.1655,
+      "address": "871 Konopelski Crossroad"
     },
     "carriers": [
       {
-        "carrier": "Sprint",
+        "carrier": "US Cellular",
         "supportedOS": [
-          "Linux"
+          "Windows",
+          "Other",
+          "Android"
         ],
         "supportedDevices": [
           "gateway"
         ],
-        "bandwidth": 298,
-        "frequency": 2326,
+        "bandwidth": 197,
+        "frequency": 854,
         "coverage": {
-          "radius": 2,
-          "signalStrength": -73
+          "radius": 10,
+          "signalStrength": -84
         }
       },
       {
-        "carrier": "AT&T",
+        "carrier": "Verizon",
         "supportedOS": [
-          "iOS",
-          "macOS",
-          "Linux"
+          "Other",
+          "Android",
+          "Windows"
         ],
         "supportedDevices": [
-          "gateway",
-          "IoT"
+          "IoT",
+          "smartphone",
+          "laptop"
         ],
-        "bandwidth": 271,
-        "frequency": 2614,
+        "bandwidth": 429,
+        "frequency": 5191,
         "coverage": {
-          "radius": 4,
-          "signalStrength": -83
+          "radius": 9,
+          "signalStrength": -79
+        }
+      },
+      {
+        "carrier": "Sprint",
+        "supportedOS": [
+          "Windows",
+          "iOS",
+          "Android"
+        ],
+        "supportedDevices": [
+          "smartphone",
+          "IoT",
+          "gateway"
+        ],
+        "bandwidth": 325,
+        "frequency": 4345,
+        "coverage": {
+          "radius": 3,
+          "signalStrength": -79
         }
       }
     ],
     "equipment": [
       {
         "type": "Antenna",
-        "model": "Ericsson AIR 6449",
-        "status": "operational",
-        "lastMaintenance": "2025-05-16T16:37:01.115Z",
+        "model": "Samsung MIMO",
+        "status": "maintenance",
+        "lastMaintenance": "2025-04-30T12:11:23.876Z",
         "capabilities": {
           "deviceDiscovery": true,
           "policyEnforcement": true,
@@ -1502,268 +1481,7 @@
     "realEstateProvider": "SBA Communications",
     "integrationStatus": {
       "isActive": true,
-      "lastSync": "2025-06-02T16:23:47.685Z",
-      "provider": "TowerDB",
-      "features": {
-        "deviceDiscovery": true,
-        "policyEnforcement": true,
-        "appMonitoring": true
-      }
-    },
-    "deviceDiscovery": {
-      "enabled": true,
-      "lastScan": "2025-06-02T13:57:06.700Z",
-      "discoveredDevices": [
-        {
-          "deviceId": "4b6ca282-9d01-4275-af9e-dedc0130b0de",
-          "discoveredAt": "2025-05-31T21:16:10.819Z",
-          "status": "rejected",
-          "autoApproval": false,
-          "details": {
-            "type": "laptop",
-            "os": "iOS",
-            "carrier": "Verizon",
-            "signalStrength": -72
-          }
-        },
-        {
-          "deviceId": "8bbd44b9-2fbf-4dee-9bc9-109f261cb2ae",
-          "discoveredAt": "2025-05-29T17:50:43.271Z",
-          "status": "approved",
-          "autoApproval": true,
-          "details": {
-            "type": "tablet",
-            "os": "Linux",
-            "carrier": "T-Mobile",
-            "signalStrength": -64
-          }
-        },
-        {
-          "deviceId": "e1c923e2-8e20-4dfa-b535-63c1135cad5e",
-          "discoveredAt": "2025-05-30T03:00:14.973Z",
-          "status": "pending",
-          "autoApproval": false,
-          "details": {
-            "type": "smartphone",
-            "os": "Windows",
-            "carrier": "Verizon",
-            "signalStrength": -87
-          }
-        }
-      ]
-    },
-    "policyEnforcement": {
-      "activePolicies": [
-        "pol_NYTYGXTP",
-        "pol_BTLDAW2E",
-        "pol_QTZY7S5P",
-        "pol_UE5RRENZ"
-      ],
-      "lastEnforcement": "2025-06-02T11:59:46.143Z",
-      "violations": [
-        {
-          "policyId": "pol_QTZY7S5P",
-          "deviceId": "dev_00000029",
-          "timestamp": "2025-05-27T09:58:15.691Z",
-          "action": "deny",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_QTZY7S5P",
-          "deviceId": "dev_00000915",
-          "timestamp": "2025-05-29T13:10:49.523Z",
-          "action": "notify",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_NYTYGXTP",
-          "deviceId": "dev_00000115",
-          "timestamp": "2025-05-29T23:33:07.469Z",
-          "action": "quarantine",
-          "resolved": false
-        },
-        {
-          "policyId": "pol_BTLDAW2E",
-          "deviceId": "dev_00000132",
-          "timestamp": "2025-06-03T05:24:39.819Z",
-          "action": "notify",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_QTZY7S5P",
-          "deviceId": "dev_00000816",
-          "timestamp": "2025-05-28T04:07:19.253Z",
-          "action": "notify",
-          "resolved": false
-        },
-        {
-          "policyId": "pol_UE5RRENZ",
-          "deviceId": "dev_00000232",
-          "timestamp": "2025-05-29T19:18:37.615Z",
-          "action": "deny",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_NYTYGXTP",
-          "deviceId": "dev_00000263",
-          "timestamp": "2025-05-28T03:46:57.631Z",
-          "action": "deny",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_QTZY7S5P",
-          "deviceId": "dev_00000928",
-          "timestamp": "2025-05-28T08:38:55.873Z",
-          "action": "deny",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_UE5RRENZ",
-          "deviceId": "dev_00000402",
-          "timestamp": "2025-05-31T06:45:17.532Z",
-          "action": "quarantine",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_NYTYGXTP",
-          "deviceId": "dev_00000157",
-          "timestamp": "2025-05-31T15:22:42.138Z",
-          "action": "notify",
-          "resolved": true
-        }
-      ]
-    },
-    "connectedDevices": [
-      "dev_00000011",
-      "dev_00000013",
-      "dev_00000014",
-      "dev_00000042",
-      "dev_00000047",
-      "dev_00000057",
-      "dev_00000065",
-      "dev_00000071",
-      "dev_00000076",
-      "dev_00000077",
-      "dev_00000089",
-      "dev_00000101",
-      "dev_00000115",
-      "dev_00000125",
-      "dev_00000128",
-      "dev_00000140",
-      "dev_00000144",
-      "dev_00000146",
-      "dev_00000147",
-      "dev_00000148",
-      "dev_00000149",
-      "dev_00000270",
-      "dev_00000316",
-      "dev_00000329",
-      "dev_00000333",
-      "dev_00000342",
-      "dev_00000344",
-      "dev_00000397",
-      "dev_00000399",
-      "dev_00000405",
-      "dev_00000444",
-      "dev_00000446",
-      "dev_00000447",
-      "dev_00000471",
-      "dev_00000502",
-      "dev_00000509",
-      "dev_00000512",
-      "dev_00000518",
-      "dev_00000520",
-      "dev_00000583",
-      "dev_00000584",
-      "dev_00000612",
-      "dev_00000617",
-      "dev_00000619",
-      "dev_00000622",
-      "dev_00000629",
-      "dev_00000668",
-      "dev_00000700",
-      "dev_00000744",
-      "dev_00000759",
-      "dev_00000766",
-      "dev_00000770",
-      "dev_00000795",
-      "dev_00000805",
-      "dev_00000821",
-      "dev_00000864",
-      "dev_00000870",
-      "dev_00000894",
-      "dev_00000909",
-      "dev_00000910",
-      "dev_00000916",
-      "dev_00000922",
-      "dev_00000932",
-      "dev_00000936",
-      "dev_00000965",
-      "dev_00000980"
-    ]
-  },
-  {
-    "id": "tower_00000008",
-    "name": "Muller - Goodwin Tower ZWCC",
-    "status": "maintenance",
-    "location": {
-      "latitude": 89.1026,
-      "longitude": -23.6289,
-      "address": "7404 West View"
-    },
-    "carriers": [
-      {
-        "carrier": "Verizon",
-        "supportedOS": [
-          "Windows",
-          "macOS"
-        ],
-        "supportedDevices": [
-          "smartphone"
-        ],
-        "bandwidth": 541,
-        "frequency": 3493,
-        "coverage": {
-          "radius": 4,
-          "signalStrength": -67
-        }
-      },
-      {
-        "carrier": "AT&T",
-        "supportedOS": [
-          "macOS",
-          "Linux"
-        ],
-        "supportedDevices": [
-          "laptop",
-          "IoT",
-          "tablet"
-        ],
-        "bandwidth": 993,
-        "frequency": 3227,
-        "coverage": {
-          "radius": 9,
-          "signalStrength": -74
-        }
-      }
-    ],
-    "equipment": [
-      {
-        "type": "Antenna",
-        "model": "Ericsson AIR 6449",
-        "status": "maintenance",
-        "lastMaintenance": "2025-05-03T12:29:24.345Z",
-        "capabilities": {
-          "deviceDiscovery": true,
-          "policyEnforcement": true,
-          "appMonitoring": true
-        }
-      }
-    ],
-    "realEstateProvider": "Crown Castle",
-    "integrationStatus": {
-      "isActive": true,
-      "lastSync": "2025-06-02T09:50:51.530Z",
+      "lastSync": "2025-06-03T04:47:29.667Z",
       "provider": "TowerSync",
       "features": {
         "deviceDiscovery": true,
@@ -1773,574 +1491,253 @@
     },
     "deviceDiscovery": {
       "enabled": true,
-      "lastScan": "2025-06-02T12:11:26.859Z",
-      "discoveredDevices": [
-        {
-          "deviceId": "a8e93346-27d6-4174-b1e1-84cdabb70489",
-          "discoveredAt": "2025-06-02T21:49:49.654Z",
-          "status": "rejected",
-          "autoApproval": true,
-          "details": {
-            "type": "IoT",
-            "os": "Linux",
-            "carrier": "Sprint",
-            "signalStrength": -71
-          }
-        },
-        {
-          "deviceId": "4623804e-b24c-4e0a-9f0c-6bcbf8afc05c",
-          "discoveredAt": "2025-06-02T14:18:17.222Z",
-          "status": "approved",
-          "autoApproval": true,
-          "details": {
-            "type": "tablet",
-            "os": "Windows",
-            "carrier": "Verizon",
-            "signalStrength": -80
-          }
-        },
-        {
-          "deviceId": "335ebfef-6435-45fb-870a-cdecd7f0387e",
-          "discoveredAt": "2025-05-31T22:23:03.103Z",
-          "status": "approved",
-          "autoApproval": false,
-          "details": {
-            "type": "laptop",
-            "os": "iOS",
-            "carrier": "T-Mobile",
-            "signalStrength": -65
-          }
-        },
-        {
-          "deviceId": "6cfe41fb-bbe6-4c50-afea-76d4ee228371",
-          "discoveredAt": "2025-06-02T21:17:45.029Z",
-          "status": "approved",
-          "autoApproval": false,
-          "details": {
-            "type": "gateway",
-            "os": "macOS",
-            "carrier": "US Cellular",
-            "signalStrength": -78
-          }
-        },
-        {
-          "deviceId": "b4fa1284-267d-4730-a0e1-538272d4a34c",
-          "discoveredAt": "2025-05-27T15:13:26.571Z",
-          "status": "pending",
-          "autoApproval": false,
-          "details": {
-            "type": "gateway",
-            "os": "iOS",
-            "carrier": "T-Mobile",
-            "signalStrength": -52
-          }
-        }
-      ]
+      "lastScan": "2025-06-03T09:00:22.471Z",
+      "discoveredDevices": []
     },
     "policyEnforcement": {
       "activePolicies": [
-        "pol_QTZY7S5P",
-        "pol_SE5FC5RR",
-        "pol_WGHA8N3Z",
-        "pol_RPF9B9E0",
-        "pol_PSTTMJ1M"
+        "pol_8CZSEOYA",
+        "pol_KQFZEXZL",
+        "pol_DBY8GS5R",
+        "pol_1DW41WA6",
+        "pol_SRYFRX8G"
       ],
-      "lastEnforcement": "2025-06-02T21:25:19.686Z",
+      "lastEnforcement": "2025-06-03T05:49:46.148Z",
       "violations": [
         {
-          "policyId": "pol_PSTTMJ1M",
-          "deviceId": "dev_00000186",
-          "timestamp": "2025-05-31T04:54:56.004Z",
-          "action": "deny",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_PSTTMJ1M",
-          "deviceId": "dev_00000913",
-          "timestamp": "2025-06-02T11:57:07.726Z",
+          "policyId": "pol_1DW41WA6",
+          "deviceId": "dev_00000532",
+          "timestamp": "2025-06-01T07:26:51.494Z",
           "action": "quarantine",
           "resolved": true
         },
         {
-          "policyId": "pol_SE5FC5RR",
-          "deviceId": "dev_00000945",
-          "timestamp": "2025-05-29T01:20:11.038Z",
-          "action": "notify",
-          "resolved": false
-        },
-        {
-          "policyId": "pol_SE5FC5RR",
-          "deviceId": "dev_00000109",
-          "timestamp": "2025-05-28T09:51:06.794Z",
-          "action": "notify",
+          "policyId": "pol_DBY8GS5R",
+          "deviceId": "dev_00000157",
+          "timestamp": "2025-06-02T07:26:59.652Z",
+          "action": "quarantine",
           "resolved": true
         },
         {
-          "policyId": "pol_PSTTMJ1M",
-          "deviceId": "dev_00000090",
-          "timestamp": "2025-05-30T10:51:10.458Z",
-          "action": "notify",
-          "resolved": false
-        },
-        {
-          "policyId": "pol_WGHA8N3Z",
-          "deviceId": "dev_00000733",
-          "timestamp": "2025-06-03T08:17:54.706Z",
+          "policyId": "pol_8CZSEOYA",
+          "deviceId": "dev_00000299",
+          "timestamp": "2025-06-02T20:00:24.181Z",
           "action": "deny",
           "resolved": true
         },
         {
-          "policyId": "pol_PSTTMJ1M",
-          "deviceId": "dev_00000208",
-          "timestamp": "2025-05-29T17:04:38.577Z",
-          "action": "deny",
+          "policyId": "pol_KQFZEXZL",
+          "deviceId": "dev_00000335",
+          "timestamp": "2025-06-01T07:21:20.580Z",
+          "action": "quarantine",
           "resolved": true
         },
         {
-          "policyId": "pol_SE5FC5RR",
-          "deviceId": "dev_00000578",
-          "timestamp": "2025-05-29T03:07:02.471Z",
-          "action": "deny",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_RPF9B9E0",
-          "deviceId": "dev_00000980",
-          "timestamp": "2025-05-29T02:16:46.341Z",
-          "action": "deny",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_RPF9B9E0",
-          "deviceId": "dev_00000587",
-          "timestamp": "2025-06-01T09:48:16.864Z",
+          "policyId": "pol_KQFZEXZL",
+          "deviceId": "dev_00000707",
+          "timestamp": "2025-05-31T05:03:29.584Z",
           "action": "quarantine",
           "resolved": false
+        },
+        {
+          "policyId": "pol_1DW41WA6",
+          "deviceId": "dev_00000221",
+          "timestamp": "2025-06-01T03:10:11.100Z",
+          "action": "deny",
+          "resolved": true
+        },
+        {
+          "policyId": "pol_1DW41WA6",
+          "deviceId": "dev_00000745",
+          "timestamp": "2025-05-29T13:23:03.809Z",
+          "action": "quarantine",
+          "resolved": true
         }
       ]
     },
     "connectedDevices": [
-      "dev_00000007",
-      "dev_00000019",
-      "dev_00000020",
-      "dev_00000026",
-      "dev_00000055",
-      "dev_00000074",
+      "dev_00000005",
+      "dev_00000008",
+      "dev_00000009",
+      "dev_00000021",
+      "dev_00000042",
+      "dev_00000049",
       "dev_00000075",
-      "dev_00000083",
-      "dev_00000088",
-      "dev_00000097",
-      "dev_00000106",
-      "dev_00000108",
-      "dev_00000130",
-      "dev_00000153",
-      "dev_00000160",
-      "dev_00000161",
-      "dev_00000200",
-      "dev_00000210",
-      "dev_00000213",
-      "dev_00000215",
-      "dev_00000217",
-      "dev_00000247",
+      "dev_00000092",
+      "dev_00000094",
+      "dev_00000098",
+      "dev_00000099",
+      "dev_00000117",
+      "dev_00000118",
+      "dev_00000119",
+      "dev_00000126",
+      "dev_00000129",
+      "dev_00000136",
+      "dev_00000139",
+      "dev_00000140",
+      "dev_00000157",
+      "dev_00000158",
+      "dev_00000163",
+      "dev_00000168",
+      "dev_00000171",
+      "dev_00000173",
+      "dev_00000178",
+      "dev_00000182",
+      "dev_00000186",
+      "dev_00000191",
+      "dev_00000193",
+      "dev_00000227",
+      "dev_00000239",
       "dev_00000277",
-      "dev_00000285",
-      "dev_00000296",
-      "dev_00000297",
-      "dev_00000309",
-      "dev_00000327",
-      "dev_00000331",
-      "dev_00000332",
-      "dev_00000335",
-      "dev_00000349",
-      "dev_00000355",
-      "dev_00000364",
+      "dev_00000283",
+      "dev_00000295",
+      "dev_00000303",
+      "dev_00000307",
+      "dev_00000308",
+      "dev_00000312",
+      "dev_00000316",
+      "dev_00000323",
+      "dev_00000326",
+      "dev_00000339",
+      "dev_00000357",
+      "dev_00000361",
+      "dev_00000365",
+      "dev_00000374",
+      "dev_00000388",
+      "dev_00000396",
+      "dev_00000401",
       "dev_00000403",
-      "dev_00000409",
-      "dev_00000413",
-      "dev_00000419",
-      "dev_00000420",
-      "dev_00000422",
-      "dev_00000443",
-      "dev_00000449",
-      "dev_00000454",
+      "dev_00000410",
+      "dev_00000414",
+      "dev_00000426",
+      "dev_00000435",
+      "dev_00000436",
+      "dev_00000440",
       "dev_00000459",
-      "dev_00000462",
-      "dev_00000463",
-      "dev_00000469",
-      "dev_00000476",
-      "dev_00000489",
-      "dev_00000515",
-      "dev_00000517",
-      "dev_00000544",
-      "dev_00000579",
+      "dev_00000466",
+      "dev_00000475",
+      "dev_00000480",
+      "dev_00000488",
+      "dev_00000490",
+      "dev_00000496",
+      "dev_00000499",
+      "dev_00000504",
+      "dev_00000510",
+      "dev_00000513",
+      "dev_00000516",
+      "dev_00000521",
+      "dev_00000523",
+      "dev_00000532",
+      "dev_00000542",
+      "dev_00000545",
+      "dev_00000558",
+      "dev_00000563",
+      "dev_00000564",
+      "dev_00000570",
+      "dev_00000572",
+      "dev_00000582",
       "dev_00000585",
-      "dev_00000587",
-      "dev_00000588",
-      "dev_00000603",
+      "dev_00000590",
+      "dev_00000599",
+      "dev_00000604",
       "dev_00000610",
-      "dev_00000626",
-      "dev_00000630",
-      "dev_00000636",
-      "dev_00000651",
-      "dev_00000659",
-      "dev_00000670",
-      "dev_00000673",
-      "dev_00000674",
-      "dev_00000677",
+      "dev_00000617",
+      "dev_00000631",
+      "dev_00000637",
+      "dev_00000640",
+      "dev_00000644",
+      "dev_00000658",
+      "dev_00000664",
+      "dev_00000666",
+      "dev_00000667",
+      "dev_00000685",
+      "dev_00000686",
+      "dev_00000690",
       "dev_00000691",
-      "dev_00000692",
-      "dev_00000694",
-      "dev_00000714",
-      "dev_00000729",
-      "dev_00000730",
-      "dev_00000746",
-      "dev_00000757",
-      "dev_00000765",
-      "dev_00000768",
-      "dev_00000772",
-      "dev_00000773",
-      "dev_00000777",
-      "dev_00000785",
-      "dev_00000787",
-      "dev_00000797",
-      "dev_00000818",
-      "dev_00000825",
-      "dev_00000832",
-      "dev_00000836",
-      "dev_00000853",
-      "dev_00000859",
-      "dev_00000874",
-      "dev_00000906",
-      "dev_00000918",
-      "dev_00000937",
-      "dev_00000938",
-      "dev_00000942",
-      "dev_00000974",
-      "dev_00000976",
-      "dev_00000977"
+      "dev_00000722",
+      "dev_00000732",
+      "dev_00000736",
+      "dev_00000748",
+      "dev_00000754",
+      "dev_00000759",
+      "dev_00000766",
+      "dev_00000774",
+      "dev_00000786",
+      "dev_00000790",
+      "dev_00000791"
     ]
   },
   {
-    "id": "tower_00000009",
-    "name": "Spencer LLC Tower Z6FU",
-    "status": "maintenance",
+    "id": "tower_00000008",
+    "name": "Klein Inc Tower WIHF",
+    "status": "inactive",
     "location": {
-      "latitude": 0.7016,
-      "longitude": 92.9738,
-      "address": "8599 Marie Plain"
+      "latitude": -86.0926,
+      "longitude": 38.2404,
+      "address": "583 E 6th Street"
     },
     "carriers": [
       {
-        "carrier": "Sprint",
-        "supportedOS": [
-          "iOS",
-          "macOS"
-        ],
-        "supportedDevices": [
-          "IoT",
-          "gateway",
-          "smartphone"
-        ],
-        "bandwidth": 319,
-        "frequency": 5082,
-        "coverage": {
-          "radius": 4,
-          "signalStrength": -58
-        }
-      },
-      {
         "carrier": "US Cellular",
         "supportedOS": [
-          "Android",
-          "Linux",
-          "macOS"
+          "Other",
+          "iOS",
+          "Android"
         ],
         "supportedDevices": [
-          "smartphone",
-          "laptop"
+          "smartphone"
         ],
-        "bandwidth": 131,
-        "frequency": 1949,
+        "bandwidth": 873,
+        "frequency": 2387,
         "coverage": {
-          "radius": 10,
-          "signalStrength": -85
+          "radius": 3,
+          "signalStrength": -50
         }
       },
       {
         "carrier": "Verizon",
         "supportedOS": [
-          "Windows"
+          "Windows",
+          "Android",
+          "iOS"
         ],
         "supportedDevices": [
+          "smartphone",
+          "IoT",
           "tablet"
         ],
-        "bandwidth": 516,
-        "frequency": 2428,
+        "bandwidth": 185,
+        "frequency": 5118,
         "coverage": {
           "radius": 8,
-          "signalStrength": -46
+          "signalStrength": -48
         }
-      }
-    ],
-    "equipment": [
-      {
-        "type": "Antenna",
-        "model": "Ericsson AIR 6449",
-        "status": "maintenance",
-        "lastMaintenance": "2025-05-02T01:25:17.490Z",
-        "capabilities": {
-          "deviceDiscovery": true,
-          "policyEnforcement": true,
-          "appMonitoring": true
-        }
-      }
-    ],
-    "realEstateProvider": "Crown Castle",
-    "integrationStatus": {
-      "isActive": true,
-      "lastSync": "2025-06-02T21:28:04.419Z",
-      "provider": "TowerDB",
-      "features": {
-        "deviceDiscovery": true,
-        "policyEnforcement": true,
-        "appMonitoring": true
-      }
-    },
-    "deviceDiscovery": {
-      "enabled": true,
-      "lastScan": "2025-06-02T13:41:28.122Z",
-      "discoveredDevices": [
-        {
-          "deviceId": "89d751e2-e243-4177-8b31-6d83b63870df",
-          "discoveredAt": "2025-05-30T09:36:32.764Z",
-          "status": "approved",
-          "autoApproval": false,
-          "details": {
-            "type": "gateway",
-            "os": "Android",
-            "carrier": "Sprint",
-            "signalStrength": -86
-          }
-        },
-        {
-          "deviceId": "2e485915-d432-4a6c-8216-acaf50938952",
-          "discoveredAt": "2025-05-31T03:11:23.329Z",
-          "status": "rejected",
-          "autoApproval": true,
-          "details": {
-            "type": "laptop",
-            "os": "Android",
-            "carrier": "US Cellular",
-            "signalStrength": -46
-          }
-        },
-        {
-          "deviceId": "6e70fa22-64bb-4257-981f-da487f87f909",
-          "discoveredAt": "2025-05-28T00:29:16.665Z",
-          "status": "approved",
-          "autoApproval": true,
-          "details": {
-            "type": "laptop",
-            "os": "iOS",
-            "carrier": "AT&T",
-            "signalStrength": -42
-          }
-        },
-        {
-          "deviceId": "7ffd7478-c50a-4f61-81a9-cfcc4d9351cc",
-          "discoveredAt": "2025-06-01T08:33:02.079Z",
-          "status": "approved",
-          "autoApproval": false,
-          "details": {
-            "type": "laptop",
-            "os": "Windows",
-            "carrier": "US Cellular",
-            "signalStrength": -66
-          }
-        }
-      ]
-    },
-    "policyEnforcement": {
-      "activePolicies": [
-        "pol_47YZYQ3R"
-      ],
-      "lastEnforcement": "2025-06-03T01:38:01.574Z",
-      "violations": [
-        {
-          "policyId": "pol_47YZYQ3R",
-          "deviceId": "dev_00000256",
-          "timestamp": "2025-05-27T17:59:12.545Z",
-          "action": "notify",
-          "resolved": true
-        }
-      ]
-    },
-    "connectedDevices": [
-      "dev_00000001",
-      "dev_00000006",
-      "dev_00000021",
-      "dev_00000023",
-      "dev_00000025",
-      "dev_00000033",
-      "dev_00000036",
-      "dev_00000044",
-      "dev_00000070",
-      "dev_00000072",
-      "dev_00000081",
-      "dev_00000095",
-      "dev_00000100",
-      "dev_00000127",
-      "dev_00000132",
-      "dev_00000152",
-      "dev_00000180",
-      "dev_00000186",
-      "dev_00000190",
-      "dev_00000205",
-      "dev_00000208",
-      "dev_00000211",
-      "dev_00000218",
-      "dev_00000228",
-      "dev_00000229",
-      "dev_00000244",
-      "dev_00000249",
-      "dev_00000253",
-      "dev_00000262",
-      "dev_00000265",
-      "dev_00000271",
-      "dev_00000273",
-      "dev_00000276",
-      "dev_00000282",
-      "dev_00000293",
-      "dev_00000303",
-      "dev_00000304",
-      "dev_00000324",
-      "dev_00000325",
-      "dev_00000360",
-      "dev_00000362",
-      "dev_00000377",
-      "dev_00000382",
-      "dev_00000392",
-      "dev_00000393",
-      "dev_00000404",
-      "dev_00000424",
-      "dev_00000434",
-      "dev_00000466",
-      "dev_00000480",
-      "dev_00000498",
-      "dev_00000500",
-      "dev_00000504",
-      "dev_00000540",
-      "dev_00000545",
-      "dev_00000548",
-      "dev_00000552",
-      "dev_00000556",
-      "dev_00000558",
-      "dev_00000559",
-      "dev_00000561",
-      "dev_00000578",
-      "dev_00000586",
-      "dev_00000600",
-      "dev_00000642",
-      "dev_00000645",
-      "dev_00000650",
-      "dev_00000662",
-      "dev_00000671",
-      "dev_00000675",
-      "dev_00000681",
-      "dev_00000687",
-      "dev_00000697",
-      "dev_00000712",
-      "dev_00000719",
-      "dev_00000727",
-      "dev_00000734",
-      "dev_00000753",
-      "dev_00000755",
-      "dev_00000756",
-      "dev_00000762",
-      "dev_00000778",
-      "dev_00000786",
-      "dev_00000809",
-      "dev_00000815",
-      "dev_00000835",
-      "dev_00000838",
-      "dev_00000841",
-      "dev_00000844",
-      "dev_00000846",
-      "dev_00000851",
-      "dev_00000858",
-      "dev_00000897",
-      "dev_00000914",
-      "dev_00000920",
-      "dev_00000959",
-      "dev_00000961",
-      "dev_00000962"
-    ]
-  },
-  {
-    "id": "tower_00000010",
-    "name": "Pollich - Durgan Tower FISC",
-    "status": "maintenance",
-    "location": {
-      "latitude": -24.0479,
-      "longitude": -140.3133,
-      "address": "17342 West End"
-    },
-    "carriers": [
+      },
       {
         "carrier": "T-Mobile",
         "supportedOS": [
+          "iOS",
+          "Windows",
           "Android"
         ],
         "supportedDevices": [
           "gateway",
-          "smartphone"
+          "laptop"
         ],
-        "bandwidth": 393,
-        "frequency": 741,
+        "bandwidth": 261,
+        "frequency": 2968,
         "coverage": {
-          "radius": 4,
-          "signalStrength": -66
-        }
-      },
-      {
-        "carrier": "AT&T",
-        "supportedOS": [
-          "iOS",
-          "Windows"
-        ],
-        "supportedDevices": [
-          "tablet",
-          "gateway"
-        ],
-        "bandwidth": 211,
-        "frequency": 4021,
-        "coverage": {
-          "radius": 9,
-          "signalStrength": -63
-        }
-      },
-      {
-        "carrier": "Verizon",
-        "supportedOS": [
-          "Linux"
-        ],
-        "supportedDevices": [
-          "IoT"
-        ],
-        "bandwidth": 493,
-        "frequency": 4676,
-        "coverage": {
-          "radius": 4,
-          "signalStrength": -60
+          "radius": 6,
+          "signalStrength": -64
         }
       }
     ],
     "equipment": [
       {
         "type": "Antenna",
-        "model": "Ericsson AIR 6449",
+        "model": "Samsung MIMO",
         "status": "faulty",
-        "lastMaintenance": "2025-05-02T14:23:18.783Z",
+        "lastMaintenance": "2025-04-26T04:06:27.272Z",
         "capabilities": {
           "deviceDiscovery": true,
           "policyEnforcement": true,
@@ -2351,241 +1748,7 @@
     "realEstateProvider": "Uniti Group",
     "integrationStatus": {
       "isActive": true,
-      "lastSync": "2025-06-03T07:56:19.913Z",
-      "provider": "CarrierConnect",
-      "features": {
-        "deviceDiscovery": true,
-        "policyEnforcement": true,
-        "appMonitoring": true
-      }
-    },
-    "deviceDiscovery": {
-      "enabled": true,
-      "lastScan": "2025-06-02T14:40:30.582Z",
-      "discoveredDevices": [
-        {
-          "deviceId": "27f0a140-a2d5-4198-a888-ebe13b970b92",
-          "discoveredAt": "2025-05-31T22:42:37.762Z",
-          "status": "approved",
-          "autoApproval": true,
-          "details": {
-            "type": "gateway",
-            "os": "Linux",
-            "carrier": "US Cellular",
-            "signalStrength": -81
-          }
-        }
-      ]
-    },
-    "policyEnforcement": {
-      "activePolicies": [
-        "pol_UE5RRENZ",
-        "pol_N3S6GOJL",
-        "pol_KSYTOSLN",
-        "pol_SE5FC5RR"
-      ],
-      "lastEnforcement": "2025-06-02T14:30:09.667Z",
-      "violations": [
-        {
-          "policyId": "pol_SE5FC5RR",
-          "deviceId": "dev_00000970",
-          "timestamp": "2025-05-31T05:35:55.354Z",
-          "action": "deny",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_KSYTOSLN",
-          "deviceId": "dev_00000439",
-          "timestamp": "2025-05-28T13:42:40.870Z",
-          "action": "deny",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_KSYTOSLN",
-          "deviceId": "dev_00000195",
-          "timestamp": "2025-05-31T01:20:46.550Z",
-          "action": "deny",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_UE5RRENZ",
-          "deviceId": "dev_00000421",
-          "timestamp": "2025-05-30T14:15:06.500Z",
-          "action": "quarantine",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_SE5FC5RR",
-          "deviceId": "dev_00000272",
-          "timestamp": "2025-05-29T17:39:36.195Z",
-          "action": "notify",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_SE5FC5RR",
-          "deviceId": "dev_00000933",
-          "timestamp": "2025-05-29T09:49:30.576Z",
-          "action": "quarantine",
-          "resolved": true
-        },
-        {
-          "policyId": "pol_KSYTOSLN",
-          "deviceId": "dev_00000858",
-          "timestamp": "2025-05-28T17:14:20.852Z",
-          "action": "deny",
-          "resolved": false
-        }
-      ]
-    },
-    "connectedDevices": [
-      "dev_00000050",
-      "dev_00000061",
-      "dev_00000063",
-      "dev_00000064",
-      "dev_00000069",
-      "dev_00000079",
-      "dev_00000082",
-      "dev_00000094",
-      "dev_00000117",
-      "dev_00000131",
-      "dev_00000139",
-      "dev_00000150",
-      "dev_00000165",
-      "dev_00000178",
-      "dev_00000189",
-      "dev_00000201",
-      "dev_00000202",
-      "dev_00000214",
-      "dev_00000219",
-      "dev_00000226",
-      "dev_00000233",
-      "dev_00000235",
-      "dev_00000239",
-      "dev_00000242",
-      "dev_00000301",
-      "dev_00000305",
-      "dev_00000334",
-      "dev_00000348",
-      "dev_00000350",
-      "dev_00000365",
-      "dev_00000366",
-      "dev_00000381",
-      "dev_00000386",
-      "dev_00000389",
-      "dev_00000402",
-      "dev_00000406",
-      "dev_00000408",
-      "dev_00000414",
-      "dev_00000415",
-      "dev_00000417",
-      "dev_00000436",
-      "dev_00000448",
-      "dev_00000453",
-      "dev_00000472",
-      "dev_00000474",
-      "dev_00000477",
-      "dev_00000479",
-      "dev_00000488",
-      "dev_00000494",
-      "dev_00000514",
-      "dev_00000553",
-      "dev_00000554",
-      "dev_00000565",
-      "dev_00000567",
-      "dev_00000570",
-      "dev_00000593",
-      "dev_00000607",
-      "dev_00000618",
-      "dev_00000620",
-      "dev_00000639",
-      "dev_00000647",
-      "dev_00000648",
-      "dev_00000652",
-      "dev_00000663",
-      "dev_00000665",
-      "dev_00000686",
-      "dev_00000696",
-      "dev_00000702",
-      "dev_00000716",
-      "dev_00000724",
-      "dev_00000751",
-      "dev_00000763",
-      "dev_00000799",
-      "dev_00000802",
-      "dev_00000810",
-      "dev_00000827",
-      "dev_00000847",
-      "dev_00000861",
-      "dev_00000868",
-      "dev_00000890",
-      "dev_00000930",
-      "dev_00000979"
-    ]
-  },
-  {
-    "id": "tower_00000011",
-    "name": "Parisian - Hudson Tower W9G3",
-    "status": "maintenance",
-    "location": {
-      "latitude": 3.8562,
-      "longitude": -165.2646,
-      "address": "54159 Jackeline Crossing"
-    },
-    "carriers": [
-      {
-        "carrier": "US Cellular",
-        "supportedOS": [
-          "macOS",
-          "Windows",
-          "Linux"
-        ],
-        "supportedDevices": [
-          "tablet",
-          "laptop",
-          "smartphone"
-        ],
-        "bandwidth": 864,
-        "frequency": 2625,
-        "coverage": {
-          "radius": 7,
-          "signalStrength": -73
-        }
-      },
-      {
-        "carrier": "AT&T",
-        "supportedOS": [
-          "Android",
-          "Windows",
-          "Linux"
-        ],
-        "supportedDevices": [
-          "gateway"
-        ],
-        "bandwidth": 181,
-        "frequency": 4022,
-        "coverage": {
-          "radius": 2,
-          "signalStrength": -86
-        }
-      }
-    ],
-    "equipment": [
-      {
-        "type": "Antenna",
-        "model": "Samsung MIMO",
-        "status": "maintenance",
-        "lastMaintenance": "2025-05-06T17:08:27.501Z",
-        "capabilities": {
-          "deviceDiscovery": true,
-          "policyEnforcement": true,
-          "appMonitoring": true
-        }
-      }
-    ],
-    "realEstateProvider": "Vertical Bridge",
-    "integrationStatus": {
-      "isActive": true,
-      "lastSync": "2025-06-02T21:27:02.981Z",
+      "lastSync": "2025-06-03T10:41:06.939Z",
       "provider": "TowerDB",
       "features": {
         "deviceDiscovery": true,
@@ -2595,139 +1758,139 @@
     },
     "deviceDiscovery": {
       "enabled": true,
-      "lastScan": "2025-06-02T17:19:30.619Z",
-      "discoveredDevices": [
-        {
-          "deviceId": "2e691b0a-fe57-4916-9db7-0b070870c9a6",
-          "discoveredAt": "2025-05-29T14:49:27.747Z",
-          "status": "pending",
-          "autoApproval": true,
-          "details": {
-            "type": "smartphone",
-            "os": "iOS",
-            "carrier": "AT&T",
-            "signalStrength": -90
-          }
-        }
-      ]
+      "lastScan": "2025-06-02T15:15:41.781Z",
+      "discoveredDevices": []
     },
     "policyEnforcement": {
       "activePolicies": [
-        "pol_R7RDDC4J",
-        "pol_QTZY7S5P",
-        "pol_SCROE15V",
-        "pol_UE5RRENZ"
+        "pol_2DJRX7SN",
+        "pol_SRYFRX8G",
+        "pol_XW51D2L1"
       ],
-      "lastEnforcement": "2025-06-02T18:17:43.029Z",
+      "lastEnforcement": "2025-06-02T23:42:02.445Z",
       "violations": [
         {
-          "policyId": "pol_UE5RRENZ",
-          "deviceId": "dev_00000194",
-          "timestamp": "2025-05-30T04:09:03.313Z",
+          "policyId": "pol_XW51D2L1",
+          "deviceId": "dev_00000210",
+          "timestamp": "2025-05-31T17:13:13.409Z",
           "action": "quarantine",
           "resolved": true
         },
         {
-          "policyId": "pol_QTZY7S5P",
-          "deviceId": "dev_00000053",
-          "timestamp": "2025-05-31T05:23:26.703Z",
-          "action": "deny",
+          "policyId": "pol_XW51D2L1",
+          "deviceId": "dev_00000218",
+          "timestamp": "2025-06-02T11:08:13.209Z",
+          "action": "quarantine",
+          "resolved": false
+        },
+        {
+          "policyId": "pol_2DJRX7SN",
+          "deviceId": "dev_00000562",
+          "timestamp": "2025-05-29T06:53:21.679Z",
+          "action": "quarantine",
           "resolved": true
+        },
+        {
+          "policyId": "pol_SRYFRX8G",
+          "deviceId": "dev_00000395",
+          "timestamp": "2025-05-27T13:10:25.622Z",
+          "action": "notify",
+          "resolved": false
         }
       ]
     },
     "connectedDevices": [
-      "dev_00000010",
-      "dev_00000053",
-      "dev_00000056",
-      "dev_00000066",
-      "dev_00000085",
-      "dev_00000107",
-      "dev_00000129",
-      "dev_00000135",
-      "dev_00000191",
-      "dev_00000194",
-      "dev_00000222",
-      "dev_00000241",
-      "dev_00000245",
-      "dev_00000256",
-      "dev_00000257",
-      "dev_00000258",
-      "dev_00000263",
-      "dev_00000269",
-      "dev_00000274",
-      "dev_00000275",
-      "dev_00000279",
-      "dev_00000284",
-      "dev_00000288",
-      "dev_00000306",
-      "dev_00000311",
-      "dev_00000323",
-      "dev_00000346",
-      "dev_00000358",
+      "dev_00000001",
+      "dev_00000003",
+      "dev_00000018",
+      "dev_00000026",
+      "dev_00000030",
+      "dev_00000032",
+      "dev_00000033",
+      "dev_00000043",
+      "dev_00000046",
+      "dev_00000057",
+      "dev_00000073",
+      "dev_00000086",
+      "dev_00000106",
+      "dev_00000109",
+      "dev_00000110",
+      "dev_00000113",
+      "dev_00000154",
+      "dev_00000166",
+      "dev_00000170",
+      "dev_00000179",
+      "dev_00000189",
+      "dev_00000198",
+      "dev_00000199",
+      "dev_00000200",
+      "dev_00000201",
+      "dev_00000203",
+      "dev_00000205",
+      "dev_00000215",
+      "dev_00000223",
+      "dev_00000233",
+      "dev_00000237",
+      "dev_00000238",
+      "dev_00000254",
+      "dev_00000259",
+      "dev_00000262",
+      "dev_00000271",
+      "dev_00000272",
+      "dev_00000281",
+      "dev_00000282",
+      "dev_00000286",
+      "dev_00000304",
+      "dev_00000310",
+      "dev_00000328",
+      "dev_00000329",
+      "dev_00000340",
+      "dev_00000347",
+      "dev_00000350",
+      "dev_00000360",
       "dev_00000363",
       "dev_00000369",
       "dev_00000370",
-      "dev_00000375",
       "dev_00000376",
-      "dev_00000379",
-      "dev_00000380",
-      "dev_00000423",
-      "dev_00000425",
-      "dev_00000429",
-      "dev_00000433",
-      "dev_00000461",
-      "dev_00000468",
-      "dev_00000481",
-      "dev_00000490",
-      "dev_00000491",
-      "dev_00000495",
-      "dev_00000505",
+      "dev_00000378",
+      "dev_00000405",
+      "dev_00000442",
+      "dev_00000447",
+      "dev_00000450",
+      "dev_00000465",
+      "dev_00000484",
+      "dev_00000494",
+      "dev_00000498",
       "dev_00000506",
-      "dev_00000511",
-      "dev_00000516",
-      "dev_00000524",
-      "dev_00000535",
-      "dev_00000539",
-      "dev_00000550",
-      "dev_00000555",
-      "dev_00000560",
-      "dev_00000562",
-      "dev_00000569",
+      "dev_00000517",
+      "dev_00000522",
+      "dev_00000538",
+      "dev_00000549",
+      "dev_00000561",
       "dev_00000574",
-      "dev_00000616",
-      "dev_00000625",
-      "dev_00000631",
+      "dev_00000578",
+      "dev_00000581",
+      "dev_00000588",
+      "dev_00000589",
+      "dev_00000605",
+      "dev_00000608",
+      "dev_00000609",
+      "dev_00000615",
+      "dev_00000626",
       "dev_00000643",
-      "dev_00000669",
-      "dev_00000683",
-      "dev_00000703",
-      "dev_00000704",
-      "dev_00000709",
-      "dev_00000711",
-      "dev_00000713",
+      "dev_00000645",
+      "dev_00000647",
+      "dev_00000648",
+      "dev_00000659",
+      "dev_00000682",
+      "dev_00000693",
+      "dev_00000699",
       "dev_00000717",
-      "dev_00000726",
-      "dev_00000731",
-      "dev_00000738",
-      "dev_00000742",
-      "dev_00000748",
-      "dev_00000758",
-      "dev_00000764",
-      "dev_00000811",
-      "dev_00000813",
-      "dev_00000819",
-      "dev_00000829",
-      "dev_00000840",
-      "dev_00000848",
-      "dev_00000860",
-      "dev_00000873",
-      "dev_00000899",
-      "dev_00000929",
-      "dev_00000948",
-      "dev_00000955",
-      "dev_00000958",
-      "dev_00000968"
+      "dev_00000723",
+      "dev_00000744",
+      "dev_00000750",
+      "dev_00000769",
+      "dev_00000781"
     ]
   }
 ]

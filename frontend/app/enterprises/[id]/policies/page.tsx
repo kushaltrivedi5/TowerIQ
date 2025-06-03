@@ -199,7 +199,8 @@ export default function EnterprisePoliciesPage({
           </h1>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-4">
+        {/* Overview Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Card
             variant="purple"
             intensity="medium"
@@ -225,44 +226,6 @@ export default function EnterprisePoliciesPage({
                 <p className="text-xs text-muted-foreground">
                   {metrics.enforcementStats.autoRemediated} auto-remediated
                 </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card
-            variant="blue"
-            intensity="medium"
-            className="glassEffect-medium"
-            icon={Shield}
-          >
-            <CardHeader>
-              <CardTitle>
-                <GradientText variant="blue">Policy Priority</GradientText>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-2">
-                {Object.entries(metrics.byPriority).map(([priority, count]) => (
-                  <div
-                    key={priority}
-                    className="flex justify-between items-center"
-                  >
-                    <span className="text-sm capitalize">{priority}</span>
-                    <Badge
-                      variant={
-                        priority === "critical"
-                          ? "destructive"
-                          : priority === "high"
-                          ? "secondary"
-                          : priority === "medium"
-                          ? "default"
-                          : "outline"
-                      }
-                    >
-                      {count}
-                    </Badge>
-                  </div>
-                ))}
               </div>
             </CardContent>
           </Card>

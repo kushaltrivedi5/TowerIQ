@@ -17,7 +17,7 @@
 
 // Base types
 export type Carrier = 'AT&T' | 'Verizon' | 'T-Mobile' | 'Sprint' | 'US Cellular';
-export type OperatingSystem = 'iOS' | 'Android' | 'Windows' | 'macOS' | 'Linux';
+export type OperatingSystem = 'iOS' | 'Android' | 'Windows' | 'Other';
 export type DeviceType = 'smartphone' | 'tablet' | 'laptop' | 'IoT' | 'gateway';
 export type UserRole = 'admin' | 'manager' | 'employee' | 'contractor' | 'guest';
 export type SubscriptionTier = 'basic' | 'standard' | 'premium' | 'enterprise';

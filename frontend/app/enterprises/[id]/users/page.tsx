@@ -216,7 +216,8 @@ export default function EnterpriseUsersPage({
           </h1>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-4">
+        {/* Overview Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
           <Card
             variant="blue"
             intensity="medium"
@@ -225,7 +226,7 @@ export default function EnterpriseUsersPage({
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="blue">Users</GradientText>
+                <GradientText variant="blue">Total Users</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -233,7 +234,7 @@ export default function EnterpriseUsersPage({
                 {metrics.total}
               </div>
               <p className="text-xs text-muted-foreground">
-                Total enterprise users
+                Across all departments
               </p>
             </CardContent>
           </Card>
@@ -242,21 +243,18 @@ export default function EnterpriseUsersPage({
             variant="purple"
             intensity="medium"
             className="glassEffect-medium"
-            icon={Shield}
+            icon={UserPlus}
           >
             <CardHeader>
               <CardTitle>
-                <GradientText variant="purple">Administrators</GradientText>
+                <GradientText variant="purple">New Users</GradientText>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-purple-500">
-                {metrics.byRole.admin}
+                {metrics.byStatus?.active ?? 0}
               </div>
-              <p className="text-xs text-muted-foreground">
-                {((metrics.byRole.admin / metrics.total) * 100).toFixed(1)}% of
-                total
-              </p>
+              <p className="text-xs text-muted-foreground">Added this month</p>
             </CardContent>
           </Card>
 
@@ -273,11 +271,16 @@ export default function EnterpriseUsersPage({
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-green-500">
-                {metrics.byStatus.active}
+                {metrics.byStatus?.active ?? 0}
               </div>
               <p className="text-xs text-muted-foreground">
-                {((metrics.byStatus.active / metrics.total) * 100).toFixed(1)}%
-                of total
+                {metrics.total
+                  ? (
+                      ((metrics.byStatus?.active ?? 0) / metrics.total) *
+                      100
+                    ).toFixed(1)
+                  : 0}
+                % of total
               </p>
             </CardContent>
           </Card>
@@ -302,14 +305,15 @@ export default function EnterpriseUsersPage({
           </Card>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-3">
+        {/* Stats Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           <Card className="glassEffect-light">
             <CardHeader>
               <CardTitle className="text-sm font-medium">User Roles</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
-                {Object.entries(metrics.byRole).map(([role, count]) => (
+                {Object.entries(metrics.byRole ?? {}).map(([role, count]) => (
                   <div key={role} className="flex items-center justify-between">
                     <span className="text-sm capitalize">{role}</span>
                     <Badge variant="outline">{count}</Badge>
@@ -325,15 +329,17 @@ export default function EnterpriseUsersPage({
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
-                {Object.entries(metrics.byStatus).map(([status, count]) => (
-                  <div
-                    key={status}
-                    className="flex items-center justify-between"
-                  >
-                    <span className="text-sm capitalize">{status}</span>
-                    <Badge variant="outline">{count}</Badge>
-                  </div>
-                ))}
+                {Object.entries(metrics.byStatus ?? {}).map(
+                  ([status, count]) => (
+                    <div
+                      key={status}
+                      className="flex items-center justify-between"
+                    >
+                      <span className="text-sm capitalize">{status}</span>
+                      <Badge variant="outline">{count}</Badge>
+                    </div>
+                  )
+                )}
               </div>
             </CardContent>
           </Card>
@@ -346,7 +352,7 @@ export default function EnterpriseUsersPage({
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
-                {Object.entries(metrics.byDepartment)
+                {Object.entries(metrics.byDepartment ?? {})
                   .sort(([, a], [, b]) => b - a)
                   .slice(0, 5)
                   .map(([department, count]) => (

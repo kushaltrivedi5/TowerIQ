@@ -46,7 +46,7 @@ const CONFIG: SeedConfig = {
     categories: ['productivity', 'security', 'communication', 'enterprise', 'custom']
   },
   carriers: ['AT&T', 'Verizon', 'T-Mobile', 'Sprint', 'US Cellular'],
-  operatingSystems: ['iOS', 'Android', 'Windows', 'macOS', 'Linux'],
+  operatingSystems: ['iOS', 'Android', 'Windows', 'Other'],
   deviceTypes: ['smartphone', 'tablet', 'laptop', 'IoT', 'gateway'],
   userRoles: ['admin', 'manager', 'employee', 'contractor', 'guest'],
   subscriptionTiers: ['basic', 'standard', 'premium', 'enterprise'],

@@ -88,7 +88,7 @@ export default function LoginPage() {
             <LogIn className="w-6 h-6 text-primary" />
           </div>
           <CardTitle className="text-2xl font-bold">
-            <GradientText variant="blue">Welcome Back</GradientText>
+            <GradientText variant="blue">Welcome</GradientText>
           </CardTitle>
           <p className="text-sm text-muted-foreground">
             Sign in to access your TowerIQ dashboard

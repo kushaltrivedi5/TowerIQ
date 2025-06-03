@@ -261,7 +261,7 @@ export default function EnterpriseDashboardPage({
         </div>
 
         {/* Overview Cards */}
-        <div className="grid gap-4 md:grid-cols-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
           <Card
             variant="blue"
             intensity="medium"
@@ -322,35 +322,6 @@ export default function EnterpriseDashboardPage({
           </Card>
 
           <Card
-            variant="green"
-            intensity="medium"
-            className="glassEffect-medium"
-            icon={RadioTower}
-          >
-            <CardHeader>
-              <CardTitle>
-                <GradientText variant="green">Towers</GradientText>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="text-3xl font-bold text-green-500">
-                {metrics.towers.total}
-              </div>
-              <div className="mt-2 space-y-1">
-                <p className="text-xs text-muted-foreground">
-                  {metrics.towers.active} active towers
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  {metrics.towers.byStatus.maintenance} in maintenance
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  {metrics.towers.byStatus.inactive} inactive
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card
             variant="orange"
             intensity="medium"
             className="glassEffect-medium"
@@ -381,7 +352,7 @@ export default function EnterpriseDashboardPage({
         </div>
 
         {/* Charts Section */}
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-4">
           {/* Device Compliance Chart */}
           <Card className="glassEffect-medium">
             <CardHeader>
@@ -410,11 +381,14 @@ export default function EnterpriseDashboardPage({
                       outerRadius={80}
                       paddingAngle={5}
                       dataKey="value"
+                      label={({ name, percent }) =>
+                        `${name} (${(percent * 100).toFixed(0)}%)`
+                      }
+                      labelLine={false}
                     >
-                      <Cell fill="hsl(var(--primary))" />
-                      <Cell fill="hsl(var(--destructive))" />
+                      <Cell className="fill-primary dark:fill-primary/80" />
+                      <Cell className="fill-destructive dark:fill-destructive/80" />
                     </Pie>
-                    <Tooltip />
                   </PieChart>
                 </ResponsiveContainer>
               </div>
@@ -441,11 +415,18 @@ export default function EnterpriseDashboardPage({
                       },
                     ]}
                   >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
-                    <Bar dataKey="value" fill="hsl(var(--primary))" />
+                    <CartesianGrid
+                      strokeDasharray="3 3"
+                      className="stroke-border"
+                    />
+                    <XAxis dataKey="name" className="text-sm fill-foreground" />
+                    <YAxis className="text-sm fill-foreground" />
+                    <Bar
+                      dataKey="value"
+                      className="fill-foreground dark:fill-white"
+                      radius={[4, 4, 0, 0]}
+                      isAnimationActive={false}
+                    />
                   </BarChart>
                 </ResponsiveContainer>
               </div>
@@ -470,16 +451,34 @@ export default function EnterpriseDashboardPage({
                       { time: "Jun", score: metrics.security.complianceScore },
                     ]}
                   >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="time" />
-                    <YAxis domain={[0, 100]} />
-                    <Tooltip />
+                    <CartesianGrid
+                      strokeDasharray="3 3"
+                      className="stroke-border"
+                    />
+                    <XAxis dataKey="time" className="text-sm fill-foreground" />
+                    <YAxis
+                      domain={[0, 100]}
+                      className="text-sm fill-foreground"
+                    />
+                    <Tooltip
+                      cursor={false}
+                      contentStyle={{
+                        backgroundColor: "hsl(var(--card))",
+                        border: "1px solid hsl(var(--border))",
+                        borderRadius: "var(--radius)",
+                        color: "text-white dark:text-black",
+                      }}
+                      labelStyle={{
+                        color: "text-white dark:text-black",
+                      }}
+                      itemStyle={{
+                        color: "text-white dark:text-black",
+                      }}
+                    />
                     <Area
                       type="monotone"
                       dataKey="score"
-                      stroke="hsl(var(--primary))"
-                      fill="hsl(var(--primary))"
-                      fillOpacity={0.2}
+                      className="stroke-foreground dark:stroke-background fill-foreground/20 dark:fill-background/20"
                     />
                   </AreaChart>
                 </ResponsiveContainer>
@@ -507,11 +506,18 @@ export default function EnterpriseDashboardPage({
                       },
                     ]}
                   >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
-                    <Bar dataKey="value" fill="hsl(var(--primary))" />
+                    <CartesianGrid
+                      strokeDasharray="3 3"
+                      className="stroke-border"
+                    />
+                    <XAxis dataKey="name" className="text-sm fill-foreground" />
+                    <YAxis className="text-sm fill-foreground" />
+                    <Bar
+                      dataKey="value"
+                      className="fill-foreground dark:fill-white"
+                      radius={[4, 4, 0, 0]}
+                      isAnimationActive={false}
+                    />
                   </BarChart>
                 </ResponsiveContainer>
               </div>

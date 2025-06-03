@@ -1,19 +1,19 @@
 [
   {
     "id": "ent_00000001",
-    "name": "Armstrong Group Ltd",
+    "name": "Schoen and Sons Ltd",
     "tier": "premium",
     "subscription": {
-      "startDate": "2024-10-27T18:46:56.084Z",
-      "endDate": "2027-03-24T19:54:28.786Z",
+      "startDate": "2024-07-17T17:44:11.901Z",
+      "endDate": "2027-02-15T23:13:39.556Z",
       "status": "active",
-      "tier": "basic",
+      "tier": "standard",
       "features": {
         "autoRemediation": false,
         "realTimeMonitoring": true,
-        "customPolicies": false,
+        "customPolicies": true,
         "deviceDiscovery": true,
-        "apiAccess": false,
+        "apiAccess": true,
         "towerEnforcement": false,
         "appMonitoring": true
       }
@@ -21,31 +21,31 @@
   },
   {
     "id": "ent_00000002",
-    "name": "O'Reilly - Funk Ltd",
+    "name": "Wisozk LLC Ltd",
     "tier": "standard",
     "subscription": {
-      "startDate": "2025-02-05T05:23:39.039Z",
-      "endDate": "2026-11-26T22:19:03.558Z",
+      "startDate": "2025-02-27T08:20:16.550Z",
+      "endDate": "2026-11-28T12:41:07.345Z",
       "status": "active",
-      "tier": "premium",
+      "tier": "standard",
       "features": {
-        "autoRemediation": true,
+        "autoRemediation": false,
         "realTimeMonitoring": true,
         "customPolicies": true,
         "deviceDiscovery": true,
         "apiAccess": true,
-        "towerEnforcement": true,
+        "towerEnforcement": false,
         "appMonitoring": true
       }
     }
   },
   {
     "id": "ent_00000003",
-    "name": "Lockman, Leannon and Berge Ltd",
+    "name": "Hirthe Inc Ltd",
     "tier": "premium",
     "subscription": {
-      "startDate": "2024-09-16T05:24:12.021Z",
-      "endDate": "2026-07-22T07:55:05.544Z",
+      "startDate": "2024-10-05T23:33:00.069Z",
+      "endDate": "2027-04-21T17:36:10.913Z",
       "status": "active",
       "tier": "standard",
       "features": {
@@ -61,19 +61,19 @@
   },
   {
     "id": "ent_00000004",
-    "name": "Harvey Group Ltd",
-    "tier": "premium",
+    "name": "Heathcote, Jacobs and Hirthe Ltd",
+    "tier": "standard",
     "subscription": {
-      "startDate": "2025-04-21T15:59:09.549Z",
-      "endDate": "2027-02-23T08:29:34.345Z",
+      "startDate": "2025-01-22T04:16:54.678Z",
+      "endDate": "2027-05-01T01:01:32.868Z",
       "status": "active",
-      "tier": "standard",
+      "tier": "basic",
       "features": {
         "autoRemediation": false,
         "realTimeMonitoring": true,
-        "customPolicies": true,
+        "customPolicies": false,
         "deviceDiscovery": true,
-        "apiAccess": true,
+        "apiAccess": false,
         "towerEnforcement": false,
         "appMonitoring": true
       }
@@ -81,71 +81,31 @@
   },
   {
     "id": "ent_00000005",
-    "name": "Abernathy, Bosco and Bailey Ltd",
+    "name": "Mosciski Group Ltd",
     "tier": "premium",
     "subscription": {
-      "startDate": "2025-05-12T17:51:00.003Z",
-      "endDate": "2026-11-03T01:33:08.256Z",
+      "startDate": "2025-03-14T12:32:26.391Z",
+      "endDate": "2026-10-31T13:23:14.133Z",
       "status": "active",
-      "tier": "basic",
+      "tier": "enterprise",
       "features": {
-        "autoRemediation": false,
+        "autoRemediation": true,
         "realTimeMonitoring": true,
-        "customPolicies": false,
+        "customPolicies": true,
         "deviceDiscovery": true,
-        "apiAccess": false,
-        "towerEnforcement": false,
+        "apiAccess": true,
+        "towerEnforcement": true,
         "appMonitoring": true
       }
     }
   },
   {
     "id": "ent_00000006",
-    "name": "Grady, Grant and Hoppe Ltd",
+    "name": "Rosenbaum - Schroeder Ltd",
     "tier": "standard",
     "subscription": {
-      "startDate": "2024-06-29T03:17:53.174Z",
-      "endDate": "2027-01-31T08:12:19.825Z",
-      "status": "active",
-      "tier": "basic",
-      "features": {
-        "autoRemediation": false,
-        "realTimeMonitoring": true,
-        "customPolicies": false,
-        "deviceDiscovery": true,
-        "apiAccess": false,
-        "towerEnforcement": false,
-        "appMonitoring": true
-      }
-    }
-  },
-  {
-    "id": "ent_00000007",
-    "name": "Maggio, Leffler and Haley Ltd",
-    "tier": "standard",
-    "subscription": {
-      "startDate": "2024-09-23T13:06:24.604Z",
-      "endDate": "2026-11-06T10:32:11.321Z",
-      "status": "active",
-      "tier": "basic",
-      "features": {
-        "autoRemediation": false,
-        "realTimeMonitoring": true,
-        "customPolicies": false,
-        "deviceDiscovery": true,
-        "apiAccess": false,
-        "towerEnforcement": false,
-        "appMonitoring": true
-      }
-    }
-  },
-  {
-    "id": "ent_00000008",
-    "name": "Braun - Nienow Ltd",
-    "tier": "standard",
-    "subscription": {
-      "startDate": "2024-11-02T00:42:12.707Z",
-      "endDate": "2026-06-29T08:36:50.566Z",
+      "startDate": "2024-10-31T03:30:19.731Z",
+      "endDate": "2027-02-23T15:13:02.843Z",
       "status": "active",
       "tier": "premium",
       "features": {
@@ -160,12 +120,52 @@
     }
   },
   {
-    "id": "ent_00000009",
-    "name": "Lueilwitz LLC Ltd",
+    "id": "ent_00000007",
+    "name": "O'Connell, Morar and Schmeler Ltd",
+    "tier": "standard",
+    "subscription": {
+      "startDate": "2025-01-08T22:35:59.521Z",
+      "endDate": "2027-04-04T03:34:07.483Z",
+      "status": "active",
+      "tier": "premium",
+      "features": {
+        "autoRemediation": true,
+        "realTimeMonitoring": true,
+        "customPolicies": true,
+        "deviceDiscovery": true,
+        "apiAccess": true,
+        "towerEnforcement": true,
+        "appMonitoring": true
+      }
+    }
+  },
+  {
+    "id": "ent_00000008",
+    "name": "Kuhic Group Ltd",
     "tier": "premium",
     "subscription": {
-      "startDate": "2024-08-12T19:45:45.820Z",
-      "endDate": "2027-01-24T06:26:39.171Z",
+      "startDate": "2025-04-26T16:06:00.114Z",
+      "endDate": "2027-04-12T15:42:27.614Z",
+      "status": "active",
+      "tier": "basic",
+      "features": {
+        "autoRemediation": false,
+        "realTimeMonitoring": true,
+        "customPolicies": false,
+        "deviceDiscovery": true,
+        "apiAccess": false,
+        "towerEnforcement": false,
+        "appMonitoring": true
+      }
+    }
+  },
+  {
+    "id": "ent_00000009",
+    "name": "Keeling - D'Amore Ltd",
+    "tier": "premium",
+    "subscription": {
+      "startDate": "2025-01-06T09:38:38.118Z",
+      "endDate": "2026-12-04T13:11:48.173Z",
       "status": "active",
       "tier": "enterprise",
       "features": {
@@ -181,20 +181,20 @@
   },
   {
     "id": "ent_00000010",
-    "name": "Jaskolski, Emard and Ortiz Ltd",
-    "tier": "standard",
+    "name": "Heathcote LLC Ltd",
+    "tier": "premium",
     "subscription": {
-      "startDate": "2025-02-01T18:54:38.329Z",
-      "endDate": "2027-03-20T07:56:18.594Z",
+      "startDate": "2024-10-27T03:25:07.515Z",
+      "endDate": "2026-08-14T08:07:33.563Z",
       "status": "active",
-      "tier": "standard",
+      "tier": "enterprise",
       "features": {
-        "autoRemediation": false,
+        "autoRemediation": true,
         "realTimeMonitoring": true,
         "customPolicies": true,
         "deviceDiscovery": true,
         "apiAccess": true,
-        "towerEnforcement": false,
+        "towerEnforcement": true,
         "appMonitoring": true
       }
     }

@@ -189,7 +189,8 @@ export default function EnterpriseTowersPage({
           </h1>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-4">
+        {/* Overview Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
           <Card
             variant="blue"
             intensity="medium"
@@ -224,7 +225,7 @@ export default function EnterpriseTowersPage({
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-green-500">
-                {metrics.averageSignalStrength.toFixed(1)}%
+                {(metrics.averageSignalStrength ?? 0).toFixed(1)}%
               </div>
               <p className="text-xs text-muted-foreground">
                 Average across network
@@ -275,7 +276,8 @@ export default function EnterpriseTowersPage({
           </Card>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-3">
+        {/* Stats Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           <Card className="glassEffect-light">
             <CardHeader>
               <CardTitle className="text-sm font-medium">
@@ -307,18 +309,18 @@ export default function EnterpriseTowersPage({
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="text-sm">Active Towers</span>
-                  <Badge variant="outline">{metrics.active}</Badge>
+                  <Badge variant="outline">{metrics.active ?? 0}</Badge>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm">Offline Towers</span>
                   <Badge variant="outline">
-                    {metrics.byStatus["inactive"] || 0}
+                    {metrics.byStatus?.["inactive"] ?? 0}
                   </Badge>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm">In Maintenance</span>
                   <Badge variant="outline">
-                    {metrics.byStatus["maintenance"] || 0}
+                    {metrics.byStatus?.["maintenance"] ?? 0}
                   </Badge>
                 </div>
               </div>
@@ -334,18 +336,20 @@ export default function EnterpriseTowersPage({
                 <div className="flex items-center justify-between">
                   <span className="text-sm">Signal Strength</span>
                   <Badge variant="outline">
-                    {metrics.averageSignalStrength.toFixed(1)}%
+                    {(metrics.averageSignalStrength ?? 0).toFixed(1)}%
                   </Badge>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm">Connected Devices</span>
                   <Badge variant="outline">
-                    {metrics.totalConnectedDevices}
+                    {metrics.totalConnectedDevices ?? 0}
                   </Badge>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm">Maintenance Required</span>
-                  <Badge variant="outline">{metrics.maintenanceRequired}</Badge>
+                  <Badge variant="outline">
+                    {metrics.maintenanceRequired ?? 0}
+                  </Badge>
                 </div>
               </div>
             </CardContent>

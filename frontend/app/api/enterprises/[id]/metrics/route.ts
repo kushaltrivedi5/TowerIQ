@@ -47,8 +47,21 @@ export async function GET(
         towers: enterprise.metrics.towers,
         users: {
           total: enterprise.users.length,
-          admins: enterprise.users.filter((u: any) => u.role === 'admin').length,
-          active: enterprise.users.filter((u: any) => u.status === 'active').length,
+          byRole: enterprise.users.reduce((acc: Record<string, number>, user: any) => {
+            acc[user.role] = (acc[user.role] || 0) + 1;
+            return acc;
+          }, {}),
+          byStatus: enterprise.users.reduce((acc: Record<string, number>, user: any) => {
+            acc[user.status] = (acc[user.status] || 0) + 1;
+            return acc;
+          }, {}),
+          byDepartment: enterprise.users.reduce((acc: Record<string, number>, user: any) => {
+            acc[user.department] = (acc[user.department] || 0) + 1;
+            return acc;
+          }, {}),
+          activeDevices: enterprise.users.reduce((total: number, user: any) => {
+            return total + (user.devices?.length || 0);
+          }, 0)
         },
         security: enterprise.metrics.security,
       });

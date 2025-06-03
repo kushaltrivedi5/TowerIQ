@@ -17,8 +17,12 @@ import {
   SheetContent,
   SheetTrigger,
   SheetClose,
+  SheetHeader,
+  SheetTitle,
+  SheetDescription,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 
 interface SidebarProps {
   enterpriseId: string;
@@ -128,6 +132,12 @@ export default function Sidebar({
           className="w-72 p-0 glassEffect-medium"
           onInteractOutside={onClose}
         >
+          <VisuallyHidden.Root>
+            <SheetTitle>Enterprise Navigation</SheetTitle>
+            <SheetDescription>
+              Access enterprise management features and navigation
+            </SheetDescription>
+          </VisuallyHidden.Root>
           <div className="flex flex-col h-full">
             <div className="flex-1 pt-8">
               <SidebarContent />

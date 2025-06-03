@@ -75,7 +75,7 @@ export function LoadingSpinner({
         </p>
       )}
 
-      <style jsx global>{`
+      <style jsx>{`
         @keyframes visualizer {
           0% {
             transform: scaleY(0.15);
@@ -121,7 +121,7 @@ export function FullPageLoadingSpinner({
   className,
 }: Omit<LoadingSpinnerProps, "size">) {
   return (
-    <div className="absolute inset-x-0 top-[57px] bottom-0 bg-background/80 backdrop-blur-sm z-40 flex items-center justify-center">
+    <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-40 flex items-center justify-center">
       <LoadingSpinner size="xxl" text={text} className={className} />
     </div>
   );

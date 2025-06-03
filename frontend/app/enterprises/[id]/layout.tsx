@@ -5,7 +5,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { Enterprise } from "@/lib/data/domain-types";
 import Sidebar from "@/components/Sidebar";
-import { ContentLoadingSpinner } from "@/components/ui/loading-spinner";
+import { FullPageLoadingSpinner } from "@/components/ui/loading-spinner";
 
 interface EnterpriseLayoutProps {
   children: React.ReactNode;
@@ -58,17 +58,7 @@ export default function EnterpriseLayout({
   }, [session, status, id, router]);
 
   if (status === "loading" || loading) {
-    return (
-      <div className="flex min-h-[calc(100vh-5rem)]">
-        <div className="hidden md:block fixed inset-y-20 bottom-0 w-72 h-[calc(100vh-5rem)]">
-          <Sidebar enterpriseId={id} />
-        </div>
-        <div className="hidden md:block w-72 flex-shrink-0" />
-        <main className="relative flex-1 p-4 md:p-8 overflow-auto w-full md:ml-0">
-          <ContentLoadingSpinner text="Loading enterprise..." />
-        </main>
-      </div>
-    );
+    return <FullPageLoadingSpinner text="Loading enterprise..." />;
   }
 
   if (error || !enterprise) {
