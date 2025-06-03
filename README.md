@@ -10,6 +10,7 @@ TowerIQ is a modern, enterprise-grade telecom infrastructure management platform
   - Track carrier connections and coverage
   - Manage equipment and maintenance schedules
   - View tower analytics and statistics
+  - Real-time device discovery and monitoring
 
 - **Device Management**
 
@@ -17,6 +18,7 @@ TowerIQ is a modern, enterprise-grade telecom infrastructure management platform
   - Device status monitoring
   - Security compliance tracking
   - Device policy management
+  - Automatic device discovery and approval
 
 - **Security Policy Management**
 
@@ -24,12 +26,21 @@ TowerIQ is a modern, enterprise-grade telecom infrastructure management platform
   - Policy compliance monitoring
   - Policy enforcement tracking
   - Policy updates and versioning
+  - Real-time policy enforcement
+
+- **App Management**
+
+  - Track app usage and actions
+  - Monitor app compliance
+  - Manage app permissions
+  - Track app security metrics
 
 - **Modern UI/UX**
   - Beautiful, responsive design
   - Dark/Light mode support
   - Interactive dashboards and charts
   - Smooth page transitions and animations
+  - Offline support with service workers
 
 ## 🛠 Tech Stack
 
@@ -88,13 +99,19 @@ TowerIQ is a modern, enterprise-grade telecom infrastructure management platform
    BCRYPT_SALT_ROUNDS=10
    ```
 
-4. Start the development server:
+4. Generate seed data:
+
+   ```bash
+   npm run generate-seed
+   ```
+
+5. Start the development server:
 
    ```bash
    npm run dev
    ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+6. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🔧 Configuration
 
@@ -110,10 +127,19 @@ TowerIQ is a modern, enterprise-grade telecom infrastructure management platform
 
 - **ESLint**: Configured with strict TypeScript rules
 - **TypeScript**: Strict mode enabled
+- **Docker**: Containerized development environment
 
-## 📝 Note
+## 📝 Data Model
 
-This is currently a frontend-only application that uses simulated data to demonstrate the user interface and interactions. The data is generated using a seed script and stored in JSON format. Future versions will include backend integration for real data management.
+The application uses a comprehensive data model that includes:
+
+- Enterprises and Users
+- Devices and Towers
+- Policies and Rules
+- Apps and Actions
+- Metrics and Analytics
+
+For detailed information about the data model, refer to the documentation in the `lib/data` directory.
 
 ## 🎨 Theming
 
@@ -142,15 +168,22 @@ The application uses NextAuth.js for authentication with the following features:
 - Email/Password authentication
 - JWT-based session management
 - Protected routes with middleware
+- Role-based access control
 
 ### Mock Credentials
 
-For development and testing, the following mock users are available:
+For development and testing, the following pre-seeded enterprise accounts are available:
 
-| Email                | Password    |
-| -------------------- | ----------- |
-| alice@enterprise.com | password123 |
-| bob@enterprise.com   | password123 |
+| Email                       | Enterprise                     | Password    |
+| --------------------------- | ------------------------------ | ----------- |
+| Demarco.Carroll78@gmail.com | Wisoky, Simonis and Stark Ltd  | password123 |
+| Leonor.Crona1@yahoo.com     | Kunde LLC Ltd                  | password123 |
+| Ellis81@hotmail.com         | Mohr and Sons Ltd              | password123 |
+| Pauline89@gmail.com         | Schumm Inc Ltd                 | password123 |
+| Toney91@hotmail.com         | Dietrich, Stracke and Lang Ltd | password123 |
+| Makenna.Lesch84@hotmail.com | Reilly, Reichert and Huel Ltd  | password123 |
+
+> **Note**: All internal routes are protected and require authentication. Use any of the above accounts to access the application.
 
 ### Route Protection
 
@@ -160,3 +193,24 @@ The application uses middleware to protect routes:
 - Protected routes: All other routes require authentication
 - Automatic redirection to login page for unauthenticated users
 - Automatic redirection to dashboard for authenticated users trying to access login page
+
+## 📦 Docker Support
+
+The application includes Docker configuration for containerized development and deployment:
+
+```bash
+# Build the Docker image
+docker build -t toweriq-frontend .
+
+# Run the container
+docker run -p 3000:3000 toweriq-frontend
+```
+
+## 🔄 Offline Support
+
+The application includes service worker support for offline functionality:
+
+- Offline data access
+- Background sync
+- Push notifications
+- Cache management

@@ -10,12 +10,14 @@ declare module "next-auth" {
       role?: string;
       enterpriseId?: string;
       enterpriseName?: string;
+      subscriptionTier?: string;
     };
   }
   interface User extends DefaultUser {
     role?: string;
     enterpriseId?: string;
     enterpriseName?: string;
+    subscriptionTier?: string;
   }
 }
 
@@ -24,5 +26,6 @@ declare module "next-auth/jwt" {
     role?: string;
     enterpriseId?: string;
     enterpriseName?: string;
+    subscriptionTier?: string;
   }
 } 

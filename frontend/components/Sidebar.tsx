@@ -12,6 +12,7 @@ import {
   ChevronRight,
   Menu,
   Wrench,
+  Users,
 } from "lucide-react";
 import {
   Sheet,
@@ -68,7 +69,7 @@ export default function Sidebar({
     {
       href: "/users",
       label: "Users",
-      icon: Settings,
+      icon: Users,
     },
   ];
 

@@ -22,6 +22,7 @@ interface EnterpriseUser {
   devices: string[];
   enterpriseId: string;
   enterpriseName: string;
+  subscriptionTier: string;
 }
 
 // Load enterprise users from seed data
@@ -50,7 +51,8 @@ async function loadEnterpriseUsers(): Promise<EnterpriseUser[]> {
         const enterpriseUsers = enterprise.users.map(user => ({
           ...user,
           enterpriseId: enterprise.id,
-          enterpriseName: enterprise.name
+          enterpriseName: enterprise.name,
+          subscriptionTier: enterprise.subscription.tier
         }));
         
         users.push(...enterpriseUsers);
@@ -100,7 +102,8 @@ const handler = NextAuth({
             id: user.id,
             email: user.email,
             role: user.role,
-            enterpriseId: user.enterpriseId
+            enterpriseId: user.enterpriseId,
+            subscriptionTier: user.subscriptionTier
           });
         }
         
@@ -113,6 +116,7 @@ const handler = NextAuth({
             role: user.role,
             enterpriseId: user.enterpriseId,
             enterpriseName: user.enterpriseName,
+            subscriptionTier: user.subscriptionTier,
           };
         }
 
@@ -127,11 +131,13 @@ const handler = NextAuth({
         console.log('JWT callback - adding user data to token:', {
           role: user.role,
           enterpriseId: user.enterpriseId,
-          enterpriseName: user.enterpriseName
+          enterpriseName: user.enterpriseName,
+          subscriptionTier: user.subscriptionTier
         });
         token.role = user.role;
         token.enterpriseId = user.enterpriseId;
         token.enterpriseName = user.enterpriseName;
+        token.subscriptionTier = user.subscriptionTier;
       }
       return token;
     },
@@ -140,11 +146,13 @@ const handler = NextAuth({
         console.log('Session callback - adding token data to session:', {
           role: token.role,
           enterpriseId: token.enterpriseId,
-          enterpriseName: token.enterpriseName
+          enterpriseName: token.enterpriseName,
+          subscriptionTier: token.subscriptionTier
         });
         session.user.role = token.role;
         session.user.enterpriseId = token.enterpriseId;
         session.user.enterpriseName = token.enterpriseName;
+        session.user.subscriptionTier = token.subscriptionTier;
       }
       return session;
     }

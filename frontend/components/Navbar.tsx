@@ -3,7 +3,7 @@
 import { useSession, signOut } from "next-auth/react";
 import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
-import { Clover, LogOut, Menu, WifiOff } from "lucide-react";
+import { Clover, LogOut, Menu, WifiOff, Crown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -46,6 +46,7 @@ export default function Navbar() {
 
   const enterpriseId = session?.user?.enterpriseId || "";
   const enterpriseName = session?.user?.enterpriseName || "";
+  const subscriptionTier = session?.user?.subscriptionTier || "Free";
   const userName =
     session?.user?.name || session?.user?.email?.split("@")[0] || "User";
 
@@ -91,15 +92,15 @@ export default function Navbar() {
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-[200px] p-0">
+            <SheetContent side="left" className="w-[240px] p-0">
               <VisuallyHidden.Root>
                 <SheetTitle>Navigation Menu</SheetTitle>
                 <SheetDescription>
                   Access navigation links for the website
                 </SheetDescription>
               </VisuallyHidden.Root>
-              <div className="flex flex-col gap-4 p-6">
-                <NavigationLinks className="text-base" />
+              <div className="flex flex-col gap-6 p-8 pt-16">
+                <NavigationLinks className="text-base py-2" />
               </div>
             </SheetContent>
           </Sheet>
@@ -123,10 +124,16 @@ export default function Navbar() {
             <span className="text-xl font-semibold">TowerIQ</span>
             {session?.user && (
               <>
-                <div className="hidden md:block h-6 w-px bg-border" />
-                <span className="hidden md:inline text-base text-foreground">
-                  {enterpriseName}
-                </span>
+                <div className="hidden md:block h-6 w-[2px] bg-border/60 rounded-full" />
+                <div className="hidden md:flex items-center gap-3">
+                  <span className="text-base text-foreground">
+                    {enterpriseName}
+                  </span>
+                  <div className="flex items-center gap-1.5 px-2 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                    <Crown className="h-3.5 w-3.5" />
+                    <span>{subscriptionTier}</span>
+                  </div>
+                </div>
               </>
             )}
           </div>

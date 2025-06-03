@@ -20,6 +20,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { PolicyAction } from "@/lib/data/domain-types";
+import { FullPageLoadingSpinner } from "@/components/ui/loading-spinner";
 
 interface RemediationAction {
   id: string;
@@ -249,16 +250,14 @@ export default function RemediationPage({
           criticalActions,
         });
       } catch (err) {
-        setError(err instanceof Error ? err.message : "An error occurred");
+        setError(err instanceof Error ? err.message : "Failed to load data");
       } finally {
         setLoading(false);
       }
     };
 
-    if (session) {
-      fetchData();
-    }
-  }, [session, id]);
+    fetchData();
+  }, [id]);
 
   useEffect(() => {
     const handleRemediationAction = async (event: Event) => {
@@ -345,18 +344,23 @@ export default function RemediationPage({
     };
   }, [id, actions]);
 
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-primary"></div>
-      </div>
-    );
+  if (status === "loading" || loading) {
+    return <FullPageLoadingSpinner text="Loading remediation data..." />;
   }
 
   if (error) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="text-destructive text-xl">{error}</div>
+      <div className="flex items-center justify-center min-h-[400px]">
+        <Card className="w-full max-w-md">
+          <CardContent className="pt-6">
+            <div className="text-center text-destructive">
+              <p className="text-lg font-semibold">{error}</p>
+              <p className="text-sm text-muted-foreground mt-2">
+                Please try refreshing the page
+              </p>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     );
   }
